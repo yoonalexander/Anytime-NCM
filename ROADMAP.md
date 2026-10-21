@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
 **Updated:** October 20, 2026
-**Current position:** Sections 6-7 and Phases 1A-1B are complete; Phase 1C has not started.
-**Next milestone:** Phase 1C - offline trajectory collection and storage.
+**Current position:** Sections 6-7 and Phases 1A-1C are complete; Phase 1D has not started.
+**Next milestone:** Phase 1D - cost profiling, plots, and the Phase 1 decision.
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -11,7 +11,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | Phase | Outcome | Current status | Entry requirement |
 | --- | --- | --- | --- |
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
-| 1 | Correct per-level trajectories, cost estimates, and a decision report | In progress; 1A-1B complete, 1C next | Recorded operational baseline |
+| 1 | Correct per-level trajectories, cost estimates, and a decision report | In progress; 1A-1C complete, 1D next | Recorded operational baseline |
 | 2 | Measured online verified stopping | Conditional; not started | Phase 1 go decision and a subsequent work order |
 | 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
@@ -83,27 +83,29 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ### 1C — Offline trajectory collection and storage
 
-**Status:** Not started; next. Phases 1A-1B are complete.
+**Status:** Complete - October 20, 2026.
 **Primary files:** `trajectories.py`, `collect.py`, `features.py`, and relevant CLI/configuration code under `src/anytime_ncm/`.
 
-- [ ] Implement an executable collector and validated configuration handling; replace the relevant scaffolds.
-- [ ] Enforce manifest-selected input access so collection/tuning cannot read sealed adaptive-policy holdouts.
-- [ ] Start with the 32 exploration smoke inputs; validate records before expanding.
-- [ ] Collect intermediate boards/tokens and correctness flags for each input and level.
-- [ ] Record level index, per-level code length, and cumulative generated-code count separately.
-- [ ] Store run IDs, source/config/checkpoint/dataset revisions, partition/protocol hashes, precision, hardware, and execution settings.
-- [ ] Use only current/past information in any inference-time feature interface; keep future-derived analysis labels separate.
-- [ ] Store unavailable timings as null, with timing coverage and measurement provenance.
-- [ ] Expand only within the frozen exploration/development partitions and budgets.
-- [ ] Add collection-schema, partition-isolation, and record-consistency checks.
+- [x] Implement an executable collector and validated configuration handling; replace the relevant scaffolds.
+- [x] Enforce manifest-selected input access so collection/tuning cannot read sealed adaptive-policy holdouts.
+- [x] Start with the 32 exploration smoke inputs; validate records before expanding.
+- [x] Collect intermediate boards/tokens and correctness flags for each input and level.
+- [x] Record level index, per-level code length, and cumulative generated-code count separately.
+- [x] Store run IDs, source/config/checkpoint/dataset revisions, partition/protocol hashes, precision, hardware, and execution settings.
+- [x] Use only current/past information in any inference-time feature interface; keep future-derived analysis labels separate.
+- [x] Store unavailable timings as null, with timing coverage and measurement provenance.
+- [x] Expand only within the frozen exploration/development partitions and budgets.
+- [x] Add collection-schema, partition-isolation, and record-consistency checks.
 
 **Artifacts:** `results/phase1/trajectories.parquet` or compact JSONL, plus metadata and tested collection commands.
 
 **Acceptance:** Complete per-input/per-level records can be regenerated from documented commands. No adaptive-policy final holdout is used, and no offline collection result is labeled an online speedup.
 
+**Evidence:** [Phase 1C contract and commands](docs/phase1c_collection.md), [completion record](results/phase1/phase1c_validation.json), [validated full JSONL](results/phase1/trajectories.jsonl), and 140 passing tests.
+
 ### 1D — Cost profiling, plots, and the Phase 1 decision
 
-**Status:** Not started; depends on 1C.
+**Status:** Not started; next. Phase 1C is complete.
 **Primary files:** `timing.py`, `report.py`, `tests/test_timing.py`.
 
 - [ ] Profile the unchanged generator separately from reconstruction, decoding, transfers, validation, feature extraction, and policy overhead.
@@ -243,8 +245,8 @@ For each completed milestone, add a short record with its date, final status, ch
 | Sections 6–7 / Phase 0 operational setup | Complete with disclosed limitation | [Reproduction log](docs/reproduction_log.md); paper-number discrepancy remains open |
 | Phase 1A | Complete | [59 passing tests and contract](docs/phase1a_validation.md) |
 | Phase 1B | Complete | [88 passing tests; final-output parity 32/32](docs/phase1b_partial_decoding.md) |
-| Phase 1C | Not started - next | Phases 1A-1B accepted |
-| Phase 1D | Not started | Depends on 1C; go/no-go/inconclusive report |
+| Phase 1C | Complete | [1,400 trajectories / 16,800 level records; 140 passing tests](docs/phase1c_collection.md) |
+| Phase 1D | Not started - next | Phase 1C accepted; profiling and go/no-go/inconclusive report pending |
 | Phases 2–5 | Not started | Subject to the entry conditions above |
 
 ### Phase 1A completion - October 20, 2026
@@ -260,3 +262,9 @@ Evidence and source hashes: [Phase 1A completion record](results/phase1/phase1a_
 Implemented the pinned hard-Sudoku adapter and independent full-resolution cumulative prefix reconstruction without changing upstream generation. All 12 levels preserve learned upsampling/residual transforms and use actual upstream token-selection/decoding helpers. The full implemented suite passed **88 tests in 4.57 seconds**; separate CUDA verification established bitwise final-latent equality, independent storage, future-code isolation at every proper prefix, and **32/32 final decoded-text parity** against a fresh official evaluator run under matched settings.
 
 Evidence: [adapter contract, commands, and limitations](docs/phase1b_partial_decoding.md), [completion record](results/phase1/phase1b_validation.json), [GPU verification](results/phase1/phase1b_verified/verification.json), and [JUnit report](results/phase1/phase1b_tests.xml). Scoped Windows/WSL preflight failures and their successful fixes are disclosed. Only the first 32 exploration inputs were selected; no holdout predictions/references or intermediate quality results were inspected. No generator modification, stored trajectory collection, profiling, or online stopping occurred. Phase 1C is the next eligible milestone.
+
+### Phase 1C completion - October 20, 2026
+
+Implemented the strict-config offline collector, selective manifest-gated dataset reader, versioned JSONL schema, current/past feature tracker, and model-free saved-file verifier. The 32-input smoke collection passed validation before expansion to all 1,000 exploration and 400 development identities. Full output contains **1,400 complete trajectories / 16,800 level records**. All **140 tests passed in 4.69 seconds**, and native Windows independently revalidated both saved files.
+
+Evidence: [collection commands and contract](docs/phase1c_collection.md), [completion record](results/phase1/phase1c_validation.json), [full trajectories](results/phase1/trajectories.jsonl), [provenance](results/phase1/trajectories.metadata.json), and [validation](results/phase1/trajectories.validation.json). Both sealed partitions were excluded; no sealed token rows were materialized. References and offline diagnostics remain separate from inference-time features. Timings are null with zero measured coverage. Upstream, original baseline evidence, frozen protocol/partitions, and environment lock are unchanged. Phase 1D is next; no profiling, aggregate opportunity analysis, online stopping, or controller training occurred.

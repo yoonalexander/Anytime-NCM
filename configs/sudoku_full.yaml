@@ -1,11 +1,11 @@
-# Proposed local template; no runner consumes this schema yet.
+# Phase 1C collection only; sealed adaptive-policy holdouts are excluded.
+# Official 2000-input reproduction still uses scripts/run_upstream_baseline.py.
 schema_version: 1
-status: scaffold
 task: sudoku-hard
-upstream_config: third_party/ncm/config/eval/sudoku-hard.yaml
-checkpoint_dir: artifacts/sudoku/hard
-data_dir: data/sudoku/hard
-output_dir: results/upstream_full
-max_examples: 2000
-# This is descriptive official-set reproduction, not policy-selection data.
-# Keep sealed holdout outputs and scores out of model/policy development.
+run_id: phase1c_exploration_development
+partitions:
+  exploration: 1000
+  development: 400
+batch_size: 128
+output_path: results/phase1/trajectories.jsonl
+smoke_metadata: results/phase1/phase1c_smoke/trajectories.metadata.json

@@ -1,0 +1,110 @@
+{
+  "base_commit": "93c14fa867466de14c689229724e1ece2651221d",
+  "collection_commands": [
+    ".\\scripts\\wsl_python.ps1 -PythonArguments @('-u', 'scripts/collect_trajectories.py', '--config', 'configs/sudoku_smoke.yaml')",
+    ".\\scripts\\wsl_python.ps1 -PythonArguments @('-u', 'scripts/collect_trajectories.py', '--config', 'configs/sudoku_full.yaml')"
+  ],
+  "collection_exit_codes": [
+    0,
+    0
+  ],
+  "collections": [
+    {
+      "bytes": 434145,
+      "jsonl": "results/phase1/phase1c_smoke/trajectories.jsonl",
+      "level_record_count": 384,
+      "metadata": "results/phase1/phase1c_smoke/trajectories.metadata.json",
+      "metadata_sha256": "59c54b1860f43cad58ab0543ad60538cdda6bbbc4baf45037914e315a0cfba15",
+      "partition_counts": {
+        "exploration": 32
+      },
+      "record_count": 32,
+      "trajectory_sha256": "91d1476730d8b870c9abc0654f63c47b24735df05b15f48b55325e733ccbedec",
+      "validation": "results/phase1/phase1c_smoke/trajectories.validation.json",
+      "validation_sha256": "3c2eebdb8c02b6fa988c02440546926132ebd2a3c38641a4ae06a03f14f29986"
+    },
+    {
+      "bytes": 19015424,
+      "jsonl": "results/phase1/trajectories.jsonl",
+      "level_record_count": 16800,
+      "metadata": "results/phase1/trajectories.metadata.json",
+      "metadata_sha256": "c873d0f584173cbdf17e0b19f787a41a512a8db2170e45a0a01fe4a6543df342",
+      "partition_counts": {
+        "development": 400,
+        "exploration": 1000
+      },
+      "record_count": 1400,
+      "trajectory_sha256": "2baf2948df953d7f379f9b359091c9a40d31fe9ecafe29f99305ff8bb3e0f5d9",
+      "validation": "results/phase1/trajectories.validation.json",
+      "validation_sha256": "8e190973be842d4c5bac1d794728b2f8c464527e4d285244bcc74418fde320e0"
+    }
+  ],
+  "date": "2026-10-20",
+  "frozen_protocol_sha256": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+  "independent_native_windows_verification": {
+    "commands": [
+      "python scripts/validate_trajectories.py --metadata results/phase1/trajectories.metadata.json",
+      "python scripts/validate_trajectories.py --metadata results/phase1/phase1c_smoke/trajectories.metadata.json"
+    ],
+    "cuda_used": false,
+    "exit_codes": [
+      0,
+      0
+    ],
+    "models_loaded": false
+  },
+  "milestone": "Phase 1C",
+  "next_milestone": "Phase 1D",
+  "partition_manifest_sha256": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+  "schema_version": 1,
+  "scope": {
+    "aggregate_opportunity_analysis": false,
+    "component_timings": "null; unmeasured",
+    "controller_training": false,
+    "cost_profiling": false,
+    "development": 400,
+    "exploration": 1000,
+    "go_no_go_decision": null,
+    "holdout_predictions_or_references_inspected": false,
+    "online_speedup_claim": false,
+    "online_stopping": false,
+    "raw_dataset_bytes_and_structural_opcodes_traversed": true,
+    "sealed_rows_materialized": 0,
+    "smoke_inputs_repeat_in_full_run": 32,
+    "timed_level_records": 0,
+    "unique_inputs": 1400
+  },
+  "source_sha256": {
+    "configs/sudoku_full.yaml": "4ffa7ce975c8e70831a4a695083bde64303d558f6d665dfdb0c993c5f45312fd",
+    "configs/sudoku_smoke.yaml": "b79993e3a9c7601dc672d030a433da5c5db0d5bdc0cfcd6c6d9c6c99a88e6943",
+    "scripts/collect_trajectories.py": "89698a0e68ea0edaba6dec8dd85297798e70bfd1f4a0f37ef5185ed39542afb8",
+    "scripts/validate_trajectories.py": "02660a5ab0c577c218d3b6d198229a184ea6bf84814175d732bd75bb379aaaa6",
+    "src/anytime_ncm/cli.py": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54",
+    "src/anytime_ncm/collect.py": "4fd45677b4d5d4a801e6f67b9abcd6a41ed96e715f61e03062ca42c267b653c9",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_collection.py": "1823b44a9cf1d296cf52eb58daa99d1fbca991659a3151e61d197f79a5440711"
+  },
+  "status": "complete",
+  "tests": {
+    "by_module": {
+      "tests.test_collection": 52,
+      "tests.test_full_depth_equivalence": 3,
+      "tests.test_partial_decoder": 26,
+      "tests.test_sudoku_validator": 59
+    },
+    "command": ".\\scripts\\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider', '--junitxml=results/phase1/phase1c_tests.xml')",
+    "errors": 0,
+    "exit_code": 0,
+    "failed": 0,
+    "junit_suite_seconds": 4.692,
+    "passed": 140,
+    "pytest_reported_seconds": 4.69,
+    "report": "results/phase1/phase1c_tests.xml",
+    "report_sha256": "0b48296fa22275e8fd43dd04a9ae62111190f70f3dc30861440e841960c027cb",
+    "skipped": 0
+  }
+}

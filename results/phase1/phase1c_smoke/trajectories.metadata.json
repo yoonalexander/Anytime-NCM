@@ -1,0 +1,280 @@
+{
+  "access": {
+    "file_bytes_traversed": "puzzles and solutions, including structural traversal of sealed rows",
+    "holdout_predictions_or_references_inspected": false,
+    "materialized_rows_per_file": 32,
+    "reader": "restricted protocol-4 token-list scanner; no pickle execution",
+    "sealed_rows_materialized": 0
+  },
+  "base_commit": "93c14fa867466de14c689229724e1ece2651221d",
+  "checkpoint_artifacts": [
+    {
+      "bytes": 1980,
+      "path": "artifacts/sudoku/hard/config.yaml",
+      "sha256": "8d58c49e6fe52e60191e06df4061937d5bb84f97c5ffbcd93ed9830c32f8df2f"
+    },
+    {
+      "bytes": 102560203,
+      "path": "artifacts/sudoku/hard/generator.pt",
+      "sha256": "9e0bfe44abc1ca3930b7a63cd56cd0b9564b95e29edfe12dd0903207b89df8b8"
+    },
+    {
+      "bytes": 59816209,
+      "path": "artifacts/sudoku/hard/tokenizer.pt",
+      "sha256": "3bc6aecad8e15820f9d9bb09750e3c59bdf91ca953f1f11dbd109aaed1d80c0b"
+    },
+    {
+      "bytes": 372063,
+      "path": "data/sudoku/hard/puzzles.pickle",
+      "sha256": "dd7b6763e5594094a1366ac8423f87fc9431056721c61df52ce3490023f17d5e"
+    },
+    {
+      "bytes": 364063,
+      "path": "data/sudoku/hard/solutions.pickle",
+      "sha256": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576"
+    }
+  ],
+  "config_path": "configs/sudoku_smoke.yaml",
+  "config_sha256": "b79993e3a9c7601dc672d030a433da5c5db0d5bdc0cfcd6c6d9c6c99a88e6943",
+  "diagnostic_scope": "reference agreement and official metrics are offline labels, separate from features",
+  "effective_config": {
+    "batch_size": 128,
+    "output_path": "results/phase1/phase1c_smoke/trajectories.jsonl",
+    "partitions": {
+      "exploration": 32
+    },
+    "run_id": "phase1c_smoke",
+    "schema_version": 1,
+    "smoke_metadata": null,
+    "task": "sudoku-hard"
+  },
+  "execution": {
+    "batch_size": 128,
+    "batch_size_override_from_baseline": false,
+    "batch_sizes": [
+      32
+    ],
+    "cpu_threads": 4,
+    "cuda_runtime": "12.8",
+    "device": "cuda:0",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "gpu_total_bytes": 8546484224,
+    "precision": "float32, no autocast",
+    "python": "3.12.3",
+    "sampling": {
+      "cfg_scale": 0.0,
+      "temperature": 0.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "torch": "2.10.0+cu128",
+    "torch_compile": false,
+    "use_kv_cache": false,
+    "warmup_requests": 0
+  },
+  "feature_scope": "current/past decoded tokens and current code counts; no reference, verifier, or future labels",
+  "finished_utc": "2026-10-21T03:16:15.228076+00:00",
+  "official_config_sha256": "dbda2c3f2c412049dc43095138a5390d47210eec7a0dfe26eda3ff9dd078083a",
+  "partition_manifest_sha256": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+  "protocol_sha256": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+  "record_count": 32,
+  "run_id": "phase1c_smoke",
+  "schema_version": 1,
+  "selected_examples": [
+    {
+      "index": 0,
+      "partition": "exploration",
+      "puzzle_sha256": "208a7668822a421f6e996a1fcd8ba85db294705d6055b2d66c58094b8edaa6b1"
+    },
+    {
+      "index": 1,
+      "partition": "exploration",
+      "puzzle_sha256": "009c0ca856b1b36f218abcffc42346d95ec13a3ad692c5446a259a6d4a641cec"
+    },
+    {
+      "index": 2,
+      "partition": "exploration",
+      "puzzle_sha256": "f4472da4108212331852de9d3ddfbb9ec1441da03d46d06d3874b4ba1855fe66"
+    },
+    {
+      "index": 3,
+      "partition": "exploration",
+      "puzzle_sha256": "1ad137b5ce78c6fc0c36743dd63928dd96c338ef4ac3cf6e593a10667caed446"
+    },
+    {
+      "index": 4,
+      "partition": "exploration",
+      "puzzle_sha256": "7c9fbaff45c8cedd53cd49d11b07acedf0d3ed85b7c16f646e466e60de01e3a2"
+    },
+    {
+      "index": 5,
+      "partition": "exploration",
+      "puzzle_sha256": "b8cbf06ea0a071eb8fef3805db5477ded5fa6babed5b3c8bf1c0c7fd73dd420b"
+    },
+    {
+      "index": 6,
+      "partition": "exploration",
+      "puzzle_sha256": "6cd13d3d98878138a00f0f8fc799c3d2e7ae9afb0fbd78b6070b86b6d7ec6d46"
+    },
+    {
+      "index": 7,
+      "partition": "exploration",
+      "puzzle_sha256": "2a3e81e58ff825c39232ff40934046a8e748c68aba89c64f701bcc5c0d72b7a1"
+    },
+    {
+      "index": 8,
+      "partition": "exploration",
+      "puzzle_sha256": "e2191c6696bda2fa4dfe562f7c401a01b945d776f9a6b5eb7ddec7c55bf5fd99"
+    },
+    {
+      "index": 9,
+      "partition": "exploration",
+      "puzzle_sha256": "d04a73589a4a0d070661051d5d83b37fb9f9d746902a916d03e53ddd6c910451"
+    },
+    {
+      "index": 10,
+      "partition": "exploration",
+      "puzzle_sha256": "0c3e5ab84eae5e9def2089ff02aa6a9981442dfb60fde75c0b42794833a7c7cd"
+    },
+    {
+      "index": 11,
+      "partition": "exploration",
+      "puzzle_sha256": "cc6dad23e960696c026b2674b515c4eeab7b4f378928f82acab2777d3abd4aac"
+    },
+    {
+      "index": 12,
+      "partition": "exploration",
+      "puzzle_sha256": "7eaac30d96bbe55c346f8f5dbbcf3392be23e1d68ec9fd459020501b8c303e6e"
+    },
+    {
+      "index": 13,
+      "partition": "exploration",
+      "puzzle_sha256": "04de79ca4bee56958aad22db8ae73a6ae10f59b5d2334d5070eb9e5f8cfcbfd7"
+    },
+    {
+      "index": 14,
+      "partition": "exploration",
+      "puzzle_sha256": "80c1bf45aaa6eec8222804a3da3294ba1ce6246083a309a8cce8f5775dabef06"
+    },
+    {
+      "index": 15,
+      "partition": "exploration",
+      "puzzle_sha256": "92f8010ce3efb09b152e219a46621a55a77f89a2ffd3682b5cfc3d5d24b4ec49"
+    },
+    {
+      "index": 16,
+      "partition": "exploration",
+      "puzzle_sha256": "5c90bf355f2755019f5ca8ccaefe08452820a950b6080d39a002c1dd7ce0f424"
+    },
+    {
+      "index": 17,
+      "partition": "exploration",
+      "puzzle_sha256": "8f0cc81250146502f760893644616dab166262065911947cdbd9d7071c9b81b6"
+    },
+    {
+      "index": 18,
+      "partition": "exploration",
+      "puzzle_sha256": "8200647e6cd75153665d69e27adede80d5736830eb8def04a65d9e911741da19"
+    },
+    {
+      "index": 19,
+      "partition": "exploration",
+      "puzzle_sha256": "07ff94267f4e2f9a0362ebad6d6c865f0e50af4584e4e1f11dd13d2d983c764c"
+    },
+    {
+      "index": 20,
+      "partition": "exploration",
+      "puzzle_sha256": "036bccdd89098661b90999586329936426674cf2c19e9e683ff876bb4a53564a"
+    },
+    {
+      "index": 21,
+      "partition": "exploration",
+      "puzzle_sha256": "70880ae8d1a583e6bcfc399dd767e4c3fa7de2d4558caf9e7591cefc3e7d5cce"
+    },
+    {
+      "index": 22,
+      "partition": "exploration",
+      "puzzle_sha256": "87d3bfe765cd72b4fadb49933e75bdd1eed50370e16b7f888a8e6f2b6f5eb64b"
+    },
+    {
+      "index": 23,
+      "partition": "exploration",
+      "puzzle_sha256": "a227398351d7292ea670fb3bc3741f558c4fb515f61e59079f71921ea4de73f8"
+    },
+    {
+      "index": 24,
+      "partition": "exploration",
+      "puzzle_sha256": "67bc5ffa490f9425aa8d6ba02bfed653396245e612f99a30e3acd7bb79176233"
+    },
+    {
+      "index": 25,
+      "partition": "exploration",
+      "puzzle_sha256": "c0206f529f104069b35d41e8a50b583da0410b84a6f5612b11ce644372380bee"
+    },
+    {
+      "index": 26,
+      "partition": "exploration",
+      "puzzle_sha256": "a84d43ddc422791aeba0685f48e13eaf4e7638e8a0d6eecc75fc7201f90b7c25"
+    },
+    {
+      "index": 27,
+      "partition": "exploration",
+      "puzzle_sha256": "90667445583c9baf24baaf38a9a1661610d67592f744295e1853f084e3674d72"
+    },
+    {
+      "index": 28,
+      "partition": "exploration",
+      "puzzle_sha256": "db79a33aa005dc3b8941bf839b8b1c624170418a6d6f0ae663205d267b23db73"
+    },
+    {
+      "index": 29,
+      "partition": "exploration",
+      "puzzle_sha256": "e8e3ee29edfed4163ba1864b05ebb5e30b19ee5544f46ebcfa46eac64810408a"
+    },
+    {
+      "index": 30,
+      "partition": "exploration",
+      "puzzle_sha256": "c70d2e16a0d18e8455cccca148cc51efc128eb485deed5ba2e4a58207ceecf2d"
+    },
+    {
+      "index": 31,
+      "partition": "exploration",
+      "puzzle_sha256": "622151f4117c66a1b23c2fd435ac4e1071bb59942ce15836506184f951a08782"
+    }
+  ],
+  "source_sha256": {
+    "scripts/collect_trajectories.py": "89698a0e68ea0edaba6dec8dd85297798e70bfd1f4a0f37ef5185ed39542afb8",
+    "src/anytime_ncm/cli.py": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54",
+    "src/anytime_ncm/collect.py": "4fd45677b4d5d4a801e6f67b9abcd6a41ed96e715f61e03062ca42c267b653c9",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361"
+  },
+  "sources": {
+    "dataset_repo": "hazyresearch/ncm-datasets",
+    "dataset_revision": "6580ba41a4b0a976dde876fbe84d25327617b0e6",
+    "include": "sudoku/hard/*",
+    "model_repo": "hazyresearch/ncm-checkpoints",
+    "model_revision": "d342ce8aaea58830eef3b8ad473664673e41f692",
+    "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203"
+  },
+  "started_utc": "2026-10-21T03:16:09.144223+00:00",
+  "status": "complete",
+  "timing": {
+    "coverage": {
+      "decode": 0,
+      "features": 0,
+      "generation": 0,
+      "reconstruction": 0,
+      "transfer": 0,
+      "validation": 0
+    },
+    "missing_value": null,
+    "online_speedup_claim": false,
+    "provenance": "unmeasured; no diagnostic profiling in Phase 1C",
+    "unit": "milliseconds"
+  },
+  "trajectory_sha256": "91d1476730d8b870c9abc0654f63c47b24735df05b15f48b55325e733ccbedec"
+}
