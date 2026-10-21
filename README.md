@@ -56,7 +56,7 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Headline online adaptive benchmarks | Not started |
 | Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | 186 passed; timing/statistics/report checks included; online halting tests remain pending |
+| Executable research tests | 189 passed; timing/statistics/report checks included; online halting tests remain pending |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; online adaptive inference is pending.
@@ -83,6 +83,8 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | Document | Purpose |
 | --- | --- |
 | [ROADMAP.md](ROADMAP.md) | Phase 0–5 execution checklist, milestones, acceptance criteria, and decision gates |
+| [Research paper](RESEARCH_PAPER.md) | Paper-style account of the completed study, methods, results, sources, and limits |
+| [Revised next steps](NEXT_STEPS.md) | Post-no-go diagnostic milestones, bounded checkpoint screening, and conditional online work |
 | [Design document](Anytime_NCM_Design_Document.md) | Technical design and scientific requirements |
 | [DESIGN.md](DESIGN.md) | Entry point to the original design document |
 | [Experiment protocol](docs/experiment_protocol.md) | Frozen partitions, budgets, metrics, timing boundaries, and statistical procedure |
@@ -93,7 +95,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [Phase 1D profiling](docs/phase1d_profiling.md) | Reproduction commands, diagnostic boundaries, budget, and limitations |
 | [Setup summary](results/setup/summary.md) | Compact operational results |
 
-The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
+The [research paper](RESEARCH_PAPER.md) documents the completed findings. The [revised next-steps roadmap](NEXT_STEPS.md) proposes diagnosing saved exploration failures before any new study; no follow-up experiment has started. The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
 
 ## Validated environment
 

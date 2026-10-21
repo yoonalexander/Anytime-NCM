@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
-**Updated:** October 20, 2026
+**Updated:** October 21, 2026
 **Current position:** Sections 6-7 and Phase 1 (1A-1D) are complete. Phase 1 decision: no-go.
-**Next action:** Stop after the Phase 1 report. Phase 2's go entry requirement is not met; later work requires a subsequent work order.
+**Next proposed work:** R1A, diagnosis of saved exploration failures without new inference, as specified in the [revised research roadmap](NEXT_STEPS.md). Phase 2 remains blocked by the original no-go; follow-up implementation requires its own work order.
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -12,12 +12,26 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | --- | --- | --- | --- |
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
-| 2 | Measured online verified stopping | Conditional; not started | Phase 1 go decision and a subsequent work order |
+| 2 | Measured online verified stopping | Conditional; not started | A setting-specific offline go and a subsequent work order |
 | 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
 
 A negative or inconclusive Phase 1 result is a valid completed research milestone when its required artifacts and limitations are documented. It does not mean that the online MVP or later phases have been implemented. Later studies remain on this roadmap; they do not begin automatically after a gate fails.
+
+## Post-Phase 1 research revision — October 21, 2026
+
+The [paper-style report](RESEARCH_PAPER.md) records the completed hard-Sudoku study. The separate [revised roadmap](NEXT_STEPS.md) defines proposed follow-ups without changing the frozen protocol or relabeling its no-go.
+
+| Follow-up | Status | Boundary |
+| --- | --- | --- |
+| R0: Paper and revised research plan | Complete | Documentation of existing evidence only |
+| R1A: Saved exploration error diagnosis | Proposed next work | No inference, profiling, or reserved holdout access |
+| R1B: Target-encoded prefix pilot | Conditional | New protocol; 32 existing exploration identities; no new generator runs |
+| R2: Easy, then conditional medium Sudoku screen | Conditional | At most two candidates; frozen inputs and bounded comparator/trajectory generation |
+| R3: Confirmatory audit for one selected setting | Conditional | Separate partitions, budget, estimated-cost evidence, and decision |
+
+One early valid screening example can justify a larger offline audit, not Phase 2. Only a justified new setting-specific go can open that setting's online experiment. Original hard-Sudoku Phase 1 remains complete with no-go; Phases 0–5 and their evidence remain below.
 
 ## Phase 0 — Repository and reproduction
 
@@ -135,7 +149,7 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 ## Phase 2 — True online verified stopping
 
 **Status:** Conditional; not started.
-**Entry:** Phase 1 go decision and a subsequent Phase 2 work order. The current Phase 1 result is no-go, so this entry requirement is not met.
+**Entry:** Phase 1 go decision and a subsequent Phase 2 work order. The current Phase 1 result is no-go, so this entry requirement is not met. A separate setting selected through R1–R3 requires its own offline go and protocol; that would not overturn the original result.
 **Design mapping:** Sections 5B, 8.4–8.6, 9 Phase 2, and 10–12.
 
 ### 2A — Minimal online hook and parity
@@ -284,3 +298,7 @@ Evidence: [report](results/phase1/summary.md), [profiling contract](docs/phase1d
 Reviewed 1A–1D against the design and acceptance criteria. Added the missing per-level parsing/completeness counts and official cell/valid-grid summaries from existing data, with three focused tests. All 189 tests pass. Original trajectory/profile data, frozen protocol/partitions, and all prior decision/cost results are unchanged. [Review and commands](docs/phase1_review.md); [current evidence](results/phase1/review_validation.json).
 
 Phase 1 remains complete with no-go. Phase 2's entry requirement is not met; no online work or new inference was performed.
+
+### Research-paper and revised-plan delivery — October 21, 2026
+
+Created [RESEARCH_PAPER.md](RESEARCH_PAPER.md) from the recorded baseline, trajectories, profiles, uncertainty, correctness evidence, and limitations. Added [NEXT_STEPS.md](NEXT_STEPS.md) with proposed R1–R3 diagnosis/screening/audit milestones and preserved all original phases. R0 is documentation-complete. No new inference, profiling, training, online implementation, or holdout access occurred.

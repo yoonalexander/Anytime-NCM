@@ -1,0 +1,52 @@
+{
+  "checks": {
+    "cost_table_rows_against_analysis": 2,
+    "decision": "no-go",
+    "existing_empirical_and_frozen_files_unchanged": true,
+    "local_links_and_anchors": 149,
+    "markdown_tables": 23,
+    "quality_table_rows_against_analysis": 12,
+    "unfinished_placeholders": 0
+  },
+  "date": "2026-10-21",
+  "document_word_counts": {
+    "NEXT_STEPS.md": 2948,
+    "RESEARCH_PAPER.md": 4741
+  },
+  "documentation_sha256": {
+    "NEXT_STEPS.md": "4ebeac8ff02f46ef8dbf70782cc1f990db065b2fe917e0cf0ad68add2eb5827b",
+    "README.md": "9a40ec081389d8ccdca521f3c93f840c7102e1ec771c9ebc8e131c76e23e0206",
+    "RESEARCH_PAPER.md": "4f49e991abe8658e053bce157926199145d632a2eda2f2948b3e085c4bf7f485",
+    "ROADMAP.md": "324c88ef0c98467561b192e36c341ca4dc9749ba1c4756be730ed0232dd2d34c",
+    "docs/known_limitations.md": "ebada1e1ab89fbee7bde2bf5a1cc445248ccbd6309ddd8155d43c949fe0b9369"
+  },
+  "empirical_snapshot_commit": "a83229c850c4401035fc09dfce015974fd98be4a",
+  "empirical_sources_sha256": {
+    "docs/experiment_protocol.md": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "docs/partitions/sudoku-hard.json": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "results/phase1/analysis.json": "f07902170491118523d2038339f635b260561a227b8658753e2a83fdc8236f67",
+    "results/phase1/profiles/components.jsonl": "56497a90c5836d4d5317e33a36deaf10aeb233eb55e65641113aec7ad213802d",
+    "results/phase1/profiles/run.json": "37c2ea4a66ccd8a22364ef24bbc313f4a34cb6c0089142ec061d09ebe1be87c6",
+    "results/phase1/report_provenance.json": "816e6fbb6549b0a8ff27b3f0bed1d39a253e8da2d820c6e17d3f58872af5fc87",
+    "results/phase1/trajectories.jsonl": "2baf2948df953d7f379f9b359091c9a40d31fe9ecafe29f99305ff8bb3e0f5d9",
+    "results/upstream_full/metrics.json": "43080515122f055aed73a418b5cf00a0c5ca6f0b18d121bd4c6049aaef1b2d63",
+    "results/upstream_smoke/metrics.json": "dce53fb0989d8ee1f38afd868522bef62803a8181cfaaea52ca03e368cde4a44"
+  },
+  "existing_suite": {
+    "errors": 0,
+    "failures": 0,
+    "junit_suite_seconds": 5.019,
+    "passed": 189,
+    "report": "results/phase1/review_tests.xml",
+    "report_sha256": "6c3f8674ca2770db58cb36b4b9a79fbdfacaaabe4868dd03e33975b0004d3f1c",
+    "skipped": 0
+  },
+  "external_references_checked": [
+    "https://arxiv.org/html/2610.14162v1",
+    "https://arxiv.org/abs/2004.12993",
+    "https://arxiv.org/abs/2107.05407",
+    "https://github.com/HazyResearch/ncm"
+  ],
+  "scope": "research manuscript and proposed revised roadmap; no new model inference, profiling, training, or holdout access",
+  "status": "passed"
+}
