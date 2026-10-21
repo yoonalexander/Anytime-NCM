@@ -1,0 +1,1456 @@
+{
+  "access": {
+    "holdout_predictions_or_references_inspected": false,
+    "sealed_rows_materialized": 0
+  },
+  "base_commit": "02525759dfeb33bddfa8fe66856f437a1ed5ff0e",
+  "budget": {
+    "development_inputs": 100,
+    "exploration_inputs": 100,
+    "timed_repeats_per_input": 5,
+    "warmup_requests": 10
+  },
+  "checkpoint_artifacts": [
+    {
+      "bytes": 1980,
+      "path": "artifacts/sudoku/hard/config.yaml",
+      "sha256": "8d58c49e6fe52e60191e06df4061937d5bb84f97c5ffbcd93ed9830c32f8df2f"
+    },
+    {
+      "bytes": 102560203,
+      "path": "artifacts/sudoku/hard/generator.pt",
+      "sha256": "9e0bfe44abc1ca3930b7a63cd56cd0b9564b95e29edfe12dd0903207b89df8b8"
+    },
+    {
+      "bytes": 59816209,
+      "path": "artifacts/sudoku/hard/tokenizer.pt",
+      "sha256": "3bc6aecad8e15820f9d9bb09750e3c59bdf91ca953f1f11dbd109aaed1d80c0b"
+    },
+    {
+      "bytes": 372063,
+      "path": "data/sudoku/hard/puzzles.pickle",
+      "sha256": "dd7b6763e5594094a1366ac8423f87fc9431056721c61df52ce3490023f17d5e"
+    },
+    {
+      "bytes": 364063,
+      "path": "data/sudoku/hard/solutions.pickle",
+      "sha256": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576"
+    }
+  ],
+  "collection_validation": {
+    "level_record_count": 16800,
+    "metadata_path": "results/phase1/trajectories.metadata.json",
+    "partition_counts": {
+      "development": 400,
+      "exploration": 1000
+    },
+    "partition_manifest_sha256": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "protocol_sha256": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "record_count": 1400,
+    "run_id": "phase1c_exploration_development",
+    "source_sha256": {
+      "scripts/collect_trajectories.py": "89698a0e68ea0edaba6dec8dd85297798e70bfd1f4a0f37ef5185ed39542afb8",
+      "src/anytime_ncm/cli.py": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54",
+      "src/anytime_ncm/collect.py": "4fd45677b4d5d4a801e6f67b9abcd6a41ed96e715f61e03062ca42c267b653c9",
+      "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+      "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+      "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+      "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+      "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361"
+    },
+    "status": "complete",
+    "timed_level_records": 0,
+    "trajectory_sha256": "2baf2948df953d7f379f9b359091c9a40d31fe9ecafe29f99305ff8bb3e0f5d9",
+    "unavailable_timing_level_records": 16800
+  },
+  "components_sha256": "56497a90c5836d4d5317e33a36deaf10aeb233eb55e65641113aec7ad213802d",
+  "execution": {
+    "batch_size": 1,
+    "batch_size_override_from_official_baseline": true,
+    "cpu_threads": 4,
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "gpu_total_bytes": 8546484224,
+    "kv_cache": false,
+    "precision": "float32; no autocast",
+    "python": "3.12.3",
+    "sampling": {
+      "cfg_scale": 0.0,
+      "temperature": 0.0,
+      "top_k": 0,
+      "top_p": 1.0
+    },
+    "torch": "2.10.0+cu128",
+    "torch_compile": false
+  },
+  "final_reconstruction_parity_checks": 1000,
+  "finished_utc": "2026-10-21T03:34:32.764918+00:00",
+  "hook_vs_uninstrumented_code_parity_checks": 50,
+  "instrumentation_calibration": {
+    "cuda_region_wall_ms": 0.057171,
+    "host_region_ms": 0.00012,
+    "marker_trace_wall_ms": 0.2031615,
+    "raw_cuda_region_wall_ms": [
+      0.96108,
+      0.047527,
+      0.057024,
+      0.056395,
+      0.045064,
+      0.046789,
+      0.084332,
+      0.05137,
+      0.046518,
+      0.059673,
+      0.139782,
+      0.058946,
+      0.055668,
+      0.046931,
+      0.059597,
+      0.0482,
+      0.047267,
+      0.059836,
+      0.049524,
+      0.057328,
+      0.054256,
+      0.059,
+      0.047919,
+      0.045118,
+      0.048016,
+      0.060693,
+      0.07528,
+      0.066185,
+      0.050436,
+      0.055635,
+      0.066435,
+      0.046258,
+      0.057296,
+      0.05469,
+      0.061246,
+      0.082194,
+      0.057426,
+      0.069821,
+      0.068062,
+      0.067954,
+      0.069462,
+      0.066434,
+      0.05659,
+      0.060281,
+      0.089986,
+      0.091094,
+      0.043371,
+      0.055841,
+      0.056286,
+      0.063471,
+      0.050686,
+      0.060953,
+      0.049351,
+      0.035372,
+      0.052368,
+      0.058359,
+      0.058935,
+      0.042687,
+      0.064372,
+      0.05366,
+      0.051023,
+      0.046583,
+      0.046138,
+      0.059032,
+      0.065783,
+      0.062875,
+      0.047354,
+      0.059608,
+      0.072925,
+      0.070114,
+      0.057046,
+      0.066738,
+      0.066174,
+      0.071025,
+      0.169065,
+      0.075769,
+      0.080468,
+      0.039616,
+      0.055158,
+      0.063634,
+      0.065598,
+      0.045357,
+      0.05099,
+      0.054604,
+      0.063276,
+      0.047517,
+      0.052932,
+      0.064579,
+      0.051782,
+      0.050154,
+      0.05874,
+      0.074531,
+      0.082237,
+      0.049003,
+      0.06002,
+      0.054366,
+      0.05176,
+      0.053682,
+      0.055928,
+      0.05506
+    ],
+    "raw_host_region_ms": [
+      0.000228,
+      0.000239,
+      0.000173,
+      0.000152,
+      0.00013,
+      0.000109,
+      0.000152,
+      0.00013,
+      0.000141,
+      0.000141,
+      0.000152,
+      0.000109,
+      0.00013,
+      0.00012,
+      0.00013,
+      0.000109,
+      8.7e-05,
+      0.000108,
+      6.5e-05,
+      0.00013,
+      0.000141,
+      0.00013,
+      0.00013,
+      9.8e-05,
+      0.000131,
+      0.000108,
+      0.000131,
+      0.000152,
+      0.00013,
+      0.000109,
+      9.8e-05,
+      9.8e-05,
+      0.00013,
+      0.000108,
+      0.000109,
+      0.00013,
+      0.000109,
+      0.00012,
+      0.000131,
+      0.000109,
+      0.000108,
+      0.000174,
+      0.00013,
+      0.000119,
+      0.000109,
+      9.8e-05,
+      0.000108,
+      8.7e-05,
+      0.00013,
+      9.8e-05,
+      9.8e-05,
+      0.00012,
+      0.00012,
+      0.000108,
+      0.000195,
+      0.000109,
+      0.00012,
+      9.8e-05,
+      9.8e-05,
+      0.000109,
+      8.6e-05,
+      0.000109,
+      9.8e-05,
+      0.000109,
+      0.000119,
+      0.000108,
+      0.000108,
+      0.000109,
+      0.000261,
+      0.000152,
+      0.000152,
+      0.000174,
+      0.000195,
+      0.000228,
+      0.000206,
+      0.000228,
+      0.000141,
+      0.000109,
+      0.000206,
+      0.000152,
+      0.000163,
+      0.000109,
+      0.00012,
+      0.000163,
+      0.000174,
+      0.000152,
+      0.00013,
+      0.000141,
+      0.00013,
+      0.00012,
+      0.000315,
+      0.000174,
+      0.000152,
+      0.000141,
+      0.00012,
+      0.000108,
+      9.8e-05,
+      0.000109,
+      0.00012,
+      0.000108
+    ],
+    "raw_marker_trace_wall_ms": [
+      0.239668,
+      0.205088,
+      0.202993,
+      0.206195,
+      0.174416,
+      0.204567,
+      0.180798,
+      0.187375,
+      0.241003,
+      0.220467,
+      0.163075,
+      0.239494,
+      0.166124,
+      0.177054,
+      0.177726,
+      0.169521,
+      0.172875,
+      0.169391,
+      0.246179,
+      0.235923,
+      0.226274,
+      0.190046,
+      0.175133,
+      0.174145,
+      0.273509,
+      0.16557,
+      0.179116,
+      0.165755,
+      0.262308,
+      0.177976,
+      0.171432,
+      0.201507,
+      0.177553,
+      0.251281,
+      0.186648,
+      0.174297,
+      0.175209,
+      0.183848,
+      0.250347,
+      0.2158,
+      0.340801,
+      0.218927,
+      0.21478,
+      0.16162,
+      0.180342,
+      0.214031,
+      0.207226,
+      0.211763,
+      0.20333,
+      0.168979,
+      0.300643,
+      0.220836,
+      0.176641,
+      0.171182,
+      0.351676,
+      0.210884,
+      0.185964,
+      0.174232,
+      0.17815,
+      0.1634,
+      0.169739,
+      0.168262,
+      0.21554,
+      0.201409,
+      0.187093,
+      0.198706,
+      0.171171,
+      0.251151,
+      0.282235,
+      0.273802,
+      0.325356,
+      0.387471,
+      0.323902,
+      0.606701,
+      0.350265,
+      0.318573,
+      0.171226,
+      0.206282,
+      0.343623,
+      0.35834,
+      0.283939,
+      0.195548,
+      0.255025,
+      0.22393,
+      0.255547,
+      0.243509,
+      0.215692,
+      0.187397,
+      0.168718,
+      0.168317,
+      0.382229,
+      0.310769,
+      0.175013,
+      0.187592,
+      0.166374,
+      0.162803,
+      0.210581,
+      0.207498,
+      0.204036,
+      0.169478
+    ],
+    "repeats": 100,
+    "scope": "empty timing regions and 13 CUDA-event markers; not a bound on all hook/launch perturbation"
+  },
+  "measurement": {
+    "assembly": "profiled at every depth; reused original concatenation at level 12 in estimates",
+    "components": "isolated CUDA-event plus synchronized wall regions; host stages perf_counter_ns",
+    "excluded": [
+      "model loading",
+      "warmup",
+      "reference scoring",
+      "serialization"
+    ],
+    "feature_cost": "profiled, unused by the verifier-only candidate",
+    "generation": "CUDA events at start, 11 next-embedding prehooks, and final return; no interior synchronization",
+    "latency_claim": "component-sum estimate only; no online inference measurement"
+  },
+  "partition_manifest_sha256": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+  "peak_allocated_bytes": 228464640,
+  "profiled_level_records": 12000,
+  "protocol_sha256": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+  "purpose": "offline diagnostic components, not headline online latency",
+  "repeated_code_parity_checks": 800,
+  "schema_version": 1,
+  "selected_examples": [
+    {
+      "index": 0,
+      "partition": "exploration",
+      "sample_id": "208a7668822a421f6e996a1fcd8ba85db294705d6055b2d66c58094b8edaa6b1"
+    },
+    {
+      "index": 1,
+      "partition": "exploration",
+      "sample_id": "009c0ca856b1b36f218abcffc42346d95ec13a3ad692c5446a259a6d4a641cec"
+    },
+    {
+      "index": 2,
+      "partition": "exploration",
+      "sample_id": "f4472da4108212331852de9d3ddfbb9ec1441da03d46d06d3874b4ba1855fe66"
+    },
+    {
+      "index": 3,
+      "partition": "exploration",
+      "sample_id": "1ad137b5ce78c6fc0c36743dd63928dd96c338ef4ac3cf6e593a10667caed446"
+    },
+    {
+      "index": 4,
+      "partition": "exploration",
+      "sample_id": "7c9fbaff45c8cedd53cd49d11b07acedf0d3ed85b7c16f646e466e60de01e3a2"
+    },
+    {
+      "index": 5,
+      "partition": "exploration",
+      "sample_id": "b8cbf06ea0a071eb8fef3805db5477ded5fa6babed5b3c8bf1c0c7fd73dd420b"
+    },
+    {
+      "index": 6,
+      "partition": "exploration",
+      "sample_id": "6cd13d3d98878138a00f0f8fc799c3d2e7ae9afb0fbd78b6070b86b6d7ec6d46"
+    },
+    {
+      "index": 7,
+      "partition": "exploration",
+      "sample_id": "2a3e81e58ff825c39232ff40934046a8e748c68aba89c64f701bcc5c0d72b7a1"
+    },
+    {
+      "index": 8,
+      "partition": "exploration",
+      "sample_id": "e2191c6696bda2fa4dfe562f7c401a01b945d776f9a6b5eb7ddec7c55bf5fd99"
+    },
+    {
+      "index": 9,
+      "partition": "exploration",
+      "sample_id": "d04a73589a4a0d070661051d5d83b37fb9f9d746902a916d03e53ddd6c910451"
+    },
+    {
+      "index": 10,
+      "partition": "exploration",
+      "sample_id": "0c3e5ab84eae5e9def2089ff02aa6a9981442dfb60fde75c0b42794833a7c7cd"
+    },
+    {
+      "index": 11,
+      "partition": "exploration",
+      "sample_id": "cc6dad23e960696c026b2674b515c4eeab7b4f378928f82acab2777d3abd4aac"
+    },
+    {
+      "index": 12,
+      "partition": "exploration",
+      "sample_id": "7eaac30d96bbe55c346f8f5dbbcf3392be23e1d68ec9fd459020501b8c303e6e"
+    },
+    {
+      "index": 13,
+      "partition": "exploration",
+      "sample_id": "04de79ca4bee56958aad22db8ae73a6ae10f59b5d2334d5070eb9e5f8cfcbfd7"
+    },
+    {
+      "index": 14,
+      "partition": "exploration",
+      "sample_id": "80c1bf45aaa6eec8222804a3da3294ba1ce6246083a309a8cce8f5775dabef06"
+    },
+    {
+      "index": 15,
+      "partition": "exploration",
+      "sample_id": "92f8010ce3efb09b152e219a46621a55a77f89a2ffd3682b5cfc3d5d24b4ec49"
+    },
+    {
+      "index": 16,
+      "partition": "exploration",
+      "sample_id": "5c90bf355f2755019f5ca8ccaefe08452820a950b6080d39a002c1dd7ce0f424"
+    },
+    {
+      "index": 17,
+      "partition": "exploration",
+      "sample_id": "8f0cc81250146502f760893644616dab166262065911947cdbd9d7071c9b81b6"
+    },
+    {
+      "index": 18,
+      "partition": "exploration",
+      "sample_id": "8200647e6cd75153665d69e27adede80d5736830eb8def04a65d9e911741da19"
+    },
+    {
+      "index": 19,
+      "partition": "exploration",
+      "sample_id": "07ff94267f4e2f9a0362ebad6d6c865f0e50af4584e4e1f11dd13d2d983c764c"
+    },
+    {
+      "index": 20,
+      "partition": "exploration",
+      "sample_id": "036bccdd89098661b90999586329936426674cf2c19e9e683ff876bb4a53564a"
+    },
+    {
+      "index": 21,
+      "partition": "exploration",
+      "sample_id": "70880ae8d1a583e6bcfc399dd767e4c3fa7de2d4558caf9e7591cefc3e7d5cce"
+    },
+    {
+      "index": 22,
+      "partition": "exploration",
+      "sample_id": "87d3bfe765cd72b4fadb49933e75bdd1eed50370e16b7f888a8e6f2b6f5eb64b"
+    },
+    {
+      "index": 23,
+      "partition": "exploration",
+      "sample_id": "a227398351d7292ea670fb3bc3741f558c4fb515f61e59079f71921ea4de73f8"
+    },
+    {
+      "index": 24,
+      "partition": "exploration",
+      "sample_id": "67bc5ffa490f9425aa8d6ba02bfed653396245e612f99a30e3acd7bb79176233"
+    },
+    {
+      "index": 25,
+      "partition": "exploration",
+      "sample_id": "c0206f529f104069b35d41e8a50b583da0410b84a6f5612b11ce644372380bee"
+    },
+    {
+      "index": 26,
+      "partition": "exploration",
+      "sample_id": "a84d43ddc422791aeba0685f48e13eaf4e7638e8a0d6eecc75fc7201f90b7c25"
+    },
+    {
+      "index": 27,
+      "partition": "exploration",
+      "sample_id": "90667445583c9baf24baaf38a9a1661610d67592f744295e1853f084e3674d72"
+    },
+    {
+      "index": 28,
+      "partition": "exploration",
+      "sample_id": "db79a33aa005dc3b8941bf839b8b1c624170418a6d6f0ae663205d267b23db73"
+    },
+    {
+      "index": 29,
+      "partition": "exploration",
+      "sample_id": "e8e3ee29edfed4163ba1864b05ebb5e30b19ee5544f46ebcfa46eac64810408a"
+    },
+    {
+      "index": 30,
+      "partition": "exploration",
+      "sample_id": "c70d2e16a0d18e8455cccca148cc51efc128eb485deed5ba2e4a58207ceecf2d"
+    },
+    {
+      "index": 31,
+      "partition": "exploration",
+      "sample_id": "622151f4117c66a1b23c2fd435ac4e1071bb59942ce15836506184f951a08782"
+    },
+    {
+      "index": 32,
+      "partition": "exploration",
+      "sample_id": "6d30694044933999cf506efa66deccd713146b76240c9f3a79a49a33939b3411"
+    },
+    {
+      "index": 33,
+      "partition": "exploration",
+      "sample_id": "c0f794adbcc6a4585c5a34d9a9bf307d5c558f1e15c13c1c62f426330c9e8be8"
+    },
+    {
+      "index": 34,
+      "partition": "development",
+      "sample_id": "d1ef81aaad9326fcbce49e84ed73f19aa56f2e70b5448967baa1f3a1ac5821e6"
+    },
+    {
+      "index": 35,
+      "partition": "exploration",
+      "sample_id": "aa8d463a292ef28cd73834a545c15fdedfb3f9ba727550c4896f261ff0ddb6d3"
+    },
+    {
+      "index": 36,
+      "partition": "exploration",
+      "sample_id": "93c94af2300560d5686e13522605629fe768e546cdfaf9f2b176bd9c6e545d0b"
+    },
+    {
+      "index": 37,
+      "partition": "exploration",
+      "sample_id": "9101acee870be73e68af759912cf86dc922c44a270578fd18ece28cbec71b096"
+    },
+    {
+      "index": 39,
+      "partition": "development",
+      "sample_id": "d16a36e831a2694901f93a43ef97e2bf7d9b484ee6290335287a79900fad7e2a"
+    },
+    {
+      "index": 40,
+      "partition": "exploration",
+      "sample_id": "99ed92edf0c30bb6f6f4167e46d0680c897ed93310d34dca37552ba18199b579"
+    },
+    {
+      "index": 42,
+      "partition": "exploration",
+      "sample_id": "d9d71e50b85aa4b52642771b0ed027354e064bbea0c13c4cc4a389c2ee3e5bfe"
+    },
+    {
+      "index": 43,
+      "partition": "development",
+      "sample_id": "c53fd0c08d96f804e0b5a84e08c2685e8311442f60a7c39ac1af5f1f6533648a"
+    },
+    {
+      "index": 44,
+      "partition": "exploration",
+      "sample_id": "ca8b28d537acb1689e41d00f559c5344b8279cb493371b7e5c67b1c7c4ca119d"
+    },
+    {
+      "index": 45,
+      "partition": "development",
+      "sample_id": "9b24ee3b8b4890bf5ce98aa24c5cc5ea16c34f1f5cb3b4dd944fcc2df5e6186d"
+    },
+    {
+      "index": 46,
+      "partition": "exploration",
+      "sample_id": "5b7bd290fc0a53cc3465c910f88a3d1a3a770e41e58da42aa5fdf10c98d7dc5c"
+    },
+    {
+      "index": 47,
+      "partition": "exploration",
+      "sample_id": "ddb497c0a147191e5c713902ed34b5b7a2eda08d82311ff63888ec858166ae70"
+    },
+    {
+      "index": 48,
+      "partition": "development",
+      "sample_id": "6797f933c7202b76a6d1839a443cfa54a4eb0739687615609b92831101ffc774"
+    },
+    {
+      "index": 49,
+      "partition": "development",
+      "sample_id": "7df99edcacbb66a14ea5e981623ea50f15551dd5ca7e257e69f59c3a5eea2c83"
+    },
+    {
+      "index": 50,
+      "partition": "exploration",
+      "sample_id": "ab53ba02842ff404a28e792ce107d4666505f8e485f118f5ad1baf86d37853c0"
+    },
+    {
+      "index": 52,
+      "partition": "development",
+      "sample_id": "08164eb6e916de9c470390b96998e3d9e55585b2e1163d3183a4306b276e2720"
+    },
+    {
+      "index": 53,
+      "partition": "development",
+      "sample_id": "b53f30ea20b63e919d9df0a11bc40f4d77b1ff97d62487856f4d0595e598c262"
+    },
+    {
+      "index": 54,
+      "partition": "development",
+      "sample_id": "03781d911d435cb8e03e8723724c297b494405ec3487a3cb9d5488762d0b3a19"
+    },
+    {
+      "index": 55,
+      "partition": "exploration",
+      "sample_id": "bb6467f8563cac75baca1c34fd2373e9b07ed6a654ecd81a7bc002509cd434dc"
+    },
+    {
+      "index": 56,
+      "partition": "exploration",
+      "sample_id": "44d72f2cb39e60832a5d39c490c663c8be4ebdcb6156fba90c63c9c88aaf5b10"
+    },
+    {
+      "index": 61,
+      "partition": "development",
+      "sample_id": "cbb02cb5065013bc9c288e05fa7e1598fa61908cfc1a3e9ff7a695868a5fd164"
+    },
+    {
+      "index": 62,
+      "partition": "development",
+      "sample_id": "e4413d12c6861fc25326312c060580824aa53774453ac7f7cf306a748ea7d263"
+    },
+    {
+      "index": 63,
+      "partition": "exploration",
+      "sample_id": "ae192debc340bd4584e3b6edf72a67b84c9aae93fe618b58b45af16266bb7392"
+    },
+    {
+      "index": 64,
+      "partition": "development",
+      "sample_id": "7201feeb7d35e84f31050319adf297634a3c3b24ca5ae5bd9246e7b923921fe9"
+    },
+    {
+      "index": 65,
+      "partition": "exploration",
+      "sample_id": "9f11206914f0f57c40f8ab7b7cafeb351a2e0ba437d6cfa7865c4e5f6f744b6d"
+    },
+    {
+      "index": 66,
+      "partition": "exploration",
+      "sample_id": "5ca7dd162fb4b1e97a69dfc41ac1feabc2301d8320ccf8d89d8de2c81ccc282b"
+    },
+    {
+      "index": 67,
+      "partition": "development",
+      "sample_id": "ab216f9106af85e3978ecea1d50136f63f77c0a0e2efdb72db9c7d553460a2ac"
+    },
+    {
+      "index": 68,
+      "partition": "exploration",
+      "sample_id": "cf142c6361b067382fb27d1d45368ccdaebcf6d1da0cb38a950a7f45f89098f1"
+    },
+    {
+      "index": 69,
+      "partition": "exploration",
+      "sample_id": "855cb80cdf1fb0a78c7bab95add054a81833e2d861e6e6cc2119e5751671f1c5"
+    },
+    {
+      "index": 70,
+      "partition": "exploration",
+      "sample_id": "fdf2e4f7031453a4536e51ccb029a06ee56876b2bfad429e937383486eade62c"
+    },
+    {
+      "index": 72,
+      "partition": "development",
+      "sample_id": "9f8af2f613f2d4c1e8ac3e0205650c4731ab90d8e5de9f21c9f66196dd5560a6"
+    },
+    {
+      "index": 74,
+      "partition": "exploration",
+      "sample_id": "2a523ed907ebfd34f892e5513bcc423f2828eb39d17256d6cb520f27f55e5460"
+    },
+    {
+      "index": 75,
+      "partition": "exploration",
+      "sample_id": "b8c320f001964b198c9ffdabaf5575b30e99c58c6fb8fca0d59a8e40458587a7"
+    },
+    {
+      "index": 76,
+      "partition": "development",
+      "sample_id": "eb472c7bafbf5c434ccf633d33fa9ad29bc47b867eb9088101aa841c677d1ab0"
+    },
+    {
+      "index": 77,
+      "partition": "exploration",
+      "sample_id": "249e0cdc65bfdf5a787c8f02b4527a1dc3a375c36c7fb0d479d2d940bd650d22"
+    },
+    {
+      "index": 78,
+      "partition": "exploration",
+      "sample_id": "22711ffd4afeb9659a9e85e3e9b25b4b390138f0b2934b38d72f8f1a5cc72ce1"
+    },
+    {
+      "index": 79,
+      "partition": "exploration",
+      "sample_id": "fcc0ede2f33fc79eb00e4a729a85b20fcffc59731ea840600b5c7fe83b7919b2"
+    },
+    {
+      "index": 80,
+      "partition": "exploration",
+      "sample_id": "906372732a6f7c4043554f5f2679d0a16ef1dfe52df854f3378a0101bc578e37"
+    },
+    {
+      "index": 81,
+      "partition": "exploration",
+      "sample_id": "544c0d730e2993dbf0ab5203611775855fdaf04303f9191b4ded2ae061ba6876"
+    },
+    {
+      "index": 82,
+      "partition": "exploration",
+      "sample_id": "6e0290fedfb080b23667a4aa7b1bdb348ed8549c338320bc81ff902fce880b37"
+    },
+    {
+      "index": 84,
+      "partition": "exploration",
+      "sample_id": "712de66cf08c9d097480424583e3148704cccf99626e97d6af2e6a4d373d088f"
+    },
+    {
+      "index": 85,
+      "partition": "exploration",
+      "sample_id": "7ec598b443e0a5ab742033ed28b3d99fdcd34650144225b4de41aca7792cdde9"
+    },
+    {
+      "index": 86,
+      "partition": "exploration",
+      "sample_id": "fea47cbd6410c8cbe4d43a5855ee0f9d1ac26429c8441de3f5887c86eb6a0f20"
+    },
+    {
+      "index": 87,
+      "partition": "exploration",
+      "sample_id": "8037acd6b7d964717a6cc3faef5872f99b340f98426c7c9235a9c6361e6cd456"
+    },
+    {
+      "index": 88,
+      "partition": "exploration",
+      "sample_id": "5075d93a2e8c3b534b39e6e9fe897792de8f5e42a21eff401ce931be27b90a60"
+    },
+    {
+      "index": 90,
+      "partition": "exploration",
+      "sample_id": "2391ca9d2052bd3ccbf36a4ff72772720f94b824fa68a8ae572b8d87b795e13b"
+    },
+    {
+      "index": 92,
+      "partition": "exploration",
+      "sample_id": "9690604a3d387ddd94bfb8339b97c58d9ddbe9f4063cfed643c0706b1963c9db"
+    },
+    {
+      "index": 94,
+      "partition": "exploration",
+      "sample_id": "ec9ea29bb3c46531ce66ea851495bd603332937a2f9bda63f7eae04524ebbd32"
+    },
+    {
+      "index": 95,
+      "partition": "development",
+      "sample_id": "ec450fee4d5a12fae1c90ff66e6c5de9d668b088a6372e447d15c7054f01efe1"
+    },
+    {
+      "index": 98,
+      "partition": "exploration",
+      "sample_id": "73f9697d0d01cffaf1858a2250827ec9eeeaddf58d3790e503ceb89596f95180"
+    },
+    {
+      "index": 99,
+      "partition": "exploration",
+      "sample_id": "d70173fcde0013c1e3213cf83a9a37197422e1016b3f39bb94516d307bd52e41"
+    },
+    {
+      "index": 100,
+      "partition": "exploration",
+      "sample_id": "c2f4884863fc3dc5269a621fdbb4b475b54a2b8061b25e4eeeac25c4133af21f"
+    },
+    {
+      "index": 102,
+      "partition": "development",
+      "sample_id": "e14335375e14d1cf26736d8399d8f6ffa9871b6bc96418700c5e3485bf241d20"
+    },
+    {
+      "index": 103,
+      "partition": "exploration",
+      "sample_id": "50a6b10cc3d6762529b8f1f6197625d8ddbd86a0b704059cf4ec4783a0702dcd"
+    },
+    {
+      "index": 104,
+      "partition": "exploration",
+      "sample_id": "54d1c7af21ec16bb2bf6c9f81e2048cba00c89568193c3ed8fe4eac9853179c4"
+    },
+    {
+      "index": 106,
+      "partition": "development",
+      "sample_id": "8b7c828a7e50a8826b83f5bf558d56e248997d04f1f226a899dd59fc2eae88a7"
+    },
+    {
+      "index": 107,
+      "partition": "exploration",
+      "sample_id": "84b5eeaa7708cc6ca8a3f7772b7f44a0639c27e8f185bf963d44347830b49452"
+    },
+    {
+      "index": 108,
+      "partition": "exploration",
+      "sample_id": "a2c64f2779a04e83b94a2bac7847f590d9d6e48216132e355eb364c14822dbcd"
+    },
+    {
+      "index": 109,
+      "partition": "exploration",
+      "sample_id": "2a2ea1d3b8389f23474f63ae75ad49b3da6f718812735769aa8789685a31b446"
+    },
+    {
+      "index": 110,
+      "partition": "exploration",
+      "sample_id": "08d9822745281de2cf3fad9814fc71e8a460ba4aac2b6cb814ee63a68da67d26"
+    },
+    {
+      "index": 111,
+      "partition": "exploration",
+      "sample_id": "5c5eaee79d530ccd6ec0546b5affcb0afe4dc607e74f080b5424d6d553e2edfb"
+    },
+    {
+      "index": 113,
+      "partition": "development",
+      "sample_id": "064a6dfa5b58767e348a888b869f96c18a5ea3fd8f3b3cb464acd21575379f0b"
+    },
+    {
+      "index": 114,
+      "partition": "development",
+      "sample_id": "338cdfe8abe18dd045d374b9925d267e172c20e2505c5500586fef382a806a68"
+    },
+    {
+      "index": 115,
+      "partition": "development",
+      "sample_id": "9197eb1cc87958babcdd1854969021d0dcdc2f2e23eda218473330ef4667348f"
+    },
+    {
+      "index": 116,
+      "partition": "development",
+      "sample_id": "7c0c8465609e38b8990359804f9cedca2569c6aeffbcabfd71045b8f91505210"
+    },
+    {
+      "index": 117,
+      "partition": "exploration",
+      "sample_id": "83138602f9271445deb02eaec3f53b3231430d4928ebe55937f1fa96237f2d11"
+    },
+    {
+      "index": 119,
+      "partition": "exploration",
+      "sample_id": "415041b7a84c6ea30b8537c34d398b9f4eb82d84baaffc76bd157ab0270120f6"
+    },
+    {
+      "index": 120,
+      "partition": "exploration",
+      "sample_id": "a42ff342abff159bac91b28aa26f558cdde6f6c3a9d4b0cdf33f18f05c47c4e5"
+    },
+    {
+      "index": 122,
+      "partition": "exploration",
+      "sample_id": "1da2732a1c8875a48801b8a00305139efd0f045ddd5a4107b9ec70bde76a2655"
+    },
+    {
+      "index": 124,
+      "partition": "exploration",
+      "sample_id": "2ea451a5c01ccffc9f30c797d1dfda27abe14a199ae5d1551b95cb3064e85f75"
+    },
+    {
+      "index": 127,
+      "partition": "development",
+      "sample_id": "c45b23cc0320fc1b5e814cefe23819920254068771dde96a954fb71dee6747d6"
+    },
+    {
+      "index": 128,
+      "partition": "exploration",
+      "sample_id": "83ca6df836fed6284b020603b0e193fdbe4098d8d29a3024837f3a69c93d7232"
+    },
+    {
+      "index": 129,
+      "partition": "exploration",
+      "sample_id": "73d0e58a3c5ed18dbcb9017ef391fd5d627ceec1a63ecfec46f87b70e8fcbfc9"
+    },
+    {
+      "index": 130,
+      "partition": "development",
+      "sample_id": "c1bac06f22144b60d2fcbd48441684b464055828e7db646be006dcd805e73194"
+    },
+    {
+      "index": 131,
+      "partition": "development",
+      "sample_id": "4a416957f7e2688d8f33e477d4ac5e29e06ef7eee849ef93e40ae7da1f6ec5cf"
+    },
+    {
+      "index": 132,
+      "partition": "exploration",
+      "sample_id": "604fbcae575c40f31da6035ca96af82f41aaf22dde11cbc0a445deb3e8da120e"
+    },
+    {
+      "index": 133,
+      "partition": "development",
+      "sample_id": "2582359f3a0cb2ca1237457f250c1e615f27c779dd1b765636b84eb96cdb21c5"
+    },
+    {
+      "index": 134,
+      "partition": "exploration",
+      "sample_id": "17139cd8bed7927a7dcf79a41c999296bc218cbe2e65d4d5aac9eed0f44adf9c"
+    },
+    {
+      "index": 135,
+      "partition": "exploration",
+      "sample_id": "74aff421c50e673b4211dd12070bd62dea2845cdd0b0423538f33c6109219e37"
+    },
+    {
+      "index": 136,
+      "partition": "exploration",
+      "sample_id": "dcebf9fcf0a17efa95a4c58c0d3f7cf09c8679c9b6739ccf9b6473562495097e"
+    },
+    {
+      "index": 137,
+      "partition": "development",
+      "sample_id": "a54af8adc4a1d0c583d8c5bb2035e31e940b28721128a3e04926e4e914efa134"
+    },
+    {
+      "index": 138,
+      "partition": "exploration",
+      "sample_id": "8612a0b8e88e1150a73b11bd2ff0d6f42a18314a314414945f21af9cee238d37"
+    },
+    {
+      "index": 139,
+      "partition": "exploration",
+      "sample_id": "94de1fd7b60cf0187e50c53bdfec41b01e93a20c76a75e99295a77fd4ac7f98b"
+    },
+    {
+      "index": 140,
+      "partition": "exploration",
+      "sample_id": "9e766db773b73ddf785642e3307742f41cefc2a36bb6c055f9aa88514f032d66"
+    },
+    {
+      "index": 141,
+      "partition": "exploration",
+      "sample_id": "f810241de1b81fb940183c6ec5d63b32792ed2ba01180290dfb1c32715ef0f9a"
+    },
+    {
+      "index": 142,
+      "partition": "exploration",
+      "sample_id": "d32f3b455b0d29bca74b3247af09726452d14e3ccb51296f84e53ec720ad17b9"
+    },
+    {
+      "index": 144,
+      "partition": "exploration",
+      "sample_id": "7f25cefa8282fda221048694acd2dae3a2460399f5f7a618fb54f9b0560781ac"
+    },
+    {
+      "index": 145,
+      "partition": "exploration",
+      "sample_id": "4bc62eb514eca496f770fbbf46a2fdbadbf4b3187f7daacff5e75af9743db73c"
+    },
+    {
+      "index": 146,
+      "partition": "development",
+      "sample_id": "1ebe3f236621eac00834b896c31a5f49be3a5c56fa9680af9b923d0b0625f767"
+    },
+    {
+      "index": 148,
+      "partition": "exploration",
+      "sample_id": "267a451c0c0eabdeb7749a27d01f7bb0537dad554da312dbca4bafb8a7eaa153"
+    },
+    {
+      "index": 149,
+      "partition": "exploration",
+      "sample_id": "ae9e4ae29ed277cb22828924f519995064a3898b3d2fe75a7a4cfce249b2b839"
+    },
+    {
+      "index": 150,
+      "partition": "development",
+      "sample_id": "09e54da761b47d8b86aed804cbfa4681679cc0eeb95e5500bcef40a93df5f2d5"
+    },
+    {
+      "index": 151,
+      "partition": "exploration",
+      "sample_id": "7d884404a06fc979347c51335e8f599dd5d8fcff39f7d73b2dca37d2b1b61938"
+    },
+    {
+      "index": 152,
+      "partition": "development",
+      "sample_id": "05e37a4cc1358f7d170cb9cf249cb8702b5766513ca83b45964f3e3203f34448"
+    },
+    {
+      "index": 155,
+      "partition": "exploration",
+      "sample_id": "b36ae6d00e2c6225976838baef050582a087c3e68f21de001b7fe414b3fada6b"
+    },
+    {
+      "index": 156,
+      "partition": "exploration",
+      "sample_id": "150b89839cb82598fcece030ba1750d483bab4e2262c0dc01905db56bb02c0a4"
+    },
+    {
+      "index": 167,
+      "partition": "development",
+      "sample_id": "1cd4dc281147308f1e44a3d194c9e1a68b420886797d473a360447eea60ab4b4"
+    },
+    {
+      "index": 169,
+      "partition": "development",
+      "sample_id": "b89c5432eab634d0e4b194e93b813ab6e317710b6fcf18e72b15dacef622c4a2"
+    },
+    {
+      "index": 171,
+      "partition": "development",
+      "sample_id": "45e1933b5c7ee704e971258bed07c3ee4a1bc01ad4e654ee9656e08f62c4aeec"
+    },
+    {
+      "index": 173,
+      "partition": "development",
+      "sample_id": "4a4ca51444332f704bb2687a33d43541505d83747f5b2e215e22e85091b4a055"
+    },
+    {
+      "index": 177,
+      "partition": "development",
+      "sample_id": "b3cef939811a98c24e819689ed1cc97f68c39b3ae05fc3c3e85ba830eedb43e8"
+    },
+    {
+      "index": 181,
+      "partition": "development",
+      "sample_id": "6598c58192c9f3beba6cd744261dc9130d3c6411fc96636bf87f5682eca87911"
+    },
+    {
+      "index": 182,
+      "partition": "development",
+      "sample_id": "e62a12a028792e55267b9d2b4387e0e50a5f5feb8fe081cae5dfc97ea589e5ac"
+    },
+    {
+      "index": 190,
+      "partition": "development",
+      "sample_id": "eaed86b8a76d5e6079b6092ba05c2fcdb15f6f31edf58a8b02f4a468173f0463"
+    },
+    {
+      "index": 191,
+      "partition": "development",
+      "sample_id": "1dac98f75965116ef51bdef0014cfd5afda1a53c04d74ddae5712ca1b3abcceb"
+    },
+    {
+      "index": 196,
+      "partition": "development",
+      "sample_id": "2a0785889e3b45f2e5e4e15f3662190e109614b8d55a6786cfa8cee3bd267376"
+    },
+    {
+      "index": 199,
+      "partition": "development",
+      "sample_id": "f7a56e1272fe340b6fd6615b0fcded27b41ad648120ff38f2095b12181dd8ebc"
+    },
+    {
+      "index": 201,
+      "partition": "development",
+      "sample_id": "8d373bbcbdbdc022c1be1959c48518f77909ba8546475e2e7de35e671301adae"
+    },
+    {
+      "index": 206,
+      "partition": "development",
+      "sample_id": "4043a0855fb228741a99bb89afd019e6e93ec70c0e4876ad63e5eee77e04f717"
+    },
+    {
+      "index": 207,
+      "partition": "development",
+      "sample_id": "d4d8923d461e88f5bf20ececf129a883a60519a1cd67ce4ddeb60bc10caacba9"
+    },
+    {
+      "index": 212,
+      "partition": "development",
+      "sample_id": "44df514d42e50d012a297d297703328147632b0d52857ba7aa8392f52e4467ef"
+    },
+    {
+      "index": 213,
+      "partition": "development",
+      "sample_id": "e024eba231700c12788dca5f0836c8b9c69080bb62adba581350deda84783806"
+    },
+    {
+      "index": 217,
+      "partition": "development",
+      "sample_id": "ac040cb4d8041b09f6abb62dee5f07acb621df51bdfe7415ce210f3e5bb7b8d7"
+    },
+    {
+      "index": 219,
+      "partition": "development",
+      "sample_id": "82f110c89d067eb808511c4557931556b366010f52bb366bef7f052ebe807288"
+    },
+    {
+      "index": 225,
+      "partition": "development",
+      "sample_id": "362482140dda51ed93c4e94028960d3f67b2d571aafa1806348d7aedde2f6344"
+    },
+    {
+      "index": 242,
+      "partition": "development",
+      "sample_id": "e300506d429b43a6c9a92a8f940f66594d6f7448765ca188753f2b3a913e9050"
+    },
+    {
+      "index": 244,
+      "partition": "development",
+      "sample_id": "0b88f6711d410c0a1cf97ef811e971609cfadbf40be2a4cd0e5fa3929ad68d5a"
+    },
+    {
+      "index": 254,
+      "partition": "development",
+      "sample_id": "c226ab2e3062e8967b86e4314e8823f35802fc3684f064b1de67f3f8e37a066c"
+    },
+    {
+      "index": 256,
+      "partition": "development",
+      "sample_id": "e8ac3613cfbab816984d6d581303c94e7e4785b8f95a731c886923ff35b0b185"
+    },
+    {
+      "index": 257,
+      "partition": "development",
+      "sample_id": "93e555b5559bb55d762003dbf354159293a8be142e1b63e503152324f182035a"
+    },
+    {
+      "index": 277,
+      "partition": "development",
+      "sample_id": "1ea46e5dfb38db289e7f07ae3a23a3219a5e07e1107295f1e85bafe3e27e4080"
+    },
+    {
+      "index": 279,
+      "partition": "development",
+      "sample_id": "558c1317c4a4343fbf8fc3630125476546b46a3d90a1dd8334c6d6e4034047c4"
+    },
+    {
+      "index": 283,
+      "partition": "development",
+      "sample_id": "d5ec9e4148ffdda92d37c622a3d4026d92d4398af46634a7538af95ec89e345b"
+    },
+    {
+      "index": 284,
+      "partition": "development",
+      "sample_id": "f95052eda0eed3c4a33c89bd10726067d86c9ab058a9d568107840af99942fe0"
+    },
+    {
+      "index": 287,
+      "partition": "development",
+      "sample_id": "3e0e58e673a5f0721ce7e69adc51b0548affaa782b7e01171a346429f4b26823"
+    },
+    {
+      "index": 288,
+      "partition": "development",
+      "sample_id": "b27675d01d58f08e55e21fddf3f85795763dbf48355a2c988af5a65734656fec"
+    },
+    {
+      "index": 293,
+      "partition": "development",
+      "sample_id": "c3fb27cfe45c423b34241252ceeb975dae79f6e847a3a580aa2a57a9f22dcbd2"
+    },
+    {
+      "index": 300,
+      "partition": "development",
+      "sample_id": "2a22a8b57f43da8ecc294b3c631fb9b9db4dd14481ccdb54a77e8ada6185d588"
+    },
+    {
+      "index": 307,
+      "partition": "development",
+      "sample_id": "0489a0867c8cc51b2395597a349d81d4fe63d66ab5b3aee8c1ad912131877a1a"
+    },
+    {
+      "index": 308,
+      "partition": "development",
+      "sample_id": "1f0f7c21f7fbff68ea9e5cc16b5c4ee78b88f0347c38393139fc2cf16e52b41a"
+    },
+    {
+      "index": 314,
+      "partition": "development",
+      "sample_id": "92f2353d8f381b5635e6af332e0bfd148e92c17a44279c04bfa7ca51b353e800"
+    },
+    {
+      "index": 330,
+      "partition": "development",
+      "sample_id": "9c6e2d52b902126bfa649c1e078a8c3103459571037748022326f2087b70df6e"
+    },
+    {
+      "index": 332,
+      "partition": "development",
+      "sample_id": "59043cebbc5db15abb25367b1a4630774b2f8b68286de6a2608306699eb80171"
+    },
+    {
+      "index": 353,
+      "partition": "development",
+      "sample_id": "429a24cade0d40cf286d961c0ea4134aa49d042820de79b3ac3d4bcfb3d1bf0d"
+    },
+    {
+      "index": 356,
+      "partition": "development",
+      "sample_id": "641979b432759e7c7c35f52e5b56768c7b4f14c21b2a78750bb7b0a28906f6c9"
+    },
+    {
+      "index": 362,
+      "partition": "development",
+      "sample_id": "2de3f4ce63646e3d927ab055874c1212dae34576743b74c0f628cdec928a2e0d"
+    },
+    {
+      "index": 371,
+      "partition": "development",
+      "sample_id": "669b0aad0ef2c71c85b0bed26e062d09967925c69b4b7e31b5b1f43af7c04148"
+    },
+    {
+      "index": 372,
+      "partition": "development",
+      "sample_id": "b0c59929a45e2c18ca0e40229192eabcdd79a28175de6c63678c0c2da8c07e53"
+    },
+    {
+      "index": 374,
+      "partition": "development",
+      "sample_id": "c2777ea1cba5ad0ce89de1b3b49f6d5cd28b85516d3bd5dbaebbc5e4d4cd3ba9"
+    },
+    {
+      "index": 377,
+      "partition": "development",
+      "sample_id": "aaf21d28e3facf0165615aed1cf3d09fb8bed705f919b9f8b9139cc976f21e4e"
+    },
+    {
+      "index": 379,
+      "partition": "development",
+      "sample_id": "8aa3005072e80222759a1087dba7e00688c16231504bdb4f4826a9631895aecc"
+    },
+    {
+      "index": 380,
+      "partition": "development",
+      "sample_id": "9021f2112a2cd956e9a526206d234cdf797e17ee3c14216547cf2ed44ea0eced"
+    },
+    {
+      "index": 392,
+      "partition": "development",
+      "sample_id": "f00298df5e77414b0fe5d605f06cb46db78a4bc187cd4a27be5df49d4e1e831d"
+    },
+    {
+      "index": 394,
+      "partition": "development",
+      "sample_id": "4ab67c633eb35286ac8e6391bd1064a20d6c2d78ebacac7c6c62c6961b666f27"
+    },
+    {
+      "index": 395,
+      "partition": "development",
+      "sample_id": "e3f2897e3455e925a277df4f6800b9ef28d4428a55d128e3b2d08a31b29eb04e"
+    },
+    {
+      "index": 396,
+      "partition": "development",
+      "sample_id": "32f97c100a4fdc485b991e0174cb750af539e6ade67c449375fc8ca9a02e5912"
+    },
+    {
+      "index": 397,
+      "partition": "development",
+      "sample_id": "65674b98d51bd5f75c84e211bf56e38817f2407e8396e1939653f914b2cc0959"
+    },
+    {
+      "index": 403,
+      "partition": "development",
+      "sample_id": "02104a2539f6d40eba7ba02b445af856006eb414123a0efc47783ee73bb8094a"
+    },
+    {
+      "index": 415,
+      "partition": "development",
+      "sample_id": "7c1976ef77202972dc5996c52f414add382f17b226a064ba141bbd7f2aa18757"
+    },
+    {
+      "index": 417,
+      "partition": "development",
+      "sample_id": "c8867b75beb7c36f6fa47d3fbdfc14949da3b29e441e591461fce765614924b4"
+    },
+    {
+      "index": 422,
+      "partition": "development",
+      "sample_id": "cb0c12990e5641dcc4cd597989c1f195a3223e17ac7bd2e0dfd0a529d7889f56"
+    },
+    {
+      "index": 425,
+      "partition": "development",
+      "sample_id": "33663faf61d1b1b258111a357e1cb14be4954fb7bfe9c810056daa77b5f5278a"
+    },
+    {
+      "index": 435,
+      "partition": "development",
+      "sample_id": "b85043e32dcc898fe090d93df9e310769f5204171bd5c86968a5b8db49f3d686"
+    },
+    {
+      "index": 438,
+      "partition": "development",
+      "sample_id": "f0ec563ca483f5842aef4ad4f1cb4b3a973ef8f685e7e279c79e169305eb78ee"
+    },
+    {
+      "index": 439,
+      "partition": "development",
+      "sample_id": "e8f08a444c7d1624951136e8e0d788b6b2660514aec6c6be8be7f80a8b9cf554"
+    },
+    {
+      "index": 443,
+      "partition": "development",
+      "sample_id": "1d427375398e937615004a5728c7f6e40ea542dc49e50579cb01f068ab32f46e"
+    },
+    {
+      "index": 452,
+      "partition": "development",
+      "sample_id": "192e16dbc9acfab06c6ec989002fc4f1442c3465d57c719177277b9e38c82a43"
+    },
+    {
+      "index": 460,
+      "partition": "development",
+      "sample_id": "59dff48548695382edcce80ccb3260cc00fddd327590819a20ba33275e4f41a5"
+    },
+    {
+      "index": 466,
+      "partition": "development",
+      "sample_id": "fe959542e29e933a17bfba1a90718dff6a3ee9cf036f72b72f4956ba028006c8"
+    },
+    {
+      "index": 474,
+      "partition": "development",
+      "sample_id": "78db4c5110477dc39b21a9303318258513b1886e71009926021bd62e7d7b0eb2"
+    },
+    {
+      "index": 478,
+      "partition": "development",
+      "sample_id": "bdbc88154c658407b7ea8c38146b453c5f3d322f399c16f110a949f2cbae713f"
+    },
+    {
+      "index": 487,
+      "partition": "development",
+      "sample_id": "565185b476861297537ebb6adb83fa47f3291942693cf5220a986c2f74157993"
+    },
+    {
+      "index": 492,
+      "partition": "development",
+      "sample_id": "c8e55ae404870f034f4fd36ae916a9e282bd733008ee6d31b4f9743a6299b3a8"
+    },
+    {
+      "index": 495,
+      "partition": "development",
+      "sample_id": "0c72ea9a83b47fc536d2aa14ee10dbb2c16802f1c95ffe56a12370fd4e025a84"
+    },
+    {
+      "index": 516,
+      "partition": "development",
+      "sample_id": "5575151b828b6822e8249d6c551475bf89def5d744c840e8abc46959f3131cc3"
+    },
+    {
+      "index": 522,
+      "partition": "development",
+      "sample_id": "2e9b2e3f9867cfe58d459e127af1dc1798dd410c83df0050be14a8d4cfea4796"
+    }
+  ],
+  "source_sha256": {
+    "docs/phase1d_analysis_plan.md": "84895d437aa1031a6a2adc0bcb1c2e1d82e0616a1f2a8b70ef52792e53d69e19",
+    "scripts/profile_phase1.py": "5c68ce39599aee70f4ae8498a748c927729c83ab01519a47946bdb2f8624b241",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/timing.py": "08188113f9dd8cb787861f950fbd0d9e235fce0bc4d5681620bf3cdd524209f8",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361"
+  },
+  "sources": {
+    "dataset_repo": "hazyresearch/ncm-datasets",
+    "dataset_revision": "6580ba41a4b0a976dde876fbe84d25327617b0e6",
+    "include": "sudoku/hard/*",
+    "model_repo": "hazyresearch/ncm-checkpoints",
+    "model_revision": "d342ce8aaea58830eef3b8ad473664673e41f692",
+    "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203"
+  },
+  "started_utc": "2026-10-21T03:30:38.500949+00:00",
+  "status": "complete",
+  "timed_records": 1000,
+  "warmup_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}

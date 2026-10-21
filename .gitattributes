@@ -11,3 +11,4 @@
 *.txt text eol=lf
 *.lock text eol=lf
 *.sha256 text eol=lf
+*.csv text eol=lf

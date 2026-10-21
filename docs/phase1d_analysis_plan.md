@@ -1,0 +1,18 @@
+# Phase 1D analysis and profiling plan
+
+**Declared:** October 20, 2026 (America/Toronto), before Phase 1D trajectory analysis or profiling.
+
+The frozen experiment protocol and partitions remain unchanged. This document specifies the implementation of its existing offline gate.
+
+- Analyze all 1,000 exploration and 400 development trajectories descriptively, separately by partition.
+- Profile exactly the first 100 indices of each permitted partition at batch size 1, after ten exploration-only warmup requests. Retain all five repeats per puzzle. Batch-size-one outcomes are recorded independently of the earlier batch-128 collection, and differences are disclosed.
+- Candidate: first complete, grid-valid, clue-consistent output, inspecting every level from 1 through 12. No tuned threshold, inspection-schedule search, stochastic extension, or controller is introduced.
+- Use development profiling identities for the gate; exploration profiling is descriptive corroboration. Report all fixed-depth quality points and a development-selected quality-feasible fixed-depth cost comparison, disclosing selection on development.
+- Observe unchanged full generation with CUDA-event markers at the start, immediately before each next-level codebook embedding (after the preceding sample is ready), and after final concatenation. No internal synchronization, model output changes, or halting. Reconstruction/feedback needed for level k is charged to generation level k; standalone monitoring reconstruction is charged separately.
+- Time input preparation, prefix assembly, full-resolution reconstruction from each prefix, GPU decoder/token selection, host transfer, text decoding, reference-free verifier, feature extraction, and first-valid decision separately with isolated synchronization where required. Reference scoring and serialization are excluded. Feature extraction is profiled but omitted from the verifier-only candidate because it does not use those features.
+- Full baseline estimate: input preparation + full generation + one final reconstruction, token decode, transfer, and text decode. Candidate estimate: input preparation + generation through exit + every scheduled prefix assembly/reconstruction/decode/transfer/text/verifier/decision through that exit. At level 12 reuse full generated-code concatenation. Never-valid inputs incur all generation and all 12 checks.
+- Generation uses the sum of CUDA-stage times plus nonnegative full-generation wall-time residual, charged once to every prefix. Preserve GPU/host measurements and instrumentation calibration. Include instrumentation in the primary diagnostic estimate; report sensitivity to a calibrated event/hook allowance and mark a gate change inconclusive.
+- Report estimated means, medians, p95, solve-rate differences, false accepts checked independently, skipped levels, and skipped generated code positions. No component sum is an observed online latency or speedup.
+- Paired 95% puzzle-identity bootstrap: 10,000 resamples, seed 20261020; resample puzzle clusters while retaining all five repeats. Report relative reduction of mean estimated cost plus primary solve-rate difference uncertainty.
+- Apply the frozen 5% worthwhile-reduction / zero empirical quality-loss / zero false-accept gate. Missing costs or unresolved measurement sensitivity support inconclusive. Correctness/parity failure is an unresolved-correctness no-go. Do not expand the budget or open either final holdout.
+- Preserve the original baseline discrepancy (+0.15 percentage points versus the paper), all failures, coverage gaps, and the distinction between descriptive batch-128 trajectories and batch-one profiling. Stop after the report; Phase 2 requires another work order.

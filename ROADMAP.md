@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
 **Updated:** October 20, 2026
-**Current position:** Sections 6-7 and Phases 1A-1C are complete; Phase 1D has not started.
-**Next milestone:** Phase 1D - cost profiling, plots, and the Phase 1 decision.
+**Current position:** Sections 6-7 and Phase 1 (1A-1D) are complete. Phase 1 decision: no-go.
+**Next action:** Stop after the Phase 1 report. Phase 2's go entry requirement is not met; later work requires a subsequent work order.
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -11,7 +11,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | Phase | Outcome | Current status | Entry requirement |
 | --- | --- | --- | --- |
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
-| 1 | Correct per-level trajectories, cost estimates, and a decision report | In progress; 1A-1C complete, 1D next | Recorded operational baseline |
+| 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
 | 2 | Measured online verified stopping | Conditional; not started | Phase 1 go decision and a subsequent work order |
 | 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
@@ -105,20 +105,20 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ### 1D — Cost profiling, plots, and the Phase 1 decision
 
-**Status:** Not started; next. Phase 1C is complete.
+**Status:** Complete - October 20, 2026. Phase 1 decision: no-go (limited early-exit opportunity; correctness checks passed).
 **Primary files:** `timing.py`, `report.py`, `tests/test_timing.py`.
 
-- [ ] Profile the unchanged generator separately from reconstruction, decoding, transfers, validation, feature extraction, and policy overhead.
-- [ ] Follow the frozen diagnostic budget: first 100 exploration and first 100 development indices, ten exploration-only warmup requests, five timed repeats per profiled input.
-- [ ] Keep component diagnostics separate from headline end-to-end benchmarks.
-- [ ] Compute solve rate by level, first-valid distribution, valid-to-invalid transitions, and never-solved fraction.
-- [ ] Include representative early-success, late-recovery, and never-solved trajectories when such cases exist.
-- [ ] Report skipped levels/code work separately from estimated net latency savings.
-- [ ] Charge never-valid trajectories full generation work and every scheduled monitoring check.
-- [ ] Calculate paired 95% bootstrap intervals using 10,000 puzzle-identity resamples, seed `20261020`, retaining each puzzle's repeats.
-- [ ] Produce the trajectory table, solve-rate plot, diagnostic-cost evidence/coverage, and `results/phase1/summary.md`.
-- [ ] Document limitations, failures, discarded runs, the paper-number discrepancy, and any unavailable cost estimates.
-- [ ] Apply the predeclared gate below, update this roadmap, and stop after the report.
+- [x] Profile the unchanged generator separately from reconstruction, decoding, transfers, validation, feature extraction, and policy overhead.
+- [x] Follow the frozen diagnostic budget: first 100 exploration and first 100 development indices, ten exploration-only warmup requests, five timed repeats per profiled input.
+- [x] Keep component diagnostics separate from headline end-to-end benchmarks.
+- [x] Compute solve rate by level, first-valid distribution, valid-to-invalid transitions, and never-solved fraction.
+- [x] Include representative early-success, late-recovery, and never-solved trajectories when such cases exist.
+- [x] Report skipped levels/code work separately from estimated net latency savings.
+- [x] Charge never-valid trajectories full generation work and every scheduled monitoring check.
+- [x] Calculate paired 95% bootstrap intervals using 10,000 puzzle-identity resamples, seed `20261020`, retaining each puzzle's repeats.
+- [x] Produce the trajectory table, solve-rate plot, diagnostic-cost evidence/coverage, and `results/phase1/summary.md`.
+- [x] Document limitations, failures, discarded runs, the paper-number discrepancy, and any unavailable cost estimates.
+- [x] Apply the predeclared gate below, update this roadmap, and stop after the report.
 
 **Gate:** Minimum worthwhile relative mean end-to-end latency reduction is 5%; maximum empirical solve-rate loss for verified stopping is zero percentage points; maximum false verifier accepts is zero.
 
@@ -130,10 +130,12 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 **Acceptance:** An independent developer can reproduce the trajectory table, plot, and decision from the recorded baseline, manifest, protocol, commands, and profiles. An artifact-complete negative/inconclusive report closes Phase 1 without requiring an online patch. Missing measurements support an inconclusive result, not a measured negative speedup.
 
+**Evidence:** [Phase 1 report](results/phase1/summary.md), [diagnostic contract](docs/phase1d_profiling.md), [completion record](results/phase1/phase1d_validation.json), full budget coverage, and 186 passing tests. No-go closes Phase 1; Phase 2 remains unstarted.
+
 ## Phase 2 — True online verified stopping
 
 **Status:** Conditional; not started.
-**Entry:** Phase 1 go decision and a subsequent Phase 2 work order.
+**Entry:** Phase 1 go decision and a subsequent Phase 2 work order. The current Phase 1 result is no-go, so this entry requirement is not met.
 **Design mapping:** Sections 5B, 8.4–8.6, 9 Phase 2, and 10–12.
 
 ### 2A — Minimal online hook and parity
@@ -246,7 +248,7 @@ For each completed milestone, add a short record with its date, final status, ch
 | Phase 1A | Complete | [59 passing tests and contract](docs/phase1a_validation.md) |
 | Phase 1B | Complete | [88 passing tests; final-output parity 32/32](docs/phase1b_partial_decoding.md) |
 | Phase 1C | Complete | [1,400 trajectories / 16,800 level records; 140 passing tests](docs/phase1c_collection.md) |
-| Phase 1D | Not started - next | Phase 1C accepted; profiling and go/no-go/inconclusive report pending |
+| Phase 1D | Complete - no-go | [Report](results/phase1/summary.md); 186 passing tests; full frozen diagnostic coverage |
 | Phases 2–5 | Not started | Subject to the entry conditions above |
 
 ### Phase 1A completion - October 20, 2026
@@ -268,3 +270,11 @@ Evidence: [adapter contract, commands, and limitations](docs/phase1b_partial_dec
 Implemented the strict-config offline collector, selective manifest-gated dataset reader, versioned JSONL schema, current/past feature tracker, and model-free saved-file verifier. The 32-input smoke collection passed validation before expansion to all 1,000 exploration and 400 development identities. Full output contains **1,400 complete trajectories / 16,800 level records**. All **140 tests passed in 4.69 seconds**, and native Windows independently revalidated both saved files.
 
 Evidence: [collection commands and contract](docs/phase1c_collection.md), [completion record](results/phase1/phase1c_validation.json), [full trajectories](results/phase1/trajectories.jsonl), [provenance](results/phase1/trajectories.metadata.json), and [validation](results/phase1/trajectories.validation.json). Both sealed partitions were excluded; no sealed token rows were materialized. References and offline diagnostics remain separate from inference-time features. Timings are null with zero measured coverage. Upstream, original baseline evidence, frozen protocol/partitions, and environment lock are unchanged. Phase 1D is next; no profiling, aggregate opportunity analysis, online stopping, or controller training occurred.
+
+### Phase 1D / Phase 1 completion - October 20, 2026
+
+Completed the frozen diagnostic budget: first 100 exploration and 100 development identities, ten exploration-only warmups, five repeats each (1,000 timed requests / 12,000 profiled levels). Added separate generation/component profiles, instrumentation calibration and sensitivity, the 16,800-row trajectory table, four scientific plots, independent verifier checks, fixed-depth comparisons, and a 10,000-resample paired identity bootstrap retaining repeats. All **186 tests passed in 7.25 seconds**.
+
+**Decision: no-go for limited opportunity.** None of the 1,400 audited inputs had a valid solution at levels 1-11; valid-to-invalid transitions were zero. Every-level verified stopping skipped zero levels/codes and added **44.18% estimated development cost**, 95% interval **43.45%-45.02%**. Correctness/parity checks passed; zero false accepts and zero quality loss. Calibration sensitivity also yields no-go. Final solved counts: 854/1,000 exploration and 349/400 development. Early-success and late-recovery cases were absent and were not fabricated.
+
+Evidence: [report](results/phase1/summary.md), [profiling contract](docs/phase1d_profiling.md), [analysis plan](docs/phase1d_analysis_plan.md), [completion record](results/phase1/phase1d_validation.json), [analysis](results/phase1/analysis.json), and [profile provenance](results/phase1/profiles/run.json). Both holdouts remain excluded; the frozen protocol/partitions, original baseline/collection evidence, environment lock, and upstream are unchanged. This closes Phase 1 with an artifact-complete negative finding. No online latency claim, halting patch, training, or Phase 2 work occurred. Phase 2's go entry condition is not met; the full Phase 0-5 plan is preserved.

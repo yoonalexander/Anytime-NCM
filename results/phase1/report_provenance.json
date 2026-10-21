@@ -1,0 +1,52 @@
+{
+  "artifacts_sha256": {
+    "analysis.json": "c43a885fc557400c7997cd69c03bc42d740f39444df1d5fa175b7aecbf0ff1cc",
+    "estimated_cost_comparison.png": "cb205c427c8c972e3e9338eeede1bffc42d18f734bb29d05de518d9b5db1cccc",
+    "first_valid_distribution.png": "d07d25dc6e56373e2ed1238032bf5167607f47133c9f5531888565ffe607aab4",
+    "representative_trajectories.png": "e546d120f1c2bd87090c5843ce8b8c4d1d1b26ea626f1dfb653018f35bc206a3",
+    "solve_rate_by_level.png": "f0e34324cc32ca4185b48e20197dca859e2b2ca6e2732e1899b1227e10553db0",
+    "summary.md": "7ddbe083e540467ef8cee53a75d7266ab47c30b8a7465369d4e916ae605f8a25",
+    "trajectory_table.csv": "2e227ebc50a028d4701f970f4c70026b5c7b067bc770913a84635f3e814f3fd3"
+  },
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20261020,
+    "unit": "paired identity; all five repeats retained"
+  },
+  "collection_validation": {
+    "level_record_count": 16800,
+    "metadata_path": "results/phase1/trajectories.metadata.json",
+    "partition_counts": {
+      "development": 400,
+      "exploration": 1000
+    },
+    "partition_manifest_sha256": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "protocol_sha256": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "record_count": 1400,
+    "run_id": "phase1c_exploration_development",
+    "source_sha256": {
+      "scripts/collect_trajectories.py": "89698a0e68ea0edaba6dec8dd85297798e70bfd1f4a0f37ef5185ed39542afb8",
+      "src/anytime_ncm/cli.py": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54",
+      "src/anytime_ncm/collect.py": "4fd45677b4d5d4a801e6f67b9abcd6a41ed96e715f61e03062ca42c267b653c9",
+      "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+      "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+      "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+      "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+      "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361"
+    },
+    "status": "complete",
+    "timed_level_records": 0,
+    "trajectory_sha256": "2baf2948df953d7f379f9b359091c9a40d31fe9ecafe29f99305ff8bb3e0f5d9",
+    "unavailable_timing_level_records": 16800
+  },
+  "command": "scripts/report_phase1.py --profiles results/phase1/profiles --output results/phase1",
+  "profile_components_sha256": "56497a90c5836d4d5317e33a36deaf10aeb233eb55e65641113aec7ad213802d",
+  "profile_metadata_path": "results/phase1/profiles/run.json",
+  "profile_metadata_sha256": "37c2ea4a66ccd8a22364ef24bbc313f4a34cb6c0089142ec061d09ebe1be87c6",
+  "source_sha256": {
+    "docs/phase1d_analysis_plan.md": "84895d437aa1031a6a2adc0bcb1c2e1d82e0616a1f2a8b70ef52792e53d69e19",
+    "scripts/report_phase1.py": "c11771ea6b16af2de87db803d88cc9830f65b0d5a27eb6928b4aebf29162aea9",
+    "src/anytime_ncm/report.py": "5186a3dab5f512261175b2f09850cb73e9f478b51b5d1ce06f6a4e37c6adece2",
+    "src/anytime_ncm/report_render.py": "efb1b45a781a6e5a48b7e42aa80caf71fff546bebc27961db40b7648e5e9d13e"
+  }
+}

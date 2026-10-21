@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** setup, official baseline reproduction, and **Phases 1A-1C** are complete, including validated offline trajectories for **1,000 exploration and 400 development inputs**. The next milestone is **Phase 1D: cost profiling, plots, and the Phase 1 decision** in [ROADMAP.md](ROADMAP.md). Adaptive stopping has not been implemented or measured.
+**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed.
 
 ## Contents
 
@@ -53,9 +53,10 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Independent Sudoku parser/validator | Implemented; [Phase 1A contract](docs/phase1a_validation.md) |
 | Upstream adapter and full-resolution partial decoder | Implemented; [Phase 1B contract and parity](docs/phase1b_partial_decoding.md) |
 | Offline trajectory collector | Complete; 1,400 trajectories / 16,800 level records; [Phase 1C](docs/phase1c_collection.md) |
-| Diagnostic profiling and adaptive benchmark/report commands | Planned |
+| Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
+| Headline online adaptive benchmarks | Not started |
 | Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | 140 passed; Phase 1B final-output parity 32/32; timing/halting tests remain placeholders |
+| Executable research tests | 186 passed; timing/statistics/report checks included; online halting tests remain pending |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; online adaptive inference is pending.
@@ -88,6 +89,8 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [Reproduction log](docs/reproduction_log.md) | Actual setup commands, hardware/software, results, errors, and access disclosures |
 | [Known limitations](docs/known_limitations.md) | Current implementation and evidence boundaries |
 | [Phase 1C collection](docs/phase1c_collection.md) | Tested collection/validation commands, schema, access controls, provenance, and artifacts |
+| [Phase 1 report](results/phase1/summary.md) | Quality curves, repeated cost profiles, uncertainty, fixed depths, and no-go decision |
+| [Phase 1D profiling](docs/phase1d_profiling.md) | Reproduction commands, diagnostic boundaries, budget, and limitations |
 | [Setup summary](results/setup/summary.md) | Compact operational results |
 
 The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
@@ -317,6 +320,9 @@ The original design file remains authoritative. `DESIGN.md` is a navigation entr
 | `scripts/verify_phase1b.py` | Verify exploration-only full-resolution prefixes and exact final-output parity against a fresh official smoke run |
 | `scripts/collect_trajectories.py` | Collect permitted offline trajectories from validated smoke/full configs |
 | `scripts/validate_trajectories.py` | Recheck saved trajectories and provenance without models/CUDA |
+| `scripts/profile_phase1.py` | Execute only the frozen 200-input / five-repeat diagnostic budget |
+| `scripts/report_phase1.py` | Generate tables, plots, paired bootstrap statistics, and the offline gate |
+| `scripts/verify_phase1d.py` | Audit stored Phase 1D evidence and reproduce its no-go calculation without models/CUDA |
 | `scripts/lock_environment.py` | Generate the initial dependency lock after recorded canonical baseline runs |
 
 `configs/setup_sources.json` records actual setup pins. `configs/sudoku_smoke.yaml` and `configs/sudoku_full.yaml` now drive the strict Phase 1C collector schema. Full collection means the 1,000 exploration plus 400 development inputs; both sealed holdouts are excluded. `configs/stopping_policies.yaml` remains a proposed template. The official baseline wrapper uses `third_party/ncm/config/eval/sudoku-hard.yaml` directly.
@@ -360,6 +366,12 @@ Recorded [trajectories](results/phase1/trajectories.jsonl), [metadata](results/p
 python scripts/validate_trajectories.py --metadata results/phase1/trajectories.metadata.json
 ```
 
+Phase 1D completed all **200 profiled identities / 1,000 timed requests / 12,000 profiled levels**, plus the ten declared exploration-only warmups. All **186 tests passed**. Read the [summary and decision](results/phase1/summary.md), [analysis JSON](results/phase1/analysis.json), [trajectory table](results/phase1/trajectory_table.csv), and [profiling commands](docs/phase1d_profiling.md). Measured diagnostic components remain separate from online latency; original collection timings remain null.
+
+```powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider', '--junitxml=results/phase1/phase1d_tests.xml')
+```
+
 ## Troubleshooting
 
 | Symptom | What to check |
@@ -389,9 +401,9 @@ Work on the selected milestone, add its meaningful correctness/parity checks, re
 
 ## Limitations
 
-- No early-exit opportunity or adaptive speedup has been measured yet.
+- No valid solution occurred before level 12 on the 1,400 permitted inputs. This frozen Sudoku setting produced a no-go; no online adaptive speedup was measured.
 - Exact agreement with the paper's hard-Sudoku number remains unresolved.
-- Sudoku validation, full-resolution partial reconstruction, and offline trajectory collection are implemented. Profiling, the Phase 1 decision, and online stopping remain pending. Final-output parity with the official evaluator was established for the matched Phase 1B 32-input smoke run.
+- Sudoku validation, full-resolution partial reconstruction, offline collection, diagnostic profiling, and the Phase 1 report are complete. Online stopping remains unimplemented. Phase 1B official-output parity and Phase 1D observation/reconstruction parity passed under their recorded settings.
 - The validated runtime is one WSL2/RTX 5060 configuration; other platforms and resource limits need validation.
 - BLEU/ROUGE, future heuristic confidence, and Sudoku correctness do not establish general semantic correctness or AI safety.
 - Raw datasets, weights, environments, caches, and prediction pickles are intentionally local; a clone must recreate them.
