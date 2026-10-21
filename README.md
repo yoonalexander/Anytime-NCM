@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** setup, official full-depth baseline reproduction, and **Phase 1A Sudoku parsing and correctness** are complete. Adaptive stopping has not been implemented or measured. The next milestone is **Phase 1B: upstream adapter and full-resolution partial decoding** in [ROADMAP.md](ROADMAP.md).
+**Current stage:** setup, official full-depth baseline reproduction, **Phase 1A Sudoku correctness**, and **Phase 1B upstream adapter and full-resolution partial decoding** are complete. Adaptive stopping has not been implemented or measured. The next milestone is **Phase 1C: offline trajectory collection and storage** in [ROADMAP.md](ROADMAP.md).
 
 ## Contents
 
@@ -51,10 +51,11 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Input-identity partitions and experiment protocol | Frozen before baseline inference |
 | Official 32-input and 2,000-input baselines | Completed; evidence included |
 | Independent Sudoku parser/validator | Implemented; [Phase 1A contract](docs/phase1a_validation.md) |
-| Correct full-resolution partial decoder and trajectory collector | Planned; placeholder modules |
+| Upstream adapter and full-resolution partial decoder | Implemented; [Phase 1B contract and parity](docs/phase1b_partial_decoding.md) |
+| Offline trajectory collector | Planned; Phase 1C |
 | Diagnostic profiling and adaptive benchmark/report commands | Planned |
 | Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | Phase 1A: 59 tests passed; later test modules remain placeholders |
+| Executable research tests | 88 passed; real-checkpoint final-output parity 32/32; timing/halting tests remain placeholders |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI currently offers help, version, and scaffold status. Official baseline execution uses the scripts below; the package does not yet expose a trajectory or adaptive-inference command.
@@ -312,6 +313,7 @@ The original design file remains authoritative. `DESIGN.md` is a navigation entr
 | `scripts/record_setup.py` | Validate CUDA and record machine/artifact metadata |
 | `scripts/prepare_sudoku_partitions.py` | Generate/verify the frozen input-identity partition manifest |
 | `scripts/run_upstream_baseline.py` | Run the official smoke/full evaluator with recorded metadata |
+| `scripts/verify_phase1b.py` | Verify exploration-only full-resolution prefixes and exact final-output parity against a fresh official smoke run |
 | `scripts/lock_environment.py` | Generate the initial dependency lock after recorded canonical baseline runs |
 
 `configs/setup_sources.json` records actual setup pins. The other YAML files are proposed local research templates; no implemented research runner consumes that schema yet. The baseline wrapper uses the official `third_party/ncm/config/eval/sudoku-hard.yaml` directly.
@@ -333,7 +335,15 @@ Phase 1A adds 59 passing synthetic correctness and upstream tokenizer/scorer com
 .\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests/test_sudoku_validator.py', '-q', '-p', 'no:cacheprovider')
 ```
 
-See the [validator contract and API](docs/phase1a_validation.md) and [completion evidence](results/phase1/phase1a_validation.json). The parser and validator use only the Python standard library. Later test modules remain placeholders; partial-decoder or halting test results are not claimed.
+See the [validator contract and API](docs/phase1a_validation.md) and [completion evidence](results/phase1/phase1a_validation.json). The parser and validator use only the Python standard library.
+
+Phase 1B adds the pinned upstream adapter, independent full-resolution prefix decoding, and tests for learned reconstruction, storage isolation, future-code isolation, generator delegation, and exploration-only parity inputs. The complete implemented suite passed **88 tests**:
+
+```powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider', '--junitxml=results/phase1/phase1b_tests.xml')
+```
+
+A separate real-checkpoint GPU run verified all 12 full-resolution prefixes and **32/32 final decoded outputs matching** the unchanged official evaluator on the exploration smoke inputs. See [Phase 1B API and repeat commands](docs/phase1b_partial_decoding.md), [GPU evidence](results/phase1/phase1b_verified/verification.json), and [completion record](results/phase1/phase1b_validation.json). The parity script requires a fresh output directory. Timing and halting tests remain placeholders.
 
 ## Troubleshooting
 
@@ -366,7 +376,7 @@ Work on the selected milestone, add its meaningful correctness/parity checks, re
 
 - No early-exit opportunity or adaptive speedup has been measured yet.
 - Exact agreement with the paper's hard-Sudoku number remains unresolved.
-- The Sudoku parser/validator is implemented; partial-reconstruction, trajectory, and halting tests remain pending.
+- Sudoku validation and full-resolution partial reconstruction are implemented; trajectory collection, timing, and halting remain pending. Final-output parity is established for the matched 32-input exploration smoke run.
 - The validated runtime is one WSL2/RTX 5060 configuration; other platforms and resource limits need validation.
 - BLEU/ROUGE, future heuristic confidence, and Sudoku correctness do not establish general semantic correctness or AI safety.
 - Raw datasets, weights, environments, caches, and prediction pickles are intentionally local; a clone must recreate them.

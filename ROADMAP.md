@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
 **Updated:** October 20, 2026
-**Current position:** Sections 6-7 and Phase 1A are complete; Phase 1B has not started.
-**Next milestone:** Phase 1B - upstream adapter and full-resolution partial decoding.
+**Current position:** Sections 6-7 and Phases 1A-1B are complete; Phase 1C has not started.
+**Next milestone:** Phase 1C - offline trajectory collection and storage.
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -11,7 +11,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | Phase | Outcome | Current status | Entry requirement |
 | --- | --- | --- | --- |
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
-| 1 | Correct per-level trajectories, cost estimates, and a decision report | In progress; 1A complete, 1B next | Recorded operational baseline |
+| 1 | Correct per-level trajectories, cost estimates, and a decision report | In progress; 1A-1B complete, 1C next | Recorded operational baseline |
 | 2 | Measured online verified stopping | Conditional; not started | Phase 1 go decision and a subsequent work order |
 | 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
@@ -63,25 +63,27 @@ Work through milestones 1A–1D in order. Each milestone has its own acceptance 
 
 ### 1B — Upstream adapter and full-resolution partial decoding
 
-**Status:** Not started; next. Phase 1A is complete.
+**Status:** Complete - October 20, 2026.
 **Primary files:** `src/anytime_ncm/upstream_adapter.py`, `tests/test_partial_decoder.py`.
 
-- [ ] Load the pinned tokenizer/generator through an adapter while preserving the released generation behavior.
-- [ ] Run full-depth generation unchanged and reconstruct all 12 cumulative prefixes afterward.
-- [ ] Mirror learned upsampling and residual transforms from the pinned quantizer.
-- [ ] Capture independent full-resolution accumulator snapshots inside the reconstruction loop.
-- [ ] Reuse upstream token selection and Sudoku decoding semantics.
-- [ ] Record the adapter's dependency on private upstream reconstruction methods.
-- [ ] Test full sequence length, independent storage, an independently accumulated prefix fixture, and isolation from later codes.
-- [ ] Prove final-level decoded output parity against the official evaluator on the same inputs, batching, precision, and sampling settings.
+- [x] Load the pinned tokenizer/generator through an adapter while preserving the released generation behavior.
+- [x] Run full-depth generation unchanged and reconstruct all 12 cumulative prefixes afterward.
+- [x] Mirror learned upsampling and residual transforms from the pinned quantizer.
+- [x] Capture independent full-resolution accumulator snapshots inside the reconstruction loop.
+- [x] Reuse upstream token selection and Sudoku decoding semantics.
+- [x] Record the adapter's dependency on private upstream reconstruction methods.
+- [x] Test full sequence length, independent storage, an independently accumulated prefix fixture, and isolation from later codes.
+- [x] Prove final-level decoded output parity against the official evaluator on the same inputs, batching, precision, and sampling settings.
 
 **Acceptance:** Every prefix yields a full-resolution latent suitable for the decoder; later code changes cannot change earlier snapshots; final outputs match upstream under matched execution settings.
 
 Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_hats` list after its method returns. Final-level parity alone is insufficient.
 
+**Evidence:** [Phase 1B contract and commands](docs/phase1b_partial_decoding.md), [completion record](results/phase1/phase1b_validation.json), 88 passing tests, and 32/32 exact final decoded-output matches against a fresh official exploration smoke run.
+
 ### 1C — Offline trajectory collection and storage
 
-**Status:** Not started; depends on 1A–1B.
+**Status:** Not started; next. Phases 1A-1B are complete.
 **Primary files:** `trajectories.py`, `collect.py`, `features.py`, and relevant CLI/configuration code under `src/anytime_ncm/`.
 
 - [ ] Implement an executable collector and validated configuration handling; replace the relevant scaffolds.
@@ -240,8 +242,8 @@ For each completed milestone, add a short record with its date, final status, ch
 | --- | --- | --- |
 | Sections 6–7 / Phase 0 operational setup | Complete with disclosed limitation | [Reproduction log](docs/reproduction_log.md); paper-number discrepancy remains open |
 | Phase 1A | Complete | [59 passing tests and contract](docs/phase1a_validation.md) |
-| Phase 1B | Not started - next | Phase 1A accepted |
-| Phase 1C | Not started | Depends on 1A–1B |
+| Phase 1B | Complete | [88 passing tests; final-output parity 32/32](docs/phase1b_partial_decoding.md) |
+| Phase 1C | Not started - next | Phases 1A-1B accepted |
 | Phase 1D | Not started | Depends on 1C; go/no-go/inconclusive report |
 | Phases 2–5 | Not started | Subject to the entry conditions above |
 
@@ -252,3 +254,9 @@ Implemented the standard-library Sudoku parser, immutable board, independent cor
 Command: .\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests/test_sudoku_validator.py', '-q', '-p', 'no:cacheprovider').
 
 Evidence and source hashes: [Phase 1A completion record](results/phase1/phase1a_validation.json). Contract, error behavior, and metric limitations: [validation notes](docs/phase1a_validation.md). No baseline rescoring, holdout prediction/reference inspection, model inference, or partial-decoder work occurred. Phase 1B is the next eligible milestone.
+
+### Phase 1B completion - October 20, 2026
+
+Implemented the pinned hard-Sudoku adapter and independent full-resolution cumulative prefix reconstruction without changing upstream generation. All 12 levels preserve learned upsampling/residual transforms and use actual upstream token-selection/decoding helpers. The full implemented suite passed **88 tests in 4.57 seconds**; separate CUDA verification established bitwise final-latent equality, independent storage, future-code isolation at every proper prefix, and **32/32 final decoded-text parity** against a fresh official evaluator run under matched settings.
+
+Evidence: [adapter contract, commands, and limitations](docs/phase1b_partial_decoding.md), [completion record](results/phase1/phase1b_validation.json), [GPU verification](results/phase1/phase1b_verified/verification.json), and [JUnit report](results/phase1/phase1b_tests.xml). Scoped Windows/WSL preflight failures and their successful fixes are disclosed. Only the first 32 exploration inputs were selected; no holdout predictions/references or intermediate quality results were inspected. No generator modification, stored trajectory collection, profiling, or online stopping occurred. Phase 1C is the next eligible milestone.

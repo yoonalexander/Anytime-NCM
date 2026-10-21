@@ -1,0 +1,54 @@
+{
+  "batch_size": 128,
+  "command": [
+    "/home/ncm/.venvs/anytime-ncm/bin/python",
+    "-u",
+    "evaluate.py",
+    "--config",
+    "/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/third_party/ncm/config/eval/sudoku-hard.yaml",
+    "--checkpoint-dir",
+    "/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/artifacts/sudoku/hard",
+    "--data-dir",
+    "/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/data/sudoku/hard",
+    "--gpus",
+    "0",
+    "--n",
+    "32",
+    "--out",
+    "/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/results/phase1/phase1b_verified/official"
+  ],
+  "config_sha256": "dbda2c3f2c412049dc43095138a5390d47210eec7a0dfe26eda3ff9dd078083a",
+  "cwd": "/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/third_party/ncm",
+  "environment_overrides": {
+    "MKL_NUM_THREADS": "4",
+    "OMP_NUM_THREADS": "4",
+    "TOKENIZERS_PARALLELISM": "false"
+  },
+  "exit_code": 0,
+  "finished_utc": "2026-10-21T03:02:04.992508+00:00",
+  "gpu_ids": [
+    0
+  ],
+  "partition_manifest_sha256": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+  "protocol_sha256": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+  "purpose": "descriptive official reproduction; no policy selection",
+  "requested_examples": 32,
+  "sampling": {
+    "cfg_scale": 0.0,
+    "temperature": 0.0,
+    "top_k": 0,
+    "top_p": 1.0
+  },
+  "sources": {
+    "dataset_repo": "hazyresearch/ncm-datasets",
+    "dataset_revision": "6580ba41a4b0a976dde876fbe84d25327617b0e6",
+    "include": "sudoku/hard/*",
+    "model_repo": "hazyresearch/ncm-checkpoints",
+    "model_revision": "d342ce8aaea58830eef3b8ad473664673e41f692",
+    "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203"
+  },
+  "started_utc": "2026-10-21T03:01:49.098728+00:00",
+  "status": "complete",
+  "timing_note": "Process duration includes loading and scoring; not inference latency.",
+  "whole_evaluation_process_seconds": 15.889475850999986
+}

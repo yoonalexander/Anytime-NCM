@@ -1,0 +1,6 @@
+VQVAE, Total parameter count: 14.90M
+VQVAE, Non embedding parameter count: 14.87M
+NCP Transformer, Total parameter count: 25.46M
+NCP Transformer, Non embedding parameter count: 25.32M
+  shard0 0/32
+shard 0: 32 -> /mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/results/phase1/phase1b_verified/official/shard_0.pkl

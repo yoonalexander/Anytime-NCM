@@ -18,7 +18,7 @@ def main(argv: Sequence[str] | None = None) -> int:
     if args.command == "status":
         print("Anytime NCM research scaffold.")
         print("Setup and baseline evidence: docs/reproduction_log.md")
-        print("Sudoku validation is implemented; this CLI does not run inference.")
+        print("Sudoku validation and offline prefix decoding are implemented; this CLI does not run inference.")
         return 0
     parser.print_help()
     return 0

@@ -1,0 +1,6 @@
+[evaluate] 1 shard(s) on GPU(s) 0 -> /mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/results/phase1/phase1b/official/
+
+merged 1 shards -> 32 sudoku-hard outputs
+
+ solved %  solved  cell %  valid %
+    75.00   24/32   97.26    75.00
