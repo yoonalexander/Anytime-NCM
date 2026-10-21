@@ -73,3 +73,15 @@ Section 7 is operationally complete. Section 8 adapter/validator/trajectory impl
 ### Final setup verification
 
 Passed Python syntax and project metadata checks, artifact sizes/SHA-256 checks, frozen manifest/protocol/config hash checks, disjoint partition and smoke-placement checks, upstream/Hub config semantic parity, exact installed dependency-lock parity, `pip check`, ignore-rule checks, and clean upstream revision checks. Both official baseline processes exited zero. No Section 8 research tests or trajectory runs were represented as completed.
+
+## Phase 1A - October 20, 2026
+
+Implemented Sudoku parsing and correctness in src/anytime_ncm/sudoku.py and focused fixtures in tests/test_sudoku_validator.py. Pytest now adds src to its import path through pyproject.toml.
+
+The parser supports actual upstream token IDs, 91-token BOS-wrapped input prompts, correctly separated 89-token boards, flat 81-cell forms, and decoded text. Malformed candidate outputs cannot be accepted. Puzzle clues and any supplied reference are validated as caller data. Independent flags distinguish parseability, completeness, grid validity, clue consistency, and normalized reference agreement. A distinct valid solution to a nonunique puzzle remains acceptable.
+
+Separate official decoded-text metrics preserve exact text equality, zipped-cell scoring (including NaN for no comparisons), and valid-grid rules without clue checks. Synthetic tests compare directly against the pinned tokenizer and actual upstream Sudoku scorer extracted without CLI/data-loading side effects.
+
+Focused verification: .\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests/test_sudoku_validator.py', '-q', '-p', 'no:cacheprovider') -> **59 passed in 0.64 seconds**. Cache is disabled because WSL pytest encountered a cache-file permission warning on the Windows mount. Explicit argument forwarding avoids a PowerShell -p parameter-name collision.
+
+Only the token structure of the first exploration puzzle was inspected; no holdout predictions/references were examined and no new model inference or baseline rescoring ran. Upstream source, environment lock, checkpoints, frozen protocol/partitions, and original baseline evidence remain unchanged. Phase 1B onward remains pending. See docs/phase1a_validation.md and results/phase1/phase1a_validation.json for the contract and completion evidence.

@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
 **Updated:** October 20, 2026
-**Current position:** Sections 6–7 are operationally complete; Phase 1 implementation has not started.
-**Next milestone:** Phase 1A — Sudoku parsing and correctness contract.
+**Current position:** Sections 6-7 and Phase 1A are complete; Phase 1B has not started.
+**Next milestone:** Phase 1B - upstream adapter and full-resolution partial decoding.
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -11,7 +11,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | Phase | Outcome | Current status | Entry requirement |
 | --- | --- | --- | --- |
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
-| 1 | Correct per-level trajectories, cost estimates, and a decision report | Not started; 1A is next | Recorded operational baseline |
+| 1 | Correct per-level trajectories, cost estimates, and a decision report | In progress; 1A complete, 1B next | Recorded operational baseline |
 | 2 | Measured online verified stopping | Conditional; not started | Phase 1 go decision and a subsequent work order |
 | 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
@@ -47,21 +47,23 @@ Work through milestones 1A–1D in order. Each milestone has its own acceptance 
 
 ### 1A — Sudoku parsing and correctness contract
 
-**Status:** Not started.
+**Status:** Complete - October 20, 2026.
 **Primary files:** `src/anytime_ncm/sudoku.py`, `tests/test_sudoku_validator.py`.
 
-- [ ] Implement parsing compatible with upstream Sudoku tokens, separators, and special-token handling.
-- [ ] Represent parseability, completeness, row/column/box validity, clue consistency, and reference agreement separately.
-- [ ] Define primary solution acceptance as complete, grid-valid, and clue-consistent.
-- [ ] Retain official reference-based metrics separately for baseline comparability.
-- [ ] Add meaningful fixtures for valid boards, malformed/incomplete outputs, illegal or duplicate digits, and corrupted clues.
-- [ ] Cover valid alternative solutions without making reference equality the sole acceptance rule.
+- [x] Implement parsing compatible with upstream Sudoku tokens, separators, and special-token handling.
+- [x] Represent parseability, completeness, row/column/box validity, clue consistency, and reference agreement separately.
+- [x] Define primary solution acceptance as complete, grid-valid, and clue-consistent.
+- [x] Retain official reference-based metrics separately for baseline comparability.
+- [x] Add meaningful fixtures for valid boards, malformed/incomplete outputs, illegal or duplicate digits, and corrupted clues.
+- [x] Cover valid alternative solutions without making reference equality the sole acceptance rule.
 
 **Acceptance:** The validator accepts the valid fixtures and rejects invalid/incomplete/clue-corrupted fixtures. Tests clearly distinguish structural correctness from official reference agreement.
 
+**Evidence:** [Phase 1A contract and verification](docs/phase1a_validation.md), [completion record](results/phase1/phase1a_validation.json), and 59 passing validator/tokenizer/scorer tests.
+
 ### 1B — Upstream adapter and full-resolution partial decoding
 
-**Status:** Not started; depends on 1A.
+**Status:** Not started; next. Phase 1A is complete.
 **Primary files:** `src/anytime_ncm/upstream_adapter.py`, `tests/test_partial_decoder.py`.
 
 - [ ] Load the pinned tokenizer/generator through an adapter while preserving the released generation behavior.
@@ -219,6 +221,7 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 ## Rules for every milestone
 
 - Work on the requested milestone and stop at its boundary; update status and evidence before moving on.
+- After each completed phase and subphase, run its required checks, update the completion evidence, commit the changes, and push to `main`. Verify that local `HEAD`, `origin/main`, and GitHub `main` point to the same commit before reporting completion.
 - Preserve the full Phase 0–5 plan even when only one milestone is being implemented.
 - Use meaningful correctness/parity/isolation tests as each research component is added; placeholder files are not passing tests.
 - Preserve sampling semantics and the frozen checkpoint. Label stochastic extensions separately.
@@ -236,8 +239,16 @@ For each completed milestone, add a short record with its date, final status, ch
 | Milestone | Status | Evidence or decision |
 | --- | --- | --- |
 | Sections 6–7 / Phase 0 operational setup | Complete with disclosed limitation | [Reproduction log](docs/reproduction_log.md); paper-number discrepancy remains open |
-| Phase 1A | Not started — next | Validator and fixtures |
-| Phase 1B | Not started | Depends on 1A |
+| Phase 1A | Complete | [59 passing tests and contract](docs/phase1a_validation.md) |
+| Phase 1B | Not started - next | Phase 1A accepted |
 | Phase 1C | Not started | Depends on 1A–1B |
 | Phase 1D | Not started | Depends on 1C; go/no-go/inconclusive report |
 | Phases 2–5 | Not started | Subject to the entry conditions above |
+
+### Phase 1A completion - October 20, 2026
+
+Implemented the standard-library Sudoku parser, immutable board, independent correctness flags, clue-consistent acceptance rule, and separate upstream-compatible scoring. Added 59 focused synthetic and pinned-upstream tokenizer/scorer tests; the WSL pytest run passed in 0.64 seconds.
+
+Command: .\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests/test_sudoku_validator.py', '-q', '-p', 'no:cacheprovider').
+
+Evidence and source hashes: [Phase 1A completion record](results/phase1/phase1a_validation.json). Contract, error behavior, and metric limitations: [validation notes](docs/phase1a_validation.md). No baseline rescoring, holdout prediction/reference inspection, model inference, or partial-decoder work occurred. Phase 1B is the next eligible milestone.

@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** repository setup and official full-depth baseline reproduction are complete. Adaptive stopping has not been implemented or measured. The next milestone is **Phase 1A: Sudoku parsing and correctness** in [ROADMAP.md](ROADMAP.md).
+**Current stage:** setup, official full-depth baseline reproduction, and **Phase 1A Sudoku parsing and correctness** are complete. Adaptive stopping has not been implemented or measured. The next milestone is **Phase 1B: upstream adapter and full-resolution partial decoding** in [ROADMAP.md](ROADMAP.md).
 
 ## Contents
 
@@ -50,11 +50,11 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Narrow Sudoku downloads and artifact hashes | Complete locally; large files excluded from Git |
 | Input-identity partitions and experiment protocol | Frozen before baseline inference |
 | Official 32-input and 2,000-input baselines | Completed; evidence included |
-| Independent Sudoku parser/validator | Planned; placeholder module |
+| Independent Sudoku parser/validator | Implemented; [Phase 1A contract](docs/phase1a_validation.md) |
 | Correct full-resolution partial decoder and trajectory collector | Planned; placeholder modules |
 | Diagnostic profiling and adaptive benchmark/report commands | Planned |
 | Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | Not implemented; current named test modules are placeholders |
+| Executable research tests | Phase 1A: 59 tests passed; later test modules remain placeholders |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI currently offers help, version, and scaffold status. Official baseline execution uses the scripts below; the package does not yet expose a trajectory or adaptive-inference command.
@@ -72,7 +72,7 @@ Both runs exited successfully without an upstream patch, checkpoint conversion, 
 
 The [paper, Table 3](https://arxiv.org/html/2610.14162v1#S4.SS4) reports 86.1% on hard Sudoku. This run is **0.15 percentage points higher**, and the cause has not been established. Exact paper-number or per-input prediction parity is not claimed.
 
-These are upstream reference-based solved/cell/valid-grid metrics. The project's planned independent complete-valid-clue-consistent metric is not implemented. Whole evaluator-process durations include loading and scoring; they are not warm inference latency or adaptive speedup measurements.
+These are upstream reference-based solved/cell/valid-grid metrics. An independent complete-valid-clue-consistent checker is now available; these recorded baseline metrics still come from the official scorer and have not been rescored with that checker. Whole evaluator-process durations include loading and scoring; they are not warm inference latency or adaptive speedup measurements.
 
 Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](results/upstream_smoke/metrics.json), [full evaluator log](results/upstream_full/evaluate.log), and [reproduction log](docs/reproduction_log.md).
 
@@ -291,8 +291,8 @@ Anytime-NCM/
 |-- configs/                  # Research templates and pinned setup sources
 |-- third_party/ncm/          # Official Git submodule
 |-- scripts/                 # Executable setup/reproduction helpers
-|-- src/anytime_ncm/          # CLI and future research modules
-|-- tests/                   # Named research-test placeholders
+|-- src/anytime_ncm/          # CLI, Sudoku validator, future research modules
+|-- tests/                   # Validator tests and later test placeholders
 |-- docs/                    # Protocol, partitions, log, limitations
 |-- data/                    # Ignored local datasets
 |-- artifacts/               # Ignored local model files
@@ -327,7 +327,13 @@ Completed setup checks include:
 - Python syntax, package/CLI loading, and TOML metadata parsing.
 - Git ignore rules and a clean upstream checkout at the pinned commit.
 
-These checks are not a completed research test suite. The named files under `tests/` currently contain placeholders, so a passing validator/partial-decoder/halting test result is not claimed.
+Phase 1A adds 59 passing synthetic correctness and upstream tokenizer/scorer compatibility tests. Run the focused suite from PowerShell:
+
+```powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests/test_sudoku_validator.py', '-q', '-p', 'no:cacheprovider')
+```
+
+See the [validator contract and API](docs/phase1a_validation.md) and [completion evidence](results/phase1/phase1a_validation.json). The parser and validator use only the Python standard library. Later test modules remain placeholders; partial-decoder or halting test results are not claimed.
 
 ## Troubleshooting
 
@@ -360,7 +366,7 @@ Work on the selected milestone, add its meaningful correctness/parity checks, re
 
 - No early-exit opportunity or adaptive speedup has been measured yet.
 - Exact agreement with the paper's hard-Sudoku number remains unresolved.
-- An independent Sudoku correctness validator and partial-reconstruction tests remain unimplemented.
+- The Sudoku parser/validator is implemented; partial-reconstruction, trajectory, and halting tests remain pending.
 - The validated runtime is one WSL2/RTX 5060 configuration; other platforms and resource limits need validation.
 - BLEU/ROUGE, future heuristic confidence, and Sudoku correctness do not establish general semantic correctness or AI safety.
 - Raw datasets, weights, environments, caches, and prediction pickles are intentionally local; a clone must recreate them.

@@ -1,0 +1,33 @@
+{
+  "base_commit": "a3c1d0a5370fa9fc20ecf6a2bfd64f2ada7d524a",
+  "date": "2026-10-20",
+  "frozen_protocol_sha256": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+  "milestone": "Phase 1A",
+  "next_milestone": "Phase 1B",
+  "partition_manifest_sha256": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+  "schema_version": 1,
+  "scope": {
+    "baseline_rescoring": false,
+    "dataset_inspection": "token structure of exploration input index 0 only",
+    "holdout_prediction_or_reference_inspection": false,
+    "model_inference": false,
+    "partial_decoder_implemented": false
+  },
+  "source_sha256": {
+    "pyproject.toml": "2059d7a443b059fa47d70aab275f5eb2a60e1af5afc29aed0005b9c89801597c",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "tests/test_sudoku_validator.py": "8e8ed5495b7137011ceb05e2868a6fe0f0f15822415eb303da70d440a605e972"
+  },
+  "status": "complete",
+  "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203",
+  "verification": {
+    "command": ".\\scripts\\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests/test_sudoku_validator.py', '-q', '-p', 'no:cacheprovider')",
+    "environment": "Ubuntu-24.04 WSL2, /home/ncm/.venvs/anytime-ncm, Python 3.12.3",
+    "exit_code": 0,
+    "failed": 0,
+    "fixtures": "synthetic; actual upstream tokenizer and extracted Sudoku scorer",
+    "passed": 59,
+    "pytest_reported_seconds": 0.64,
+    "result_source": "Observed focused pytest stdout; not a generated JUnit report"
+  }
+}
