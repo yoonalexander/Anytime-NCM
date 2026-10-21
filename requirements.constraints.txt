@@ -1,0 +1,5 @@
+# Protect the selected CUDA build while installing upstream requirements.
+torch==2.10.0+cu128
+# Use the upstream-compatible Transformers 4.x API family; lock exact versions
+# after the complete environment passes CUDA and official baseline checks.
+transformers>=4.51,<5

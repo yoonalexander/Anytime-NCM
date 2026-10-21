@@ -1,0 +1,46 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+build/
+dist/
+
+# Local credentials and settings
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Downloaded datasets and model artifacts
+/data/*
+!/data/.gitkeep
+/artifacts/*
+!/artifacts/.gitkeep
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.pickle
+*.pkl
+
+# Raw arrays / activations, rather than small result summaries and figures
+*.npy
+*.npz
+/results/**/raw/
+/results/**/activations/
+
+# OS / editor caches
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,52 @@
+{
+  "compute_capability": [
+    12,
+    0
+  ],
+  "cuda_available": true,
+  "cuda_matrix_multiplication_probe": "passed",
+  "cuda_runtime": "12.8",
+  "cudnn": 91002,
+  "environment_variables": {
+    "CUBLAS_WORKSPACE_CONFIG": null,
+    "CUDA_MODULE_LOADING": null,
+    "CUDA_VISIBLE_DEVICES": null,
+    "HF_HUB_DISABLE_TELEMETRY": null,
+    "MKL_NUM_THREADS": null,
+    "OMP_NUM_THREADS": null,
+    "PYTORCH_CUDA_ALLOC_CONF": null,
+    "TOKENIZERS_PARALLELISM": null
+  },
+  "executable": "/home/ncm/.venvs/anytime-ncm/bin/python",
+  "gpu": "NVIDIA GeForce RTX 5060",
+  "gpu_total_bytes": 8546484224,
+  "inference_precision": "upstream default float32; no autocast override",
+  "nvidia_smi": "NVIDIA GeForce RTX 5060, 8151 MiB, 610.88",
+  "os_release": {
+    "BUG_REPORT_URL": "https://bugs.launchpad.net/ubuntu/",
+    "HOME_URL": "https://www.ubuntu.com/",
+    "ID": "ubuntu",
+    "ID_LIKE": "debian",
+    "LOGO": "ubuntu-logo",
+    "NAME": "Ubuntu",
+    "PRETTY_NAME": "Ubuntu 24.04.5 LTS",
+    "PRIVACY_POLICY_URL": "https://www.ubuntu.com/legal/terms-and-policies/privacy-policy",
+    "SUPPORT_URL": "https://help.ubuntu.com/",
+    "UBUNTU_CODENAME": "noble",
+    "VERSION": "24.04.5 LTS (Noble Numbat)",
+    "VERSION_CODENAME": "noble",
+    "VERSION_ID": "24.04"
+  },
+  "platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "sources": {
+    "dataset_repo": "hazyresearch/ncm-datasets",
+    "dataset_revision": "6580ba41a4b0a976dde876fbe84d25327617b0e6",
+    "include": "sudoku/hard/*",
+    "model_repo": "hazyresearch/ncm-checkpoints",
+    "model_revision": "d342ce8aaea58830eef3b8ad473664673e41f692",
+    "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203"
+  },
+  "torch": "2.10.0+cu128",
+  "torch_compile": false
+}

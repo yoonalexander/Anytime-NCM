@@ -1,0 +1,28 @@
+{
+  "section": 7,
+  "status": "operational_setup_complete",
+  "baselines": {
+    "upstream_smoke": {
+      "solved_percent": 75.0,
+      "solved": 24,
+      "total": 32,
+      "cell_percent": 97.26,
+      "valid_grid_percent": 75.0,
+      "scoring": "unchanged official evaluator; not the future clue-consistency validator"
+    },
+    "upstream_full": {
+      "solved_percent": 86.25,
+      "solved": 1725,
+      "total": 2000,
+      "cell_percent": 98.36,
+      "valid_grid_percent": 86.25,
+      "scoring": "unchanged official evaluator; not the future clue-consistency validator"
+    }
+  },
+  "paper_hard_sudoku_solved_percent": 86.1,
+  "paper_comparison_source": "https://arxiv.org/html/2610.14162v1#S4.SS4",
+  "difference_percentage_points": 0.15,
+  "exact_paper_parity": false,
+  "difference_cause": "not established",
+  "research_phases_started": false
+}

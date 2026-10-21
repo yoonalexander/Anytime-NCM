@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "anytime-ncm"
+version = "0.0.0"
+description = "Research scaffolding for adaptive stopping in frozen Next-Concept Modeling."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+anytime-ncm = "anytime_ncm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["anytime_ncm*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

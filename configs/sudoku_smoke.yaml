@@ -1,0 +1,11 @@
+# Proposed local template; no runner consumes this schema yet.
+schema_version: 1
+status: scaffold
+task: sudoku-hard
+upstream_config: third_party/ncm/config/eval/sudoku-hard.yaml
+checkpoint_dir: artifacts/sudoku/hard
+data_dir: data/sudoku/hard
+output_dir: results/upstream_smoke
+max_examples: 32
+# Assign the first 32 official inputs to exploration before output inspection.
+# CUDA, batch size, and dependency compatibility are pending Section 7.

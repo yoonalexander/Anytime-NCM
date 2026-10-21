@@ -1,0 +1,8 @@
+{
+  "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203",
+  "model_repo": "hazyresearch/ncm-checkpoints",
+  "model_revision": "d342ce8aaea58830eef3b8ad473664673e41f692",
+  "dataset_repo": "hazyresearch/ncm-datasets",
+  "dataset_revision": "6580ba41a4b0a976dde876fbe84d25327617b0e6",
+  "include": "sudoku/hard/*"
+}

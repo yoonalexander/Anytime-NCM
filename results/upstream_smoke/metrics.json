@@ -1,0 +1,8 @@
+{
+  "solved_percent": 75.0,
+  "solved": 24,
+  "total": 32,
+  "cell_percent": 97.26,
+  "valid_grid_percent": 75.0,
+  "scoring": "unchanged official evaluator; not the future clue-consistency validator"
+}

@@ -1,0 +1,11 @@
+# Proposed local template; no runner consumes this schema yet.
+schema_version: 1
+status: scaffold
+task: sudoku-hard
+upstream_config: third_party/ncm/config/eval/sudoku-hard.yaml
+checkpoint_dir: artifacts/sudoku/hard
+data_dir: data/sudoku/hard
+output_dir: results/upstream_full
+max_examples: 2000
+# This is descriptive official-set reproduction, not policy-selection data.
+# Keep sealed holdout outputs and scores out of model/policy development.
