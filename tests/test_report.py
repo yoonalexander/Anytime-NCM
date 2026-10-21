@@ -10,7 +10,7 @@ import pytest
 from anytime_ncm.dataset import sha256
 from anytime_ncm.report import (
     decision_gate, independent_valid, load_profiles, paired_bootstrap,
-    representative_cases, summarize_trajectories,
+    quality_by_level, representative_cases, summarize_trajectories,
 )
 
 
@@ -70,8 +70,11 @@ def test_bootstrap_rejects_invalid_or_unpaired_costs(baseline, candidate):
 
 def record(index, flags, partition="exploration"):
     return {"dataset_index": index, "sample_id": str(index), "partition": partition,
-            "levels": [{"correctness": {"is_valid_solution": value},
-                        "diagnostics": {"official_solved": value}, "decoded_text": str(level)}
+            "levels": [{"correctness": {"is_valid_solution": value, "parseable": True, "complete": True,
+                                         "grid_valid": value, "clue_consistent": value},
+                        "diagnostics": {"official_solved": value, "reference_agreement": value,
+                                        "official_valid_grid": value, "official_cell_accuracy": float(value)},
+                        "decoded_text": str(level)}
                        for level, value in enumerate(flags, 1)]}
 
 
@@ -179,3 +182,41 @@ def test_markdown_tables_and_source_links_survive_report_relocation(tmp_path):
             width = None
     profile_link = next(target for target in re.findall(r"\]\(([^)]+)\)", text) if target.endswith("profiles/run.json"))
     assert (tmp_path / profile_link).resolve() == root / "results/phase1/profiles/run.json"
+
+
+def test_quality_breakdown_separates_unparseable_incomplete_and_clue_corruption():
+    rows = [record(i, [False] * 12) for i in range(4)]
+    malformed, incomplete, clue_corrupted, valid = [r["levels"][0] for r in rows]
+    malformed["correctness"].update(parseable=False, complete=False)
+    incomplete["correctness"].update(complete=False, clue_consistent=True)
+    clue_corrupted["correctness"].update(grid_valid=True)
+    clue_corrupted["diagnostics"].update(official_valid_grid=True)
+    valid["correctness"].update(grid_valid=True, clue_consistent=True, is_valid_solution=True)
+    valid["diagnostics"].update(reference_agreement=True, official_solved=True, official_valid_grid=True)
+    data = quality_by_level(rows)[0]
+    assert data["parseable_count"] == 3
+    assert data["unparseable_count"] == 1
+    assert data["complete_count"] == 2
+    assert data["parseable_incomplete_count"] == 1
+    assert data["grid_valid_count"] == data["official_valid_grid_count"] == 2
+    assert data["clue_consistent_count"] == 2
+    assert data["valid_solution_count"] == data["reference_agreement_count"] == data["official_solved_count"] == 1
+
+
+def test_official_cell_mean_averages_examples_and_reports_coverage():
+    rows = [record(i, [False] * 12) for i in range(2)]
+    rows[0]["levels"][0]["diagnostics"]["official_cell_accuracy"] = .5
+    rows[1]["levels"][0]["diagnostics"]["official_cell_accuracy"] = 1.
+    data = quality_by_level(rows)[0]
+    assert data["official_cell_accuracy_mean"] == .75
+    assert data["official_cell_accuracy_defined_count"] == 2
+    assert data["official_cell_accuracy_undefined_count"] == 0
+
+
+def test_undefined_official_cell_accuracy_is_not_dropped_or_scored_zero():
+    rows = [record(i, [False] * 12) for i in range(2)]
+    rows[0]["levels"][0]["diagnostics"]["official_cell_accuracy"] = None
+    data = quality_by_level(rows)[0]
+    assert data["official_cell_accuracy_mean"] is None
+    assert data["official_cell_accuracy_defined_count"] == 1
+    assert data["official_cell_accuracy_undefined_count"] == 1

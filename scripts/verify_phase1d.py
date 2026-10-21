@@ -1,5 +1,6 @@
-"""Verify stored Phase 1D evidence and write its completion record; no models/CUDA."""
+"""Verify current Phase 1 evidence; optionally record a fresh review, without models/CUDA."""
 
+import argparse
 from collections import Counter
 import csv
 import json
@@ -22,6 +23,10 @@ def require(condition, message):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--write-review-record", action="store_true",
+                        help="Record the October 21 review after its fresh full-suite run.")
+    args = parser.parse_args()
     base = ROOT / "results/phase1"
     metadata = json.loads((base / "profiles/run.json").read_text())
     analysis = json.loads((base / "analysis.json").read_text())
@@ -79,23 +84,77 @@ def main():
         require(not any(data["valid_solution_count_by_level"][:-1]), "Early valid result contradicts no-opportunity finding.")
     with (base / "trajectory_table.csv").open(encoding="utf-8", newline="") as stream:
         require(sum(1 for _ in csv.DictReader(stream)) == 16800, "Wrong table row count.")
+    with (base / "trajectories.jsonl").open(encoding="utf-8") as stream:
+        trajectories = [json.loads(line) for line in stream]
+    with (base / "trajectory_table.csv").open(encoding="utf-8", newline="") as stream:
+        table = list(csv.DictReader(stream))
+    for record, table_rows in zip(trajectories, (table[i:i + 12] for i in range(0, len(table), 12))):
+        for state, row in zip(record["levels"], table_rows):
+            diagnostics = state["diagnostics"]
+            require(row["official_valid_grid"] == str(diagnostics["official_valid_grid"]), "CSV valid-grid differs.")
+            expected = diagnostics["official_cell_accuracy"]
+            require(row["official_cell_accuracy"] == ("" if expected is None else str(expected)), "CSV cell accuracy differs.")
+    for partition in ("exploration", "development"):
+        selected_rows = [r for r in trajectories if r["partition"] == partition]
+        breakdown = analysis["trajectory_summary"][partition]["quality_by_level"]
+        require(len(breakdown) == 12, "Missing quality levels.")
+        for k, row in enumerate(breakdown):
+            flags = [r["levels"][k]["correctness"] for r in selected_rows]
+            diagnostics = [r["levels"][k]["diagnostics"] for r in selected_rows]
+            checks = {
+                "parseable_count": sum(c["parseable"] for c in flags),
+                "unparseable_count": sum(not c["parseable"] for c in flags),
+                "complete_count": sum(c["complete"] for c in flags),
+                "parseable_incomplete_count": sum(c["parseable"] and not c["complete"] for c in flags),
+                "grid_valid_count": sum(c["grid_valid"] for c in flags),
+                "clue_consistent_count": sum(c["clue_consistent"] for c in flags),
+                "valid_solution_count": sum(c["is_valid_solution"] for c in flags),
+                "reference_agreement_count": sum(d["reference_agreement"] for d in diagnostics),
+                "official_solved_count": sum(d["official_solved"] for d in diagnostics),
+                "official_valid_grid_count": sum(d["official_valid_grid"] for d in diagnostics),
+                "official_cell_accuracy_defined_count": sum(d["official_cell_accuracy"] is not None for d in diagnostics),
+                "official_cell_accuracy_undefined_count": sum(d["official_cell_accuracy"] is None for d in diagnostics),
+            }
+            require(row["level"] == k + 1 and all(row[name] == value for name, value in checks.items()), "Quality counts differ.")
+            accuracy = [d["official_cell_accuracy"] for d in diagnostics]
+            if any(value is None for value in accuracy):
+                require(row["official_cell_accuracy_mean"] is None, "Undefined accuracy was dropped.")
+            else:
+                require(math.isclose(row["official_cell_accuracy_mean"], statistics.mean(accuracy), abs_tol=1e-12), "Mean accuracy differs.")
+            require(row["unparseable_count"] + row["parseable_incomplete_count"] + row["complete_count"] == len(selected_rows), "Failure categories overlap or omit inputs.")
     collection = json.loads((base / "trajectories.metadata.json").read_text())
     require(sha256(base / "trajectories.jsonl") == collection["trajectory_sha256"], "Original trajectories changed.")
-    report_name = "results/phase1/phase1d_tests.xml"
+    report_name = "results/phase1/review_tests.xml"
     suite = ET.parse(ROOT / report_name).getroot().find("testsuite")
-    require(suite.attrib["tests"] == "186" and all(suite.attrib[k] == "0" for k in ("failures", "errors", "skipped")), "Test report differs.")
+    require(suite is not None, "Missing JUnit suite.")
+    test_count = int(suite.attrib["tests"])
+    require(test_count >= 189 and all(suite.attrib[k] == "0" for k in ("failures", "errors", "skipped")), "Review suite incomplete or unsuccessful.")
+    require(len(suite.findall("testcase")) == test_count, "JUnit case count differs.")
     counts = Counter(case.attrib["classname"] for case in suite.findall("testcase"))
-    for name in ["tests/test_timing.py", "tests/test_report.py", "scripts/verify_phase1d.py", ".gitattributes"]:
+    historical = ET.parse(base / "phase1d_tests.xml").getroot().find("testsuite")
+    minimum_counts = Counter(case.attrib["classname"] for case in historical.findall("testcase"))
+    minimum_counts["tests.test_report"] += 3
+    require(all(counts[name] >= minimum for name, minimum in minimum_counts.items()), "Review suite omits milestone coverage.")
+    historical_record = json.loads((base / "phase1d_validation.json").read_text())
+    for name, expected in historical_record["report_artifacts_sha256"].items():
+        if name.endswith(".png"):
+            require(sha256(base / name) == expected, "Plot changed since its recorded visual inspection.")
+
+    for name in [*(p.relative_to(ROOT).as_posix() for directory in ("src", "tests")
+                   for p in (ROOT / directory).rglob("*.py")),
+                 "scripts/verify_phase1d.py", ".gitattributes", "README.md", "ROADMAP.md",
+                 "docs/phase1_review.md", "docs/phase1d_profiling.md"]:
         sources[name] = sha256(ROOT / name)
     record = {
-        "schema_version": 1, "milestone": "Phase 1D / Phase 1", "date": "2026-10-20",
+        "schema_version": 1, "milestone": "Phase 1 review", "date": "2026-10-21",
+        "historical_phase1d_completion_sha256": sha256(base / "phase1d_validation.json"),
         "status": "complete", "decision": "no-go", "reason": "zero observed early valid solutions; correctness passed",
         "base_commit": metadata["base_commit"], "source_sha256": sources,
         "profile_metadata": "results/phase1/profiles/run.json",
         "profile_metadata_sha256": sha256(base / "profiles/run.json"),
         "profiles_sha256": metadata["components_sha256"], "report_artifacts_sha256": provenance["artifacts_sha256"],
-        "tests": {"passed": 186, "failed": 0, "errors": 0, "skipped": 0, "exit_code": 0,
-                  "pytest_reported_seconds": 7.25, "junit_suite_seconds": float(suite.attrib["time"]),
+        "tests": {"passed": test_count, "failed": 0, "errors": 0, "skipped": 0, "exit_code": 0,
+                  "junit_suite_seconds": float(suite.attrib["time"]),
                   "report": report_name, "report_sha256": sha256(ROOT / report_name), "by_module": dict(counts)},
         "development_relative_estimated_reduction": paired["relative_mean_reduction"],
         "development_relative_estimated_reduction_ci95": paired["relative_mean_reduction_ci95"],
@@ -105,15 +164,19 @@ def main():
         "figures_visually_inspected": True, "native_verification_command": "python scripts/verify_phase1d.py",
         "next_action": "Stop after Phase 1 report; Phase 2 go entry requirement not met.",
     }
-    (base / "phase1d_validation.json").write_text(json.dumps(record, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
-    for name in ["README.md", "ROADMAP.md", "docs/phase1d_profiling.md", "results/phase1/summary.md"]:
+    for name in ["README.md", "ROADMAP.md", "docs/phase1_review.md", "docs/phase1d_profiling.md", "results/phase1/summary.md"]:
         path = ROOT / name
         text = path.read_text(encoding="utf-8")
         require(text.count(chr(96) * 3) % 2 == 0, "Unbalanced fence.")
         for target in re.findall(r"\]\(([^)]+)\)", text):
             if "://" not in target and not target.startswith("#"):
                 require((path.parent / target.split("#")[0]).exists(), "Broken link: " + name + " -> " + target)
-    print("PASS: 186 tests; 200 identities x 5 repeats; frozen inputs; source/artifact hashes; 16,800 table rows; no-go reproduced.")
+    review_path = base / "review_validation.json"
+    if args.write_review_record:
+        review_path.write_text(json.dumps(record, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
+    else:
+        require(json.loads(review_path.read_text(encoding="utf-8")) == record, "Review record is stale; rerun the full suite and record the review.")
+    print(f"PASS: {test_count} tests; 200 identities x 5 repeats; frozen inputs; source/artifact hashes; 16,800 table rows; no-go reproduced.")
 
 
 if __name__ == "__main__":

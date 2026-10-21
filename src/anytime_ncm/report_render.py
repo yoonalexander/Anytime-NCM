@@ -58,6 +58,7 @@ def write_summary(output, analysis, metadata, *, repository, profiles):
     interval = d["paired"]["relative_mean_reduction_ci95"]
     quality_ci = d["paired"]["quality_difference_ci95"]
     lines = ["# Phase 1 trajectory audit and decision", "", "**Completed:** October 20, 2026 (America/Toronto).",
+             "", "**Quality reporting completed on review:** October 21, 2026; existing trajectories and profiles reused.",
              "", "**Decision: " + analysis["decision"].upper() + ".** This is an offline estimated-cost decision; no online speedup was measured.",
              "", "## Development gate", "",
              f"Mean estimated reduction versus full depth: **{100*d['paired']['relative_mean_reduction']:.2f}%**, paired 95% interval **[{100*interval[0]:.2f}%, {100*interval[1]:.2f}%]**.",
@@ -75,6 +76,21 @@ def write_summary(output, analysis, metadata, *, repository, profiles):
               "| ---: | ---: | ---: | ---: | ---: |"]
     for k in range(12):
         lines.append(f"| {k+1} | {summaries['exploration']['valid_solution_count_by_level'][k]} | {summaries['development']['valid_solution_count_by_level'][k]} | {summaries['exploration']['first_valid_counts'][str(k+1)]} | {summaries['development']['first_valid_counts'][str(k+1)]} |")
+    lines += ["", "### Parsing, completeness, and upstream comparison", "",
+              "Counts below use every input in the named partition at each level. Unparseable and parseable-but-incomplete outputs are disjoint; complete + parseable incomplete + unparseable equals the input count. Grid validity alone does not establish clue preservation.", "",
+              "Official solved compares decoded text exactly; reference agreement compares parsed boards. Official cell accuracy is the unweighted mean of per-example zipped-character accuracy, so truncated text can score highly. Undefined per-example accuracy is saved as null; if any value is undefined, the aggregate is also undefined rather than silently dropping it. Defined coverage is shown explicitly. These secondary metrics do not control valid-solution acceptance."]
+    for partition, data in summaries.items():
+        lines += ["", f"#### {partition} (n={data['inputs']})", "",
+                  "| Level | Unparseable | Parseable incomplete | Complete | Grid valid | Clue consistent | Reference agreement |",
+                  "| ---: | ---: | ---: | ---: | ---: | ---: | ---: |"]
+        for row in data["quality_by_level"]:
+            lines.append(f"| {row['level']} | {row['unparseable_count']} | {row['parseable_incomplete_count']} | {row['complete_count']} | {row['grid_valid_count']} | {row['clue_consistent_count']} | {row['reference_agreement_count']} |")
+        lines += ["", "| Level | Official solved | Official valid grid | Official mean cell accuracy | Defined cell scores |",
+                  "| ---: | ---: | ---: | ---: | ---: |"]
+        for row in data["quality_by_level"]:
+            accuracy = row["official_cell_accuracy_mean"]
+            formatted = "undefined" if accuracy is None else f"{100*accuracy:.2f}%"
+            lines.append(f"| {row['level']} | {row['official_solved_count']} | {row['official_valid_grid_count']} | {formatted} | {row['official_cell_accuracy_defined_count']} / {data['inputs']} |")
     lines += ["", "![First-valid distribution](first_valid_distribution.png)", "",
               "Valid-to-invalid transition counts at boundaries 1→2 through 11→12: exploration " +
               str(summaries["exploration"]["valid_to_invalid_transition_counts"]) + "; development " +
@@ -126,8 +142,8 @@ def write_summary(output, analysis, metadata, *, repository, profiles):
     else:
         lines.append("Close Phase 1 as inconclusive within the fixed budget. Do not open a final holdout or expand the study retrospectively. Further measurements require a dated protocol amendment and another work order.")
     if all(all(value == 0 for value in data["valid_solution_count_by_level"][:-1]) for data in summaries.values()):
-        lines.insert(6, "No clue-consistent valid solution appeared before level 12 on any of the 1,400 inputs. The no-go reflects zero observed early-exit opportunity; correctness checks passed. It applies to this frozen Sudoku checkpoint and reconstruction/sampling setting.")
-        lines.insert(7, "")
+        lines.insert(lines.index("## Development gate"), "No clue-consistent valid solution appeared before level 12 on any of the 1,400 inputs. The no-go reflects zero observed early-exit opportunity; correctness checks passed. It applies to this frozen Sudoku checkpoint and reconstruction/sampling setting.")
+        lines.insert(lines.index("## Development gate"), "")
     lines += ["", "## Diagnostic component breakdown", "", "| Component | Exploration mean (ms) | Development mean (ms) |", "| --- | ---: | ---: |"]
     for name in analysis["component_diagnostics_ms"]["development"]:
         lines.append(f"| {name} | {analysis['component_diagnostics_ms']['exploration'][name]:.6f} | {analysis['component_diagnostics_ms']['development'][name]:.6f} |")

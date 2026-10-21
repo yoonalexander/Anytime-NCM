@@ -2,6 +2,8 @@
 
 **Completed:** October 20, 2026 (America/Toronto).
 
+**Quality reporting completed on review:** October 21, 2026; existing trajectories and profiles reused.
+
 **Decision: NO-GO.** This is an offline estimated-cost decision; no online speedup was measured.
 
 No clue-consistent valid solution appeared before level 12 on any of the 1,400 inputs. The no-go reflects zero observed early-exit opportunity; correctness checks passed. It applies to this frozen Sudoku checkpoint and reconstruction/sampling setting.
@@ -38,6 +40,76 @@ The gate uses the first 100 development identities at batch size 1, five repeats
 | 10 | 0 | 0 | 0 | 0 |
 | 11 | 0 | 0 | 0 | 0 |
 | 12 | 854 | 349 | 854 | 349 |
+
+### Parsing, completeness, and upstream comparison
+
+Counts below use every input in the named partition at each level. Unparseable and parseable-but-incomplete outputs are disjoint; complete + parseable incomplete + unparseable equals the input count. Grid validity alone does not establish clue preservation.
+
+Official solved compares decoded text exactly; reference agreement compares parsed boards. Official cell accuracy is the unweighted mean of per-example zipped-character accuracy, so truncated text can score highly. Undefined per-example accuracy is saved as null; if any value is undefined, the aggregate is also undefined rather than silently dropping it. Defined coverage is shown explicitly. These secondary metrics do not control valid-solution acceptance.
+
+#### exploration (n=1000)
+
+| Level | Unparseable | Parseable incomplete | Complete | Grid valid | Clue consistent | Reference agreement |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 0 | 13 | 987 | 0 | 0 | 0 |
+| 2 | 0 | 13 | 987 | 0 | 0 | 0 |
+| 3 | 0 | 4 | 996 | 0 | 0 | 0 |
+| 4 | 0 | 4 | 996 | 0 | 0 | 0 |
+| 5 | 0 | 4 | 996 | 0 | 0 | 0 |
+| 6 | 0 | 4 | 996 | 0 | 0 | 0 |
+| 7 | 0 | 4 | 996 | 0 | 0 | 0 |
+| 8 | 0 | 4 | 996 | 0 | 0 | 0 |
+| 9 | 0 | 4 | 996 | 0 | 0 | 0 |
+| 10 | 0 | 4 | 996 | 0 | 0 | 0 |
+| 11 | 0 | 4 | 996 | 0 | 1 | 0 |
+| 12 | 0 | 0 | 1000 | 854 | 1000 | 854 |
+
+| Level | Official solved | Official valid grid | Official mean cell accuracy | Defined cell scores |
+| ---: | ---: | ---: | ---: | ---: |
+| 1 | 0 | 0 | 14.59% | 1000 / 1000 |
+| 2 | 0 | 0 | 14.60% | 1000 / 1000 |
+| 3 | 0 | 0 | 17.02% | 1000 / 1000 |
+| 4 | 0 | 0 | 20.44% | 1000 / 1000 |
+| 5 | 0 | 0 | 20.42% | 1000 / 1000 |
+| 6 | 0 | 0 | 27.89% | 1000 / 1000 |
+| 7 | 0 | 0 | 33.18% | 1000 / 1000 |
+| 8 | 0 | 0 | 45.51% | 1000 / 1000 |
+| 9 | 0 | 0 | 61.94% | 1000 / 1000 |
+| 10 | 0 | 0 | 75.90% | 1000 / 1000 |
+| 11 | 0 | 0 | 81.70% | 1000 / 1000 |
+| 12 | 854 | 854 | 98.26% | 1000 / 1000 |
+
+#### development (n=400)
+
+| Level | Unparseable | Parseable incomplete | Complete | Grid valid | Clue consistent | Reference agreement |
+| ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| 1 | 0 | 3 | 397 | 0 | 0 | 0 |
+| 2 | 0 | 3 | 397 | 0 | 0 | 0 |
+| 3 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 4 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 5 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 6 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 7 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 8 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 9 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 10 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 11 | 0 | 2 | 398 | 0 | 0 | 0 |
+| 12 | 0 | 1 | 399 | 349 | 400 | 349 |
+
+| Level | Official solved | Official valid grid | Official mean cell accuracy | Defined cell scores |
+| ---: | ---: | ---: | ---: | ---: |
+| 1 | 0 | 0 | 14.89% | 400 / 400 |
+| 2 | 0 | 0 | 14.79% | 400 / 400 |
+| 3 | 0 | 0 | 16.99% | 400 / 400 |
+| 4 | 0 | 0 | 20.07% | 400 / 400 |
+| 5 | 0 | 0 | 20.14% | 400 / 400 |
+| 6 | 0 | 0 | 27.83% | 400 / 400 |
+| 7 | 0 | 0 | 33.23% | 400 / 400 |
+| 8 | 0 | 0 | 45.30% | 400 / 400 |
+| 9 | 0 | 0 | 62.19% | 400 / 400 |
+| 10 | 0 | 0 | 76.09% | 400 / 400 |
+| 11 | 0 | 0 | 82.09% | 400 / 400 |
+| 12 | 349 | 349 | 98.51% | 400 / 400 |
 
 ![First-valid distribution](first_valid_distribution.png)
 

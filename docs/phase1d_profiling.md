@@ -77,10 +77,10 @@ The report shows all 12 fixed-depth comparisons. Depth 12 is the only quality-fe
 - [Completion record](../results/phase1/phase1d_validation.json) and [JUnit report](../results/phase1/phase1d_tests.xml).
 
 ```powershell
-.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider', '--junitxml=results/phase1/phase1d_tests.xml')
+.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider')
 ```
 
-A model-free native Windows audit also passed: `python scripts/verify_phase1d.py`. It verifies profile selection/repeats, source/artifact checksums, the saved test report, table coverage, links, and the estimated development cost calculation.
+The October 20 run is retained as historical evidence. The current command above reruns tests without replacing historical JUnit evidence. A model-free native Windows audit also passed: `python scripts/verify_phase1d.py`. It verifies profile selection/repeats, source/artifact checksums, the saved test report, table coverage, links, and the estimated development cost calculation.
 
 Observed: **186 passed in 7.25 seconds**. This includes timing-boundary/unit checks, hook ordering and cleanup, unchanged outputs, reconstruction/prefix isolation, all-check cost accounting for never-valid inputs, paired-bootstrap clustering, gate boundaries, budget/holdout rejection, trajectory categories, and Markdown table/link verification. All four figures were visually inspected.
 
@@ -89,3 +89,9 @@ Hook-versus-uninstrumented warmup code parity passed 50 comparisons; repeat-code
 The paper-number discrepancy remains open: original full-set reproduction 86.25% versus paper 86.1%, +0.15 percentage points without an established cause. Base-model training overlap is unknown. No headline online latency, real halting, adaptive speedup, controller training, or final-holdout evaluation was performed. Original trajectory timings remain null and separate from diagnostic profiles. The upstream source, frozen protocol/partitions, dependency lock, and original baseline/collection evidence remain unchanged.
 
 Phase 1 is complete with a documented no-go. Phase 2's entry gate is not met; later phases remain on the roadmap and require a subsequent work order.
+
+## October 21 review
+
+The [Phase 1 review](phase1_review.md) completed the design-required per-level unparseable/incomplete counts and official solved/cell/valid-grid summaries from the original saved trajectories. All 189 current tests pass. Cost estimates and the no-go decision are unchanged; no new inference or timed request occurred.
+
+The default `python scripts/verify_phase1d.py` is now read-only and checks the [current review record](../results/phase1/review_validation.json). After a deliberate source/report update and fresh full-suite run, `--write-review-record` explicitly records the reviewed evidence without rewriting the historical Phase 1D completion record.

@@ -1,12 +1,12 @@
 {
   "artifacts_sha256": {
-    "analysis.json": "c43a885fc557400c7997cd69c03bc42d740f39444df1d5fa175b7aecbf0ff1cc",
+    "analysis.json": "f07902170491118523d2038339f635b260561a227b8658753e2a83fdc8236f67",
     "estimated_cost_comparison.png": "cb205c427c8c972e3e9338eeede1bffc42d18f734bb29d05de518d9b5db1cccc",
     "first_valid_distribution.png": "d07d25dc6e56373e2ed1238032bf5167607f47133c9f5531888565ffe607aab4",
     "representative_trajectories.png": "e546d120f1c2bd87090c5843ce8b8c4d1d1b26ea626f1dfb653018f35bc206a3",
     "solve_rate_by_level.png": "f0e34324cc32ca4185b48e20197dca859e2b2ca6e2732e1899b1227e10553db0",
-    "summary.md": "7ddbe083e540467ef8cee53a75d7266ab47c30b8a7465369d4e916ae605f8a25",
-    "trajectory_table.csv": "2e227ebc50a028d4701f970f4c70026b5c7b067bc770913a84635f3e814f3fd3"
+    "summary.md": "78939d792784b8c55702a0c3bba864bc94607b85bee35f38a7f770d49d31ead5",
+    "trajectory_table.csv": "4a6db7f43e4220eb3fbafb503f1265141351be605f2f6978e863858b2a688af6"
   },
   "bootstrap": {
     "resamples": 10000,
@@ -46,7 +46,7 @@
   "source_sha256": {
     "docs/phase1d_analysis_plan.md": "84895d437aa1031a6a2adc0bcb1c2e1d82e0616a1f2a8b70ef52792e53d69e19",
     "scripts/report_phase1.py": "c11771ea6b16af2de87db803d88cc9830f65b0d5a27eb6928b4aebf29162aea9",
-    "src/anytime_ncm/report.py": "5186a3dab5f512261175b2f09850cb73e9f478b51b5d1ce06f6a4e37c6adece2",
-    "src/anytime_ncm/report_render.py": "efb1b45a781a6e5a48b7e42aa80caf71fff546bebc27961db40b7648e5e9d13e"
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/report_render.py": "9927b8418e71a5424caa1006861373452f166e07777fc3f2edb2ae3db633a247"
   }
 }

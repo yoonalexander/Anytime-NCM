@@ -60,6 +60,36 @@ def decision_gate(estimate, *, correctness_passed=True, costs_available=True, qu
     return "no-go" if high < 0.05 else "inconclusive"
 
 
+
+def quality_by_level(records):
+    """Keep structural failure modes and official metric denominators explicit."""
+    result = []
+    for k in range(12):
+        states = [r["levels"][k] for r in records]
+        correctness = [s["correctness"] for s in states]
+        diagnostics = [s["diagnostics"] for s in states]
+        accuracies = [d["official_cell_accuracy"] for d in diagnostics]
+        defined = [value for value in accuracies if value is not None]
+        result.append({
+            "level": k + 1,
+            "parseable_count": sum(c["parseable"] for c in correctness),
+            "unparseable_count": sum(not c["parseable"] for c in correctness),
+            "complete_count": sum(c["complete"] for c in correctness),
+            "parseable_incomplete_count": sum(c["parseable"] and not c["complete"] for c in correctness),
+            "grid_valid_count": sum(c["grid_valid"] for c in correctness),
+            "clue_consistent_count": sum(c["clue_consistent"] for c in correctness),
+            "valid_solution_count": sum(c["is_valid_solution"] for c in correctness),
+            "reference_agreement_count": sum(d["reference_agreement"] for d in diagnostics),
+            "official_solved_count": sum(d["official_solved"] for d in diagnostics),
+            "official_valid_grid_count": sum(d["official_valid_grid"] for d in diagnostics),
+            "official_cell_accuracy_defined_count": len(defined),
+            "official_cell_accuracy_undefined_count": len(states) - len(defined),
+            # Upstream averages per-example values, propagating undefined values.
+            # JSON null represents that undefined aggregate, never a zero score.
+            "official_cell_accuracy_mean": sum(defined) / len(states) if len(defined) == len(states) else None,
+        })
+    return result
+
 def summarize_trajectories(records):
     summaries = {}
     for partition in ("exploration", "development"):
@@ -76,6 +106,7 @@ def summarize_trajectories(records):
             unstable += any(losses)
         summaries[partition] = {
             "inputs": len(selected),
+            "quality_by_level": quality_by_level(selected),
             "valid_solution_count_by_level": [sum(r["levels"][k]["correctness"]["is_valid_solution"] for r in selected) for k in range(12)],
             "reference_solved_count_by_level": [sum(r["levels"][k]["diagnostics"]["official_solved"] for r in selected) for k in range(12)],
             "first_valid_counts": {str(k): histogram[str(k)] for k in range(1, 13)} | {"never": histogram["never"]},
@@ -217,13 +248,15 @@ def build_report(repository, profiles, output, *, replace_report=False):
     with (output / "trajectory_table.csv").open("w" if replace_report else "x", encoding="utf-8", newline="") as stream:
         writer = csv.writer(stream, lineterminator="\n")
         writer.writerow(["sample_id", "dataset_index", "partition", "level", "code_length", "cumulative_codes",
-                         "parseable", "complete", "grid_valid", "clue_consistent", "valid_solution", "reference_agreement", "official_solved"])
+                         "parseable", "complete", "grid_valid", "clue_consistent", "valid_solution", "reference_agreement", "official_solved",
+                         "official_valid_grid", "official_cell_accuracy"])
         for record in trajectories:
             for s in record["levels"]:
                 c, d = s["correctness"], s["diagnostics"]
                 writer.writerow([record["sample_id"], record["dataset_index"], record["partition"], s["level"],
                                  s["code_length"], s["cumulative_codes"], c["parseable"], c["complete"], c["grid_valid"],
-                                 c["clue_consistent"], c["is_valid_solution"], d["reference_agreement"], d["official_solved"]])
+                                 c["clue_consistent"], c["is_valid_solution"], d["reference_agreement"], d["official_solved"],
+                                 d["official_valid_grid"], d["official_cell_accuracy"]])
     write_figures(output, analysis)
     write_summary(output, analysis, metadata, repository=repository, profiles=profiles)
     source_names = ["src/anytime_ncm/report.py", "src/anytime_ncm/report_render.py", "scripts/report_phase1.py", "docs/phase1d_analysis_plan.md"]

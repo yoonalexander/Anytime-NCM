@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed.
+**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; all 189 tests pass.
 
 ## Contents
 
@@ -322,7 +322,7 @@ The original design file remains authoritative. `DESIGN.md` is a navigation entr
 | `scripts/validate_trajectories.py` | Recheck saved trajectories and provenance without models/CUDA |
 | `scripts/profile_phase1.py` | Execute only the frozen 200-input / five-repeat diagnostic budget |
 | `scripts/report_phase1.py` | Generate tables, plots, paired bootstrap statistics, and the offline gate |
-| `scripts/verify_phase1d.py` | Audit stored Phase 1D evidence and reproduce its no-go calculation without models/CUDA |
+| `scripts/verify_phase1d.py` | Read-only audit of current Phase 1 evidence and no-go calculation; explicit flag records a fresh review |
 | `scripts/lock_environment.py` | Generate the initial dependency lock after recorded canonical baseline runs |
 
 `configs/setup_sources.json` records actual setup pins. `configs/sudoku_smoke.yaml` and `configs/sudoku_full.yaml` now drive the strict Phase 1C collector schema. Full collection means the 1,000 exploration plus 400 development inputs; both sealed holdouts are excluded. `configs/stopping_policies.yaml` remains a proposed template. The official baseline wrapper uses `third_party/ncm/config/eval/sudoku-hard.yaml` directly.

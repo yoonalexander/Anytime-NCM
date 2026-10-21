@@ -130,7 +130,7 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 **Acceptance:** An independent developer can reproduce the trajectory table, plot, and decision from the recorded baseline, manifest, protocol, commands, and profiles. An artifact-complete negative/inconclusive report closes Phase 1 without requiring an online patch. Missing measurements support an inconclusive result, not a measured negative speedup.
 
-**Evidence:** [Phase 1 report](results/phase1/summary.md), [diagnostic contract](docs/phase1d_profiling.md), [completion record](results/phase1/phase1d_validation.json), full budget coverage, and 186 passing tests. No-go closes Phase 1; Phase 2 remains unstarted.
+**Evidence:** [Phase 1 report](results/phase1/summary.md), [diagnostic contract](docs/phase1d_profiling.md), [completion record](results/phase1/phase1d_validation.json), full budget coverage, and 186 passing tests. No-go closes Phase 1; Phase 2 remains unstarted. The [October 21 review](docs/phase1_review.md) completed parsing/completeness and official comparison summaries; the current suite passes 189 tests.
 
 ## Phase 2 — True online verified stopping
 
@@ -278,3 +278,9 @@ Completed the frozen diagnostic budget: first 100 exploration and 100 developmen
 **Decision: no-go for limited opportunity.** None of the 1,400 audited inputs had a valid solution at levels 1-11; valid-to-invalid transitions were zero. Every-level verified stopping skipped zero levels/codes and added **44.18% estimated development cost**, 95% interval **43.45%-45.02%**. Correctness/parity checks passed; zero false accepts and zero quality loss. Calibration sensitivity also yields no-go. Final solved counts: 854/1,000 exploration and 349/400 development. Early-success and late-recovery cases were absent and were not fabricated.
 
 Evidence: [report](results/phase1/summary.md), [profiling contract](docs/phase1d_profiling.md), [analysis plan](docs/phase1d_analysis_plan.md), [completion record](results/phase1/phase1d_validation.json), [analysis](results/phase1/analysis.json), and [profile provenance](results/phase1/profiles/run.json). Both holdouts remain excluded; the frozen protocol/partitions, original baseline/collection evidence, environment lock, and upstream are unchanged. This closes Phase 1 with an artifact-complete negative finding. No online latency claim, halting patch, training, or Phase 2 work occurred. Phase 2's go entry condition is not met; the full Phase 0-5 plan is preserved.
+
+### Phase 1 review — October 21, 2026
+
+Reviewed 1A–1D against the design and acceptance criteria. Added the missing per-level parsing/completeness counts and official cell/valid-grid summaries from existing data, with three focused tests. All 189 tests pass. Original trajectory/profile data, frozen protocol/partitions, and all prior decision/cost results are unchanged. [Review and commands](docs/phase1_review.md); [current evidence](results/phase1/review_validation.json).
+
+Phase 1 remains complete with no-go. Phase 2's entry requirement is not met; no online work or new inference was performed.
