@@ -1,6 +1,7 @@
 """Verify current Phase 1 evidence; optionally record a fresh review, without models/CUDA."""
 
 import argparse
+from datetime import date
 from collections import Counter
 import csv
 import json
@@ -25,9 +26,12 @@ def require(condition, message):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--write-review-record", action="store_true",
-                        help="Record the October 21 review after its fresh full-suite run.")
+                        help="Record the current compatibility review after a fresh full-suite run.")
+    parser.add_argument("--review-date", help="ISO date for a new review; default preserves the recorded date.")
     args = parser.parse_args()
     base = ROOT / "results/phase1"
+    review_date = args.review_date or json.loads((base / "review_validation.json").read_text())["date"]
+    date.fromisoformat(review_date)
     metadata = json.loads((base / "profiles/run.json").read_text())
     analysis = json.loads((base / "analysis.json").read_text())
     provenance = json.loads((base / "report_provenance.json").read_text())
@@ -146,7 +150,7 @@ def main():
                  "docs/phase1_review.md", "docs/phase1d_profiling.md"]:
         sources[name] = sha256(ROOT / name)
     record = {
-        "schema_version": 1, "milestone": "Phase 1 review", "date": "2026-10-21",
+        "schema_version": 1, "milestone": "Phase 1 review", "date": review_date,
         "historical_phase1d_completion_sha256": sha256(base / "phase1d_validation.json"),
         "status": "complete", "decision": "no-go", "reason": "zero observed early valid solutions; correctness passed",
         "base_commit": metadata["base_commit"], "source_sha256": sources,

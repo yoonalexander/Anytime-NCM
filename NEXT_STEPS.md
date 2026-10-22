@@ -1,8 +1,8 @@
 # What Comes Next: Revised Research Roadmap After the Phase 1 No-Go
 
-**Updated:** October 21, 2026 (America/Toronto)
+**Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** Proposed follow-up plan; no new experiment has been started or protocol amended by writing this document.
+**Status:** R0 and R1A complete. R1B and later studies remain proposed; no new inference or protocol amendment occurred during R1A.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
@@ -24,7 +24,7 @@ If bounded Sudoku follow-ups remain negative, choose explicitly between closing 
 | Development estimated time is 151.02 ms full depth versus 217.74 ms with every-level checking | Monitoring adds an estimated 66.71 ms; this is computation time, not money. |
 | Estimated reduction is −44.18%, with 95% interval [−45.02%, −43.45%] | The original 5% improvement gate fails. |
 | Cell accuracy reaches 81.70% exploration / 82.09% development at level 11, while valid-grid rate remains zero | Partial information exists, but the mechanism preventing exact early solutions is undiagnosed. |
-| Correctness/parity checks pass; all 189 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
+| Correctness/parity checks pass; all 218 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
 
 An optimized implementation might reduce reconstruction/transfer overhead. It would still need earlier acceptable outputs to skip generation under the current verified rule. There is no measured online slowdown or speedup yet.
 
@@ -33,7 +33,7 @@ An optimized implementation might reduce reconstruction/transfer overhead. It wo
 | ID | Work package | Status | Required outcome before proceeding |
 | --- | --- | --- | --- |
 | R0 | Package the completed study as a paper and revise the research plan | Complete with these documents | Claims, sources, limitations, and conditional next work are explicit. |
-| R1A | Diagnose errors in saved exploration trajectories | Proposed; recommended next work order | A reproducible error taxonomy and specific hypotheses, without new inference. |
+| R1A | Diagnose errors in saved exploration trajectories | Complete — October 22; [report](results/followup/sudoku_prefix_diagnosis/summary.md) | A reproducible error taxonomy and specific hypotheses, without new inference. |
 | R1B | Test target-encoded prefixes on a small exploration-only set | Conditional; new protocol required | Evidence separating limited target reconstruction from generated-prefix failure, without claiming a causal proof. |
 | R2 | Screen alternative frozen Sudoku checkpoints | Conditional on R1 synthesis | At least one actual early valid output admits a candidate to a larger audit; no screen result alone authorizes online work. |
 | R3 | Run a confirmatory opportunity/cost audit for one selected setting | Conditional; separate frozen study | A new documented go/no-go/inconclusive decision using matched quality and total estimated time. |
@@ -42,7 +42,7 @@ An optimized implementation might reduce reconstruction/transfer overhead. It wo
 | Phase 4 | Translation/summarization generalization | Alternative branch, not started | Task-specific quality tolerances, signals, protocol, artifacts, and resource feasibility. |
 | Phase 5 | Viewer / optional Concept Firewall bridge | Optional, not started | A separate scope grounded in recorded results. |
 
-R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 1's frozen budget. Original phases retain their numbering and completion history. Writing this plan completes R0 only.
+R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 1's frozen budget. Original phases retain their numbering and completion history. R0 documented the existing study; R1A now adds a saved-data diagnosis. Neither changes the original gate or starts R1B.
 
 ## 4. R1A — Diagnose the saved failures before collecting more data
 
@@ -50,18 +50,20 @@ R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 
 
 **Scope:** Use only the existing 1,000 exploration trajectories and their already-permitted puzzle/reference inputs. Keep development out of exploratory diagnosis to avoid accumulating additional selection on the gate set. Reuse the existing validator and independent checks. No model calls, profiling, new downloads, final-holdout materialization, or changes to historical artifacts.
 
-- [ ] Produce per-level distributions of wrong reference cells, blank cells, clue violations, and row/column/box constraint violations. Label whether zeros/blanks participate in each statistic.
-- [ ] Separate errors at given clues from errors at originally empty cells; report denominators and overlapping error categories explicitly.
-- [ ] Compare levels 10, 11, and 12 for final-success and final-failure groups. Label these groups as retrospective analysis, never inference-time features.
-- [ ] Measure how many cells change, are corrected, or become incorrect between adjacent levels. Keep reference-based labels outside causal features.
-- [ ] Select representative examples by a declared rule and report absent categories rather than inventing them.
-- [ ] Reconfirm the original primary counts; a discrepancy triggers a correctness investigation before interpreting any new analysis.
+- [x] Produce per-level distributions of wrong reference cells, blank cells, clue violations, and row/column/box constraint violations. Label whether zeros/blanks participate in each statistic.
+- [x] Separate errors at given clues from errors at originally empty cells; report denominators and overlapping error categories explicitly.
+- [x] Compare levels 10, 11, and 12 for final-success and final-failure groups. Label these groups as retrospective analysis, never inference-time features.
+- [x] Measure how many cells change, are corrected, or become incorrect between adjacent levels. Keep reference-based labels outside causal features.
+- [x] Select representative examples by a declared rule and report absent categories rather than inventing them.
+- [x] Reconfirm the original primary counts; a discrepancy triggers a correctness investigation before interpreting any new analysis.
 
-**Proposed deliverables:** `docs/studies/sudoku-prefix-diagnosis-plan.md`, `results/followup/sudoku_prefix_diagnosis/summary.md`, machine-readable counts, source hashes, and focused tests of error-count definitions.
+**Completed deliverables:** `docs/studies/sudoku-prefix-diagnosis-plan.md`, `results/followup/sudoku_prefix_diagnosis/summary.md`, machine-readable counts, source hashes, and focused tests of error-count definitions.
 
 **Acceptance:** Another developer can regenerate the summary from saved evidence. The report separates observed error patterns from hypotheses. No new outcome is attributed to tokenization or generation solely because errors cluster near the last level.
 
 **Stopping rule:** Complete this analysis once; use its synthesis to specify R1B. It cannot overturn the original gate because it introduces no earlier valid outputs.
+
+**Evidence and findings:** [Report](results/followup/sudoku_prefix_diagnosis/summary.md), [analysis](results/followup/sudoku_prefix_diagnosis/analysis.json), [provenance](results/followup/sudoku_prefix_diagnosis/provenance.json), and [completion record](results/followup/sudoku_prefix_diagnosis/completion.json). At level 11, 999/1,000 exploration boards violate a clue; mean reference errors are 14.821, including 4.964 at supplied clues. The final level restores all supplied clues, but 146 boards remain invalid. All 1,000 puzzles lose at least one previously reference-correct cell at 10→11 despite net improvement. These patterns motivate the target-encoding comparison and do not establish its cause.
 
 ## 5. R1B — Compare target-encoded and generated prefixes
 
@@ -73,7 +75,7 @@ This diagnostic was not performed in Phase 1. It is a new reference-based analys
 
 - Use exactly the first 32 exploration identities already assigned by the manifest; do not choose inputs from observed error severity.
 - Encode each reference once through the official target encoder/quantizer path and decode its 12 cumulative full-resolution prefixes: 32 encodings and 384 prefix reconstructions/decodes. No new generator runs and no timing study.
-- Compare against the corresponding generated-prefix outputs already saved in Phase 1. Keep all outcomes, including unsuccessful final reference round trips.
+- Compare against the corresponding generated-prefix outputs already saved in Phase 1. Keep all outcomes, including unsuccessful final reference round trips. Carry R1A's given/empty-position split and clue/unit metrics into the pilot, with special attention to levels 10–12; retain all 12 levels and the same 384-decode budget.
 - First validate the target-encoding contract, token format, final reconstruction, and storage/future-code isolation. A failed final round trip is a finding requiring investigation, not a reason to remove that input.
 - Record any failed attempt; do not silently increase the pilot size. Any additional operation needed beyond the declared budget must be documented before execution.
 
@@ -167,6 +169,6 @@ Useful for communication after the next research decision, but optional and sepa
 
 ## 11. Immediate handoff
 
-**Recommended next work order:** “Complete R1A: diagnose the saved exploration trajectories, without new inference or holdout access; report error distributions and hypotheses, then commit and push.”
+**Recommended next work order:** “Complete R1B: freeze the 32-input target-encoding diagnostic protocol, compare target-encoded and saved generated prefixes, validate final round trips, then report, commit, and push.”
 
-That work produces the evidence needed to specify R1B. No implementation, new checkpoint evaluation, online stopping, controller training, or final-holdout evaluation has been started as part of writing this revised roadmap.
+R1A is complete with 1,000 exploration puzzles, 12,000 board states, 11,000 transitions, 29 new tests, and zero new model calls. R1B has not started; neither checkpoint screening, online stopping, controller training, nor final-holdout evaluation occurred.

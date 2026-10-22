@@ -1,0 +1,162 @@
+{
+  "artifacts_sha256": {
+    "analysis.json": "e98cef32101ec8d3a8777b7b60b06f7e2ea44b7b9dee0c0cd548b809b4c5ebba",
+    "board_metrics.csv": "3ff846292951ec827f05099a041b56a4402ab9a837cf340d5b0b1949a7b6f89c",
+    "error_trends.png": "fa48f40e37a7eb8826bb5145defefee7d010f6942c9e4320b80b9dcd89a96e60",
+    "late_error_distributions.png": "46894939f08a5b0983c40629c306f62d44ac251b7f68e0c4e3afe53023c64fc4",
+    "summary.md": "500fd20afca5699a9a290ea77b58e6ee4a0bcdb5b0535d4d99528d818bf1853e",
+    "transition_changes.png": "05510b3b5d5e548ba20827cd1e485adbfc0ee26da1b1515e7571f068e25e7d17",
+    "transition_metrics.csv": "ca1e035c36fa0d30ed748c09dd56d9eaba2ca7903d78c5ed5525ffdf1736cd6f"
+  },
+  "base_commit": "c1fce9311998e2d7ae9609c1e34b0c6949d6a256",
+  "date": "2026-10-22",
+  "documentation_sha256": {
+    "NEXT_STEPS.md": "fc67b009af6b1f12ef6917794a8afa9b779a8dcce2674c8e86a2db4cc3cefbbf",
+    "README.md": "eb0d45a4a8833c438055df110fde7ce62601621d66bf8051c016aa14fab76561",
+    "ROADMAP.md": "9c72938fe80a0727f5e08ef7bfabde7c3addd7131a48f09c13e7fbfe80afe76a",
+    "docs/studies/sudoku-prefix-diagnosis-plan.md": "a3d9738a3631df6645542369113188fb173a74ae46c798e030a202f2e529fc5a",
+    "results/followup/sudoku_prefix_diagnosis/summary.md": "500fd20afca5699a9a290ea77b58e6ee4a0bcdb5b0535d4d99528d818bf1853e"
+  },
+  "figures_visually_inspected": [
+    "error_trends.png",
+    "transition_changes.png",
+    "late_error_distributions.png"
+  ],
+  "historical_empirical_inputs_unchanged": true,
+  "historical_review_archive": {
+    "directory": "results/phase1/reviews/2026-10-21",
+    "review_tests_sha256": "6c3f8674ca2770db58cb36b4b9a79fbdfacaaabe4868dd03e33975b0004d3f1c",
+    "review_validation_sha256": "2522049dd3080f56a47f5726796e6949ff50bfdc34ed8297c34fb925cb4bedb7"
+  },
+  "independent_csv_checks": {
+    "board_rows": 12000,
+    "cell_partitions_and_net_error_identities": "passed",
+    "every_group_level_histogram_recounted": "passed",
+    "local_links_checked": 127,
+    "transition_rows": 11000
+  },
+  "limitations": [
+    "descriptive exploration-only diagnosis; no causal attribution",
+    "reference labels and final-outcome groups cannot be inference features",
+    "no target-encoding diagnostic or online stopping experiment performed"
+  ],
+  "milestone": "R1A",
+  "native_model_free_recomputation": "passed",
+  "next_action": "R1B proposed: freeze the 32-input target-encoding pilot before new encoding/decoding.",
+  "original_exploration_primary_counts_reproduced": {
+    "first_valid_counts": {
+      "1": 0,
+      "10": 0,
+      "11": 0,
+      "12": 854,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6": 0,
+      "7": 0,
+      "8": 0,
+      "9": 0,
+      "never": 146
+    },
+    "inputs": 1000,
+    "never_solved_count": 146,
+    "valid_solution_count_by_level": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      854
+    ],
+    "valid_to_invalid_transition_counts": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "original_phase1_decision": "no-go",
+  "phase1_compatibility_check": {
+    "record": "results/phase1/review_validation.json",
+    "record_sha256": "bab43fe918d94b5a4a5edcc9d9bf40da41bd994233c1f4834788f089ebbb9105",
+    "scope": "Separate maintenance check of recorded Phase 1 aggregates and source/artifact integrity; no new experiment or policy selection.",
+    "status": "passed"
+  },
+  "pre_analysis_plan_sha256": "a3d9738a3631df6645542369113188fb173a74ae46c798e030a202f2e529fc5a",
+  "provenance_sha256": "f75d89a0ad19cb29b70c10597c2193a2d48cd5cfbc6a08de4de221c9c920ea9e",
+  "runtime": {
+    "backend": "Agg",
+    "matplotlib": "3.11.2",
+    "native_verification_imported_matplotlib": false,
+    "native_verification_imported_torch": false,
+    "native_verification_python": "3.14.2",
+    "report_platform": "Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "report_python": "3.12.3"
+  },
+  "schema_version": 1,
+  "scope": {
+    "board_rows": 12000,
+    "development_lines_skipped_before_json": 400,
+    "development_records_deserialized": 0,
+    "exploration_inputs": 1000,
+    "exploration_records_deserialized": 1000,
+    "holdout_records_deserialized": 0,
+    "model_calls": 0,
+    "sealed_rows_materialized": 0,
+    "selected_puzzle_rows": 1000,
+    "selected_reference_rows": 1000,
+    "timed_requests": 0,
+    "trajectory_lines_traversed": 1400,
+    "transition_rows": 11000
+  },
+  "source_sha256": {
+    "docs/studies/sudoku-prefix-diagnosis-plan.md": "a3d9738a3631df6645542369113188fb173a74ae46c798e030a202f2e529fc5a",
+    "scripts/collect_trajectories.py": "89698a0e68ea0edaba6dec8dd85297798e70bfd1f4a0f37ef5185ed39542afb8",
+    "scripts/diagnose_sudoku_prefixes.py": "be69c79d5c2871bed81da0d6144987f085011e42b53ae9af6eb6c11d5b1a2afc",
+    "src/anytime_ncm/cli.py": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54",
+    "src/anytime_ncm/collect.py": "4fd45677b4d5d4a801e6f67b9abcd6a41ed96e715f61e03062ca42c267b653c9",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/diagnosis.py": "d78a32c6e25d1e65f2a4ad0c918dcec8e1a824dcb220f1c30f38936acd438356",
+    "src/anytime_ncm/diagnosis_render.py": "cb1f46bdff30f855833e6ca87793ed802e5b792529144426a18d9ca9d2039276",
+    "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_diagnosis.py": "b06a5220d50e5e78a3541a27328365326d5b236a921847c34c08bb95f97edac3"
+  },
+  "status": "complete",
+  "tests": {
+    "R1A_tests": 29,
+    "by_module": {
+      "tests.test_collection": 52,
+      "tests.test_diagnosis": 29,
+      "tests.test_full_depth_equivalence": 3,
+      "tests.test_partial_decoder": 26,
+      "tests.test_report": 28,
+      "tests.test_sudoku_validator": 59,
+      "tests.test_timing": 21
+    },
+    "errors": 0,
+    "failures": 0,
+    "junit_suite_seconds": 5.654,
+    "passed": 218,
+    "pytest_reported_seconds": 5.66,
+    "report": "results/followup/sudoku_prefix_diagnosis/tests.xml",
+    "report_sha256": "917a62dad16e16c890536ea4864a2008e44266be1084bc66f51419195b3c15bb",
+    "skipped": 0
+  }
+}

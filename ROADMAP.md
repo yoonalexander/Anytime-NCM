@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
-**Updated:** October 21, 2026
-**Current position:** Sections 6-7 and Phase 1 (1A-1D) are complete. Phase 1 decision: no-go.
-**Next proposed work:** R1A, diagnosis of saved exploration failures without new inference, as specified in the [revised research roadmap](NEXT_STEPS.md). Phase 2 remains blocked by the original no-go; follow-up implementation requires its own work order.
+**Updated:** October 22, 2026
+**Current position:** Sections 6-7, Phase 1 (1A-1D), and R1A are complete. Original Phase 1 decision: no-go.
+**Next proposed work:** R1B, the separately scoped 32-input target-encoding diagnostic in the [revised research roadmap](NEXT_STEPS.md). Phase 2 remains blocked by the original no-go; follow-up implementation requires its own work order.
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -26,7 +26,7 @@ The [paper-style report](RESEARCH_PAPER.md) records the completed hard-Sudoku st
 | Follow-up | Status | Boundary |
 | --- | --- | --- |
 | R0: Paper and revised research plan | Complete | Documentation of existing evidence only |
-| R1A: Saved exploration error diagnosis | Proposed next work | No inference, profiling, or reserved holdout access |
+| R1A: Saved exploration error diagnosis | Complete — [report](results/followup/sudoku_prefix_diagnosis/summary.md) | 1,000 exploration inputs; no inference, profiling, or reserved holdout access |
 | R1B: Target-encoded prefix pilot | Conditional | New protocol; 32 existing exploration identities; no new generator runs |
 | R2: Easy, then conditional medium Sudoku screen | Conditional | At most two candidates; frozen inputs and bounded comparator/trajectory generation |
 | R3: Confirmatory audit for one selected setting | Conditional | Separate partitions, budget, estimated-cost evidence, and decision |
@@ -302,3 +302,11 @@ Phase 1 remains complete with no-go. Phase 2's entry requirement is not met; no 
 ### Research-paper and revised-plan delivery — October 21, 2026
 
 Created [RESEARCH_PAPER.md](RESEARCH_PAPER.md) from the recorded baseline, trajectories, profiles, uncertainty, correctness evidence, and limitations. Added [NEXT_STEPS.md](NEXT_STEPS.md) with proposed R1–R3 diagnosis/screening/audit milestones and preserved all original phases. R0 is documentation-complete. No new inference, profiling, training, online implementation, or holdout access occurred.
+
+### R1A completion — October 22, 2026
+
+Completed the predeclared saved-data diagnosis: 1,000 exploration inputs, 12,000 board states, and 11,000 adjacent transitions. Development JSONL rows were skipped before deserialization. Original exploration primary counts were reproduced exactly, with no new inference, timed requests, downloads, or holdout materialization.
+
+Level 11 averages 14.821 wrong reference cells, including 4.964 at given clues; 999/1,000 boards violate at least one clue. Level 12 preserves every clue and has no blanks, but 146 boards still fail primary validity. At 10→11 every puzzle loses at least one previously correct cell despite aggregate improvement. These are descriptive findings; tokenizer/generator attribution remains open.
+
+[Report](results/followup/sudoku_prefix_diagnosis/summary.md), [pre-analysis plan](docs/studies/sudoku-prefix-diagnosis-plan.md), [provenance](results/followup/sudoku_prefix_diagnosis/provenance.json), and [completion record](results/followup/sudoku_prefix_diagnosis/completion.json). All 218 tests pass, including 29 R1A tests. The previous current Phase 1 source/JUnit review is archived byte-for-byte under results/phase1/reviews/2026-10-21/ before refreshing compatibility evidence. Original empirical/Phase 1D completion artifacts are unchanged. R1B is the next proposed milestone; it has not started.

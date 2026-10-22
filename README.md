@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; all 189 tests pass.
+**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; all 218 tests pass, including 29 R1A diagnosis tests.
 
 ## Contents
 
@@ -56,7 +56,7 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Headline online adaptive benchmarks | Not started |
 | Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | 189 passed; timing/statistics/report checks included; online halting tests remain pending |
+| Executable research tests | 218 passed; timing/statistics/report checks included; online halting tests remain pending |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; online adaptive inference is pending.
@@ -85,6 +85,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [ROADMAP.md](ROADMAP.md) | Phase 0–5 execution checklist, milestones, acceptance criteria, and decision gates |
 | [Research paper](RESEARCH_PAPER.md) | Paper-style account of the completed study, methods, results, sources, and limits |
 | [Revised next steps](NEXT_STEPS.md) | Post-no-go diagnostic milestones, bounded checkpoint screening, and conditional online work |
+| [R1A error diagnosis](results/followup/sudoku_prefix_diagnosis/summary.md) | Exploration-only reference/clue/unit error distributions and adjacent-level changes |
 | [Design document](Anytime_NCM_Design_Document.md) | Technical design and scientific requirements |
 | [DESIGN.md](DESIGN.md) | Entry point to the original design document |
 | [Experiment protocol](docs/experiment_protocol.md) | Frozen partitions, budgets, metrics, timing boundaries, and statistical procedure |
@@ -95,7 +96,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [Phase 1D profiling](docs/phase1d_profiling.md) | Reproduction commands, diagnostic boundaries, budget, and limitations |
 | [Setup summary](results/setup/summary.md) | Compact operational results |
 
-The [research paper](RESEARCH_PAPER.md) documents the completed findings. The [revised next-steps roadmap](NEXT_STEPS.md) proposes diagnosing saved exploration failures before any new study; no follow-up experiment has started. The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
+The [research paper](RESEARCH_PAPER.md) documents the completed findings. The [revised next-steps roadmap](NEXT_STEPS.md) records the completed R1A saved-data diagnosis and proposes R1B target-encoding checks next; no new model inference has occurred. The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
 
 ## Validated environment
 
@@ -418,3 +419,15 @@ See [docs/known_limitations.md](docs/known_limitations.md) for the current evide
 Anytime NCM builds on [HazyResearch/ncm](https://github.com/HazyResearch/ncm) and Kumbong et al., [Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](https://arxiv.org/abs/2610.14162).
 
 The NCM source remains a separate pinned submodule with its [upstream license](https://github.com/HazyResearch/ncm/blob/c70274273f489abc73832b2b98584a8483b6b203/LICENSE). Checkpoint and dataset provenance is recorded separately in the source/artifact manifests. This repository does not yet contain a separate project license file.
+
+## R1A saved-prefix diagnosis
+
+The [R1A report](results/followup/sudoku_prefix_diagnosis/summary.md) analyzes 1,000 exploration puzzles, 12,000 states, and 11,000 transitions with zero model calls. At level 11, 999 boards violate a supplied clue; at level 12 all preserve clues but 146 remain invalid. All 218 tests pass; 29 cover the new metrics and access guards. The [pre-analysis plan](docs/studies/sudoku-prefix-diagnosis-plan.md) defines counts, denominators, overlaps, and fixed example rules.
+
+Recheck the report without inference or figure rendering:
+
+~~~powershell
+python scripts/diagnose_sudoku_prefixes.py --verify
+~~~
+
+To reproduce, run the same script in the validated WSL environment without --verify, using a fresh --output directory under results/followup/. [Completion evidence](results/followup/sudoku_prefix_diagnosis/completion.json) records source/artifact hashes, test coverage, and scope. R1B remains unstarted.

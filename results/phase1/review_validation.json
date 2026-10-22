@@ -1,6 +1,6 @@
 {
   "base_commit": "02525759dfeb33bddfa8fe66856f437a1ed5ff0e",
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "decision": "no-go",
   "development_estimated_baseline_ms": 151.021406714,
   "development_estimated_verified_ms": 217.73526663,
@@ -46,21 +46,23 @@
     "warmups": 10
   },
   "source_sha256": {
-    ".gitattributes": "89caed9eb20f90d3ae3726a8319e94390439dfff5e366555967cb07cb75cb518",
-    "README.md": "9a40ec081389d8ccdca521f3c93f840c7102e1ec771c9ebc8e131c76e23e0206",
-    "ROADMAP.md": "324c88ef0c98467561b192e36c341ca4dc9749ba1c4756be730ed0232dd2d34c",
+    ".gitattributes": "24cc7993d81a5bfaad93b6139c4bdd5b1c92a466f6ad6025fbc8adbe43fae360",
+    "README.md": "eb0d45a4a8833c438055df110fde7ce62601621d66bf8051c016aa14fab76561",
+    "ROADMAP.md": "9c72938fe80a0727f5e08ef7bfabde7c3addd7131a48f09c13e7fbfe80afe76a",
     "docs/phase1_review.md": "f6a508ea33d8453ab0d1dd3d43fe6c4125bdf5add9727a3f4b67291315da7a7c",
     "docs/phase1d_analysis_plan.md": "84895d437aa1031a6a2adc0bcb1c2e1d82e0616a1f2a8b70ef52792e53d69e19",
     "docs/phase1d_profiling.md": "0e92562c046664777148c68815ff9dd889e50f045e7747334e001f8ec15a217b",
     "scripts/profile_phase1.py": "5c68ce39599aee70f4ae8498a748c927729c83ab01519a47946bdb2f8624b241",
     "scripts/report_phase1.py": "c11771ea6b16af2de87db803d88cc9830f65b0d5a27eb6928b4aebf29162aea9",
-    "scripts/verify_phase1d.py": "715835aef08a9b60f7de72edf5075b1a7a9c552e1341846e81375e7f60e6c807",
+    "scripts/verify_phase1d.py": "a2d57753dc1ca4b9aa143b522a40184e8a93613eb87eeced3c99943205bb8df0",
     "src/anytime_ncm/__init__.py": "bd2bdea7e37b30f857693bcb3da7d1e44fbcea9ca9a2e66caa4b6ffc5407b4e1",
     "src/anytime_ncm/__main__.py": "1e73ffd2a0d9159307ccb92bf7989be89d9839a0503c0e062d21050469bff3cf",
     "src/anytime_ncm/benchmark.py": "f74cdc6d9e8430b21d2155ee00ef000c9dde6b64d76e7489f0a5c381b1f40698",
     "src/anytime_ncm/cli.py": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54",
     "src/anytime_ncm/collect.py": "4fd45677b4d5d4a801e6f67b9abcd6a41ed96e715f61e03062ca42c267b653c9",
     "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/diagnosis.py": "d78a32c6e25d1e65f2a4ad0c918dcec8e1a824dcb220f1c30f38936acd438356",
+    "src/anytime_ncm/diagnosis_render.py": "cb1f46bdff30f855833e6ca87793ed802e5b792529144426a18d9ca9d2039276",
     "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
     "src/anytime_ncm/policies.py": "e1442aae50ede08d042f333d4bf3911e76e98d72c57aff3b8a1986cb429564c5",
     "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
@@ -72,6 +74,7 @@
     "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
     "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
     "tests/test_collection.py": "1823b44a9cf1d296cf52eb58daa99d1fbca991659a3151e61d197f79a5440711",
+    "tests/test_diagnosis.py": "b06a5220d50e5e78a3541a27328365326d5b236a921847c34c08bb95f97edac3",
     "tests/test_full_depth_equivalence.py": "198e667f5bc06a4ef43923e7fe1964b21e13cbf91f0acc4f975b829902f0bd5e",
     "tests/test_partial_decoder.py": "6ed16a06d72af2f42d2abf1ad99656b6244ec46b6396eba1175eb47e5f6af749",
     "tests/test_policy_no_future_leakage.py": "cd6a5e8b8978088e9398f40610e12dcb887aa6cec998f3c759eed6d51a993f87",
@@ -83,6 +86,7 @@
   "tests": {
     "by_module": {
       "tests.test_collection": 52,
+      "tests.test_diagnosis": 29,
       "tests.test_full_depth_equivalence": 3,
       "tests.test_partial_decoder": 26,
       "tests.test_report": 28,
@@ -92,10 +96,10 @@
     "errors": 0,
     "exit_code": 0,
     "failed": 0,
-    "junit_suite_seconds": 5.019,
-    "passed": 189,
+    "junit_suite_seconds": 5.654,
+    "passed": 218,
     "report": "results/phase1/review_tests.xml",
-    "report_sha256": "6c3f8674ca2770db58cb36b4b9a79fbdfacaaabe4868dd03e33975b0004d3f1c",
+    "report_sha256": "917a62dad16e16c890536ea4864a2008e44266be1084bc66f51419195b3c15bb",
     "skipped": 0
   }
 }

@@ -1,0 +1,55 @@
+{
+  "access": {
+    "development_lines_skipped_before_json": 400,
+    "development_records_deserialized": 0,
+    "exploration_records_deserialized": 1000,
+    "holdout_records_deserialized": 0,
+    "model_calls": 0,
+    "sealed_rows_materialized": 0,
+    "selected_puzzle_rows": 1000,
+    "selected_reference_rows": 1000,
+    "timed_requests": 0,
+    "trajectory_lines_traversed": 1400
+  },
+  "artifacts_sha256": {
+    "analysis.json": "e98cef32101ec8d3a8777b7b60b06f7e2ea44b7b9dee0c0cd548b809b4c5ebba",
+    "board_metrics.csv": "3ff846292951ec827f05099a041b56a4402ab9a837cf340d5b0b1949a7b6f89c",
+    "error_trends.png": "fa48f40e37a7eb8826bb5145defefee7d010f6942c9e4320b80b9dcd89a96e60",
+    "late_error_distributions.png": "46894939f08a5b0983c40629c306f62d44ac251b7f68e0c4e3afe53023c64fc4",
+    "summary.md": "500fd20afca5699a9a290ea77b58e6ee4a0bcdb5b0535d4d99528d818bf1853e",
+    "transition_changes.png": "05510b3b5d5e548ba20827cd1e485adbfc0ee26da1b1515e7571f068e25e7d17",
+    "transition_metrics.csv": "ca1e035c36fa0d30ed748c09dd56d9eaba2ca7903d78c5ed5525ffdf1736cd6f"
+  },
+  "command": "scripts/diagnose_sudoku_prefixes.py --output results/followup/sudoku_prefix_diagnosis",
+  "coverage": {
+    "board_rows": 12000,
+    "exploration_inputs": 1000,
+    "transition_rows": 11000
+  },
+  "date": "2026-10-22",
+  "empirical_snapshot_commit": "c1fce9311998e2d7ae9609c1e34b0c6949d6a256",
+  "inputs_sha256": {
+    "docs/experiment_protocol.md": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "docs/partitions/sudoku-hard.json": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "results/phase1/analysis.json": "f07902170491118523d2038339f635b260561a227b8658753e2a83fdc8236f67",
+    "results/phase1/trajectories.jsonl": "2baf2948df953d7f379f9b359091c9a40d31fe9ecafe29f99305ff8bb3e0f5d9",
+    "results/phase1/trajectories.metadata.json": "c873d0f584173cbdf17e0b19f787a41a512a8db2170e45a0a01fe4a6543df342"
+  },
+  "source_sha256": {
+    "docs/studies/sudoku-prefix-diagnosis-plan.md": "a3d9738a3631df6645542369113188fb173a74ae46c798e030a202f2e529fc5a",
+    "scripts/collect_trajectories.py": "89698a0e68ea0edaba6dec8dd85297798e70bfd1f4a0f37ef5185ed39542afb8",
+    "scripts/diagnose_sudoku_prefixes.py": "be69c79d5c2871bed81da0d6144987f085011e42b53ae9af6eb6c11d5b1a2afc",
+    "src/anytime_ncm/cli.py": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54",
+    "src/anytime_ncm/collect.py": "4fd45677b4d5d4a801e6f67b9abcd6a41ed96e715f61e03062ca42c267b653c9",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/diagnosis.py": "d78a32c6e25d1e65f2a4ad0c918dcec8e1a824dcb220f1c30f38936acd438356",
+    "src/anytime_ncm/diagnosis_render.py": "cb1f46bdff30f855833e6ca87793ed802e5b792529144426a18d9ca9d2039276",
+    "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_diagnosis.py": "b06a5220d50e5e78a3541a27328365326d5b236a921847c34c08bb95f97edac3"
+  },
+  "status": "complete",
+  "study": "R1A"
+}
