@@ -30,7 +30,7 @@ def render(root,analysis):
         f'**Primary claim gate: {analysis["decision"]}.** Development-selected policy: **{primary}**, '
         f'schedule {lock["methods"][primary]["levels"]}. Actual mean wall-latency reduction versus full depth '
         f'**{100*paired["relative_mean_reduction"]:.2f}%**, paired 95% interval '
-        f'**[{100*lo:.2f}%, {100*hi:.2f}%]**. No component sums are used as online latency.","",
+        f'**[{100*lo:.2f}%, {100*hi:.2f}%]**. No component sums are used as online latency.',"",
         "## Entry and completed work","",
         "The original hard Phase 1 no-go, negative R2 screens and easy R3 no-go remain unchanged. The user's explicit "
         "request to unblock and finish Phase 2 authorized a separately frozen online engineering/measurement experiment "
@@ -62,6 +62,15 @@ def render(root,analysis):
         pair=s["paired_vs_full"];low,high=pair["relative_mean_reduction_ci95"]
         lines.append(f'| {name} | {100*pair["relative_mean_reduction"]:.2f}% | [{100*low:.2f}%, {100*high:.2f}%] | '
                      f'{pair["quality_difference"]:.5f} | {pair["quality_difference_ci95"]} | {s["gate_vs_full"]} |')
+    lines+=["","| Method | Reference matches / 300 | Official solved / 300 | Official valid grids / 300 | Official cell accuracy |",
+        "| --- | ---: | ---: | ---: | ---: |"]
+    for name,item in summary.items():
+        accuracy=item["official_cell_accuracy_mean"]
+        score="undefined" if accuracy is None else f"{100*accuracy:.2f}%"
+        lines.append(f'| {name} | {item["reference_match_inputs"]} | {item["official_solved_inputs"]} | '
+                     f'{item["official_valid_grid_inputs"]} | {score} |')
+    lines+=["","Secondary official metrics use the pinned decoded-text definitions and do not replace clue-consistent primary validity. "
+            "Cell accuracy uses zipped decoded characters; undefined coverage is retained in analysis.",""]
     fixed=analysis["primary_vs_fixed"]
     lines+=["",f'Primary-versus-selected-fixed reduction: {100*fixed["relative_mean_reduction"]:.2f}%, '
         f'interval {[round(100*x,2) for x in fixed["relative_mean_reduction_ci95"]]}; gate **{analysis["primary_fixed_gate"]}**. '
@@ -109,6 +118,21 @@ def render(root,analysis):
         "this is a held-out policy-evaluation subset of the released test data, not a claim of zero prior aggregate "
         "exposure or known absence of base-model contamination. The 300 aligned Phase 3 final rows remain unavailable. "
         "The restricted scanner traverses file structure without materializing unselected token operands.","",
+        "## Offline estimate versus measured monitoring","",
+        f'Final every-level measured overhead relative to full depth is '
+        f'{100*(summary["verified_all"]["wall_ms"]["mean"]/summary["full"]["wall_ms"]["mean"]-1):.2f}%. '
+        "R3 estimated 39.31% overhead on easy development using from-scratch monitoring and isolated component "
+        "synchronizations. This Phase 2 implementation instead reuses incremental reconstruction and measures a "
+        "whole ready-output request on a different cohort. Compare the sign and practical gate, not the numeric "
+        "difference as a calibrated speedup or prediction error. Development selected deferred checking to reduce "
+        "overhead; level-12-only checking cannot save generator work.","",
+        "Input-integrity verification reuses R2's identity-only hashing of all puzzle rows, including reserved "
+        "operands, without retaining those token rows/boards. The restricted inference/scoring reader materializes "
+        "only the selected Phase 2 final rows and skips Phase 3 token operands. No per-input Phase 3 board, "
+        "reference or prediction is inspected. Prior aggregate exposure is disclosed above.","",
+        "The 2A patch emitter initially omitted Git's no-final-newline marker. A format-only finalizer retained "
+        "the initial artifact and corrected the recorded diff; git apply --check passed. The tested online engine "
+        "and all model outputs were unchanged, with zero added model evaluations.","",
         "## Evidence and reproduction","",
         "[Protocol](../../docs/studies/phase2-easy-online-protocol.md), [upstream patch](upstream_level_hook.patch.txt), "
         "[2A receipt](2a.json), [2B receipt](2b.json), [2C receipt](2c.json), [policy lock](policy_lock.json), "

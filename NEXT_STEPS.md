@@ -2,17 +2,17 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0/R1A/R1B/R2/R3 remain complete with their negative findings. The user subsequently authorized finishing Phase 2 despite its failed opportunity gate: 2A/2B are complete, and locked 2C is pending under a separate frozen protocol.
+**Status:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. Phase 3 remains deferred.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
 ## 1. Recommendation
 
-**Close the released-Sudoku first-valid path at the completed budget.** After negative R2 screens, the user explicitly requested R3. The separately frozen easy extension found no early valid outputs on 1,400 exploration/development inputs and a negative estimated-cost gate. A new task/objective requires a separate request. [R3 report](results/followup/sudoku_easy_r3/summary.md).
+**Close the released-Sudoku first-valid path at the completed budget.** After negative R2 screens, the user explicitly requested R3. The separately frozen easy extension found no early valid outputs on 1,400 exploration/development inputs and a negative estimated-cost gate. The subsequently requested online experiment also found no early exits in 300 reserved Phase 2 inputs: the selected verifier cost 0.85% more than full depth, and every-level checking cost 14.91% more. A new task/objective requires a separate request. [R3 report](results/followup/sudoku_easy_r3/summary.md), [Phase 2 report](results/phase2/summary.md).
 
 R1A characterized the saved errors. R1B then encoded the 32 preselected valid references: all 32 round-tripped exactly at level 12, but none produced a valid earlier prefix. This does not prove that every alternative code sequence or decoder would fail early. Those findings warranted R2, which executed easy first and then medium under a new frozen protocol. Neither produced a valid solution before level 12. Final validity was 32/32 easy and 31/32 medium; all 64 matched official/adapter final outputs passed exact token/text parity. [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
 
-Do not prioritize an online stopping hook, controller training, or a viewer as the next efficiency experiment. None can, on its own, make an invalid existing prefix into a valid early answer. This is a research sequencing choice, not a claim that the software would be impossible to implement.
+The online stopping hook and its measured comparison are now complete. Do not prioritize controller training or a viewer as the next efficiency experiment. None can, on its own, make an invalid existing prefix into a valid early answer. This is a research sequencing choice, not a claim that the software would be impossible to implement.
 
 The bounded Sudoku follow-ups are now negative, so closure at this budget is the recorded decision. If the project continues, the recommended next work is a separately requested WMT14 resource/protocol audit before any model evaluation. Do not expand Sudoku samples or relax quality requirements until a favorable result appears.
 
@@ -26,7 +26,7 @@ The bounded Sudoku follow-ups are now negative, so closure at this budget is the
 | Cell accuracy reaches 81.70% exploration / 82.09% development at level 11, while valid-grid rate remains zero | Partial information exists, but the mechanism preventing exact early solutions is undiagnosed. |
 | Correctness/parity checks pass; all 353 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
 
-An optimized implementation might reduce reconstruction/transfer overhead. It would still need earlier acceptable outputs to skip generation under the current verified rule. There is no measured online slowdown or speedup yet.
+An optimized implementation might reduce reconstruction/transfer overhead. It would still need earlier acceptable outputs to skip generation under the current verified rule. Phase 2 subsequently measured an online slowdown, with frozen paired comparisons; the earlier component-sum estimates remain separate historical evidence.
 
 ## 3. Revised sequence and decision points
 
@@ -37,7 +37,7 @@ An optimized implementation might reduce reconstruction/transfer overhead. It wo
 | R1B | Test target-encoded prefixes on a small exploration-only set | Complete — [report](results/followup/sudoku_target_encoding/summary.md) | Evidence separating limited target reconstruction from generated-prefix failure, without claiming a causal proof. |
 | R2 | Screen alternative frozen Sudoku checkpoints | Complete — [report](results/followup/sudoku_checkpoint_screen/summary.md); both negative | No candidate met the early-valid screen gate; close this path at the declared budget. |
 | R3 | Extended opportunity/cost audit of easy under an explicit entry exception | Complete — [report](results/followup/sudoku_easy_r3/summary.md); no-go | User requested extension after negative R2; it does not retroactively qualify R2. |
-| Phase 2 | Implement and benchmark actual online verified stopping | Blocked for the original setting | A justified setting-specific go and a separate implementation work order. |
+| Phase 2 | Implement and benchmark actual online verified stopping | Complete; measured no-go | Explicit work order/entry exception; [report](results/phase2/summary.md), no practical speedup. |
 | Phase 3 | Learn a stopping controller | Deferred | Remaining headroom beyond strong simpler policies and an appropriate reserved final set. |
 | Phase 4 | Translation/summarization generalization | Alternative branch, not started | Task-specific quality tolerances, signals, protocol, artifacts, and resource feasibility. |
 | Phase 5 | Viewer / optional Concept Firewall bridge | Optional, not started | A separate scope grounded in recorded results. |
@@ -145,7 +145,7 @@ A new setting-specific go can justify that setting's online experiment. It does 
 
 ## 8. Conditional Phase 2 — Measure real online stopping
 
-Proceed only after R3 supplies a justified go and an implementation work order is requested.
+Default entry requires an R3 go and implementation work order. The user explicitly requested finishing Phase 2 despite the negative gate. Its separate frozen entry-exception protocol preserved the claim thresholds; 2A–2C are now complete with a measured no-go.
 
 Preserve [Phase 2A–2C](ROADMAP.md#phase-2--true-online-verified-stopping): add the smallest isolated hook that actually skips later generator evaluations; prove disabled-stop parity and offline/online exit-output equivalence; test current/past-only inputs and never-valid fallback; then measure full depth, development-selected fixed depth, and verified stopping with matched request boundaries.
 
@@ -184,16 +184,19 @@ Useful for communication after the next research decision, but optional and sepa
 
 ## 11. Immediate handoff
 
-**Recorded evidence:** R2 and R3 remain no-go and do not independently justify a practical speedup experiment. The user subsequently explicitly requested finishing Phase 2. The [online protocol](docs/studies/phase2-easy-online-protocol.md) records this entry exception and bounded monitoring optimizations, with unchanged claim thresholds.
+**Recorded evidence:** R2 and R3 remain no-go. The user subsequently requested finishing Phase 2 under a separately frozen entry exception. That online experiment is now complete and also no-go: monitoring optimizations reduced checking cost but created no early valid outputs. The [report](results/phase2/summary.md) and [completion](results/phase2/completion.json) close the work order.
 
 **Optional next work order, requiring a new request:** “Audit the released WMT14 artifacts, resource fit, task-specific quality tolerances, candidate signals, and a bounded study protocol before any inference.” This task change has not started.
 
-R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-generation / 31,536-decoder-forward allocation, including its official aggregate baseline and profiling validation. No model evaluation was repeated during the documented collection resumption. No online stopping, controller training, natural-language study, or adaptive final-holdout evaluation followed.
+R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-generation / 31,536-decoder-forward allocation, including its official aggregate baseline and profiling validation. No model evaluation was repeated during the documented collection resumption. Those R3 counts exclude the subsequent Phase 2 online experiment. Controller training and a natural-language study remain unstarted.
 
 
-## Current Phase 2 work order
+## Completed Phase 2 work order
 
-2A is complete: 192 real parity/actual-stop requests, 43 new tests and 353 total passing tests. The [completion receipt](results/phase2/2a_completion.json) distinguishes synthetic never-valid fallback from the real 32-input parity set. No final per-input data is open. Next execute the frozen seven-method development comparison, commit/push the policy lock, then evaluate the locked methods together on phase2_final. Keep phase3_final reserved. This explicitly requested negative-capable experiment does not reverse any offline no-go or authorize changing the quality objective.
+2A implemented the isolated online hook and passed 192 real parity/actual-stop checks. 2B completed seven-method development benchmarking, then committed/pushed the selected policies as 2687a46 before final access. 2C completed five frozen methods on 300 phase2_final identities × three repeats, plus 50 exploration warmups. All 353 tests pass.
 
+All methods solved 299/300 inputs with zero early exits and zero false early accepts. Full depth averaged 100.98 ms; the selected verifier averaged 101.84 ms (0.85% slower, paired 95% overhead interval 0.39%–1.34%). Every-level verification averaged 116.03 ms (14.91% slower). The selected level-12-only schedule has no possible early-generation savings. Both the practical-speedup and strong fixed-depth frontier gates fail. No policies were retuned on final outputs.
 
-**2B completed:** All 2,100 development timed requests plus 70 exploration warmups completed with offline/online parity. Level-12-only verification was the fastest feasible verifier; fixed depth 12 and the selected stability policy are also frozen. No early outputs or false early accepts occurred in development. The [policy lock](results/phase2/policy_lock.json) must be pushed/released before 2C. Its result cannot be used to retune policies afterward.
+[Final report](results/phase2/summary.md), [whole-phase completion](results/phase2/completion.json), [2C completion](results/phase2/2c_completion.json), [committed policy release](results/phase2/policy_lock_release.json). Phase 2's model-work allocation is consumed. Reproduction uses saved-data verification; do not rerun inference.
+
+The current recommendation is to stop this released-Sudoku first-valid study at the completed budget. Phase 3 has no observed useful early-output headroom here, and its 300 final rows remain reserved from per-input inference/scoring inspection. Prior full-baseline aggregates and identity-only integrity hashing are disclosed in the report. A WMT14 resource/protocol audit is an optional next work order; no task change, quality relaxation or controller training is included in the completed request.

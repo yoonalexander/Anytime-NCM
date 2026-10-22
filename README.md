@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; the current suite passes 353 tests, including 43 new Phase 2 tests. Both subsequent 32-input easy/medium screens also found no early valid outputs; the released-Sudoku first-valid path is closed at this budget. See the [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
+**Current stage:** **Phase 2A–2C are complete; the measured speedup gate is no-go.** On 300 reserved easy-Sudoku inputs and 4,500 timed requests, every method solved 299/300 inputs and none exited early. Full depth averaged **100.98 ms**, the development-selected verifier **101.84 ms** (0.85% slower), and every-level verification **116.03 ms** (14.91% slower). The [online report](results/phase2/summary.md) includes paired intervals, quality, costs and access disclosures. All **353 tests pass**. Original Phase 1/R2/R3 negative findings remain unchanged; Phase 3 is deferred.
 
 ## Contents
 
@@ -34,7 +34,7 @@ Anytime NCM is a research repository for answering that question with reproducib
 The proposed experiments have two distinct modes:
 
 1. **Offline audit:** run every generator level, reconstruct full-resolution outputs after each cumulative prefix, and measure early-exit opportunities. This mode saves no generator work.
-2. **Online stopping:** after the offline decision gate justifies it, introduce a minimal hook that actually prevents later generator evaluations. Measure the total cost of generation, reconstruction, decoding, transfers, verification, and the stopping policy.
+2. **Online stopping:** introduce a minimal hook that actually prevents later generator evaluations. Phase 2 was explicitly requested despite the unmet offline opportunity gate, under a separate entry-exception protocol. Measure the total cost of generation, reconstruction, decoding, transfers, verification, and the stopping policy.
 
 The hard-Sudoku checkpoint has 12 levels with per-level code lengths `1, 2, 4, 6, 9, 13, 18, 26, 37, 50, 67, 89`, totaling 322 generated code positions. The last level's length of 89 is not the total hierarchy size.
 
@@ -54,13 +54,13 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Upstream adapter and full-resolution partial decoder | Implemented; [Phase 1B contract and parity](docs/phase1b_partial_decoding.md) |
 | Offline trajectory collector | Complete; 1,400 trajectories / 16,800 level records; [Phase 1C](docs/phase1c_collection.md) |
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
-| Headline online adaptive benchmarks | Not started |
-| Online stopping hook | 2A complete; development/final benchmark pending under explicit work order |
+| Online request benchmarks | Complete; five frozen methods, 300 inputs × three repeats; practical speedup no-go |
+| Online stopping hook | Complete; true skipped-work and parity checks; upstream remains unmodified |
 | Learned controller | Deferred; separate headroom justification required |
-| Executable research tests | 353 passed; timing/statistics/report checks included; online halting tests remain pending |
+| Executable research tests | 353 passed, including online halting, causality, statistics and report checks |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
-The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; online adaptive inference is pending.
+The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; the bounded online experiment uses scripts/run_phase2.py and its frozen study protocol.
 
 ## Recorded baseline results
 
@@ -90,6 +90,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [R1B target encoding](results/followup/sudoku_target_encoding/summary.md) | Frozen 32-reference reconstruction pilot versus cached generated prefixes |
 | [R2 checkpoint screens](results/followup/sudoku_checkpoint_screen/summary.md) | Completed bounded easy/medium screens, shared-reference reservations, and negative exit |
 | [R3 easy extension](results/followup/sudoku_easy_r3/summary.md) | Explicitly requested extension after negative R2; 1,400-input audit, estimated costs, and new no-go |
+| [Phase 2 online report](results/phase2/summary.md) | Actual online stopping, development selection, frozen final comparison and measured no-go |
 | [Design document](Anytime_NCM_Design_Document.md) | Technical design and scientific requirements |
 | [DESIGN.md](DESIGN.md) | Entry point to the original design document |
 | [Experiment protocol](docs/experiment_protocol.md) | Frozen partitions, budgets, metrics, timing boundaries, and statistical procedure |
@@ -459,14 +460,14 @@ Each candidate used 32 official comparator plus 32 adapter generations, 768 gene
 python scripts/screen_sudoku_checkpoints.py --verify
 ~~~
 
-The verifier checks saved records without model or plotting imports; it does not rerun CUDA parity. The inference budget is consumed. [Frozen protocol](docs/studies/sudoku-checkpoint-screen-protocol.md), [pinned release inventory](configs/r2_sources.json), and [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json) document the execution. All 282 tests pass, including 38 new R2 tests. At R2 completion R3 had not started; the subsequently requested extension is documented below. Online stopping and a new task study remain unstarted.
+The verifier checks saved records without model or plotting imports; it does not rerun CUDA parity. The inference budget is consumed. [Frozen protocol](docs/studies/sudoku-checkpoint-screen-protocol.md), [pinned release inventory](configs/r2_sources.json), and [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json) document the execution. All 282 tests pass, including 38 new R2 tests. At R2 completion R3 had not started; subsequent R3 and Phase 2 work is documented below. A new task study remains unstarted.
 
 
 ## R3 easy-Sudoku extension
 
 R3 easy-Sudoku extension is complete with **no-go**: no early valid solution among 1,000 exploration and 400 development inputs. Final primary validity was 994/1,000 and 396/400. Development component-sum estimates were 104.22 ms full depth versus 145.20 ms every-level verified, an estimated 39.31% cost increase (paired 95% interval 38.96%–39.68%). These are not measured online latencies. All 310 tests pass, including 28 new R3/resumption tests.
 
-The user requested this extension after receiving the negative R2 results. Its [separate protocol](docs/studies/sudoku-easy-r3-protocol.md) selects easy by the existing candidate order and preserves the failed R2 entry gate. It reuses the original 32 screen trajectories within the 1,400 total, adds the unchanged official 2,000-input aggregate baseline (1,988 solved), and profiles exactly 100 identities per permitted partition, five repeats each, after ten exploration warmups. Both final adaptive-policy partitions remain reserved; the official baseline scores them internally with aggregate-only inspection. Difficulty views share solution rows and are not independent datasets.
+The user requested this extension after receiving the negative R2 results. Its [separate protocol](docs/studies/sudoku-easy-r3-protocol.md) selects easy by the existing candidate order and preserves the failed R2 entry gate. It reuses the original 32 screen trajectories within the 1,400 total, adds the unchanged official 2,000-input aggregate baseline (1,988 solved), and profiles exactly 100 identities per permitted partition, five repeats each, after ten exploration warmups. At R3 completion both final adaptive-policy partitions remained reserved; the official baseline scored them internally with aggregate-only inspection. Subsequent Phase 2 access is disclosed below. Difficulty views share solution rows and are not independent datasets.
 
 A metadata-write interruption was retained and completed under the [resumption amendment](docs/studies/sudoku-easy-r3-resumption-amendment.md), with no repeated model generation. The total allocation stayed 4,378 new generations and 31,536 decoder forwards. Report-only plot correction uses the same 100 development profiling identities for both methods.
 
@@ -474,17 +475,28 @@ A metadata-write interruption was retained and completed under the [resumption a
 .\scripts\wsl_python.ps1 -PythonArguments @('scripts/finalize_sudoku_easy_r3.py','--verify')
 ~~~
 
-This verifies original execution sources, amendment/report-only sources, pre-resumption file prefixes, labels, costs, bootstrap and gates without torch/matplotlib or official raw-prediction access. It does not replay CUDA parity. [Report](results/followup/sudoku_easy_r3/summary.md), [configuration](configs/r3_easy.json), and [completion evidence](results/followup/sudoku_easy_r3/completion.json). Phase 2 and task-change work have not started.
+This verifies original execution sources, amendment/report-only sources, pre-resumption file prefixes, labels, costs, bootstrap and gates without torch/matplotlib or official raw-prediction access. It does not replay CUDA parity. [Report](results/followup/sudoku_easy_r3/summary.md), [configuration](configs/r3_easy.json), and [completion evidence](results/followup/sudoku_easy_r3/completion.json). At R3 completion Phase 2 and task-change work had not started. Phase 2 is now complete as documented below.
 
 
 ## Phase 2 online experiment
 
 The user explicitly requested finishing Phase 2 after the negative offline audits. Its [separate frozen protocol](docs/studies/phase2-easy-online-protocol.md) preserves those no-go decisions and the 5%/zero-loss claim rule while permitting an online engineering/measurement experiment. Incremental reconstruction and deferred verifier schedules are bounded attempts to reduce monitoring cost; they do not create early valid solutions.
 
-**2A is complete:** an isolated pinned-generation hook, unchanged upstream checkout, actual one/six-level stop checks, 192 real parity requests and 353 passing tests. [Completion](results/phase2/2a_completion.json), [recorded patch](results/phase2/upstream_level_hook.patch.txt). A diff-only newline-marker correction passed git apply --check without repeating model work. 2B is complete and 2C remains pending; the frozen policy lock must be committed/pushed before per-input Phase 2 final access. Phase 3 final data remains reserved.
+**2A is complete:** an isolated pinned-generation hook, unchanged upstream checkout, actual one/six-level stop checks, 192 real parity requests and 353 passing tests. [Completion](results/phase2/2a_completion.json), [recorded patch](results/phase2/upstream_level_hook.patch.txt). A diff-only newline-marker correction passed git apply --check without repeating model work. 2B and 2C are complete. The frozen policy lock was committed/pushed before per-input Phase 2 final access. Phase 3 final data remains reserved.
 
 ~~~powershell
 python scripts/run_phase2.py verify-a
 ~~~
 
-**2B is complete:** [development results](results/phase2/development_analysis.json), [completion](results/phase2/2b_completion.json), [policy lock](results/phase2/policy_lock.json). All 2,100 timed requests matched offline policy outputs. Level-12-only verification won development latency among the verifier schedules, preserving quality but providing no possible early generation savings. The locked final comparison is next; Phase 3 remains reserved.
+**2B is complete:** [development results](results/phase2/development_analysis.json), [completion](results/phase2/2b_completion.json), [policy lock](results/phase2/policy_lock.json). All 2,100 timed requests matched offline policy outputs. Level-12-only verification won development latency among the verifier schedules, preserving quality but providing no possible early generation savings. The lock was released at commit 2687a46 before the final comparison. Phase 3 remains reserved.
+
+
+**2C is complete:** five frozen methods on 300 phase2_final identities × three repeats, plus 50 exploration warmups. Every method produced 299/300 valid solutions, no early exits and zero false early accepts. The primary verifier was 0.85% slower than full depth (paired 95% overhead interval 0.39%–1.34%); every-level verification was 14.91% slower. The selected schedule checks level 12 only and therefore has no possible early-generation savings. No practical speedup or adaptive-frontier claim passes.
+
+[Final report](results/phase2/summary.md), [analysis](results/phase2/analysis.json), [Phase 2 completion](results/phase2/completion.json), [2C completion](results/phase2/2c_completion.json), [policy release](results/phase2/policy_lock_release.json). Recompute the saved-data analysis without model/plotting imports:
+
+~~~powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_phase2.py','verify')
+~~~
+
+All Phase 2 model-evaluation allocations are consumed. Report verification reuses saved results; do not rerun 2a/2b/2c. The final evaluation has prior aggregate baseline exposure, shared solution identities across difficulty masks, and unknown base-model overlap. Integrity hashing traverses all puzzle identities; inference/scoring materializes only permitted rows. No per-input Phase 3 board, reference or prediction was inspected. Full access/timing limitations are in the report. Phase 3 training and task changes require separate justification and a new work order.

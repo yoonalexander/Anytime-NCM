@@ -1,0 +1,36 @@
+{
+  "analysis_source_sha256": {
+    "configs/r2_sources.json": "f1c21e46eb64d21296c77870cb9ee0829a53cd69b6b80b3b60e3022a7c1408e9",
+    "docs/studies/phase2-easy-online-protocol.md": "b55d489c2a41f0196828f6f22f4fe5d02a3245558626307aac7836a30d8975f1",
+    "scripts/finalize_phase2_patch.py": "36824deb88e94e249bfac6e44ed6c28b6f448fb4a934d1a584ba02ef5f679966",
+    "scripts/run_phase2.py": "8e0e10e2fd584051e782f57c6225ca825faccb9bc2e5302486d13554d734eecf",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/online.py": "8122afd1db4fd40094fd6d5739bb0432acd7da1d50f4744c9cc95dbb72bfacc8",
+    "src/anytime_ncm/online_policy.py": "ba3ffe4eea710e7a42bcc4cea53ef3f8b598626deea97d4431f0677b3063da50",
+    "src/anytime_ncm/phase2.py": "86b139d7437e439ff871a9e3b4fa68cf0b443777224ded37c7c5dfb4af128630",
+    "src/anytime_ncm/phase2_render.py": "83d0bbf2c23dfb71b277f4f4ac4f1a2b116c078e2a0723a27afade848a62ab69",
+    "src/anytime_ncm/phase2_run.py": "0567e54fbbb39212b256d2ebeda2ccb77a810dc765a67b596be3d43cefa992a9",
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_online.py": "7aed38e53e93e4222d77447fb62ea64f4fe35cb6733e5645e8581a3351a21080",
+    "tests/test_phase2.py": "f5a4c8f3c798b8c2b0af39da153ee692262662b5e135c0291f4e9269929cbee6",
+    "third_party/ncm/models/next_concept.py": "3dcae313cedf2e33ecb9a046d1ad9ec4336962c9221375ba5f7dd9be3d25b04e",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923"
+  },
+  "artifacts_sha256": {
+    "analysis.json": "318782df52b686bf1c5c0735aec6b501f9875783370d119b6b0215af2ef31222",
+    "online_comparison.png": "472eaf2f5fbb1b6ab66c7a027ce6e6e470acf1e7bbc2a875ff39c857a05e8e66",
+    "summary.md": "4cbdb9f67a10b01e7f078de2a5f4003b75ee372389ced6b836429b840b984023"
+  },
+  "policy_lock_sha256": "923262bbf231268f12af87b7ea9482b5ea8d7e55dd1cfa6f3fbfc8240f902aae",
+  "policy_release_sha256": "d66700da4de4f2684e47715b42ae2adca970c675d04b14a19047c8fe54b74180",
+  "stage_sha256": {
+    "2a": "e21d978cd93b9189887bc9655b6a890226158a36c365cd18ed0946875e108e33",
+    "2b": "75d14d71b12a9547884ebae21f012407644d3d6d9de82fc0cc615488586e395e",
+    "2c": "8a0b3347e9ed25e6a5f921459f8a6469efdfe11331bb8fa3a4a42e2ba4565146"
+  },
+  "study": "Phase 2"
+}

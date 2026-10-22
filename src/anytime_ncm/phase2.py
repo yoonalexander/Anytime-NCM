@@ -214,6 +214,7 @@ def verify_request(row, example, expected_spec, offline=None):
     correct=validate_solution(example.puzzle,ids,reference=example.reference)
     require(independent_valid(example.puzzle,ids)==correct.is_valid_solution,"Independent primary validity differs.")
     require(row["valid"] is correct.is_valid_solution,"Saved validity differs.")
+    require(row["reference_agreement"] is correct.reference_agreement,"Saved reference agreement differs.")
     require(1<=row["exit_level"]<=12 and row["generator_levels"]==row["exit_level"],"Work/exit differs.")
     lengths=(1,2,4,6,9,13,18,26,37,50,67,89)
     require(len(row["generated_codes"])==sum(lengths[:row["exit_level"]])
@@ -338,6 +339,17 @@ def final_analysis(root):
     methods=lock["methods"];by_id={e.identity:e for e in selected}
     for row in rows:verify_request(row,by_id[row["sample_id"]],methods[row["method"]])
     summary=analyze_requests(rows,methods,selected)
+    from anytime_ncm.sudoku import official_metrics
+    import math
+    for name in methods:
+        unique=[r for r in rows if r["method"]==name and r["repeat"]==0]
+        secondary=[official_metrics(r["decoded_text"],decoded_text(by_id[r["sample_id"]].reference)) for r in unique]
+        accuracy=[m.cell_accuracy for m in secondary]
+        summary[name]["reference_match_inputs"]=sum(r["reference_agreement"] for r in unique)
+        summary[name]["official_solved_inputs"]=sum(m.solved for m in secondary)
+        summary[name]["official_valid_grid_inputs"]=sum(m.valid_grid for m in secondary)
+        summary[name]["official_cell_accuracy_defined_inputs"]=sum(math.isfinite(x) for x in accuracy)
+        summary[name]["official_cell_accuracy_mean"]=sum(accuracy)/300 if all(math.isfinite(x) for x in accuracy) else None
     require(receipt["timed_requests"]==300*3*len(methods) and receipt["warmup_requests"]==10*len(methods),
             "Final request budget differs.")
     _check_benchmark_counts(receipt,rows)

@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A are complete. Phase 2B is complete; locked Phase 2C is authorized and pending. Original Phase 1 decision: no-go.
-**Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. Close this released-Sudoku first-valid path at the completed budget; no new Phase 2 go exists. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
+**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
+**Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. The subsequently requested Phase 2 experiment is also complete with a measured no-go. Close this released-Sudoku first-valid path at the completed budget; no practical speedup is established. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -12,12 +12,12 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | --- | --- | --- | --- |
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
-| 2 | Measured online verified stopping | 2A/2B complete; locked 2C pending | A setting-specific offline go and a subsequent work order |
+| 2 | Measured online verified stopping | Complete; measured no-go | Explicit user work order and frozen entry exception after failed offline gate |
 | 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
 
-A negative or inconclusive Phase 1 result is a valid completed research milestone when its required artifacts and limitations are documented. It does not mean that the online MVP or later phases have been implemented. Later studies remain on this roadmap; they do not begin automatically after a gate fails.
+A negative or inconclusive Phase 1 result is a valid completed research milestone when its required artifacts and limitations are documented. Phase 2 was subsequently implemented under its explicitly requested entry exception; Phases 3–5 remain unstarted. Later studies remain on this roadmap; they do not begin automatically after a gate fails.
 
 ## Post-Phase 1 research revision — October 21, 2026
 
@@ -31,7 +31,7 @@ The [paper-style report](RESEARCH_PAPER.md) records the completed hard-Sudoku st
 | R2: Easy, then conditional medium Sudoku screen | Complete — [report](results/followup/sudoku_checkpoint_screen/summary.md); both negative | Two fixed 32-input screens; 128 full-depth input-generations; no early valid outputs |
 | R3: Extended easy audit under explicit entry exception | Complete — [report](results/followup/sudoku_easy_r3/summary.md); no-go | Separately requested after negative R2; preserved reservations and new frozen budget |
 
-One early valid screening example can justify a larger offline audit, not Phase 2. Only a justified new setting-specific go can open that setting's online experiment. Original hard-Sudoku Phase 1 remains complete with no-go; Phases 0–5 and their evidence remain below.
+One early valid screening example can justify a larger offline audit, not Phase 2. The default online entry rule requires a justified setting-specific go. The subsequently requested Phase 2 engineering experiment records an explicit entry exception without changing the claim gate. Original hard-Sudoku Phase 1 remains complete with no-go; Phases 0–5 and their evidence remain below.
 
 ## Phase 0 — Repository and reproduction
 
@@ -144,11 +144,11 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 **Acceptance:** An independent developer can reproduce the trajectory table, plot, and decision from the recorded baseline, manifest, protocol, commands, and profiles. An artifact-complete negative/inconclusive report closes Phase 1 without requiring an online patch. Missing measurements support an inconclusive result, not a measured negative speedup.
 
-**Evidence:** [Phase 1 report](results/phase1/summary.md), [diagnostic contract](docs/phase1d_profiling.md), [completion record](results/phase1/phase1d_validation.json), full budget coverage, and 186 passing tests. No-go closes Phase 1; Phase 2 remains unstarted. The [October 21 review](docs/phase1_review.md) completed parsing/completeness and official comparison summaries; the current suite passes 189 tests.
+**Evidence:** [Phase 1 report](results/phase1/summary.md), [diagnostic contract](docs/phase1d_profiling.md), [completion record](results/phase1/phase1d_validation.json), full budget coverage, and 186 passing tests. No-go closed Phase 1; Phase 2 was unstarted at that milestone. The [October 21 review](docs/phase1_review.md) completed parsing/completeness and official comparison summaries; that review passed 189 tests; the current suite passes 353.
 
 ## Phase 2 — True online verified stopping
 
-**Status:** 2A/2B complete; locked 2C pending under the explicit user work order.
+**Status:** 2A–2C complete — October 22, 2026; measured practical-speedup gate no-go.
 **Entry exception:** The offline opportunity gate remains unmet. After the R3 no-go the user explicitly requested unblocking and finishing Phase 2. A [separate frozen online protocol](docs/studies/phase2-easy-online-protocol.md) authorizes this engineering/measurement experiment, including a valid negative result, without relabeling any prior gate. Incremental monitoring and four development-selected schedules are the bounded unblocking attempts; no quality tolerance or checkpoint changes.
 **Design mapping:** Sections 5B, 8.4–8.6, 9 Phase 2, and 10–12.
 
@@ -174,12 +174,12 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ### 2C — Held-out comparison and online MVP report
 
-- [ ] Evaluate the frozen methods on the 300-input `phase2_final` partition.
-- [ ] Keep `phase3_final` unavailable and update the holdout-access record.
-- [ ] Compare against full depth and development-selected strong fixed-depth baselines at matched quality/cost.
-- [ ] Report actual quality/cost tradeoffs and uncertainty in `results/phase2/summary.md` with supporting metadata and plots.
-- [ ] Record whether measured monitoring overhead agrees with or defeats the offline estimate.
-- [ ] Update this roadmap with completion evidence and the recommendation for further work.
+- [x] Evaluate the frozen methods on the 300-input `phase2_final` partition.
+- [x] Keep `phase3_final` unavailable and update the holdout-access record.
+- [x] Compare against full depth and development-selected strong fixed-depth baselines at matched quality/cost.
+- [x] Report actual quality/cost tradeoffs and uncertainty in `results/phase2/summary.md` with supporting metadata and plots.
+- [x] Record whether measured monitoring overhead agrees with or defeats the offline estimate.
+- [x] Update this roadmap with completion evidence and the recommendation for further work.
 
 **Acceptance:** Online work truly stops; required correctness/parity tests pass; another developer can reproduce the measured comparison. A valid negative experiment still completes the conditional online MVP.
 
@@ -264,7 +264,8 @@ For each completed milestone, add a short record with its date, final status, ch
 | Phase 1C | Complete | [1,400 trajectories / 16,800 level records; 140 passing tests](docs/phase1c_collection.md) |
 | Phase 1D | Complete - no-go | [Report](results/phase1/summary.md); 186 passing tests; full frozen diagnostic coverage |
 | Phase 2A | Complete | [192 real parity/stop checks](results/phase2/2a_completion.json); 353 tests |
-| Phase 2B/2C | Authorized; pending | [Frozen online protocol](docs/studies/phase2-easy-online-protocol.md) |
+| Phase 2B | Complete | [Development comparison and frozen lock](results/phase2/2b_completion.json) |
+| Phase 2C | Complete; measured no-go | [Final report](results/phase2/summary.md), [completion](results/phase2/completion.json) |
 | Phases 3–5 | Not started | Subject to their entry conditions above |
 
 ### Phase 1A completion - October 20, 2026
@@ -356,3 +357,14 @@ Implemented an isolated completed-level hook against the pinned upstream generat
 Completed all seven frozen development methods: 100 development identities x three repeats x seven methods = 2,100 timed requests, plus 70 exploration-only warmups. All outputs matched their saved offline policy exits. Development-selected fixed depth is 12; the selected verifier checks only level 12, and no method exited early or falsely accepted an early board. This is an overhead-minimizing degenerate verifier, not evidence of early-exit headroom.
 
 [2B completion](results/phase2/2b_completion.json), [development analysis](results/phase2/development_analysis.json), [policy lock](results/phase2/policy_lock.json). Source/model-state and 2A parity checks remain passed; the 353-test engine/policy suite is unchanged. Commit/push the lock before releasing the 300 Phase 2 final rows. Phase 3 remains reserved.
+
+
+### Phase 2C and whole Phase 2 completion — October 22, 2026
+
+Completed all 4,500 final timed requests (300 phase2_final identities × three repeats × five methods) and 50 exploration warmups. Every method solved 299/300 inputs; no early exits or false early accepts occurred. Full depth averaged 100.98 ms, the selected verifier 101.84 ms, and every-level verification 116.03 ms. Primary reduction was −0.85% (paired 95% interval −1.34% to −0.39%); every-level checking cost 14.91% more. The 5% practical gate and matched fixed-depth frontier comparison both fail. These are actual request measurements, not component sums.
+
+The selected verifier checks only level 12. Incremental reconstruction and development-selected deferred schedules reduced monitoring overhead but did not create early valid outputs. All 353 tests pass. Phase 2 consumed 6,912 input-generations, 82,382 generator level evaluations, 25,906 decoder forwards and zero encodings within its frozen caps. No model-work retries or extra samples were used. Report-only fixes and the retained 2A diff-format correction added no model evaluations.
+
+[Report](results/phase2/summary.md), [analysis](results/phase2/analysis.json), [2C receipt](results/phase2/2c.json), [2C completion](results/phase2/2c_completion.json), [whole-phase completion](results/phase2/completion.json), [tests](results/phase2/2c_tests.xml). 2A was committed/pushed as a0af5cb; 2B as 2687a46. The [lock release](results/phase2/policy_lock_release.json) proves local/GitHub equality before final access. Stage source snapshots preserve execution versions; report-only analysis sources are separately hashed. The previous compatibility review is archived under results/phase1/reviews/2026-10-22-phase2b/.
+
+The Phase 2 final subset had prior aggregate official-baseline exposure and related-mask shared identities, both disclosed. Integrity hashing traverses reserved identity operands without retaining boards; the restricted inference/scoring reader leaves Phase 3 rows unmaterialized. No per-input Phase 3 board/reference/prediction was inspected. Phase 3 stays deferred: there is no observed early-valid headroom in this setting. Stop here; a task/objective change or learned-controller study needs separate justification and a work order.

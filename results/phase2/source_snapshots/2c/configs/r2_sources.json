@@ -1,0 +1,86 @@
+{
+  "candidate_order": [
+    "easy",
+    "medium"
+  ],
+  "cards": {
+    "hazyresearch/ncm-checkpoints": {
+      "license": "mit",
+      "sha256": "64cc64e4565e45560798f8c967e9830855ce8631b098005359124714c0e32183",
+      "text": "---\nlicense: mit\npipeline_tag: text-generation\n---\n\n# NCM checkpoints\n\nReleased tokenizer and generator pairs for Next-Concept Modeling. Each folder holds a `config.yaml` with the architecture and sampling settings and the `.pt` checkpoints it names.\n\n- Paper: [Next-Concept Modeling](https://huggingface.co/papers/2610.14162)\n- Project page: [Hazy Research blog](https://hazyresearch.stanford.edu/blog/2026-10-12-ncm)\n- Code: [GitHub](https://github.com/HazyResearch/ncm)\n\n| folder | task |\n|---|---|\n| `xsum/` | XSum summarization |\n| `wmt14/` | WMT14 German-English translation |\n| `sudoku/` | Sudoku, easy / medium / hard |\n| `lm1b/` | One Billion Word, small / medium / large with a shared tokenizer |\n| `tinystories/` | TinyStories |\n| `owt/` | OpenWebText |\n\n## Citation\n\n```bibtex\n@misc{kumbong2026nextconcept,\n  title   = {Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation},\n  author  = {Kumbong, Hermann and Khare, Ishan S. and Mlauzi, Iddah and Woen, Andrew and Ding, Charles and Buchanan, E. Kelly and Arora, Simran and Mirhoseini, Azalia and R{\\'e}, Christopher},\n  year    = {2026},\n  eprint={2610.14162},\n  archivePrefix={arXiv},\n  primaryClass={cs.CL},\n  url={https://arxiv.org/abs/2610.14162},\n}\n```",
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/README.md"
+    },
+    "hazyresearch/ncm-datasets": {
+      "license": "mit",
+      "sha256": "088f69bc929c809cb2410fa749f122e4d25c87074f29554e9df385244f927bae",
+      "text": "---\nlicense: mit\ntask_categories:\n- text-generation\n---\n\n# NCM datasets\n\nEvaluation sets for the released NCM checkpoints.\n\n- **Paper**: [Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation](https://huggingface.co/papers/2610.14162)\n- **Project page**: [Hazy Research blog post](https://hazyresearch.stanford.edu/blog/2026-10-12-ncm)\n- **Code**: [GitHub repository](https://github.com/HazyResearch/ncm)\n\n| folder | files | contents |\n|---|---|---|\n| `xsum/` | `passages.pickle`, `reference_summaries.pickle` | the complete XSum test set as tokenized article rows with summary slots, and the untruncated reference summaries as strings |\n| `wmt14/` | `sources.pickle`, `reference_translations.pickle` | the WMT newstest German sources and English references as strings |\n| `sudoku/{easy,medium,hard}/` | `puzzles.pickle`, `solutions.pickle` | held-out boards per difficulty: puzzle prefixes and completed grids as token lists |\n| `lm1b/` | `train_bert_30522.bin`, `valid_bert_30522.bin` and their `_offsets.npy` files | One Billion Word training and validation token streams with sequence offsets |\n| `tinystories/` | `train_bpe_8192.bin`, `train_bpe_8192.pickle`, `valid_bpe_8192.bin`, `valid_bpe_8192.pickle`, offsets and the BPE vocabulary and merges | TinyStories training and validation token streams under the custom BPE tokenizer |\n| `owt/` | `train_gpt2.bin`, `valid_gpt2.bin` and their `_offsets.npy` files | OpenWebText training and validation token streams with document offsets |\n\n## Citation\n\n```bibtex\n@misc{kumbong2026nextconcept,\n  title   = {Next-Concept Modeling: Fast, Parallel Coarse-to-Fine Text Generation},\n  author  = {Kumbong, Hermann and Khare, Ishan S. and Mlauzi, Iddah and Woen, Andrew and Ding, Charles and Buchanan, E. Kelly and Arora, Simran and Mirhoseini, Azalia and R{\\'e}, Christopher},\n  year    = {2026},\n  eprint={2610.14162},\n  archivePrefix={arXiv},\n  primaryClass={cs.CL},\n  url={https://arxiv.org/abs/2610.14162},\n}\n```",
+      "url": "https://huggingface.co/datasets/hazyresearch/ncm-datasets/resolve/6580ba41a4b0a976dde876fbe84d25327617b0e6/README.md"
+    }
+  },
+  "dataset_revision": "6580ba41a4b0a976dde876fbe84d25327617b0e6",
+  "files": {
+    "artifacts/sudoku/easy/config.yaml": {
+      "git_oid": "adef40fc50a296bf598ecf6fee092bc571715c34",
+      "sha256": "68d74fe310e909ca1892338258a2d7143293e685ec1c4747265d9134013d1605",
+      "size": 1980,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/easy/config.yaml"
+    },
+    "artifacts/sudoku/easy/generator.pt": {
+      "git_oid": "90f77db72c484dccbaf9677b6d7a0ac0b6951ac3",
+      "sha256": "1cefebcd1eae0e210b7e991fdce0e86964d0e897e94a3b432d1008ab92d9926e",
+      "size": 102560203,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/easy/generator.pt"
+    },
+    "artifacts/sudoku/easy/tokenizer.pt": {
+      "git_oid": "6cb4b0295300ede3d9dfa137fe38c10f8a056e98",
+      "sha256": "3f9c87e99fd49900929cd650181f55bf00530280416992b11ddc4ea869b39d68",
+      "size": 59816209,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/easy/tokenizer.pt"
+    },
+    "artifacts/sudoku/medium/config.yaml": {
+      "git_oid": "02bd6dd8ef5f7dcbe15206fef163d4d880fd9fc6",
+      "sha256": "a399820c7adbfd0c6ad6e443a63feb7fe7d35d066fb2981b79440af0b237beec",
+      "size": 1982,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/medium/config.yaml"
+    },
+    "artifacts/sudoku/medium/generator.pt": {
+      "git_oid": "5d82fdad97fd707f341f99a94591d5126f8ebda9",
+      "sha256": "8336b53fa3dcbddd9375374b8b7409feba2c2ae3b5a1fc5167ecd7852b26ae17",
+      "size": 102560203,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/medium/generator.pt"
+    },
+    "artifacts/sudoku/medium/tokenizer.pt": {
+      "git_oid": "ea86729b235c13fb3357ca9d40504db24f3be1d8",
+      "sha256": "aca5523a0c477a6f142bfd6c2ba157353c01b1e3f072bb0f75e34b3b75ebc211",
+      "size": 59816209,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/medium/tokenizer.pt"
+    },
+    "data/sudoku/easy/puzzles.pickle": {
+      "git_oid": "b4877d8dedb33122b50bd332d44b4161ddd855ab",
+      "sha256": "403353dd5d11e49d42627aee84c7b1ceb399fda03d01f6210ce78d0e61f2b29d",
+      "size": 372063,
+      "url": "https://huggingface.co/datasets/hazyresearch/ncm-datasets/resolve/6580ba41a4b0a976dde876fbe84d25327617b0e6/sudoku/easy/puzzles.pickle"
+    },
+    "data/sudoku/easy/solutions.pickle": {
+      "git_oid": "c567d070dc540df63793a839da29071e5d7ccb96",
+      "sha256": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576",
+      "size": 364063,
+      "url": "https://huggingface.co/datasets/hazyresearch/ncm-datasets/resolve/6580ba41a4b0a976dde876fbe84d25327617b0e6/sudoku/easy/solutions.pickle"
+    },
+    "data/sudoku/medium/puzzles.pickle": {
+      "git_oid": "4b0de20f0eec9f3b99678e035ab5620b24bf36ed",
+      "sha256": "d49cd2b380bdce748b10a7f0847637b5e160bd107b67f91dca93670b15190871",
+      "size": 372063,
+      "url": "https://huggingface.co/datasets/hazyresearch/ncm-datasets/resolve/6580ba41a4b0a976dde876fbe84d25327617b0e6/sudoku/medium/puzzles.pickle"
+    },
+    "data/sudoku/medium/solutions.pickle": {
+      "git_oid": "c567d070dc540df63793a839da29071e5d7ccb96",
+      "sha256": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576",
+      "size": 364063,
+      "url": "https://huggingface.co/datasets/hazyresearch/ncm-datasets/resolve/6580ba41a4b0a976dde876fbe84d25327617b0e6/sudoku/medium/solutions.pickle"
+    }
+  },
+  "model_revision": "d342ce8aaea58830eef3b8ad473664673e41f692",
+  "study": "R2",
+  "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203"
+}

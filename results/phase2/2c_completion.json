@@ -1,0 +1,112 @@
+{
+  "adaptive_frontier_claim": false,
+  "additional_model_evaluations_from_finalization": 0,
+  "artifacts_sha256": {
+    "2c.json": "8a0b3347e9ed25e6a5f921459f8a6469efdfe11331bb8fa3a4a42e2ba4565146",
+    "2c_requests.jsonl": "68af43d89d43d3065f5ba9ba4b1c248e85b89b5a57c0b20cfeb6e843906da826",
+    "analysis.json": "318782df52b686bf1c5c0735aec6b501f9875783370d119b6b0215af2ef31222",
+    "holdout_access.json": "7f37554989a1fd6c6359e51d0bf7098e51f7a31ba9373287ed8912a20d52b7f0",
+    "online_comparison.png": "472eaf2f5fbb1b6ab66c7a027ce6e6e470acf1e7bbc2a875ff39c857a05e8e66",
+    "policy_lock.json": "923262bbf231268f12af87b7ea9482b5ea8d7e55dd1cfa6f3fbfc8240f902aae",
+    "policy_lock_release.json": "d66700da4de4f2684e47715b42ae2adca970c675d04b14a19047c8fe54b74180",
+    "report_provenance.json": "b41d0586639453d75125a859c4cbdc2029455b3b923d8209fafe4248bc74fa5c",
+    "summary.md": "4cbdb9f67a10b01e7f078de2a5f4003b75ee372389ced6b836429b840b984023"
+  },
+  "base_commit": "2687a46dcb49e6a500c2eec7f140b5631e3eb9d2",
+  "counts": {
+    "decoder": 16380,
+    "encoder": 0,
+    "generator_levels": 54600,
+    "inputs": 4550
+  },
+  "date": "2026-10-22",
+  "decision": "no-go",
+  "early_requests": 0,
+  "entry_exception": "explicit online engineering/measurement work order despite negative Phase 1/R3 opportunity gates",
+  "exploration_warmups": 50,
+  "false_early_accepts": 0,
+  "figure_visually_inspected": true,
+  "integrity_access": "identity-only hashing traverses all puzzle operands, including reserved rows, without retaining boards",
+  "limits": {
+    "decoder": 33670,
+    "encoder": 0,
+    "generator_levels": 54600,
+    "inputs": 4550
+  },
+  "mean_wall_ms": {
+    "fixed": 100.9212023311111,
+    "full": 100.97779233666667,
+    "stability": 103.48194899666666,
+    "verified_all": 116.03316317222223,
+    "verified_selected": 101.83643090777778
+  },
+  "methods": 5,
+  "model_evaluation_retries": 0,
+  "model_state_unchanged": true,
+  "new_model_work_failures": 0,
+  "next_action": "Stop after Phase 2. No practical speedup or learned-policy headroom is established; Phase 3 requires separate justification and work order.",
+  "phase": "2C",
+  "phase2_final_inputs": 300,
+  "phase3_boundary": "no per-input Phase 3 board, reference or prediction inspection by inference/scoring",
+  "phase3_final_rows_materialized": 0,
+  "policy_lock_release_commit": "2687a46dcb49e6a500c2eec7f140b5631e3eb9d2",
+  "primary_fixed_gate": "no-go",
+  "primary_method": "verified_selected",
+  "primary_vs_fixed": {
+    "identities": 300,
+    "quality_difference": 0.0,
+    "quality_difference_ci95": [
+      0.0,
+      0.0
+    ],
+    "relative_mean_reduction": -0.00906874428293003,
+    "relative_mean_reduction_ci95": [
+      -0.014233486700925719,
+      -0.0040270380045222855
+    ],
+    "repeats_per_identity": 3,
+    "resamples": 10000,
+    "seed": 20261022
+  },
+  "primary_vs_full": {
+    "identities": 300,
+    "quality_difference": 0.0,
+    "quality_difference_ci95": [
+      0.0,
+      0.0
+    ],
+    "relative_mean_reduction": -0.00850324166573535,
+    "relative_mean_reduction_ci95": [
+      -0.013437973725380008,
+      -0.0038507006014830204
+    ],
+    "repeats_per_identity": 3,
+    "resamples": 10000,
+    "seed": 20261022
+  },
+  "prior_access_disclosed": "hard/easy full official evaluators internally scored reserved rows with aggregate-only analyst inspection",
+  "prior_compatibility_archive": "results/phase1/reviews/2026-10-22-phase2b",
+  "repeats": 3,
+  "report_only_changes": "fixed report f-string syntax and added secondary official metrics/access/cost disclosures; no execution-source or policy changes",
+  "source_snapshot": "results/phase2/source_snapshots/2c",
+  "status": "complete",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "junit_seconds": 16.486,
+    "new_Phase2_tests": 43,
+    "passed": 353,
+    "report": "results/phase2/2c_tests.xml",
+    "sha256": "016ef11f5375747bedf09b9278ca69c0b3e7ac7179d9176643658fc23a84fcd6",
+    "skipped": 0
+  },
+  "timed_requests": 4500,
+  "valid_inputs_per_method": {
+    "fixed": 299,
+    "full": 299,
+    "stability": 299,
+    "verified_all": 299,
+    "verified_selected": 299
+  },
+  "verification_command": ".\\scripts\\wsl_python.ps1 -PythonArguments @('scripts/run_phase2.py','verify')"
+}

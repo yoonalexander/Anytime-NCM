@@ -1,0 +1,60 @@
+{
+  "adaptive_frontier_claim": false,
+  "committed_subphases": {
+    "2A": "a0af5cb07631954f396c1cd91d0e6667eaa56916",
+    "2B": "2687a46dcb49e6a500c2eec7f140b5631e3eb9d2"
+  },
+  "date": "2026-10-22",
+  "decision": "no-go",
+  "entry_exception": "explicit online engineering/measurement work order despite negative Phase 1/R3 opportunity gates",
+  "exploration_warmup_requests": 120,
+  "final_decision_sha256": "318782df52b686bf1c5c0735aec6b501f9875783370d119b6b0215af2ef31222",
+  "historical_gates_unchanged": [
+    "Phase 1 hard no-go",
+    "R2 easy/medium negative",
+    "R3 easy no-go"
+  ],
+  "model_evaluation_retries": 0,
+  "new_model_work_failures": 0,
+  "next_action": "Stop after Phase 2. No practical speedup or learned-policy headroom is established; Phase 3 requires separate justification and work order.",
+  "phase": "2",
+  "phase3_final_rows_materialized": 0,
+  "report": "results/phase2/summary.md",
+  "report_provenance_sha256": "b41d0586639453d75125a859c4cbdc2029455b3b923d8209fafe4248bc74fa5c",
+  "source_and_access_disclosures": "See per-stage exact source snapshots, input/artifact hashes, heldout access record and final report.",
+  "status": "complete",
+  "subphase_completion_sha256": {
+    "2a": "5f8155484a6f5661fa4fa92460342d3c18c77f38bfdb2d22cf4851b5677ebcd4",
+    "2b": "3c6b28255d9646e5704baa740b076bc7d7e047ea48ede64d71c94fc2a11e854f",
+    "2c": "6043f28341ce1db8503149ad3d531a65a9c2526ca45f543f0fb076c6dc007ca5"
+  },
+  "subphases": [
+    "2A",
+    "2B",
+    "2C"
+  ],
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "junit_seconds": 16.486,
+    "new_Phase2_tests": 43,
+    "passed": 353,
+    "report": "results/phase2/2c_tests.xml",
+    "sha256": "016ef11f5375747bedf09b9278ca69c0b3e7ac7179d9176643658fc23a84fcd6",
+    "skipped": 0
+  },
+  "timed_requests": 6600,
+  "total_actual_counts": {
+    "decoder": 25906,
+    "encoder": 0,
+    "generator_levels": 82382,
+    "inputs": 6912
+  },
+  "total_limits": {
+    "decoder": 45694,
+    "encoder": 0,
+    "generator_levels": 82400,
+    "inputs": 6912
+  },
+  "untimed_2a_parity_requests": 192
+}

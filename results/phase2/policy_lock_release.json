@@ -1,0 +1,10 @@
+{
+  "github_main": "2687a46dcb49e6a500c2eec7f140b5631e3eb9d2",
+  "local_head": "2687a46dcb49e6a500c2eec7f140b5631e3eb9d2",
+  "phase2_final_rows_materialized_before_release": 0,
+  "phase3_final_rows_materialized": 0,
+  "policy_lock_sha256": "923262bbf231268f12af87b7ea9482b5ea8d7e55dd1cfa6f3fbfc8240f902aae",
+  "released_utc": "2026-10-22T10:48:56.083534+00:00",
+  "status": "released_after_2b_commit",
+  "working_lock_matches_committed_blob": true
+}
