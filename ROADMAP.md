@@ -1,7 +1,7 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 3A is complete; 3B/3C are pending under an explicit entry exception. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
+**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 3A/3B are complete; 3C is pending under an explicit entry exception. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
 **Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. The subsequently requested Phase 2 experiment is also complete with a measured no-go. Close this released-Sudoku first-valid path at the completed budget; no practical speedup is established. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
@@ -13,7 +13,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
 | 2 | Measured online verified stopping | Complete; measured no-go | Explicit user work order and frozen entry exception after failed offline gate |
-| 3 | Learned stopping against strong baselines | 3A complete; 3B/3C pending | Explicit user request despite unmet headroom; reserved Phase 3 subset |
+| 3 | Learned stopping against strong baselines | 3A/3B complete; locked 3C pending | Explicit user request despite unmet headroom; reserved Phase 3 subset |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
 
@@ -189,7 +189,7 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ## Phase 3 — Learned stopping, only with remaining headroom
 
-**Status:** 3A complete; 3B/3C pending — October 22, 2026.
+**Status:** 3A/3B complete; locked 3C pending — October 22, 2026.
 **Entry exception:** Remaining headroom is not demonstrated. The user explicitly requested finishing Phase 3 regardless; a [separate frozen protocol](docs/studies/phase3-easy-learned-protocol.md) authorizes a bounded learned-policy experiment without reversing any prior gate. The original 300-input Phase 3 subset remains reserved until a committed/released policy lock, with prior aggregate exposure disclosed.
 **Design mapping:** Sections 4 RQ3/H3, 8.3–8.5, and 9 Phase 3.
 
@@ -211,7 +211,7 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 | Subphase | Status | Evidence |
 | --- | --- | --- |
 | 3A: causal models and offline selection | Complete | [Training](results/phase3/training.json), [completion](results/phase3/3a_completion.json); 380 tests |
-| 3B: real development comparison and policy lock | Pending | Seven methods, 100 identities × three repeats, 70 exploration warmups |
+| 3B: real development comparison and policy lock | Complete | [2,100 timed requests and policy lock](results/phase3/3b_completion.json); no early exits |
 | 3C: frozen reserved comparison and report | Pending | Seven methods, 300 phase3_final identities × three repeats, 70 exploration warmups |
 
 ## Phase 4 — Natural-language generalization
@@ -380,3 +380,7 @@ The Phase 2 final subset had prior aggregate official-baseline exposure and rela
 ### Phase 3A completion — October 22, 2026
 
 Six exploration-only logistic fits and all predeclared development choices are complete; zero new NCM generations/encodings/decodes. Both feature families choose inspection minimum 10 and threshold 0.5; base C=10 and internal C=0.1. There are no positive pre-final labels; the headroom gate remains unmet. Models receive current/past causal features, with task-specific validity confined to offline labels and the separate verified baseline. All 380 tests pass. [Protocol](docs/studies/phase3-easy-learned-protocol.md), [completion](results/phase3/3a_completion.json). Next: 3B, then committed/released lock and 3C.
+
+### Phase 3B completion — October 22, 2026
+
+All 2,100 development timed requests and 70 exploration warmups completed within caps, with exact saved prefix/exit/score parity and unchanged model state. Seven methods solve 98/100 inputs with no early exits/false early accepts. Full depth averages 98.36 ms; learned internal 100.66 ms. The [development analysis](results/phase3/development_analysis.json), [policy lock](results/phase3/policy_lock.json) and [completion](results/phase3/3b_completion.json) preserve all methods and choices. A report-only source alignment retains the initial pre-release lock with no model/policy/execution changes. All 380 engine/feature/policy tests remain passed. Commit/push and verify the lock before 3C final access. Phases 4–5 are excluded by the user's latest instruction.

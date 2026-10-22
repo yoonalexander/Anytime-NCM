@@ -2,7 +2,7 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicit request to finish Phase 3 regardless authorizes a separate bounded experiment: 3A complete, 3B/3C pending.
+**Status:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicit request to finish Phase 3 regardless authorizes a separate bounded experiment: 3A/3B complete, locked 3C pending.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
@@ -204,3 +204,5 @@ The current recommendation is to stop this released-Sudoku first-valid study at 
 ## Subsequent Phase 3 work order
 
 The user explicitly requested finishing Phase 3 regardless. This is an entry exception, not evidence of remaining headroom. [Protocol](docs/studies/phase3-easy-learned-protocol.md). 3A is complete with six exploration-only logistic fits, causal base/internal feature families and development-only selection; both choose minimum 10 / threshold 0.5. 3B benchmarks all seven frozen candidate methods on development, then commits/pushes the policy lock before 3C uses the reserved 300 Phase 3 identities. Existing quality and practical-speedup thresholds remain unchanged. No Phase 4 or task change is included.
+
+**Phase 3B completed:** Seven methods, 100 development identities × three repeats, plus 70 exploration warmups; all offline/online parity checks pass. Each solves 98/100, none exits early. Learned internal averages 100.66 ms versus 98.36 ms full depth. Policies remain unchanged from the declared family; [lock](results/phase3/policy_lock.json), [completion](results/phase3/3b_completion.json). Release the committed/pushed lock before 3C. Latest user scope: finish Phase 3 and report status; do not work on Phases 4–5.

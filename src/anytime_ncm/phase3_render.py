@@ -2,6 +2,17 @@
 import json
 from anytime_ncm.phase3 import OUTPUT
 
+def ablation_text(data):
+    if not data["matched_inspected_states"]:
+        return "The deployed inspection schedules differ, so no matched incremental-value claim is made."
+    delta=data["brier_difference"];lo,hi=data["brier_difference_ci95"]
+    text=f"On matched inspected states, internal-minus-base Brier difference is {delta:.6f}, paired identity-bootstrap 95% interval [{lo:.6f}, {hi:.6f}]. "
+    if hi<0:
+        return text+"The stated code statistics improve current-validity prediction on these states; this does not establish earlier acceptable outputs or a latency benefit."
+    if lo>0:
+        return text+"The internal model predicts current validity less accurately on these states; no incremental predictive-value benefit is established."
+    return text+"The interval includes zero; this comparison does not establish incremental predictive value."
+
 def render(root,a):
     import matplotlib
     matplotlib.use("Agg")
@@ -46,12 +57,12 @@ def render(root,a):
     lines+=["",f"Primary versus selected fixed reduction: {100*f['relative_mean_reduction']:.2f}%; paired interval {[round(100*x,3) for x in f['relative_mean_reduction_ci95']]}. The fixed comparator was selected using development, not final outcomes.","",
       "The claim rule requires >=5% mean wall reduction, lower paired interval >0, zero empirical solve loss and zero invalid early accepts with correctness/parity passed. Both full and strong fixed comparisons must pass for a frontier claim. Statistics use 10,000 paired identity bootstrap resamples, seed 20261022, retaining all three repeats. Finite-sample zero errors do not guarantee population correctness.","",
       "## Calibration and internal-feature ablation","",
-      "| Model | Inspected states (repeat 0) | Brier / paired-cluster 95% interval | Log loss / cluster 95% interval | Mean included feature+score CPU ms/request |",
+      "| Model | Inspected states (repeat 0) | Brier / cluster 95% interval | Log loss / cluster 95% interval | Mean included feature+score CPU ms/request |",
       "| --- | ---: | --- | --- | ---: |"]
     for m,c in a["calibration"].items():
         lines.append(f"| {m} | {c['states']} | {c['brier']:.6f} / {c['brier_ci95']} | {c['log_loss']:.6f} / {c['log_loss_ci95']} | {c['mean_feature_policy_cpu_ms']:.4f} |")
     lines+=["","These probabilities concern CURRENT validity at the deployed inspection levels. Repeat 0 supplies calibration states; all repeats supply latency. Reliability-bin counts, mean scores and valid rates are retained in analysis. Identity cluster resampling keeps all inspected states together. No extra final decoding was done to fill uninspected levels. Feature+score CPU timing excludes GPU reconstruction/decoding and code/token transfers; all of those are included in actual request latency.","",
-      "The internal ablation compares only the stated discrete-code statistics with the stated decoded/input features. It does not test all transformer statistics, establish cross-task H3, or manufacture early-positive training labels. "+str(a.get("internal_ablation",{})),"",
+      "The internal ablation compares only the stated discrete-code statistics with the stated decoded/input features. It does not test all transformer statistics, establish cross-task H3, or manufacture early-positive training labels. "+ablation_text(a["internal_ablation"]),"",
       "## Predeclared clue-count subgroups","",
       "| Subgroup | Inputs | Full valid | Internal valid | Full mean ms | Internal mean ms |","| --- | ---: | ---: | ---: | ---: | ---: |"]
     for name,g in a["subgroups"].items():

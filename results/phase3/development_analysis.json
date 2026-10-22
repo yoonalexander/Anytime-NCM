@@ -1,0 +1,649 @@
+{
+  "adaptive_frontier_claim": false,
+  "calibration": {
+    "learned_base": {
+      "bins": [
+        {
+          "count": 200,
+          "lower": 0.0,
+          "mean_probability": 0.0005249970800026401,
+          "upper": 0.1,
+          "valid_rate": 0.0
+        },
+        {
+          "count": 0,
+          "lower": 0.1,
+          "mean_probability": null,
+          "upper": 0.2,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.2,
+          "mean_probability": null,
+          "upper": 0.3,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.3,
+          "mean_probability": null,
+          "upper": 0.4,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.4,
+          "mean_probability": null,
+          "upper": 0.5,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.5,
+          "mean_probability": null,
+          "upper": 0.6,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.6,
+          "mean_probability": null,
+          "upper": 0.7,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.7,
+          "mean_probability": null,
+          "upper": 0.8,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.8,
+          "mean_probability": null,
+          "upper": 0.9,
+          "valid_rate": null
+        },
+        {
+          "count": 100,
+          "lower": 0.9,
+          "mean_probability": 0.9926370997310301,
+          "upper": 1.0,
+          "valid_rate": 0.98
+        }
+      ],
+      "brier": 0.006613563843943614,
+      "brier_ci95": [
+        2.0729176142676255e-05,
+        0.0165130067343566
+      ],
+      "coverage": "deployed inspected states; repeat 0 only; identity-cluster uncertainty",
+      "log_loss": 0.03765722580277672,
+      "log_loss_ci95": [
+        0.0027419940595259386,
+        0.09102683701858354
+      ],
+      "mean_feature_policy_cpu_ms": 0.14463857333333333,
+      "positives": 98,
+      "states": 300
+    },
+    "learned_internal": {
+      "bins": [
+        {
+          "count": 199,
+          "lower": 0.0,
+          "mean_probability": 0.006411054016594646,
+          "upper": 0.1,
+          "valid_rate": 0.0
+        },
+        {
+          "count": 1,
+          "lower": 0.1,
+          "mean_probability": 0.10371058042352665,
+          "upper": 0.2,
+          "valid_rate": 0.0
+        },
+        {
+          "count": 0,
+          "lower": 0.2,
+          "mean_probability": null,
+          "upper": 0.3,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.3,
+          "mean_probability": null,
+          "upper": 0.4,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.4,
+          "mean_probability": null,
+          "upper": 0.5,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.5,
+          "mean_probability": null,
+          "upper": 0.6,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.6,
+          "mean_probability": null,
+          "upper": 0.7,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.7,
+          "mean_probability": null,
+          "upper": 0.8,
+          "valid_rate": null
+        },
+        {
+          "count": 0,
+          "lower": 0.8,
+          "mean_probability": null,
+          "upper": 0.9,
+          "valid_rate": null
+        },
+        {
+          "count": 100,
+          "lower": 0.9,
+          "mean_probability": 0.9733932839352377,
+          "upper": 1.0,
+          "valid_rate": 0.98
+        }
+      ],
+      "brier": 0.006662854549317055,
+      "brier_ci95": [
+        0.00032964660185430636,
+        0.016138737390449884
+      ],
+      "coverage": "deployed inspected states; repeat 0 only; identity-cluster uncertainty",
+      "log_loss": 0.037377968778499256,
+      "log_loss_ci95": [
+        0.01319415383984936,
+        0.07350497421531861
+      ],
+      "mean_feature_policy_cpu_ms": 0.19381611666666668,
+      "positives": 98,
+      "states": 300
+    }
+  },
+  "counts": {
+    "decoder": 7440,
+    "encoder": 0,
+    "generator_levels": 26040,
+    "inputs": 2170
+  },
+  "decision": "no-go",
+  "identities": 100,
+  "internal_ablation": {
+    "brier_difference": 4.9290705373440834e-05,
+    "brier_difference_ci95": [
+      -0.00040755379998104067,
+      0.0003758176247498501
+    ],
+    "interpretation": "internal minus base Brier; negative favors internal; descriptive feature ablation",
+    "matched_inspected_states": true
+  },
+  "primary_fixed_gate": "no-go",
+  "primary_method": "learned_internal",
+  "primary_vs_fixed": {
+    "identities": 100,
+    "quality_difference": 0.0,
+    "quality_difference_ci95": [
+      0.0,
+      0.0
+    ],
+    "relative_mean_reduction": -0.029518442307156167,
+    "relative_mean_reduction_ci95": [
+      -0.03541123130074964,
+      -0.02366059812107378
+    ],
+    "repeats_per_identity": 3,
+    "resamples": 10000,
+    "seed": 20261022
+  },
+  "repeats": 3,
+  "stage": "3b",
+  "status": "complete",
+  "study": "Phase 3",
+  "subgroups": {
+    "clues_gt_27": {
+      "identities": 100,
+      "methods": {
+        "fixed": {
+          "mean_wall_ms": 97.77508718,
+          "valid_inputs": 98
+        },
+        "full": {
+          "mean_wall_ms": 98.35674962666667,
+          "valid_inputs": 98
+        },
+        "learned_base": {
+          "mean_wall_ms": 100.55173437333333,
+          "valid_inputs": 98
+        },
+        "learned_internal": {
+          "mean_wall_ms": 100.66125545,
+          "valid_inputs": 98
+        },
+        "stability": {
+          "mean_wall_ms": 101.45787856666666,
+          "valid_inputs": 98
+        },
+        "verified_all": {
+          "mean_wall_ms": 113.50501907666667,
+          "valid_inputs": 98
+        },
+        "verified_selected": {
+          "mean_wall_ms": 98.44048721,
+          "valid_inputs": 98
+        }
+      }
+    },
+    "clues_le_27": {
+      "identities": 0,
+      "methods": {
+        "fixed": {
+          "mean_wall_ms": null,
+          "valid_inputs": 0
+        },
+        "full": {
+          "mean_wall_ms": null,
+          "valid_inputs": 0
+        },
+        "learned_base": {
+          "mean_wall_ms": null,
+          "valid_inputs": 0
+        },
+        "learned_internal": {
+          "mean_wall_ms": null,
+          "valid_inputs": 0
+        },
+        "stability": {
+          "mean_wall_ms": null,
+          "valid_inputs": 0
+        },
+        "verified_all": {
+          "mean_wall_ms": null,
+          "valid_inputs": 0
+        },
+        "verified_selected": {
+          "mean_wall_ms": null,
+          "valid_inputs": 0
+        }
+      }
+    }
+  },
+  "summary": {
+    "fixed": {
+      "batch1_requests_per_second": 10.227554163761985,
+      "early_requests": 0,
+      "false_early_accepts": 0,
+      "gate_vs_full": "no-go",
+      "generated_codes": {
+        "mean": 322.0,
+        "median": 322.0,
+        "p95": 322.0
+      },
+      "generator_levels": {
+        "mean": 12.0,
+        "median": 12.0,
+        "p95": 12.0
+      },
+      "gpu_event_elapsed_ms": {
+        "mean": 103.41839599609375,
+        "median": 102.91859436035156,
+        "p95": 112.92775268554688
+      },
+      "inspections": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0
+      },
+      "paired_vs_full": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": 0.00591380305748701,
+        "relative_mean_reduction_ci95": [
+          4.360711407047381e-05,
+          0.011762021420839349
+        ],
+        "repeats_per_identity": 3,
+        "resamples": 10000,
+        "seed": 20261022
+      },
+      "peak_allocated_bytes": 230412288,
+      "requests": 300,
+      "valid_inputs": 98,
+      "valid_rate": 0.98,
+      "wall_ms": {
+        "mean": 97.77508718,
+        "median": 96.6785955,
+        "p95": 111.2245075
+      }
+    },
+    "full": {
+      "batch1_requests_per_second": 10.167070422677714,
+      "early_requests": 0,
+      "false_early_accepts": 0,
+      "gate_vs_full": "no-go",
+      "generated_codes": {
+        "mean": 322.0,
+        "median": 322.0,
+        "p95": 322.0
+      },
+      "generator_levels": {
+        "mean": 12.0,
+        "median": 12.0,
+        "p95": 12.0
+      },
+      "gpu_event_elapsed_ms": {
+        "mean": 104.066749903361,
+        "median": 103.43246459960938,
+        "p95": 115.22421569824219
+      },
+      "inspections": {
+        "mean": 0.0,
+        "median": 0.0,
+        "p95": 0.0
+      },
+      "paired_vs_full": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": 0.0,
+        "relative_mean_reduction_ci95": [
+          0.0,
+          0.0
+        ],
+        "repeats_per_identity": 3,
+        "resamples": 10000,
+        "seed": 20261022
+      },
+      "peak_allocated_bytes": 230412288,
+      "requests": 300,
+      "valid_inputs": 98,
+      "valid_rate": 0.98,
+      "wall_ms": {
+        "mean": 98.35674962666667,
+        "median": 96.9320715,
+        "p95": 112.07139620000001
+      }
+    },
+    "learned_base": {
+      "batch1_requests_per_second": 9.945129303162009,
+      "early_requests": 0,
+      "false_early_accepts": 0,
+      "gate_vs_full": "no-go",
+      "generated_codes": {
+        "mean": 322.0,
+        "median": 322.0,
+        "p95": 322.0
+      },
+      "generator_levels": {
+        "mean": 12.0,
+        "median": 12.0,
+        "p95": 12.0
+      },
+      "gpu_event_elapsed_ms": {
+        "mean": 106.23981051127116,
+        "median": 105.38748550415039,
+        "p95": 115.52533226013183
+      },
+      "inspections": {
+        "mean": 3.0,
+        "median": 3.0,
+        "p95": 3.0
+      },
+      "paired_vs_full": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.02231656449606345,
+        "relative_mean_reduction_ci95": [
+          -0.03031834543299573,
+          -0.014377394322838938
+        ],
+        "repeats_per_identity": 3,
+        "resamples": 10000,
+        "seed": 20261022
+      },
+      "peak_allocated_bytes": 230295552,
+      "requests": 300,
+      "valid_inputs": 98,
+      "valid_rate": 0.98,
+      "wall_ms": {
+        "mean": 100.55173437333333,
+        "median": 99.356051,
+        "p95": 113.44967020000001
+      }
+    },
+    "learned_internal": {
+      "batch1_requests_per_second": 9.934308841366631,
+      "early_requests": 0,
+      "false_early_accepts": 0,
+      "gate_vs_full": "no-go",
+      "generated_codes": {
+        "mean": 322.0,
+        "median": 322.0,
+        "p95": 322.0
+      },
+      "generator_levels": {
+        "mean": 12.0,
+        "median": 12.0,
+        "p95": 12.0
+      },
+      "gpu_event_elapsed_ms": {
+        "mean": 106.49732701619466,
+        "median": 105.80300521850586,
+        "p95": 116.08131256103516
+      },
+      "inspections": {
+        "mean": 3.0,
+        "median": 3.0,
+        "p95": 3.0
+      },
+      "paired_vs_full": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.023430072995300755,
+        "relative_mean_reduction_ci95": [
+          -0.030190732365330524,
+          -0.016700893385676308
+        ],
+        "repeats_per_identity": 3,
+        "resamples": 10000,
+        "seed": 20261022
+      },
+      "peak_allocated_bytes": 230295552,
+      "requests": 300,
+      "valid_inputs": 98,
+      "valid_rate": 0.98,
+      "wall_ms": {
+        "mean": 100.66125545,
+        "median": 99.541842,
+        "p95": 112.97754330000001
+      }
+    },
+    "stability": {
+      "batch1_requests_per_second": 9.856307012598464,
+      "early_requests": 0,
+      "false_early_accepts": 0,
+      "gate_vs_full": "no-go",
+      "generated_codes": {
+        "mean": 322.0,
+        "median": 322.0,
+        "p95": 322.0
+      },
+      "generator_levels": {
+        "mean": 12.0,
+        "median": 12.0,
+        "p95": 12.0
+      },
+      "gpu_event_elapsed_ms": {
+        "mean": 107.23664428710937,
+        "median": 106.16654205322266,
+        "p95": 119.42229385375977
+      },
+      "inspections": {
+        "mean": 3.0,
+        "median": 3.0,
+        "p95": 3.0
+      },
+      "paired_vs_full": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.03152939632278384,
+        "relative_mean_reduction_ci95": [
+          -0.039813462215291355,
+          -0.024190425501646885
+        ],
+        "repeats_per_identity": 3,
+        "resamples": 10000,
+        "seed": 20261022
+      },
+      "peak_allocated_bytes": 230295552,
+      "requests": 300,
+      "valid_inputs": 98,
+      "valid_rate": 0.98,
+      "wall_ms": {
+        "mean": 101.45787856666666,
+        "median": 99.96792500000001,
+        "p95": 114.01827795
+      }
+    },
+    "verified_all": {
+      "batch1_requests_per_second": 8.810183092648552,
+      "early_requests": 0,
+      "false_early_accepts": 0,
+      "gate_vs_full": "no-go",
+      "generated_codes": {
+        "mean": 322.0,
+        "median": 322.0,
+        "p95": 322.0
+      },
+      "generator_levels": {
+        "mean": 12.0,
+        "median": 12.0,
+        "p95": 12.0
+      },
+      "gpu_event_elapsed_ms": {
+        "mean": 120.17292132059733,
+        "median": 119.55537796020508,
+        "p95": 131.46632232666016
+      },
+      "inspections": {
+        "mean": 12.0,
+        "median": 12.0,
+        "p95": 12.0
+      },
+      "paired_vs_full": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.15401352227984733,
+        "relative_mean_reduction_ci95": [
+          -0.1639769519855436,
+          -0.1447825271910396
+        ],
+        "repeats_per_identity": 3,
+        "resamples": 10000,
+        "seed": 20261022
+      },
+      "peak_allocated_bytes": 230146048,
+      "requests": 300,
+      "valid_inputs": 98,
+      "valid_rate": 0.98,
+      "wall_ms": {
+        "mean": 113.50501907666666,
+        "median": 111.3414755,
+        "p95": 127.25568215
+      }
+    },
+    "verified_selected": {
+      "batch1_requests_per_second": 10.158421888615113,
+      "early_requests": 0,
+      "false_early_accepts": 0,
+      "gate_vs_full": "no-go",
+      "generated_codes": {
+        "mean": 322.0,
+        "median": 322.0,
+        "p95": 322.0
+      },
+      "generator_levels": {
+        "mean": 12.0,
+        "median": 12.0,
+        "p95": 12.0
+      },
+      "gpu_event_elapsed_ms": {
+        "mean": 104.15209037780761,
+        "median": 103.43683242797852,
+        "p95": 114.09175033569336
+      },
+      "inspections": {
+        "mean": 1.0,
+        "median": 1.0,
+        "p95": 1.0
+      },
+      "paired_vs_full": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.0008513659067748147,
+        "relative_mean_reduction_ci95": [
+          -0.007576301981719974,
+          0.005996438782225628
+        ],
+        "repeats_per_identity": 3,
+        "resamples": 10000,
+        "seed": 20261022
+      },
+      "peak_allocated_bytes": 230412288,
+      "requests": 300,
+      "valid_inputs": 98,
+      "valid_rate": 0.98,
+      "wall_ms": {
+        "mean": 98.44048721,
+        "median": 97.20884,
+        "p95": 111.13512145000001
+      }
+    }
+  },
+  "timed_requests": 2100,
+  "warmup_requests": 70
+}
