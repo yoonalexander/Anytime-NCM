@@ -1,0 +1,11 @@
+{
+  "artifacts_sha256": {
+    "screen_comparison.png": "699b5370f49742efb758f5489f5ee425fa1be45bab246a27587a8508a311627a",
+    "summary.md": "8e55f1c35fe35b57cd8212470c75ff2be9b2c69db83e9eac813e862fc2dab6bb"
+  },
+  "candidate_provenance_sha256": {
+    "easy": "56395392627b74058073180fa8020c69de309d8ff8f3703e098f41dd115ebc22",
+    "medium": "aa4d41a5791907dd4ee989b5c141015f2c058b46592fea5c0adcfd34f96cd06b"
+  },
+  "study": "R2"
+}

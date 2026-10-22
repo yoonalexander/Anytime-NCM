@@ -1,0 +1,226 @@
+{
+  "base_commit": "ff8adb713b668ee03a7bff916f2b42c9d2d5113c",
+  "candidate_order": [
+    "easy",
+    "medium"
+  ],
+  "candidate_provenance_sha256": {
+    "easy": "56395392627b74058073180fa8020c69de309d8ff8f3703e098f41dd115ebc22",
+    "medium": "aa4d41a5791907dd4ee989b5c141015f2c058b46592fea5c0adcfd34f96cd06b"
+  },
+  "date": "2026-10-22",
+  "decisions": {
+    "easy": "negative_at_fixed_budget",
+    "medium": "negative_at_fixed_budget"
+  },
+  "early_valid_counts": {
+    "easy": 0,
+    "medium": 0
+  },
+  "exit": "Close the released-Sudoku first-valid path at this budget. A new task/objective needs a separate work order.",
+  "figure_visually_inspected": "screen_comparison.png",
+  "final_valid_counts": {
+    "easy": 32,
+    "medium": 31
+  },
+  "forward_counts_by_candidate": {
+    "easy": {
+      "adapter_inputs": 32,
+      "decoder": 416,
+      "encoder": 0,
+      "generator_levels": 768,
+      "independent_prefix": 32,
+      "latent_parity": 32,
+      "official_inputs": 32
+    },
+    "medium": {
+      "adapter_inputs": 32,
+      "decoder": 416,
+      "encoder": 0,
+      "generator_levels": 768,
+      "independent_prefix": 32,
+      "latent_parity": 32,
+      "official_inputs": 32
+    }
+  },
+  "gate": "at least one independently primary-valid output before final level",
+  "historical_compatibility_review_archive": {
+    "directory": "results/phase1/reviews/2026-10-22-r1b",
+    "sha256": {
+      "review_tests.xml": "41736fae9d4dfb5069c2bd54d9fd6c110be924a1b53c749f46062db1473e2fe7",
+      "review_validation.json": "0a159468126785025361dffd9d7247e18c343dd3c16d44266ee58f453c3c75c1"
+    }
+  },
+  "historical_tracked_files_verified_byte_identical": 90,
+  "independent_output_audit": {
+    "board_rows": 768,
+    "distribution_sums_and_defined_coverage_recount": true,
+    "manual_grid_and_clue_validity_recount": true,
+    "markdown_fences_and_table_widths": "passed",
+    "navigation_links_checked": 168,
+    "status": "passed",
+    "wrong_given_empty_counts_recount": true
+  },
+  "limitations": [
+    "zero in 32 per candidate is not a population impossibility result",
+    "screening measures opportunity, not total cost or online speedup",
+    "same-model batch-1 comparator parity is not full-set CLI reproduction",
+    "base-model training overlap unknown; historical +0.15pp baseline discrepancy unresolved",
+    "R3, online stopping, controller training, and task-change work have not started"
+  ],
+  "manifest_sha256": {
+    "easy": "d898977c35e234d2f2843188073b241cec362fc163141b98323835778ebfc5d3",
+    "medium": "032d1bb68e89bda02fea7138bab63352c98b0e97b3eb6e19361521a748dc3fcb"
+  },
+  "model_free_verification": {
+    "imports_matplotlib": false,
+    "imports_torch": false,
+    "recomputes_analysis_and_tables": true,
+    "replays_cuda_parity": false,
+    "status": "passed"
+  },
+  "never_valid_indices": {
+    "easy": [],
+    "medium": [
+      6
+    ]
+  },
+  "new_Phase2_go": false,
+  "overlap": "All released difficulty solution files are byte-identical; inherited row-index partitions preserve original reservations. Related difficulty views are not independent datasets.",
+  "qualified_for_R3": [],
+  "rationale": "R1A/R1B warranted bounded difficulty/checkpoint screening; no unresolved correctness failure required changing the original study.",
+  "recorded_gpu_checks": {
+    "easy": {
+      "execution": {
+        "batch_size": 1,
+        "comparator": "verbatim pinned eval_shard prefix/pick_tokens/dec/run; selected rows only",
+        "compile": false,
+        "cpu_threads": 4,
+        "cuda_runtime": "12.8",
+        "generator_level_counter": "first transformer block prehook",
+        "gpu": "NVIDIA GeForce RTX 5060",
+        "kv_cache_override": null,
+        "precision": "float32; no autocast",
+        "python": "3.12.3",
+        "torch": "2.10.0+cu128",
+        "warmups": 0
+      },
+      "final_latent_bitwise_equal_inputs": 32,
+      "final_token_text_parity_inputs": 32,
+      "independent_prefix_equal_inputs": 32,
+      "independent_storage_inputs": 32,
+      "peak_cuda_allocated_bytes": 229767168,
+      "state_after": {
+        "generator": "753e5e760a1b4ef8d846f966f5ab9f96bd85c7bf45ae03075c41d17bbe1dba62",
+        "tokenizer": "7ccbd14a99b99fca4ebd3e5869fe5d279f24682af1f6475fd23c8541209bfb4a"
+      },
+      "state_before": {
+        "generator": "753e5e760a1b4ef8d846f966f5ab9f96bd85c7bf45ae03075c41d17bbe1dba62",
+        "tokenizer": "7ccbd14a99b99fca4ebd3e5869fe5d279f24682af1f6475fd23c8541209bfb4a"
+      }
+    },
+    "medium": {
+      "execution": {
+        "batch_size": 1,
+        "comparator": "verbatim pinned eval_shard prefix/pick_tokens/dec/run; selected rows only",
+        "compile": false,
+        "cpu_threads": 4,
+        "cuda_runtime": "12.8",
+        "generator_level_counter": "first transformer block prehook",
+        "gpu": "NVIDIA GeForce RTX 5060",
+        "kv_cache_override": null,
+        "precision": "float32; no autocast",
+        "python": "3.12.3",
+        "torch": "2.10.0+cu128",
+        "warmups": 0
+      },
+      "final_latent_bitwise_equal_inputs": 32,
+      "final_token_text_parity_inputs": 32,
+      "independent_prefix_equal_inputs": 32,
+      "independent_storage_inputs": 32,
+      "peak_cuda_allocated_bytes": 229767168,
+      "state_after": {
+        "generator": "c0c0808807ba1669a3058594316fbb1d2752d3c39a5b31f52faf436fb9ea9f08",
+        "tokenizer": "bfc402465b80370d1534f42d62836fcc25ec9fb788ca7d0b72a9db962e27a91a"
+      },
+      "state_before": {
+        "generator": "c0c0808807ba1669a3058594316fbb1d2752d3c39a5b31f52faf436fb9ea9f08",
+        "tokenizer": "bfc402465b80370d1534f42d62836fcc25ec9fb788ca7d0b72a9db962e27a91a"
+      }
+    }
+  },
+  "report_provenance_sha256": "04fc7274877f4c59f74deb555d061363b64153f709b7f2e7dbeef72661e04131",
+  "schema_version": 1,
+  "scope": {
+    "adapter_input_generations": 64,
+    "adapter_prefix_states": 768,
+    "candidates": 2,
+    "comparator_input_generations": 64,
+    "development_board_reference_rows_materialized": 0,
+    "extra_seeds": 0,
+    "final_board_reference_rows_materialized": 0,
+    "full_depth_input_evaluations": 128,
+    "identity_only_puzzle_rows_hashed_per_candidate": 2000,
+    "puzzle_rows_materialized_per_candidate": 32,
+    "reference_rows_materialized_per_candidate": 32,
+    "reserved_operands_traversed_for_identity_hash": true,
+    "retries": 0,
+    "selected_inputs_per_candidate": 32,
+    "timed_requests": 0,
+    "training_steps": 0,
+    "warmups": 0
+  },
+  "source_sha256": {
+    "configs/r2_sources.json": "f1c21e46eb64d21296c77870cb9ee0829a53cd69b6b80b3b60e3022a7c1408e9",
+    "docs/studies/sudoku-checkpoint-screen-protocol.md": "c69925f0274190df0be3ebe8ed4816b6a2028a06191ddcbc6319610cf4b09a71",
+    "scripts/screen_sudoku_checkpoints.py": "66ef15f213a4cce3e612f051bafa7c8a275a4b023e1dcc6cef21a3fda47f318c",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/diagnosis.py": "d78a32c6e25d1e65f2a4ad0c918dcec8e1a824dcb220f1c30f38936acd438356",
+    "src/anytime_ncm/screening.py": "bd67f497e875220d06481d92208a412ff3c6969f4aeea1b00f71b3ea71a35cb1",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/screening_render.py": "84cc7da3752febbedcc0aa5d94771a4b16ffd67d4db05f9cf0df86c085c22380",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_screening.py": "d789f1e3a790899d289bd7aefc186290d7f1c28aa7146d4a1163747afa0e10fa",
+    "third_party/ncm/models/next_concept.py": "3dcae313cedf2e33ecb9a046d1ad9ec4336962c9221375ba5f7dd9be3d25b04e",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb",
+    "third_party/ncm/tokenization/vqvae_tokenizer.py": "a41215ad73e626c30882d1e9fa5bcd7753ced73307516fae0ec9815325445fc1"
+  },
+  "status": "complete",
+  "study": "R2",
+  "tests": {
+    "R2_tests": 38,
+    "by_module": {
+      "tests.test_collection": 52,
+      "tests.test_diagnosis": 29,
+      "tests.test_full_depth_equivalence": 3,
+      "tests.test_partial_decoder": 26,
+      "tests.test_report": 28,
+      "tests.test_screening": 38,
+      "tests.test_sudoku_validator": 59,
+      "tests.test_target_encoding": 26,
+      "tests.test_timing": 21
+    },
+    "errors": 0,
+    "failures": 0,
+    "junit_suite_seconds": 14.034,
+    "passed": 282,
+    "pytest_reported_seconds": 14.04,
+    "report": "results/followup/sudoku_checkpoint_screen/tests.xml",
+    "report_sha256": "9d193cdb356dcd2e6b57868cad5e704b3d053cdd7774c942fe4c614706526c24",
+    "skipped": 0
+  },
+  "total_forward_counts": {
+    "adapter_inputs": 64,
+    "decoder": 832,
+    "encoder": 0,
+    "generator_levels": 1536,
+    "independent_prefix": 64,
+    "latent_parity": 64,
+    "official_inputs": 64
+  }
+}

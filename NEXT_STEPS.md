@@ -2,19 +2,19 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0, R1A, and R1B complete. R1B used its separately frozen diagnostic protocol; R2 and later studies remain proposed.
+**Status:** R0, R1A, R1B, and R2 complete. Both bounded R2 screens were negative; the released-Sudoku first-valid path is closed at this budget. R3 and Phase 2 were not entered.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
 ## 1. Recommendation
 
-The next research question should be: **Does another frozen Sudoku setting offer useful exact solutions before its final hierarchy level?**
+**Close the released-Sudoku first-valid path at the declared budget.** R2 found no early valid outputs in either the easy or medium 32-input screen. A new task or objective requires an explicit study decision; no additional inference is authorized by this result.
 
-R1A characterized the saved errors. R1B then encoded the 32 preselected valid references: all 32 round-tripped exactly at level 12, but none produced a valid earlier prefix. This does not prove that every alternative code sequence or decoder would fail early. The next recommended branch is the bounded R2 easy-Sudoku screen, followed by medium only if needed, after artifact/resource inspection and a new screen protocol. Keep exact verification and change one major setting at a time.
+R1A characterized the saved errors. R1B then encoded the 32 preselected valid references: all 32 round-tripped exactly at level 12, but none produced a valid earlier prefix. This does not prove that every alternative code sequence or decoder would fail early. Those findings warranted R2, which executed easy first and then medium under a new frozen protocol. Neither produced a valid solution before level 12. Final validity was 32/32 easy and 31/32 medium; all 64 matched official/adapter final outputs passed exact token/text parity. [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
 
 Do not prioritize an online stopping hook, controller training, or a viewer as the next efficiency experiment. None can, on its own, make an invalid existing prefix into a valid early answer. This is a research sequencing choice, not a claim that the software would be impossible to implement.
 
-If bounded Sudoku follow-ups remain negative, choose explicitly between closing the Sudoku line as a documented negative result and designing a separate natural-language study. Do not keep expanding samples or relaxing quality requirements until a favorable result appears.
+The bounded Sudoku follow-ups are now negative, so closure at this budget is the recorded decision. If the project continues, the recommended next work is a separately requested WMT14 resource/protocol audit before any model evaluation. Do not expand Sudoku samples or relax quality requirements until a favorable result appears.
 
 ## 2. What the existing evidence establishes
 
@@ -24,7 +24,7 @@ If bounded Sudoku follow-ups remain negative, choose explicitly between closing 
 | Development estimated time is 151.02 ms full depth versus 217.74 ms with every-level checking | Monitoring adds an estimated 66.71 ms; this is computation time, not money. |
 | Estimated reduction is −44.18%, with 95% interval [−45.02%, −43.45%] | The original 5% improvement gate fails. |
 | Cell accuracy reaches 81.70% exploration / 82.09% development at level 11, while valid-grid rate remains zero | Partial information exists, but the mechanism preventing exact early solutions is undiagnosed. |
-| Correctness/parity checks pass; all 244 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
+| Correctness/parity checks pass; all 282 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
 
 An optimized implementation might reduce reconstruction/transfer overhead. It would still need earlier acceptable outputs to skip generation under the current verified rule. There is no measured online slowdown or speedup yet.
 
@@ -35,14 +35,14 @@ An optimized implementation might reduce reconstruction/transfer overhead. It wo
 | R0 | Package the completed study as a paper and revise the research plan | Complete with these documents | Claims, sources, limitations, and conditional next work are explicit. |
 | R1A | Diagnose errors in saved exploration trajectories | Complete — October 22; [report](results/followup/sudoku_prefix_diagnosis/summary.md) | A reproducible error taxonomy and specific hypotheses, without new inference. |
 | R1B | Test target-encoded prefixes on a small exploration-only set | Complete — [report](results/followup/sudoku_target_encoding/summary.md) | Evidence separating limited target reconstruction from generated-prefix failure, without claiming a causal proof. |
-| R2 | Screen alternative frozen Sudoku checkpoints | Proposed next work; not started | At least one actual early valid output admits a candidate to a larger audit; no screen result alone authorizes online work. |
-| R3 | Run a confirmatory opportunity/cost audit for one selected setting | Conditional; separate frozen study | A new documented go/no-go/inconclusive decision using matched quality and total estimated time. |
+| R2 | Screen alternative frozen Sudoku checkpoints | Complete — [report](results/followup/sudoku_checkpoint_screen/summary.md); both negative | No candidate met the early-valid screen gate; close this path at the declared budget. |
+| R3 | Run a confirmatory opportunity/cost audit for one selected setting | Not entered; no R2 candidate qualified | A new documented go/no-go/inconclusive decision using matched quality and total estimated time. |
 | Phase 2 | Implement and benchmark actual online verified stopping | Blocked for the original setting | A justified setting-specific go and a separate implementation work order. |
 | Phase 3 | Learn a stopping controller | Deferred | Remaining headroom beyond strong simpler policies and an appropriate reserved final set. |
 | Phase 4 | Translation/summarization generalization | Alternative branch, not started | Task-specific quality tolerances, signals, protocol, artifacts, and resource feasibility. |
 | Phase 5 | Viewer / optional Concept Firewall bridge | Optional, not started | A separate scope grounded in recorded results. |
 
-R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 1's frozen budget. Original phases retain their numbering and completion history. R0 documented the existing study; R1A added a saved-data diagnosis; R1B completed the reference-encoding pilot. None changes the original gate or starts R2.
+R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 1's frozen budget. Original phases retain their numbering and completion history. R0 documented the existing study; R1A added a saved-data diagnosis; R1B completed the reference-encoding pilot. R2 subsequently completed its separately scoped screen; none changes the original hard-Sudoku gate.
 
 ## 4. R1A — Diagnose the saved failures before collecting more data
 
@@ -90,17 +90,17 @@ This diagnostic was not performed in Phase 1. It is a new reference-based analys
 
 **Deliverables:** A separately versioned protocol and report under `docs/studies/` and `results/followup/`; prefix-level primary/secondary metrics; all round-trip failures; exact code/artifact hashes; a diagnosis memo. References used to construct these targets must never become deployed stopping inputs.
 
-**Completed outcome:** Both paths had zero early valid outputs. Target final exact-token, parsed-board, and primary-valid round trips were 32/32; the cached generated path finished 24/32 valid. Final target failure lists are empty. The selected recommendation is R2 bounded checkpoint screening; R2 has not started. These 32 exploration observations do not establish a causal mechanism, population absence, deployable policy, or speedup. [Report](results/followup/sudoku_target_encoding/summary.md), [provenance](results/followup/sudoku_target_encoding/provenance.json), [completion evidence](results/followup/sudoku_target_encoding/completion.json). All 244 tests pass, including 26 new R1B tests.
+**Completed outcome:** Both paths had zero early valid outputs. Target final exact-token, parsed-board, and primary-valid round trips were 32/32; the cached generated path finished 24/32 valid. Final target failure lists are empty. The selected branch was R2 bounded checkpoint screening, subsequently completed below. These 32 exploration observations do not establish a causal mechanism, population absence, deployable policy, or speedup. [Report](results/followup/sudoku_target_encoding/summary.md), [provenance](results/followup/sudoku_target_encoding/provenance.json), [completion evidence](results/followup/sudoku_target_encoding/completion.json). R1B completed with 244 passing tests, including 26 new R1B tests.
 
 **Exit:** Record a diagnosis and choose one explicit next branch: R2, a separately scoped tokenizer/generator intervention, or closure. A modified/trained checkpoint would start a different method study; it would not silently replace the frozen-checkpoint result.
 
 ## 6. R2 — Screen other released Sudoku settings with a bounded budget
 
-**Recommendation:** Screen easy Sudoku first, then medium only if needed. This retains the exact Sudoku verifier and changes difficulty/checkpoint before changing task and quality criteria. Their release availability is documented in the [official source repository](https://github.com/HazyResearch/ncm); compatibility, resource fit, and early-exit behavior remain untested locally.
+**Recommendation:** Screen easy Sudoku first, then medium only if needed. This retains the exact Sudoku verifier and changes difficulty/checkpoint before changing task and quality criteria. Their release availability is documented in the [official source repository](https://github.com/HazyResearch/ncm). Compatibility, resource fit, and prefix behavior are now checked on both frozen 32-input screens; this is not a full-set reproduction or a new online benchmark.
 
 Before any screen, inspect the actual checkpoint/config/data layout, license, file sizes, tokenization, hierarchy, and resource requirements. Download only selected artifacts, pin exact revisions/hashes, and verify compatibility with the adapter. Do not assume that the hard-Sudoku artifact paths or hierarchy are interchangeable. No paid cloud compute is part of this plan.
 
-**Proposed screen protocol:**
+**Executed screen protocol:** [Frozen R2 protocol](docs/studies/sudoku-checkpoint-screen-protocol.md), declared before candidate inference. The unchanged rules below define the completed allocation.
 
 - Predeclare a maximum of two candidates in the order easy, then medium. Stop screening once one qualifies for R3; do not pick a winner based on unrecorded trials.
 - Freeze each candidate's input-identity partitions before its baseline outputs or trajectories are inspected. Reserve final sets at that time. Do not use the original hard-Sudoku holdouts for candidate selection; check available input identities against the inherited reservation manifest before materializing a candidate row.
@@ -112,6 +112,12 @@ Before any screen, inspect the actual checkpoint/config/data layout, license, fi
 **Screen gate:** At least one independently verified valid output before the final level qualifies a setting for R3. That is a necessary opportunity signal, not evidence of a worthwhile speedup or acceptable population error. Zero early solutions in 32 inputs closes that screen at its fixed budget; it does not prove that none exist in the population.
 
 **If both screens are negative:** Close the frozen-Sudoku first-valid path at this budget and publish the follow-up outcomes. Choose a new objective or task explicitly; do not expand screening indefinitely.
+
+**Completed — October 22, 2026:** Easy had 0/32 early valid inputs and 32/32 final valid; medium had 0/32 early valid and 31/32 final valid (index 6 never valid). Both used exactly 32 official comparator plus 32 adapter input-generations, 768 generator level evaluations and 416 decoder forwards per candidate. All 64 paired final outputs match exactly. Every candidate prefix matched independent reconstruction; model state was unchanged. No profiling, warmups, retries, additional seeds, training, development/final board/reference materialization, or R3 execution occurred.
+
+The identical released solution files require shared row-index reservations across difficulty masks. R2 inherited all original partitions, performed an explicitly disclosed identity-only hash traversal of 2,000 puzzle rows per candidate, and materialized only the 32 exploration puzzle/reference rows per candidate. These are related difficulty views, not independent datasets.
+
+**Recorded exit:** Both negative; close this released-Sudoku first-valid path at its declared budget. No R3 candidate qualified and no new Phase 2 go exists. Zero in 32 per candidate is not a population impossibility result. [Report](results/followup/sudoku_checkpoint_screen/summary.md), [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json). All 282 tests pass, including 38 new R2 tests.
 
 ## 7. R3 — Confirm opportunity and total estimated savings before Phase 2
 
@@ -172,6 +178,8 @@ Useful for communication after the next research decision, but optional and sepa
 
 ## 11. Immediate handoff
 
-**Recommended next work order:** “Complete R2: inspect the released easy-Sudoku artifacts and resource requirements, freeze the bounded screen protocol/partitions, run the first eligible 32-input screen with parity checks, and screen medium only if needed within the declared cap; report, commit, and push.”
+**Recorded decision:** R2 is complete and closes the released-Sudoku first-valid path at this budget. R3 and Phase 2 do not proceed from these negative screens.
 
-R1B is complete: 32 reference encodings, 384 prefix decodes, and 32 declared latent-only parity checks, with no generator calls or holdout access. R2 remains unstarted; no additional checkpoint download/screen, online stopping, controller training, or final-holdout evaluation occurred.
+**Optional next work order, requiring a new request:** “Audit the released WMT14 artifacts, resource fit, task-specific quality tolerances, candidate signals, and a bounded study protocol before any inference.” This task change has not started.
+
+R2 consumed its maximum two-candidate allocation: 128 full-depth input-generations (64 comparator, 64 adapter), 1,536 generator level evaluations, and 832 decoder forwards. All observed outcomes are retained. No R3 audit, online stopping, controller training, natural-language study, or final-holdout evaluation followed.

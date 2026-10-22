@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A, and R1B are complete. Original Phase 1 decision: no-go.
-**Next proposed work:** R2, the bounded alternative-checkpoint screen in the [revised research roadmap](NEXT_STEPS.md). Phase 2 remains blocked by the original no-go; follow-up implementation requires its own work order.
+**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A, R1B, and R2 are complete. Original Phase 1 decision: no-go.
+**Research exit:** Both R2 screens were negative; close the released-Sudoku first-valid path at this budget. No candidate qualified for R3 and no new Phase 2 go exists. A new task/objective requires a separate work order; see the [revised research roadmap](NEXT_STEPS.md).
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -28,8 +28,8 @@ The [paper-style report](RESEARCH_PAPER.md) records the completed hard-Sudoku st
 | R0: Paper and revised research plan | Complete | Documentation of existing evidence only |
 | R1A: Saved exploration error diagnosis | Complete — [report](results/followup/sudoku_prefix_diagnosis/summary.md) | 1,000 exploration inputs; no inference, profiling, or reserved holdout access |
 | R1B: Target-encoded prefix pilot | Complete — [report](results/followup/sudoku_target_encoding/summary.md) | 32 encodings, 384 prefix decodes; no generator calls or holdout access |
-| R2: Easy, then conditional medium Sudoku screen | Proposed next; not started | At most two candidates; frozen inputs and bounded comparator/trajectory generation |
-| R3: Confirmatory audit for one selected setting | Conditional | Separate partitions, budget, estimated-cost evidence, and decision |
+| R2: Easy, then conditional medium Sudoku screen | Complete — [report](results/followup/sudoku_checkpoint_screen/summary.md); both negative | Two fixed 32-input screens; 128 full-depth input-generations; no early valid outputs |
+| R3: Confirmatory audit for one selected setting | Not entered; no R2 candidate qualified | Separate partitions, budget, estimated-cost evidence, and decision |
 
 One early valid screening example can justify a larger offline audit, not Phase 2. Only a justified new setting-specific go can open that setting's online experiment. Original hard-Sudoku Phase 1 remains complete with no-go; Phases 0–5 and their evidence remain below.
 
@@ -317,4 +317,15 @@ Completed the predeclared target-encoding diagnostic on exactly exploration indi
 
 Neither target-encoded nor cached generated prefixes produced an early valid solution. All 32 target references round-tripped exactly at level 12; the cached generated path finished 24/32 valid. This narrows the diagnosis but does not prove a tokenizer-only cause or impossibility for other codes/decoders. Original hard-Sudoku no-go remains unchanged.
 
-[Protocol](docs/studies/sudoku-target-encoding-protocol.md), [report](results/followup/sudoku_target_encoding/summary.md), [raw target records](results/followup/sudoku_target_encoding/targets.jsonl), [provenance](results/followup/sudoku_target_encoding/provenance.json), and [completion record](results/followup/sudoku_target_encoding/completion.json). All 244 tests pass, including 26 new R1B tests. R2 is recommended next under its own bounded protocol; it has not started.
+[Protocol](docs/studies/sudoku-target-encoding-protocol.md), [report](results/followup/sudoku_target_encoding/summary.md), [raw target records](results/followup/sudoku_target_encoding/targets.jsonl), [provenance](results/followup/sudoku_target_encoding/provenance.json), and [completion record](results/followup/sudoku_target_encoding/completion.json). R1B completed with 244 passing tests, including 26 new R1B tests. At that point R2 was recommended next; its subsequent completion is recorded below.
+
+
+### R2 completion — October 22, 2026
+
+R1A/R1B warranted the bounded difficulty/checkpoint screen; neither exposed an unresolved correctness failure requiring a change to the original hard-Sudoku evidence. The separately [frozen protocol](docs/studies/sudoku-checkpoint-screen-protocol.md) screened easy first, then medium after a complete negative easy result. Each used exactly 32 official comparator and 32 adapter generations (128 full-depth input-evaluations across both candidates), with no warmups, retries, extra seeds, profiling, or training.
+
+Easy produced 0/32 early valid and 32/32 final valid outputs; medium produced 0/32 early valid and 31/32 final valid outputs. Every paired final token/text comparison passed. Independent full-resolution reconstruction, final latent parity, storage/finiteness checks and model-state integrity passed for all inputs.
+
+Because all released difficulties share identical solution files, R2 inherited the original row-index partitions before selecting inputs. Identity-only hashing traversed all 2,000 candidate puzzle rows, including reserved operands, while only the 32 exploration puzzle/reference rows per candidate were materialized. No development/final boards, references, or outputs were materialized. These related difficulty views are not independent datasets.
+
+**Exit:** Close the released-Sudoku first-valid path at this budget. Neither candidate qualified for R3; no new Phase 2 go or population impossibility claim follows. [Report](results/followup/sudoku_checkpoint_screen/summary.md), [release inventory](configs/r2_sources.json), and [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json). All 282 tests pass, including 38 new R2 tests. The previous current compatibility review is archived byte-for-byte under results/phase1/reviews/2026-10-22-r1b/. Original Phase 1/R1A/R1B empirical and completion artifacts remain unchanged. R3 and task-change work have not started.

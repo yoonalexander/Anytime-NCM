@@ -1,0 +1,59 @@
+{
+  "access": {
+    "development_rows_materialized": 0,
+    "final_holdout_rows_materialized": 0,
+    "identity_only_puzzle_rows_hashed": 2000,
+    "puzzle_rows_materialized": 32,
+    "reference_rows_materialized": 32
+  },
+  "artifacts_sha256": {
+    "analysis.json": "bef4c6061dcf84ff8ca7cccc3254ec73a60a06ecd129b6c305b4602f5b7238e6",
+    "attempt.json": "795332a11eee3555e243f87cb4f37ef497e6a677ce901aea102edee9f9170ae2",
+    "board_metrics.csv": "8c564fd2bb087ddcc53ab2883ef87f548aa68f51d68238d79f3fcdd64fe7ce00",
+    "comparators.jsonl": "aa741f43e2a3f0ac92da7c1f05bca4f7eaf8dfe95c7b217788acf26d9d7a9bb2",
+    "records.jsonl": "df0b44aabde6136881f36353d4ca2180f8e752ed29eca498133ebb8c619786e7"
+  },
+  "base_commit": "ff8adb713b668ee03a7bff916f2b42c9d2d5113c",
+  "candidate": "easy",
+  "forward_counts": {
+    "adapter_inputs": 32,
+    "decoder": 416,
+    "encoder": 0,
+    "generator_levels": 768,
+    "independent_prefix": 32,
+    "latent_parity": 32,
+    "official_inputs": 32
+  },
+  "inputs_sha256": {
+    "artifacts/sudoku/easy/config.yaml": "68d74fe310e909ca1892338258a2d7143293e685ec1c4747265d9134013d1605",
+    "artifacts/sudoku/easy/generator.pt": "1cefebcd1eae0e210b7e991fdce0e86964d0e897e94a3b432d1008ab92d9926e",
+    "artifacts/sudoku/easy/tokenizer.pt": "3f9c87e99fd49900929cd650181f55bf00530280416992b11ddc4ea869b39d68",
+    "data/sudoku/easy/puzzles.pickle": "403353dd5d11e49d42627aee84c7b1ceb399fda03d01f6210ce78d0e61f2b29d",
+    "data/sudoku/easy/solutions.pickle": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576",
+    "docs/experiment_protocol.md": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "docs/partitions/sudoku-easy-r2.json": "d898977c35e234d2f2843188073b241cec362fc163141b98323835778ebfc5d3",
+    "docs/partitions/sudoku-hard.json": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "results/followup/sudoku_checkpoint_screen/easy/preflight.json": "986220e04cf94a6ec3d4523a3b1387eb588ebe4dfce2bbbf1ca5ed11a8a133ad"
+  },
+  "source_sha256": {
+    "configs/r2_sources.json": "f1c21e46eb64d21296c77870cb9ee0829a53cd69b6b80b3b60e3022a7c1408e9",
+    "docs/studies/sudoku-checkpoint-screen-protocol.md": "c69925f0274190df0be3ebe8ed4816b6a2028a06191ddcbc6319610cf4b09a71",
+    "scripts/screen_sudoku_checkpoints.py": "66ef15f213a4cce3e612f051bafa7c8a275a4b023e1dcc6cef21a3fda47f318c",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/diagnosis.py": "d78a32c6e25d1e65f2a4ad0c918dcec8e1a824dcb220f1c30f38936acd438356",
+    "src/anytime_ncm/screening.py": "bd67f497e875220d06481d92208a412ff3c6969f4aeea1b00f71b3ea71a35cb1",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/screening_render.py": "84cc7da3752febbedcc0aa5d94771a4b16ffd67d4db05f9cf0df86c085c22380",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_screening.py": "d789f1e3a790899d289bd7aefc186290d7f1c28aa7146d4a1163747afa0e10fa",
+    "third_party/ncm/models/next_concept.py": "3dcae313cedf2e33ecb9a046d1ad9ec4336962c9221375ba5f7dd9be3d25b04e",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb",
+    "third_party/ncm/tokenization/vqvae_tokenizer.py": "a41215ad73e626c30882d1e9fa5bcd7753ced73307516fae0ec9815325445fc1"
+  },
+  "study": "R2"
+}

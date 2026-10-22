@@ -1,0 +1,47 @@
+{
+  "candidate": "medium",
+  "declared_download_bytes": 163114520,
+  "disk_free_bytes_before": 374175969280,
+  "files": {
+    "artifacts/sudoku/medium/config.yaml": {
+      "git_oid": "02bd6dd8ef5f7dcbe15206fef163d4d880fd9fc6",
+      "sha256": "a399820c7adbfd0c6ad6e443a63feb7fe7d35d066fb2981b79440af0b237beec",
+      "size": 1982,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/medium/config.yaml"
+    },
+    "artifacts/sudoku/medium/generator.pt": {
+      "git_oid": "5d82fdad97fd707f341f99a94591d5126f8ebda9",
+      "sha256": "8336b53fa3dcbddd9375374b8b7409feba2c2ae3b5a1fc5167ecd7852b26ae17",
+      "size": 102560203,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/medium/generator.pt"
+    },
+    "artifacts/sudoku/medium/tokenizer.pt": {
+      "git_oid": "ea86729b235c13fb3357ca9d40504db24f3be1d8",
+      "sha256": "aca5523a0c477a6f142bfd6c2ba157353c01b1e3f072bb0f75e34b3b75ebc211",
+      "size": 59816209,
+      "url": "https://huggingface.co/hazyresearch/ncm-checkpoints/resolve/d342ce8aaea58830eef3b8ad473664673e41f692/sudoku/medium/tokenizer.pt"
+    },
+    "data/sudoku/medium/puzzles.pickle": {
+      "git_oid": "4b0de20f0eec9f3b99678e035ab5620b24bf36ed",
+      "sha256": "d49cd2b380bdce748b10a7f0847637b5e160bd107b67f91dca93670b15190871",
+      "size": 372063,
+      "url": "https://huggingface.co/datasets/hazyresearch/ncm-datasets/resolve/6580ba41a4b0a976dde876fbe84d25327617b0e6/sudoku/medium/puzzles.pickle"
+    },
+    "data/sudoku/medium/solutions.pickle": {
+      "git_oid": "c567d070dc540df63793a839da29071e5d7ccb96",
+      "sha256": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576",
+      "size": 364063,
+      "url": "https://huggingface.co/datasets/hazyresearch/ncm-datasets/resolve/6580ba41a4b0a976dde876fbe84d25327617b0e6/sudoku/medium/solutions.pickle"
+    }
+  },
+  "generator_calls": 0,
+  "identity_only_puzzle_rows_hashed": 2000,
+  "manifest_path": "docs/partitions/sudoku-medium-r2.json",
+  "manifest_sha256": "032d1bb68e89bda02fea7138bab63352c98b0e97b3eb6e19361521a748dc3fcb",
+  "protocol_sha256": "c69925f0274190df0be3ebe8ed4816b6a2028a06191ddcbc6319610cf4b09a71",
+  "reference_rows_materialized": 0,
+  "selected_rows_materialized": 0,
+  "source_inventory_sha256": "f1c21e46eb64d21296c77870cb9ee0829a53cd69b6b80b3b60e3022a7c1408e9",
+  "status": "complete",
+  "study": "R2"
+}

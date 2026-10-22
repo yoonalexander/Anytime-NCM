@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; the current suite passes 244 tests, including 29 R1A and 26 R1B tests.
+**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; the current suite passes 282 tests, including 29 R1A, 26 R1B, and 38 R2 tests. Both subsequent 32-input easy/medium screens also found no early valid outputs; the released-Sudoku first-valid path is closed at this budget. See the [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
 
 ## Contents
 
@@ -56,7 +56,7 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Headline online adaptive benchmarks | Not started |
 | Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | 244 passed; timing/statistics/report checks included; online halting tests remain pending |
+| Executable research tests | 282 passed; timing/statistics/report checks included; online halting tests remain pending |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; online adaptive inference is pending.
@@ -87,6 +87,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [Revised next steps](NEXT_STEPS.md) | Post-no-go diagnostic milestones, bounded checkpoint screening, and conditional online work |
 | [R1A error diagnosis](results/followup/sudoku_prefix_diagnosis/summary.md) | Exploration-only reference/clue/unit error distributions and adjacent-level changes |
 | [R1B target encoding](results/followup/sudoku_target_encoding/summary.md) | Frozen 32-reference reconstruction pilot versus cached generated prefixes |
+| [R2 checkpoint screens](results/followup/sudoku_checkpoint_screen/summary.md) | Completed bounded easy/medium screens, shared-reference reservations, and negative exit |
 | [Design document](Anytime_NCM_Design_Document.md) | Technical design and scientific requirements |
 | [DESIGN.md](DESIGN.md) | Entry point to the original design document |
 | [Experiment protocol](docs/experiment_protocol.md) | Frozen partitions, budgets, metrics, timing boundaries, and statistical procedure |
@@ -97,7 +98,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [Phase 1D profiling](docs/phase1d_profiling.md) | Reproduction commands, diagnostic boundaries, budget, and limitations |
 | [Setup summary](results/setup/summary.md) | Compact operational results |
 
-The [research paper](RESEARCH_PAPER.md) documents the completed findings. The [revised next-steps roadmap](NEXT_STEPS.md) records completed R1A/R1B diagnostics and proposes a bounded R2 checkpoint screen next. R1B used tokenizer-only inference; no new generator evaluation occurred. The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
+The [research paper](RESEARCH_PAPER.md) documents the completed findings. The [revised next-steps roadmap](NEXT_STEPS.md) records completed R1A/R1B diagnostics and the negative R2 easy/medium screens. R1B used tokenizer-only inference; R2 used its separately declared 128 full-depth input-generation allocation. Further research needs a new task/objective decision. The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
 
 ## Validated environment
 
@@ -435,7 +436,7 @@ To reproduce, run the same script in the validated WSL environment without --ver
 
 ## R1B target-encoded prefixes
 
-The [R1B report](results/followup/sudoku_target_encoding/summary.md) compares 32 reference-encoded targets with their saved generated trajectories. The pilot used exactly 32 encodings, 384 prefix decodes, and 32 declared latent-only parity checks. All target final outputs matched the reference exactly, but neither path produced a valid board before level 12. No generator calls, timing study, or holdout access occurred. All 244 tests pass, including 26 new R1B tests.
+The [R1B report](results/followup/sudoku_target_encoding/summary.md) compares 32 reference-encoded targets with their saved generated trajectories. The pilot used exactly 32 encodings, 384 prefix decodes, and 32 declared latent-only parity checks. All target final outputs matched the reference exactly, but neither path produced a valid board before level 12. No generator calls, timing study, or holdout access occurred. R1B completed with 244 passing tests, including 26 new R1B tests.
 
 Recheck without model or plotting imports:
 
@@ -443,4 +444,17 @@ Recheck without model or plotting imports:
 python scripts/diagnose_target_encoding.py --verify
 ~~~
 
-The [protocol](docs/studies/sudoku-target-encoding-protocol.md) is separate from the original frozen study. Its inference allocation is consumed; do not rerun encoding to reproduce a report. [Completion evidence](results/followup/sudoku_target_encoding/completion.json) records call counts, parity, state integrity, source hashes, and tests. R2 checkpoint screening is recommended next, and remains unstarted.
+The [protocol](docs/studies/sudoku-target-encoding-protocol.md) is separate from the original frozen study. Its inference allocation is consumed; do not rerun encoding to reproduce a report. [Completion evidence](results/followup/sudoku_target_encoding/completion.json) records call counts, parity, state integrity, source hashes, and tests. The subsequent R2 checkpoint screens are documented below.
+
+
+## R2 bounded checkpoint screens
+
+The [R2 report](results/followup/sudoku_checkpoint_screen/summary.md) records easy then medium screens on 32 exploration inputs per candidate. Neither produced a valid board before level 12. Final validity was 32/32 easy and 31/32 medium; all 64 official/adapter final comparisons matched token IDs/text exactly. No candidate qualified for R3. The released-Sudoku first-valid path is closed at the declared budget; the original Phase 2 no-go remains unchanged.
+
+Each candidate used 32 official comparator plus 32 adapter generations, 768 generator level evaluations, and 416 decoder forwards. No timing profile, warmups, retries, training, or development/final board/reference materialization occurred. Since released difficulties share identical solution files, all original row-index reservations were inherited. Identity-only hashing traversed every candidate puzzle row, including reserved operands, while only rows 0–31 were materialized for inference/scoring. These related difficulty views are not independent datasets.
+
+~~~powershell
+python scripts/screen_sudoku_checkpoints.py --verify
+~~~
+
+The verifier checks saved records without model or plotting imports; it does not rerun CUDA parity. The inference budget is consumed. [Frozen protocol](docs/studies/sudoku-checkpoint-screen-protocol.md), [pinned release inventory](configs/r2_sources.json), and [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json) document the execution. All 282 tests pass, including 38 new R2 tests. R3, online stopping, and a new task study have not started.
