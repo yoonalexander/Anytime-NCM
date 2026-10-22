@@ -1,0 +1,71 @@
+{
+  "access": {
+    "cached_generated_records_deserialized": 32,
+    "development_records_deserialized": 0,
+    "holdout_records_deserialized": 0,
+    "sealed_rows_materialized": 0,
+    "selected_puzzle_rows": 32,
+    "selected_reference_rows": 32
+  },
+  "completed_inputs": 32,
+  "execution": {
+    "batch_size": 1,
+    "compile": false,
+    "cpu_threads": 4,
+    "cuda_runtime": "12.8",
+    "generator_module_loaded": false,
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "precision": "float32; no autocast",
+    "python": "3.12.3",
+    "torch": "2.10.0+cu128",
+    "warmups": 0
+  },
+  "finished_utc": "2026-10-22T09:08:42.281872+00:00",
+  "forward_counts": {
+    "decoder": 384,
+    "encoder": 32,
+    "final_latent": 32
+  },
+  "generator_calls": 0,
+  "generator_constructed": false,
+  "inputs_sha256": {
+    "artifacts/sudoku/hard/config.yaml": "8d58c49e6fe52e60191e06df4061937d5bb84f97c5ffbcd93ed9830c32f8df2f",
+    "artifacts/sudoku/hard/generator.pt": "9e0bfe44abc1ca3930b7a63cd56cd0b9564b95e29edfe12dd0903207b89df8b8",
+    "artifacts/sudoku/hard/tokenizer.pt": "3bc6aecad8e15820f9d9bb09750e3c59bdf91ca953f1f11dbd109aaed1d80c0b",
+    "data/sudoku/hard/puzzles.pickle": "dd7b6763e5594094a1366ac8423f87fc9431056721c61df52ce3490023f17d5e",
+    "data/sudoku/hard/solutions.pickle": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576",
+    "docs/experiment_protocol.md": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "docs/partitions/sudoku-hard.json": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "results/phase1/analysis.json": "f07902170491118523d2038339f635b260561a227b8658753e2a83fdc8236f67",
+    "results/phase1/trajectories.jsonl": "2baf2948df953d7f379f9b359091c9a40d31fe9ecafe29f99305ff8bb3e0f5d9",
+    "results/phase1/trajectories.metadata.json": "c873d0f584173cbdf17e0b19f787a41a512a8db2170e45a0a01fe4a6543df342"
+  },
+  "limits": {
+    "decoder": 384,
+    "encoder": 32,
+    "final_latent": 32
+  },
+  "model_state_after_sha256": "5e7d01ff8b9778a17c3579119446053776d19dfaa893667a3a5630e11cbe0df1",
+  "model_state_before_sha256": "5e7d01ff8b9778a17c3579119446053776d19dfaa893667a3a5630e11cbe0df1",
+  "source_sha256": {
+    "docs/studies/sudoku-target-encoding-protocol.md": "cfdcd1ff16adebf9ba639cee67da8ef7a6efb4f433fc7f698b4637416b209f30",
+    "scripts/diagnose_target_encoding.py": "24f41e39a83af380182cfdebea0d7a79b083bf98ff2fed7af3cb46a3a664b74e",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/diagnosis.py": "d78a32c6e25d1e65f2a4ad0c918dcec8e1a824dcb220f1c30f38936acd438356",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_diagnostic.py": "08b1ee6ae3cf891eaf950ed936f70ca77edef82cfed1ca678edea9ca22354063",
+    "src/anytime_ncm/target_diagnostic_render.py": "d60ffc24198d3346398effc22dcfbf03b0cfc9d608deefeefe1cd9a11a6df3d8",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_target_encoding.py": "fa81c42336d9d6ce6bcc225203d216861aeba6c2794c3f52a3679c3a0053a6db",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb",
+    "third_party/ncm/tokenization/vqvae_tokenizer.py": "a41215ad73e626c30882d1e9fa5bcd7753ced73307516fae0ec9815325445fc1"
+  },
+  "started_utc": "2026-10-22T09:08:35.817177+00:00",
+  "status": "complete",
+  "study": "R1B",
+  "timed_requests": 0
+}

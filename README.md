@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; all 218 tests pass, including 29 R1A diagnosis tests.
+**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; the current suite passes 244 tests, including 29 R1A and 26 R1B tests.
 
 ## Contents
 
@@ -56,7 +56,7 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Headline online adaptive benchmarks | Not started |
 | Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | 218 passed; timing/statistics/report checks included; online halting tests remain pending |
+| Executable research tests | 244 passed; timing/statistics/report checks included; online halting tests remain pending |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; online adaptive inference is pending.
@@ -86,6 +86,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [Research paper](RESEARCH_PAPER.md) | Paper-style account of the completed study, methods, results, sources, and limits |
 | [Revised next steps](NEXT_STEPS.md) | Post-no-go diagnostic milestones, bounded checkpoint screening, and conditional online work |
 | [R1A error diagnosis](results/followup/sudoku_prefix_diagnosis/summary.md) | Exploration-only reference/clue/unit error distributions and adjacent-level changes |
+| [R1B target encoding](results/followup/sudoku_target_encoding/summary.md) | Frozen 32-reference reconstruction pilot versus cached generated prefixes |
 | [Design document](Anytime_NCM_Design_Document.md) | Technical design and scientific requirements |
 | [DESIGN.md](DESIGN.md) | Entry point to the original design document |
 | [Experiment protocol](docs/experiment_protocol.md) | Frozen partitions, budgets, metrics, timing boundaries, and statistical procedure |
@@ -96,7 +97,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [Phase 1D profiling](docs/phase1d_profiling.md) | Reproduction commands, diagnostic boundaries, budget, and limitations |
 | [Setup summary](results/setup/summary.md) | Compact operational results |
 
-The [research paper](RESEARCH_PAPER.md) documents the completed findings. The [revised next-steps roadmap](NEXT_STEPS.md) records the completed R1A saved-data diagnosis and proposes R1B target-encoding checks next; no new model inference has occurred. The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
+The [research paper](RESEARCH_PAPER.md) documents the completed findings. The [revised next-steps roadmap](NEXT_STEPS.md) records completed R1A/R1B diagnostics and proposes a bounded R2 checkpoint screen next. R1B used tokenizer-only inference; no new generator evaluation occurred. The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
 
 ## Validated environment
 
@@ -422,7 +423,7 @@ The NCM source remains a separate pinned submodule with its [upstream license](h
 
 ## R1A saved-prefix diagnosis
 
-The [R1A report](results/followup/sudoku_prefix_diagnosis/summary.md) analyzes 1,000 exploration puzzles, 12,000 states, and 11,000 transitions with zero model calls. At level 11, 999 boards violate a supplied clue; at level 12 all preserve clues but 146 remain invalid. All 218 tests pass; 29 cover the new metrics and access guards. The [pre-analysis plan](docs/studies/sudoku-prefix-diagnosis-plan.md) defines counts, denominators, overlaps, and fixed example rules.
+The [R1A report](results/followup/sudoku_prefix_diagnosis/summary.md) analyzes 1,000 exploration puzzles, 12,000 states, and 11,000 transitions with zero model calls. At level 11, 999 boards violate a supplied clue; at level 12 all preserve clues but 146 remain invalid. R1A completed with 218 passing tests, including 29 tests of its metrics and access guards. The [pre-analysis plan](docs/studies/sudoku-prefix-diagnosis-plan.md) defines counts, denominators, overlaps, and fixed example rules.
 
 Recheck the report without inference or figure rendering:
 
@@ -430,4 +431,16 @@ Recheck the report without inference or figure rendering:
 python scripts/diagnose_sudoku_prefixes.py --verify
 ~~~
 
-To reproduce, run the same script in the validated WSL environment without --verify, using a fresh --output directory under results/followup/. [Completion evidence](results/followup/sudoku_prefix_diagnosis/completion.json) records source/artifact hashes, test coverage, and scope. R1B remains unstarted.
+To reproduce, run the same script in the validated WSL environment without --verify, using a fresh --output directory under results/followup/. [Completion evidence](results/followup/sudoku_prefix_diagnosis/completion.json) records source/artifact hashes, test coverage, and scope. The completed R1B pilot is documented below.
+
+## R1B target-encoded prefixes
+
+The [R1B report](results/followup/sudoku_target_encoding/summary.md) compares 32 reference-encoded targets with their saved generated trajectories. The pilot used exactly 32 encodings, 384 prefix decodes, and 32 declared latent-only parity checks. All target final outputs matched the reference exactly, but neither path produced a valid board before level 12. No generator calls, timing study, or holdout access occurred. All 244 tests pass, including 26 new R1B tests.
+
+Recheck without model or plotting imports:
+
+~~~powershell
+python scripts/diagnose_target_encoding.py --verify
+~~~
+
+The [protocol](docs/studies/sudoku-target-encoding-protocol.md) is separate from the original frozen study. Its inference allocation is consumed; do not rerun encoding to reproduce a report. [Completion evidence](results/followup/sudoku_target_encoding/completion.json) records call counts, parity, state integrity, source hashes, and tests. R2 checkpoint screening is recommended next, and remains unstarted.

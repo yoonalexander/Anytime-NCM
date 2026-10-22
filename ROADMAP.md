@@ -1,8 +1,8 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), and R1A are complete. Original Phase 1 decision: no-go.
-**Next proposed work:** R1B, the separately scoped 32-input target-encoding diagnostic in the [revised research roadmap](NEXT_STEPS.md). Phase 2 remains blocked by the original no-go; follow-up implementation requires its own work order.
+**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A, and R1B are complete. Original Phase 1 decision: no-go.
+**Next proposed work:** R2, the bounded alternative-checkpoint screen in the [revised research roadmap](NEXT_STEPS.md). Phase 2 remains blocked by the original no-go; follow-up implementation requires its own work order.
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
 
@@ -27,8 +27,8 @@ The [paper-style report](RESEARCH_PAPER.md) records the completed hard-Sudoku st
 | --- | --- | --- |
 | R0: Paper and revised research plan | Complete | Documentation of existing evidence only |
 | R1A: Saved exploration error diagnosis | Complete — [report](results/followup/sudoku_prefix_diagnosis/summary.md) | 1,000 exploration inputs; no inference, profiling, or reserved holdout access |
-| R1B: Target-encoded prefix pilot | Conditional | New protocol; 32 existing exploration identities; no new generator runs |
-| R2: Easy, then conditional medium Sudoku screen | Conditional | At most two candidates; frozen inputs and bounded comparator/trajectory generation |
+| R1B: Target-encoded prefix pilot | Complete — [report](results/followup/sudoku_target_encoding/summary.md) | 32 encodings, 384 prefix decodes; no generator calls or holdout access |
+| R2: Easy, then conditional medium Sudoku screen | Proposed next; not started | At most two candidates; frozen inputs and bounded comparator/trajectory generation |
 | R3: Confirmatory audit for one selected setting | Conditional | Separate partitions, budget, estimated-cost evidence, and decision |
 
 One early valid screening example can justify a larger offline audit, not Phase 2. Only a justified new setting-specific go can open that setting's online experiment. Original hard-Sudoku Phase 1 remains complete with no-go; Phases 0–5 and their evidence remain below.
@@ -309,4 +309,12 @@ Completed the predeclared saved-data diagnosis: 1,000 exploration inputs, 12,000
 
 Level 11 averages 14.821 wrong reference cells, including 4.964 at given clues; 999/1,000 boards violate at least one clue. Level 12 preserves every clue and has no blanks, but 146 boards still fail primary validity. At 10→11 every puzzle loses at least one previously correct cell despite aggregate improvement. These are descriptive findings; tokenizer/generator attribution remains open.
 
-[Report](results/followup/sudoku_prefix_diagnosis/summary.md), [pre-analysis plan](docs/studies/sudoku-prefix-diagnosis-plan.md), [provenance](results/followup/sudoku_prefix_diagnosis/provenance.json), and [completion record](results/followup/sudoku_prefix_diagnosis/completion.json). All 218 tests pass, including 29 R1A tests. The previous current Phase 1 source/JUnit review is archived byte-for-byte under results/phase1/reviews/2026-10-21/ before refreshing compatibility evidence. Original empirical/Phase 1D completion artifacts are unchanged. R1B is the next proposed milestone; it has not started.
+[Report](results/followup/sudoku_prefix_diagnosis/summary.md), [pre-analysis plan](docs/studies/sudoku-prefix-diagnosis-plan.md), [provenance](results/followup/sudoku_prefix_diagnosis/provenance.json), and [completion record](results/followup/sudoku_prefix_diagnosis/completion.json). All 218 tests pass, including 29 R1A tests. The previous current Phase 1 source/JUnit review is archived byte-for-byte under results/phase1/reviews/2026-10-21/ before refreshing compatibility evidence. Original empirical/Phase 1D completion artifacts are unchanged. At R1A completion, R1B was proposed next; its subsequent completion is recorded below.
+
+### R1B completion — October 22, 2026
+
+Completed the predeclared target-encoding diagnostic on exactly exploration indices 0–31. Forward counts: 32 normal upstream reference encodings, 384 prefix decodes, and 32 separately declared latent-only final-reconstruction parity checks. No generator was instantiated/called, no timing study or training occurred, and no development/final-holdout rows were materialized. Every final latent matched upstream bitwise; tokenizer state fingerprints were unchanged.
+
+Neither target-encoded nor cached generated prefixes produced an early valid solution. All 32 target references round-tripped exactly at level 12; the cached generated path finished 24/32 valid. This narrows the diagnosis but does not prove a tokenizer-only cause or impossibility for other codes/decoders. Original hard-Sudoku no-go remains unchanged.
+
+[Protocol](docs/studies/sudoku-target-encoding-protocol.md), [report](results/followup/sudoku_target_encoding/summary.md), [raw target records](results/followup/sudoku_target_encoding/targets.jsonl), [provenance](results/followup/sudoku_target_encoding/provenance.json), and [completion record](results/followup/sudoku_target_encoding/completion.json). All 244 tests pass, including 26 new R1B tests. R2 is recommended next under its own bounded protocol; it has not started.

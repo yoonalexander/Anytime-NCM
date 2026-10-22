@@ -2,15 +2,15 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0 and R1A complete. R1B and later studies remain proposed; no new inference or protocol amendment occurred during R1A.
+**Status:** R0, R1A, and R1B complete. R1B used its separately frozen diagnostic protocol; R2 and later studies remain proposed.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
 ## 1. Recommendation
 
-The next research question should be: **Why does the tested system fail to produce an exact valid solution until its final level, and does another frozen setting offer a better opportunity?**
+The next research question should be: **Does another frozen Sudoku setting offer useful exact solutions before its final hierarchy level?**
 
-Begin with a bounded diagnostic extension of the completed offline study. First characterize the errors already present in saved exploration trajectories; then, under a new study protocol, compare generated prefixes against prefixes obtained by encoding known valid target solutions. If the current checkpoint still offers no credible early-exit route, screen the released easy-Sudoku checkpoint, followed only conditionally by medium Sudoku. Retain exact verification while changing one major factor at a time.
+R1A characterized the saved errors. R1B then encoded the 32 preselected valid references: all 32 round-tripped exactly at level 12, but none produced a valid earlier prefix. This does not prove that every alternative code sequence or decoder would fail early. The next recommended branch is the bounded R2 easy-Sudoku screen, followed by medium only if needed, after artifact/resource inspection and a new screen protocol. Keep exact verification and change one major setting at a time.
 
 Do not prioritize an online stopping hook, controller training, or a viewer as the next efficiency experiment. None can, on its own, make an invalid existing prefix into a valid early answer. This is a research sequencing choice, not a claim that the software would be impossible to implement.
 
@@ -24,7 +24,7 @@ If bounded Sudoku follow-ups remain negative, choose explicitly between closing 
 | Development estimated time is 151.02 ms full depth versus 217.74 ms with every-level checking | Monitoring adds an estimated 66.71 ms; this is computation time, not money. |
 | Estimated reduction is −44.18%, with 95% interval [−45.02%, −43.45%] | The original 5% improvement gate fails. |
 | Cell accuracy reaches 81.70% exploration / 82.09% development at level 11, while valid-grid rate remains zero | Partial information exists, but the mechanism preventing exact early solutions is undiagnosed. |
-| Correctness/parity checks pass; all 218 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
+| Correctness/parity checks pass; all 244 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
 
 An optimized implementation might reduce reconstruction/transfer overhead. It would still need earlier acceptable outputs to skip generation under the current verified rule. There is no measured online slowdown or speedup yet.
 
@@ -34,15 +34,15 @@ An optimized implementation might reduce reconstruction/transfer overhead. It wo
 | --- | --- | --- | --- |
 | R0 | Package the completed study as a paper and revise the research plan | Complete with these documents | Claims, sources, limitations, and conditional next work are explicit. |
 | R1A | Diagnose errors in saved exploration trajectories | Complete — October 22; [report](results/followup/sudoku_prefix_diagnosis/summary.md) | A reproducible error taxonomy and specific hypotheses, without new inference. |
-| R1B | Test target-encoded prefixes on a small exploration-only set | Conditional; new protocol required | Evidence separating limited target reconstruction from generated-prefix failure, without claiming a causal proof. |
-| R2 | Screen alternative frozen Sudoku checkpoints | Conditional on R1 synthesis | At least one actual early valid output admits a candidate to a larger audit; no screen result alone authorizes online work. |
+| R1B | Test target-encoded prefixes on a small exploration-only set | Complete — [report](results/followup/sudoku_target_encoding/summary.md) | Evidence separating limited target reconstruction from generated-prefix failure, without claiming a causal proof. |
+| R2 | Screen alternative frozen Sudoku checkpoints | Proposed next work; not started | At least one actual early valid output admits a candidate to a larger audit; no screen result alone authorizes online work. |
 | R3 | Run a confirmatory opportunity/cost audit for one selected setting | Conditional; separate frozen study | A new documented go/no-go/inconclusive decision using matched quality and total estimated time. |
 | Phase 2 | Implement and benchmark actual online verified stopping | Blocked for the original setting | A justified setting-specific go and a separate implementation work order. |
 | Phase 3 | Learn a stopping controller | Deferred | Remaining headroom beyond strong simpler policies and an appropriate reserved final set. |
 | Phase 4 | Translation/summarization generalization | Alternative branch, not started | Task-specific quality tolerances, signals, protocol, artifacts, and resource feasibility. |
 | Phase 5 | Viewer / optional Concept Firewall bridge | Optional, not started | A separate scope grounded in recorded results. |
 
-R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 1's frozen budget. Original phases retain their numbering and completion history. R0 documented the existing study; R1A now adds a saved-data diagnosis. Neither changes the original gate or starts R1B.
+R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 1's frozen budget. Original phases retain their numbering and completion history. R0 documented the existing study; R1A added a saved-data diagnosis; R1B completed the reference-encoding pilot. None changes the original gate or starts R2.
 
 ## 4. R1A — Diagnose the saved failures before collecting more data
 
@@ -71,11 +71,12 @@ R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 
 
 This diagnostic was not performed in Phase 1. It is a new reference-based analysis, not an inference policy and not a speedup result.
 
-**Proposed fixed pilot, to freeze before execution:**
+**Executed fixed pilot, frozen before encoding in the [R1B protocol](docs/studies/sudoku-target-encoding-protocol.md):**
 
 - Use exactly the first 32 exploration identities already assigned by the manifest; do not choose inputs from observed error severity.
 - Encode each reference once through the official target encoder/quantizer path and decode its 12 cumulative full-resolution prefixes: 32 encodings and 384 prefix reconstructions/decodes. No new generator runs and no timing study.
 - Compare against the corresponding generated-prefix outputs already saved in Phase 1. Keep all outcomes, including unsuccessful final reference round trips. Carry R1A's given/empty-position split and clue/unit metrics into the pilot, with special attention to levels 10–12; retain all 12 levels and the same 384-decode budget.
+- The protocol additionally declared 32 latent-only upstream final-reconstruction checks, with no extra decoder evaluations. Actual forward counters were exactly 32 encodings and 384 decodes; tokenizer state was unchanged and every final latent matched upstream bitwise.
 - First validate the target-encoding contract, token format, final reconstruction, and storage/future-code isolation. A failed final round trip is a finding requiring investigation, not a reason to remove that input.
 - Record any failed attempt; do not silently increase the pilot size. Any additional operation needed beyond the declared budget must be documented before execution.
 
@@ -88,6 +89,8 @@ This diagnostic was not performed in Phase 1. It is a new reference-based analys
 | Target final round trips fail | Reconstruction/encoding compatibility or tokenizer reconstruction quality needs investigation. | That the generation-stage no-go was necessarily an adapter bug. |
 
 **Deliverables:** A separately versioned protocol and report under `docs/studies/` and `results/followup/`; prefix-level primary/secondary metrics; all round-trip failures; exact code/artifact hashes; a diagnosis memo. References used to construct these targets must never become deployed stopping inputs.
+
+**Completed outcome:** Both paths had zero early valid outputs. Target final exact-token, parsed-board, and primary-valid round trips were 32/32; the cached generated path finished 24/32 valid. Final target failure lists are empty. The selected recommendation is R2 bounded checkpoint screening; R2 has not started. These 32 exploration observations do not establish a causal mechanism, population absence, deployable policy, or speedup. [Report](results/followup/sudoku_target_encoding/summary.md), [provenance](results/followup/sudoku_target_encoding/provenance.json), [completion evidence](results/followup/sudoku_target_encoding/completion.json). All 244 tests pass, including 26 new R1B tests.
 
 **Exit:** Record a diagnosis and choose one explicit next branch: R2, a separately scoped tokenizer/generator intervention, or closure. A modified/trained checkpoint would start a different method study; it would not silently replace the frozen-checkpoint result.
 
@@ -169,6 +172,6 @@ Useful for communication after the next research decision, but optional and sepa
 
 ## 11. Immediate handoff
 
-**Recommended next work order:** “Complete R1B: freeze the 32-input target-encoding diagnostic protocol, compare target-encoded and saved generated prefixes, validate final round trips, then report, commit, and push.”
+**Recommended next work order:** “Complete R2: inspect the released easy-Sudoku artifacts and resource requirements, freeze the bounded screen protocol/partitions, run the first eligible 32-input screen with parity checks, and screen medium only if needed within the declared cap; report, commit, and push.”
 
-R1A is complete with 1,000 exploration puzzles, 12,000 board states, 11,000 transitions, 29 new tests, and zero new model calls. R1B has not started; neither checkpoint screening, online stopping, controller training, nor final-holdout evaluation occurred.
+R1B is complete: 32 reference encodings, 384 prefix decodes, and 32 declared latent-only parity checks, with no generator calls or holdout access. R2 remains unstarted; no additional checkpoint download/screen, online stopping, controller training, or final-holdout evaluation occurred.

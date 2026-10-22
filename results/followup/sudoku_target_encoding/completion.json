@@ -1,0 +1,146 @@
+{
+  "artifacts_sha256": {
+    "analysis.json": "baa2638e94b6e6b42ad7d532351c5d5c7124cea4472ae4e8d809ae2f56b1e4f4",
+    "attempt.json": "dd292732dde56bfbf39ddf33bbd5fbacbb97c3f485d4f589079edec84418a7cb",
+    "board_metrics.csv": "b78061b0b2f63184b676cf2a6f6e967bff8651c8a31896a6410af4553588781b",
+    "prefix_comparison.png": "79b1f112e3113da67c57e52146384d46706bc02897eb3e36904eb87412a35ff3",
+    "summary.md": "1da471afe426f2a49983f0a959d6cf704de755b53d64ea5aee8f581c8542c84e",
+    "targets.jsonl": "c9faee3ef6f3af87bdaef3fce5c6a61d8d36adb512d0a16c33d5a7c27fb4f35e",
+    "transition_metrics.csv": "5d0ec3ac6745e0aabd68dcd403d4e250bc50bf02da2e1c9939b7090b6d88af69"
+  },
+  "base_commit": "ee043228ede0a95a82bf6033211a2168d7ec3add",
+  "date": "2026-10-22",
+  "declared_limits": {
+    "decoder": 384,
+    "encoder": 32,
+    "final_latent": 32
+  },
+  "execution": {
+    "batch_size": 1,
+    "compile": false,
+    "cpu_threads": 4,
+    "cuda_runtime": "12.8",
+    "generator_module_loaded": false,
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "precision": "float32; no autocast",
+    "python": "3.12.3",
+    "torch": "2.10.0+cu128",
+    "warmups": 0
+  },
+  "figure_visually_inspected": "prefix_comparison.png",
+  "final_target_exact_token_roundtrips": 32,
+  "forward_counts": {
+    "decoder": 384,
+    "encoder": 32,
+    "final_latent": 32
+  },
+  "generated_early_valid_inputs": 0,
+  "generated_final_valid_inputs": 24,
+  "historical_R1A_and_Phase1_inputs_unchanged": true,
+  "historical_review_archive": {
+    "directory": "results/phase1/reviews/2026-10-22-r1a",
+    "review_tests_sha256": "917a62dad16e16c890536ea4864a2008e44266be1084bc66f51419195b3c15bb",
+    "review_validation_sha256": "bab43fe918d94b5a4a5edcc9d9bf40da41bd994233c1f4834788f089ebbb9105"
+  },
+  "independent_csv_checks": {
+    "board_rows": 768,
+    "histograms_and_transition_identities": "passed",
+    "transition_rows": 704
+  },
+  "inputs_sha256": {
+    "artifacts/sudoku/hard/config.yaml": "8d58c49e6fe52e60191e06df4061937d5bb84f97c5ffbcd93ed9830c32f8df2f",
+    "artifacts/sudoku/hard/generator.pt": "9e0bfe44abc1ca3930b7a63cd56cd0b9564b95e29edfe12dd0903207b89df8b8",
+    "artifacts/sudoku/hard/tokenizer.pt": "3bc6aecad8e15820f9d9bb09750e3c59bdf91ca953f1f11dbd109aaed1d80c0b",
+    "data/sudoku/hard/puzzles.pickle": "dd7b6763e5594094a1366ac8423f87fc9431056721c61df52ce3490023f17d5e",
+    "data/sudoku/hard/solutions.pickle": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576",
+    "docs/experiment_protocol.md": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "docs/partitions/sudoku-hard.json": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "results/phase1/analysis.json": "f07902170491118523d2038339f635b260561a227b8658753e2a83fdc8236f67",
+    "results/phase1/trajectories.jsonl": "2baf2948df953d7f379f9b359091c9a40d31fe9ecafe29f99305ff8bb3e0f5d9",
+    "results/phase1/trajectories.metadata.json": "c873d0f584173cbdf17e0b19f787a41a512a8db2170e45a0a01fe4a6543df342"
+  },
+  "limitations": [
+    "32 exploration identities; descriptive oracle-input comparison",
+    "reference inputs are unavailable to online stopping",
+    "no causal tokenizer-only diagnosis or population absence claim",
+    "no timing/speedup result or new Phase 2 go",
+    "R2 not started"
+  ],
+  "milestone": "R1B",
+  "model_free_verification": {
+    "imports_matplotlib": false,
+    "imports_torch": false,
+    "replays_latent_parity": false,
+    "status": "passed"
+  },
+  "next_action": "Recommend R2 bounded easy-then-conditional-medium checkpoint screening under its own frozen protocol.",
+  "outcome": "no_early_target_opportunity",
+  "provenance_sha256": "76fcfdda7b587bc823641ac22548966153e264ae65a5f066a4c778cbd68a0ee9",
+  "recorded_GPU_checks": {
+    "final_latent_bitwise_equal_inputs": 32,
+    "independent_prefix_storage_inputs": 32,
+    "model_state_after_sha256": "5e7d01ff8b9778a17c3579119446053776d19dfaa893667a3a5630e11cbe0df1",
+    "model_state_before_sha256": "5e7d01ff8b9778a17c3579119446053776d19dfaa893667a3a5630e11cbe0df1"
+  },
+  "schema_version": 1,
+  "scope": {
+    "board_rows": 768,
+    "cached_generated_records_deserialized": 32,
+    "cached_generated_states": 384,
+    "development_records_deserialized": 0,
+    "generator_calls": 0,
+    "holdout_records_deserialized": 0,
+    "references": 32,
+    "sealed_rows_materialized": 0,
+    "selected_puzzle_rows": 32,
+    "selected_reference_rows": 32,
+    "target_states": 384,
+    "timed_requests": 0,
+    "transition_rows": 704
+  },
+  "source_sha256": {
+    "docs/studies/sudoku-target-encoding-protocol.md": "cfdcd1ff16adebf9ba639cee67da8ef7a6efb4f433fc7f698b4637416b209f30",
+    "scripts/diagnose_target_encoding.py": "24f41e39a83af380182cfdebea0d7a79b083bf98ff2fed7af3cb46a3a664b74e",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/diagnosis.py": "d78a32c6e25d1e65f2a4ad0c918dcec8e1a824dcb220f1c30f38936acd438356",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_diagnostic.py": "08b1ee6ae3cf891eaf950ed936f70ca77edef82cfed1ca678edea9ca22354063",
+    "src/anytime_ncm/target_diagnostic_render.py": "d60ffc24198d3346398effc22dcfbf03b0cfc9d608deefeefe1cd9a11a6df3d8",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_target_encoding.py": "fa81c42336d9d6ce6bcc225203d216861aeba6c2794c3f52a3679c3a0053a6db",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb",
+    "third_party/ncm/tokenization/vqvae_tokenizer.py": "a41215ad73e626c30882d1e9fa5bcd7753ced73307516fae0ec9815325445fc1"
+  },
+  "status": "complete",
+  "target_early_valid_inputs": 0,
+  "target_final_failure_indices": {
+    "primary": [],
+    "reference_board": [],
+    "tokens": []
+  },
+  "tests": {
+    "R1B_tests": 26,
+    "by_module": {
+      "tests.test_collection": 52,
+      "tests.test_diagnosis": 29,
+      "tests.test_full_depth_equivalence": 3,
+      "tests.test_partial_decoder": 26,
+      "tests.test_report": 28,
+      "tests.test_sudoku_validator": 59,
+      "tests.test_target_encoding": 26,
+      "tests.test_timing": 21
+    },
+    "errors": 0,
+    "failures": 0,
+    "junit_suite_seconds": 12.202,
+    "passed": 244,
+    "pytest_reported_seconds": 12.2,
+    "report": "results/followup/sudoku_target_encoding/tests.xml",
+    "report_sha256": "41736fae9d4dfb5069c2bd54d9fd6c110be924a1b53c749f46062db1473e2fe7",
+    "skipped": 0
+  }
+}

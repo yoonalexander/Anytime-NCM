@@ -47,8 +47,8 @@
   },
   "source_sha256": {
     ".gitattributes": "24cc7993d81a5bfaad93b6139c4bdd5b1c92a466f6ad6025fbc8adbe43fae360",
-    "README.md": "eb0d45a4a8833c438055df110fde7ce62601621d66bf8051c016aa14fab76561",
-    "ROADMAP.md": "9c72938fe80a0727f5e08ef7bfabde7c3addd7131a48f09c13e7fbfe80afe76a",
+    "README.md": "88eb024eadd291634b96c901863a28ffb17053726431daa0c3d56f00ebe04310",
+    "ROADMAP.md": "f0cbb81c3d117faff26e11e26eccab62a4a0dc075bd25152eb97ee70b55379dc",
     "docs/phase1_review.md": "f6a508ea33d8453ab0d1dd3d43fe6c4125bdf5add9727a3f4b67291315da7a7c",
     "docs/phase1d_analysis_plan.md": "84895d437aa1031a6a2adc0bcb1c2e1d82e0616a1f2a8b70ef52792e53d69e19",
     "docs/phase1d_profiling.md": "0e92562c046664777148c68815ff9dd889e50f045e7747334e001f8ec15a217b",
@@ -69,6 +69,9 @@
     "src/anytime_ncm/report_render.py": "9927b8418e71a5424caa1006861373452f166e07777fc3f2edb2ae3db633a247",
     "src/anytime_ncm/run_baseline.py": "f19c9601ba9a2bf5e9e160e8279f5afb35f46cce1e57eb634f20f2433eaaa2c4",
     "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_diagnostic.py": "08b1ee6ae3cf891eaf950ed936f70ca77edef82cfed1ca678edea9ca22354063",
+    "src/anytime_ncm/target_diagnostic_render.py": "d60ffc24198d3346398effc22dcfbf03b0cfc9d608deefeefe1cd9a11a6df3d8",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
     "src/anytime_ncm/timing.py": "08188113f9dd8cb787861f950fbd0d9e235fce0bc4d5681620bf3cdd524209f8",
     "src/anytime_ncm/train_policy.py": "8714a0ad062912755dcf2408cfc945fa9474235bedcdb795ea00db0bd5ffac48",
     "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
@@ -80,6 +83,7 @@
     "tests/test_policy_no_future_leakage.py": "cd6a5e8b8978088e9398f40610e12dcb887aa6cec998f3c759eed6d51a993f87",
     "tests/test_report.py": "a673297cc2fb3ce654261f4c1a2262fa86589050d30edacd917e88f18805f00e",
     "tests/test_sudoku_validator.py": "8e8ed5495b7137011ceb05e2868a6fe0f0f15822415eb303da70d440a605e972",
+    "tests/test_target_encoding.py": "fa81c42336d9d6ce6bcc225203d216861aeba6c2794c3f52a3679c3a0053a6db",
     "tests/test_timing.py": "33cbaaa668f59909e98f749dbb034a1a538454f9eb9a81ffd8bbc7c8eea9e1c7"
   },
   "status": "complete",
@@ -91,15 +95,16 @@
       "tests.test_partial_decoder": 26,
       "tests.test_report": 28,
       "tests.test_sudoku_validator": 59,
+      "tests.test_target_encoding": 26,
       "tests.test_timing": 21
     },
     "errors": 0,
     "exit_code": 0,
     "failed": 0,
-    "junit_suite_seconds": 5.654,
-    "passed": 218,
+    "junit_suite_seconds": 12.202,
+    "passed": 244,
     "report": "results/phase1/review_tests.xml",
-    "report_sha256": "917a62dad16e16c890536ea4864a2008e44266be1084bc66f51419195b3c15bb",
+    "report_sha256": "41736fae9d4dfb5069c2bd54d9fd6c110be924a1b53c749f46062db1473e2fe7",
     "skipped": 0
   }
 }
