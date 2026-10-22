@@ -2,7 +2,7 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0, R1A, R1B, R2, and the separately requested R3 easy extension are complete. R2 stayed negative; R3 also returned no-go. Phase 2 remains unstarted.
+**Status:** R0/R1A/R1B/R2/R3 remain complete with their negative findings. The user subsequently authorized finishing Phase 2 despite its failed opportunity gate: 2A is complete, and 2B/2C are pending under a separate frozen protocol.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
@@ -24,7 +24,7 @@ The bounded Sudoku follow-ups are now negative, so closure at this budget is the
 | Development estimated time is 151.02 ms full depth versus 217.74 ms with every-level checking | Monitoring adds an estimated 66.71 ms; this is computation time, not money. |
 | Estimated reduction is −44.18%, with 95% interval [−45.02%, −43.45%] | The original 5% improvement gate fails. |
 | Cell accuracy reaches 81.70% exploration / 82.09% development at level 11, while valid-grid rate remains zero | Partial information exists, but the mechanism preventing exact early solutions is undiagnosed. |
-| Correctness/parity checks pass; all 310 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
+| Correctness/parity checks pass; all 353 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
 
 An optimized implementation might reduce reconstruction/transfer overhead. It would still need earlier acceptable outputs to skip generation under the current verified rule. There is no measured online slowdown or speedup yet.
 
@@ -184,8 +184,13 @@ Useful for communication after the next research decision, but optional and sepa
 
 ## 11. Immediate handoff
 
-**Recorded decision:** R2 remained negative. The subsequently requested R3 easy extension is complete with no-go. Do not proceed to Phase 2 from this evidence.
+**Recorded evidence:** R2 and R3 remain no-go and do not independently justify a practical speedup experiment. The user subsequently explicitly requested finishing Phase 2. The [online protocol](docs/studies/phase2-easy-online-protocol.md) records this entry exception and bounded monitoring optimizations, with unchanged claim thresholds.
 
 **Optional next work order, requiring a new request:** “Audit the released WMT14 artifacts, resource fit, task-specific quality tolerances, candidate signals, and a bounded study protocol before any inference.” This task change has not started.
 
 R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-generation / 31,536-decoder-forward allocation, including its official aggregate baseline and profiling validation. No model evaluation was repeated during the documented collection resumption. No online stopping, controller training, natural-language study, or adaptive final-holdout evaluation followed.
+
+
+## Current Phase 2 work order
+
+2A is complete: 192 real parity/actual-stop requests, 43 new tests and 353 total passing tests. The [completion receipt](results/phase2/2a_completion.json) distinguishes synthetic never-valid fallback from the real 32-input parity set. No final per-input data is open. Next execute the frozen seven-method development comparison, commit/push the policy lock, then evaluate the locked methods together on phase2_final. Keep phase3_final reserved. This explicitly requested negative-capable experiment does not reverse any offline no-go or authorize changing the quality objective.

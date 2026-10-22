@@ -1,7 +1,7 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A, R1B, R2, and the separately requested R3 easy extension are complete. Original Phase 1 decision: no-go.
+**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A are complete. Phase 2B/2C are authorized and pending. Original Phase 1 decision: no-go.
 **Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. Close this released-Sudoku first-valid path at the completed budget; no new Phase 2 go exists. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
@@ -12,7 +12,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | --- | --- | --- | --- |
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
-| 2 | Measured online verified stopping | Conditional; not started | A setting-specific offline go and a subsequent work order |
+| 2 | Measured online verified stopping | 2A complete; 2B/2C authorized and pending | A setting-specific offline go and a subsequent work order |
 | 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
@@ -148,18 +148,18 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ## Phase 2 — True online verified stopping
 
-**Status:** Conditional; not started.
-**Entry:** Phase 1 go decision and a subsequent Phase 2 work order. The current Phase 1 result is no-go, so this entry requirement is not met. A separate setting selected through R1–R3 requires its own offline go and protocol; that would not overturn the original result.
+**Status:** 2A complete; 2B/2C pending under the explicit user work order.
+**Entry exception:** The offline opportunity gate remains unmet. After the R3 no-go the user explicitly requested unblocking and finishing Phase 2. A [separate frozen online protocol](docs/studies/phase2-easy-online-protocol.md) authorizes this engineering/measurement experiment, including a valid negative result, without relabeling any prior gate. Incremental monitoring and four development-selected schedules are the bounded unblocking attempts; no quality tolerance or checkpoint changes.
 **Design mapping:** Sections 5B, 8.4–8.6, 9 Phase 2, and 10–12.
 
 ### 2A — Minimal online hook and parity
 
-- [ ] Add the smallest isolated callback or level-limit hook that actually skips later generator evaluations.
-- [ ] Record the upstream patch and exact base revision.
-- [ ] Preserve full-depth behavior when stopping is disabled.
-- [ ] Enforce minimum/maximum level boundaries and safe fallback.
-- [ ] Test no-stop parity, actual skipped generator calls, and current/past-only policy inputs.
-- [ ] Prove offline/online deterministic exit-output equivalence, including never-valid cases.
+- [x] Add the smallest isolated callback or level-limit hook that actually skips later generator evaluations.
+- [x] Record the upstream patch and exact base revision.
+- [x] Preserve full-depth behavior when stopping is disabled.
+- [x] Enforce minimum/maximum level boundaries and safe fallback.
+- [x] Test no-stop parity, actual skipped generator calls, and current/past-only policy inputs.
+- [x] Prove offline/online deterministic exit-output equivalence, including never-valid cases.
 
 ### 2B — Development comparisons and measured costs
 
@@ -263,7 +263,9 @@ For each completed milestone, add a short record with its date, final status, ch
 | Phase 1B | Complete | [88 passing tests; final-output parity 32/32](docs/phase1b_partial_decoding.md) |
 | Phase 1C | Complete | [1,400 trajectories / 16,800 level records; 140 passing tests](docs/phase1c_collection.md) |
 | Phase 1D | Complete - no-go | [Report](results/phase1/summary.md); 186 passing tests; full frozen diagnostic coverage |
-| Phases 2–5 | Not started | Subject to the entry conditions above |
+| Phase 2A | Complete | [192 real parity/stop checks](results/phase2/2a_completion.json); 353 tests |
+| Phase 2B/2C | Authorized; pending | [Frozen online protocol](docs/studies/phase2-easy-online-protocol.md) |
+| Phases 3–5 | Not started | Subject to their entry conditions above |
 
 ### Phase 1A completion - October 20, 2026
 
@@ -340,3 +342,10 @@ The user explicitly requested R3 after negative R2 screens. Easy was selected as
 The official easy aggregate baseline solved 1,988/2,000. R3 completed exactly 4,378 new generations and 31,536 decoder forwards. A filesystem metadata interruption after 499 saved rows was retained and resumed for only the 901 unrun inputs under a [dated amendment](docs/studies/sudoku-easy-r3-resumption-amendment.md). Original byte prefixes and failure receipts are preserved, with no repeated model evaluation.
 
 [Report](results/followup/sudoku_easy_r3/summary.md), [completion](results/followup/sudoku_easy_r3/completion.json). The previous compatibility review is archived under results/phase1/reviews/2026-10-22-r2/. Original Phase 1/R1A/R1B/R2 empirical and completion artifacts remain unchanged. Phase 2 and new task work have not started.
+
+
+### Phase 2A completion — October 22, 2026
+
+Implemented an isolated completed-level hook against the pinned upstream generate body, with a recorded patch and clean unchanged vendored checkout. All 192 real-checkpoint requests over the original 32 exploration inputs passed code/token/text and offline/online exit-output checks. Forced depths 1 and 6 execute exactly those transformer levels. Synthetic tests cover causality, future-code isolation, min/max bounds, independent incremental reconstruction and never-valid fallback. All 353 tests pass, including 43 new Phase 2 tests.
+
+[Protocol](docs/studies/phase2-easy-online-protocol.md), [2A receipt](results/phase2/2a.json), [completion](results/phase2/2a_completion.json), [unified patch](results/phase2/upstream_level_hook.patch.txt). A report-only diff newline-marker correction retained the initial artifact and passed git apply --check with zero additional model calls. No development benchmark or final per-input access has occurred. Next: 2B, then locked 2C; prior negative gates remain unchanged.

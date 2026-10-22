@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; the current suite passes 310 tests, including 29 R1A, 26 R1B, 38 R2, and 28 R3/resumption tests. Both subsequent 32-input easy/medium screens also found no early valid outputs; the released-Sudoku first-valid path is closed at this budget. See the [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
+**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; the current suite passes 353 tests, including 43 new Phase 2 tests. Both subsequent 32-input easy/medium screens also found no early valid outputs; the released-Sudoku first-valid path is closed at this budget. See the [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
 
 ## Contents
 
@@ -55,8 +55,9 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Offline trajectory collector | Complete; 1,400 trajectories / 16,800 level records; [Phase 1C](docs/phase1c_collection.md) |
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Headline online adaptive benchmarks | Not started |
-| Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | 310 passed; timing/statistics/report checks included; online halting tests remain pending |
+| Online stopping hook | 2A complete; development/final benchmark pending under explicit work order |
+| Learned controller | Deferred; separate headroom justification required |
+| Executable research tests | 353 passed; timing/statistics/report checks included; online halting tests remain pending |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; online adaptive inference is pending.
@@ -474,3 +475,14 @@ A metadata-write interruption was retained and completed under the [resumption a
 ~~~
 
 This verifies original execution sources, amendment/report-only sources, pre-resumption file prefixes, labels, costs, bootstrap and gates without torch/matplotlib or official raw-prediction access. It does not replay CUDA parity. [Report](results/followup/sudoku_easy_r3/summary.md), [configuration](configs/r3_easy.json), and [completion evidence](results/followup/sudoku_easy_r3/completion.json). Phase 2 and task-change work have not started.
+
+
+## Phase 2 online experiment
+
+The user explicitly requested finishing Phase 2 after the negative offline audits. Its [separate frozen protocol](docs/studies/phase2-easy-online-protocol.md) preserves those no-go decisions and the 5%/zero-loss claim rule while permitting an online engineering/measurement experiment. Incremental reconstruction and deferred verifier schedules are bounded attempts to reduce monitoring cost; they do not create early valid solutions.
+
+**2A is complete:** an isolated pinned-generation hook, unchanged upstream checkout, actual one/six-level stop checks, 192 real parity requests and 353 passing tests. [Completion](results/phase2/2a_completion.json), [recorded patch](results/phase2/upstream_level_hook.patch.txt). A diff-only newline-marker correction passed git apply --check without repeating model work. 2B and 2C remain pending; the final policy lock must be committed/pushed before per-input Phase 2 final access. Phase 3 final data remains reserved.
+
+~~~powershell
+python scripts/run_phase2.py verify-a
+~~~

@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-22",
+  "development_timed_requests": 0,
+  "entry_exception": "explicit user-directed online experiment after negative offline gates",
+  "final_rows_materialized": 0,
+  "model_state_unchanged": true,
+  "never_valid_fallback": "synthetic actual small-generator tests",
+  "next_action": "commit/push 2A; execute only the frozen 2B development comparison before policy lock and 2C",
+  "patch_apply_check": true,
+  "patch_format_correction": {
+    "additional_model_calls": 0,
+    "git_apply_check": true,
+    "model_code_changed": false,
+    "reason": "preserve Git no-newline marker in unified diff",
+    "sha256": "36824deb88e94e249bfac6e44ed6c28b6f448fb4a934d1a584ba02ef5f679966",
+    "source_path": "scripts/finalize_phase2_patch.py"
+  },
+  "phase": "2A",
+  "phase3_final_rows_materialized": 0,
+  "prior_compatibility_archive": "results/phase1/reviews/2026-10-22-r3",
+  "real_never_valid_inputs": 0,
+  "real_verification": {
+    "counts": {
+      "decoder": 846,
+      "encoder": 0,
+      "generator_levels": 1742,
+      "inputs": 192
+    },
+    "exact_parity_cases": 192,
+    "forced_depths": [
+      1,
+      6
+    ],
+    "real_inputs": 32,
+    "requests": 192,
+    "status": "complete"
+  },
+  "source_snapshot": "results/phase2/source_snapshots/2a",
+  "stage_receipt_sha256": "e21d978cd93b9189887bc9655b6a890226158a36c365cd18ed0946875e108e33",
+  "status": "complete",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "junit_seconds": 17.139,
+    "new_Phase2_tests": 43,
+    "passed": 353,
+    "report": "results/phase2/2a_tests.xml",
+    "sha256": "a37628fe8307db7b014bd8add8b48c35a151220c892b5c041f15b879f2405d1b",
+    "skipped": 0
+  },
+  "vendored_checkout_modified": false
+}

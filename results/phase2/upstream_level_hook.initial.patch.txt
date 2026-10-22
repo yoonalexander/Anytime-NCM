@@ -1,0 +1,52 @@
+--- a/models/next_concept.py
++++ b/models/next_concept.py
+@@ -519,7 +519,7 @@
+ 
+     @torch.no_grad()
+     def generate(self, idx, prefix_tokens, temperature=1.0, top_k=50, top_p=0.9,
+-                 use_kv_cache=False, cfg_scale=0.0, cfg_null_eos=50256):
++                 use_kv_cache=False, cfg_scale=0.0, cfg_null_eos=50256, level_callback=None, level_limit=None):
+         assert not (self.query_level0 and use_kv_cache), \
+             "query_level0 generation supports the eager path only"
+ 
+@@ -641,6 +641,10 @@
+             idx = self._sample_level(l0_logits, temperature, top_k, top_p)
+ 
+         generated_idx = [idx]
++        _phase2_exit = _phase2_boundary(1, generated_idx, level_callback, level_limit)
++        if _phase2_exit is not None:
++            self._cfg = None
++            return _phase2_exit
+         idx_next = idx
+         if use_kv_cache:
+             self._set_kv_caching(True)
+@@ -691,6 +695,10 @@
+                     idx_next = self._sample_level(logits, temperature, top_k, top_p)
+ 
+                 generated_idx.append(idx_next)
++                _phase2_exit = _phase2_boundary(level_idx + 2, generated_idx, level_callback, level_limit)
++                if _phase2_exit is not None:
++                    self._cfg = None
++                    return _phase2_exit
+                 level_acum += self.levels[level_idx+1]
+         finally:
+             if use_kv_cache:
+@@ -701,4 +709,18 @@
+             out = out[:self._cfg["B"]]
+         self._cfg = None
+         return out
+-    +
++def _phase2_boundary(level, parts, callback, limit):
++    active = callback is not None and (not hasattr(callback, "inspection_levels") or level in callback.inspection_levels)
++    if not active and (limit is None or level < limit):
++        return None
++    current = torch.cat(parts, dim=1)
++    if active:
++        decision = callback(level, current)
++        if type(decision) is not bool:
++            raise TypeError("A stopping callback must return a Boolean.")
++        if decision:
++            return current
++    if limit is not None and level >= limit:
++        return current
++    return None
