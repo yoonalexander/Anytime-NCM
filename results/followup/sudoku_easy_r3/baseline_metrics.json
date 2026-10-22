@@ -1,0 +1,9 @@
+{
+  "cell_percent": 99.97,
+  "score_precision": "percentages rounded by unchanged official evaluator",
+  "scoring": "official decoded-text metrics; no independent clue rescoring of reserved outputs",
+  "solved": 1988,
+  "solved_percent": 99.4,
+  "total": 2000,
+  "valid_grid_percent": 99.4
+}

@@ -2,13 +2,13 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0, R1A, R1B, and R2 complete. Both bounded R2 screens were negative; the released-Sudoku first-valid path is closed at this budget. R3 and Phase 2 were not entered.
+**Status:** R0, R1A, R1B, R2, and the separately requested R3 easy extension are complete. R2 stayed negative; R3 also returned no-go. Phase 2 remains unstarted.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
 ## 1. Recommendation
 
-**Close the released-Sudoku first-valid path at the declared budget.** R2 found no early valid outputs in either the easy or medium 32-input screen. A new task or objective requires an explicit study decision; no additional inference is authorized by this result.
+**Close the released-Sudoku first-valid path at the completed budget.** After negative R2 screens, the user explicitly requested R3. The separately frozen easy extension found no early valid outputs on 1,400 exploration/development inputs and a negative estimated-cost gate. A new task/objective requires a separate request. [R3 report](results/followup/sudoku_easy_r3/summary.md).
 
 R1A characterized the saved errors. R1B then encoded the 32 preselected valid references: all 32 round-tripped exactly at level 12, but none produced a valid earlier prefix. This does not prove that every alternative code sequence or decoder would fail early. Those findings warranted R2, which executed easy first and then medium under a new frozen protocol. Neither produced a valid solution before level 12. Final validity was 32/32 easy and 31/32 medium; all 64 matched official/adapter final outputs passed exact token/text parity. [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
 
@@ -24,7 +24,7 @@ The bounded Sudoku follow-ups are now negative, so closure at this budget is the
 | Development estimated time is 151.02 ms full depth versus 217.74 ms with every-level checking | Monitoring adds an estimated 66.71 ms; this is computation time, not money. |
 | Estimated reduction is −44.18%, with 95% interval [−45.02%, −43.45%] | The original 5% improvement gate fails. |
 | Cell accuracy reaches 81.70% exploration / 82.09% development at level 11, while valid-grid rate remains zero | Partial information exists, but the mechanism preventing exact early solutions is undiagnosed. |
-| Correctness/parity checks pass; all 282 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
+| Correctness/parity checks pass; all 310 current tests pass | The completed no-go is not an unresolved implementation-correctness failure. |
 
 An optimized implementation might reduce reconstruction/transfer overhead. It would still need earlier acceptable outputs to skip generation under the current verified rule. There is no measured online slowdown or speedup yet.
 
@@ -36,7 +36,7 @@ An optimized implementation might reduce reconstruction/transfer overhead. It wo
 | R1A | Diagnose errors in saved exploration trajectories | Complete — October 22; [report](results/followup/sudoku_prefix_diagnosis/summary.md) | A reproducible error taxonomy and specific hypotheses, without new inference. |
 | R1B | Test target-encoded prefixes on a small exploration-only set | Complete — [report](results/followup/sudoku_target_encoding/summary.md) | Evidence separating limited target reconstruction from generated-prefix failure, without claiming a causal proof. |
 | R2 | Screen alternative frozen Sudoku checkpoints | Complete — [report](results/followup/sudoku_checkpoint_screen/summary.md); both negative | No candidate met the early-valid screen gate; close this path at the declared budget. |
-| R3 | Run a confirmatory opportunity/cost audit for one selected setting | Not entered; no R2 candidate qualified | A new documented go/no-go/inconclusive decision using matched quality and total estimated time. |
+| R3 | Extended opportunity/cost audit of easy under an explicit entry exception | Complete — [report](results/followup/sudoku_easy_r3/summary.md); no-go | User requested extension after negative R2; it does not retroactively qualify R2. |
 | Phase 2 | Implement and benchmark actual online verified stopping | Blocked for the original setting | A justified setting-specific go and a separate implementation work order. |
 | Phase 3 | Learn a stopping controller | Deferred | Remaining headroom beyond strong simpler policies and an appropriate reserved final set. |
 | Phase 4 | Translation/summarization generalization | Alternative branch, not started | Task-specific quality tolerances, signals, protocol, artifacts, and resource feasibility. |
@@ -117,21 +117,27 @@ Before any screen, inspect the actual checkpoint/config/data layout, license, fi
 
 The identical released solution files require shared row-index reservations across difficulty masks. R2 inherited all original partitions, performed an explicitly disclosed identity-only hash traversal of 2,000 puzzle rows per candidate, and materialized only the 32 exploration puzzle/reference rows per candidate. These are related difficulty views, not independent datasets.
 
-**Recorded exit:** Both negative; close this released-Sudoku first-valid path at its declared budget. No R3 candidate qualified and no new Phase 2 go exists. Zero in 32 per candidate is not a population impossibility result. [Report](results/followup/sudoku_checkpoint_screen/summary.md), [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json). All 282 tests pass, including 38 new R2 tests.
+**Recorded exit:** Both negative; close this released-Sudoku first-valid path at its declared budget. No R2 candidate qualified for R3; the later explicit R3 extension is documented below. No new Phase 2 go exists. Zero in 32 per candidate is not a population impossibility result. [Report](results/followup/sudoku_checkpoint_screen/summary.md), [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json). All 282 tests pass, including 38 new R2 tests.
 
 ## 7. R3 — Confirm opportunity and total estimated savings before Phase 2
+
+**Completed under a separately requested entry exception:** The user requested “Do R3” after the negative R2 result. Easy was chosen by the existing candidate order. The [new frozen protocol](docs/studies/sudoku-easy-r3-protocol.md) explicitly authorizes a larger audit without claiming R2 qualification or a positive pilot. Original R2 evidence remains unchanged.
+
+R3 easy-Sudoku extension is complete with **no-go**: no early valid solution among 1,000 exploration and 400 development inputs. Final primary validity was 994/1,000 and 396/400. Development component-sum estimates were 104.22 ms full depth versus 145.20 ms every-level verified, an estimated 39.31% cost increase (paired 95% interval 38.96%–39.68%). These are not measured online latencies. All 310 tests pass, including 28 new R3/resumption tests.
+
+A metadata-write interruption after 499 saved trajectories was preserved and resolved under a [dated amendment](docs/studies/sudoku-easy-r3-resumption-amendment.md). The 901 unrun inputs completed without repeating model work or expanding the budget. The interrupted process has no measured end-state fingerprint; the resumed process reloaded the exact starting checkpoint and matched it at completion. [Completion evidence](results/followup/sudoku_easy_r3/completion.json).
 
 Choose at most one setting from the exploration screen. Before exposing its development outputs, freeze the complete study: artifacts, input partitions, policy, quality definition, budgets, instrumentation, bootstrap, and gates. Previously screened exploration identities stay exploration and count toward its total; they are not new independent confirmation examples.
 
 For a released Sudoku set with at least 2,000 usable unique identities, the recommended starting design mirrors the original allocation: 1,000 exploration, 400 development, 300 Phase 2 final, and 300 Phase 3 final. If its actual data cannot support that allocation, declare a suitable design and its limitations before output inspection. These numbers are proposed defaults for a new study, not permission to reuse an exposed set as untouched confirmation.
 
-- [ ] Reproduce the selected setting's official baseline, with aggregate-only handling of reserved final partitions if the official evaluator scores them internally. Disclose any base-model or cross-study overlap that can be established, and what remains unknown.
-- [ ] Audit the full permitted exploration/development trajectories with the same independent reconstruction and validity requirements.
-- [ ] Profile the first 100 identities of each permitted partition, five repeats each, after ten exploration-only warmups, at batch size 1. This is a new allocation of 1,000 timed requests under its own protocol; the original Phase 1 allocation stays exhausted.
-- [ ] Start with every-level first-valid checking to isolate the changed setting. If another inspection schedule is to be selected, declare its candidate family and selection procedure before development evaluation and report selection explicitly.
-- [ ] Compare full depth, all fixed depths, and the verified candidate. Include every scheduled reconstruction/decode/transfer/verifier/policy cost, including full work on never-valid inputs. Charge feature costs only to methods that use them.
-- [ ] Document whether monitoring reconstructs from scratch or reuses an accumulator; validate the exact strategy whose time is estimated. Keep generation feedback and monitoring work from being double-counted.
-- [ ] Report quality differences, false accepts, work skipped, mean/median/p95 estimates, and paired 95% identity-bootstrap intervals with 10,000 resamples and retained repeats.
+- [x] Reproduce the selected setting's official baseline, with aggregate-only handling of reserved final partitions if the official evaluator scores them internally. Disclose any base-model or cross-study overlap that can be established, and what remains unknown.
+- [x] Audit the full permitted exploration/development trajectories with the same independent reconstruction and validity requirements.
+- [x] Profile the first 100 identities of each permitted partition, five repeats each, after ten exploration-only warmups, at batch size 1. This is a new allocation of 1,000 timed requests under its own protocol; the original Phase 1 allocation stays exhausted.
+- [x] Start with every-level first-valid checking to isolate the changed setting. If another inspection schedule is to be selected, declare its candidate family and selection procedure before development evaluation and report selection explicitly.
+- [x] Compare full depth, all fixed depths, and the verified candidate. Include every scheduled reconstruction/decode/transfer/verifier/policy cost, including full work on never-valid inputs. Charge feature costs only to methods that use them.
+- [x] Document whether monitoring reconstructs from scratch or reuses an accumulator; validate the exact strategy whose time is estimated. Keep generation feedback and monitoring work from being double-counted.
+- [x] Report quality differences, false accepts, work skipped, mean/median/p95 estimates, and paired 95% identity-bootstrap intervals with 10,000 resamples and retained repeats.
 
 **Sudoku gate:** Retain the substantive original rule: estimated mean reduction at least 5%, interval lower bound above zero, zero empirical solve-rate loss, zero false accepts, and passed parity/correctness. An upper bound below 5% is no-go; missing costs, inadequate evidence, or other cases are inconclusive. Correctness problems must be fixed before opportunity is interpreted. Stop at the frozen budget and retain negative outcomes.
 
@@ -178,8 +184,8 @@ Useful for communication after the next research decision, but optional and sepa
 
 ## 11. Immediate handoff
 
-**Recorded decision:** R2 is complete and closes the released-Sudoku first-valid path at this budget. R3 and Phase 2 do not proceed from these negative screens.
+**Recorded decision:** R2 remained negative. The subsequently requested R3 easy extension is complete with no-go. Do not proceed to Phase 2 from this evidence.
 
 **Optional next work order, requiring a new request:** “Audit the released WMT14 artifacts, resource fit, task-specific quality tolerances, candidate signals, and a bounded study protocol before any inference.” This task change has not started.
 
-R2 consumed its maximum two-candidate allocation: 128 full-depth input-generations (64 comparator, 64 adapter), 1,536 generator level evaluations, and 832 decoder forwards. All observed outcomes are retained. No R3 audit, online stopping, controller training, natural-language study, or final-holdout evaluation followed.
+R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-generation / 31,536-decoder-forward allocation, including its official aggregate baseline and profiling validation. No model evaluation was repeated during the documented collection resumption. No online stopping, controller training, natural-language study, or adaptive final-holdout evaluation followed.

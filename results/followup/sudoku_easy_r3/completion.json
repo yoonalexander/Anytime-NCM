@@ -1,0 +1,264 @@
+{
+  "R2_qualified": false,
+  "access": {
+    "adapter_profile_final_rows_materialized": 0,
+    "official_baseline_internally_scores_reserved_rows": true,
+    "official_baseline_raw_predictions_opened_by_analyst": false,
+    "shared_solution_row_reservations_preserved": true
+  },
+  "base_commit": "5ed6611cff2a10c2d79d4d4271a0149d47fe2335",
+  "coverage": {
+    "adapter_profile_final_rows_materialized": 0,
+    "headline_online_requests": 0,
+    "new_collection_inputs": 1368,
+    "official_baseline_inputs": 2000,
+    "profile_identities": 200,
+    "profile_repeats": 5,
+    "reused_R2_inputs": 32,
+    "timed_requests": 1000,
+    "total_new_decoder_forwards": 31536,
+    "total_new_generations": 4378,
+    "trajectory_inputs": 1400,
+    "trajectory_levels": 16800,
+    "warmups": 10
+  },
+  "date": "2026-10-22",
+  "decision": "no-go",
+  "development_calibration_sensitivity": {
+    "baseline_ms": {
+      "mean": 103.87375456571625,
+      "median": 102.5962240011139,
+      "p95": 112.83952261765137
+    },
+    "baseline_valid_rate": 0.98,
+    "mean_skipped_codes": 0.0,
+    "mean_skipped_levels": 0.0,
+    "paired": {
+      "identities": 100,
+      "quality_difference": 0.0,
+      "quality_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "relative_mean_reduction": -0.3768378719114811,
+      "relative_mean_reduction_ci95": [
+        -0.3806066543091732,
+        -0.3733060618330385
+      ],
+      "repeats_per_identity": 5,
+      "resamples": 10000,
+      "seed": 20261020
+    },
+    "verified_ms": {
+      "mean": 143.01731918371627,
+      "median": 141.46513928201296,
+      "p95": 153.19617811911317
+    },
+    "verified_valid_rate": 0.98
+  },
+  "development_costs": {
+    "baseline_ms": {
+      "mean": 104.22420456571624,
+      "median": 102.94667400111389,
+      "p95": 113.18997261765136
+    },
+    "baseline_valid_rate": 0.98,
+    "mean_skipped_codes": 0.0,
+    "mean_skipped_levels": 0.0,
+    "paired": {
+      "identities": 100,
+      "quality_difference": 0.0,
+      "quality_difference_ci95": [
+        0.0,
+        0.0
+      ],
+      "relative_mean_reduction": -0.39313560884184673,
+      "relative_mean_reduction_ci95": [
+        -0.3968292727723162,
+        -0.3896420541743036
+      ],
+      "repeats_per_identity": 5,
+      "resamples": 10000,
+      "seed": 20261020
+    },
+    "verified_ms": {
+      "mean": 145.19845068371626,
+      "median": 143.64627078201295,
+      "p95": 155.37730961911316
+    },
+    "verified_valid_rate": 0.98
+  },
+  "early_valid_inputs": {
+    "development": 0,
+    "exploration": 0
+  },
+  "entry_exception": "explicit user request after negative R2; no R2 qualification; first ordered setting easy",
+  "execution_amendment_sha256": {
+    "docs/studies/sudoku-easy-r3-resumption-amendment.md": "3e2b22fc08766d2fa5f1206f41b84cc302c801397f6a88a71d1184d1983a4e0c",
+    "scripts/resume_sudoku_easy_r3.py": "b1a0996991b4e7bd32315ae512792415a382677b6107df07f6d5e2736fab4cc3",
+    "tests/test_audit_resume.py": "35ccae007e23088724d0b5ff11719db97f151fd1be99f717dab6a48f1c8fb80d"
+  },
+  "extra_model_seeds": 0,
+  "false_verifier_accepts": 0,
+  "figure_visually_inspected": "audit_comparison.png",
+  "final_valid_inputs": {
+    "development": 396,
+    "exploration": 994
+  },
+  "historical_tracked_files_verified_byte_identical": 120,
+  "independent_output_audit": {
+    "development_reduction_recomputed": true,
+    "local_links_checked": 183,
+    "markdown_geometry": "passed",
+    "profile_identity_clusters": 200,
+    "profile_records_recounted": 1000,
+    "repeats_per_cluster": 5,
+    "source_and_provenance_hashes": "passed",
+    "status": "passed",
+    "trajectory_rows_recounted": 16800
+  },
+  "independent_primary_disagreements": 0,
+  "interruption": {
+    "budget_increase": 0,
+    "completed_new_generations_before_failure": 467,
+    "completed_trajectories_before_failure": 499,
+    "failed_attempts": 1,
+    "failed_metadata_sha256": "8a81a2e911709e0391b8b3bab9852ab541d00aeafd270d86318963c8802235d1",
+    "failed_prefix_receipts_sha256": "a9b0d0d00945d44fb8aeb3c4d557fd35ff2007da53509c8808e82ae601a9b53a",
+    "failed_stage": "collection",
+    "interrupted_end_state_fingerprint_available": false,
+    "repeated_model_evaluations": 0,
+    "reserved_unexecuted_slots": 1,
+    "resumed_start_and_end_match_original_start": true,
+    "resumed_unrun_inputs": 901
+  },
+  "limitations": [
+    "user-directed extension of a negative screen, not confirmation of a positive pilot",
+    "related difficulty views and previous hard development exposure; unknown training overlap",
+    "component-sum estimates with instrumentation sensitivity, not measured online latency",
+    "no population impossibility claim; adaptive final sets remain reserved",
+    "historical hard baseline +0.15pp discrepancy unresolved; no easy-paper number parity claimed"
+  ],
+  "model_free_verification": {
+    "command": "scripts/finalize_sudoku_easy_r3.py --verify",
+    "matplotlib_imported": false,
+    "numpy_used": true,
+    "recomputes_labels_costs_bootstrap_gates": true,
+    "replays_cuda_parity": false,
+    "status": "passed",
+    "torch_imported": false
+  },
+  "new_decoder_forwards": 31536,
+  "new_encoder_forwards": 0,
+  "new_generator_level_evaluations": 52536,
+  "new_input_generations": 4378,
+  "next_action": "retain no-go; no Phase 2; a new method/task needs an explicit work order",
+  "official_baseline": {
+    "cell_percent": 99.97,
+    "score_precision": "percentages rounded by unchanged official evaluator",
+    "scoring": "official decoded-text metrics; no independent clue rescoring of reserved outputs",
+    "solved": 1988,
+    "solved_percent": 99.4,
+    "total": 2000,
+    "valid_grid_percent": 99.4
+  },
+  "original_hard_no_go_unchanged": true,
+  "prior_compatibility_review_archive": {
+    "directory": "results/phase1/reviews/2026-10-22-r2",
+    "sha256": {
+      "review_tests.xml": "9d193cdb356dcd2e6b57868cad5e704b3d053cdd7774c942fe4c614706526c24",
+      "review_validation.json": "468b92707998a8c2095a2443166f92c97c2e31a0d3f4226702c0c84cdfe9100a"
+    }
+  },
+  "profile_collection_code_disagreements": 0,
+  "profile_collection_output_disagreements": 0,
+  "report_only_correction": "cost-quality plot uses the same 100 development profiling identities for both methods",
+  "report_only_source_sha256": {
+    "scripts/finalize_sudoku_easy_r3.py": "b9ad0f9e164d1846b5ea2105221204860734eb9613105e96133789a473fddeff"
+  },
+  "report_provenance_sha256": "3c0df45586af8a0bd8b7db88cf34f8fc0b6b39fb3bbae4eb1df880b8b1095449",
+  "reused_R2_exploration_inputs": 32,
+  "schema_version": 1,
+  "setting": "easy",
+  "source_sha256": {
+    "configs/r3_easy.json": "10a9390a40649baa0d183d838b8b18750e4d06c0936aac2c18027e2c17d6521b",
+    "docs/studies/sudoku-easy-r3-protocol.md": "5898ad96db313378a7751db7466d7a7ffb1d31dbb6a24ba0d60c777f228ed70b",
+    "scripts/audit_sudoku_easy.py": "48f820b4cda094a2980d408fdd5b4734c3ee4b46b6de38667884e26bfeb9dd72",
+    "src/anytime_ncm/audit.py": "39650887f58f9e30417696797fe86ab5d02bfbb46d69d34a5c12dc13a16c71a9",
+    "src/anytime_ncm/audit_inference.py": "42d306a8ca23285133c7a0c6b4bae055a5f0219d294c978ce08f28f1fb9c25b0",
+    "src/anytime_ncm/audit_render.py": "d66fcf38e8656c3dac2c72089ca81dd69d078a7956f0541d7cc70ff77230b34a",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/screening.py": "bd67f497e875220d06481d92208a412ff3c6969f4aeea1b00f71b3ea71a35cb1",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/timing.py": "08188113f9dd8cb787861f950fbd0d9e235fce0bc4d5681620bf3cdd524209f8",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_audit.py": "9167b7e7fab1f5540feb86158b1e87f46b13328fd102fa0842aad9797ff72600",
+    "third_party/ncm/evaluate.py": "edd0d5a09edba7f190f184f442b5001061f843225bf126e926fa7c91992a05f1",
+    "third_party/ncm/scripts/eval_merge.py": "f166d7e4a2785c1326ad1c242806a22cb32f959d9b073f1ec42fb0db0ff51de4",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb"
+  },
+  "stage_counts": {
+    "baseline": {
+      "official_inputs": 2000
+    },
+    "collection": {
+      "decoder": 16416,
+      "encoder": 0,
+      "generator_levels": 16416,
+      "independent_prefix": 1368,
+      "inputs": 1368,
+      "latent_parity": 1368
+    },
+    "profiles": {
+      "decoder": 13120,
+      "encoder": 0,
+      "generator_levels": 12120,
+      "independent_prefix": 0,
+      "inputs": 1010,
+      "latent_parity": 1000
+    }
+  },
+  "stage_metadata_sha256": {
+    "baseline": "2799b9707cd7af0239d366229b06da5d3fc874ce0c48c07a08672d3f3d181761",
+    "collection": "74a20e42506c3303aa574d9b43e1bd0b88249b9b53c5c958ed97c8343d71ad19",
+    "profiles": "99afdc82a52578bfc1bcd624172e3f17ad4bfedccab51e517ed99a0d1eac92d1"
+  },
+  "status": "complete",
+  "study": "R3",
+  "tests": {
+    "R3_tests": 19,
+    "by_module": {
+      "tests.test_audit": 19,
+      "tests.test_audit_resume": 9,
+      "tests.test_collection": 52,
+      "tests.test_diagnosis": 29,
+      "tests.test_full_depth_equivalence": 3,
+      "tests.test_partial_decoder": 26,
+      "tests.test_report": 28,
+      "tests.test_screening": 38,
+      "tests.test_sudoku_validator": 59,
+      "tests.test_target_encoding": 26,
+      "tests.test_timing": 21
+    },
+    "errors": 0,
+    "failures": 0,
+    "junit_suite_seconds": 13.782,
+    "passed": 310,
+    "pytest_reported_seconds": 13.78,
+    "report": "results/followup/sudoku_easy_r3/tests.xml",
+    "report_sha256": "a03aecf59526e3f653871cae19c43115d2611a770666dea015ff6866400733a8",
+    "resumption_tests": 9,
+    "skipped": 0
+  },
+  "timed_requests": 1000,
+  "trajectory_inputs_by_partition": {
+    "development": 400,
+    "exploration": 1000
+  },
+  "warmups": 10
+}

@@ -14,3 +14,4 @@
 *.csv text eol=lf
 .gitattributes text eol=lf
 *.xml text eol=lf
+results/followup/sudoku_easy_r3/baseline.log text eol=lf

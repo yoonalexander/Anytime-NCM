@@ -46,9 +46,9 @@
     "warmups": 10
   },
   "source_sha256": {
-    ".gitattributes": "24cc7993d81a5bfaad93b6139c4bdd5b1c92a466f6ad6025fbc8adbe43fae360",
-    "README.md": "b2875cd12f8e919ed2e4430de1e61a43182fd9b991f7e0cab9959d42f892752a",
-    "ROADMAP.md": "ad6d1361eb579989f2b5e1565e7464191a4197221af54d7d9efb8b1f40c4dfa6",
+    ".gitattributes": "25562d72a26404efb38de44c54e3e304da9c2086844194b89358ae2ab853fa7a",
+    "README.md": "fcf71d5fc373e43b9fd64b3d257c0c18092962a1c87d85bae65a15ab96848fc9",
+    "ROADMAP.md": "4fb2f479c794a169c0540ea56f04a28369e8031607b7a80180a46367f8bfd6c7",
     "docs/phase1_review.md": "f6a508ea33d8453ab0d1dd3d43fe6c4125bdf5add9727a3f4b67291315da7a7c",
     "docs/phase1d_analysis_plan.md": "84895d437aa1031a6a2adc0bcb1c2e1d82e0616a1f2a8b70ef52792e53d69e19",
     "docs/phase1d_profiling.md": "0e92562c046664777148c68815ff9dd889e50f045e7747334e001f8ec15a217b",
@@ -57,6 +57,9 @@
     "scripts/verify_phase1d.py": "a2d57753dc1ca4b9aa143b522a40184e8a93613eb87eeced3c99943205bb8df0",
     "src/anytime_ncm/__init__.py": "bd2bdea7e37b30f857693bcb3da7d1e44fbcea9ca9a2e66caa4b6ffc5407b4e1",
     "src/anytime_ncm/__main__.py": "1e73ffd2a0d9159307ccb92bf7989be89d9839a0503c0e062d21050469bff3cf",
+    "src/anytime_ncm/audit.py": "39650887f58f9e30417696797fe86ab5d02bfbb46d69d34a5c12dc13a16c71a9",
+    "src/anytime_ncm/audit_inference.py": "42d306a8ca23285133c7a0c6b4bae055a5f0219d294c978ce08f28f1fb9c25b0",
+    "src/anytime_ncm/audit_render.py": "d66fcf38e8656c3dac2c72089ca81dd69d078a7956f0541d7cc70ff77230b34a",
     "src/anytime_ncm/benchmark.py": "f74cdc6d9e8430b21d2155ee00ef000c9dde6b64d76e7489f0a5c381b1f40698",
     "src/anytime_ncm/cli.py": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54",
     "src/anytime_ncm/collect.py": "4fd45677b4d5d4a801e6f67b9abcd6a41ed96e715f61e03062ca42c267b653c9",
@@ -79,6 +82,8 @@
     "src/anytime_ncm/train_policy.py": "8714a0ad062912755dcf2408cfc945fa9474235bedcdb795ea00db0bd5ffac48",
     "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
     "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_audit.py": "9167b7e7fab1f5540feb86158b1e87f46b13328fd102fa0842aad9797ff72600",
+    "tests/test_audit_resume.py": "35ccae007e23088724d0b5ff11719db97f151fd1be99f717dab6a48f1c8fb80d",
     "tests/test_collection.py": "1823b44a9cf1d296cf52eb58daa99d1fbca991659a3151e61d197f79a5440711",
     "tests/test_diagnosis.py": "b06a5220d50e5e78a3541a27328365326d5b236a921847c34c08bb95f97edac3",
     "tests/test_full_depth_equivalence.py": "198e667f5bc06a4ef43923e7fe1964b21e13cbf91f0acc4f975b829902f0bd5e",
@@ -93,6 +98,8 @@
   "status": "complete",
   "tests": {
     "by_module": {
+      "tests.test_audit": 19,
+      "tests.test_audit_resume": 9,
       "tests.test_collection": 52,
       "tests.test_diagnosis": 29,
       "tests.test_full_depth_equivalence": 3,
@@ -106,10 +113,10 @@
     "errors": 0,
     "exit_code": 0,
     "failed": 0,
-    "junit_suite_seconds": 14.034,
-    "passed": 282,
+    "junit_suite_seconds": 13.782,
+    "passed": 310,
     "report": "results/phase1/review_tests.xml",
-    "report_sha256": "9d193cdb356dcd2e6b57868cad5e704b3d053cdd7774c942fe4c614706526c24",
+    "report_sha256": "a03aecf59526e3f653871cae19c43115d2611a770666dea015ff6866400733a8",
     "skipped": 0
   }
 }

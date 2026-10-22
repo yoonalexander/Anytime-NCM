@@ -1,0 +1,912 @@
+{
+  "R2_qualified": false,
+  "calibration_sensitivity_costs": {
+    "development": {
+      "baseline_ms": {
+        "mean": 103.87375456571625,
+        "median": 102.5962240011139,
+        "p95": 112.83952261765137
+      },
+      "baseline_valid_rate": 0.98,
+      "mean_skipped_codes": 0.0,
+      "mean_skipped_levels": 0.0,
+      "paired": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.3768378719114811,
+        "relative_mean_reduction_ci95": [
+          -0.3806066543091732,
+          -0.3733060618330385
+        ],
+        "repeats_per_identity": 5,
+        "resamples": 10000,
+        "seed": 20261020
+      },
+      "verified_ms": {
+        "mean": 143.01731918371627,
+        "median": 141.46513928201296,
+        "p95": 153.19617811911317
+      },
+      "verified_valid_rate": 0.98
+    },
+    "exploration": {
+      "baseline_ms": {
+        "mean": 103.16122694825549,
+        "median": 102.54402815618897,
+        "p95": 111.88690557416687
+      },
+      "baseline_valid_rate": 1.0,
+      "mean_skipped_codes": 0.0,
+      "mean_skipped_levels": 0.0,
+      "paired": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.3790673507752542,
+        "relative_mean_reduction_ci95": [
+          -0.3818520904007107,
+          -0.3763367562325424
+        ],
+        "repeats_per_identity": 5,
+        "resamples": 10000,
+        "seed": 20261020
+      },
+      "verified_ms": {
+        "mean": 142.26627995025547,
+        "median": 141.34143728327942,
+        "p95": 151.8281232509842
+      },
+      "verified_valid_rate": 1.0
+    }
+  },
+  "calibration_sensitivity_gate": "no-go",
+  "collection_primary_solve_loss_counts": {
+    "development": 0,
+    "exploration": 0
+  },
+  "coverage": {
+    "adapter_profile_final_rows_materialized": 0,
+    "headline_online_requests": 0,
+    "new_collection_inputs": 1368,
+    "official_baseline_inputs": 2000,
+    "profile_identities": 200,
+    "profile_repeats": 5,
+    "reused_R2_inputs": 32,
+    "timed_requests": 1000,
+    "total_new_decoder_forwards": 31536,
+    "total_new_generations": 4378,
+    "trajectory_inputs": 1400,
+    "trajectory_levels": 16800,
+    "warmups": 10
+  },
+  "decision": "no-go",
+  "development_selected_quality_feasible_fixed_depth": {
+    "collection_valid_rate": 0.99,
+    "level": 12,
+    "mean_estimated_ms": 104.22420456571625,
+    "profile_valid_rate": 0.98
+  },
+  "entry_exception": "user-directed extension after negative R2; no R2 qualification",
+  "false_verifier_accepts": 0,
+  "fixed_depth_comparison": {
+    "development": [
+      {
+        "collection_valid_rate": 0.0,
+        "level": 1,
+        "mean_estimated_ms": 11.8671629149494,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 2,
+        "mean_estimated_ms": 20.322105134839045,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 3,
+        "mean_estimated_ms": 28.721904597177552,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 4,
+        "mean_estimated_ms": 37.15281899231659,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 5,
+        "mean_estimated_ms": 45.59979604059973,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 6,
+        "mean_estimated_ms": 53.71137304604596,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 7,
+        "mean_estimated_ms": 62.163591414610956,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 8,
+        "mean_estimated_ms": 70.62227031914564,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 9,
+        "mean_estimated_ms": 78.78744711231775,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 10,
+        "mean_estimated_ms": 87.33258646128564,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 11,
+        "mean_estimated_ms": 95.80773177556291,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.99,
+        "level": 12,
+        "mean_estimated_ms": 104.22420456571625,
+        "profile_valid_rate": 0.98
+      }
+    ],
+    "exploration": [
+      {
+        "collection_valid_rate": 0.0,
+        "level": 1,
+        "mean_estimated_ms": 11.700398788135496,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 2,
+        "mean_estimated_ms": 20.124472973636475,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 3,
+        "mean_estimated_ms": 28.580505672095704,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 4,
+        "mean_estimated_ms": 36.94692210878119,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 5,
+        "mean_estimated_ms": 45.36590711061127,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 6,
+        "mean_estimated_ms": 53.47406280956555,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 7,
+        "mean_estimated_ms": 61.85149585549566,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 8,
+        "mean_estimated_ms": 70.27317613247523,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 9,
+        "mean_estimated_ms": 78.42919818732928,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 10,
+        "mean_estimated_ms": 86.87286524226813,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.0,
+        "level": 11,
+        "mean_estimated_ms": 95.32767182366497,
+        "profile_valid_rate": 0.0
+      },
+      {
+        "collection_valid_rate": 0.994,
+        "level": 12,
+        "mean_estimated_ms": 103.51167694825548,
+        "profile_valid_rate": 1.0
+      }
+    ]
+  },
+  "independent_validity_disagreements": 0,
+  "measurement": "instrumented component-sum estimates; no observed online latency or speedup",
+  "official_baseline": {
+    "cell_percent": 99.97,
+    "score_precision": "percentages rounded by unchanged official evaluator",
+    "scoring": "official decoded-text metrics; no independent clue rescoring of reserved outputs",
+    "solved": 1988,
+    "solved_percent": 99.4,
+    "total": 2000,
+    "valid_grid_percent": 99.4
+  },
+  "profile_collection_any_output_disagreements": 0,
+  "profile_collection_code_disagreements": 0,
+  "profile_costs": {
+    "development": {
+      "baseline_ms": {
+        "mean": 104.22420456571624,
+        "median": 102.94667400111389,
+        "p95": 113.18997261765136
+      },
+      "baseline_valid_rate": 0.98,
+      "mean_skipped_codes": 0.0,
+      "mean_skipped_levels": 0.0,
+      "paired": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.39313560884184673,
+        "relative_mean_reduction_ci95": [
+          -0.3968292727723162,
+          -0.3896420541743036
+        ],
+        "repeats_per_identity": 5,
+        "resamples": 10000,
+        "seed": 20261020
+      },
+      "verified_ms": {
+        "mean": 145.19845068371626,
+        "median": 143.64627078201295,
+        "p95": 155.37730961911316
+      },
+      "verified_valid_rate": 0.98
+    },
+    "exploration": {
+      "baseline_ms": {
+        "mean": 103.5116769482555,
+        "median": 102.89447815618897,
+        "p95": 112.23735557416686
+      },
+      "baseline_valid_rate": 1.0,
+      "mean_skipped_codes": 0.0,
+      "mean_skipped_levels": 0.0,
+      "paired": {
+        "identities": 100,
+        "quality_difference": 0.0,
+        "quality_difference_ci95": [
+          0.0,
+          0.0
+        ],
+        "relative_mean_reduction": -0.39546972582101403,
+        "relative_mean_reduction_ci95": [
+          -0.3982501763578165,
+          -0.39274843239859003
+        ],
+        "repeats_per_identity": 5,
+        "resamples": 10000,
+        "seed": 20261020
+      },
+      "verified_ms": {
+        "mean": 144.4474114502555,
+        "median": 143.5225687832794,
+        "p95": 154.00925475098416
+      },
+      "verified_valid_rate": 1.0
+    }
+  },
+  "representative_cases": {
+    "late_success": {
+      "dataset_index": 0,
+      "decoded_text_by_level": [
+        "955581231|918681735|913587839|299363923|395178923|358978923|826237396|529839397|127899386",
+        "955581131|918681735|913587869|299363923|395178923|358978923|829237396|529839397|127899386",
+        "999981831|912581739|583997669|299378923|315178923|258968923|829117396|525839317|827899312",
+        "999581831|888611599|555917869|292378728|111168923|858968973|826117396|191887317|827899316",
+        "999581831|888611599|595617869|292378723|111168923|858968923|826117396|191887317|827899316",
+        "951948838|746881555|535917667|295318988|111185923|888861111|255117396|969133252|337189116",
+        "921145855|776635159|595918446|222369989|999158623|388321911|215199396|961137555|333597116",
+        "211647855|776722991|583917624|452369987|179158663|338721441|215773346|668184555|335297116",
+        "991647755|776435991|583916764|452369981|179456623|836721549|215578836|691133555|345996111",
+        "921677385|774435991|583912764|452369971|179458663|836721544|217584436|698173552|335296117",
+        "991647335|764835991|583912764|452369778|179458623|836721549|217554936|661173552|345296817",
+        "921647385|764835291|583912764|452369178|179458623|836721549|217584936|698173452|345296817"
+      ],
+      "sample_id": "d28445172bf87e000d225d78e7f66a8e9724706cef5ea1dbb81c7b60163d50d9",
+      "valid_by_level": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        true
+      ]
+    },
+    "never_solved": {
+      "dataset_index": 251,
+      "decoded_text_by_level": [
+        "898693793|768793593|191793893|977979532|913952932|985232932|839327319|787825375|639825369",
+        "598693893|555793593|191593893|987979532|913985932|985252932|839327319|787825379|139825389",
+        "888693593|768793193|991893888|977989531|913185932|985252937|889826319|988815359|137825389",
+        "888553593|588553823|393893898|257919531|113185552|585252931|859526319|937825359|131829365",
+        "888553593|585553823|393893898|257969531|113185552|885252131|859526319|937825359|131829365",
+        "892193555|555496666|666893893|974951538|363988484|888582931|899895324|522221888|111825355",
+        "888911553|551438996|995781823|274958138|366357774|585139939|889897374|555627889|711835355",
+        "888611577|557448926|665758823|274956138|361182724|587716939|829167374|445529881|711889265",
+        "338691455|715342296|694778813|942756138|361984755|557713499|829165374|456627881|773849255",
+        "283699145|775432296|964578823|942556138|366988427|587223469|829165374|456327911|713889655",
+        "288691775|175432896|694578213|947556138|361988552|557213469|829165374|456327981|733899655",
+        "238691745|175432896|694578213|942756138|361984527|587213469|829165374|456327981|713849655"
+      ],
+      "sample_id": "1838bfe1b61cd93fa6dd6d575b313e3f0a5fc782950ee9980467d0b8626d3e06",
+      "valid_by_level": [
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false,
+        false
+      ]
+    }
+  },
+  "setting": "easy",
+  "study": "R3",
+  "trajectory_summary": {
+    "development": {
+      "ever_valid_count": 396,
+      "first_valid_counts": {
+        "1": 0,
+        "10": 0,
+        "11": 0,
+        "12": 396,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "never": 4
+      },
+      "inputs": 400,
+      "never_solved_count": 4,
+      "never_solved_fraction": 0.01,
+      "puzzles_with_valid_to_invalid": 0,
+      "quality_by_level": [
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 397,
+          "grid_valid_count": 0,
+          "level": 1,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.14901234567901234,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 400,
+          "parseable_incomplete_count": 3,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 2,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.14944444444444444,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 3,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.17277777777777778,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 4,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.20725308641975307,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 5,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.20410493827160495,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 6,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.2892901234567901,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 7,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.36358024691358026,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 8,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.4944444444444444,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 9,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.6541975308641974,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 10,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.8170679012345679,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 398,
+          "grid_valid_count": 0,
+          "level": 11,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.8646913580246914,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 399,
+          "parseable_incomplete_count": 1,
+          "reference_agreement_count": 0,
+          "unparseable_count": 1,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 400,
+          "complete_count": 400,
+          "grid_valid_count": 396,
+          "level": 12,
+          "official_cell_accuracy_defined_count": 400,
+          "official_cell_accuracy_mean": 0.9993827160493827,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 396,
+          "official_valid_grid_count": 396,
+          "parseable_count": 400,
+          "parseable_incomplete_count": 0,
+          "reference_agreement_count": 396,
+          "unparseable_count": 0,
+          "valid_solution_count": 396
+        }
+      ],
+      "reference_solved_count_by_level": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        396
+      ],
+      "valid_solution_count_by_level": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        396
+      ],
+      "valid_to_invalid_transition_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "exploration": {
+      "ever_valid_count": 994,
+      "first_valid_counts": {
+        "1": 0,
+        "10": 0,
+        "11": 0,
+        "12": 994,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0,
+        "9": 0,
+        "never": 6
+      },
+      "inputs": 1000,
+      "never_solved_count": 6,
+      "never_solved_fraction": 0.006,
+      "puzzles_with_valid_to_invalid": 0,
+      "quality_by_level": [
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 989,
+          "grid_valid_count": 0,
+          "level": 1,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.14835802469135803,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 11,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 2,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.1482716049382716,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 3,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.1708148148148148,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 4,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.20903703703703705,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 5,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.20701234567901233,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 6,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.2887901234567901,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 7,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.3614691358024691,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 8,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.4924197530864197,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 0,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 9,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.6523333333333333,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 1,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 10,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.8170864197530864,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 3,
+          "complete_count": 991,
+          "grid_valid_count": 0,
+          "level": 11,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.8677530864197531,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 0,
+          "official_valid_grid_count": 0,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 9,
+          "reference_agreement_count": 0,
+          "unparseable_count": 0,
+          "valid_solution_count": 0
+        },
+        {
+          "clue_consistent_count": 998,
+          "complete_count": 1000,
+          "grid_valid_count": 994,
+          "level": 12,
+          "official_cell_accuracy_defined_count": 1000,
+          "official_cell_accuracy_mean": 0.9998395061728395,
+          "official_cell_accuracy_undefined_count": 0,
+          "official_solved_count": 994,
+          "official_valid_grid_count": 994,
+          "parseable_count": 1000,
+          "parseable_incomplete_count": 0,
+          "reference_agreement_count": 994,
+          "unparseable_count": 0,
+          "valid_solution_count": 994
+        }
+      ],
+      "reference_solved_count_by_level": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        994
+      ],
+      "valid_solution_count_by_level": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        994
+      ],
+      "valid_to_invalid_transition_counts": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "uncorrected_gate": "no-go"
+}

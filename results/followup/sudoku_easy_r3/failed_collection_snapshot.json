@@ -1,0 +1,17 @@
+{
+  "completed_new_generations": 467,
+  "completed_rows": 499,
+  "failed_metadata_sha256": "8a81a2e911709e0391b8b3bab9852ab541d00aeafd270d86318963c8802235d1",
+  "initial_tests_sha256": "fb6e7e4e9245c13cf62bd6622c778c886e6cefab3e3929b25f313cda90aef872",
+  "pending_reserved_dataset_index": 670,
+  "prefixes": {
+    "prefix_checks.jsonl": {
+      "bytes": 167133,
+      "sha256": "e94c4405eb192a940a59b2ee7f296a3fd3307de34512cb1cadd49f804caf0efa"
+    },
+    "trajectories.jsonl": {
+      "bytes": 6756880,
+      "sha256": "4c19b429f5dbfda211c67673bf74a62f6aa9a6e9817da32faf9a02b040465b93"
+    }
+  }
+}

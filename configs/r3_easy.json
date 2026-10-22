@@ -1,0 +1,21 @@
+{
+  "study": "R3",
+  "candidate": "easy",
+  "base_commit": "5ed6611cff2a10c2d79d4d4271a0149d47fe2335",
+  "entry_exception": "user-directed extension after negative R2; no R2 qualification",
+  "partitions": {
+    "exploration": 1000,
+    "development": 400
+  },
+  "reused_R2_exploration": 32,
+  "collection_batch_size": 1,
+  "baseline_inputs": 2000,
+  "profile_inputs_per_partition": 100,
+  "profile_repeats": 5,
+  "warmups": 10,
+  "calibration_iterations": 100,
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20261020,
+  "new_generation_budget": 4378,
+  "new_decoder_budget": 31536
+}

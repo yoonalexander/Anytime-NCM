@@ -1,0 +1,73 @@
+{
+  "artifacts_sha256": {},
+  "base_commit": "5ed6611cff2a10c2d79d4d4271a0149d47fe2335",
+  "batch_size": 1,
+  "completed_inputs": 499,
+  "counts": {
+    "decoder": 5604,
+    "encoder": 0,
+    "generator_levels": 5604,
+    "independent_prefix": 467,
+    "inputs": 468,
+    "latent_parity": 467
+  },
+  "entry_exception": "user-directed extension after negative R2; no R2 qualification",
+  "error": "OSError(22, 'Invalid argument')",
+  "final_rows_materialized": 0,
+  "finished_utc": "2026-10-22T09:56:06.931646+00:00",
+  "inputs_sha256": {
+    "artifacts/sudoku/easy/config.yaml": "68d74fe310e909ca1892338258a2d7143293e685ec1c4747265d9134013d1605",
+    "artifacts/sudoku/easy/generator.pt": "1cefebcd1eae0e210b7e991fdce0e86964d0e897e94a3b432d1008ab92d9926e",
+    "artifacts/sudoku/easy/tokenizer.pt": "3f9c87e99fd49900929cd650181f55bf00530280416992b11ddc4ea869b39d68",
+    "data/sudoku/easy/puzzles.pickle": "403353dd5d11e49d42627aee84c7b1ceb399fda03d01f6210ce78d0e61f2b29d",
+    "data/sudoku/easy/solutions.pickle": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576",
+    "docs/experiment_protocol.md": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "docs/partitions/sudoku-easy-r2.json": "d898977c35e234d2f2843188073b241cec362fc163141b98323835778ebfc5d3",
+    "docs/partitions/sudoku-hard.json": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "results/followup/sudoku_checkpoint_screen/easy/preflight.json": "986220e04cf94a6ec3d4523a3b1387eb588ebe4dfce2bbbf1ca5ed11a8a133ad",
+    "results/followup/sudoku_checkpoint_screen/easy/provenance.json": "56395392627b74058073180fa8020c69de309d8ff8f3703e098f41dd115ebc22",
+    "results/followup/sudoku_checkpoint_screen/easy/records.jsonl": "df0b44aabde6136881f36353d4ca2180f8e752ed29eca498133ebb8c619786e7"
+  },
+  "limits": {
+    "decoder": 16416,
+    "encoder": 0,
+    "generator_levels": 16416,
+    "independent_prefix": 1368,
+    "inputs": 1368,
+    "latent_parity": 1368
+  },
+  "new_completed_inputs": 467,
+  "reused_inputs": 32,
+  "source_sha256": {
+    "configs/r3_easy.json": "10a9390a40649baa0d183d838b8b18750e4d06c0936aac2c18027e2c17d6521b",
+    "docs/studies/sudoku-easy-r3-protocol.md": "5898ad96db313378a7751db7466d7a7ffb1d31dbb6a24ba0d60c777f228ed70b",
+    "scripts/audit_sudoku_easy.py": "48f820b4cda094a2980d408fdd5b4734c3ee4b46b6de38667884e26bfeb9dd72",
+    "src/anytime_ncm/audit.py": "39650887f58f9e30417696797fe86ab5d02bfbb46d69d34a5c12dc13a16c71a9",
+    "src/anytime_ncm/audit_inference.py": "42d306a8ca23285133c7a0c6b4bae055a5f0219d294c978ce08f28f1fb9c25b0",
+    "src/anytime_ncm/audit_render.py": "d66fcf38e8656c3dac2c72089ca81dd69d078a7956f0541d7cc70ff77230b34a",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/screening.py": "bd67f497e875220d06481d92208a412ff3c6969f4aeea1b00f71b3ea71a35cb1",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/timing.py": "08188113f9dd8cb787861f950fbd0d9e235fce0bc4d5681620bf3cdd524209f8",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_audit.py": "9167b7e7fab1f5540feb86158b1e87f46b13328fd102fa0842aad9797ff72600",
+    "third_party/ncm/evaluate.py": "edd0d5a09edba7f190f184f442b5001061f843225bf126e926fa7c91992a05f1",
+    "third_party/ncm/scripts/eval_merge.py": "f166d7e4a2785c1326ad1c242806a22cb32f959d9b073f1ec42fb0db0ff51de4",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb"
+  },
+  "stage": "collection",
+  "started_utc": "2026-10-22T09:54:51.387456+00:00",
+  "state_before": {
+    "generator": "753e5e760a1b4ef8d846f966f5ab9f96bd85c7bf45ae03075c41d17bbe1dba62",
+    "tokenizer": "7ccbd14a99b99fca4ebd3e5869fe5d279f24682af1f6475fd23c8541209bfb4a"
+  },
+  "status": "failed",
+  "study": "R3",
+  "timed_requests": 0,
+  "warmups": 0
+}

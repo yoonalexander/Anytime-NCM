@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; the current suite passes 282 tests, including 29 R1A, 26 R1B, and 38 R2 tests. Both subsequent 32-input easy/medium screens also found no early valid outputs; the released-Sudoku first-valid path is closed at this budget. See the [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
+**Current stage:** **Phase 1 is complete with a no-go decision.** None of the 1,400 exploration/development puzzles had a valid solution before level 12. Every-level verified stopping added an estimated **44.18% cost** on the development profile (95% interval 43.45%-45.02%). See the [research report](results/phase1/summary.md). Phase 2's entry gate is not met; no online speedup is claimed. The [October 21 Phase 1 review](docs/phase1_review.md) completed missing quality summaries; the current suite passes 310 tests, including 29 R1A, 26 R1B, 38 R2, and 28 R3/resumption tests. Both subsequent 32-input easy/medium screens also found no early valid outputs; the released-Sudoku first-valid path is closed at this budget. See the [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
 
 ## Contents
 
@@ -56,7 +56,7 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Headline online adaptive benchmarks | Not started |
 | Online stopping and learned controller | Planned, conditional on research gates |
-| Executable research tests | 282 passed; timing/statistics/report checks included; online halting tests remain pending |
+| Executable research tests | 310 passed; timing/statistics/report checks included; online halting tests remain pending |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; online adaptive inference is pending.
@@ -88,6 +88,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [R1A error diagnosis](results/followup/sudoku_prefix_diagnosis/summary.md) | Exploration-only reference/clue/unit error distributions and adjacent-level changes |
 | [R1B target encoding](results/followup/sudoku_target_encoding/summary.md) | Frozen 32-reference reconstruction pilot versus cached generated prefixes |
 | [R2 checkpoint screens](results/followup/sudoku_checkpoint_screen/summary.md) | Completed bounded easy/medium screens, shared-reference reservations, and negative exit |
+| [R3 easy extension](results/followup/sudoku_easy_r3/summary.md) | Explicitly requested extension after negative R2; 1,400-input audit, estimated costs, and new no-go |
 | [Design document](Anytime_NCM_Design_Document.md) | Technical design and scientific requirements |
 | [DESIGN.md](DESIGN.md) | Entry point to the original design document |
 | [Experiment protocol](docs/experiment_protocol.md) | Frozen partitions, budgets, metrics, timing boundaries, and statistical procedure |
@@ -457,4 +458,19 @@ Each candidate used 32 official comparator plus 32 adapter generations, 768 gene
 python scripts/screen_sudoku_checkpoints.py --verify
 ~~~
 
-The verifier checks saved records without model or plotting imports; it does not rerun CUDA parity. The inference budget is consumed. [Frozen protocol](docs/studies/sudoku-checkpoint-screen-protocol.md), [pinned release inventory](configs/r2_sources.json), and [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json) document the execution. All 282 tests pass, including 38 new R2 tests. R3, online stopping, and a new task study have not started.
+The verifier checks saved records without model or plotting imports; it does not rerun CUDA parity. The inference budget is consumed. [Frozen protocol](docs/studies/sudoku-checkpoint-screen-protocol.md), [pinned release inventory](configs/r2_sources.json), and [completion evidence](results/followup/sudoku_checkpoint_screen/completion.json) document the execution. All 282 tests pass, including 38 new R2 tests. At R2 completion R3 had not started; the subsequently requested extension is documented below. Online stopping and a new task study remain unstarted.
+
+
+## R3 easy-Sudoku extension
+
+R3 easy-Sudoku extension is complete with **no-go**: no early valid solution among 1,000 exploration and 400 development inputs. Final primary validity was 994/1,000 and 396/400. Development component-sum estimates were 104.22 ms full depth versus 145.20 ms every-level verified, an estimated 39.31% cost increase (paired 95% interval 38.96%–39.68%). These are not measured online latencies. All 310 tests pass, including 28 new R3/resumption tests.
+
+The user requested this extension after receiving the negative R2 results. Its [separate protocol](docs/studies/sudoku-easy-r3-protocol.md) selects easy by the existing candidate order and preserves the failed R2 entry gate. It reuses the original 32 screen trajectories within the 1,400 total, adds the unchanged official 2,000-input aggregate baseline (1,988 solved), and profiles exactly 100 identities per permitted partition, five repeats each, after ten exploration warmups. Both final adaptive-policy partitions remain reserved; the official baseline scores them internally with aggregate-only inspection. Difficulty views share solution rows and are not independent datasets.
+
+A metadata-write interruption was retained and completed under the [resumption amendment](docs/studies/sudoku-easy-r3-resumption-amendment.md), with no repeated model generation. The total allocation stayed 4,378 new generations and 31,536 decoder forwards. Report-only plot correction uses the same 100 development profiling identities for both methods.
+
+~~~powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/finalize_sudoku_easy_r3.py','--verify')
+~~~
+
+This verifies original execution sources, amendment/report-only sources, pre-resumption file prefixes, labels, costs, bootstrap and gates without torch/matplotlib or official raw-prediction access. It does not replay CUDA parity. [Report](results/followup/sudoku_easy_r3/summary.md), [configuration](configs/r3_easy.json), and [completion evidence](results/followup/sudoku_easy_r3/completion.json). Phase 2 and task-change work have not started.

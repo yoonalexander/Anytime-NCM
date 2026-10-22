@@ -1,0 +1,6 @@
+[evaluate] 1 shard(s) on GPU(s) 0 -> /mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/results/followup/sudoku_easy_r3/raw/official_baseline/
+
+merged 1 shards -> 2000 sudoku-easy outputs
+
+ solved %  solved  cell %  valid %
+    99.40 1988/2000   99.97    99.40

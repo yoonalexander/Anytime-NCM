@@ -1,0 +1,56 @@
+{
+  "artifacts_sha256": {
+    "analysis.json": "3519527e0ab1efe9db6a2cbb72a06871fa964ef9928fd6fd29197d7443cbf812",
+    "audit_comparison.png": "740d73893f2b84f6c60129d0334b4dba8e87d2c35feee3a2dbb09db396529ca8",
+    "summary.md": "11df4af79cdac8907e4db0f6a2f7bfde3a8adb270bd0287b10eb8bd196563614",
+    "trajectory_table.csv": "033cca39a523d8f0f6a009689d2a3cf90013daa70f7f710c86e344a81eaa96f2"
+  },
+  "execution_amendment_sha256": {
+    "docs/studies/sudoku-easy-r3-resumption-amendment.md": "3e2b22fc08766d2fa5f1206f41b84cc302c801397f6a88a71d1184d1983a4e0c",
+    "scripts/resume_sudoku_easy_r3.py": "b1a0996991b4e7bd32315ae512792415a382677b6107df07f6d5e2736fab4cc3",
+    "tests/test_audit_resume.py": "35ccae007e23088724d0b5ff11719db97f151fd1be99f717dab6a48f1c8fb80d"
+  },
+  "report_only_source_sha256": {
+    "scripts/finalize_sudoku_easy_r3.py": "b9ad0f9e164d1846b5ea2105221204860734eb9613105e96133789a473fddeff"
+  },
+  "source_sha256": {
+    "configs/r3_easy.json": "10a9390a40649baa0d183d838b8b18750e4d06c0936aac2c18027e2c17d6521b",
+    "docs/studies/sudoku-easy-r3-protocol.md": "5898ad96db313378a7751db7466d7a7ffb1d31dbb6a24ba0d60c777f228ed70b",
+    "scripts/audit_sudoku_easy.py": "48f820b4cda094a2980d408fdd5b4734c3ee4b46b6de38667884e26bfeb9dd72",
+    "src/anytime_ncm/audit.py": "39650887f58f9e30417696797fe86ab5d02bfbb46d69d34a5c12dc13a16c71a9",
+    "src/anytime_ncm/audit_inference.py": "42d306a8ca23285133c7a0c6b4bae055a5f0219d294c978ce08f28f1fb9c25b0",
+    "src/anytime_ncm/audit_render.py": "d66fcf38e8656c3dac2c72089ca81dd69d078a7956f0541d7cc70ff77230b34a",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/features.py": "bf510ebe7a0640f3ca30748193a34baedc6199739f47d2ba169062eda84eef09",
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/screening.py": "bd67f497e875220d06481d92208a412ff3c6969f4aeea1b00f71b3ea71a35cb1",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/timing.py": "08188113f9dd8cb787861f950fbd0d9e235fce0bc4d5681620bf3cdd524209f8",
+    "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_audit.py": "9167b7e7fab1f5540feb86158b1e87f46b13328fd102fa0842aad9797ff72600",
+    "third_party/ncm/evaluate.py": "edd0d5a09edba7f190f184f442b5001061f843225bf126e926fa7c91992a05f1",
+    "third_party/ncm/scripts/eval_merge.py": "f166d7e4a2785c1326ad1c242806a22cb32f959d9b073f1ec42fb0db0ff51de4",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb"
+  },
+  "stage_metadata_sha256": {
+    "baseline": "2799b9707cd7af0239d366229b06da5d3fc874ce0c48c07a08672d3f3d181761",
+    "collection": "74a20e42506c3303aa574d9b43e1bd0b88249b9b53c5c958ed97c8343d71ad19",
+    "profiles": "99afdc82a52578bfc1bcd624172e3f17ad4bfedccab51e517ed99a0d1eac92d1"
+  },
+  "study": "R3",
+  "trajectory_validation": {
+    "level_record_count": 16800,
+    "partition_counts": {
+      "development": 400,
+      "exploration": 1000
+    },
+    "record_count": 1400,
+    "status": "complete",
+    "timed_level_records": 0,
+    "trajectory_sha256": "77bab8d9a1da12f9fa74a77401df6309ecbf2bb07b7c54c3c948a7b795d38fa2",
+    "unavailable_timing_level_records": 16800
+  }
+}
