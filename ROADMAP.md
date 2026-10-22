@@ -1,7 +1,7 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A are complete. Phase 2B/2C are authorized and pending. Original Phase 1 decision: no-go.
+**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A are complete. Phase 2B is complete; locked Phase 2C is authorized and pending. Original Phase 1 decision: no-go.
 **Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. Close this released-Sudoku first-valid path at the completed budget; no new Phase 2 go exists. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
@@ -12,7 +12,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | --- | --- | --- | --- |
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
-| 2 | Measured online verified stopping | 2A complete; 2B/2C authorized and pending | A setting-specific offline go and a subsequent work order |
+| 2 | Measured online verified stopping | 2A/2B complete; locked 2C pending | A setting-specific offline go and a subsequent work order |
 | 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
@@ -148,7 +148,7 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ## Phase 2 — True online verified stopping
 
-**Status:** 2A complete; 2B/2C pending under the explicit user work order.
+**Status:** 2A/2B complete; locked 2C pending under the explicit user work order.
 **Entry exception:** The offline opportunity gate remains unmet. After the R3 no-go the user explicitly requested unblocking and finishing Phase 2. A [separate frozen online protocol](docs/studies/phase2-easy-online-protocol.md) authorizes this engineering/measurement experiment, including a valid negative result, without relabeling any prior gate. Incremental monitoring and four development-selected schedules are the bounded unblocking attempts; no quality tolerance or checkpoint changes.
 **Design mapping:** Sections 5B, 8.4–8.6, 9 Phase 2, and 10–12.
 
@@ -163,14 +163,14 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ### 2B — Development comparisons and measured costs
 
-- [ ] Implement full-depth, fixed-depth, and first-valid verified-stopping policies.
-- [ ] Evaluate stability/uncertainty heuristics where their signals are available without changing sampling semantics.
-- [ ] Keep the retrospective oracle an analysis-only upper bound.
-- [ ] Select fixed depths and any thresholds, patience, minimum levels, or inspection schedules on development data.
-- [ ] Start with batch size 1 and identical request timing boundaries for all methods.
-- [ ] Include all reconstruction, decoding, verifier, transfer, feature, and policy overhead.
-- [ ] Record median/p95 wall-clock latency, mean GPU time, peak memory, and applicable throughput.
-- [ ] Freeze policies, metrics, statistical procedure, and benchmark settings before final evaluation.
+- [x] Implement full-depth, fixed-depth, and first-valid verified-stopping policies.
+- [x] Evaluate stability/uncertainty heuristics where their signals are available without changing sampling semantics.
+- [x] Keep the retrospective oracle an analysis-only upper bound.
+- [x] Select fixed depths and any thresholds, patience, minimum levels, or inspection schedules on development data.
+- [x] Start with batch size 1 and identical request timing boundaries for all methods.
+- [x] Include all reconstruction, decoding, verifier, transfer, feature, and policy overhead.
+- [x] Record median/p95 wall-clock latency, mean GPU time, peak memory, and applicable throughput.
+- [x] Freeze policies, metrics, statistical procedure, and benchmark settings before final evaluation.
 
 ### 2C — Held-out comparison and online MVP report
 
@@ -349,3 +349,10 @@ The official easy aggregate baseline solved 1,988/2,000. R3 completed exactly 4,
 Implemented an isolated completed-level hook against the pinned upstream generate body, with a recorded patch and clean unchanged vendored checkout. All 192 real-checkpoint requests over the original 32 exploration inputs passed code/token/text and offline/online exit-output checks. Forced depths 1 and 6 execute exactly those transformer levels. Synthetic tests cover causality, future-code isolation, min/max bounds, independent incremental reconstruction and never-valid fallback. All 353 tests pass, including 43 new Phase 2 tests.
 
 [Protocol](docs/studies/phase2-easy-online-protocol.md), [2A receipt](results/phase2/2a.json), [completion](results/phase2/2a_completion.json), [unified patch](results/phase2/upstream_level_hook.patch.txt). A report-only diff newline-marker correction retained the initial artifact and passed git apply --check with zero additional model calls. No development benchmark or final per-input access has occurred. Next: 2B, then locked 2C; prior negative gates remain unchanged.
+
+
+### Phase 2B completion — October 22, 2026
+
+Completed all seven frozen development methods: 100 development identities x three repeats x seven methods = 2,100 timed requests, plus 70 exploration-only warmups. All outputs matched their saved offline policy exits. Development-selected fixed depth is 12; the selected verifier checks only level 12, and no method exited early or falsely accepted an early board. This is an overhead-minimizing degenerate verifier, not evidence of early-exit headroom.
+
+[2B completion](results/phase2/2b_completion.json), [development analysis](results/phase2/development_analysis.json), [policy lock](results/phase2/policy_lock.json). Source/model-state and 2A parity checks remain passed; the 353-test engine/policy suite is unchanged. Commit/push the lock before releasing the 300 Phase 2 final rows. Phase 3 remains reserved.

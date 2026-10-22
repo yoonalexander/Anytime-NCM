@@ -1,0 +1,119 @@
+{
+  "actual_mean_wall_ms": {
+    "fixed": 100.87546872333333,
+    "full": 101.42030061666667,
+    "stability": 104.16090120666668,
+    "verified_10": 104.55950983333334,
+    "verified_12": 101.68830473,
+    "verified_6": 109.85838351666665,
+    "verified_all": 115.40599200333332
+  },
+  "all_timed_requests_match_offline_exit_output": true,
+  "analysis_sha256": "cf68ac4997d4962330fcaa60b9e6857aa40066d61d43bc669bf6a510ccd7e113",
+  "base_commit": "a0af5cb07631954f396c1cd91d0e6667eaa56916",
+  "counts": {
+    "decoder": 8680,
+    "encoder": 0,
+    "generator_levels": 26040,
+    "inputs": 2170
+  },
+  "date": "2026-10-22",
+  "development_benchmark_identities": 100,
+  "development_selection_identities": 400,
+  "exploration_warmups": 70,
+  "final_methods": {
+    "fixed": {
+      "depth": 12,
+      "kind": "fixed",
+      "levels": [],
+      "min_level": 1,
+      "patience": 1
+    },
+    "full": {
+      "depth": 12,
+      "kind": "full",
+      "levels": [],
+      "min_level": 1,
+      "patience": 1
+    },
+    "stability": {
+      "depth": 12,
+      "kind": "stability",
+      "levels": [
+        10,
+        11,
+        12
+      ],
+      "min_level": 10,
+      "patience": 1
+    },
+    "verified_all": {
+      "depth": 12,
+      "kind": "verified",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "min_level": 1,
+      "patience": 1
+    },
+    "verified_selected": {
+      "depth": 12,
+      "kind": "verified",
+      "levels": [
+        12
+      ],
+      "min_level": 1,
+      "patience": 1
+    }
+  },
+  "model_state_unchanged": true,
+  "new_model_work_failures": 0,
+  "next_action": "commit/push policy lock, record verified release, then run only frozen 2C methods",
+  "phase": "2B",
+  "phase2_final_per_input_rows_materialized": 0,
+  "phase3_final_rows_materialized": 0,
+  "policy_lock_sha256": "923262bbf231268f12af87b7ea9482b5ea8d7e55dd1cfa6f3fbfc8240f902aae",
+  "primary_method": "verified_selected",
+  "repeats": 3,
+  "selected_fixed_depth": 12,
+  "selected_verifier": "verified_12",
+  "source_snapshot": "results/phase2/source_snapshots/2b",
+  "stability": {
+    "early": 0,
+    "feasible": true,
+    "invalid_early": 0,
+    "mean_inspections": 3.0,
+    "solve_loss": 0,
+    "spec": {
+      "depth": 12,
+      "kind": "stability",
+      "levels": [
+        10,
+        11,
+        12
+      ],
+      "min_level": 10,
+      "patience": 1
+    }
+  },
+  "stage_receipt_sha256": "75d14d71b12a9547884ebae21f012407644d3d6d9de82fc0cc615488586e395e",
+  "status": "complete",
+  "tests": {
+    "latest_full_suite_passed": 353,
+    "report": "results/phase2/2a_tests.xml",
+    "same_engine_policy_sources_as_2A": true,
+    "subphase_verification": "recomputed offline selections, all 2100 outputs, paired statistics and work counts model-free"
+  },
+  "timed_requests": 2100
+}

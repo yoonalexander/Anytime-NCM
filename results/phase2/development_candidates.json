@@ -1,0 +1,239 @@
+{
+  "fixed_depth": 12,
+  "methods": {
+    "fixed": {
+      "depth": 12,
+      "kind": "fixed",
+      "levels": [],
+      "min_level": 1,
+      "patience": 1
+    },
+    "full": {
+      "depth": 12,
+      "kind": "full",
+      "levels": [],
+      "min_level": 1,
+      "patience": 1
+    },
+    "stability": {
+      "depth": 12,
+      "kind": "stability",
+      "levels": [
+        10,
+        11,
+        12
+      ],
+      "min_level": 10,
+      "patience": 1
+    },
+    "verified_10": {
+      "depth": 12,
+      "kind": "verified",
+      "levels": [
+        10,
+        11,
+        12
+      ],
+      "min_level": 1,
+      "patience": 1
+    },
+    "verified_12": {
+      "depth": 12,
+      "kind": "verified",
+      "levels": [
+        12
+      ],
+      "min_level": 1,
+      "patience": 1
+    },
+    "verified_6": {
+      "depth": 12,
+      "kind": "verified",
+      "levels": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "min_level": 1,
+      "patience": 1
+    },
+    "verified_all": {
+      "depth": 12,
+      "kind": "verified",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "min_level": 1,
+      "patience": 1
+    }
+  },
+  "selected_stability": {
+    "early": 0,
+    "feasible": true,
+    "invalid_early": 0,
+    "mean_inspections": 3.0,
+    "solve_loss": 0,
+    "spec": {
+      "depth": 12,
+      "kind": "stability",
+      "levels": [
+        10,
+        11,
+        12
+      ],
+      "min_level": 10,
+      "patience": 1
+    }
+  },
+  "selection_source": "400 development trajectories; no final outcomes",
+  "stability_candidates": [
+    {
+      "early": 1,
+      "feasible": false,
+      "invalid_early": 1,
+      "mean_inspections": 10.9775,
+      "solve_loss": 1,
+      "spec": {
+        "depth": 12,
+        "kind": "stability",
+        "levels": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "min_level": 2,
+        "patience": 1
+      }
+    },
+    {
+      "early": 1,
+      "feasible": false,
+      "invalid_early": 1,
+      "mean_inspections": 10.98,
+      "solve_loss": 1,
+      "spec": {
+        "depth": 12,
+        "kind": "stability",
+        "levels": [
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "min_level": 2,
+        "patience": 2
+      }
+    },
+    {
+      "early": 0,
+      "feasible": true,
+      "invalid_early": 0,
+      "mean_inspections": 7.0,
+      "solve_loss": 0,
+      "spec": {
+        "depth": 12,
+        "kind": "stability",
+        "levels": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "min_level": 6,
+        "patience": 1
+      }
+    },
+    {
+      "early": 0,
+      "feasible": true,
+      "invalid_early": 0,
+      "mean_inspections": 7.0,
+      "solve_loss": 0,
+      "spec": {
+        "depth": 12,
+        "kind": "stability",
+        "levels": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "min_level": 6,
+        "patience": 2
+      }
+    },
+    {
+      "early": 0,
+      "feasible": true,
+      "invalid_early": 0,
+      "mean_inspections": 3.0,
+      "solve_loss": 0,
+      "spec": {
+        "depth": 12,
+        "kind": "stability",
+        "levels": [
+          10,
+          11,
+          12
+        ],
+        "min_level": 10,
+        "patience": 1
+      }
+    },
+    {
+      "early": 0,
+      "feasible": true,
+      "invalid_early": 0,
+      "mean_inspections": 3.0,
+      "solve_loss": 0,
+      "spec": {
+        "depth": 12,
+        "kind": "stability",
+        "levels": [
+          10,
+          11,
+          12
+        ],
+        "min_level": 10,
+        "patience": 2
+      }
+    }
+  ],
+  "uncertainty_signal": "decoder logits absent from frozen trajectories; no entropy baseline introduced"
+}

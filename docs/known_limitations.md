@@ -28,3 +28,5 @@
 - R3 collection had one metadata-write failure before the next model call. A dated amendment preserved all 499 completed rows and resumed 901 unrun inputs within the unchanged budget. No interrupted-process end-state fingerprint exists; the resumed process reloaded the original starting state and matched it at completion. Execution, amendment and report-only sources are recorded separately.
 
 - Phase 2 is a separately requested online experiment despite failed offline opportunity gates. 2A is implemented and parity/true-stop checks pass; development timing and final evaluation remain pending. No practical speedup or offline go is asserted by implementing a hook.
+
+- Phase 2B completed seven-method development benchmarking. The selected verifier checks only level 12, so it cannot skip generation; implementing and tuning monitoring did not establish early-exit opportunity. Final held-out comparison remains pending, with policies frozen before access.

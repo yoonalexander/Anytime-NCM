@@ -1,0 +1,100 @@
+{
+  "aliases": {},
+  "bootstrap": {
+    "resamples": 10000,
+    "seed": 20261022,
+    "unit": "paired identity; all three repeats retained"
+  },
+  "development_analysis_sha256": "cf68ac4997d4962330fcaa60b9e6857aa40066d61d43bc669bf6a510ccd7e113",
+  "execution_source_sha256": {
+    "phase2_access_functions": "4c52cf1d9780ede7603a0d2c18745fcbe7a226773cae248da7c2ee59712a2bd3",
+    "src/anytime_ncm/online.py": "8122afd1db4fd40094fd6d5739bb0432acd7da1d50f4744c9cc95dbb72bfacc8",
+    "src/anytime_ncm/online_policy.py": "ba3ffe4eea710e7a42bcc4cea53ef3f8b598626deea97d4431f0677b3063da50",
+    "src/anytime_ncm/phase2_run.py": "0567e54fbbb39212b256d2ebeda2ccb77a810dc765a67b596be3d43cefa992a9"
+  },
+  "frozen_utc": "2026-10-22T10:45:40.203807+00:00",
+  "methods": {
+    "fixed": {
+      "depth": 12,
+      "kind": "fixed",
+      "levels": [],
+      "min_level": 1,
+      "patience": 1
+    },
+    "full": {
+      "depth": 12,
+      "kind": "full",
+      "levels": [],
+      "min_level": 1,
+      "patience": 1
+    },
+    "stability": {
+      "depth": 12,
+      "kind": "stability",
+      "levels": [
+        10,
+        11,
+        12
+      ],
+      "min_level": 10,
+      "patience": 1
+    },
+    "verified_all": {
+      "depth": 12,
+      "kind": "verified",
+      "levels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "min_level": 1,
+      "patience": 1
+    },
+    "verified_selected": {
+      "depth": 12,
+      "kind": "verified",
+      "levels": [
+        12
+      ],
+      "min_level": 1,
+      "patience": 1
+    }
+  },
+  "phase3_final_access": false,
+  "primary_method": "verified_selected",
+  "protocol_sha256": "b55d489c2a41f0196828f6f22f4fe5d02a3245558626307aac7836a30d8975f1",
+  "repeats": 3,
+  "source_sha256": {
+    "configs/r2_sources.json": "f1c21e46eb64d21296c77870cb9ee0829a53cd69b6b80b3b60e3022a7c1408e9",
+    "docs/studies/phase2-easy-online-protocol.md": "b55d489c2a41f0196828f6f22f4fe5d02a3245558626307aac7836a30d8975f1",
+    "scripts/finalize_phase2_patch.py": "36824deb88e94e249bfac6e44ed6c28b6f448fb4a934d1a584ba02ef5f679966",
+    "scripts/run_phase2.py": "8e0e10e2fd584051e782f57c6225ca825faccb9bc2e5302486d13554d734eecf",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/online.py": "8122afd1db4fd40094fd6d5739bb0432acd7da1d50f4744c9cc95dbb72bfacc8",
+    "src/anytime_ncm/online_policy.py": "ba3ffe4eea710e7a42bcc4cea53ef3f8b598626deea97d4431f0677b3063da50",
+    "src/anytime_ncm/phase2.py": "760ad6b2fbae53da1a9cee299b49fe631d2077d2dda5fd43cae61ae27dbfe2f6",
+    "src/anytime_ncm/phase2_render.py": "2e767488afa0bb6ccbc077d9d379bdd5897ff686cec6045c422b8903f301822e",
+    "src/anytime_ncm/phase2_run.py": "0567e54fbbb39212b256d2ebeda2ccb77a810dc765a67b596be3d43cefa992a9",
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_online.py": "7aed38e53e93e4222d77447fb62ea64f4fe35cb6733e5645e8581a3351a21080",
+    "tests/test_phase2.py": "f5a4c8f3c798b8c2b0af39da153ee692262662b5e135c0291f4e9269929cbee6",
+    "third_party/ncm/models/next_concept.py": "3dcae313cedf2e33ecb9a046d1ad9ec4336962c9221375ba5f7dd9be3d25b04e",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923"
+  },
+  "stage2b_sha256": "75d14d71b12a9547884ebae21f012407644d3d6d9de82fc0cc615488586e395e",
+  "status": "frozen",
+  "study": "Phase 2"
+}

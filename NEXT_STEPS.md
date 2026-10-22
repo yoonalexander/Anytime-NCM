@@ -2,7 +2,7 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0/R1A/R1B/R2/R3 remain complete with their negative findings. The user subsequently authorized finishing Phase 2 despite its failed opportunity gate: 2A is complete, and 2B/2C are pending under a separate frozen protocol.
+**Status:** R0/R1A/R1B/R2/R3 remain complete with their negative findings. The user subsequently authorized finishing Phase 2 despite its failed opportunity gate: 2A/2B are complete, and locked 2C is pending under a separate frozen protocol.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
@@ -194,3 +194,6 @@ R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-gene
 ## Current Phase 2 work order
 
 2A is complete: 192 real parity/actual-stop requests, 43 new tests and 353 total passing tests. The [completion receipt](results/phase2/2a_completion.json) distinguishes synthetic never-valid fallback from the real 32-input parity set. No final per-input data is open. Next execute the frozen seven-method development comparison, commit/push the policy lock, then evaluate the locked methods together on phase2_final. Keep phase3_final reserved. This explicitly requested negative-capable experiment does not reverse any offline no-go or authorize changing the quality objective.
+
+
+**2B completed:** All 2,100 development timed requests plus 70 exploration warmups completed with offline/online parity. Level-12-only verification was the fastest feasible verifier; fixed depth 12 and the selected stability policy are also frozen. No early outputs or false early accepts occurred in development. The [policy lock](results/phase2/policy_lock.json) must be pushed/released before 2C. Its result cannot be used to retune policies afterward.

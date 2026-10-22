@@ -481,8 +481,10 @@ This verifies original execution sources, amendment/report-only sources, pre-res
 
 The user explicitly requested finishing Phase 2 after the negative offline audits. Its [separate frozen protocol](docs/studies/phase2-easy-online-protocol.md) preserves those no-go decisions and the 5%/zero-loss claim rule while permitting an online engineering/measurement experiment. Incremental reconstruction and deferred verifier schedules are bounded attempts to reduce monitoring cost; they do not create early valid solutions.
 
-**2A is complete:** an isolated pinned-generation hook, unchanged upstream checkout, actual one/six-level stop checks, 192 real parity requests and 353 passing tests. [Completion](results/phase2/2a_completion.json), [recorded patch](results/phase2/upstream_level_hook.patch.txt). A diff-only newline-marker correction passed git apply --check without repeating model work. 2B and 2C remain pending; the final policy lock must be committed/pushed before per-input Phase 2 final access. Phase 3 final data remains reserved.
+**2A is complete:** an isolated pinned-generation hook, unchanged upstream checkout, actual one/six-level stop checks, 192 real parity requests and 353 passing tests. [Completion](results/phase2/2a_completion.json), [recorded patch](results/phase2/upstream_level_hook.patch.txt). A diff-only newline-marker correction passed git apply --check without repeating model work. 2B is complete and 2C remains pending; the frozen policy lock must be committed/pushed before per-input Phase 2 final access. Phase 3 final data remains reserved.
 
 ~~~powershell
 python scripts/run_phase2.py verify-a
 ~~~
+
+**2B is complete:** [development results](results/phase2/development_analysis.json), [completion](results/phase2/2b_completion.json), [policy lock](results/phase2/policy_lock.json). All 2,100 timed requests matched offline policy outputs. Level-12-only verification won development latency among the verifier schedules, preserving quality but providing no possible early generation savings. The locked final comparison is next; Phase 3 remains reserved.
