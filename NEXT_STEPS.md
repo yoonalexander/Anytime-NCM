@@ -2,7 +2,7 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicit request to finish Phase 3 regardless authorizes a separate bounded experiment: 3A/3B complete, locked 3C pending.
+**Status:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicitly requested Phase 3A–3C experiment is complete and also no-go. Phases 4–5 are not started and are excluded by the latest user instruction.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
@@ -12,7 +12,7 @@
 
 R1A characterized the saved errors. R1B then encoded the 32 preselected valid references: all 32 round-tripped exactly at level 12, but none produced a valid earlier prefix. This does not prove that every alternative code sequence or decoder would fail early. Those findings warranted R2, which executed easy first and then medium under a new frozen protocol. Neither produced a valid solution before level 12. Final validity was 32/32 easy and 31/32 medium; all 64 matched official/adapter final outputs passed exact token/text parity. [R2 report](results/followup/sudoku_checkpoint_screen/summary.md).
 
-The online stopping hook and its measured comparison are now complete. Do not prioritize controller training or a viewer as the next efficiency experiment. None can, on its own, make an invalid existing prefix into a valid early answer. This is a research sequencing choice, not a claim that the software would be impossible to implement.
+The online stopping hook, learned controllers and their measured comparisons are complete. Additional controller fitting or a viewer does not currently have demonstrated efficiency headroom. None can, on its own, make an invalid existing prefix into a valid early answer. This is a research sequencing choice, not a claim that the software would be impossible to implement.
 
 The bounded Sudoku follow-ups are now negative, so closure at this budget is the recorded decision. If the project continues, the recommended next work is a separately requested WMT14 resource/protocol audit before any model evaluation. Do not expand Sudoku samples or relax quality requirements until a favorable result appears.
 
@@ -38,7 +38,7 @@ An optimized implementation might reduce reconstruction/transfer overhead. It wo
 | R2 | Screen alternative frozen Sudoku checkpoints | Complete — [report](results/followup/sudoku_checkpoint_screen/summary.md); both negative | No candidate met the early-valid screen gate; close this path at the declared budget. |
 | R3 | Extended opportunity/cost audit of easy under an explicit entry exception | Complete — [report](results/followup/sudoku_easy_r3/summary.md); no-go | User requested extension after negative R2; it does not retroactively qualify R2. |
 | Phase 2 | Implement and benchmark actual online verified stopping | Complete; measured no-go | Explicit work order/entry exception; [report](results/phase2/summary.md), no practical speedup. |
-| Phase 3 | Learn a stopping controller | Deferred | Remaining headroom beyond strong simpler policies and an appropriate reserved final set. |
+| Phase 3 | Learn a stopping controller | Complete; measured no-go | Explicit entry exception, frozen policies, [300-input final comparison](results/phase3/summary.md). |
 | Phase 4 | Translation/summarization generalization | Alternative branch, not started | Task-specific quality tolerances, signals, protocol, artifacts, and resource feasibility. |
 | Phase 5 | Viewer / optional Concept Firewall bridge | Optional, not started | A separate scope grounded in recorded results. |
 
@@ -165,7 +165,7 @@ A task-change study starts with baseline reproduction and an offline opportunity
 
 ### Learned stopping — original Phase 3
 
-A first-valid controller has no positive early-exit targets in the current hard-Sudoku trajectories. Defer fitting one until a setting supplies useful early outputs and a credible advantage over simpler policies. Any later controller uses only current/past features at inference; final holdout selection remains prohibited. Future outcomes may supply training labels only within the allowed training split.
+The default recommendation was to defer learned fitting because no positive early-exit targets existed. The user explicitly requested Phase 3 regardless. That separate six-fit logistic study is now complete: no final early exits, unchanged 299/300 quality, and 2.98% extra mean latency for the primary model versus full depth. Code statistics worsened matched-state Brier error in the declared ablation. The study does not demonstrate remaining headroom. Any later work still requires current/past inference features and a genuinely appropriate fresh final set; the original phase-specific final subsets have now been used.
 
 Predicting that a request will ultimately fail and abandoning it is a different possible objective. It could save work on failures without producing an early valid answer, but can also discard requests that would have succeeded. It requires a separately declared abstention/quality-risk protocol and evidence; the existing first-valid no-go neither validates nor rules out that method. It is not the recommended immediate branch.
 
@@ -186,9 +186,9 @@ Useful for communication after the next research decision, but optional and sepa
 
 **Recorded evidence:** R2 and R3 remain no-go. The user subsequently requested finishing Phase 2 under a separately frozen entry exception. That online experiment is now complete and also no-go: monitoring optimizations reduced checking cost but created no early valid outputs. The [report](results/phase2/summary.md) and [completion](results/phase2/completion.json) close the work order.
 
-**Optional next work order, requiring a new request:** “Audit the released WMT14 artifacts, resource fit, task-specific quality tolerances, candidate signals, and a bounded study protocol before any inference.” This task change has not started.
+**Current instruction:** Finish Phase 3 and report status; do not work on Phases 4–5. That boundary is complete. A future WMT14 resource/protocol audit would require a separate new request; no task change or later-phase work has started.
 
-R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-generation / 31,536-decoder-forward allocation, including its official aggregate baseline and profiling validation. No model evaluation was repeated during the documented collection resumption. Those R3 counts exclude the subsequent Phase 2 online experiment. Controller training and a natural-language study remain unstarted.
+R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-generation / 31,536-decoder-forward allocation, including its official aggregate baseline and profiling validation. No model evaluation was repeated during the documented collection resumption. Those R3 counts exclude the subsequent Phase 2 online experiment. Lightweight controller training was subsequently completed in Phase 3; natural-language studies remain unstarted.
 
 
 ## Completed Phase 2 work order
@@ -199,10 +199,23 @@ All methods solved 299/300 inputs with zero early exits and zero false early acc
 
 [Final report](results/phase2/summary.md), [whole-phase completion](results/phase2/completion.json), [2C completion](results/phase2/2c_completion.json), [committed policy release](results/phase2/policy_lock_release.json). Phase 2's model-work allocation is consumed. Reproduction uses saved-data verification; do not rerun inference.
 
-The current recommendation is to stop this released-Sudoku first-valid study at the completed budget. Phase 3 has no observed useful early-output headroom here, and its 300 final rows remain reserved from per-input inference/scoring inspection. Prior full-baseline aggregates and identity-only integrity hashing are disclosed in the report. A WMT14 resource/protocol audit is an optional next work order; no task change, quality relaxation or controller training is included in the completed request.
+At Phase 2 completion the recommendation was to stop and Phase 3 remained reserved. The user subsequently requested Phase 3 regardless. Its completed comparison is recorded below. Prior full-baseline aggregates and identity hashing remain disclosed; no task change or quality relaxation was included.
 
-## Subsequent Phase 3 work order
+## Completed Phase 3 and current project status
 
-The user explicitly requested finishing Phase 3 regardless. This is an entry exception, not evidence of remaining headroom. [Protocol](docs/studies/phase3-easy-learned-protocol.md). 3A is complete with six exploration-only logistic fits, causal base/internal feature families and development-only selection; both choose minimum 10 / threshold 0.5. 3B benchmarks all seven frozen candidate methods on development, then commits/pushes the policy lock before 3C uses the reserved 300 Phase 3 identities. Existing quality and practical-speedup thresholds remain unchanged. No Phase 4 or task change is included.
+The user explicitly requested Phase 3 regardless of the absent headroom, then resumed after a usage-limit interruption and limited the task to Phase 3. [Protocol](docs/studies/phase3-easy-learned-protocol.md). 3A fit six exploration-only logistic models and selected regularization/minimum/threshold on development; 3B completed 2,100 timed development requests and committed/pushed the lock as 4bcccc0 before final access; 3C completed 6,300 timed final requests on 300 reserved identities. All 380 tests and model-free evidence checks pass.
 
-**Phase 3B completed:** Seven methods, 100 development identities × three repeats, plus 70 exploration warmups; all offline/online parity checks pass. Each solves 98/100, none exits early. Learned internal averages 100.66 ms versus 98.36 ms full depth. Policies remain unchanged from the declared family; [lock](results/phase3/policy_lock.json), [completion](results/phase3/3b_completion.json). Release the committed/pushed lock before 3C. Latest user scope: finish Phase 3 and report status; do not work on Phases 4–5.
+Every final method solves 299/300 inputs, with zero early exits and zero invalid early accepts. Full depth averages 98.85 ms; the primary internal model averages 101.80 ms, **2.98% slower** (paired 95% overhead interval 2.54%–3.44%). It is 2.73% slower than the strong fixed-depth comparator. Both practical-speedup and adaptive-frontier gates fail. Code statistics worsen the declared matched-state Brier comparison; this does not test all possible internal signals or other tasks.
+
+[Final report](results/phase3/summary.md), [whole-phase completion](results/phase3/completion.json), [3C completion](results/phase3/3c_completion.json), [lock release](results/phase3/policy_lock_release.json). Phase 3 used six CPU fits, 8,540 NCM generations, 102,480 level evaluations and 29,280 decoder forwards; no encodings, model-call failures/retries, extra samples or final-driven retuning. Both original final subsets are now used. Prior aggregate access/shared solution identities are disclosed; a later study cannot relabel these as untouched confirmation.
+
+| Area | Current status |
+| --- | --- |
+| Sections 6–7 / Phase 0 operational setup | Complete; hard baseline 86.25% versus paper 86.1% discrepancy still unexplained |
+| Phase 1 and R1A/R1B/R2/R3 | Complete; no useful early-valid opportunity in the audited Sudoku settings |
+| Phase 2 online stopping | Complete; measured practical-speedup no-go |
+| Phase 3 learned stopping | Complete; measured practical-speedup no-go |
+| Phase 4 natural-language generalization | Not started; excluded by latest user instruction |
+| Phase 5 viewer / Concept Firewall bridge | Not started; excluded by latest user instruction |
+
+The implementation and bounded research work through Phase 3 are complete. The practical adaptive-speedup objective remains unachieved in this frozen Sudoku setting. Stop here; do not begin Phases 4–5 without a new request. A different objective/task would require its own evidence, protocol, budget and appropriate fresh evaluation data.

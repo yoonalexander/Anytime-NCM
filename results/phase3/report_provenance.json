@@ -1,0 +1,37 @@
+{
+  "artifacts": {
+    "analysis.json": "90c92d2e7eee4a4e29869be3b71673070082843c372fe4d86f32c3f4dfa8774b",
+    "comparison.png": "f291fc6868678d4de6ec8f9bf1bb54d1374de021ff96e01e4b4e3ceab642920c",
+    "summary.md": "e9f2ed17f0a77740c408ee4faf4a1f3e3a105365093b6a491551d5e8226bdb91"
+  },
+  "sources": {
+    "docs/studies/phase3-easy-learned-protocol.md": "c66ea0e19d0d3fba0c4284859d3f41351f9b127bfc5695713780c69fce77c91a",
+    "scripts/run_phase3.py": "54adaa73bc2d03c595a9c060e292e0dfcf7e09760584875390552039f2ce2bf4",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/learned_features.py": "5181d02c1d2d383258ba32e19ac1afdd6f69d80a16ac6e70e4c53cb4e7d08f0c",
+    "src/anytime_ncm/learned_online.py": "36fb5e433c7d284b16b28ca2961ee4f51721991ec5e2b07ca6edae08a5333ca4",
+    "src/anytime_ncm/online.py": "8122afd1db4fd40094fd6d5739bb0432acd7da1d50f4744c9cc95dbb72bfacc8",
+    "src/anytime_ncm/online_policy.py": "ba3ffe4eea710e7a42bcc4cea53ef3f8b598626deea97d4431f0677b3063da50",
+    "src/anytime_ncm/phase2.py": "86b139d7437e439ff871a9e3b4fa68cf0b443777224ded37c7c5dfb4af128630",
+    "src/anytime_ncm/phase2_run.py": "0567e54fbbb39212b256d2ebeda2ccb77a810dc765a67b596be3d43cefa992a9",
+    "src/anytime_ncm/phase3.py": "ecb58d6fb4a6ad1bc77cc7c6ca3f40f1746e09db741418d6abe10e15967a3bf3",
+    "src/anytime_ncm/phase3_render.py": "999f8decc50ebbbf786aa838f7530fa1a85d90ea6649cefae3c3e7cd6faba2ea",
+    "src/anytime_ncm/phase3_run.py": "c9334495ecf335327fa0ab856ef8723091a070906e8231c6ab6a6dfc23662565",
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/train_policy.py": "003016de82d10afbfe21d5104c72a5f8c57b343fc31eebd87371354a92e958f4",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_learned_policy.py": "b064f2b6810c7ca5ade36da0ce49696049ae2758522dcaf2706a68d1529fa3f8",
+    "tests/test_policy_no_future_leakage.py": "0a6db0aa71d4da03a2f3a239649ce33682d451f013a2bde085257ed1650a8eda",
+    "third_party/ncm/models/next_concept.py": "3dcae313cedf2e33ecb9a046d1ad9ec4336962c9221375ba5f7dd9be3d25b04e",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923"
+  },
+  "stages": {
+    "3a": "2e1f877d68f11dab9240849f9fdb40b4d337a9cedb28ffa787b41b41e8923f69",
+    "3b": "4dd7b4029806baadc2faca195fb9e0a4a44ef18a1636c2beb8713c8783544f3c",
+    "3c": "9895c243884e9dbc4492a37c9827758c7fcd23cb36ed328be8e89bd9872f00d1"
+  }
+}

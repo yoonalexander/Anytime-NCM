@@ -1,7 +1,7 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 3A/3B are complete; 3C is pending under an explicit entry exception. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
+**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 3A–3C are complete under an explicit entry exception, with measured no-go. Phases 4–5 are not started and are outside the latest work order. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
 **Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. The subsequently requested Phase 2 experiment is also complete with a measured no-go. Close this released-Sudoku first-valid path at the completed budget; no practical speedup is established. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
@@ -13,11 +13,11 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
 | 2 | Measured online verified stopping | Complete; measured no-go | Explicit user work order and frozen entry exception after failed offline gate |
-| 3 | Learned stopping against strong baselines | 3A/3B complete; locked 3C pending | Explicit user request despite unmet headroom; reserved Phase 3 subset |
+| 3 | Learned stopping against strong baselines | Complete; learned methods fail practical-speedup gate | Explicit user entry exception; frozen policies evaluated on assigned Phase 3 subset |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
 
-A negative or inconclusive Phase 1 result is a valid completed research milestone when its required artifacts and limitations are documented. Phase 2 was subsequently implemented under its explicitly requested entry exception; Phases 3–5 remain unstarted. Later studies remain on this roadmap; they do not begin automatically after a gate fails.
+A negative or inconclusive Phase 1 result is a valid completed research milestone when its required artifacts and limitations are documented. Phase 2 was subsequently implemented under its explicitly requested entry exception; Phase 3 was also explicitly requested and completed under its entry exception. Phases 4–5 remain unstarted. Later studies remain on this roadmap; they do not begin automatically after a gate fails.
 
 ## Post-Phase 1 research revision — October 21, 2026
 
@@ -144,7 +144,7 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 **Acceptance:** An independent developer can reproduce the trajectory table, plot, and decision from the recorded baseline, manifest, protocol, commands, and profiles. An artifact-complete negative/inconclusive report closes Phase 1 without requiring an online patch. Missing measurements support an inconclusive result, not a measured negative speedup.
 
-**Evidence:** [Phase 1 report](results/phase1/summary.md), [diagnostic contract](docs/phase1d_profiling.md), [completion record](results/phase1/phase1d_validation.json), full budget coverage, and 186 passing tests. No-go closed Phase 1; Phase 2 was unstarted at that milestone. The [October 21 review](docs/phase1_review.md) completed parsing/completeness and official comparison summaries; that review passed 189 tests; the current suite passes 353.
+**Evidence:** [Phase 1 report](results/phase1/summary.md), [diagnostic contract](docs/phase1d_profiling.md), [completion record](results/phase1/phase1d_validation.json), full budget coverage, and 186 passing tests. No-go closed Phase 1; Phase 2 was unstarted at that milestone. The [October 21 review](docs/phase1_review.md) completed parsing/completeness and official comparison summaries; that review passed 189 tests; the current suite passes 380.
 
 ## Phase 2 — True online verified stopping
 
@@ -189,22 +189,24 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ## Phase 3 — Learned stopping, only with remaining headroom
 
-**Status:** 3A/3B complete; locked 3C pending — October 22, 2026.
-**Entry exception:** Remaining headroom is not demonstrated. The user explicitly requested finishing Phase 3 regardless; a [separate frozen protocol](docs/studies/phase3-easy-learned-protocol.md) authorizes a bounded learned-policy experiment without reversing any prior gate. The original 300-input Phase 3 subset remains reserved until a committed/released policy lock, with prior aggregate exposure disclosed.
+**Status:** 3A–3C complete — October 22, 2026. Practical-speedup and adaptive-frontier gates: no-go.
+**Entry exception:** Remaining headroom is not demonstrated. The user explicitly requested finishing Phase 3 regardless; a [separate frozen protocol](docs/studies/phase3-easy-learned-protocol.md) authorizes a bounded learned-policy experiment without reversing any prior gate. The original 300-input Phase 3 subset was opened only after the committed/pushed lock was released. It has now been used; prior aggregate exposure/shared identities remain disclosed.
 **Design mapping:** Sections 4 RQ3/H3, 8.3–8.5, and 9 Phase 3.
 
 - [x] Define the training target and cost/quality objective before fitting; future trajectory outcomes may supply training labels but never inference-time features.
 - [x] Train on exploration/training identities; choose thresholds/hyperparameters on development identities.
 - [x] Begin with logistic regression or a small MLP.
-- [ ] Compare against full depth, tuned fixed depths, verified stopping, and available stability/uncertainty baselines.
+- [x] Compare against full depth, tuned fixed depths, verified stopping, and available stability/uncertainty baselines.
 - [x] Keep Sudoku-verifier features separate from any task-general policy claim.
-- [ ] Measure feature/policy overhead, false early accepts, calibration, and quality/cost tradeoffs.
-- [ ] If assessing H3, compare internal statistics against level/input/decoded-output features alone.
-- [ ] Freeze all methods and evaluate them together on the 300-input `phase3_final` partition.
-- [ ] If its holdout was exposed, obtain and document a fresh appropriate final set rather than relabel an exposed set.
-- [ ] Produce `results/phase3/summary.md`, training/evaluation metadata, model artifacts, and reproducible commands.
+- [x] Measure feature/policy overhead, false early accepts, calibration, and quality/cost tradeoffs.
+- [x] If assessing H3, compare internal statistics against level/input/decoded-output features alone.
+- [x] Freeze all methods and evaluate them together on the 300-input `phase3_final` partition.
+- [x] If its holdout was exposed, obtain and document a fresh appropriate final set rather than relabel an exposed set.
+- [x] Produce `results/phase3/summary.md`, training/evaluation metadata, model artifacts, and reproducible commands.
 
 **Acceptance:** A reproducible positive or negative result against strong baselines on held-out identities, with leakage checks and measured overhead. A learned policy is not required when simpler policies or lack of headroom settle the question.
+
+No fresh Phase 3 dataset was obtained: there was no prior per-input policy inspection of the assigned Phase 3 subset. Earlier full-baseline aggregate exposure and unknown base-model overlap are disclosed; an entirely untouched official-test claim is not made. The subset is now consumed.
 
 ### Phase 3 delivery units
 
@@ -212,7 +214,7 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 | --- | --- | --- |
 | 3A: causal models and offline selection | Complete | [Training](results/phase3/training.json), [completion](results/phase3/3a_completion.json); 380 tests |
 | 3B: real development comparison and policy lock | Complete | [2,100 timed requests and policy lock](results/phase3/3b_completion.json); no early exits |
-| 3C: frozen reserved comparison and report | Pending | Seven methods, 300 phase3_final identities × three repeats, 70 exploration warmups |
+| 3C: frozen reserved comparison and report | Complete; no-go | [6,300 timed final requests](results/phase3/summary.md), [completion](results/phase3/3c_completion.json); 380 tests |
 
 ## Phase 4 — Natural-language generalization
 
@@ -384,3 +386,16 @@ Six exploration-only logistic fits and all predeclared development choices are c
 ### Phase 3B completion — October 22, 2026
 
 All 2,100 development timed requests and 70 exploration warmups completed within caps, with exact saved prefix/exit/score parity and unchanged model state. Seven methods solve 98/100 inputs with no early exits/false early accepts. Full depth averages 98.36 ms; learned internal 100.66 ms. The [development analysis](results/phase3/development_analysis.json), [policy lock](results/phase3/policy_lock.json) and [completion](results/phase3/3b_completion.json) preserve all methods and choices. A report-only source alignment retains the initial pre-release lock with no model/policy/execution changes. All 380 engine/feature/policy tests remain passed. Commit/push and verify the lock before 3C final access. Phases 4–5 are excluded by the user's latest instruction.
+
+
+### Phase 3C and whole Phase 3 completion — October 22, 2026
+
+All 6,300 final timed requests and 70 exploration warmups completed. Seven frozen methods each solve 299/300 Phase 3 final inputs; none exits early and there are zero invalid early accepts. Full depth averages 98.85 ms, fixed depth 99.09 ms, learned base 102.17 ms, learned internal 101.80 ms, stability 102.13 ms, every-level verifier 113.61 ms and selected verifier 100.06 ms. Primary reduction versus full is −2.98% (paired 95% interval −3.44% to −2.54%); versus fixed −2.73% (−3.22% to −2.23%). Both practical and frontier gates fail.
+
+Internal-minus-base matched-state Brier difference is +0.000318 (paired identity-bootstrap interval +0.000177 to +0.000415), worse prediction for the stated internal-code feature family. This narrow ablation does not test all hidden statistics or establish cross-task H3. Feature/score CPU means are 0.1365 ms base and 0.1871 ms internal per request; actual wall timing also includes reconstruction, decoding, transfers and callback work. The predeclared <=27-clue subgroup has no final examples and is reported unavailable.
+
+[Report](results/phase3/summary.md), [analysis](results/phase3/analysis.json), [3C receipt](results/phase3/3c.json), [3C completion](results/phase3/3c_completion.json), [whole-phase completion](results/phase3/completion.json), [test receipt](results/phase3/3c_tests.xml). All 380 tests pass; independent final pairing/repeated-score and source audits pass. Six CPU logistic fits, 8,540 NCM input-generations, 102,480 levels, 29,280 decoder forwards and zero encodings complete Phase 3 within caps. No model-work failure/retry or expanded sample budget occurred. A usage-limit approval failure before 3B executed zero calls; the explicit resumed work order completed the original allocation.
+
+3A was committed/pushed as be39ce8; 3B as 4bcccc0. The latter lock's [release](results/phase3/policy_lock_release.json) records GitHub/local equality before final access. Both original final subsets are now used, with previous aggregate exposure and shared difficulty identities disclosed; they cannot serve as untouched later tests. Previous compatibility review archived under results/phase1/reviews/2026-10-22-phase3b/.
+
+Phase 3 is complete as a bounded learned-policy study despite the unmet initial headroom condition. The practical speedup objective remains unachieved in this frozen Sudoku setting. Phase 0's +0.15-percentage-point paper discrepancy remains unexplained. Per the latest user instruction, stop here and report status: no Phase 4 or Phase 5 implementation, study, inference or integration work was performed.

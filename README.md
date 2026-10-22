@@ -4,9 +4,9 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** Phase 3A/3B are complete under the user's explicit entry exception; the locked final benchmark is next. **380 tests pass.** [Phase 3 protocol](docs/studies/phase3-easy-learned-protocol.md).
+**Current stage:** **Phase 3A–3C are complete**, with a measured no-go for practical speedup. All seven frozen methods solve 299/300 final inputs with no early exits. Full depth averages **98.85 ms**, learned internal **101.80 ms (2.98% slower; paired 95% overhead interval 2.54%–3.44%)**. [Phase 3 report](results/phase3/summary.md). Phases 4–5 are not started and are excluded by the latest work order. **380 tests pass.** [Phase 3 protocol](docs/studies/phase3-easy-learned-protocol.md).
 
-**Completed Phase 2:** **Phase 2A–2C are complete; the measured speedup gate is no-go.** On 300 reserved easy-Sudoku inputs and 4,500 timed requests, every method solved 299/300 inputs and none exited early. Full depth averaged **100.98 ms**, the development-selected verifier **101.84 ms** (0.85% slower), and every-level verification **116.03 ms** (14.91% slower). The [online report](results/phase2/summary.md) includes paired intervals, quality, costs and access disclosures. All **353 tests pass**. Original Phase 1/R2/R3 negative findings remain unchanged; Phase 3 is deferred.
+**Completed Phase 2:** **Phase 2A–2C are complete; the measured speedup gate is no-go.** On 300 reserved easy-Sudoku inputs and 4,500 timed requests, every method solved 299/300 inputs and none exited early. Full depth averaged **100.98 ms**, the development-selected verifier **101.84 ms** (0.85% slower), and every-level verification **116.03 ms** (14.91% slower). The [online report](results/phase2/summary.md) includes paired intervals, quality, costs and access disclosures. All **353 tests pass**. Original Phase 1/R2/R3 negative findings remain unchanged. Phase 3 was subsequently completed under its separate entry exception.
 
 ## Contents
 
@@ -58,8 +58,8 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Online request benchmarks | Complete; five frozen methods, 300 inputs × three repeats; practical speedup no-go |
 | Online stopping hook | Complete; true skipped-work and parity checks; upstream remains unmodified |
-| Learned controller | 3A/3B complete; learned models and final policies frozen before Phase 3 final access |
-| Executable research tests | 353 passed, including online halting, causality, statistics and report checks |
+| Learned controller | Complete; six logistic fits, causal ablation, development selection and 6,300-request final comparison; measured no-go |
+| Executable research tests | 380 passed, including 27 new learned-policy, causality, calibration and selection tests |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
 The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; the bounded online experiment uses scripts/run_phase2.py and its frozen study protocol.
@@ -362,7 +362,7 @@ Phase 1B adds the pinned upstream adapter, independent full-resolution prefix de
 .\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider', '--junitxml=results/phase1/phase1b_tests.xml')
 ```
 
-A separate real-checkpoint GPU run verified all 12 full-resolution prefixes and **32/32 final decoded outputs matching** the unchanged official evaluator on the exploration smoke inputs. See [Phase 1B API and repeat commands](docs/phase1b_partial_decoding.md), [GPU evidence](results/phase1/phase1b_verified/verification.json), and [completion record](results/phase1/phase1b_validation.json). The parity script requires a fresh output directory. Timing and halting tests remain placeholders.
+A separate real-checkpoint GPU run verified all 12 full-resolution prefixes and **32/32 final decoded outputs matching** the unchanged official evaluator on the exploration smoke inputs. See [Phase 1B API and repeat commands](docs/phase1b_partial_decoding.md), [GPU evidence](results/phase1/phase1b_verified/verification.json), and [completion record](results/phase1/phase1b_validation.json). The parity script requires a fresh output directory. At Phase 1B completion timing and halting tests were still placeholders; those are implemented in subsequent phases.
 
 Phase 1C completed the smoke collection first, then all **1,400 allowed inputs / 16,800 level records**, with independent saved-file validation. All **140 implemented tests passed**:
 
@@ -484,13 +484,13 @@ This verifies original execution sources, amendment/report-only sources, pre-res
 
 The user explicitly requested finishing Phase 2 after the negative offline audits. Its [separate frozen protocol](docs/studies/phase2-easy-online-protocol.md) preserves those no-go decisions and the 5%/zero-loss claim rule while permitting an online engineering/measurement experiment. Incremental reconstruction and deferred verifier schedules are bounded attempts to reduce monitoring cost; they do not create early valid solutions.
 
-**2A is complete:** an isolated pinned-generation hook, unchanged upstream checkout, actual one/six-level stop checks, 192 real parity requests and 353 passing tests. [Completion](results/phase2/2a_completion.json), [recorded patch](results/phase2/upstream_level_hook.patch.txt). A diff-only newline-marker correction passed git apply --check without repeating model work. 2B and 2C are complete. The frozen policy lock was committed/pushed before per-input Phase 2 final access. Phase 3 final data remains reserved.
+**2A is complete:** an isolated pinned-generation hook, unchanged upstream checkout, actual one/six-level stop checks, 192 real parity requests and 353 passing tests. [Completion](results/phase2/2a_completion.json), [recorded patch](results/phase2/upstream_level_hook.patch.txt). A diff-only newline-marker correction passed git apply --check without repeating model work. 2B and 2C are complete. The frozen policy lock was committed/pushed before per-input Phase 2 final access. At Phase 2 completion Phase 3 final data remained reserved; its subsequent use is disclosed below.
 
 ~~~powershell
 python scripts/run_phase2.py verify-a
 ~~~
 
-**2B is complete:** [development results](results/phase2/development_analysis.json), [completion](results/phase2/2b_completion.json), [policy lock](results/phase2/policy_lock.json). All 2,100 timed requests matched offline policy outputs. Level-12-only verification won development latency among the verifier schedules, preserving quality but providing no possible early generation savings. The lock was released at commit 2687a46 before the final comparison. Phase 3 remains reserved.
+**2B is complete:** [development results](results/phase2/development_analysis.json), [completion](results/phase2/2b_completion.json), [policy lock](results/phase2/policy_lock.json). All 2,100 timed requests matched offline policy outputs. Level-12-only verification won development latency among the verifier schedules, preserving quality but providing no possible early generation savings. The lock was released at commit 2687a46 before the final comparison. At Phase 2 completion Phase 3 remained reserved; Phase 3 evaluation is now complete.
 
 
 **2C is complete:** five frozen methods on 300 phase2_final identities × three repeats, plus 50 exploration warmups. Every method produced 299/300 valid solutions, no early exits and zero false early accepts. The primary verifier was 0.85% slower than full depth (paired 95% overhead interval 0.39%–1.34%); every-level verification was 14.91% slower. The selected schedule checks level 12 only and therefore has no possible early-generation savings. No practical speedup or adaptive-frontier claim passes.
@@ -501,12 +501,23 @@ python scripts/run_phase2.py verify-a
 .\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_phase2.py','verify')
 ~~~
 
-All Phase 2 model-evaluation allocations are consumed. Report verification reuses saved results; do not rerun 2a/2b/2c. The final evaluation has prior aggregate baseline exposure, shared solution identities across difficulty masks, and unknown base-model overlap. Integrity hashing traverses all puzzle identities; inference/scoring materializes only permitted rows. No per-input Phase 3 board, reference or prediction was inspected. Full access/timing limitations are in the report. Phase 3 training and task changes require separate justification and a new work order.
+All Phase 2 model-evaluation allocations are consumed. Report verification reuses saved results; do not rerun 2a/2b/2c. The final evaluation has prior aggregate baseline exposure, shared solution identities across difficulty masks, and unknown base-model overlap. Integrity hashing traverses all puzzle identities; inference/scoring materializes only permitted rows. Phase 2 inspected no per-input Phase 3 board, reference or prediction. Phase 3 was subsequently explicitly requested and completed using its assigned subset, as documented below. Task changes remain outside the current work order.
 
 ## Phase 3 learned stopping
 
 The user explicitly requested finishing Phase 3 regardless of the failed headroom gate. The [separate frozen protocol](docs/studies/phase3-easy-learned-protocol.md) preserves all earlier no-go results and the zero-loss/5% practical threshold. Six logistic fits use only 1,000 exploration inputs; 400 development inputs select regularization, threshold and inspection minimum. No final split supplies fitting/normalization/selection examples. Base features exclude Sudoku validity flags; the internal ablation adds only current codebook statistics.
 
-3A is complete: both models selected minimum level 10 and threshold 0.5; base C=10 and internal C=0.1. There are zero positive pre-final labels. [Training evidence](results/phase3/training.json), [completion](results/phase3/3a_completion.json). 3B will verify offline/online equivalence and measure the seven-method development comparison, then commit/push a lock before 3C. Phase 3 final per-input rows remain reserved at this milestone.
+3A is complete: both models selected minimum level 10 and threshold 0.5; base C=10 and internal C=0.1. There are zero positive pre-final labels. [Training evidence](results/phase3/training.json), [completion](results/phase3/3a_completion.json). At 3A completion final per-input rows remained reserved. Subsequent 3B/3C completion is documented below.
 
-**3B complete:** 2,100 timed development requests and 70 exploration warmups; all match saved offline codes/outputs and causal scores. Every method solves 98/100 inputs, with zero early exits/invalid early accepts. Full depth averages 98.36 ms versus 100.66 ms for the internal model. The [policy lock](results/phase3/policy_lock.json) and [completion](results/phase3/3b_completion.json) precede final access. A report-only source alignment retains the initial lock; no policies, models or measured execution changed. Next: commit/push the lock, then the frozen 300-input final comparison.
+**3B complete:** 2,100 timed development requests and 70 exploration warmups; all match saved offline codes/outputs and causal scores. Every method solves 98/100 inputs, with zero early exits/invalid early accepts. Full depth averages 98.36 ms versus 100.66 ms for the internal model. The [policy lock](results/phase3/policy_lock.json) and [completion](results/phase3/3b_completion.json) precede final access. A report-only source alignment retains the initial lock; no policies, models or measured execution changed. The lock was committed/pushed as 4bcccc0 and released before final token/output access.
+
+
+**3C complete:** 6,300 final timed requests plus 70 exploration warmups, with all policies frozen before the 300 phase3_final inputs were opened. All seven methods solve 299/300; none exits early. The primary internal-feature model is 2.98% slower than full depth and 2.73% slower than the strong fixed-depth comparator. Code statistics worsen matched-state Brier prediction error in this bounded ablation; they establish no added predictive-value or speedup benefit. The final report includes calibration, feature/score overhead, all baselines, uncertainty, empty-subgroup disclosure and access history.
+
+[Report](results/phase3/summary.md), [analysis](results/phase3/analysis.json), [3C completion](results/phase3/3c_completion.json), [whole-phase completion](results/phase3/completion.json), [380-test receipt](results/phase3/3c_tests.xml). Both phase-specific final subsets have now been used and cannot be presented as untouched later holdouts. Prior aggregate exposure/shared identities remain disclosed.
+
+~~~powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_phase3.py','verify')
+~~~
+
+This recomputes saved-data evidence without torch/matplotlib; the pinned local input files are still needed for integrity checks. Phase 3's six CPU fits and all 8,540 new NCM input-generations are complete; do not rerun fitting or inference to recreate the report. The pretrained NCM checkpoint and upstream checkout remain unchanged. Stop after Phase 3: Phases 4–5 are unstarted and were not worked on. The hard-baseline 86.25% versus paper 86.1% discrepancy remains unexplained.

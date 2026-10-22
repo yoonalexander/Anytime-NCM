@@ -1,0 +1,66 @@
+{
+  "adaptive_frontier_claim": false,
+  "all_original_final_subsets_now_used": true,
+  "committed_subphases": {
+    "3A": "be39ce885e78037a63ce3239cb70089a17ba179e",
+    "3B": "4bcccc02f5f28d7dab382754cd7bbd5e34c639d4"
+  },
+  "date": "2026-10-22",
+  "decision": "no-go",
+  "entry_exception": "explicit user request despite unmet headroom",
+  "exploration_warmups": 140,
+  "failed_model_calls": 0,
+  "final_analysis_sha256": "90c92d2e7eee4a4e29869be3b71673070082843c372fe4d86f32c3f4dfa8774b",
+  "initial_approval_interruption": "usage-limit review failure before 3B; action not executed; zero model calls; user resumed",
+  "lightweight_cpu_fits": 6,
+  "model_evaluation_retries": 0,
+  "next_action": "Stop and report project status. Phases 4-5 are not started and excluded by the latest user instruction.",
+  "phase": "3",
+  "phase2_final_rows_used_by_phase3": 0,
+  "phase3_final_rows_materialized": 300,
+  "phase4_started": false,
+  "phase5_started": false,
+  "pretrained_NCM_checkpoint_and_upstream_unchanged": true,
+  "prior_findings_preserved": [
+    "Phase 1 hard no-go",
+    "R2 negative",
+    "R3 easy no-go",
+    "Phase 2 measured no-go"
+  ],
+  "report": "results/phase3/summary.md",
+  "report_provenance_sha256": "f22227d7bd8a96a7ea42dfc8804a3994274fa693df28a3e61346074fd6335b36",
+  "status": "complete",
+  "subphase_completion_sha256": {
+    "3a": "910a8929b24defc7d66780c442388380d19afe3721bf2d0d735677b69ebab97f",
+    "3b": "dd65a2173b1b43026c81b476444a0b0cd719f8320cba38cc5e2a0b81a1134e60",
+    "3c": "53d52014f87a062f73b8ddced98bfff48256da3efbedba3f9089a1ea177d0e23"
+  },
+  "subphases": [
+    "3A",
+    "3B",
+    "3C"
+  ],
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "junit_seconds": 20.099,
+    "new_Phase3_tests": 27,
+    "passed": 380,
+    "report": "results/phase3/3c_tests.xml",
+    "sha256": "bf546cf18a663e90b19bb5df6ddcc5675f8555dc4a515404056f45f44d7dc668",
+    "skipped": 0
+  },
+  "timed_requests": 8400,
+  "total_actual_counts": {
+    "decoder": 29280,
+    "encoder": 0,
+    "generator_levels": 102480,
+    "inputs": 8540
+  },
+  "total_limits": {
+    "decoder": 63440,
+    "encoder": 0,
+    "generator_levels": 102480,
+    "inputs": 8540
+  }
+}
