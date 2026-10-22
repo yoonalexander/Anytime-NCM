@@ -16,3 +16,4 @@
 *.xml text eol=lf
 results/followup/sudoku_easy_r3/baseline.log text eol=lf
 results/phase2/source_snapshots/** -text
+results/phase3/source_snapshots/** -text

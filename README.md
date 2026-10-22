@@ -4,7 +4,9 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 2A–2C are complete; the measured speedup gate is no-go.** On 300 reserved easy-Sudoku inputs and 4,500 timed requests, every method solved 299/300 inputs and none exited early. Full depth averaged **100.98 ms**, the development-selected verifier **101.84 ms** (0.85% slower), and every-level verification **116.03 ms** (14.91% slower). The [online report](results/phase2/summary.md) includes paired intervals, quality, costs and access disclosures. All **353 tests pass**. Original Phase 1/R2/R3 negative findings remain unchanged; Phase 3 is deferred.
+**Current stage:** Phase 3A learned-controller fitting is complete under the user's explicit entry exception; development/final benchmarks are pending. **380 tests pass.** [Phase 3 protocol](docs/studies/phase3-easy-learned-protocol.md).
+
+**Completed Phase 2:** **Phase 2A–2C are complete; the measured speedup gate is no-go.** On 300 reserved easy-Sudoku inputs and 4,500 timed requests, every method solved 299/300 inputs and none exited early. Full depth averaged **100.98 ms**, the development-selected verifier **101.84 ms** (0.85% slower), and every-level verification **116.03 ms** (14.91% slower). The [online report](results/phase2/summary.md) includes paired intervals, quality, costs and access disclosures. All **353 tests pass**. Original Phase 1/R2/R3 negative findings remain unchanged; Phase 3 is deferred.
 
 ## Contents
 
@@ -56,7 +58,7 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Online request benchmarks | Complete; five frozen methods, 300 inputs × three repeats; practical speedup no-go |
 | Online stopping hook | Complete; true skipped-work and parity checks; upstream remains unmodified |
-| Learned controller | Deferred; separate headroom justification required |
+| Learned controller | 3A fitting complete; development/final benchmarking pending under explicit entry exception |
 | Executable research tests | 353 passed, including online halting, causality, statistics and report checks |
 | Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
 
@@ -500,3 +502,9 @@ python scripts/run_phase2.py verify-a
 ~~~
 
 All Phase 2 model-evaluation allocations are consumed. Report verification reuses saved results; do not rerun 2a/2b/2c. The final evaluation has prior aggregate baseline exposure, shared solution identities across difficulty masks, and unknown base-model overlap. Integrity hashing traverses all puzzle identities; inference/scoring materializes only permitted rows. No per-input Phase 3 board, reference or prediction was inspected. Full access/timing limitations are in the report. Phase 3 training and task changes require separate justification and a new work order.
+
+## Phase 3 learned stopping
+
+The user explicitly requested finishing Phase 3 regardless of the failed headroom gate. The [separate frozen protocol](docs/studies/phase3-easy-learned-protocol.md) preserves all earlier no-go results and the zero-loss/5% practical threshold. Six logistic fits use only 1,000 exploration inputs; 400 development inputs select regularization, threshold and inspection minimum. No final split supplies fitting/normalization/selection examples. Base features exclude Sudoku validity flags; the internal ablation adds only current codebook statistics.
+
+3A is complete: both models selected minimum level 10 and threshold 0.5; base C=10 and internal C=0.1. There are zero positive pre-final labels. [Training evidence](results/phase3/training.json), [completion](results/phase3/3a_completion.json). 3B will verify offline/online equivalence and measure the seven-method development comparison, then commit/push a lock before 3C. Phase 3 final per-input rows remain reserved at this milestone.

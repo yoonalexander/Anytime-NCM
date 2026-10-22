@@ -1,7 +1,7 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
+**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 3A is complete; 3B/3C are pending under an explicit entry exception. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
 **Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. The subsequently requested Phase 2 experiment is also complete with a measured no-go. Close this released-Sudoku first-valid path at the completed budget; no practical speedup is established. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
@@ -13,7 +13,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | 0 | Repository, environment, and official baseline reproduction | Setup complete; paper-number discrepancy remains open | Sections 6–7 |
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
 | 2 | Measured online verified stopping | Complete; measured no-go | Explicit user work order and frozen entry exception after failed offline gate |
-| 3 | Learned stopping against strong baselines | Conditional; not started | Documented remaining headroom and a separate Phase 3 holdout |
+| 3 | Learned stopping against strong baselines | 3A complete; 3B/3C pending | Explicit user request despite unmet headroom; reserved Phase 3 subset |
 | 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
 
@@ -189,15 +189,15 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 
 ## Phase 3 — Learned stopping, only with remaining headroom
 
-**Status:** Conditional; not started.
-**Entry:** Written justification of remaining headroom and an unexposed Phase 3 holdout.
+**Status:** 3A complete; 3B/3C pending — October 22, 2026.
+**Entry exception:** Remaining headroom is not demonstrated. The user explicitly requested finishing Phase 3 regardless; a [separate frozen protocol](docs/studies/phase3-easy-learned-protocol.md) authorizes a bounded learned-policy experiment without reversing any prior gate. The original 300-input Phase 3 subset remains reserved until a committed/released policy lock, with prior aggregate exposure disclosed.
 **Design mapping:** Sections 4 RQ3/H3, 8.3–8.5, and 9 Phase 3.
 
-- [ ] Define the training target and cost/quality objective before fitting; future trajectory outcomes may supply training labels but never inference-time features.
-- [ ] Train on exploration/training identities; choose thresholds/hyperparameters on development identities.
-- [ ] Begin with logistic regression or a small MLP.
+- [x] Define the training target and cost/quality objective before fitting; future trajectory outcomes may supply training labels but never inference-time features.
+- [x] Train on exploration/training identities; choose thresholds/hyperparameters on development identities.
+- [x] Begin with logistic regression or a small MLP.
 - [ ] Compare against full depth, tuned fixed depths, verified stopping, and available stability/uncertainty baselines.
-- [ ] Keep Sudoku-verifier features separate from any task-general policy claim.
+- [x] Keep Sudoku-verifier features separate from any task-general policy claim.
 - [ ] Measure feature/policy overhead, false early accepts, calibration, and quality/cost tradeoffs.
 - [ ] If assessing H3, compare internal statistics against level/input/decoded-output features alone.
 - [ ] Freeze all methods and evaluate them together on the 300-input `phase3_final` partition.
@@ -205,6 +205,14 @@ Do not iterate over shortened `z_levels` as full boards or clone the aliased `z_
 - [ ] Produce `results/phase3/summary.md`, training/evaluation metadata, model artifacts, and reproducible commands.
 
 **Acceptance:** A reproducible positive or negative result against strong baselines on held-out identities, with leakage checks and measured overhead. A learned policy is not required when simpler policies or lack of headroom settle the question.
+
+### Phase 3 delivery units
+
+| Subphase | Status | Evidence |
+| --- | --- | --- |
+| 3A: causal models and offline selection | Complete | [Training](results/phase3/training.json), [completion](results/phase3/3a_completion.json); 380 tests |
+| 3B: real development comparison and policy lock | Pending | Seven methods, 100 identities × three repeats, 70 exploration warmups |
+| 3C: frozen reserved comparison and report | Pending | Seven methods, 300 phase3_final identities × three repeats, 70 exploration warmups |
 
 ## Phase 4 — Natural-language generalization
 
@@ -368,3 +376,7 @@ The selected verifier checks only level 12. Incremental reconstruction and devel
 [Report](results/phase2/summary.md), [analysis](results/phase2/analysis.json), [2C receipt](results/phase2/2c.json), [2C completion](results/phase2/2c_completion.json), [whole-phase completion](results/phase2/completion.json), [tests](results/phase2/2c_tests.xml). 2A was committed/pushed as a0af5cb; 2B as 2687a46. The [lock release](results/phase2/policy_lock_release.json) proves local/GitHub equality before final access. Stage source snapshots preserve execution versions; report-only analysis sources are separately hashed. The previous compatibility review is archived under results/phase1/reviews/2026-10-22-phase2b/.
 
 The Phase 2 final subset had prior aggregate official-baseline exposure and related-mask shared identities, both disclosed. Integrity hashing traverses reserved identity operands without retaining boards; the restricted inference/scoring reader leaves Phase 3 rows unmaterialized. No per-input Phase 3 board/reference/prediction was inspected. Phase 3 stays deferred: there is no observed early-valid headroom in this setting. Stop here; a task/objective change or learned-controller study needs separate justification and a work order.
+
+### Phase 3A completion — October 22, 2026
+
+Six exploration-only logistic fits and all predeclared development choices are complete; zero new NCM generations/encodings/decodes. Both feature families choose inspection minimum 10 and threshold 0.5; base C=10 and internal C=0.1. There are no positive pre-final labels; the headroom gate remains unmet. Models receive current/past causal features, with task-specific validity confined to offline labels and the separate verified baseline. All 380 tests pass. [Protocol](docs/studies/phase3-easy-learned-protocol.md), [completion](results/phase3/3a_completion.json). Next: 3B, then committed/released lock and 3C.

@@ -1,0 +1,53 @@
+{
+  "artifacts_sha256": {
+    "3a.json": "2e1f877d68f11dab9240849f9fdb40b4d337a9cedb28ffa787b41b41e8923f69",
+    "training.json": "890a73bd7577cf76ae6694dc7a2addbecf0e9b1985d179a0d3d99a133399575a"
+  },
+  "base_commit": "d6bd23fe9afcc7d0f952b76e0e353ff5d1918dca",
+  "counts": {
+    "decoder": 0,
+    "encoder": 0,
+    "generator_levels": 0,
+    "inputs": 0
+  },
+  "date": "2026-10-22",
+  "development_identities": 400,
+  "development_positive_states": 396,
+  "development_states": 4800,
+  "entry_exception": "explicit user request regardless of unmet headroom",
+  "fits": 6,
+  "initial_synthetic_test_fixture_fixes": "Full baseline specs and subprocess import path corrected before fitting; calibration empty-input expected exception corrected.",
+  "next_action": "Commit/push 3A; execute bounded development comparison and release policy lock before 3C.",
+  "phase": "3A",
+  "phase2_final_rows_used": 0,
+  "phase3_final_rows_materialized": 0,
+  "positive_pre_final_states": 0,
+  "prior_compatibility_archive": "results/phase1/reviews/2026-10-22-phase2c",
+  "selected": {
+    "base": {
+      "C": 10.0,
+      "minimum": 10,
+      "threshold": 0.5
+    },
+    "internal": {
+      "C": 0.1,
+      "minimum": 10,
+      "threshold": 0.5
+    }
+  },
+  "source_snapshot": "results/phase3/source_snapshots/3a",
+  "status": "complete",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "new_phase3_tests": 27,
+    "passed": 380,
+    "report": "results/phase3/3a_tests.xml",
+    "sha256": "eec449e2b63b0dd36183ef21c0ae951abea5ce311367fca3a12eced17ceecc16",
+    "skipped": 0
+  },
+  "training_identities": 1000,
+  "training_positive_states": 994,
+  "training_states": 12000,
+  "verification_correction": "Replayed diagnostics with the same NumPy float64 representation as fitting; fitting/feature/selection AST and saved model hashes unchanged. No extra fit or NCM call."
+}

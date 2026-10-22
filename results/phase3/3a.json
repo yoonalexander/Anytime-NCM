@@ -1,0 +1,70 @@
+{
+  "artifacts_sha256": {
+    "training.json": "890a73bd7577cf76ae6694dc7a2addbecf0e9b1985d179a0d3d99a133399575a"
+  },
+  "completed_requests": 0,
+  "counts": {
+    "decoder": 0,
+    "encoder": 0,
+    "generator_levels": 0,
+    "inputs": 0
+  },
+  "entry_exception": "explicit user request despite negative headroom gate",
+  "finished_utc": "2026-10-22T11:20:22.333942+00:00",
+  "fits": 6,
+  "inputs_sha256": {
+    "artifacts/sudoku/easy/config.yaml": "68d74fe310e909ca1892338258a2d7143293e685ec1c4747265d9134013d1605",
+    "artifacts/sudoku/easy/generator.pt": "1cefebcd1eae0e210b7e991fdce0e86964d0e897e94a3b432d1008ab92d9926e",
+    "artifacts/sudoku/easy/tokenizer.pt": "3f9c87e99fd49900929cd650181f55bf00530280416992b11ddc4ea869b39d68",
+    "data/sudoku/easy/puzzles.pickle": "403353dd5d11e49d42627aee84c7b1ceb399fda03d01f6210ce78d0e61f2b29d",
+    "data/sudoku/easy/solutions.pickle": "b52de75f5e4642adca58b18967bcd4bbcafa699c61b21ac33ee0fd7389e0d576",
+    "docs/experiment_protocol.md": "557cf1377fe49b6c8515f506856ff0a395f8aaabe32adc79c25a8f2d9a3929ef",
+    "docs/partitions/sudoku-easy-r2.json": "d898977c35e234d2f2843188073b241cec362fc163141b98323835778ebfc5d3",
+    "docs/partitions/sudoku-hard.json": "ed7a6b3c102fe4713a3f80f8f02b53afe37a44b53da80964936467617799bdb7",
+    "results/followup/sudoku_checkpoint_screen/easy/provenance.json": "56395392627b74058073180fa8020c69de309d8ff8f3703e098f41dd115ebc22",
+    "results/followup/sudoku_easy_r3/analysis.json": "3519527e0ab1efe9db6a2cbb72a06871fa964ef9928fd6fd29197d7443cbf812",
+    "results/followup/sudoku_easy_r3/completion.json": "88671ba468ed5505ff3ca5f4142afe63a7e4d7d6cce471e88bba48fa46bd1fc7",
+    "results/followup/sudoku_easy_r3/trajectories.jsonl": "77bab8d9a1da12f9fa74a77401df6309ecbf2bb07b7c54c3c948a7b795d38fa2",
+    "results/phase2/completion.json": "f943194750cb682bef63801a2de21f99ac3a219314de936d004318a49a131f70",
+    "results/phase2/development_analysis.json": "cf68ac4997d4962330fcaa60b9e6857aa40066d61d43bc669bf6a510ccd7e113",
+    "results/phase2/policy_lock.json": "923262bbf231268f12af87b7ea9482b5ea8d7e55dd1cfa6f3fbfc8240f902aae"
+  },
+  "limits": {
+    "decoder": 0,
+    "encoder": 0,
+    "generator_levels": 0,
+    "inputs": 0
+  },
+  "phase2_final_rows_materialized": 0,
+  "phase3_final_rows_materialized": 0,
+  "source_sha256": {
+    "docs/studies/phase3-easy-learned-protocol.md": "c66ea0e19d0d3fba0c4284859d3f41351f9b127bfc5695713780c69fce77c91a",
+    "scripts/run_phase3.py": "54adaa73bc2d03c595a9c060e292e0dfcf7e09760584875390552039f2ce2bf4",
+    "src/anytime_ncm/dataset.py": "5a4b1f694940d7e308ab6c9f78389111524653e9c69c2f4cff65f7024078bd0a",
+    "src/anytime_ncm/learned_features.py": "5181d02c1d2d383258ba32e19ac1afdd6f69d80a16ac6e70e4c53cb4e7d08f0c",
+    "src/anytime_ncm/learned_online.py": "36fb5e433c7d284b16b28ca2961ee4f51721991ec5e2b07ca6edae08a5333ca4",
+    "src/anytime_ncm/online.py": "8122afd1db4fd40094fd6d5739bb0432acd7da1d50f4744c9cc95dbb72bfacc8",
+    "src/anytime_ncm/online_policy.py": "ba3ffe4eea710e7a42bcc4cea53ef3f8b598626deea97d4431f0677b3063da50",
+    "src/anytime_ncm/phase2.py": "86b139d7437e439ff871a9e3b4fa68cf0b443777224ded37c7c5dfb4af128630",
+    "src/anytime_ncm/phase2_run.py": "0567e54fbbb39212b256d2ebeda2ccb77a810dc765a67b596be3d43cefa992a9",
+    "src/anytime_ncm/phase3.py": "ecb58d6fb4a6ad1bc77cc7c6ca3f40f1746e09db741418d6abe10e15967a3bf3",
+    "src/anytime_ncm/phase3_render.py": "b3f564cd66914466c2275c1bedffb1fc984475404f33926f9854d4b765c37dcb",
+    "src/anytime_ncm/phase3_run.py": "c9334495ecf335327fa0ab856ef8723091a070906e8231c6ab6a6dfc23662565",
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/screening_inference.py": "26f5650514cf68ec697068720c9f19d8fdbd99456ac37a4e96018577a4574614",
+    "src/anytime_ncm/sudoku.py": "2616ce0f59044f8bb241ac317fe6936de76f8b4dad081bb91f2f92daf8f89f59",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/train_policy.py": "1aca396fb8e1a0ef62ca4da617131cb878cd8f43195724478d66a76e2513269b",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "tests/test_learned_policy.py": "b064f2b6810c7ca5ade36da0ce49696049ae2758522dcaf2706a68d1529fa3f8",
+    "tests/test_policy_no_future_leakage.py": "0a6db0aa71d4da03a2f3a239649ce33682d451f013a2bde085257ed1650a8eda",
+    "third_party/ncm/models/next_concept.py": "3dcae313cedf2e33ecb9a046d1ad9ec4336962c9221375ba5f7dd9be3d25b04e",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923"
+  },
+  "source_snapshot": "results/phase3/source_snapshots/3a",
+  "stage": "3a",
+  "started_utc": "2026-10-22T11:20:10.414789+00:00",
+  "status": "complete",
+  "study": "Phase 3"
+}

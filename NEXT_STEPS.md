@@ -2,7 +2,7 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. Phase 3 remains deferred.
+**Status:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicit request to finish Phase 3 regardless authorizes a separate bounded experiment: 3A complete, 3B/3C pending.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
@@ -200,3 +200,7 @@ All methods solved 299/300 inputs with zero early exits and zero false early acc
 [Final report](results/phase2/summary.md), [whole-phase completion](results/phase2/completion.json), [2C completion](results/phase2/2c_completion.json), [committed policy release](results/phase2/policy_lock_release.json). Phase 2's model-work allocation is consumed. Reproduction uses saved-data verification; do not rerun inference.
 
 The current recommendation is to stop this released-Sudoku first-valid study at the completed budget. Phase 3 has no observed useful early-output headroom here, and its 300 final rows remain reserved from per-input inference/scoring inspection. Prior full-baseline aggregates and identity-only integrity hashing are disclosed in the report. A WMT14 resource/protocol audit is an optional next work order; no task change, quality relaxation or controller training is included in the completed request.
+
+## Subsequent Phase 3 work order
+
+The user explicitly requested finishing Phase 3 regardless. This is an entry exception, not evidence of remaining headroom. [Protocol](docs/studies/phase3-easy-learned-protocol.md). 3A is complete with six exploration-only logistic fits, causal base/internal feature families and development-only selection; both choose minimum 10 / threshold 0.5. 3B benchmarks all seven frozen candidate methods on development, then commits/pushes the policy lock before 3C uses the reserved 300 Phase 3 identities. Existing quality and practical-speedup thresholds remain unchanged. No Phase 4 or task change is included.
