@@ -1,19 +1,21 @@
 # Anytime NCM
 
-**Can a frozen Next-Concept Modeling checkpoint stop at a different hierarchy level for each input and improve the quality-versus-compute frontier?**
+**Can a frozen Next-Concept Modeling checkpoint choose a stopping level per input and improve quality versus actual latency?**
 
-Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
+Anytime NCM is a reproducible research repository studying that question through hard/easy Sudoku audits, a bounded medium-Sudoku screen, actual online verified/learned stopping, and WMT14 German-to-English evaluation.
 
-**Current stage:** Phase 5's recorded-trajectory viewer and saved-evidence Concept Firewall bridge are complete. **433 tests pass.** Earlier practical-speedup no-go results remain unchanged. [Open portable viewer](results/phase5/viewer.html), [Phase 5 report](results/phase5/summary.md).
+**Status: the scoped work through Phase 5 is complete; practical adaptive speedup has not been demonstrated.** All primary measured comparisons are no-go. The latest recorded suite has **433 passing tests**. The completed software and experiments do not establish every broader idea in the original design.
 
-**Completed Phase 3:** **Phase 3A–3C are complete**, with a measured no-go for practical speedup. All seven frozen methods solve 299/300 final inputs with no early exits. Full depth averages **98.85 ms**, learned internal **101.80 ms (2.98% slower; paired 95% overhead interval 2.54%–3.44%)**. [Phase 3 report](results/phase3/summary.md). At Phase 3 completion, Phases 4–5 had not started. The later Phase 4 results appear below. **380 tests passed at Phase 3 completion.** [Phase 3 protocol](docs/studies/phase3-easy-learned-protocol.md).
+[Research paper, draft v2](RESEARCH_PAPER.md) · [Results and project status](#results-and-project-status) · [Portable viewer](results/phase5/viewer.html) · [Full roadmap](ROADMAP.md)
 
-**Completed Phase 2:** **Phase 2A–2C are complete; the measured speedup gate is no-go.** On 300 reserved easy-Sudoku inputs and 4,500 timed requests, every method solved 299/300 inputs and none exited early. Full depth averaged **100.98 ms**, the development-selected verifier **101.84 ms** (0.85% slower), and every-level verification **116.03 ms** (14.91% slower). The [online report](results/phase2/summary.md) includes paired intervals, quality, costs and access disclosures. All **353 tests pass**. Original Phase 1/R2/R3 negative findings remain unchanged. Phase 3 was subsequently completed under its separate entry exception.
+The repository now provides validated full-resolution prefix reconstruction, controlled trajectory data, an actual generation-stopping hook, frozen policy comparisons, reports and an inspection interface. Current-validity controllers were tested; a true continuation-value model, XSum, and a live CF-driven stopping/intervention policy remain untested.
 
 ## Contents
 
 - [Research approach](#research-approach)
 - [Implementation status](#implementation-status)
+- [Results and project status](#results-and-project-status)
+- [Remaining research questions](#remaining-research-questions)
 - [Recorded baseline results](#recorded-baseline-results)
 - [Documentation](#documentation)
 - [Validated environment](#validated-environment)
@@ -35,14 +37,14 @@ Anytime NCM is a research repository for answering that question with reproducib
 
 [Next-Concept Modeling (NCM)](https://github.com/HazyResearch/ncm) generates discrete latent codes from coarse to fine, predicting the positions within each hierarchy level in parallel. A tokenizer decoder reconstructs the output from those codes. This project keeps the released model checkpoint frozen and studies when further refinement is useful.
 
-The proposed experiments have two distinct modes:
+The completed experiments distinguish two modes:
 
 1. **Offline audit:** run every generator level, reconstruct full-resolution outputs after each cumulative prefix, and measure early-exit opportunities. This mode saves no generator work.
 2. **Online stopping:** introduce a minimal hook that actually prevents later generator evaluations. Phase 2 was explicitly requested despite the unmet offline opportunity gate, under a separate entry-exception protocol. Measure the total cost of generation, reconstruction, decoding, transfers, verification, and the stopping policy.
 
 The hard-Sudoku checkpoint has 12 levels with per-level code lengths `1, 2, 4, 6, 9, 13, 18, 26, 37, 50, 67, 89`, totaling 322 generated code positions. The last level's length of 89 is not the total hierarchy size.
 
-Useful intermediate solutions, real latency savings, and a benefit from learning a controller are open questions. Negative and inconclusive results are legitimate research outcomes.
+The tested Sudoku trajectories offer no early exact solutions, and the selected WMT policies reach full depth. Measured monitoring/controller overhead is not recovered by skipped work in the final comparisons. These are bounded negative results; they do not rule out every checkpoint, stopping signal or adaptive-inference objective.
 
 ## Implementation status
 
@@ -56,15 +58,43 @@ Useful intermediate solutions, real latency savings, and a benefit from learning
 | Official 32-input and 2,000-input baselines | Completed; evidence included |
 | Independent Sudoku parser/validator | Implemented; [Phase 1A contract](docs/phase1a_validation.md) |
 | Upstream adapter and full-resolution partial decoder | Implemented; [Phase 1B contract and parity](docs/phase1b_partial_decoding.md) |
-| Offline trajectory collector | Complete; 1,400 trajectories / 16,800 level records; [Phase 1C](docs/phase1c_collection.md) |
+| Offline trajectory collectors | Hard/easy Sudoku and WMT audits complete; viewer covers 2,992 recorded trajectories /35,712 levels; [scope](docs/phase5_scope.md) |
 | Diagnostic profiling, plots, and Phase 1 decision report | Complete; [Phase 1D measurements and limits](docs/phase1d_profiling.md) |
 | Online request benchmarks | Complete; five frozen methods, 300 inputs × three repeats; practical speedup no-go |
 | Online stopping hook | Complete; true skipped-work and parity checks; upstream remains unmodified |
-| Learned controller | Complete; six logistic fits, causal ablation, development selection and 6,300-request final comparison; measured no-go |
-| Executable research tests | 380 passed, including 27 new learned-policy, causality, calibration and selection tests |
-| Translation, summarization, viewer, and Concept Firewall integration | Later or optional phases |
+| Current-validity controller | Complete; six logistic fits, causal ablation, development selection and 6,300-request final comparison; measured no-go; not a continuation-value model |
+| Executable research tests | Latest recorded full suite: 433 passed; [JUnit](results/phase5/tests.xml) |
+| WMT14 translation | Complete; four-method frozen final comparison; [report](results/phase4/wmt14/summary.md) |
+| Recorded-trajectory viewer | Complete; source, levels, issues, exits, costs and provenance; [viewer](results/phase5/viewer.html) |
+| Concept Firewall bridge | Exact matching saved forecasts only; [contract](docs/phase5_firewall_contract.md); no live joint policy or safety claim |
+| Continuation-value model / XSum / live CF stopping | Not tested; require separately scoped research |
 
-The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate; the bounded online experiment uses scripts/run_phase2.py and its frozen study protocol.
+The `anytime-ncm` package CLI offers status, offline `collect`, and `validate-trajectories`. Wrapper scripts below work without an editable installation. Official baseline execution remains separate. The bounded online/task studies use scripts/run_phase2.py, scripts/run_phase3.py and scripts/run_phase4.py; scripts/view_trajectories.py builds/verifies/serves recorded evidence. Their completed model-work allocations must not be silently rerun.
+
+
+## Results and project status
+
+| Final study / primary method | Full mean ms | Primary mean ms | Slower than full / paired 95% interval | Recorded quality |
+| --- | ---: | ---: | --- | --- |
+| [Phase 2 · selected verifier](results/phase2/analysis.json) | 100.98 | 101.84 | 0.85% [0.39%, 1.34%] | 299/300 solved by every method |
+| [Phase 3 · learned internal](results/phase3/analysis.json) | 98.85 | 101.80 | 2.98% [2.54%, 3.44%] | 299/300 solved by every method |
+| [Phase 4 · guarded stability](results/phase4/wmt14/analysis.json) | 134.91 | 137.53 | 1.95% [1.40%, 2.49%] | Identical outputs; 22.687 BLEU /50.105 chrF |
+
+Every final method in these comparisons reaches full depth, with zero early requests. These within-study comparisons have different subsets/runs; absolute times are not a cross-phase optimization trend. All primary practical-speedup and adaptive-frontier gates fail. Reported intervals are paired identity-bootstrap intervals under the recorded process, not universal hardware/population guarantees.
+
+Earlier hard-Sudoku and extended easy-Sudoku audits each cover 1,400 exploration/development trajectories with zero early valid outputs. R1B's 32 target encodings also yield no early valid solution, while final target reconstructions round-trip exactly. Diagnostic component-sum cost estimates are separate from the actual online measurements above. [Consolidated methods and results](RESEARCH_PAPER.md).
+
+**What is finished:** the declared audits, follow-up screens, finite online experiments, current-validity learning, WMT study, viewer and saved-forecast bridge. **What remains unachieved:** the intended useful per-input quality–latency advantage. Phase 0's 86.25% versus published 86.1% hard-Sudoku discrepancy also remains unresolved.
+
+The [viewer](results/phase5/viewer.html) makes the saved evidence inspectable. Its CF bridge retains 3,468 exact matching states across 289 hard-Sudoku puzzles; it generates no new forecasts and changes no stopping decisions.
+
+## Remaining research questions
+
+A fitted estimate of expected benefit from further refinement is still absent. Phase 3 predicts current Sudoku validity; CF forecasts eventual failure. Neither is automatically a continuation value. XSum and live risk-driven stopping/interventions were not evaluated.
+
+The proposed next scientific step is a bounded WMT opportunity audit using only saved exploration/development trajectories: could an optimistic reference-informed exit assignment meet the declared corpus-quality tolerances while saving enough work to plausibly cover monitoring? That proposed audit has not been executed. Unmeasured latency must remain an estimate; consumed final inputs cannot become policy-development data for a fresh-test claim.
+
+Only if meaningful headroom exists would a separately frozen continuation-value experiment be justified, with a resource budget and suitable fresh evaluation data. Changing the base checkpoint/training objective would be a new research scope. This documentation update launches no experiments.
 
 ## Recorded baseline results
 
@@ -88,13 +118,16 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | Document | Purpose |
 | --- | --- |
 | [ROADMAP.md](ROADMAP.md) | Phase 0–5 execution checklist, milestones, acceptance criteria, and decision gates |
-| [Research paper](RESEARCH_PAPER.md) | Paper-style account of the completed study, methods, results, sources, and limits |
-| [Revised next steps](NEXT_STEPS.md) | Post-no-go diagnostic milestones, bounded checkpoint screening, and conditional online work |
+| [Research paper, draft v2](RESEARCH_PAPER.md) | Consolidated Phase 1–5 methods/results, bounded negative conclusions, uncertainty and untested research ambitions |
+| [Revised next steps](NEXT_STEPS.md) | Completed follow-ups/studies and the recorded stopping point; new research requires a separate scope |
 | [R1A error diagnosis](results/followup/sudoku_prefix_diagnosis/summary.md) | Exploration-only reference/clue/unit error distributions and adjacent-level changes |
 | [R1B target encoding](results/followup/sudoku_target_encoding/summary.md) | Frozen 32-reference reconstruction pilot versus cached generated prefixes |
 | [R2 checkpoint screens](results/followup/sudoku_checkpoint_screen/summary.md) | Completed bounded easy/medium screens, shared-reference reservations, and negative exit |
 | [R3 easy extension](results/followup/sudoku_easy_r3/summary.md) | Explicitly requested extension after negative R2; 1,400-input audit, estimated costs, and new no-go |
 | [Phase 2 online report](results/phase2/summary.md) | Actual online stopping, development selection, frozen final comparison and measured no-go |
+| [Phase 3 learned report](results/phase3/summary.md) | Current-validity controllers, internal-feature ablation, final costs and no-go |
+| [Phase 4 WMT report](results/phase4/wmt14/summary.md) | Full-resolution translation audit, task-specific quality margins and final no-go |
+| [Phase 5 inspection report](results/phase5/summary.md) | Portable viewer, saved CF correspondence checks and unavailable-value limits |
 | [Design document](Anytime_NCM_Design_Document.md) | Technical design and scientific requirements |
 | [DESIGN.md](DESIGN.md) | Entry point to the original design document |
 | [Experiment protocol](docs/experiment_protocol.md) | Frozen partitions, budgets, metrics, timing boundaries, and statistical procedure |
@@ -105,7 +138,7 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | [Phase 1D profiling](docs/phase1d_profiling.md) | Reproduction commands, diagnostic boundaries, budget, and limitations |
 | [Setup summary](results/setup/summary.md) | Compact operational results |
 
-The [research paper](RESEARCH_PAPER.md) documents the completed findings. The [revised next-steps roadmap](NEXT_STEPS.md) records completed R1A/R1B diagnostics and the negative R2 easy/medium screens. R1B used tokenizer-only inference; R2 used its separately declared 128 full-depth input-generation allocation. Further research needs a new task/objective decision. The design describes the intended system; the roadmap records implementation progress. Recorded run metadata identifies the exact protocol and source versions used for the existing results.
+The [research paper](RESEARCH_PAPER.md) consolidates saved findings through Phase 5. The design records the original research aims; the roadmap records delivered scope and entry exceptions, including negative outcomes. [Documentation-revision provenance](docs/research_paper_update_2026-10-23.json) identifies this narrative update. Historical empirical artifacts, protocols and milestone completion records remain unchanged.
 
 ## Validated environment
 
@@ -238,6 +271,8 @@ The partition script reads only input puzzles, keeps duplicate identities togeth
 
 ## Run the official baselines
 
+The commands in this section document inference reproduction in a fresh allocation. The recorded studies' model-work budgets are consumed; use saved-data verification below for ordinary checks and obtain a new research scope before rerunning experiments.
+
 From the repository root in PowerShell:
 
 ```powershell
@@ -288,11 +323,11 @@ The [frozen manifest](docs/partitions/sudoku-hard.json) groups puzzles by input-
 
 All 32 smoke inputs belong to exploration. The split seed is `20261020`; the [manifest digest](docs/partitions/sudoku-hard.sha256) identifies the exact assignment.
 
-The official descriptive full-set baseline necessarily scored all examples internally. Only aggregate scores and execution logs were inspected; individual holdout predictions/references were not used to select a policy. This access is disclosed in the reproduction log. Future work must preserve the phase-specific holdout boundaries and document additional access.
+The official descriptive full-set baseline necessarily scored all examples internally. Only aggregate scores and execution logs were inspected; individual holdout predictions/references were not used to select a policy. This access is disclosed in the reproduction log. The Phase 2/3 online final allocations have since been evaluated after their respective released locks, and WMT's assigned final subset is also consumed. Any additional study must disclose that history and use suitable fresh evaluation data.
 
 The predeclared offline gate requires an estimated reduction of at least 5% in mean total latency, a paired 95% interval with lower bound above zero, no empirical solve-rate loss for verified stopping, and zero false verifier accepts. Missing cost estimates can produce an inconclusive result. The full [protocol](docs/experiment_protocol.md) defines no-go conditions, budgets, monitoring costs, and statistics.
 
-The collector now enforces manifest-selected exploration/development access through a selective token-row reader. It skips sealed rows without materializing their tokens, validates selected identities, and requires validated smoke evidence before expansion. Current/past feature inputs are separate from offline reference diagnostics. Future policy/controller isolation remains a later milestone; see [Phase 1C access details](docs/phase1c_collection.md).
+The collector now enforces manifest-selected exploration/development access through a selective token-row reader. It skips sealed rows without materializing their tokens, validates selected identities, and requires validated smoke evidence before expansion. Current/past feature inputs are separate from offline reference diagnostics. Online policy/controller isolation was subsequently implemented and tested in Phases 2/3; the original [Phase 1C access details](docs/phase1c_collection.md) retain their historical scope.
 
 ## Repository layout
 
@@ -308,8 +343,8 @@ Anytime-NCM/
 |-- configs/                  # Research templates and pinned setup sources
 |-- third_party/ncm/          # Official Git submodule
 |-- scripts/                 # Executable setup/reproduction helpers
-|-- src/anytime_ncm/          # CLI, adapter, validator, collector, later research scaffolds
-|-- tests/                   # Validator, prefix, collector tests; timing/halting placeholders
+|-- src/anytime_ncm/          # Validators, decoders, online policies, studies, viewer
+|-- tests/                   # Validator, prefix, causality, timing, policy and viewer tests
 |-- docs/                    # Protocol, partitions, log, limitations
 |-- data/                    # Ignored local datasets
 |-- artifacts/               # Ignored local model files
@@ -341,48 +376,24 @@ The original design file remains authoritative. `DESIGN.md` is a navigation entr
 
 ## Verification
 
-Completed setup checks include:
+The latest recorded full suite has 433 passing tests at the Phase 5 snapshot. Historical milestone counts describe their own source versions. A read-only rerun without overwriting any frozen JUnit artifacts is:
 
-- An actual CUDA matrix multiplication and both official GPU baseline processes.
-- `pip check` and exact installed-version parity with `requirements.lock`.
-- Downloaded artifact sizes/SHA-256 values and semantic equality of upstream/Hub Sudoku configs.
-- Disjoint puzzle partitions, exploration-only smoke placement, and frozen manifest/protocol/config identifiers.
-- Python syntax, package/CLI loading, and TOML metadata parsing.
-- Git ignore rules and a clean upstream checkout at the pinned commit.
+~~~powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('-m','pytest','tests','-q','-p','no:cacheprovider')
+~~~
 
-Phase 1A adds 59 passing synthetic correctness and upstream tokenizer/scorer compatibility tests. Run the focused suite from PowerShell:
+To verify saved results without NCM checkpoint inference:
 
-```powershell
-.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests/test_sudoku_validator.py', '-q', '-p', 'no:cacheprovider')
-```
-
-See the [validator contract and API](docs/phase1a_validation.md) and [completion evidence](results/phase1/phase1a_validation.json). The parser and validator use only the Python standard library.
-
-Phase 1B adds the pinned upstream adapter, independent full-resolution prefix decoding, and tests for learned reconstruction, storage isolation, future-code isolation, generator delegation, and exploration-only parity inputs. The complete implemented suite passed **88 tests**:
-
-```powershell
-.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider', '--junitxml=results/phase1/phase1b_tests.xml')
-```
-
-A separate real-checkpoint GPU run verified all 12 full-resolution prefixes and **32/32 final decoded outputs matching** the unchanged official evaluator on the exploration smoke inputs. See [Phase 1B API and repeat commands](docs/phase1b_partial_decoding.md), [GPU evidence](results/phase1/phase1b_verified/verification.json), and [completion record](results/phase1/phase1b_validation.json). The parity script requires a fresh output directory. At Phase 1B completion timing and halting tests were still placeholders; those are implemented in subsequent phases.
-
-Phase 1C completed the smoke collection first, then all **1,400 allowed inputs / 16,800 level records**, with independent saved-file validation. All **140 implemented tests passed**:
-
-```powershell
-.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider', '--junitxml=results/phase1/phase1c_tests.xml')
-```
-
-Recorded [trajectories](results/phase1/trajectories.jsonl), [metadata](results/phase1/trajectories.metadata.json), [validation](results/phase1/trajectories.validation.json), and [completion evidence](results/phase1/phase1c_validation.json) include provenance and explicit null timings. To regenerate, follow [Phase 1C commands](docs/phase1c_collection.md); existing artifacts are preserved. To recheck the saved full collection:
-
-```powershell
+~~~powershell
 python scripts/validate_trajectories.py --metadata results/phase1/trajectories.metadata.json
-```
+python scripts/verify_phase1d.py
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_phase2.py','verify')
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_phase3.py','verify')
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_phase4.py','verify')
+python scripts/view_trajectories.py verify
+~~~
 
-Phase 1D completed all **200 profiled identities / 1,000 timed requests / 12,000 profiled levels**, plus the ten declared exploration-only warmups. All **186 tests passed**. Read the [summary and decision](results/phase1/summary.md), [analysis JSON](results/phase1/analysis.json), [trajectory table](results/phase1/trajectory_table.csv), and [profiling commands](docs/phase1d_profiling.md). Measured diagnostic components remain separate from online latency; original collection timings remain null.
-
-```powershell
-.\scripts\wsl_python.ps1 -PythonArguments @('-m', 'pytest', 'tests', '-q', '-p', 'no:cacheprovider', '--junitxml=results/phase1/phase1d_tests.xml')
-```
+Pinned local inputs are needed for scientific integrity checks; viewing the committed HTML needs no model weights or ML environment. These commands verify saved data, not a new online reproduction. Existing inference/test outputs and stage budgets must be preserved. Historical completion receipts retain hashes for their original commit; later documentation changes are recorded separately, with the current compatibility review archived/refreshed.
 
 ## Troubleshooting
 
@@ -400,28 +411,30 @@ Phase 1D completed all **200 profiled identities / 1,000 timed requests / 12,000
 
 ## Roadmap and contribution scope
 
-[ROADMAP.md](ROADMAP.md) preserves the full study:
+[ROADMAP.md](ROADMAP.md) retains the full Phase 0–5 plan and milestone history:
 
-1. **Phase 0:** operational setup and reproduction, completed with the disclosed paper-number discrepancy.
-2. **Phase 1:** validator, correct partial decoder, offline trajectories, profiling, and go/no-go/inconclusive report.
-3. **Phase 2:** conditional real online verified stopping and held-out benchmark.
-4. **Phase 3:** conditional learned controller only if measurable headroom remains.
-5. **Phase 4:** task-specific translation and/or summarization studies.
-6. **Phase 5:** optional trajectory viewer and Concept Firewall integration.
+1. **Phase 0:** operational setup/reproduction complete; exact hard-Sudoku paper-number discrepancy remains open.
+2. **Phase 1 and R1A–R3:** audits/diagnoses/screens complete, with no observed useful early-valid Sudoku opportunity.
+3. **Phase 2:** actual online verified stopping complete under an explicit entry exception; measured no-go.
+4. **Phase 3:** current-validity controllers and final comparisons complete under an explicit entry exception; measured no-go.
+5. **Phase 4:** WMT14 generalization complete; measured no-go. XSum was not included.
+6. **Phase 5:** trajectory viewer and saved-evidence CF bridge complete; no joint predictive/latency/safety benefit claim.
 
-Work on the selected milestone, add its meaningful correctness/parity checks, record commands and artifact provenance, and update the roadmap with evidence. Preserve the frozen model and sampling semantics. Protocol changes require a dated amendment before affected evaluation, while historical run hashes remain traceable.
+Further experimentation needs a new hypothesis, bounded scope, quality/cost criteria and suitable evaluation data. Completing the scoped deliverables does not establish all original research ambitions. Code correctness/parity, an optimistic opportunity bound and a measured practical-speedup claim remain distinct requirements.
 
 ## Limitations
 
-- No valid solution occurred before level 12 on the 1,400 permitted inputs. This frozen Sudoku setting produced a no-go; no online adaptive speedup was measured.
-- Exact agreement with the paper's hard-Sudoku number remains unresolved.
-- Sudoku validation, full-resolution partial reconstruction, offline collection, diagnostic profiling, and the Phase 1 report are complete. Online stopping remains unimplemented. Phase 1B official-output parity and Phase 1D observation/reconstruction parity passed under their recorded settings.
-- The validated runtime is one WSL2/RTX 5060 configuration; other platforms and resource limits need validation.
-- BLEU/ROUGE, future heuristic confidence, and Sudoku correctness do not establish general semantic correctness or AI safety.
-- Raw datasets, weights, environments, caches, and prediction pickles are intentionally local; a clone must recreate them.
-- There is no chatbot, browser/mobile product, or trained foundation model in this repository.
+- No valid solution appears before the final level in the audited Sudoku trajectories. Selected final WMT methods also execute all levels. Primary measured comparisons fail the practical-speedup/frontier gates.
+- Phase 3 learns current correctness, not continuation value. XSum and live CF-driven stopping/intervention remain untested.
+- The 86.25% hard-Sudoku official result versus published 86.1% remains unexplained; operational reproduction is not exact paper-number replication.
+- Results concern recorded checkpoints, policies, finite allocations and one GPU/WSL pathway. They do not establish that all adaptive NCM methods are ineffective.
+- Final allocations are consumed; prior full-baseline aggregate scoring, shared identities and unknown training overlap are disclosed. Reusing those final results cannot establish untouched-test performance.
+- Diagnostic estimates, actual online wall latency, CUDA stream elapsed, generated work and batched throughput are different measurements. Intervals are conditional on the recorded sampling/process.
+- BLEU/chrF, literal number/negation cues and Sudoku correctness do not establish general factuality or AI safety.
+- CF scores are retained producer forecasts on exact matching hard-Sudoku states. No cross-batch bitwise latent/probe parity or new benefit is claimed; unmatched/easy/WMT risk stays unavailable.
+- The portable viewer embeds its recorded data; rebuilding/integrity verification needs the original pinned local inputs. Browser checks covered HTTP serving; direct file-URL testing was tool-restricted.
 
-See [docs/known_limitations.md](docs/known_limitations.md) for the current evidence boundaries.
+See [known limitations](docs/known_limitations.md) and [the manuscript](RESEARCH_PAPER.md#9-limitations-and-threats-to-validity) for the evidence boundaries.
 
 ## Upstream and attribution
 
