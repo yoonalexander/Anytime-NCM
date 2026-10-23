@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** Phase 4A–4C are complete on WMT14, with a measured practical-speedup no-go. **404 tests pass.** Phase 5 remains unstarted. [WMT report](results/phase4/wmt14/summary.md).
+**Current stage:** Phase 5's recorded-trajectory viewer and saved-evidence Concept Firewall bridge are complete. **433 tests pass.** Earlier practical-speedup no-go results remain unchanged. [Open portable viewer](results/phase5/viewer.html), [Phase 5 report](results/phase5/summary.md).
 
 **Completed Phase 3:** **Phase 3A–3C are complete**, with a measured no-go for practical speedup. All seven frozen methods solve 299/300 final inputs with no early exits. Full depth averages **98.85 ms**, learned internal **101.80 ms (2.98% slower; paired 95% overhead interval 2.54%–3.44%)**. [Phase 3 report](results/phase3/summary.md). At Phase 3 completion, Phases 4–5 had not started. The later Phase 4 results appear below. **380 tests passed at Phase 3 completion.** [Phase 3 protocol](docs/studies/phase3-easy-learned-protocol.md).
 
@@ -522,7 +522,7 @@ The user explicitly requested finishing Phase 3 regardless of the failed headroo
 .\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_phase3.py','verify')
 ~~~
 
-This recomputes saved-data evidence without torch/matplotlib; the pinned local input files are still needed for integrity checks. Phase 3's six CPU fits and all 8,540 new NCM input-generations are complete; do not rerun fitting or inference to recreate the report. The pretrained NCM checkpoint and upstream checkout remain unchanged. The Phase 3 work order ended there; the later user request authorized Phase 4 below. Phase 5 remains unstarted. The hard-baseline 86.25% versus paper 86.1% discrepancy remains unexplained.
+This recomputes saved-data evidence without torch/matplotlib; the pinned local input files are still needed for integrity checks. Phase 3's six CPU fits and all 8,540 new NCM input-generations are complete; do not rerun fitting or inference to recreate the report. The pretrained NCM checkpoint and upstream checkout remain unchanged. The Phase 3 work order ended there; the later user request authorized Phase 4 below. Phase 5 was subsequently requested and is complete below. The hard-baseline 86.25% versus paper 86.1% discrepancy remains unexplained.
 
 ## Phase 4 WMT14 study
 
@@ -540,4 +540,28 @@ The user requested completing Phase 4 after Phase 3. [Frozen protocol](docs/stud
 .\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_phase4.py','verify')
 ~~~
 
-Verification uses saved records without model/plotting imports; pinned local assets are required for hashes. The model-work allocation is consumed. To regenerate the report from saved data, run the report stage and then python scripts/finalize_phase4_report.py; original renderer text and narrow reporting clarification are retained. Do not rerun inference. Phase 5 has not started.
+Verification uses saved records without model/plotting imports; pinned local assets are required for hashes. The model-work allocation is consumed. To regenerate the report from saved data, run the report stage and then python scripts/finalize_phase4_report.py; original renderer text and narrow reporting clarification are retained. Do not rerun inference. Phase 5 was subsequently requested and is complete below.
+
+## Phase 5: recorded-trajectory viewer and Concept Firewall bridge
+
+[Portable viewer](results/phase5/viewer.html) · [Completion report](results/phase5/summary.md) · [Integration contract](docs/phase5_firewall_contract.md)
+
+The self-contained HTML includes all **2,992 audited exploration/development trajectories and 35,712 levels** from hard Sudoku, easy Sudoku and WMT14. Choose a study/input/method, then inspect levels with the buttons or keyboard-accessible slider. Source, current issues, full-depth output, chosen exit, policy traces, timing repeats, configuration/hardware and source hashes are inspectable. Offline replay, measured request latency and separate cohort cost estimates have distinct labels. Unfitted continuation values and unmeasured request costs remain unavailable.
+
+The saved-evidence CF bridge attaches **3,468 exact matching states across 289 hard-Sudoku puzzles**. It checks checkpoint hashes, explicit canonical identity conversion, cumulative codes and decoded board before copying the producer's two predeclared forecast families. Missing/easy/WMT risk stays unavailable. It predicts eventual Sudoku failure, not safety or continuation benefit; it does not change stopping decisions. CF's original negative primary result is retained.
+
+Open the HTML locally, or serve the committed artifact with standard-library Python:
+
+~~~powershell
+python scripts/view_trajectories.py serve
+~~~
+
+Then open http://127.0.0.1:8765/. The server binds loopback and serves only the single viewer. The HTML contains its data/styles/scripts and makes no external requests; serving/viewing needs no model weights or ML packages. Python 3.11+ is recommended for the build/verification commands. Browser automation verified the HTTP viewer; direct file-URL navigation is restricted by the browser tool.
+
+~~~powershell
+python scripts/view_trajectories.py verify
+python scripts/view_trajectories.py build --firewall-root ..\Concept-Firewall
+python scripts/view_trajectories.py verify --firewall-root ..\Concept-Firewall
+~~~
+
+Rebuilding requires the original saved artifacts and pinned local datasets; the CF checkout is optional for building with unavailable risk, and required for recreating/external rechecking the retained forecasts. The normal verifier checks source/artifact digests, all displayed reconstructions, diagnostics, decisions and timing repeats. All 433 tests pass, including 29 viewer regressions. Phase 5 adds zero model calls, fits, retuning or final-input materialization. Earlier empirical artifacts and frozen sources remain unchanged.

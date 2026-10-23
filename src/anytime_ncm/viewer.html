@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Anytime NCM · Prefix observatory</title>
+<style>
+:root{--paper:#f5f8fc;--ink:#172c42;--blue:#235b9a;--teal:#0f746a;--amber:#975900;--rule:#c8d5e4;--display:Bahnschrift,"Segoe UI",sans-serif;--body:"Segoe UI",Arial,sans-serif;--mono:Consolas,monospace}
+[hidden]{display:none!important}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 var(--body)}
+main{max-width:1520px;margin:auto;padding:30px 38px 55px}
+header{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:2px solid var(--ink);padding-bottom:22px}
+.brand{font:700 12px var(--mono);letter-spacing:.12em;color:var(--blue)}
+h1{font:600 clamp(28px,4vw,45px)/1.1 var(--display);margin:8px 0 10px;letter-spacing:-.025em}
+header p{margin:0;max-width:690px}.stamp{text-align:right;font:12px/1.8 var(--mono);padding-top:5px;white-space:nowrap}
+label,.eyebrow{font:600 12px var(--mono);display:block;margin-bottom:6px}
+.controls{display:grid;grid-template-columns:1.2fr .6fr .8fr 1.3fr 1fr;gap:16px;padding:25px 0 18px;align-items:end}
+select,input,button{font:inherit;color:var(--ink)}select,input[type=search]{width:100%;background:white;border:1px solid var(--rule);padding:10px 9px;border-radius:4px;height:45px;min-width:0}
+button{cursor:pointer;border:1px solid var(--rule);background:white;border-radius:4px;padding:9px 12px}
+button:hover{border-color:var(--blue);background:#eaf1fa}button:disabled{opacity:.45;cursor:default}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.sample-line{display:flex;justify-content:space-between;align-items:center;gap:15px;font:12px/1.5 var(--mono);margin:0 0 18px;overflow-wrap:anywhere}
+.sample-nav{display:flex;gap:6px;flex-shrink:0}.sample-nav button{padding:6px 12px}
+.rail{background:#e4edf7;padding:18px 20px;border:1px solid var(--rule);border-radius:6px}
+.rail-head{display:flex;justify-content:space-between;gap:14px;align-items:center;margin-bottom:12px}
+.rail-head strong{font:600 20px var(--display)}.rail-head span{font-size:13px}
+#levels{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:5px}
+.level{font:13px var(--mono);padding:10px 4px;border-bottom:4px solid var(--rule)}
+.level.valid{border-bottom-color:var(--teal)}.level.chosen{box-shadow:inset 0 0 0 1px var(--ink)}
+.level[aria-pressed=true]{background:var(--blue);border-color:var(--blue);color:white}
+.rail-foot{display:flex;gap:15px;align-items:center;margin-top:13px}input[type=range]{flex:1;accent-color:var(--blue);min-width:100px}
+.legend{font-size:12px;color:#415b73;margin:10px 0 0}
+.readouts{display:grid;grid-template-columns:1fr 1fr 1fr;gap:18px;margin:20px 0}
+.readout{border-left:3px solid var(--rule);padding-left:13px}.readout strong{display:block;font:600 23px var(--display)}
+small,.muted{font-size:13px;color:#415b73}.cost-note{display:block;margin-top:3px}
+.workbench{display:grid;grid-template-columns:.9fr 1.1fr 1fr;gap:18px}
+.panel{min-width:0;background:white;border:1px solid var(--rule);border-radius:6px;padding:20px}
+h2{font:600 20px var(--display);margin:0 0 15px}h3{font:600 15px var(--body);margin:18px 0 6px}
+.board{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));border:2px solid var(--ink);max-width:340px;aspect-ratio:1;margin:12px auto}
+.cell{display:flex;align-items:center;justify-content:center;border:1px solid var(--rule);font:clamp(14px,1.5vw,21px) var(--mono);min-width:0}
+.cell:nth-child(3n){border-right:2px solid var(--ink)}.cell:nth-child(9n){border-right:0}
+.cell:nth-child(n+19):nth-child(-n+27),.cell:nth-child(n+46):nth-child(-n+54){border-bottom:2px solid var(--ink)}
+.cell.given{font-weight:bold;background:#edf2f8}.cell.changed{color:var(--blue);background:#dceafd}.cell.violation{color:var(--amber);background:#fff0d9}
+.output{font-size:17px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere;min-height:70px}
+.issues{font-size:14px;padding-left:19px;margin:8px 0}.issues li{margin-bottom:3px}
+.status{display:inline-block;font:12px var(--mono);padding:5px 8px;border:1px solid var(--rule);border-radius:3px;margin-bottom:9px}
+.status.ok{color:var(--teal);border-color:var(--teal)}.status.issue{color:var(--amber);border-color:#dfbd89}
+details{margin-top:15px}summary{cursor:pointer;color:var(--blue);font-size:14px}
+pre{font:12px/1.6 var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;max-height:340px;overflow:auto;background:var(--paper);padding:12px;border-radius:4px}
+.signals{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}.signal{border-top:2px solid var(--blue)}
+.values{display:flex;flex-wrap:wrap;gap:18px}.values strong{font:600 22px var(--display);display:block}
+.note{font-size:13px;border-top:1px solid var(--rule);margin-top:14px;padding-top:12px}.estimate{color:var(--amber)}
+footer{border-top:1px solid var(--rule);padding-top:20px;margin-top:26px;font-size:13px}
+#error{border:2px solid var(--amber);padding:20px;white-space:pre-wrap}
+@media(max-width:1100px){main{padding:24px}.controls{grid-template-columns:1fr 1fr 1fr}.workbench{grid-template-columns:1fr 1fr}.panel.source{grid-column:1/-1}.source .board{max-width:240px}.cell{font-size:20px}}
+@media(max-width:650px){main{padding:18px 12px}header{display:block}.stamp{text-align:left;margin-top:12px}.controls{grid-template-columns:1fr 1fr;gap:12px}.controls>div:first-child{grid-column:1/-1}
+.workbench,.signals{grid-template-columns:1fr}.panel.source{grid-column:auto}.readouts{grid-template-columns:1fr;gap:12px}.readout strong{font-size:21px}
+#levels{grid-template-columns:repeat(6,minmax(0,1fr))}.rail{padding:14px}.rail-head{align-items:flex-start}.sample-line{align-items:flex-start}.cell{font-size:21px}.stamp{white-space:normal}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+</style>
+</head>
+<body><main>
+<header><div><div class="brand">ANYTIME NCM / RECORDED TRAJECTORIES</div><h1>Prefix observatory</h1><p>Follow a reconstruction from its first code level to the recorded stopping decision.</p></div>
+<div class="stamp">PHASE 5 · RESEARCH VIEWER<br>Saved evidence / no live generation<br>Practical speedup: no-go in tested studies</div></header>
+<p id="error" hidden role="alert"></p>
+<div id="app">
+<div class="controls">
+<div><label for="study">Study</label><select id="study"></select></div>
+<div><label for="partition">Partition</label><select id="partition"><option value="">Both audited sets</option><option value="exploration">Exploration</option><option value="development">Development</option></select></div>
+<div><label for="search">Find index or identity</label><input id="search" type="search" placeholder="e.g. 34 or e395f"></div>
+<div><label for="sample">Recorded input</label><select id="sample"></select></div>
+<div><label for="method">Stopping method</label><select id="method"></select></div>
+</div>
+<div class="sample-line"><span id="identity"></span><div class="sample-nav"><button id="prev" aria-label="Previous input">← Input</button><button id="next" aria-label="Next input">Input →</button></div></div>
+<section class="rail" aria-label="Reconstruction levels">
+<div class="rail-head"><strong id="level-title"></strong><span id="exit-note"></span></div>
+<div id="levels"></div>
+<div class="rail-foot"><label for="scrubber">Selected level</label><input id="scrubber" type="range" min="1" max="12" value="1"><output id="range-value" for="scrubber"></output></div>
+<p class="legend">Outlined: chosen exit · Teal underline: valid Sudoku solution · All levels remain visible for retrospective inspection.</p>
+</section>
+<div class="readouts" aria-live="polite">
+<div class="readout"><span class="eyebrow">Chosen exit</span><strong id="chosen"></strong><small id="policy-kind"></small></div>
+<div class="readout"><span class="eyebrow">Total request latency</span><strong id="cost"></strong><small id="cost-kind"></small><small class="cost-note">Includes the selected policy's work; not a per-prefix timing.</small></div>
+<div class="readout"><span class="eyebrow">Estimated continuation value</span><strong>Unavailable</strong><small>No continuation-value estimator was fitted.</small></div>
+</div>
+<div class="workbench">
+<section class="panel source"><h2>Source input</h2><div id="source"></div><p id="source-note" class="muted"></p>
+<details><summary>Reference · offline only</summary><div id="reference"></div></details></section>
+<section class="panel"><h2 id="current-title">Selected reconstruction</h2><div id="validity" class="status"></div><div id="current"></div>
+<p id="cell-legend" class="legend">Blue: changed from preceding level · Amber: supplied clue violated</p>
+<h3>Current observations</h3><ul id="issues" class="issues"></ul>
+<details><summary>Offline reference diagnostics</summary><pre id="offline"></pre></details></section>
+<section class="panel"><h2>Full-depth comparison</h2><div id="full-status" class="status"></div><div id="full"></div><p id="comparison-note" class="muted"></p>
+<details><summary>Exact selected and full text</summary><pre id="raw"></pre></details></section>
+</div>
+<div class="signals">
+<section class="panel signal"><h2>Recorded policy evidence</h2><p id="policy-note"></p><p id="sufficiency"></p><p id="estimate" class="estimate"></p>
+<details><summary>Policy specification and timing repeats</summary><pre id="policy"></pre></details></section>
+<section class="panel signal"><h2>Concept Firewall · eventual failure</h2><div class="values">
+<div><span class="eyebrow">Input + decoded</span><strong id="risk-base"></strong></div>
+<div><span class="eyebrow">Input + decoded + latent</span><strong id="risk-latent"></strong></div></div>
+<p id="risk-note" class="muted"></p><p class="note">These forecasts target eventual invalid hard-Sudoku output. They do not establish safety or continuation benefit and do not change this stopping decision. The producer's primary latent comparison showed no demonstrated improvement.</p></section>
+</div>
+<details class="panel"><summary>Inspect run provenance and selected record</summary><pre id="provenance"></pre></details>
+<footer><p id="claims"></p><p>Exploration/development only. Reference diagnostics are retrospective, never policy inputs. All three online timing repeats are retained where available. Missing values stay unavailable; no new experiments or adaptive benefit are implied.</p></footer>
+</div>
+</main>
+<!--DATA-->
+<script>
+"use strict";
+(function(){
+const $=function(id){return document.getElementById(id);};
+const D=JSON.parse($("data").textContent);
+let study=D.studies[0],filtered=[],sample=null,level=1,method="full";
+function text(id,value){$(id).textContent=value;}
+function option(value,label){const o=document.createElement("option");o.value=value;o.textContent=label;return o;}
+function cells(value){const v=Array.from(value).filter(function(c){return /[0-9_]/.test(c);});return v.length===81?v.map(function(c){return c==="_"?0:Number(c);}):null;}
+function output(id,value,clues,previous){
+ const host=$(id);host.replaceChildren();
+ const values=study.id==="wmt14"?null:cells(value);
+ if(!values){const p=document.createElement("div");p.className="output";p.textContent=value;host.append(p);return;}
+ const grid=document.createElement("div");grid.className="board";grid.setAttribute("role","img");grid.setAttribute("aria-label","Sudoku grid: "+values.map(function(v){return v||"blank";}).join(" "));
+ values.forEach(function(v,i){const cell=document.createElement("span");cell.className="cell";cell.textContent=v||"·";
+ if(clues&&clues[i])cell.classList.add("given");
+ if(previous&&v!==previous[i])cell.classList.add("changed");
+ if(clues&&clues[i]&&v!==clues[i])cell.classList.add("violation");
+ grid.append(cell);});host.append(grid);
+}
+function selectStudy(){
+ study=D.studies.find(function(s){return s.id===$("study").value;});method="full";level=1;$("search").value="";$("partition").value="";filter();
+}
+function filter(){
+ const query=$("search").value.toLowerCase().trim(),part=$("partition").value;
+ filtered=study.samples.filter(function(s){return (!part||s.partition===part)&&(!query||String(s.index).includes(query)||s.identity.includes(query));});
+ $("sample").replaceChildren();
+ filtered.forEach(function(s){$("sample").append(option(String(s.index),"#"+s.index+" · "+s.partition));});
+ if(!filtered.length){sample=null;$("app").querySelectorAll("section,.readouts,.sample-line,footer,details.panel").forEach(function(e){e.hidden=true;});text("error","No recorded inputs match. Clear the search or change the partition.");$("error").hidden=false;return;}
+ $("error").hidden=true;$("app").querySelectorAll("section,.readouts,.sample-line,footer,details.panel").forEach(function(e){e.hidden=false;});
+ chooseSample();
+}
+function chooseSample(){
+ sample=filtered.find(function(s){return String(s.index)===$("sample").value;})||filtered[0];
+ $("method").replaceChildren();
+ Object.keys(sample.policies).forEach(function(m){$("method").append(option(m,m.replaceAll("_"," ")));});
+ if(!sample.policies[method])method="full";$("method").value=method;
+ level=Math.min(level,sample.levels.length);render();
+}
+function formatProbability(value){return value===undefined||value===null?"Unavailable":(value*100).toFixed(2)+"%";}
+function render(){
+ const state=sample.levels[level-1],last=sample.levels[sample.levels.length-1],policy=sample.policies[method],clues=cells(sample.source);
+ const prev=level>1?cells(sample.levels[level-2].text):null;
+ text("identity","#"+sample.index+" / "+sample.partition+" / "+sample.identity);
+ text("level-title","Level "+level+" of "+sample.levels.length);
+ text("exit-note",level>policy.exit?"After chosen exit · retrospective only":level===policy.exit?"Chosen stopping level":"Before chosen exit");
+ text("chosen","Level "+policy.exit);text("policy-kind",method.replaceAll("_"," "));
+ text("cost",policy.mean_ms===null?"Unavailable":policy.mean_ms.toFixed(2)+" ms");
+ text("cost-kind",policy.cost_kind);
+ $("levels").replaceChildren();
+ sample.levels.forEach(function(s){const b=document.createElement("button");b.className="level"+(s.valid?" valid":"")+(s.level===policy.exit?" chosen":"");
+ b.textContent="L"+s.level;b.setAttribute("aria-label","Inspect level "+s.level+(s.level===policy.exit?", chosen exit":""));b.setAttribute("aria-pressed",String(s.level===level));
+ b.onclick=function(){level=s.level;render();$("levels").children[level-1].focus();};$("levels").append(b);});
+ $("scrubber").max=sample.levels.length;$("scrubber").value=level;text("range-value",String(level));
+ output("source",sample.source);output("reference",sample.reference);
+ output("current",state.text,clues,prev);output("full",last.text,clues);
+ text("source-note",study.id==="wmt14"?"Released source text. The model used a 96-token-ID prefix; exact input IDs are in provenance. Reference scoring is offline.":"Dots are blanks in the supplied puzzle. Bold cells are supplied clues.");
+ text("current-title","Level "+level+" reconstruction");
+ text("validity",state.valid===null?"Graded quality · no exact verifier":state.valid?"Valid clue-consistent solution":"Not a valid clue-consistent solution");
+ $("validity").className="status"+(state.valid===true?" ok":state.valid===false?" issue":"");
+ text("full-status","Level "+last.level+(last.valid===null?" · graded quality":last.valid?" · valid solution":" · invalid solution"));
+ text("comparison-note",state.text===last.text?"Selected reconstruction matches full-depth text.":"Selected reconstruction differs from full-depth text.");
+ $("cell-legend").hidden=study.id==="wmt14";
+ $("issues").replaceChildren();let count=0;
+ Object.entries(state.issues).forEach(function(pair){if(study.id!=="wmt14"&&!pair[1])return;const li=document.createElement("li");li.textContent=pair[0]+": "+JSON.stringify(pair[1]);$("issues").append(li);count++;});
+ if(!count){const li=document.createElement("li");li.textContent="No current Sudoku issues detected.";$("issues").append(li);}
+ text("offline",JSON.stringify(state.offline,null,2));
+ text("raw","SELECTED LEVEL "+level+"\n"+state.text+"\n\nFULL DEPTH\n"+last.text);
+ text("policy-note",policy.wall_ms.length?"Recorded online development request: three measured repeats.":"Offline replay on this saved trajectory. No online latency was recorded for this input/method.");
+ const prob=policy.sufficiency_probability[String(level)];
+ text("sufficiency","Current-correctness sufficiency probability: "+formatProbability(prob)+". This is a different target from eventual failure or continuation value.");
+ const est=study.estimated_cost;
+ text("estimate",est?"Separate "+est.kind+": full "+est.full_mean_ms.toFixed(2)+" ms; every-level checking "+est.every_level_mean_ms.toFixed(2)+" ms.":"Per-level and unmeasured request costs are unavailable.");
+ text("policy",JSON.stringify({specification:study.policies[method],recorded_or_replayed_decision:policy},null,2));
+ const risk=(sample.firewall||{})[String(level)];
+ text("risk-base",formatProbability(risk&&risk.input_decoded));text("risk-latent",formatProbability(risk&&risk.input_decoded_latent));
+ text("risk-note",risk?(level===12?"Post-generation diagnosis only. ":"")+"Existing CF internal-test forecast; exact canonical puzzle, code prefix, output and checkpoints match.":"No compatible saved CF test forecast for this state. Unavailable does not mean low risk.");
+ text("provenance",JSON.stringify({study:study.id,report:study.report,trajectory:study.trajectory,run_provenance:study.provenance,index:sample.index,identity:sample.identity,cf_identity:sample.cf_identity,
+ partition:sample.partition,model_prefix_ids:sample.model_prefix_ids,level:state,policy:policy,bridge:D.bridge,source_sha256:D.sources},null,2));
+ text("claims",D.claims);
+ const index=filtered.indexOf(sample);$("prev").disabled=index===0;$("next").disabled=index===filtered.length-1;
+}
+D.studies.forEach(function(s){$("study").append(option(s.id,s.label+" · "+s.samples.length+" inputs"));});
+$("study").onchange=selectStudy;$("partition").onchange=filter;$("search").oninput=filter;$("sample").onchange=chooseSample;
+$("method").onchange=function(){method=$("method").value;render();};
+$("scrubber").oninput=function(){level=Number($("scrubber").value);render();};
+$("prev").onclick=function(){$("sample").value=String(filtered[filtered.indexOf(sample)-1].index);chooseSample();};
+$("next").onclick=function(){$("sample").value=String(filtered[filtered.indexOf(sample)+1].index);chooseSample();};
+selectStudy();
+})()
+</script></body></html>

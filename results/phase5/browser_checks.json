@@ -1,0 +1,92 @@
+{
+  "artifact_sha256": "885820e400dd2d83b6afc6e0a268c3c22e12ce2848775f144d2b62ba9fe79ad9",
+  "cases": [
+    {
+      "input": 34,
+      "level": 12,
+      "method": "learned_internal",
+      "name": "Sudoku desktop layout",
+      "passed": true,
+      "study": "easy",
+      "viewport": [
+        1440,
+        1000
+      ]
+    },
+    {
+      "level": 12,
+      "name": "Keyboard level control and three measured repeats",
+      "passed": true,
+      "probability_percent": 97.78,
+      "timing_repeats": 3
+    },
+    {
+      "input": 17,
+      "input_decoded_latent_percent": 14.2,
+      "input_decoded_percent": 14.93,
+      "level": 6,
+      "name": "Exact CF forecast display",
+      "passed": true,
+      "study": "hard"
+    },
+    {
+      "cost_ms_rounded": 147.96,
+      "exit": 11,
+      "input": 39,
+      "level": 10,
+      "name": "WMT graded reconstruction and adaptive cost",
+      "passed": true,
+      "risk": "unavailable",
+      "study": "wmt14"
+    },
+    {
+      "hidden_stale_panels": true,
+      "name": "Empty-search recovery",
+      "passed": true,
+      "restored_on_clear": true
+    },
+    {
+      "columns": 1,
+      "document_width": 375,
+      "horizontal_overflow": false,
+      "name": "Mobile geometry",
+      "passed": true,
+      "viewport": [
+        390,
+        844
+      ]
+    },
+    {
+      "name": "Final artifact reload and recorded execution provenance",
+      "passed": true
+    },
+    {
+      "name": "Console errors/warnings",
+      "observed": 0,
+      "passed": true
+    },
+    {
+      "denied_404_paths": [
+        "/README.md",
+        "/../README.md",
+        "/api",
+        "/viewer.html?other=1"
+      ],
+      "name": "HTTP artifact digest and route isolation",
+      "passed": true
+    },
+    {
+      "name": "Direct file URL",
+      "reason": "Browser tool allows only HTTP/HTTPS; no alternate browser or protocol workaround attempted.",
+      "status": "not_executed_policy_block"
+    }
+  ],
+  "date": "2026-10-23",
+  "notes": "Screenshots show the tested UI; final data-only provenance enrichment does not change visible controls or reconstruction content.",
+  "screenshots_sha256": {
+    "screenshots/firewall-desktop.png": "814874fa7c839bbbf4ac19a9842d35e573fa8b4411ed36fd8cafcaa751b2e006",
+    "screenshots/mobile.png": "afad0048ca6fa7aa94fd0c2a467c0e9b7b5fb4e9f287d5485a1b8bdbc2e78c59",
+    "screenshots/sudoku-desktop.png": "1007494698dc226255622a8ac694cdd22acd3e6cc98d3780dbd46392459941bc",
+    "screenshots/wmt-desktop.png": "b405da589d8bbc2f9645057b64cef578d5391f4e20916a1850c9dc99a7fa2a57"
+  }
+}

@@ -46,9 +46,9 @@
     "warmups": 10
   },
   "source_sha256": {
-    ".gitattributes": "c7698ce04a146675e46c11ea7791bea053c9b85af0eaf3e201d0a7b11f8633d2",
-    "README.md": "86f7cf626364529ec59b8b68eb1c8fa37c2f75ae918b51df1d6c24506390a5de",
-    "ROADMAP.md": "0424f6067dacddbfecf2c4dac7381706b7bedd152da6a8093dc8b959b0f6849f",
+    ".gitattributes": "dc0716a01eabf8277180c95ade35a61f36dadeab0782bd32252c9de2e964078d",
+    "README.md": "51e4118c3f7358f8a9093eb1051c8652af3bae6d60d75c8e83e1cc8f942ecde0",
+    "ROADMAP.md": "5ebe2f1bac68eeb3899fef494af5428e11132a2b74470d66a5e82fd172f03e5e",
     "docs/phase1_review.md": "f6a508ea33d8453ab0d1dd3d43fe6c4125bdf5add9727a3f4b67291315da7a7c",
     "docs/phase1d_analysis_plan.md": "84895d437aa1031a6a2adc0bcb1c2e1d82e0616a1f2a8b70ef52792e53d69e19",
     "docs/phase1d_profiling.md": "0e92562c046664777148c68815ff9dd889e50f045e7747334e001f8ec15a217b",
@@ -95,6 +95,7 @@
     "src/anytime_ncm/train_policy.py": "003016de82d10afbfe21d5104c72a5f8c57b343fc31eebd87371354a92e958f4",
     "src/anytime_ncm/trajectories.py": "ab31650121bdc792c2cb1e24f1f9abcd0a4d67a90d5a74178d2e6bf4a4176cbf",
     "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "src/anytime_ncm/viewer.py": "8c86f0381c70c2a7d5240259911768bc5a324b834af37448b00f3dad25527c63",
     "src/anytime_ncm/wmt_data.py": "a692f4923377e202840ce56a4c8ace3414077b0b7c00763776da646d4e1e4c2e",
     "src/anytime_ncm/wmt_metrics.py": "f239dde8b677dc76e4e107ce880dec0056003be4e7c9c2aad0375cd31ae14f5b",
     "src/anytime_ncm/wmt_model.py": "a4f7e55f5c6692d6b2f5265523e3e6561c37942f577b8de2ef4e03dd03097c84",
@@ -114,7 +115,8 @@
     "tests/test_screening.py": "d789f1e3a790899d289bd7aefc186290d7f1c28aa7146d4a1163747afa0e10fa",
     "tests/test_sudoku_validator.py": "8e8ed5495b7137011ceb05e2868a6fe0f0f15822415eb303da70d440a605e972",
     "tests/test_target_encoding.py": "fa81c42336d9d6ce6bcc225203d216861aeba6c2794c3f52a3679c3a0053a6db",
-    "tests/test_timing.py": "33cbaaa668f59909e98f749dbb034a1a538454f9eb9a81ffd8bbc7c8eea9e1c7"
+    "tests/test_timing.py": "33cbaaa668f59909e98f749dbb034a1a538454f9eb9a81ffd8bbc7c8eea9e1c7",
+    "tests/test_viewer.py": "8bbb32bcd25d416649b04a748c68f5f59ca85dd39f87cc847367ff2af621e6a0"
   },
   "status": "complete",
   "tests": {
@@ -134,15 +136,16 @@
       "tests.test_screening": 38,
       "tests.test_sudoku_validator": 59,
       "tests.test_target_encoding": 26,
-      "tests.test_timing": 21
+      "tests.test_timing": 21,
+      "tests.test_viewer": 29
     },
     "errors": 0,
     "exit_code": 0,
     "failed": 0,
-    "junit_suite_seconds": 29.395,
-    "passed": 404,
+    "junit_suite_seconds": 28.587,
+    "passed": 433,
     "report": "results/phase1/review_tests.xml",
-    "report_sha256": "1c5be13129c9d2f1b3e0636079465f7ecb45580837db42db19c710666e4c2f37",
+    "report_sha256": "f49b51149fee39c01acb6909f347aa7b086c4380df92e565c24a2f2ab540fa91",
     "skipped": 0
   }
 }

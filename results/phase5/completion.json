@@ -1,0 +1,122 @@
+{
+  "artifacts_sha256": {
+    "browser_checks.json": "5e418793e8c77dfb3607b553a6d4ba6277c23cfffd0eb65f451e021ac01b5618",
+    "build.json": "871687f202f29295f7a740f60eb6d58bd80b3d8f9a7736b8d837f8607fc6b3a1",
+    "catalog.json": "728970bbc0157d2a20714b33a2ec8833634a4d7948b55f740d3bfee0d1f001a2",
+    "firewall_bridge.json": "78fa871b574c847d02e5b458651f66fee69f967f6b2f6afdcc7fb092278d8507",
+    "screenshots/firewall-desktop.png": "814874fa7c839bbbf4ac19a9842d35e573fa8b4411ed36fd8cafcaa751b2e006",
+    "screenshots/mobile.png": "afad0048ca6fa7aa94fd0c2a467c0e9b7b5fb4e9f287d5485a1b8bdbc2e78c59",
+    "screenshots/sudoku-desktop.png": "1007494698dc226255622a8ac694cdd22acd3e6cc98d3780dbd46392459941bc",
+    "screenshots/wmt-desktop.png": "b405da589d8bbc2f9645057b64cef578d5391f4e20916a1850c9dc99a7fa2a57",
+    "summary.md": "d8edcbc6ff3c645b091a416f5ec2a7149f93d55c2f4d1591db9807565de817ac",
+    "tests.xml": "f49b51149fee39c01acb6909f347aa7b086c4380df92e565c24a2f2ab540fa91",
+    "viewer.html": "885820e400dd2d83b6afc6e0a268c3c22e12ce2848775f144d2b62ba9fe79ad9"
+  },
+  "base_commit": "1b74315015b87f9df303c21ebe3b87f56ac75ea9",
+  "bridge": {
+    "benefit_claim": false,
+    "candidate_states": 3468,
+    "checkpoint_hashes_match": true,
+    "families": [
+      "input_decoded",
+      "input_decoded_latent"
+    ],
+    "identity_conversion": "SHA256 of canonical 81 clue digits; not the Anytime token-list hash",
+    "level12": "post-generation diagnosis only",
+    "limitation": "Saved CF internal-test forecasts only. No online, intervention, speedup or safety benefit established.",
+    "matched_puzzles": 289,
+    "matched_states": 3468,
+    "mismatched_states": 0,
+    "new_model_calls": 0,
+    "primary_result": "Producer level-6 latent increment AUROC -0.0078; 95% interval [-0.0368, +0.0193]. No demonstrated benefit.",
+    "producer_collection_batch": 8,
+    "producer_run": "20261021T015457393177Z-probes",
+    "schema_version": 1,
+    "status": "complete",
+    "target": "eventual invalid hard-Sudoku output"
+  },
+  "cf_checkout_modified": false,
+  "compatibility_review_sha256": "214bcfcbb7751a454b1fbd5b4758292d72f1f5632b21304056bce3afa9e29853",
+  "continuation_value_estimator": "unavailable; never fitted",
+  "date": "2026-10-23",
+  "displayed_recorded_online_development_requests": 2868,
+  "engineering_incidents": [
+    {
+      "issue": "Invalid newline argument interrupted a local write to the new viewer exporter.",
+      "resolution": "Restored the new source from its retained copy, strengthened verification, rebuilt and passed all tests. No preexisting research files or model work affected."
+    }
+  ],
+  "entry": "Explicit user request after completed Phase 4; Phase 4 no-go is a research result, not a delivery blocker.",
+  "levels": 35712,
+  "limitations": [
+    "Retrospective audited exploration/development data; consumed final sets are not fresh confirmation.",
+    "Missing per-input measurements, continuation values and incompatible risk forecasts stay unavailable.",
+    "CF targets eventual hard-Sudoku invalidity; level 12 is post-generation diagnosis; no general safety claim.",
+    "Original Phase 0 paper-number discrepancy and all negative practical-speedup decisions remain unresolved/unchanged.",
+    "CF latent-family scores are saved producer forecasts; cross-batch bitwise latent/numeric probe parity is not tested or claimed."
+  ],
+  "new_final_inputs_materialized": 0,
+  "new_fits": 0,
+  "new_model_calls": 0,
+  "new_predictive_speedup_or_safety_benefit_claim": false,
+  "new_probe_predictions": 0,
+  "next_action": "Commit/push Phase 5 to main, verify remote equality, then stop; new experiments require a new scope.",
+  "phase": "5",
+  "prior_compatibility_archive": "results/phase1/reviews/2026-10-23-phase4c",
+  "prior_empirical_and_frozen_execution_sources_unchanged": true,
+  "recorded_online_repeats_per_input_method": 3,
+  "retuning": false,
+  "scope": "Portable recorded-trajectory viewer and exact saved-forecast CF bridge; no live interventions.",
+  "source_sha256": {
+    ".gitattributes": "dc0716a01eabf8277180c95ade35a61f36dadeab0782bd32252c9de2e964078d",
+    "NEXT_STEPS.md": "57d23aee90e81355e13cebf4ab6c77e8bf8f77c0f1e6c832f5e12d04dad9059c",
+    "README.md": "51e4118c3f7358f8a9093eb1051c8652af3bae6d60d75c8e83e1cc8f942ecde0",
+    "ROADMAP.md": "5ebe2f1bac68eeb3899fef494af5428e11132a2b74470d66a5e82fd172f03e5e",
+    "docs/known_limitations.md": "0a55a70e41fe2433b09d20f48d2c57b76a1385fe0af8d1093eac46732cd0b75e",
+    "docs/phase5_firewall_contract.md": "90560f471ce98e6aaff8c911cd99f279da8fccd28acdd3ce21209f08317add40",
+    "docs/phase5_scope.md": "d61e198d45a92c253e7f8ded2bf99fa6a2aed23b04b690dc295456c116c1c7c9",
+    "scripts/view_trajectories.py": "b6003deb2edb4694a5f3dc8156ffc9e71f5adfa2e87bc648b9363657fddb92db",
+    "src/anytime_ncm/viewer.html": "5a333f165b95403178cce02b8c9a4266e355a4d3cb55c5fffd8c6e4690c35235",
+    "src/anytime_ncm/viewer.py": "8c86f0381c70c2a7d5240259911768bc5a324b834af37448b00f3dad25527c63",
+    "tests/test_viewer.py": "8bbb32bcd25d416649b04a748c68f5f59ca85dd39f87cc847367ff2af621e6a0"
+  },
+  "status": "complete",
+  "studies": [
+    {
+      "count": 1400,
+      "id": "hard",
+      "levels": 16800
+    },
+    {
+      "count": 1400,
+      "id": "easy",
+      "levels": 16800
+    },
+    {
+      "count": 192,
+      "id": "wmt14",
+      "levels": 2112
+    }
+  ],
+  "tests": {
+    "command": ".\\scripts\\wsl_python.ps1 -PythonArguments @('-m','pytest','-q','-p','no:cacheprovider','--junitxml=results/phase5/tests.xml')",
+    "errors": 0,
+    "failures": 0,
+    "new_viewer_tests": 29,
+    "passed": 433,
+    "report": "results/phase5/tests.xml",
+    "sha256": "f49b51149fee39c01acb6909f347aa7b086c4380df92e565c24a2f2ab540fa91",
+    "skipped": 0
+  },
+  "trajectories": 2992,
+  "verification": {
+    "all_external_bridge_joins_recomputed": true,
+    "all_sources_levels_issues_codes_policy_traces_and_timing_repeats": true,
+    "browser_passed_cases": 9,
+    "direct_file_url_check": "Browser policy restricts navigation to HTTP/HTTPS; not automated. HTTP artifact verified.",
+    "html_line_endings": "Git pins LF for portable artifact and source hashes across Windows checkouts.",
+    "no_ml_imports": "Viewer fresh-process check passes without torch/numpy/transformers/sacrebleu.",
+    "phase1_compatibility_review": "passed; 433 tests",
+    "phase4_saved_data_check": "passed; existing no-go unchanged"
+  }
+}
