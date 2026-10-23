@@ -1,0 +1,196 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-23",
+  "status": "prospective_not_executed",
+  "s0a_commit": "62397eaac9e2d28e62beacd818b99faa17153286",
+  "protocol_sha256": "cea4a5df19cc2b916c0b7ba23f37c79b2750c00473bea850a4b61791204a805d",
+  "population": {
+    "identity_authority": "docs/partitions/wmt14-phase4.json",
+    "manifest_sha256": "9cbd6503cb440b72f14296dc35d2c1054060f8c2ceebc26ae3349c348768dacb",
+    "exact_selected_records": "docs/studies/stronger-research-inventory.json",
+    "selected_records_file_sha256": "fcc259c8b97c691c57c37905f17f4fac98cf03e840c3631aa4137eb7bba12f21",
+    "selection": "ascending canonical minimum index; first N in each partition",
+    "exploration": 128,
+    "development": 64,
+    "new_trajectories": 0,
+    "new_final_outcomes": 0,
+    "development_is_fresh_confirmation": false
+  },
+  "access": {
+    "outcomes": [
+      "results/phase4/wmt14/trajectories.jsonl"
+    ],
+    "timing": "results/phase4/wmt14/4b_requests.jsonl: timed allowlisted development rows only",
+    "references": "restricted selected-string reader for exactly the 192 allowlisted rows",
+    "excluded": [
+      "results/phase4/wmt14/4c_requests.jsonl",
+      "other per-input final/reserved outcomes",
+      "new model execution"
+    ],
+    "exploration_lock_before_development": true
+  },
+  "metrics": {
+    "sacrebleu_version": "2.6.0",
+    "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+    "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+    "chrf_beta": 2,
+    "bleu_loss_max": 0.5,
+    "chrf_loss_max": 1.0,
+    "numeric_f1_loss_max": 0.02,
+    "negation_mismatch_increase_max": 0.02,
+    "direct_corpus_parity_atol": 1e-10,
+    "numeric_zero_coverage": "unavailable; constraint omitted only where undefined; coverage disclosed"
+  },
+  "search": {
+    "algorithm": "single-start feasible coordinate descent; only decreasing one exit per neighbor",
+    "points": [
+      {
+        "name": "O0",
+        "f": 0.25,
+        "tau": 0.5,
+        "h": 0
+      },
+      {
+        "name": "O1",
+        "f": 0.25,
+        "tau": 0.5,
+        "h": 0.005
+      },
+      {
+        "name": "O2",
+        "f": 0.25,
+        "tau": 0.5,
+        "h": 0.02
+      }
+    ],
+    "primary_point": "O1",
+    "complete_assignment_cap_per_split_point": 10000,
+    "baseline_slots_per_split_point": 13,
+    "max_neighbor_attempts_per_split_point": 9987,
+    "complete_assignment_total_cap": 60000,
+    "restarts": 0,
+    "alternate_algorithms": 0,
+    "searches_within_bootstrap": 0,
+    "tie_breaks": [
+      "minimum mean scenario cost within 1e-12",
+      "minimum total generated codes",
+      "lexicographically smallest complete exit vector in canonical order"
+    ],
+    "incumbent_initialization": "all level 11",
+    "order": "exploration then development; O0,O1,O2; input index ascending; candidate depth ascending",
+    "failed_and_cached_attempts_consume_budget": true,
+    "certified_optimum_default": false,
+    "optimality_gap_default": null
+  },
+  "cost": {
+    "type": "dimensionless uncalibrated surrogate; not actual milliseconds",
+    "widths": [
+      1,
+      4,
+      8,
+      14,
+      20,
+      26,
+      32,
+      40,
+      48,
+      56,
+      64
+    ],
+    "full_codes": 313,
+    "full_levels": 11,
+    "work_formula": "tau*k/11+(1-tau)*P(k)/313",
+    "fixed_formula": "f+(1-f)*W(k,tau)",
+    "adaptive_formula": "f+(1-f)*W(k,tau)+h*(k-1)+0.2*h*k",
+    "sensitivity": {
+      "f": [
+        0,
+        0.25,
+        0.5
+      ],
+      "tau": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "h": [
+        0,
+        0.005,
+        0.01,
+        0.02,
+        0.05
+      ]
+    },
+    "scenarios_per_assignment": 45,
+    "retained_assignments_per_split": 3,
+    "total_sensitivity_evaluations": 270,
+    "additional_searches_for_sensitivity": 0,
+    "cost_evidence_adequacy_required": true,
+    "controller_cost_per_observation_ratio_to_h": 0.2,
+    "controller_observations": "all k observations, including terminal"
+  },
+  "statistics": {
+    "resamples_per_split": 10000,
+    "rng": "NumPy Generator(PCG64(seed))",
+    "seeds": {
+      "exploration": 20261023,
+      "development": 20261024
+    },
+    "comparisons_per_split": 7,
+    "total_comparisons": 14,
+    "paired_ci_percentiles": [
+      2.5,
+      97.5
+    ],
+    "one_sided_quality_lower_percentile": 5,
+    "keep_assignments_and_fixed_comparator_fixed": true,
+    "selection_uncertainty_accounted_for": false,
+    "timing_repeats_per_identity": 3,
+    "resampling_unit": "effective-prefix identity, all repeats together",
+    "sensitivity_grid_intervals": false
+  },
+  "gate": {
+    "estimated_mean_reduction_vs_full_min": 0.05,
+    "paired_reduction_lower_bound_must_exceed": 0,
+    "estimated_improvement_vs_fixed_must_exceed": 0,
+    "quality_lower_bounds_required": true,
+    "new_actual_latency_measured_in_s1": false,
+    "unsupported_cost_assumptions": "inconclusive practical headroom; retain conditional scenario result",
+    "o0_o2_may_rescue_primary_failure": false
+  },
+  "resources": {
+    "cpu_threads_max": 4,
+    "analysis_memory_gib_max": 8,
+    "new_artifacts_mib_max": 512,
+    "analysis_wall_hours_max": 8,
+    "setup_hours_max": 2,
+    "each_split_analysis_hours_max": 2,
+    "report_validation_hours_max": 2,
+    "resumes_per_split_max": 1,
+    "paid_usd_max": 0,
+    "model_loads": 0,
+    "encodings": 0,
+    "generator_requests": 0,
+    "sample_generator_levels": 0,
+    "decoder_forwards": 0,
+    "fits": 0,
+    "inference_warmups": 0,
+    "inference_parity_requests": 0,
+    "new_final_outcomes": 0
+  },
+  "examples": {
+    "split": "exploration",
+    "first_canonical_indices": 3,
+    "largest_positive_sentence_chrf_difference": 1,
+    "largest_negative_sentence_chrf_difference": 1,
+    "method": "O1 assignment vs full; deduplicate; absent categories stay absent",
+    "maximum": 5
+  },
+  "execution": {
+    "s1_requested_in_s0": false,
+    "assignments_evaluated_in_s0": 0,
+    "new_model_work_in_s0": 0,
+    "output_root_when_authorized": "results/stronger_research/s1/",
+    "historical_artifacts_must_remain_unchanged": true
+  }
+}

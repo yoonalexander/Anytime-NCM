@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-23",
+  "subphase": "S0B",
+  "status": "complete",
+  "base_commit": "62397eaac9e2d28e62beacd818b99faa17153286",
+  "checks": {
+    "local_markdown_links_checked": 83,
+    "broken_links": [],
+    "primary_source_urls_in_new_docs": 14,
+    "population_membership_and_disjointness": "passed: 128 exploration +64 development; no final overlap",
+    "protocol_and_identity_lock_digests": "passed",
+    "unchanged_inventory_evidence_digests": 28,
+    "search_budget_arithmetic": "passed: 2 splits x3 points x10000 =60000; 13 baseline +9987 neighbor slots per point",
+    "sensitivity_arithmetic": "passed: 45 scenarios x3 assignments x2 splits =270",
+    "bootstrap_arithmetic": "passed: 10000 shared draws per split; 7 comparisons per split; zero reoptimization",
+    "quality_cost_and_resource_consistency": "passed",
+    "roadmap_scope": "all S0 checks complete; S1 onward unchecked",
+    "changed_file_scope": "S0 documentation only",
+    "git_diff_check": "passed"
+  },
+  "scope": {
+    "s1_assignments_evaluated": 0,
+    "new_model_calls": 0,
+    "new_encodings": 0,
+    "new_fits": 0,
+    "new_final_outcomes_accessed": 0
+  },
+  "limits": [
+    "No empirical S1 analysis, model calls or full-suite run",
+    "Cost model remains explicitly uncalibrated; actual arbitrary-exit latency unknown",
+    "Conditional bootstrap does not capture selection uncertainty; reused development is not confirmation",
+    "One initial documentation-generation command failed on Windows default text encoding before any writes; rerun used explicit UTF-8, with no empirical work consumed"
+  ],
+  "sha256": {
+    "RESEARCH_ROADMAP.md": "e032c6283668a7d1da48dcb87ff1eaea277374f51467e994552cfd8abfe15385",
+    "docs/studies/stronger-research-inventory.md": "46c8c4739a904aa0f5be6e69e345c86dc75dcb07e5de4c06cb365bfea26d43a8",
+    "docs/studies/stronger-research-protocol.md": "cea4a5df19cc2b916c0b7ba23f37c79b2750c00473bea850a4b61791204a805d",
+    "docs/studies/stronger-research-related-work.md": "e019d31ddf509c9f836af204b8ebaf1158c44a9517af8137a6d158d65bf2cae9",
+    "docs/studies/stronger-research-protocol.json": "6c633da049f9928c5291d83690d9f2ab26839b14ad613ff6a7d09fae8b8e51c8"
+  }
+}

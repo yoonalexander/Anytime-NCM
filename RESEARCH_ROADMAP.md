@@ -2,7 +2,7 @@
 
 **Created:** October 23, 2026
 
-**Status:** S0A complete (October 23, 2026); S0B pending. S1–S5 remain planned and unexecuted.
+**Status:** S0A and S0B complete (October 23, 2026). Evidence/access inventory and prospective protocol frozen; S1–S5 remain planned and unexecuted. Stop before S1; later execution requires a request.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
@@ -54,15 +54,17 @@ After every completed phase and subphase: record evidence and limitations, run a
 
 ### S0B — Preregister questions, access and resources
 
-- [ ] Write docs/studies/stronger-research-protocol.md before S1 analysis.
-- [ ] Freeze S1's population at the existing 128 exploration and 64 development WMT audited trajectories. No extra trajectory collection is part of S1.
-- [ ] Specify objective, metric signatures, uncertainty procedure, search limits, cost assumptions, sensitivity range, tie breaks, example-selection rules and failure handling.
-- [ ] Carry forward WMT's declared tolerances: at most 0.5 absolute corpus BLEU points and 1.0 absolute corpus chrF points lost versus matched full depth, plus the existing numeric-F1 and negation-cue diagnostic margins of 0.02 where defined. These heuristics do not verify semantic truth.
-- [ ] Preserve the practical target: at least 5% mean ready-output wall-latency reduction and a positive paired 95% lower confidence bound; require quality noninferiority bounds and a strong fixed-depth comparison for a frontier claim.
-- [ ] Freeze explicit stage budgets before execution. S1 and S2A permit zero model calls, zero fits and zero new final-input access. For S1 search, default to one deterministic algorithm, at most three predeclared operating points, at most 10,000 evaluated complete exit assignments per split/operating point, and no unrecorded restarts.
-- [ ] Any S2B/S3/S4 model-work protocol must count encodings, generator requests and sample-level evaluations, decoder forwards, warmups, parity checks, repeats, failed attempts and resumes. State wall-time, storage and any monetary limits. Paid compute is excluded unless explicitly authorized.
+- [x] Write docs/studies/stronger-research-protocol.md before S1 analysis.
+- [x] Freeze S1's population at the existing 128 exploration and 64 development WMT audited trajectories. No extra trajectory collection is part of S1.
+- [x] Specify objective, metric signatures, uncertainty procedure, search limits, cost assumptions, sensitivity range, tie breaks, example-selection rules and failure handling.
+- [x] Carry forward WMT's declared tolerances: at most 0.5 absolute corpus BLEU points and 1.0 absolute corpus chrF points lost versus matched full depth, plus the existing numeric-F1 and negation-cue diagnostic margins of 0.02 where defined. These heuristics do not verify semantic truth.
+- [x] Preserve the practical target: at least 5% mean ready-output wall-latency reduction and a positive paired 95% lower confidence bound; require quality noninferiority bounds and a strong fixed-depth comparison for a frontier claim.
+- [x] Freeze explicit stage budgets before execution. S1 and S2A permit zero model calls, zero fits and zero new final-input access. For S1 search, default to one deterministic algorithm, at most three predeclared operating points, at most 10,000 evaluated complete exit assignments per split/operating point, and no unrecorded restarts.
+- [x] Any S2B/S3/S4 model-work protocol must count encodings, generator requests and sample-level evaluations, decoder forwards, warmups, parity checks, repeats, failed attempts and resumes. State wall-time, storage and any monetary limits. Paid compute is excluded unless explicitly authorized.
 
-**Acceptance:** A reviewer can tell what data may be accessed, what would count as progress, and when execution must stop. The protocol and access controls are committed and pushed before outcome-dependent work.
+**Evidence:** [prospective protocol](docs/studies/stronger-research-protocol.md), [machine-readable lock](docs/studies/stronger-research-protocol.json), [S0B documentation checks](docs/studies/stronger-research-s0b-validation.json). Frozen: 128/64 saved WMT groups; one deterministic search, three operating points, 60,000 total complete assignments; no bootstrap reoptimization; 8 CPU-analysis hours /512 MiB new artifacts /$0; zero model work or new final access. Cost surrogates and conditional intervals cannot establish measured speedup or fresh confirmation.
+
+**Acceptance:** The protocol, identity allowlist and access procedure are frozen before S1; access-code implementation/testing belongs to a later requested S1. S0 performed zero S1 assignments. Missing arbitrary-exit WMT timing and search-selection uncertainty remain explicit limitations. See [S0A checks](docs/studies/stronger-research-s0a-validation.json). S1 is ready to be requested, not started.
 
 ## S1 — Is there an opportunity the stopping rules missed?
 
