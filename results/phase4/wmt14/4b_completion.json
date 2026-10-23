@@ -1,0 +1,92 @@
+{
+  "all_requests_match_offline_exit_prefix_and_output": true,
+  "artifacts_sha256": {
+    "4b.json": "f6213619a2440183946fe7e70133331032c75f0448911532499fc72e8eabac74",
+    "4b_requests.jsonl": "b2230902dd6b241d689d51cff12293fcce9b9903caf2bf37a477ede4587dd1bd",
+    "development_analysis.json": "86a9409c1ce5ad656baf76e554535edc0d7f9551ead3d5b97d3e3f58c18c9219",
+    "policy_lock.json": "e1bbec3b03055f4062fe6c8fa5510bb00e0ebb678c38a1e8cf87dbdfde475554"
+  },
+  "base_commit": "e9ee6d2506d1f07434d0e154b7f3edff9e0da4be",
+  "counts": {
+    "decoder": 1200,
+    "encoder": 0,
+    "generator_levels": 8800,
+    "inputs": 800
+  },
+  "date": "2026-10-23",
+  "development_inputs": 64,
+  "early_requests": 0,
+  "exploration_warmups": 32,
+  "failed_model_calls": 0,
+  "limits": {
+    "decoder": 4800,
+    "encoder": 0,
+    "generator_levels": 8800,
+    "inputs": 800
+  },
+  "mean_wall_ms": {
+    "adaptive": 135.645509578125,
+    "fixed": 133.2092735625,
+    "full": 132.56759581770834,
+    "stability": 135.65185688541666
+  },
+  "methods": 4,
+  "model_evaluation_retries": 0,
+  "model_state_unchanged": true,
+  "next_action": "Commit/push lock; verify remote equality, release and evaluate four frozen methods on assigned phase4_final. Stop before Phase 5.",
+  "phase": "4B",
+  "phase4_final_groups_opened": 0,
+  "prior_compatibility_archive": "results/phase1/reviews/2026-10-23-phase4a",
+  "quality": {
+    "adaptive": {
+      "bleu": 19.965678796434915,
+      "bleu_lowercase": 20.984521934300076,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 48.219903938728734,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.03125,
+      "numeric_reference_coverage": 13,
+      "numeric_reference_f1": 0.6282051282051282
+    },
+    "fixed": {
+      "bleu": 19.965678796434915,
+      "bleu_lowercase": 20.984521934300076,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 48.219903938728734,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.03125,
+      "numeric_reference_coverage": 13,
+      "numeric_reference_f1": 0.6282051282051282
+    },
+    "full": {
+      "bleu": 19.965678796434915,
+      "bleu_lowercase": 20.984521934300076,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 48.219903938728734,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.03125,
+      "numeric_reference_coverage": 13,
+      "numeric_reference_f1": 0.6282051282051282
+    },
+    "stability": {
+      "bleu": 19.965678796434915,
+      "bleu_lowercase": 20.984521934300076,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 48.219903938728734,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.03125,
+      "numeric_reference_coverage": 13,
+      "numeric_reference_f1": 0.6282051282051282
+    }
+  },
+  "repeats": 3,
+  "source_snapshot": "results/phase4/wmt14/source_snapshots/4b",
+  "status": "complete",
+  "task": "wmt14",
+  "tests": {
+    "execution_engine_policy_unchanged": true,
+    "passed": 404,
+    "report": "results/phase4/wmt14/4a_tests.xml"
+  },
+  "timed_requests": 768
+}

@@ -1,7 +1,7 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Phase 4A is complete; Phase 4B/4C pending under the new work order. **404 tests pass.**
+**Current position:** Phase 4A/4B are complete; locked Phase 4C pending under the new work order. **404 tests pass.**
 
 **Completed through Phase 3:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 3A–3C are complete under an explicit entry exception, with measured no-go. Phases 4–5 are not started and are outside the latest work order. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
 **Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. The subsequently requested Phase 2 experiment is also complete with a measured no-go. Close this released-Sudoku first-valid path at the completed budget; no practical speedup is established. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
@@ -16,7 +16,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
 | 2 | Measured online verified stopping | Complete; measured no-go | Explicit user work order and frozen entry exception after failed offline gate |
 | 3 | Learned stopping against strong baselines | Complete; learned methods fail practical-speedup gate | Explicit user entry exception; frozen policies evaluated on assigned Phase 3 subset |
-| 4 | Translation generalization on WMT14 | 4A complete; 4B/4C pending | New explicit work order and frozen task-specific protocol |
+| 4 | Translation generalization on WMT14 | 4A/4B complete; locked 4C pending | New explicit work order and frozen task-specific protocol |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
 
 A negative or inconclusive Phase 1 result is a valid completed research milestone when its required artifacts and limitations are documented. Phase 2 was subsequently implemented under its explicitly requested entry exception; Phase 3 was also explicitly requested and completed under its entry exception. Phases 4–5 remain unstarted. Later studies remain on this roadmap; they do not begin automatically after a gate fails.
@@ -220,7 +220,7 @@ No fresh Phase 3 dataset was obtained: there was no prior per-input policy inspe
 
 ## Phase 4 — Natural-language generalization
 
-**Status:** 4A complete; 4B/4C pending — October 23, 2026.
+**Status:** 4A/4B complete; locked 4C pending — October 23, 2026.
 **Entry:** The user explicitly requested finishing Phase 4. A [new WMT14 De-En protocol](docs/studies/phase4-wmt14-protocol.md) fixes quality margins, costs, budgets and holdout rules before outputs. XSum is not included; Phase 5 remains unstarted.
 **Design mapping:** Sections 4 RQ4, 9 Phase 4, and 10.
 
@@ -240,7 +240,7 @@ No fresh Phase 3 dataset was obtained: there was no prior per-input policy inspe
 | Subphase | Status | Evidence |
 | --- | --- | --- |
 | 4A: prepare, official baseline and trajectories | Complete | [Audit/completion](results/phase4/wmt14/4a_completion.json); 404 tests |
-| 4B: development comparison and policy lock | Pending | Four methods, 64 inputs × three repeats +32 warmups |
+| 4B: development comparison and policy lock | Complete | [768 timed requests and frozen lock](results/phase4/wmt14/4b_completion.json) |
 | 4C: frozen generalization report | Pending | Four methods, 256 final inputs × three repeats +32 warmups |
 
 ## Phase 5 — Optional visualization and Concept Firewall bridge
@@ -413,3 +413,7 @@ Phase 3 is complete as a bounded learned-policy study despite the unmet initial 
 ### Phase 4A completion — October 23, 2026
 
 Pinned WMT14 assets and Qwen tokenizer-only data downloaded and verified (1.143 GB). The input-only manifest groups 3,003 unique padded prefixes into 512 exploration /256 development /256 final /1,979 reserved groups. Exactly 24 source rows exceed the released 96-token prefix cap. The official function-body baseline at predeclared batch 8 scores 21.722 BLEU, 22.615 lowercase BLEU and 49.570 chrF; no exact paper/default-batch parity claim. All 192 full-resolution reconstructions pass independent learned-cascade/GroupNorm checks, including 32 exact official/disabled-hook cases. Work:3,259 input-generations, 35,849 sample-level evaluations, 5,179 decodes, zero full encoders. All 404 tests pass. Development selects depth 11 and final-only adaptive fallbacks; 147/640 adjacent sentence-chrF transitions deteriorate despite improving corpus quality. [Completion](results/phase4/wmt14/4a_completion.json). Next commit/push, then 4B and locked 4C; no Phase 5 work.
+
+### Phase 4B completion — October 23, 2026
+
+Four frozen methods, 64 development inputs × three repeats plus 32 exploration warmups are complete, with all exact offline/online checks passed and unchanged NCM state. Full depth mean 132.57 ms versus guarded stability 135.65 ms; all outputs/quality match full depth, with no early exits. Work:800 input-generations, 8,800 levels, 1,200 decodes, zero full encoders. [Development](results/phase4/wmt14/development_analysis.json), [lock](results/phase4/wmt14/policy_lock.json), [completion](results/phase4/wmt14/4b_completion.json). Commit/push the source-matched lock and verify remote equality before 4C access. The 404-test engine/policy suite is unchanged; no Phase 5 work.

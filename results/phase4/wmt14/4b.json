@@ -1,0 +1,121 @@
+{
+  "artifacts_sha256": {
+    "4b_requests.jsonl": "b2230902dd6b241d689d51cff12293fcce9b9903caf2bf37a477ede4587dd1bd"
+  },
+  "completed_requests": 768,
+  "counts": {
+    "decoder": 1200,
+    "encoder": 0,
+    "generator_levels": 8800,
+    "inputs": 800
+  },
+  "execution": {
+    "autocast": false,
+    "batch_size": 1,
+    "compile": false,
+    "cpu_threads": 4,
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "precision": "float32/eval",
+    "torch": "2.10.0+cu128"
+  },
+  "finished_utc": "2026-10-23T07:04:15.540763+00:00",
+  "forward_calls": {
+    "decoder": 1200,
+    "encoder": 0,
+    "generator_levels": 8800
+  },
+  "inputs_sha256": {
+    "artifacts/wmt14/config.yaml": "6401af2a14d41c6582c3181a0b683e8970c1eeefe8cf7afaf74f1597da3fcd72",
+    "artifacts/wmt14/generator.pt": "ae580cbbb400a27b30c616634745d4c9cfa8b66806f936c6c26041e5b9640d4f",
+    "artifacts/wmt14/text_tokenizer/config.json": "660db3b73d788119c04535e48cf9be5f55bc3100841a718637ae695b442f27dd",
+    "artifacts/wmt14/text_tokenizer/merges.txt": "8831e4f1a044471340f7c0a83d7bd71306a5b867e95fd870f74d0c5308a904d5",
+    "artifacts/wmt14/text_tokenizer/tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "artifacts/wmt14/text_tokenizer/tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101",
+    "artifacts/wmt14/text_tokenizer/vocab.json": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+    "artifacts/wmt14/tokenizer.pt": "74f04176a3cd985e4142761bd7464ea6edb44dc0025c40302b5e45ea0d865702",
+    "configs/phase4_wmt_sources.json": "8ee4c08747d93b7f3fd7bd1ace38723d7031ae2dd9f549823cb677ebf914535e",
+    "data/wmt14/reference_translations.pickle": "3dcef81d8aeded13f79917cd6b794d2ca9f33223bf35c1fff1c5643eae0df52b",
+    "data/wmt14/sources.pickle": "62254653c32ce9e8b93576797597381babaab301b10ee0a2a3babec89576ea43",
+    "docs/partitions/wmt14-phase4.json": "9cbd6503cb440b72f14296dc35d2c1054060f8c2ceebc26ae3349c348768dacb",
+    "results/phase4/wmt14/preflight.json": "5a31c82bf828a3b1a6364a8a384e8f5524c8041758cd973f8f80507d9558a8d8"
+  },
+  "limits": {
+    "decoder": 4800,
+    "encoder": 0,
+    "generator_levels": 8800,
+    "inputs": 800
+  },
+  "method_order": [
+    "adaptive",
+    "fixed",
+    "full",
+    "stability"
+  ],
+  "methods": {
+    "adaptive": {
+      "epsilon": 0.0,
+      "kind": "guarded",
+      "minimum": 10,
+      "patience": 1
+    },
+    "fixed": {
+      "depth": 11,
+      "kind": "fixed"
+    },
+    "full": {
+      "kind": "full"
+    },
+    "stability": {
+      "epsilon": 0.0,
+      "kind": "stability",
+      "minimum": 10,
+      "patience": 1
+    }
+  },
+  "repeats": 3,
+  "source_sha256": {
+    "docs/studies/phase4-wmt14-protocol.md": "83fe0bd980e7ffc981784ec9a6bd67a7df668e55c5476eb092e1d6804d0ea1d5",
+    "scripts/prepare_phase4.py": "2c43bd6d9024debad29919168b142ca6295309b2fce7f46eaf0696db6f6dcc04",
+    "scripts/run_phase4.py": "6908e741a0a46d6ba7fe969fa39260bf77c4571690a89f70d3b63d6d4df0197a",
+    "src/anytime_ncm/online.py": "8122afd1db4fd40094fd6d5739bb0432acd7da1d50f4744c9cc95dbb72bfacc8",
+    "src/anytime_ncm/phase2.py": "86b139d7437e439ff871a9e3b4fa68cf0b443777224ded37c7c5dfb4af128630",
+    "src/anytime_ncm/phase4.py": "6f2a05f6fe431fee80df81a90ca23a61ea741b506a0b4373fcb2293b529f9f3f",
+    "src/anytime_ncm/phase4_render.py": "10f4ccad895fc6593a8faca430e79cd6a56d3e724c00cac6952f91e30981665b",
+    "src/anytime_ncm/phase4_run.py": "0c023129ccf7800767eaea6685d2bf7faf81fb40e97315c540bc0076eedf9a98",
+    "src/anytime_ncm/report.py": "c3be8022e34b9b295c6a327a93fc1a14f4beafab2d78818363bc4000708f009b",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "src/anytime_ncm/wmt_data.py": "a692f4923377e202840ce56a4c8ace3414077b0b7c00763776da646d4e1e4c2e",
+    "src/anytime_ncm/wmt_metrics.py": "f239dde8b677dc76e4e107ce880dec0056003be4e7c9c2aad0375cd31ae14f5b",
+    "src/anytime_ncm/wmt_model.py": "a4f7e55f5c6692d6b2f5265523e3e6561c37942f577b8de2ef4e03dd03097c84",
+    "src/anytime_ncm/wmt_policy.py": "9f5c65c427949743140311a23d4d701f3c849ab025ec0cc9e12725b68d290d6d",
+    "tests/test_phase4.py": "7bbcd879bfb86bb17d8f917f02d130965a61f08262fedf80f9c23b5eb4bcaaaf",
+    "third_party/ncm/models/next_concept.py": "3dcae313cedf2e33ecb9a046d1ad9ec4336962c9221375ba5f7dd9be3d25b04e",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923",
+    "third_party/ncm/scripts/eval_merge.py": "f166d7e4a2785c1326ad1c242806a22cb32f959d9b073f1ec42fb0db0ff51de4",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb",
+    "third_party/ncm/tokenization/hf_tokenizer.py": "663e435aea5255464a20bdce058287aebb8ad1904f38ac8157125803dcbaa8a0"
+  },
+  "source_snapshot": "results/phase4/wmt14/source_snapshots/4b",
+  "stage": "4b",
+  "started_utc": "2026-10-23T07:01:51.482869+00:00",
+  "state_after": {
+    "generator": "115d016a38d5511fb9d7bde73d6289705d316c424221842710ffd46ea2ec7591",
+    "tokenizer": "7dcdd0d9b932693e61daf0a3f4cd9d0981d132ad1befe42882988a1e6c07f1f3"
+  },
+  "state_before": {
+    "generator": "115d016a38d5511fb9d7bde73d6289705d316c424221842710ffd46ea2ec7591",
+    "tokenizer": "7dcdd0d9b932693e61daf0a3f4cd9d0981d132ad1befe42882988a1e6c07f1f3"
+  },
+  "status": "complete",
+  "timed_requests": 768,
+  "warmup_counts": {
+    "decoder": 48,
+    "encoder": 0,
+    "generator_levels": 352,
+    "inputs": 32
+  },
+  "warmup_requests": 32
+}

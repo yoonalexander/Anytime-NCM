@@ -2,7 +2,7 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** The new Phase 4 request authorizes WMT14 only. 4A is complete; 4B/4C pending; 404 tests pass. Phase 5 remains unstarted.
+**Status:** The new Phase 4 request authorizes WMT14 only. 4A/4B are complete; locked 4C pending; 404 tests pass. Phase 5 remains unstarted.
 
 **Completed earlier studies:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicitly requested Phase 3A–3C experiment is complete and also no-go. Phases 4–5 are not started and are excluded by the latest user instruction.
 
@@ -225,3 +225,5 @@ The implementation and bounded research work through Phase 3 are complete. The p
 ## New Phase 4 WMT14 work order
 
 The user subsequently requested finishing Phase 4 and committing/pushing. [Protocol](docs/studies/phase4-wmt14-protocol.md). 4A is complete: 3,003-row released baseline (batch 8 override) at 21.72 BLEU /49.57 chrF; 192 full-resolution trajectories and 32 exact matched official parity cases. The predeclared tolerances are 0.5 BLEU /1.0 chrF point with a 5% latency threshold. Fixed depth 11 and two final-only adaptive policies were selected on development. Commit/push 4A, measure 4B, release the committed/pushed lock, then evaluate four methods on the reserved 256 final inputs. Preserve all earlier negative findings; do not start Phase 5.
+
+**Phase 4B completed:** All 768 timed development requests and 32 exploration warmups pass offline/online parity. No early exits; all outputs/quality equal full depth. Guarded stability costs 135.65 ms versus 132.57 ms full depth. [Policy lock](results/phase4/wmt14/policy_lock.json), [completion](results/phase4/wmt14/4b_completion.json). Commit/push and release the lock, then evaluate the reserved 256 groups. No Phase 5 work is included.

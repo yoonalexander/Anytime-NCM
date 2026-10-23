@@ -4,7 +4,7 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** Phase 4A WMT14 baseline/audit is complete; 4B/4C remain pending under the newly requested Phase 4 study. **404 tests pass.** [WMT protocol](docs/studies/phase4-wmt14-protocol.md).
+**Current stage:** Phase 4A/4B WMT14 baseline/audit and development benchmark are complete; locked 4C remains pending under the newly requested Phase 4 study. **404 tests pass.** [WMT protocol](docs/studies/phase4-wmt14-protocol.md).
 
 **Completed Phase 3:** **Phase 3A–3C are complete**, with a measured no-go for practical speedup. All seven frozen methods solve 299/300 final inputs with no early exits. Full depth averages **98.85 ms**, learned internal **101.80 ms (2.98% slower; paired 95% overhead interval 2.54%–3.44%)**. [Phase 3 report](results/phase3/summary.md). Phases 4–5 are not started and are excluded by the latest work order. **380 tests pass.** [Phase 3 protocol](docs/studies/phase3-easy-learned-protocol.md).
 
@@ -529,3 +529,5 @@ This recomputes saved-data evidence without torch/matplotlib; the pinned local i
 The user requested completing Phase 4 after Phase 3. [Frozen protocol](docs/studies/phase4-wmt14-protocol.md), [pinned sources](configs/phase4_wmt_sources.json), [group manifest](docs/partitions/wmt14-phase4.json). WMT14 De-En was selected; XSum and Phase 5 are outside this study. The pinned download is 1.143 GB including checkpoints/tokenizer/data; no Qwen language-model weights or paid compute are used.
 
 4A is complete: the verbatim official baseline bodies score 3,003 rows at the predeclared batch-8 override, **21.72 BLEU /49.57 chrF**. All 192 full-resolution trajectories match independent learned-cascade/GroupNorm arithmetic, with 32 exact official/disabled-hook code/token/text parity cases. Quality improves in aggregate but 147/640 development adjacent sentence-chrF transitions deteriorate. Development selects fixed depth 11 and two final-only adaptive fallbacks; no early headroom is claimed. [Audit](results/phase4/wmt14/audit_analysis.json), [completion](results/phase4/wmt14/4a_completion.json). Next: measured development comparison, committed/pushed policy lock, then 256-input final evaluation.
+
+**4B complete:** 768 timed requests +32 exploration warmups, all offline/online prefix/exit/output checks passed. Full depth averages 132.57 ms, guarded stability 135.65 ms; all four methods have identical 19.966 BLEU /48.220 chrF and no early exits. [Development](results/phase4/wmt14/development_analysis.json), [lock](results/phase4/wmt14/policy_lock.json), [completion](results/phase4/wmt14/4b_completion.json). Commit/push and release the lock before opening the final 256 groups.
