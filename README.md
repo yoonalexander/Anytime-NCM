@@ -6,7 +6,7 @@ Anytime NCM is a reproducible research repository studying that question through
 
 **Status: the scoped work through Phase 5 is complete; practical adaptive speedup has not been demonstrated.** All primary measured comparisons are no-go. The latest recorded suite has **433 passing tests**. The completed software and experiments do not establish every broader idea in the original design.
 
-[Research paper, draft v2](RESEARCH_PAPER.md) · [Results and project status](#results-and-project-status) · [Portable viewer](results/phase5/viewer.html) · [Full roadmap](ROADMAP.md)
+[Research paper, draft v2](RESEARCH_PAPER.md) · [Results and project status](#results-and-project-status) · [Portable viewer](results/phase5/viewer.html) · [Full roadmap](ROADMAP.md) · [Stronger research roadmap](RESEARCH_ROADMAP.md) · [Agent instructions](AGENTS.md)
 
 The repository now provides validated full-resolution prefix reconstruction, controlled trajectory data, an actual generation-stopping hook, frozen policy comparisons, reports and an inspection interface. Current-validity controllers were tested; a true continuation-value model, XSum, and a live CF-driven stopping/intervention policy remain untested.
 
