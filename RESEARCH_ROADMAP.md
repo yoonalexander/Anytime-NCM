@@ -2,7 +2,7 @@
 
 **Created:** October 23, 2026
 
-**Status:** Planning only. No study in this roadmap has been executed.
+**Status:** S0A complete (October 23, 2026); S0B pending. S1–S5 remain planned and unexecuted.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
@@ -44,13 +44,13 @@ After every completed phase and subphase: record evidence and limitations, run a
 
 ### S0A — Evidence and prior-work inventory
 
-- [ ] Inventory checkpoints, source revisions, metrics, saved trajectories, profile records, prior analyst exposure and identity/group reservations.
-- [ ] Identify exactly which inputs are already exploratory, development, consumed final, aggregate-baseline-exposed only, or otherwise unused by adaptive analysis.
-- [ ] Map each proposed claim to existing evidence and missing evidence.
-- [ ] Extend related work from primary sources: NCM partial reconstruction, adaptive generative inference such as [CALM](https://arxiv.org/abs/2207.07061), continuation/optimal-stopping objectives, and negative-results methodology where relevant. Record what each cited method actually evaluates; do not claim novelty from an incomplete search.
-- [ ] Carry forward the unresolved hard-Sudoku 86.25% versus published 86.1% discrepancy. Investigate only through a separately stated, useful check; do not invent an explanation or require matching an aggregate by tuning.
+- [x] Inventory checkpoints, source revisions, metrics, saved trajectories, profile records, prior analyst exposure and identity/group reservations.
+- [x] Identify exactly which inputs are already exploratory, development, consumed final, aggregate-baseline-exposed only, or otherwise unused by adaptive analysis.
+- [x] Map each proposed claim to existing evidence and missing evidence.
+- [x] Extend related work from primary sources: NCM partial reconstruction, adaptive generative inference such as [CALM](https://arxiv.org/abs/2207.07061), continuation/optimal-stopping objectives, and negative-results methodology where relevant. Record what each cited method actually evaluates; do not claim novelty from an incomplete search.
+- [x] Carry forward the unresolved hard-Sudoku 86.25% versus published 86.1% discrepancy. Investigate only through a separately stated, useful check; do not invent an explanation or require matching an aggregate by tuning.
 
-**Deliverables:** docs/studies/stronger-research-inventory.md and a source-linked related-work note.
+**Evidence:** [inventory and claim map](docs/studies/stronger-research-inventory.md), [identity/provenance manifest](docs/studies/stronger-research-inventory.json), [primary-source related work](docs/studies/stronger-research-related-work.md). S0A inspected historical evidence and input metadata only; zero new model work, fits, final outcomes or S1 assignments.
 
 ### S0B — Preregister questions, access and resources
 

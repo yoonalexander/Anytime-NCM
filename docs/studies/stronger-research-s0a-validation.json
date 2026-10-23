@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-23",
+  "subphase": "S0A",
+  "status": "complete",
+  "checks": {
+    "local_markdown_links": 69,
+    "broken_local_links": 0,
+    "eligible_identity_membership": "exact first 128 exploration and 64 development canonical records; 192 distinct groups",
+    "unchanged_inventory_evidence_digests": 28,
+    "git_diff_check": "passed"
+  },
+  "scope": {
+    "new_model_calls": 0,
+    "new_encodings": 0,
+    "new_fits": 0,
+    "new_final_outcomes_accessed": 0,
+    "s1_assignments_evaluated": 0
+  },
+  "limitations": [
+    "Documentation/provenance checks only; no inference, empirical verifier or full test suite run",
+    "External citations checked against primary pages; bounded review, no completeness or novelty claim",
+    "External assets checked for presence/size only; recorded model digests not rehashed"
+  ],
+  "sha256": {
+    "RESEARCH_ROADMAP.md": "67c8cb33d365d6401295c73baaacfcac48e5f29403adf000c614c67be2831ece",
+    "docs/studies/stronger-research-inventory.md": "46c8c4739a904aa0f5be6e69e345c86dc75dcb07e5de4c06cb365bfea26d43a8",
+    "docs/studies/stronger-research-inventory.json": "fcc259c8b97c691c57c37905f17f4fac98cf03e840c3631aa4137eb7bba12f21",
+    "docs/studies/stronger-research-related-work.md": "e019d31ddf509c9f836af204b8ebaf1158c44a9517af8137a6d158d65bf2cae9"
+  }
+}
