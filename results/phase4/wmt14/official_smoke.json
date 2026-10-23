@@ -1,0 +1,150 @@
+{
+  "batch_size": 8,
+  "exploration_smoke_outputs": [
+    {
+      "index": 0,
+      "text": "Gach: Even more safety for."
+    },
+    {
+      "index": 1,
+      "text": "They are not 100 meters away from another another: On Tuesday in the new B 33 pedestrian traffic was moved into operation in the village premises - in sight of the older town hall lights."
+    },
+    {
+      "index": 2,
+      "text": "There are so two so close: intention or coup d coup coup?"
+    },
+    {
+      "index": 3,
+      "text": "This answered this question that could very clearly clearly yesterday."
+    },
+    {
+      "index": 4,
+      "text": "\"We Rathausaus was installed at the time, because it ensures the school path explains says Eckert yesterday."
+    },
+    {
+      "index": 5,
+      "text": "The Guser-Ampel safe both cyclists as well as bus passengers and the mountainle people."
+    },
+    {
+      "index": 6,
+      "text": "The officially launched plant is important for the cross crossing of Sulzbachach trail/Kirchstra\u00dfe."
+    },
+    {
+      "index": 7,
+      "text": "We have a museum, two churches, spa park, bus stop, a doctor and a bank and traffic flow from the residential area \u203a Grub\u2039."
+    },
+    {
+      "index": 8,
+      "text": "Despite the high traffic and pedestrian traffic had to have another traffic light for their safety,\"ert said."
+    },
+    {
+      "index": 9,
+      "text": "This is confirmed by Peter Peter the State Office of Offenburg."
+    },
+    {
+      "index": 10,
+      "text": "\"According to current measurements at the B 33 some 12 000 vehicles run the municipality every day, about about ten percent of heavy heavy traffic\", Arnold stresses."
+    },
+    {
+      "index": 11,
+      "text": "This is why the construction of another traffic light is more than necessary: \"Safety concludes\"."
+    },
+    {
+      "index": 12,
+      "text": "In 1999 the Upper Age was originally built."
+    },
+    {
+      "index": 13,
+      "text": "According to routing everything was previously tested at the location of the subway subway subway was help: \"By an extra transport transport charged for us with particularly long wooden wooden, we have checked whether these vehicles can out of road to the B 33, without turning off without the traffic boats\"."
+    },
+    {
+      "index": 14,
+      "text": "The cost around EUR 15 000 traffic traffic traffic system itself is \"the most modern technology on the market,\" explainedberg."
+    },
+    {
+      "index": 15,
+      "text": "The system is equipped with coloured LEDs which, so powerful that the drivers can easily recognise the lights from the drivers even from the sun."
+    },
+    {
+      "index": 16,
+      "text": "It is also economical: older light systems use less than 100W and the new just eightWW."
+    },
+    {
+      "index": 17,
+      "text": "There are three light units in each direction."
+    },
+    {
+      "index": 18,
+      "text": "ofold explained the technique of the new system: It is equipped with two radar sensors."
+    },
+    {
+      "index": 19,
+      "text": "If the pedestrian traffic button, the upper radar sensor the traffic situation."
+    },
+    {
+      "index": 20,
+      "text": "If the road is free, comes direct green for the pedestrian, if not it takes about 15 minutes."
+    },
+    {
+      "index": 21,
+      "text": "Another radar sensor checks whether the phase for the pedestrian can be completed."
+    },
+    {
+      "index": 22,
+      "text": "(Thank a group or the disabled people go straight across the street, the green phase is extended so everyone passes the road,\" Arnold said."
+    },
+    {
+      "index": 23,
+      "text": "Of course, the driver should consider their role as here as a partner."
+    },
+    {
+      "index": 24,
+      "text": "This did not happen yesterday: was virtually the traffic lights took for pedestrians green light, a upper class vehicle automobile through - with a bright red."
+    },
+    {
+      "index": 25,
+      "text": "Josef Winkler has been writing about his soul about the needs of his childhood and youth for more than thirty years."
+    },
+    {
+      "index": 26,
+      "text": "Once the disasters of his Catholic village childhood - his speechlesslessness, the tendency towards raw violence and blunt sexuality, the corner andlessnesslessness - in many times described the Carinth poet."
+    },
+    {
+      "index": 27,
+      "text": "In 1999 the office Award Award was awarded most famous for his movie, movie movie films films."
+    },
+    {
+      "index": 28,
+      "text": " infrage of texts texts Gerhard Fresacher creates a collage ofartist texts for his performance \"Ifaver lights on the Cgrenze\", which can now be seen on the garage X on St. Peter's Square."
+    },
+    {
+      "index": 29,
+      "text": "In 1988, he was born by John Paul Paul ,Now , inventor of the \"Mr \"Great\" and \"Booking escaping\", \"Various\" and \"Europe\"."
+    },
+    {
+      "index": 30,
+      "text": "On the largely empty empty stage - an important prerequisite: a-w-w sofa sofa on which it is stipulated and landslide - the total of eight eight members of the band passes through the text material."
+    },
+    {
+      "index": 31,
+      "text": "The director hackacher does not seem to trust much in the text."
+    }
+  ],
+  "metrics": {
+    "bleu": 14.711879999617226,
+    "bleu_lowercase": 15.41401549335117,
+    "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+    "chrf": 41.501890526631676,
+    "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+    "negation_cue_mismatch_rate": 0.0625,
+    "numeric_reference_coverage": 8,
+    "numeric_reference_f1": 0.5
+  },
+  "override": "predeclared memory headroom",
+  "peak_allocated_bytes": 1544515072,
+  "prior_final_access": "internally scored all official rows; aggregate-only analyst inspection",
+  "process_seconds": 2.3142635929999926,
+  "process_seconds_are_not_warm_latency": true,
+  "released_batch_size": 64,
+  "rows": 32
+}

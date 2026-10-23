@@ -1,7 +1,9 @@
 # Anytime NCM roadmap
 
 **Updated:** October 22, 2026
-**Current position:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 3A–3C are complete under an explicit entry exception, with measured no-go. Phases 4–5 are not started and are outside the latest work order. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
+**Current position:** Phase 4A is complete; Phase 4B/4C pending under the new work order. **404 tests pass.**
+
+**Completed through Phase 3:** Sections 6-7, Phase 1 (1A-1D), R1A/R1B/R2/R3, and Phase 2A–2C are complete. Phase 3A–3C are complete under an explicit entry exception, with measured no-go. Phases 4–5 are not started and are outside the latest work order. Phase 2 measured speedup decision: no-go. Original Phase 1 decision remains no-go.
 **Research exit:** R2 screens stayed negative. A separately requested R3 easy extension also returned no-go. The subsequently requested Phase 2 experiment is also complete with a measured no-go. Close this released-Sudoku first-valid path at the completed budget; no practical speedup is established. A new task/objective needs a separate work order; see the [revised roadmap](NEXT_STEPS.md).
 
 This is the execution checklist for Section 8 onward of the [design document](Anytime_NCM_Design_Document.md). Phase numbers follow its Section 9. The design defines the technical requirements; the [frozen experiment protocol](docs/experiment_protocol.md) defines partitions, budgets, metrics, and decision rules. This roadmap tracks work and evidence without changing that protocol.
@@ -14,7 +16,7 @@ This is the execution checklist for Section 8 onward of the [design document](An
 | 1 | Correct per-level trajectories, cost estimates, and a decision report | Complete; no-go - no early valid outputs in the audited setting | Recorded operational baseline |
 | 2 | Measured online verified stopping | Complete; measured no-go | Explicit user work order and frozen entry exception after failed offline gate |
 | 3 | Learned stopping against strong baselines | Complete; learned methods fail practical-speedup gate | Explicit user entry exception; frozen policies evaluated on assigned Phase 3 subset |
-| 4 | Translation and/or summarization generalization | Later study; not started | A task-specific protocol and released checkpoint |
+| 4 | Translation generalization on WMT14 | 4A complete; 4B/4C pending | New explicit work order and frozen task-specific protocol |
 | 5 | Trajectory viewer and Concept Firewall bridge | Optional; not started | Existing research results and defined integration scope |
 
 A negative or inconclusive Phase 1 result is a valid completed research milestone when its required artifacts and limitations are documented. Phase 2 was subsequently implemented under its explicitly requested entry exception; Phase 3 was also explicitly requested and completed under its entry exception. Phases 4–5 remain unstarted. Later studies remain on this roadmap; they do not begin automatically after a gate fails.
@@ -218,20 +220,28 @@ No fresh Phase 3 dataset was obtained: there was no prior per-input policy inspe
 
 ## Phase 4 — Natural-language generalization
 
-**Status:** Later study; not started.
-**Entry:** An explicit WMT14 German-to-English and/or XSum study with a task-specific protocol. A Sudoku no-go may motivate this study but does not start it automatically.
+**Status:** 4A complete; 4B/4C pending — October 23, 2026.
+**Entry:** The user explicitly requested finishing Phase 4. A [new WMT14 De-En protocol](docs/studies/phase4-wmt14-protocol.md) fixes quality margins, costs, budgets and holdout rules before outputs. XSum is not included; Phase 5 remains unstarted.
 **Design mapping:** Sections 4 RQ4, 9 Phase 4, and 10.
 
-- [ ] Select the task and inspect its actual released checkpoint, config, data layout, and resource needs.
-- [ ] Reproduce that task's official baseline with pinned artifacts and environment evidence.
-- [ ] Freeze task-specific partitions, quality tolerances, budgets, metrics, and final-evaluation access rules before inspecting trajectories.
-- [ ] Audit full-resolution intermediate reconstructions and non-monotonic improvements/damage.
-- [ ] Use WMT BLEU/chrF or XSum ROUGE, plus targeted checks such as numbers, negation, and factual consistency.
-- [ ] Define stopping signals for settings without an exact cheap correctness verifier.
+- [x] Select the task and inspect its actual released checkpoint, config, data layout, and resource needs.
+- [x] Reproduce that task's official baseline with pinned artifacts and environment evidence.
+- [x] Freeze task-specific partitions, quality tolerances, budgets, metrics, and final-evaluation access rules before inspecting trajectories.
+- [x] Audit full-resolution intermediate reconstructions and non-monotonic improvements/damage.
+- [x] Use WMT BLEU/chrF or XSum ROUGE, plus targeted checks such as numbers, negation, and factual consistency.
+- [x] Define stopping signals for settings without an exact cheap correctness verifier.
 - [ ] Compare strong fixed-depth and adaptive methods using actual total cost and held-out quality.
 - [ ] Report whether Sudoku conclusions transfer in `results/phase4/<task>/summary.md`.
 
 **Acceptance:** A task-grounded generalization result with clear uncertainty and limitations. BLEU/ROUGE are not full semantic correctness measures, and Sudoku's zero-loss gate does not automatically define a suitable natural-language quality tolerance.
+
+### Phase 4 delivery units
+
+| Subphase | Status | Evidence |
+| --- | --- | --- |
+| 4A: prepare, official baseline and trajectories | Complete | [Audit/completion](results/phase4/wmt14/4a_completion.json); 404 tests |
+| 4B: development comparison and policy lock | Pending | Four methods, 64 inputs × three repeats +32 warmups |
+| 4C: frozen generalization report | Pending | Four methods, 256 final inputs × three repeats +32 warmups |
 
 ## Phase 5 — Optional visualization and Concept Firewall bridge
 
@@ -399,3 +409,7 @@ Internal-minus-base matched-state Brier difference is +0.000318 (paired identity
 3A was committed/pushed as be39ce8; 3B as 4bcccc0. The latter lock's [release](results/phase3/policy_lock_release.json) records GitHub/local equality before final access. Both original final subsets are now used, with previous aggregate exposure and shared difficulty identities disclosed; they cannot serve as untouched later tests. Previous compatibility review archived under results/phase1/reviews/2026-10-22-phase3b/.
 
 Phase 3 is complete as a bounded learned-policy study despite the unmet initial headroom condition. The practical speedup objective remains unachieved in this frozen Sudoku setting. Phase 0's +0.15-percentage-point paper discrepancy remains unexplained. Per the latest user instruction, stop here and report status: no Phase 4 or Phase 5 implementation, study, inference or integration work was performed.
+
+### Phase 4A completion — October 23, 2026
+
+Pinned WMT14 assets and Qwen tokenizer-only data downloaded and verified (1.143 GB). The input-only manifest groups 3,003 unique padded prefixes into 512 exploration /256 development /256 final /1,979 reserved groups. Exactly 24 source rows exceed the released 96-token prefix cap. The official function-body baseline at predeclared batch 8 scores 21.722 BLEU, 22.615 lowercase BLEU and 49.570 chrF; no exact paper/default-batch parity claim. All 192 full-resolution reconstructions pass independent learned-cascade/GroupNorm checks, including 32 exact official/disabled-hook cases. Work:3,259 input-generations, 35,849 sample-level evaluations, 5,179 decodes, zero full encoders. All 404 tests pass. Development selects depth 11 and final-only adaptive fallbacks; 147/640 adjacent sentence-chrF transitions deteriorate despite improving corpus quality. [Completion](results/phase4/wmt14/4a_completion.json). Next commit/push, then 4B and locked 4C; no Phase 5 work.

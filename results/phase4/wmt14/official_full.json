@@ -1,0 +1,20 @@
+{
+  "batch_size": 8,
+  "metrics": {
+    "bleu": 21.72241629159254,
+    "bleu_lowercase": 22.61518862874822,
+    "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+    "chrf": 49.56960873285829,
+    "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+    "negation_cue_mismatch_rate": 0.04528804528804529,
+    "numeric_reference_coverage": 581,
+    "numeric_reference_f1": 0.7655991742050262
+  },
+  "override": "predeclared memory headroom",
+  "peak_allocated_bytes": 1639702016,
+  "prior_final_access": "internally scored all official rows; aggregate-only analyst inspection",
+  "process_seconds": 118.486123512,
+  "process_seconds_are_not_warm_latency": true,
+  "released_batch_size": 64,
+  "rows": 3003
+}

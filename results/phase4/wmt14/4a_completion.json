@@ -1,0 +1,95 @@
+{
+  "artifacts_sha256": {
+    "4a.json": "bb539e92924c26d511a3a26bd106e89ec1f8d30426cccdc43fb6eed1bc7be2e7",
+    "audit_analysis.json": "b9ee3d48e9b3f144808d49cf5732cb5385ac3eb3dba19be0d9ab7ef434dc6cb2",
+    "official_full.json": "8061e31d83562deac8a4475c70c8e7d10851e998e99564f29230274eaef78127",
+    "official_smoke.json": "ea97024fab1e9b53fab9e72e7d81d8127a0074724a322e410592a71ba95164d8",
+    "preflight.json": "5a31c82bf828a3b1a6364a8a384e8f5524c8041758cd973f8f80507d9558a8d8",
+    "trajectories.jsonl": "bcbb399d427e31f740b0a9916686c47e8b8c2d7978e6ee7a022d9705272e7c28"
+  },
+  "audit_inputs": {
+    "development": 64,
+    "exploration": 128
+  },
+  "base_commit": "8de2ad8e841a534df18654ec457cae39bc420e97",
+  "counts": {
+    "decoder": 5179,
+    "encoder": 0,
+    "generator_levels": 35849,
+    "inputs": 3259
+  },
+  "date": "2026-10-23",
+  "exact_official_disabled_parity_cases": 32,
+  "failed_model_calls": 0,
+  "independent_full_resolution_cases": 192,
+  "limits": {
+    "decoder": 5179,
+    "encoder": 0,
+    "generator_levels": 35849,
+    "inputs": 3259
+  },
+  "model_evaluation_retries": 0,
+  "model_policy_metric_sources_unchanged": true,
+  "model_state_unchanged": true,
+  "next_action": "Commit/push 4A; benchmark four development methods; commit/push lock before final access. No Phase 5 work.",
+  "official_batch_size": 8,
+  "official_full_metrics": {
+    "bleu": 21.72241629159254,
+    "bleu_lowercase": 22.61518862874822,
+    "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+    "chrf": 49.56960873285829,
+    "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+    "negation_cue_mismatch_rate": 0.04528804528804529,
+    "numeric_reference_coverage": 581,
+    "numeric_reference_f1": 0.7655991742050262
+  },
+  "official_full_rows": 3003,
+  "official_smoke_rows": 32,
+  "phase": "4A",
+  "phase4_final_groups_opened": 0,
+  "prior_compatibility_archive": "results/phase1/reviews/2026-10-23-phase3c",
+  "quality_tolerances": {
+    "bleu_points": 0.5,
+    "chrf_points": 1.0
+  },
+  "released_batch_size": 64,
+  "report_and_verification_only_source_updates_after_inference": [
+    "clarified final-only selections and non-monotonic metrics",
+    "limited source/reference example excerpts",
+    "replayed all 2112 raw decoded prefixes and exact counts"
+  ],
+  "selected_adaptive_are_final_only": true,
+  "selected_methods": {
+    "adaptive": {
+      "epsilon": 0.0,
+      "kind": "guarded",
+      "minimum": 10,
+      "patience": 1
+    },
+    "fixed": {
+      "depth": 11,
+      "kind": "fixed"
+    },
+    "full": {
+      "kind": "full"
+    },
+    "stability": {
+      "epsilon": 0.0,
+      "kind": "stability",
+      "minimum": 10,
+      "patience": 1
+    }
+  },
+  "source_snapshot": "results/phase4/wmt14/source_snapshots/4a",
+  "status": "complete",
+  "task": "wmt14",
+  "tests": {
+    "errors": 0,
+    "failures": 0,
+    "new_phase4_tests": 24,
+    "passed": 404,
+    "report": "results/phase4/wmt14/4a_tests.xml",
+    "sha256": "3b0032b5c3b73b8e66c2f5b487b26916dd6fe0e520a58e2676552bffc3841e6b",
+    "skipped": 0
+  }
+}

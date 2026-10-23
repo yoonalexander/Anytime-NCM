@@ -4,7 +4,9 @@
 
 Anytime NCM is a research repository for answering that question with reproducible experiments. It starts with hard Sudoku, where a complete solution can be checked directly, and plans later studies on translation and summarization.
 
-**Current stage:** **Phase 3A–3C are complete**, with a measured no-go for practical speedup. All seven frozen methods solve 299/300 final inputs with no early exits. Full depth averages **98.85 ms**, learned internal **101.80 ms (2.98% slower; paired 95% overhead interval 2.54%–3.44%)**. [Phase 3 report](results/phase3/summary.md). Phases 4–5 are not started and are excluded by the latest work order. **380 tests pass.** [Phase 3 protocol](docs/studies/phase3-easy-learned-protocol.md).
+**Current stage:** Phase 4A WMT14 baseline/audit is complete; 4B/4C remain pending under the newly requested Phase 4 study. **404 tests pass.** [WMT protocol](docs/studies/phase4-wmt14-protocol.md).
+
+**Completed Phase 3:** **Phase 3A–3C are complete**, with a measured no-go for practical speedup. All seven frozen methods solve 299/300 final inputs with no early exits. Full depth averages **98.85 ms**, learned internal **101.80 ms (2.98% slower; paired 95% overhead interval 2.54%–3.44%)**. [Phase 3 report](results/phase3/summary.md). Phases 4–5 are not started and are excluded by the latest work order. **380 tests pass.** [Phase 3 protocol](docs/studies/phase3-easy-learned-protocol.md).
 
 **Completed Phase 2:** **Phase 2A–2C are complete; the measured speedup gate is no-go.** On 300 reserved easy-Sudoku inputs and 4,500 timed requests, every method solved 299/300 inputs and none exited early. Full depth averaged **100.98 ms**, the development-selected verifier **101.84 ms** (0.85% slower), and every-level verification **116.03 ms** (14.91% slower). The [online report](results/phase2/summary.md) includes paired intervals, quality, costs and access disclosures. All **353 tests pass**. Original Phase 1/R2/R3 negative findings remain unchanged. Phase 3 was subsequently completed under its separate entry exception.
 
@@ -521,3 +523,9 @@ The user explicitly requested finishing Phase 3 regardless of the failed headroo
 ~~~
 
 This recomputes saved-data evidence without torch/matplotlib; the pinned local input files are still needed for integrity checks. Phase 3's six CPU fits and all 8,540 new NCM input-generations are complete; do not rerun fitting or inference to recreate the report. The pretrained NCM checkpoint and upstream checkout remain unchanged. Stop after Phase 3: Phases 4–5 are unstarted and were not worked on. The hard-baseline 86.25% versus paper 86.1% discrepancy remains unexplained.
+
+## Phase 4 WMT14 study
+
+The user requested completing Phase 4 after Phase 3. [Frozen protocol](docs/studies/phase4-wmt14-protocol.md), [pinned sources](configs/phase4_wmt_sources.json), [group manifest](docs/partitions/wmt14-phase4.json). WMT14 De-En was selected; XSum and Phase 5 are outside this study. The pinned download is 1.143 GB including checkpoints/tokenizer/data; no Qwen language-model weights or paid compute are used.
+
+4A is complete: the verbatim official baseline bodies score 3,003 rows at the predeclared batch-8 override, **21.72 BLEU /49.57 chrF**. All 192 full-resolution trajectories match independent learned-cascade/GroupNorm arithmetic, with 32 exact official/disabled-hook code/token/text parity cases. Quality improves in aggregate but 147/640 development adjacent sentence-chrF transitions deteriorate. Development selects fixed depth 11 and two final-only adaptive fallbacks; no early headroom is claimed. [Audit](results/phase4/wmt14/audit_analysis.json), [completion](results/phase4/wmt14/4a_completion.json). Next: measured development comparison, committed/pushed policy lock, then 256-input final evaluation.

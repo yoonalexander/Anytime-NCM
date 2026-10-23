@@ -2,7 +2,9 @@
 
 **Updated:** October 22, 2026 (America/Toronto)
 
-**Status:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicitly requested Phase 3A–3C experiment is complete and also no-go. Phases 4–5 are not started and are excluded by the latest user instruction.
+**Status:** The new Phase 4 request authorizes WMT14 only. 4A is complete; 4B/4C pending; 404 tests pass. Phase 5 remains unstarted.
+
+**Completed earlier studies:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicitly requested Phase 3A–3C experiment is complete and also no-go. Phases 4–5 are not started and are excluded by the latest user instruction.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
@@ -219,3 +221,7 @@ Every final method solves 299/300 inputs, with zero early exits and zero invalid
 | Phase 5 viewer / Concept Firewall bridge | Not started; excluded by latest user instruction |
 
 The implementation and bounded research work through Phase 3 are complete. The practical adaptive-speedup objective remains unachieved in this frozen Sudoku setting. Stop here; do not begin Phases 4–5 without a new request. A different objective/task would require its own evidence, protocol, budget and appropriate fresh evaluation data.
+
+## New Phase 4 WMT14 work order
+
+The user subsequently requested finishing Phase 4 and committing/pushing. [Protocol](docs/studies/phase4-wmt14-protocol.md). 4A is complete: 3,003-row released baseline (batch 8 override) at 21.72 BLEU /49.57 chrF; 192 full-resolution trajectories and 32 exact matched official parity cases. The predeclared tolerances are 0.5 BLEU /1.0 chrF point with a 5% latency threshold. Fixed depth 11 and two final-only adaptive policies were selected on development. Commit/push 4A, measure 4B, release the committed/pushed lock, then evaluate four methods on the reserved 256 final inputs. Preserve all earlier negative findings; do not start Phase 5.
