@@ -1,0 +1,10 @@
+{
+  "github_main": "45ec152255a6e8f7016dd12ffc799642be2ccb38",
+  "local_head": "45ec152255a6e8f7016dd12ffc799642be2ccb38",
+  "phase4_final_groups_opened_before_release": 0,
+  "policy_lock_sha256": "e1bbec3b03055f4062fe6c8fa5510bb00e0ebb678c38a1e8cf87dbdfde475554",
+  "released_utc": "2026-10-23T07:09:42.879017+00:00",
+  "scope": "Complete Phase 4 only; no Phase 5",
+  "status": "released_after_4b_commit",
+  "working_lock_matches_committed_blob": true
+}

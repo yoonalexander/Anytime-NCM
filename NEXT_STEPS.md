@@ -1,10 +1,10 @@
 # What Comes Next: Revised Research Roadmap After the Phase 1 No-Go
 
-**Updated:** October 22, 2026 (America/Toronto)
+**Updated:** October 23, 2026 (America/Toronto)
 
-**Status:** The new Phase 4 request authorizes WMT14 only. 4A/4B are complete; locked 4C pending; 404 tests pass. Phase 5 remains unstarted.
+**Status:** Phase 4A–4C are complete on WMT14, with a measured practical-speedup no-go. **404 tests pass.** Phase 5 remains unstarted. [WMT report](results/phase4/wmt14/summary.md).
 
-**Completed earlier studies:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicitly requested Phase 3A–3C experiment is complete and also no-go. Phases 4–5 are not started and are excluded by the latest user instruction.
+**Completed earlier studies:** R0/R1A/R1B/R2/R3 and Phase 2A–2C are complete. Phase 2 was explicitly requested despite its failed opportunity gate; its measured practical-speedup result is also no-go. The subsequent explicitly requested Phase 3A–3C experiment is complete and also no-go. Phase 4 was subsequently requested and is complete below; Phase 5 remains unstarted.
 
 **Read first:** [Research paper](RESEARCH_PAPER.md). [Original Phase 0–5 checklist](ROADMAP.md) remains the implementation record. The [frozen Phase 1 protocol](docs/experiment_protocol.md) and its completed no-go remain unchanged.
 
@@ -16,7 +16,7 @@ R1A characterized the saved errors. R1B then encoded the 32 preselected valid re
 
 The online stopping hook, learned controllers and their measured comparisons are complete. Additional controller fitting or a viewer does not currently have demonstrated efficiency headroom. None can, on its own, make an invalid existing prefix into a valid early answer. This is a research sequencing choice, not a claim that the software would be impossible to implement.
 
-The bounded Sudoku follow-ups are now negative, so closure at this budget is the recorded decision. If the project continues, the recommended next work is a separately requested WMT14 resource/protocol audit before any model evaluation. Do not expand Sudoku samples or relax quality requirements until a favorable result appears.
+The bounded Sudoku follow-ups are now negative, so closure at this budget is the recorded decision. The subsequently requested WMT14 resource/protocol audit and bounded study are now complete below. Do not expand Sudoku samples or relax quality requirements until a favorable result appears.
 
 ## 2. What the existing evidence establishes
 
@@ -41,7 +41,7 @@ An optimized implementation might reduce reconstruction/transfer overhead. It wo
 | R3 | Extended opportunity/cost audit of easy under an explicit entry exception | Complete — [report](results/followup/sudoku_easy_r3/summary.md); no-go | User requested extension after negative R2; it does not retroactively qualify R2. |
 | Phase 2 | Implement and benchmark actual online verified stopping | Complete; measured no-go | Explicit work order/entry exception; [report](results/phase2/summary.md), no practical speedup. |
 | Phase 3 | Learn a stopping controller | Complete; measured no-go | Explicit entry exception, frozen policies, [300-input final comparison](results/phase3/summary.md). |
-| Phase 4 | Translation/summarization generalization | Alternative branch, not started | Task-specific quality tolerances, signals, protocol, artifacts, and resource feasibility. |
+| Phase 4 | WMT14 translation generalization | Complete; measured no-go | [Protocol, actual cost and final quality](results/phase4/wmt14/summary.md). |
 | Phase 5 | Viewer / optional Concept Firewall bridge | Optional, not started | A separate scope grounded in recorded results. |
 
 R1–R3 are new follow-up study identifiers, not retroactive additions to Phase 1's frozen budget. Original phases retain their numbering and completion history. R0 documented the existing study; R1A added a saved-data diagnosis; R1B completed the reference-encoding pilot. R2 subsequently completed its separately scoped screen; none changes the original hard-Sudoku gate.
@@ -188,9 +188,9 @@ Useful for communication after the next research decision, but optional and sepa
 
 **Recorded evidence:** R2 and R3 remain no-go. The user subsequently requested finishing Phase 2 under a separately frozen entry exception. That online experiment is now complete and also no-go: monitoring optimizations reduced checking cost but created no early valid outputs. The [report](results/phase2/summary.md) and [completion](results/phase2/completion.json) close the work order.
 
-**Current instruction:** Finish Phase 3 and report status; do not work on Phases 4–5. That boundary is complete. A future WMT14 resource/protocol audit would require a separate new request; no task change or later-phase work has started.
+**Historical Phase 3 instruction:** Finish Phase 3 and report status, excluding Phases 4–5. That boundary was completed. The later user request authorized the completed WMT14 Phase 4 study below; Phase 5 remains unstarted.
 
-R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-generation / 31,536-decoder-forward allocation, including its official aggregate baseline and profiling validation. No model evaluation was repeated during the documented collection resumption. Those R3 counts exclude the subsequent Phase 2 online experiment. Lightweight controller training was subsequently completed in Phase 3; natural-language studies remain unstarted.
+R2 consumed its own two-candidate allocation. R3 then used a separate 4,378-generation / 31,536-decoder-forward allocation, including its official aggregate baseline and profiling validation. No model evaluation was repeated during the documented collection resumption. Those R3 counts exclude the subsequent Phase 2 online experiment. Lightweight controller training was subsequently completed in Phase 3; the later WMT14 natural-language study is complete below.
 
 
 ## Completed Phase 2 work order
@@ -217,13 +217,21 @@ Every final method solves 299/300 inputs, with zero early exits and zero invalid
 | Phase 1 and R1A/R1B/R2/R3 | Complete; no useful early-valid opportunity in the audited Sudoku settings |
 | Phase 2 online stopping | Complete; measured practical-speedup no-go |
 | Phase 3 learned stopping | Complete; measured practical-speedup no-go |
-| Phase 4 natural-language generalization | Not started; excluded by latest user instruction |
-| Phase 5 viewer / Concept Firewall bridge | Not started; excluded by latest user instruction |
+| Phase 4 natural-language generalization | Complete on WMT14; measured no-go |
+| Phase 5 viewer / Concept Firewall bridge | Not started; outside current scope |
 
-The implementation and bounded research work through Phase 3 are complete. The practical adaptive-speedup objective remains unachieved in this frozen Sudoku setting. Stop here; do not begin Phases 4–5 without a new request. A different objective/task would require its own evidence, protocol, budget and appropriate fresh evaluation data.
+The implementation and bounded research work through Phase 3 are complete. The practical adaptive-speedup objective remains unachieved in this frozen Sudoku setting. At Phase 3 completion the instruction was to stop there. The later Phase 4 request is complete below; do not begin Phase 5 without a new request. A different objective/task would require its own evidence, protocol, budget and appropriate fresh evaluation data.
 
 ## New Phase 4 WMT14 work order
 
-The user subsequently requested finishing Phase 4 and committing/pushing. [Protocol](docs/studies/phase4-wmt14-protocol.md). 4A is complete: 3,003-row released baseline (batch 8 override) at 21.72 BLEU /49.57 chrF; 192 full-resolution trajectories and 32 exact matched official parity cases. The predeclared tolerances are 0.5 BLEU /1.0 chrF point with a 5% latency threshold. Fixed depth 11 and two final-only adaptive policies were selected on development. Commit/push 4A, measure 4B, release the committed/pushed lock, then evaluate four methods on the reserved 256 final inputs. Preserve all earlier negative findings; do not start Phase 5.
+The user subsequently requested finishing Phase 4 and committing/pushing. [Protocol](docs/studies/phase4-wmt14-protocol.md). 4A is complete: 3,003-row released baseline (batch 8 override) at 21.72 BLEU /49.57 chrF; 192 full-resolution trajectories and 32 exact matched official parity cases. The predeclared tolerances are 0.5 BLEU /1.0 chrF point with a 5% latency threshold. Fixed depth 11 and two final-only adaptive policies were selected on development. 4A and 4B were committed/pushed separately, the lock released, and all four frozen methods evaluated on the assigned 256 final inputs. Preserve all earlier negative findings; do not start Phase 5.
 
-**Phase 4B completed:** All 768 timed development requests and 32 exploration warmups pass offline/online parity. No early exits; all outputs/quality equal full depth. Guarded stability costs 135.65 ms versus 132.57 ms full depth. [Policy lock](results/phase4/wmt14/policy_lock.json), [completion](results/phase4/wmt14/4b_completion.json). Commit/push and release the lock, then evaluate the reserved 256 groups. No Phase 5 work is included.
+**Phase 4B completed:** All 768 timed development requests and 32 exploration warmups pass offline/online parity. No early exits; all outputs/quality equal full depth. Guarded stability costs 135.65 ms versus 132.57 ms full depth. [Policy lock](results/phase4/wmt14/policy_lock.json), [completion](results/phase4/wmt14/4b_completion.json). The lock was committed/pushed as 45ec152 and released before the 256-group final comparison. No Phase 5 work is included.
+
+## Completed Phase 4 and next decision
+
+The bounded WMT14 study is complete: **22.687 BLEU /50.105 chrF** on 256 final inputs, identical across four selected methods. All 3,072 timed requests reach level 11. Primary guarded stability is **1.95% slower** than full depth (137.53 versus 134.91 ms; paired 95% overhead interval 1.40%–2.49%) and 2.13% slower than selected fixed depth. Both practical-speedup and frontier gates fail. [Report](results/phase4/wmt14/summary.md), [completion](results/phase4/wmt14/completion.json). All 404 tests pass.
+
+**Stop this tested policy family at its consumed budget.** Retain the online engine, parity tests and reproducible negative evidence. Translation shows graded, sometimes non-monotonic reference quality, but these selected stability rules supply no early savings. Neither the Sudoku nor this WMT result proves a universal absence of useful adaptive generation.
+
+Further research should first define a new bounded hypothesis with a plausible source of early acceptable outputs, such as a different prefix objective/checkpoint or separately scoped stopping signal. Freeze quality tolerances, actual monitoring cost, selection protocol, resource budget and suitable fresh evaluation data before collection. Do not silently retune on the consumed WMT final subset or relax tolerances until a favorable result appears. The optional Phase 5 viewer/Concept Firewall bridge requires a separate request and has not started.
