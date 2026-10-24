@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-24",
+  "initial_direct_corpus_replays": 117,
+  "additional_verification_reason": "Add safe --output paths for reproducible future checks and archive-aware mutable documentation integrity; numeric algorithms unchanged",
+  "additional_direct_corpus_replays_cap": 117,
+  "cumulative_replays_cap": 256,
+  "repeat_bootstrap_indices": "identical fixed seeds/index sets; no search, new outcomes or independent replication",
+  "initial_executed_sources": "source_snapshots/",
+  "current_cli_help_checks": "passed",
+  "external_researcher_review": "unavailable; no contact made"
+}

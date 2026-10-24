@@ -2,7 +2,7 @@
 
 **Created:** October 23, 2026
 
-**Status:** S0, S1A/S1B and S2A complete (October 24). Practical headroom remains inconclusive. S2B deferred with rationale; S3 blocked by unmet entry; S4 deferred. S5 synthesis is eligible and next.
+**Status:** S0, S1A/S1B, S2A and S5A complete (October 24). S2B/S4 deferred and S3 blocked with recorded reasons. S5B local manuscript/reproducibility packaging in progress; no submission or external contact.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
@@ -183,10 +183,13 @@ After every completed phase and subphase: record evidence and limitations, run a
 
 ### S5A — Independent checks
 
-- [ ] Recompute headline tables from saved records with independent checks of corpus aggregation, paired comparisons, identity exclusions and cost accounting.
-- [ ] Where new evidence is needed, budget fresh-process replication explicitly; do not silently replay consumed historical allocations.
+- [x] Recompute headline tables from saved records with independent checks of corpus aggregation, paired comparisons, identity exclusions and cost accounting.
+- [x] Where new evidence is needed, budget fresh-process replication explicitly; do not silently replay consumed historical allocations.
 - [ ] Request independent researcher review when available. Do not invent reviewer approval or contact anyone without authorization.
-- [ ] Separate verified implementation properties, empirical observations, mechanistic hypotheses and proven bounds. Report missing evidence plainly.
+- [x] Separate verified implementation properties, empirical observations, mechanistic hypotheses and proven bounds. Report missing evidence plainly.
+
+
+**Evidence:** [independent checks and limitations](results/stronger_research/s5a/summary.md), [calculation receipt](results/stronger_research/s5a/independent-checks.cli-validation.json), [451-test JUnit](results/stronger_research/s5a/tests.xml). Independent researcher review is unavailable/deferred; the unchecked review item is not claimed complete. No additional inference or new final access.
 
 ### S5B — Manuscript and reproducibility package
 

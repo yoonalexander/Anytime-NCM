@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "timed_development_rows": 768,
+  "identities": 64,
+  "repeats": 3,
+  "methods": 4,
+  "s1_source_locks_match": true,
+  "mean_p95_paired_intervals": "independently reproduced",
+  "new_models_or_final_outcomes": 0,
+  "source_sha256": "636c9ed372d500345447c647677f894d00a7c644eb5d4cf7427d11f35ab25777"
+}
