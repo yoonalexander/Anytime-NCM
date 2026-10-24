@@ -2,7 +2,7 @@
 
 **Created:** October 23, 2026
 
-**Status:** S0 and S1A complete; S1B cost/uncertainty synthesis in progress under the October 24 full-roadmap request. Exploration was locked/pushed before development. S2–S5 remain gated.
+**Status:** S0 and S1A/S1B complete (October 24). Mixed point-feasible WMT exits found, but practical headroom is inconclusive: quality noninferiority bounds fail and actual arbitrary-exit latency is unidentified. S2A saved diagnosis is next; S3 entry is not met; S4 remains conditional.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
@@ -83,11 +83,11 @@ After every completed phase and subphase: record evidence and limitations, run a
 
 ### S1B — Account for cost, uncertainty and search limitations
 
-- [ ] Start with a clearly labeled zero-monitoring optimistic scenario, then evaluate a predeclared range of plausible inspection/controller costs.
-- [ ] Use retained measured timings only for conditions they cover. Saved full-depth request times and level/code counts cannot identify arbitrary early-exit wall latency. Missing cost components stay unavailable; assumptions and component estimates stay labeled.
-- [ ] Compare estimated adaptive performance with full depth and the best feasible fixed depth, including the extra monitoring needed to choose an input-dependent exit.
-- [ ] Report sensitivity to cost assumptions and the search's best feasible solution, termination, bounds/gap if available, and unsuccessful searches.
-- [ ] Distinguish uncertainty conditional on a fixed assignment from selection uncertainty. Bootstrap that keeps oracle assignments fixed does not validate a learned selector. If optimizing within resamples, count and freeze that additional search budget in S0B.
+- [x] Start with a clearly labeled zero-monitoring optimistic scenario, then evaluate a predeclared range of plausible inspection/controller costs.
+- [x] Use retained measured timings only for conditions they cover. Saved full-depth request times and level/code counts cannot identify arbitrary early-exit wall latency. Missing cost components stay unavailable; assumptions and component estimates stay labeled.
+- [x] Compare estimated adaptive performance with full depth and the best feasible fixed depth, including the extra monitoring needed to choose an input-dependent exit.
+- [x] Report sensitivity to cost assumptions and the search's best feasible solution, termination, bounds/gap if available, and unsuccessful searches.
+- [x] Distinguish uncertainty conditional on a fixed assignment from selection uncertainty. Bootstrap that keeps oracle assignments fixed does not validate a learned selector. If optimizing within resamples, count and freeze that additional search budget in S0B.
 
 **Decision rule:**
 
@@ -96,6 +96,9 @@ After every completed phase and subphase: record evidence and limitations, run a
 - **Inconclusive:** Cost estimates, optimizer gaps or quality uncertainty prevent a defensible decision. State the missing evidence and price a specific next measurement before requesting it.
 
 **Deliverables:** New results/stronger_research/s1/ records: assignment files, machine-readable metrics, cost sensitivities, provenance, search ledger and summary. Never overwrite Phase 4 artifacts.
+
+
+**Recorded outcome:** [S1B report](results/stronger_research/s1/summary.md), [budget/attempt ledger](results/stronger_research/s1/budget.json), [cost sensitivity](results/stronger_research/s1/cost-sensitivity.csv). Inconclusive practical headroom; no S3 training authorized by this result.
 
 ## S2 — Why do the prefixes behave this way?
 
