@@ -2,7 +2,7 @@
 
 **Created:** October 23, 2026
 
-**Status:** S0A and S0B complete (October 23, 2026). Evidence/access inventory and prospective protocol frozen; S1–S5 remain planned and unexecuted. Stop before S1; later execution requires a request.
+**Status:** S0 complete; S1 in progress under the October 24 full-roadmap request. Frozen S1 implementation and exploration analysis complete; development remains closed until the exploration source/results lock is pushed and remote-verified. Later phases remain gated.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
@@ -69,6 +69,8 @@ After every completed phase and subphase: record evidence and limitations, run a
 ## S1 — Is there an opportunity the stopping rules missed?
 
 ### S1A — Reconstruct the saved quality and work frontier
+
+**Progress:** [exploration lock](results/stronger_research/s1/exploration/summary.md), [source/access/budget tests](tests/test_stronger_s1.py). 30,000 exploration assignments charged; no new model work. Development pending released lock.
 
 - [ ] Verify source hashes, identity/group membership, level coverage and corpus-metric aggregation against retained Phase 4 records.
 - [ ] Reproduce all 11 fixed-depth quality points and saved policy exits from existing data.
