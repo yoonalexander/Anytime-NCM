@@ -1,0 +1,659 @@
+{
+  "interpretation": "normal difference proxies and cue bounds, not real corpus power",
+  "scenarios": [
+    {
+      "n": 256,
+      "scenario": "null",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.0,
+          "mean_numeric_coverage": 51.247,
+          "naive_latency_interval_covers_true_fraction": 0.999,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.0,
+          "mean_numeric_coverage": 51.247,
+          "naive_latency_interval_covers_true_fraction": 0.992,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 512,
+      "scenario": "null",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.0,
+          "mean_numeric_coverage": 102.061,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.0,
+          "mean_numeric_coverage": 102.061,
+          "naive_latency_interval_covers_true_fraction": 0.986,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 1024,
+      "scenario": "null",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.0,
+          "mean_numeric_coverage": 205.239,
+          "naive_latency_interval_covers_true_fraction": 0.999,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.0,
+          "mean_numeric_coverage": 205.239,
+          "naive_latency_interval_covers_true_fraction": 0.992,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 256,
+      "scenario": "target_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.479,
+          "mean_numeric_coverage": 51.225,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.479,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.479,
+          "mean_numeric_coverage": 51.225,
+          "naive_latency_interval_covers_true_fraction": 0.987,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.479,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 512,
+      "scenario": "target_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.526,
+          "mean_numeric_coverage": 102.165,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.526,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.526,
+          "mean_numeric_coverage": 102.165,
+          "naive_latency_interval_covers_true_fraction": 0.99,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.526,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 1024,
+      "scenario": "target_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.473,
+          "mean_numeric_coverage": 204.748,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.473,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 0.473,
+          "mean_numeric_coverage": 204.748,
+          "naive_latency_interval_covers_true_fraction": 0.988,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.473,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 256,
+      "scenario": "positive",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 51.221,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 51.221,
+          "naive_latency_interval_covers_true_fraction": 0.987,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 512,
+      "scenario": "positive",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 102.277,
+          "naive_latency_interval_covers_true_fraction": 0.999,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 102.277,
+          "naive_latency_interval_covers_true_fraction": 0.99,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 1024,
+      "scenario": "positive",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 204.93,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 204.93,
+          "naive_latency_interval_covers_true_fraction": 0.99,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 256,
+      "scenario": "quality_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 50.923,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 50.923,
+          "naive_latency_interval_covers_true_fraction": 0.991,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 512,
+      "scenario": "quality_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 102.054,
+          "naive_latency_interval_covers_true_fraction": 0.999,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 102.054,
+          "naive_latency_interval_covers_true_fraction": 0.992,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 1024,
+      "scenario": "quality_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 205.096,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 205.096,
+          "naive_latency_interval_covers_true_fraction": 0.993,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 256,
+      "scenario": "quality_outside",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 51.098,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 51.098,
+          "naive_latency_interval_covers_true_fraction": 0.985,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 512,
+      "scenario": "quality_outside",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 102.272,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 102.272,
+          "naive_latency_interval_covers_true_fraction": 0.989,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 1024,
+      "scenario": "quality_outside",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 205.375,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 205.375,
+          "naive_latency_interval_covers_true_fraction": 0.994,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 0.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 256,
+      "scenario": "rare_cue_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 5.093,
+          "naive_latency_interval_covers_true_fraction": 0.999,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 4
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 5.093,
+          "naive_latency_interval_covers_true_fraction": 0.985,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 4
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 512,
+      "scenario": "rare_cue_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 10.206,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 10.206,
+          "naive_latency_interval_covers_true_fraction": 0.991,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 1024,
+      "scenario": "rare_cue_boundary",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 20.607,
+          "naive_latency_interval_covers_true_fraction": 1.0,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 20.607,
+          "naive_latency_interval_covers_true_fraction": 0.994,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 256,
+      "scenario": "zero_numeric_coverage",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 0.0,
+          "naive_latency_interval_covers_true_fraction": 0.999,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 1000
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 0.0,
+          "naive_latency_interval_covers_true_fraction": 0.987,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 1000
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 512,
+      "scenario": "zero_numeric_coverage",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 0.0,
+          "naive_latency_interval_covers_true_fraction": 0.999,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 1000
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 0.0,
+          "naive_latency_interval_covers_true_fraction": 0.985,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 1000
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 1024,
+      "scenario": "zero_numeric_coverage",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 0.0,
+          "naive_latency_interval_covers_true_fraction": 0.999,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 1000
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "latency_proxy_pass_fraction": 1.0,
+          "mean_numeric_coverage": 0.0,
+          "naive_latency_interval_covers_true_fraction": 0.983,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 1.0,
+          "undefined_numeric_trials": 1000
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 256,
+      "scenario": "clustered",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "known_cluster_latency_interval_covers_true_fraction": 1.0,
+          "latency_proxy_pass_fraction": 0.018,
+          "mean_numeric_coverage": 51.27,
+          "naive_latency_interval_covers_true_fraction": 0.822,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.018,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "known_cluster_latency_interval_covers_true_fraction": 0.986,
+          "latency_proxy_pass_fraction": 0.018,
+          "mean_numeric_coverage": 51.27,
+          "naive_latency_interval_covers_true_fraction": 0.698,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.018,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 512,
+      "scenario": "clustered",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "known_cluster_latency_interval_covers_true_fraction": 0.996,
+          "latency_proxy_pass_fraction": 0.002,
+          "mean_numeric_coverage": 102.495,
+          "naive_latency_interval_covers_true_fraction": 0.818,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.002,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "known_cluster_latency_interval_covers_true_fraction": 0.985,
+          "latency_proxy_pass_fraction": 0.002,
+          "mean_numeric_coverage": 102.495,
+          "naive_latency_interval_covers_true_fraction": 0.682,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.002,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    },
+    {
+      "n": 1024,
+      "scenario": "clustered",
+      "stages": {
+        "E2": {
+          "cue_pass_fraction": 0.0,
+          "known_cluster_latency_interval_covers_true_fraction": 0.999,
+          "latency_proxy_pass_fraction": 0.0,
+          "mean_numeric_coverage": 204.38,
+          "naive_latency_interval_covers_true_fraction": 0.827,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.0,
+          "undefined_numeric_trials": 0
+        },
+        "E4": {
+          "cue_pass_fraction": 0.0,
+          "known_cluster_latency_interval_covers_true_fraction": 0.986,
+          "latency_proxy_pass_fraction": 0.0,
+          "mean_numeric_coverage": 204.38,
+          "naive_latency_interval_covers_true_fraction": 0.698,
+          "nonidentical_joint_proxy_pass_fraction": 0.0,
+          "normal_quality_proxy_pass_fraction": 1.0,
+          "structural_exact_latency_proxy_pass_fraction": 0.0,
+          "undefined_numeric_trials": 0
+        }
+      },
+      "trials": 1000
+    }
+  ]
+}

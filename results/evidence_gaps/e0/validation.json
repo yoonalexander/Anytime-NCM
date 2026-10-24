@@ -1,0 +1,24 @@
+{
+  "kind": "same_assistant_separate_consistency_check_no_new_trial_or_output_access",
+  "checks": {
+    "executed_sources_and_original_run_artifact_digests": true,
+    "independent_allocation_order_disjointness_and_seal": true,
+    "consumed_caps_and_corpus_parity_receipts": true,
+    "independent_zero_event_floors_and_binomial_tail_rank": true,
+    "resources_zero_model_work_and_32_focused_tests": true,
+    "links_and_historical_tracked_evidence_unchanged": true,
+    "byte_exact_execution_archive_matches_recorded_digests": true
+  },
+  "local_links_checked": 169,
+  "focused_tests": 32,
+  "historical_full_suite_rerun": false,
+  "additional_study_trials_or_draws": 0,
+  "input_or_outcome_release": false,
+  "source_execution_receipt_sha256": "7a3f5ca81cda3b262fddff4042d446733d65a127ee5f55b0f572694e61d86644",
+  "limitations": [
+    "not independent human scientific review",
+    "does not validate interval sampling coverage or real-data power",
+    "raw source strings/output bodies not reinterpreted in this check"
+  ],
+  "new_result_artifact_bytes_before_completion": 950950
+}

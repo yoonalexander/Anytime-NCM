@@ -1,0 +1,54 @@
+{
+  "stage": "E0",
+  "status": "complete_with_statistical_limitations",
+  "source_commit": "4f13c5d9d271557358925445601ba97beb3f075e",
+  "data_roles": {
+    "E2_audit": 256,
+    "E3_development": 128,
+    "E4_confirmation": 1024,
+    "closed_unallocated": 571
+  },
+  "all_new_outcome_roles_sealed": true,
+  "new_references": 0,
+  "new_input_outcomes": 0,
+  "model_loads": 0,
+  "generator_requests": 0,
+  "decoder_forwards": 0,
+  "target_encodings": 0,
+  "fits": 0,
+  "real_assignment_searches": 0,
+  "input_only_source_strings_audited": 3003,
+  "prior_output_headers_checked": 4032,
+  "output_body_decodes": 0,
+  "synthetic_work": {
+    "bootstrap_draws": 120000,
+    "representative_datasets": 12,
+    "trials": 24000
+  },
+  "paid_compute_dollars": 0,
+  "focused_tests_passed": 32,
+  "full_suite_rerun": false,
+  "statistical_findings": {
+    "E2_minimum_zero_adverse_coverage": 405,
+    "E2_allocated_groups": 256,
+    "E4_minimum_zero_adverse_numeric_coverage": 263,
+    "E4_actual_numeric_coverage": "sealed and unknown",
+    "E2_nonidentical_under_frozen_fallback": "cannot pass at allocated sample size",
+    "O_exact_quality": "by-construction equality conditional on execution parity; cost unknown"
+  },
+  "unresolved": [
+    "unknown document clusters/training overlap/unrecorded access",
+    "actual early-exit latency and deployable recognition",
+    "E4 numeric coverage and statistical precision",
+    "independent human scientific review"
+  ],
+  "next_stage": "E1 timing, only after separate prospective execution protocol/request; not started",
+  "blocked": [
+    "automatic full nonidentical-output E2 collection",
+    "E3 controller fits",
+    "E4 outcome release"
+  ],
+  "preexecution_failure_preserved": "results/evidence_gaps/e0-preexecution-failure-1.json",
+  "source_archive": "results/evidence_gaps/e0/execution-sources.zip",
+  "summary": "results/evidence_gaps/e0/summary.md"
+}

@@ -1,0 +1,36 @@
+{
+  "counts": {
+    "bootstrap_draws": 0,
+    "representative_datasets": 0,
+    "trials": 0
+  },
+  "forbidden_work": {
+    "assignment_searches": 0,
+    "decoder_forwards": 0,
+    "fits": 0,
+    "generator_requests": 0,
+    "model_loads": 0,
+    "new_input_outcomes": 0,
+    "new_references": 0,
+    "target_encodings": 0
+  },
+  "head": "4f13c5d9d271557358925445601ba97beb3f075e",
+  "model_libraries_imported": false,
+  "numpy": "2.5.4",
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "sacrebleu": "2.6.0",
+  "scipy": "1.18.1",
+  "source_sha256": {
+    "docs/studies/evidence-gaps/e0-lock.json": "c5994420673df6cd3fbe9d2e38a1a384e9ccd6380935af35041adc1b6cdb0a21",
+    "docs/studies/evidence-gaps/e0-protocol.md": "fec74e3af2884473b3798652dfd853529e4e76e5d17f937fe02e1a49c310c6d7",
+    "docs/studies/evidence-gaps/e0-recovery-amendment.md": "e59f81d01b65393b977f0f7212caad9aa5fe3df812a234a98d559d4eb30a27c8",
+    "scripts/run_evidence_e0.py": "f7d3a4ffc6508f27376aec45e7257285a0618d7611515f0a38b3633088bc035a",
+    "src/anytime_ncm/evidence_preflight.py": "c84668cb86a5ad35cabed24271848f1959ec2f750f5b16ed06f2944742618e5c",
+    "src/anytime_ncm/wmt_data.py": "a692f4923377e202840ce56a4c8ace3414077b0b7c00763776da646d4e1e4c2e",
+    "tests/test_evidence_preflight.py": "d25eb2dfeb9f83fc6687cf2ffc84ea12c5fe689758180056ec45256f3699493e"
+  },
+  "stage": "E0",
+  "started_utc": "2026-10-24T22:07:12.566874+00:00",
+  "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203",
+  "verified_remote_head_argument": "4f13c5d9d271557358925445601ba97beb3f075e"
+}

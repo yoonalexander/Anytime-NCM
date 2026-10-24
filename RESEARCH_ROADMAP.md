@@ -8,6 +8,8 @@
 
 **Planned extension (October 24):** [evidence-gap resolution plan](docs/studies/evidence-gap-resolution-plan.md) sequences input/statistical preflight, forced-exit timing, a fixed-rule fresh diagnostic, and conditional controller/confirmation studies. Planning only: no new outcomes/model work/fits or access release. The completed cycle and its blocked/deferred branches retain their recorded decisions; the extension needs stage-specific protocols and an execution request. [Documentation and budget checks](docs/studies/evidence-gap-plan-validation.json) validate the plan, not experimental execution or statistical power.
 
+**E0 extension complete (October 24):** [input/statistical preflight](results/evidence_gaps/e0/summary.md), [frozen protocol](docs/studies/evidence-gaps/e0-protocol.md), [sealed manifest](results/evidence_gaps/e0/input-manifest.json), [statistical feasibility](results/evidence_gaps/e0/statistical-feasibility.json). The recorded-access audit supports the proposed 256/128/1,024/571 reservations, with unknown document/training overlap retained. The conservative E2 cue bound needs at least 405 covered examples, so the n=256 nonidentical-output gate is infeasible under that frozen method; O-exact remains a conditional diagnostic route. E1 was not run; all new outcome roles remain sealed and E3/E4 stay blocked. This does not revise the completed S0-S5 findings.
+
 ## Purpose and relationship to earlier work
 
 Develop a focused research contribution explaining when frozen NCM hierarchies support useful early stopping, why the tested methods failed, and which intervention, if any, is justified.
