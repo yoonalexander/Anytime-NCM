@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "stage": "E0",
+  "base_commit": "a0ae98a0fcaf7237387ab5029e76b75799e56f6c",
+  "protocol": "docs/studies/evidence-gaps/e0-protocol.md",
+  "source_pickle_sha256": "62254653c32ce9e8b93576797597381babaab301b10ee0a2a3babec89576ea43",
+  "manifest_sha256": "9cbd6503cb440b72f14296dc35d2c1054060f8c2ceebc26ae3349c348768dacb",
+  "role_order": [
+    "E2_audit",
+    "E3_development",
+    "E4_confirmation",
+    "closed_unallocated"
+  ],
+  "role_counts": [
+    256,
+    128,
+    1024,
+    571
+  ],
+  "allocation_salt": "anytime-ncm-evidence-gap-v1|",
+  "sample_sizes": [
+    256,
+    512,
+    1024
+  ],
+  "trials_per_scenario": 1000,
+  "trial_seed": 2026102801,
+  "bootstrap_seed": 2026102802,
+  "representative_bootstrap_draws": 10000,
+  "representative_families": [
+    "identical",
+    "one_in_20",
+    "one_in_five",
+    "clustered"
+  ],
+  "scenarios": [
+    {
+      "name": "null",
+      "latency_reduction": 0.0,
+      "bleu_proxy_difference": 0.0,
+      "chrf_proxy_difference": 0.0,
+      "numeric_coverage": 0.2,
+      "adverse_probability": 0.0,
+      "cluster_size": 1
+    },
+    {
+      "name": "target_boundary",
+      "latency_reduction": 0.05,
+      "bleu_proxy_difference": 0.0,
+      "chrf_proxy_difference": 0.0,
+      "numeric_coverage": 0.2,
+      "adverse_probability": 0.0,
+      "cluster_size": 1
+    },
+    {
+      "name": "positive",
+      "latency_reduction": 0.1,
+      "bleu_proxy_difference": 0.0,
+      "chrf_proxy_difference": 0.0,
+      "numeric_coverage": 0.2,
+      "adverse_probability": 0.0,
+      "cluster_size": 1
+    },
+    {
+      "name": "quality_boundary",
+      "latency_reduction": 0.1,
+      "bleu_proxy_difference": -0.5,
+      "chrf_proxy_difference": -1.0,
+      "numeric_coverage": 0.2,
+      "adverse_probability": 0.0,
+      "cluster_size": 1
+    },
+    {
+      "name": "quality_outside",
+      "latency_reduction": 0.1,
+      "bleu_proxy_difference": -0.8,
+      "chrf_proxy_difference": -1.5,
+      "numeric_coverage": 0.2,
+      "adverse_probability": 0.0,
+      "cluster_size": 1
+    },
+    {
+      "name": "rare_cue_boundary",
+      "latency_reduction": 0.1,
+      "bleu_proxy_difference": 0.0,
+      "chrf_proxy_difference": 0.0,
+      "numeric_coverage": 0.02,
+      "adverse_probability": 0.02,
+      "cluster_size": 1
+    },
+    {
+      "name": "zero_numeric_coverage",
+      "latency_reduction": 0.1,
+      "bleu_proxy_difference": 0.0,
+      "chrf_proxy_difference": 0.0,
+      "numeric_coverage": 0.0,
+      "adverse_probability": 0.0,
+      "cluster_size": 1
+    },
+    {
+      "name": "clustered",
+      "latency_reduction": 0.025,
+      "bleu_proxy_difference": 0.0,
+      "chrf_proxy_difference": 0.0,
+      "numeric_coverage": 0.2,
+      "adverse_probability": 0.0,
+      "cluster_size": 8
+    }
+  ],
+  "cluster_rho": 0.75,
+  "latency_proxy_sd": 0.08,
+  "bleu_proxy_sd": 1.0,
+  "chrf_proxy_sd": 2.0,
+  "E2": {
+    "intervals": 89,
+    "tail_alpha": 0.0002808988764044944,
+    "future_bootstrap_draws": 100000
+  },
+  "E4": {
+    "one_sided_tests": 10,
+    "tail_alpha": 0.005,
+    "future_bootstrap_draws": 50000
+  },
+  "cue_margin": 0.02,
+  "monte_carlo_family_error_allowance": 0.001,
+  "limits": {
+    "scenarios": 24,
+    "trials": 24000,
+    "representative_datasets": 12,
+    "bootstrap_draws": 120000,
+    "wall_seconds": 14400,
+    "setup_wall_seconds": 3600,
+    "execution_wall_seconds": 7200,
+    "reporting_wall_seconds": 3600,
+    "cpu_threads": 4,
+    "rss_bytes": 8589934592,
+    "artifact_bytes": 268435456,
+    "dollars": 0
+  },
+  "forbidden_work": {
+    "model_loads": 0,
+    "generator_requests": 0,
+    "decoder_forwards": 0,
+    "target_encodings": 0,
+    "fits": 0,
+    "new_references": 0,
+    "new_input_outcomes": 0,
+    "assignment_searches": 0
+  },
+  "protocol_sha256": "fec74e3af2884473b3798652dfd853529e4e76e5d17f937fe02e1a49c310c6d7"
+}
