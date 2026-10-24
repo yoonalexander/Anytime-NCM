@@ -1,0 +1,25 @@
+{
+  "local_head": "dd2124eaccebf2c4617a8a5e47a01860217e37c4",
+  "github_main": "dd2124eaccebf2c4617a8a5e47a01860217e37c4",
+  "released_utc": "2026-10-24T17:51:13.567680+00:00",
+  "sources": {
+    "src/anytime_ncm/stronger_s1.py": "82b5039c014559cf46a7ab9706d2e257aa2bd5e2294ffc7834b470a8f03e5fb7",
+    "scripts/run_stronger_s1.py": "bffae659dbc2ecf5a1c5fe93973002c4adb42a0652a86776e5fc50053460c133",
+    "tests/test_stronger_s1.py": "7d7f03c2697361cabc392671ba96c5783dc5fc61d0d0484252fd71f7cd963ac1",
+    "src/anytime_ncm/wmt_metrics.py": "f239dde8b677dc76e4e107ce880dec0056003be4e7c9c2aad0375cd31ae14f5b",
+    "src/anytime_ncm/wmt_policy.py": "9f5c65c427949743140311a23d4d701f3c849ab025ec0cc9e12725b68d290d6d",
+    "src/anytime_ncm/wmt_data.py": "a692f4923377e202840ce56a4c8ace3414077b0b7c00763776da646d4e1e4c2e"
+  },
+  "result_sha256": "5dc02ba0e29e26d365b12b829e5fcb3bc21e3272d2d8aa48dad1ca77f776c05b",
+  "development_inputs_accessed": 0,
+  "preaccess_attempts": [
+    {
+      "stage": "development release Git-blob check",
+      "error": "WSL Git dubious ownership; failed before development output directory/access creation",
+      "resolution": "command-scoped safe.directory for the verified repository only; experiment source unchanged",
+      "assignments": 0,
+      "model_work": 0,
+      "development_outcomes": 0
+    }
+  ]
+}

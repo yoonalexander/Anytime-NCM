@@ -2,7 +2,7 @@
 
 **Created:** October 23, 2026
 
-**Status:** S0 complete; S1 in progress under the October 24 full-roadmap request. Frozen S1 implementation and exploration analysis complete; development remains closed until the exploration source/results lock is pushed and remote-verified. Later phases remain gated.
+**Status:** S0 and S1A complete; S1B cost/uncertainty synthesis in progress under the October 24 full-roadmap request. Exploration was locked/pushed before development. S2–S5 remain gated.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
@@ -70,14 +70,14 @@ After every completed phase and subphase: record evidence and limitations, run a
 
 ### S1A — Reconstruct the saved quality and work frontier
 
-**Progress:** [exploration lock](results/stronger_research/s1/exploration/summary.md), [source/access/budget tests](tests/test_stronger_s1.py). 30,000 exploration assignments charged; no new model work. Development pending released lock.
+**Complete:** [S1A report](results/stronger_research/s1/s1a-summary.md), [exploration lock](results/stronger_research/s1/exploration/summary.md), [development results](results/stronger_research/s1/development/result.json), [access/budget tests](tests/test_stronger_s1.py). All 60,000 assignment slots consumed; zero model work/fits/new final access. Mixed point-feasible exits found; no certified optimum or practical-speedup claim.
 
-- [ ] Verify source hashes, identity/group membership, level coverage and corpus-metric aggregation against retained Phase 4 records.
-- [ ] Reproduce all 11 fixed-depth quality points and saved policy exits from existing data.
-- [ ] Analyze exploration first; freeze any search/design choices before applying them to development. Development remains reused selection data, not fresh confirmation.
-- [ ] Construct reference-informed per-input exit assignments under the declared corpus-quality and heuristic constraints. Report full-depth and the strongest feasible fixed-depth comparator alongside them.
-- [ ] Recompute corpus BLEU/chrF for mixed assignments. Averaging sentence scores or selecting each sentence's highest chrF is not a corpus-constrained optimum.
-- [ ] Report exit distributions, improvement/damage, generated levels/codes, required reconstructions and monitoring assumptions.
+- [x] Verify source hashes, identity/group membership, level coverage and corpus-metric aggregation against retained Phase 4 records.
+- [x] Reproduce all 11 fixed-depth quality points and saved policy exits from existing data.
+- [x] Analyze exploration first; freeze any search/design choices before applying them to development. Development remains reused selection data, not fresh confirmation.
+- [x] Construct reference-informed per-input exit assignments under the declared corpus-quality and heuristic constraints. Report full-depth and the strongest feasible fixed-depth comparator alongside them.
+- [x] Recompute corpus BLEU/chrF for mixed assignments. Averaging sentence scores or selecting each sentence's highest chrF is not a corpus-constrained optimum.
+- [x] Report exit distributions, improvement/damage, generated levels/codes, required reconstructions and monitoring assumptions.
 
 **Interpretation:** This is an offline diagnostic using references and future outputs. It cannot be deployed as a causal policy, and a reference-informed assignment is not automatically a mathematical upper bound.
 

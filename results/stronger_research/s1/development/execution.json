@@ -1,0 +1,19 @@
+{
+  "split": "development",
+  "status": "complete",
+  "started_unix": 1792864295.0227315,
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "new_final_outcomes": 0,
+  "sources": {
+    "src/anytime_ncm/stronger_s1.py": "82b5039c014559cf46a7ab9706d2e257aa2bd5e2294ffc7834b470a8f03e5fb7",
+    "scripts/run_stronger_s1.py": "bffae659dbc2ecf5a1c5fe93973002c4adb42a0652a86776e5fc50053460c133",
+    "tests/test_stronger_s1.py": "7d7f03c2697361cabc392671ba96c5783dc5fc61d0d0484252fd71f7cd963ac1",
+    "src/anytime_ncm/wmt_metrics.py": "f239dde8b677dc76e4e107ce880dec0056003be4e7c9c2aad0375cd31ae14f5b",
+    "src/anytime_ncm/wmt_policy.py": "9f5c65c427949743140311a23d4d701f3c849ab025ec0cc9e12725b68d290d6d",
+    "src/anytime_ncm/wmt_data.py": "a692f4923377e202840ce56a4c8ace3414077b0b7c00763776da646d4e1e4c2e"
+  },
+  "seconds": 9.89252061999997,
+  "assignments_evaluated": 30000,
+  "max_rss_kib": 96700
+}
