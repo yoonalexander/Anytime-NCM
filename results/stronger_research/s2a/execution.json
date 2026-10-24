@@ -1,0 +1,16 @@
+{
+  "status": "complete",
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "new_final_outcomes": 0,
+  "protocol_sha256": "35d2c0475efd6fdd61b2eeba9f3ffdfe6607d35ffdbe455dc8951edd32a96edc",
+  "source_sha256": "5928e07e9074d66f0f94d2e57b2951b41e729cf4e0f04d250be7fefd899f2ecd",
+  "seconds": 0.5684178710000003,
+  "max_rss_kib": 53168,
+  "input_hashes": {
+    "results/phase4/wmt14/trajectories.jsonl": "bcbb399d427e31f740b0a9916686c47e8b8c2d7978e6ee7a022d9705272e7c28",
+    "data/wmt14/reference_translations.pickle": "3dcef81d8aeded13f79917cd6b794d2ca9f33223bf35c1fff1c5643eae0df52b",
+    "results/stronger_research/s1/exploration/result.json": "5dc02ba0e29e26d365b12b829e5fcb3bc21e3272d2d8aa48dad1ca77f776c05b",
+    "results/stronger_research/s1/development/result.json": "8fd923e9b3a376481e23b800e963cf2c45d939b5eac5d78292d6d8cf9cd3f685"
+  }
+}

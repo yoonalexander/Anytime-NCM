@@ -1,0 +1,23 @@
+{
+  "s2a": "complete: saved-data localization, no causal mechanism established",
+  "s2b": {
+    "status": "deferred_not_executed",
+    "reason": "New target encoding would not address current latency/quality/fresh-confirmation constraints or select one justified intervention"
+  },
+  "s3": {
+    "status": "blocked_not_executed",
+    "reason": "S1 practical-headroom gate not met"
+  },
+  "s4": {
+    "status": "deferred_not_executed",
+    "reason": "No specifically justified controlled intervention"
+  },
+  "s5": {
+    "status": "eligible_for_synthesis",
+    "scope": "local candidate and reproducibility; no upload/contact/submission"
+  },
+  "new_model_calls": 0,
+  "new_fits": 0,
+  "new_final_outcomes": 0,
+  "new_assignment_search": 0
+}

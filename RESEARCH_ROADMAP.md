@@ -2,7 +2,7 @@
 
 **Created:** October 23, 2026
 
-**Status:** S0 and S1A/S1B complete (October 24). Mixed point-feasible WMT exits found, but practical headroom is inconclusive: quality noninferiority bounds fail and actual arbitrary-exit latency is unidentified. S2A saved diagnosis is next; S3 entry is not met; S4 remains conditional.
+**Status:** S0, S1A/S1B and S2A complete (October 24). Practical headroom remains inconclusive. S2B deferred with rationale; S3 blocked by unmet entry; S4 deferred. S5 synthesis is eligible and next.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
@@ -104,15 +104,20 @@ After every completed phase and subphase: record evidence and limitations, run a
 
 ### S2A — Saved-data failure diagnosis
 
-- [ ] Reuse R1A/R1B rather than repeat their completed Sudoku pilot. Their 32 target solutions round-trip at the final level but have no earlier valid boards; this does not isolate a causal mechanism.
-- [ ] Use S1's saved WMT reconstructions to characterize content emergence, harmful revisions and persistent errors with predeclared quantitative measures.
-- [ ] Select examples deterministically from exploration; label all reference/final-output analyses retrospective.
-- [ ] State competing explanations: limitations of the target representation/decoder, generated-code errors, decoder sensitivity, stopping-signal weakness, and measurement/protocol constraints.
-- [ ] For each explanation, record supporting observations, counterevidence and a falsifiable next check. Do not turn correlations or a few examples into a mechanistic conclusion.
+- [x] Reuse R1A/R1B rather than repeat their completed Sudoku pilot. Their 32 target solutions round-trip at the final level but have no earlier valid boards; this does not isolate a causal mechanism.
+- [x] Use S1's saved WMT reconstructions to characterize content emergence, harmful revisions and persistent errors with predeclared quantitative measures.
+- [x] Select examples deterministically from exploration; label all reference/final-output analyses retrospective.
+- [x] State competing explanations: limitations of the target representation/decoder, generated-code errors, decoder sensitivity, stopping-signal weakness, and measurement/protocol constraints.
+- [x] For each explanation, record supporting observations, counterevidence and a falsifiable next check. Do not turn correlations or a few examples into a mechanistic conclusion.
 
 **Acceptance:** A focused report explains what is known, what remains confounded, and whether a new model-based diagnostic would change the decision. A justified decision not to collect more data completes S2A.
 
+
+**Evidence:** [frozen protocol](docs/studies/stronger-research-s2a-protocol.md), [diagnosis](results/stronger_research/s2a/summary.md), [branch decisions](results/stronger_research/s2a/branch-decisions.json). Some early WMT text matches final output; causal recognition, adequate quality uncertainty and actual latency remain unresolved. Zero new model work.
+
 ### S2B — Conditional target-encoded WMT comparison
+
+**Disposition:** Deferred, not executed. S2A finds no target-encoding result that resolves the current entry-blocking cost/quality evidence; see branch decisions.
 
 **Entry:** Explicit execution request, an unresolved hypothesis from S2A, and a frozen diagnostic protocol. This is proposed new work, not a repeat of an existing WMT study.
 
@@ -126,6 +131,8 @@ After every completed phase and subphase: record evidence and limitations, run a
 **Exit:** Rank plausible bottlenecks within this finite pilot. A causal claim requires a controlled intervention with alternatives addressed; if absent, call this localization evidence.
 
 ## S3 — Conditional continuation-value study
+
+**Disposition:** Blocked, not executed. S1 practical-headroom gate is unmet; no fits or online requests.
 
 **Entry:** S1 supports opportunity, S2 identifies a plausible observable signal, and suitable new evaluation data plus a frozen resource budget are available. A user request cannot turn an unmet scientific gate into a positive claim; any requested exception must be documented separately.
 
@@ -154,6 +161,8 @@ After every completed phase and subphase: record evidence and limitations, run a
 - [ ] Record go/no-go/inconclusive once. Do not retune after final access.
 
 ## S4 — Optional targeted intervention in a new model scope
+
+**Disposition:** Deferred, not executed. No single intervention is justified by S1/S2A. Unexecuted checklist items below remain unchecked.
 
 **Entry:** Separate explicit user request, S1/S2 evidence supporting one intervention, suitable data, and an accepted numeric resource budget. This branch is unnecessary merely to make the paper longer.
 
