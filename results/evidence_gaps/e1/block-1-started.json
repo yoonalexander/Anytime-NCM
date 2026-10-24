@@ -1,0 +1,12 @@
+{
+  "block": 1,
+  "completed_requests": 0,
+  "counts": {
+    "decoder": 0,
+    "encoder": 0,
+    "generator_levels": 0,
+    "inputs": 0
+  },
+  "pid": 413,
+  "started_utc": "2026-10-24T22:44:43.957485+00:00"
+}

@@ -1,0 +1,49 @@
+{
+  "stage": "E1",
+  "status": "complete_engineering_cost_screen_only",
+  "source_commit": "c8633ad45e2ef0220f2c1b516b6241595258e7b0",
+  "request_counts": {
+    "decoder": 3800,
+    "encoder": 0,
+    "generator_levels": 6600,
+    "inputs": 1000
+  },
+  "timed_requests": 960,
+  "warmups": 40,
+  "model_processes": 2,
+  "WMT_bundle_loads": 2,
+  "all_cached_prefix_parity_passed": true,
+  "weight_buffer_fingerprints_unchanged": true,
+  "forced_terminal_10_mean_ms": 117.52327486458334,
+  "full_terminal_11_mean_ms": 127.35990542708333,
+  "forced_every_level_10_mean_ms": 135.76336605208334,
+  "terminal_10_relative_mean_reduction": 0.07723490787398324,
+  "every_level_10_relative_mean_reduction": -0.06598199485795941,
+  "adaptive_speedup_demonstrated": false,
+  "quality_noninferiority_assessed": false,
+  "new_input_identities": 0,
+  "new_references": 0,
+  "fits": 0,
+  "target_encodings": 0,
+  "new_outcome_roles_released": false,
+  "statistical_limits": [
+    "sixteen previously exposed identities",
+    "two fixed process blocks",
+    "nominal descriptive intervals without multiplicity correction",
+    "no quality-matched or causal-policy confirmation"
+  ],
+  "next_work": "separate exact-final-text diagnostic protocol after E1; broad nonidentical E2 obstruction retained",
+  "unexecuted": [
+    "E2 outcomes",
+    "E3 controller study",
+    "E4 final outcomes",
+    "target encoding/model intervention",
+    "submission/contact"
+  ],
+  "synthetic_tests_passed_before_inference": 87,
+  "independent_record_checks": 1000,
+  "independent_contrast_summaries": 45,
+  "orchestration_wall_seconds": 137.368236438,
+  "paid_compute_dollars": 0,
+  "summary": "results/evidence_gaps/e1/summary.md"
+}

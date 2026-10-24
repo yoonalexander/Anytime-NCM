@@ -1,0 +1,14 @@
+{
+  "stage": "E1 documentation/closure checks",
+  "local_markdown_links_checked": 171,
+  "E0_manifest_still_sealed_and_byte_identical": true,
+  "historical_tracked_evidence_unchanged": true,
+  "original_execution_artifacts_still_match_hashes": true,
+  "source_archive_and_cached_parity_checked_in": "independent-checks.json",
+  "resources_within_frozen_limits": true,
+  "full_suite_rerun": false,
+  "synthetic_tests_before_inference": 87,
+  "new_model_requests_during_verification": 0,
+  "independent_human_review": false,
+  "execution_receipt_sha256": "99bcf435f0ae4a9c47b61b0aaced1ac610a5e0b03cdc01c5b1ab9e5c647af19e"
+}

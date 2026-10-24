@@ -10,7 +10,7 @@ Anytime NCM is a reproducible research repository studying that question through
 
 The repository now provides validated full-resolution prefix reconstruction, controlled trajectory data, an actual generation-stopping hook, frozen policy comparisons, reports and an inspection interface. Current-validity controllers were tested; a true continuation-value model, XSum, and a live CF-driven stopping/intervention policy remain untested.
 
-[Evidence-gap resolution plan](docs/studies/evidence-gap-resolution-plan.md): timing, fresh diagnostic and conditional policy-confirmation studies with numeric ceilings and stopping gates. [E0 input/statistical preflight](results/evidence_gaps/e0/summary.md) is complete: sealed input roles, zero new model outcomes, and a cue-coverage limitation that blocks the proposed nonidentical-output E2 gate at n=256. E1 timing has not begun.
+[Evidence-gap resolution plan](docs/studies/evidence-gap-resolution-plan.md): [E0](results/evidence_gaps/e0/summary.md) sealed the new input roles and found a cue-coverage limitation blocking the proposed nonidentical-output E2 gate at n=256. [E1 timing](results/evidence_gaps/e1/summary.md) is complete: forced terminal depth 10 averaged 117.52 ms versus 127.36 ms at full depth, while observing every level through 10 cost 135.76 ms. These are engineering costs on 16 reused inputs, with no quality-matched adaptive benefit established. E2/E3/E4 outcome roles remain sealed.
 
 ## Contents
 

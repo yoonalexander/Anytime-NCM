@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "same_assistant_separate_implementation": true,
+  "independent_human_review": false,
+  "request_rows_checked": 1000,
+  "timed_rows": 960,
+  "paired_contrasts_and_process_summaries_checked": 45,
+  "output_hashes_and_every_observation_match_cache": true,
+  "source_and_artifact_hashes_match": true,
+  "model_fingerprints_unchanged": true,
+  "distinct_model_processes": 2,
+  "bootstrap_indices_sha256": "a5cd2fdd4b947fc3f05da28caeef233c939aaff6fb2dafdbd7d4ed7a5b81f0a4",
+  "resample_interpretation": "same frozen 10000 identity vectors replayed, no new draw set",
+  "new_model_requests": 0,
+  "new_input_identities": 0,
+  "new_references": 0,
+  "verifier_sha256": "ba91c32345df6043f2b862253ea183bc236217f1f913cfe5e06c06f545f958d7",
+  "execution_receipt_sha256": "99bcf435f0ae4a9c47b61b0aaced1ac610a5e0b03cdc01c5b1ab9e5c647af19e",
+  "limitations": [
+    "nominal intervals conditional on sixteen exposed identities/two fixed process blocks",
+    "no quality noninferiority or adaptive policy confirmation"
+  ]
+}
