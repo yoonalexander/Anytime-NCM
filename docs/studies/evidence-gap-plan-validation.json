@@ -1,0 +1,77 @@
+{
+  "kind": "documentation_and_budget_consistency_only",
+  "date": "2026-10-24",
+  "base_commit": "fe0c931cc751b76b32860ada2c3fab2d59299cb3",
+  "plan_sha256": "181f5dd517b5b108a2a0e306041957c280559d26b0b4bc8729862c415664bae5",
+  "local_markdown_links_checked": 154,
+  "reserved_manifest_groups_metadata_only": 1979,
+  "proposed_role_counts": {
+    "E2_audit": 256,
+    "E3_development": 128,
+    "E4_confirmation": 1024,
+    "closed_unallocated": 571
+  },
+  "proposed_generator_request_caps": {
+    "E1": 1000,
+    "E2": 14732,
+    "E3": 2216,
+    "E4": 32848
+  },
+  "proposed_sample_level_evaluation_caps": {
+    "E1": 6600,
+    "E2": 105182,
+    "E3": 24376,
+    "E4": 361328
+  },
+  "proposed_decoder_forward_caps": {
+    "E1": 3800,
+    "E2": 48312,
+    "E3": 24376,
+    "E4": 361328
+  },
+  "planning_execution_counters": {
+    "model_loads": 0,
+    "generator_requests": 0,
+    "decoder_forwards": 0,
+    "target_encodings": 0,
+    "fits": 0,
+    "new_input_outcomes": 0,
+    "new_references": 0,
+    "assignment_searches": 0,
+    "external_contacts": 0,
+    "submissions": 0,
+    "paid_compute_dollars": 0
+  },
+  "checks": {
+    "local_links": true,
+    "role_total_and_reserved_metadata": true,
+    "stage_and_total_arithmetic": true,
+    "scope_gates_and_readiness_labels": true,
+    "historical_tracked_evidence_unchanged": true,
+    "git_diff_check": true,
+    "staged_plan_digest_matches": true,
+    "all_fixed_depth_comparators_budgeted": true,
+    "E2_interval_family_arithmetic": true
+  },
+  "not_checked": [
+    "fresh eligibility/exposure audit",
+    "model environment/assets or inference",
+    "power on real outcomes",
+    "statistical coverage guarantee",
+    "new full test suite"
+  ],
+  "remaining_protocol_decisions": [
+    "actual eligible identity allowlists and document grouping",
+    "sparse-cue intervals and coverage threshold",
+    "synthetic feasibility results",
+    "detailed E3 feature/label/model/policy definitions",
+    "final timing interval implementation"
+  ],
+  "totals_exclude_optional_M1": {
+    "generator_requests": 50796,
+    "sample_level_evaluations": 497486,
+    "decoder_forwards": 437816,
+    "cpu_fits": 6,
+    "target_encodings": 0
+  }
+}

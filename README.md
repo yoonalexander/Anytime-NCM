@@ -10,6 +10,8 @@ Anytime NCM is a reproducible research repository studying that question through
 
 The repository now provides validated full-resolution prefix reconstruction, controlled trajectory data, an actual generation-stopping hook, frozen policy comparisons, reports and an inspection interface. Current-validity controllers were tested; a true continuation-value model, XSum, and a live CF-driven stopping/intervention policy remain untested.
 
+[Evidence-gap resolution plan](docs/studies/evidence-gap-resolution-plan.md): proposed timing, fresh diagnostic and conditional policy-confirmation studies with numeric ceilings and stopping gates. Planning only; no new experiments have begun.
+
 ## Contents
 
 - [Research approach](#research-approach)

@@ -6,6 +6,8 @@
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
+**Planned extension (October 24):** [evidence-gap resolution plan](docs/studies/evidence-gap-resolution-plan.md) sequences input/statistical preflight, forced-exit timing, a fixed-rule fresh diagnostic, and conditional controller/confirmation studies. Planning only: no new outcomes/model work/fits or access release. The completed cycle and its blocked/deferred branches retain their recorded decisions; the extension needs stage-specific protocols and an execution request. [Documentation and budget checks](docs/studies/evidence-gap-plan-validation.json) validate the plan, not experimental execution or statistical power.
+
 ## Purpose and relationship to earlier work
 
 Develop a focused research contribution explaining when frozen NCM hierarchies support useful early stopping, why the tested methods failed, and which intervention, if any, is justified.
