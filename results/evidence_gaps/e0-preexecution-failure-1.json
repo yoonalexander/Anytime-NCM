@@ -1,0 +1,12 @@
+{
+  "stage": "E0",
+  "attempt": "preexecution-1",
+  "source_commit": "08a85cd709359f1e104471181374de92a9e2d18d",
+  "error": "Need clean main and verified source/protocol push before E0",
+  "boundary": "runner clean-checkout guard before output directory creation or input audit",
+  "cause": "WSL Git did not inherit Windows global core.autocrlf=true for CRLF submodule working files",
+  "preserved_upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203",
+  "counts": {"source_strings_read": 0, "trials": 0, "bootstrap_draws": 0, "representative_datasets": 0, "model_loads": 0, "generator_requests": 0, "decoder_forwards": 0, "fits": 0, "target_encodings": 0, "new_references": 0, "new_input_outcomes": 0},
+  "resource_treatment": "charged to existing preparation allocation; no expansion",
+  "recovery_protocol": "docs/studies/evidence-gaps/e0-recovery-amendment.md"
+}

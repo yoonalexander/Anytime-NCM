@@ -22,7 +22,8 @@ import sacrebleu
 
 SOURCES = ['scripts/run_evidence_e0.py', 'src/anytime_ncm/evidence_preflight.py',
            'src/anytime_ncm/wmt_data.py', 'tests/test_evidence_preflight.py',
-           'docs/studies/evidence-gaps/e0-protocol.md', 'docs/studies/evidence-gaps/e0-lock.json']
+           'docs/studies/evidence-gaps/e0-protocol.md', 'docs/studies/evidence-gaps/e0-lock.json',
+           'docs/studies/evidence-gaps/e0-recovery-amendment.md']
 
 
 def main():
@@ -30,7 +31,9 @@ def main():
     parser.add_argument('--remote-head', required=True, help='HEAD verified against GitHub main immediately before this run')
     args = parser.parse_args()
     start = time.monotonic()
-    git = lambda *x: subprocess.check_output(['git', '-c', 'safe.directory=' + str(ROOT), *x], cwd=ROOT, text=True).strip()
+    # Match native Windows Git's CRLF normalization without changing any files/config.
+    git = lambda *x: subprocess.check_output(['git', '-c', 'safe.directory=' + str(ROOT),
+        '-c', 'safe.directory=' + str(ROOT / 'third_party/ncm'), '-c', 'core.autocrlf=true', *x], cwd=ROOT, text=True).strip()
     head = git('rev-parse', 'HEAD')
     if head != args.remote_head or git('branch', '--show-current') != 'main' or git('status', '--porcelain'):
         raise ValueError('Need clean main and verified source/protocol push before E0')
