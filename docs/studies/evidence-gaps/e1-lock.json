@@ -1,0 +1,37 @@
+{
+  "E0_manifest_sha256": "2897839935e7acfb959819b2e310ffcea60807cded58d1e3648de5f598a77e4b",
+  "artifact_bytes": 268435456,
+  "base_commit": "e5e1cc128940d1d7fce99437c680581eb569de7b",
+  "config_sha256": "8ee4c08747d93b7f3fd7bd1ace38723d7031ae2dd9f549823cb677ebf914535e",
+  "forbidden_work": {
+    "fits": 0,
+    "new_input_identities": 0,
+    "new_references": 0,
+    "target_encodings": 0
+  },
+  "identity_bootstrap_draws": 10000,
+  "identity_bootstrap_seed": 20261025,
+  "new_input_outcome_release": false,
+  "orchestration_wall_seconds": 1800,
+  "paid_compute_dollars": 0,
+  "parent_manifest_sha256": "9cbd6503cb440b72f14296dc35d2c1054060f8c2ceebc26ae3349c348768dacb",
+  "per_process_limits": {
+    "decoder": 1900,
+    "encoder": 0,
+    "generator_levels": 3300,
+    "inputs": 500
+  },
+  "protocol": "docs/studies/evidence-gaps/e1-protocol.md",
+  "protocol_sha256": "f7d6009226c5c6da85c47337741c73c310aa9011ab9030068fadb404b2fa06c6",
+  "reporting_wall_seconds": 2700,
+  "schedule": "docs/studies/evidence-gaps/e1-schedule.json",
+  "schedule_sha256": "6f250373c435ddb61b26b45c22da7e9808316425cd3c17b55c82c38eb21bd798",
+  "setup_wall_seconds": 2700,
+  "stage": "E1",
+  "total_limits": {
+    "decoder": 3800,
+    "encoder": 0,
+    "generator_levels": 6600,
+    "inputs": 1000
+  }
+}
