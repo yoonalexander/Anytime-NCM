@@ -1,0 +1,30 @@
+{
+  "source_commit": "d88b7c495df37635b3497661e3e9b56169c1576f",
+  "source_sha256": {
+    "configs/phase4_wmt_sources.json": "8ee4c08747d93b7f3fd7bd1ace38723d7031ae2dd9f549823cb677ebf914535e",
+    "docs/studies/evidence-gaps/e2-lock.json": "b76b5f47a6c350bd8fd468747854b94c2cf779bfcd1558b391b7eec12640bd35",
+    "docs/studies/evidence-gaps/e2-protocol.md": "c6c2fbf0745d85e4995dabf2b5f0fa7fe3640b69e669b6ca2ae77adbae391845",
+    "scripts/run_evidence_e1.py": "c46a547c7e7cf6e2be444d2df207afccf855d9885d9ce300e58e389d230491ec",
+    "scripts/run_evidence_e2.py": "b4c36d421538dc78f897784900eada6645df9f758d018faac21de97b4ce826fe",
+    "scripts/verify_evidence_e2.py": "7294a040b827f498add68a839f4a70eda9815d5a7eac29334897cf8fd41ea900",
+    "src/anytime_ncm/evidence_exact.py": "c5a3a07293dbb3e35e87c3b8643494fc8ee6a8e796b61fd08037c75e1e8391cd",
+    "src/anytime_ncm/evidence_preflight.py": "c84668cb86a5ad35cabed24271848f1959ec2f750f5b16ed06f2944742618e5c",
+    "src/anytime_ncm/evidence_timing.py": "8f44ff6c0693891d1078a2fa4f44b7cbc0fd0ec7fcf846fbeb9f1d7e8dd446b7",
+    "src/anytime_ncm/forced_wmt.py": "b31fb173d6162c739fd4e67ef262500f540ae60e8cd2d1266e27fe6d264e63db",
+    "src/anytime_ncm/online.py": "8122afd1db4fd40094fd6d5739bb0432acd7da1d50f4744c9cc95dbb72bfacc8",
+    "src/anytime_ncm/stronger_s1.py": "82b5039c014559cf46a7ab9706d2e257aa2bd5e2294ffc7834b470a8f03e5fb7",
+    "src/anytime_ncm/target_encoding.py": "2305c6192a453dddfab298427e6eb813f274c680760ff14587aedd25599903be",
+    "src/anytime_ncm/upstream_adapter.py": "4d5137af4e26f03ffca06335e1219f83256f381be7e56a499e937b00dde9c361",
+    "src/anytime_ncm/wmt_data.py": "a692f4923377e202840ce56a4c8ace3414077b0b7c00763776da646d4e1e4c2e",
+    "src/anytime_ncm/wmt_metrics.py": "f239dde8b677dc76e4e107ce880dec0056003be4e7c9c2aad0375cd31ae14f5b",
+    "src/anytime_ncm/wmt_model.py": "a4f7e55f5c6692d6b2f5265523e3e6561c37942f577b8de2ef4e03dd03097c84",
+    "src/anytime_ncm/wmt_policy.py": "9f5c65c427949743140311a23d4d701f3c849ab025ec0cc9e12725b68d290d6d",
+    "tests/test_evidence_exact.py": "41a0715e9a8c88d81d12d01ad1de50ed8968ba1a960bf7aaa32efac7ddc37f2e",
+    "third_party/ncm/models/next_concept.py": "3dcae313cedf2e33ecb9a046d1ad9ec4336962c9221375ba5f7dd9be3d25b04e",
+    "third_party/ncm/models/quant.py": "44315b9662fb28ea3db9a7c0d14556df49e80e706df9a460792a4a9d82549949",
+    "third_party/ncm/models/vqvae.py": "a0e5c9157989995121e842d3434310b4fc940892028cc9c2e258571739965923",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb"
+  },
+  "stage": "E2-exact",
+  "started_utc": "2026-10-24T23:19:20.432490+00:00"
+}

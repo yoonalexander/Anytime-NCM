@@ -1,0 +1,52 @@
+{
+  "E3_inputs": 0,
+  "E4_inputs": 0,
+  "all_parity_passed": true,
+  "analysis_max_rss_bytes": 758616064,
+  "analysis_wall_seconds": 32.11556855399999,
+  "artifact_bytes": 23806383,
+  "artifact_sha256": {
+    "0-execution.json": "e54d2fe08d11d6224a9bc9914c23ae371de89d7a9c2934f8cb955c827a9986c8",
+    "0-requests.jsonl": "9875d0896a94a2729161b30dac7dc43bbc27c71ee72b0c92162242c517cf0a58",
+    "0-started.json": "ae9447a49325051cb3a49e1deb54b46dbef7dba9239ed86f4e0560d5f79f59ae",
+    "0-starts.jsonl": "7a3b5686505dfb9bce78ee25690de3284f69934e34521e4ece46a25c2d07f9a3",
+    "1-execution.json": "ff2fd427550df032d549226c54eacf0a422ffacce3d4a39948496e9e2ab89a60",
+    "1-requests.jsonl": "17a6900fe79f361d143d4e9d0077875d163dd80d38475a040a63698942e60e90",
+    "1-started.json": "6475ebd8138a679e43affe7445a9152f146f6e6b5d1f40c0a800b51363f1d096",
+    "1-starts.jsonl": "1af762c87abd2c575fee3c9f50fc5d01e17b06f72e8346fcc8c5fd358c9fd033",
+    "access-release.json": "b56f401c9f981c46defc1ba52c7f6fdaa1829b673685c7bc268fe6b6a289905e",
+    "analysis.json": "3c9e0ea9868d86e90afe79f8f7a54db47ab8d575d379e17fc37bc00a29f8b23d",
+    "collection-execution.json": "5fafb6cac457f4343196c8e1007c874b8abd46e6b990ebf01de364d77d7a81b9",
+    "collection-requests.jsonl": "307f88dd6e2d6727d74fe12adf899cba39348fe49e791b3667fa100de5eef9ff",
+    "collection-started.json": "90351e954876e4f2e6c594588da72e288abfef4ca089dfa092c01d54b92286a9",
+    "collection-starts.jsonl": "9cf53e4f12a5236b063c11ea4e683b8839228f1a7903c95dded00fcd03f11a75",
+    "execution-sources.zip": "9fd9593abe7263b7c363c5b546cc1028d70de2fd6c2a1a1dbff79b0f07bdae39",
+    "preflight.json": "1a261328c316f0237584910570e0a436a423cbfed4a3edb2987657cc26cc7cda",
+    "reference-access.json": "2a1388d4fe9b08f876cde3bb0ca9f8f95c6ec410de125987dfab695138e75e4a",
+    "started.json": "8880a71878b0b2187494d079d51e18deff8ad533213d236b804a019335804abb",
+    "timing-schedule.json": "e09776c9d9d6d048c88e27f9be6eba79e95c3252648160bc54ce37018c126f15",
+    "trajectories.jsonl": "90a38eb3232e0058149f7d6e936d95bba19e705ea8cff06111cb158aedfb1605"
+  },
+  "conservative_setup_reporting_charge_seconds": 10800,
+  "counts": {
+    "decoder": 25240,
+    "encoder": 0,
+    "generator_levels": 82110,
+    "inputs": 12664
+  },
+  "decision": "bounded_exact_no_go",
+  "fits": 0,
+  "model_orchestration_wall_seconds": 1129.04148155,
+  "model_states_unchanged": true,
+  "new_audit_input_outcomes": 256,
+  "new_audit_references": 256,
+  "paid_compute_dollars": 0,
+  "process_ids": [
+    381,
+    404,
+    688
+  ],
+  "source_commit": "d88b7c495df37635b3497661e3e9b56169c1576f",
+  "status": "complete",
+  "target_encodings": 0
+}

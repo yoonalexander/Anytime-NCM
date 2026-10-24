@@ -1,0 +1,20 @@
+{
+  "status": "pass",
+  "request_rows_checked": 12664,
+  "counts": {
+    "inputs": 12664,
+    "generator_levels": 82110,
+    "decoder": 25240,
+    "encoder": 0
+  },
+  "metric_direct_corpus_checks": 24,
+  "timing_contrasts_recomputed": 11,
+  "bootstrap_vectors": "same frozen 100000 identities/process indices; no additional draw set",
+  "numeric_reference_coverage": 48,
+  "audit_references_rematerialized_for_verification": 256,
+  "new_reference_identities": 0,
+  "E3_access": false,
+  "E4_access": false,
+  "model_calls": 0,
+  "limitation": "separate arithmetic implementation by the same assistant; not independent human scientific review"
+}

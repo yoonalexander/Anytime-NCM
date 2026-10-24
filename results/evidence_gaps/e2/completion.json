@@ -1,0 +1,39 @@
+{
+  "stage": "E2-exact",
+  "status": "complete_bounded_no_go",
+  "source_commit": "d88b7c495df37635b3497661e3e9b56169c1576f",
+  "counts": {
+    "decoder": 25240,
+    "encoder": 0,
+    "generator_levels": 82110,
+    "inputs": 12664
+  },
+  "collection_requests": 256,
+  "timed_requests": 12288,
+  "warmups": 120,
+  "early_exact_inputs": 43,
+  "audit_inputs": 256,
+  "mean_exact_depth": 10.68359375,
+  "mean_exact_ms": 146.5567152050781,
+  "mean_full_ms": 129.23030944628906,
+  "relative_mean_reduction": -0.13407385491087398,
+  "adjusted_reduction_interval": [
+    -0.15208023571202745,
+    -0.11310424129760221
+  ],
+  "all_parity_passed": true,
+  "unchanged_model_states": true,
+  "synthetic_tests_before_inference": 96,
+  "independent_ledger_rows": 12664,
+  "independent_direct_corpus_scores": 24,
+  "independent_timing_intervals": 11,
+  "adaptive_speedup_demonstrated": false,
+  "certified_global_oracle_optimum": false,
+  "E3_released": false,
+  "E4_released": false,
+  "fits": 0,
+  "target_encodings": 0,
+  "paid_compute_dollars": 0,
+  "summary": "results/evidence_gaps/e2/summary.md",
+  "next_work": "No automatic expansion; alternate schedules need a specific hypothesis and prospective budget. Independent human review and manuscript rights/metadata remain open."
+}
