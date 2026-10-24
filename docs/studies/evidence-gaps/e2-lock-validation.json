@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "focused_tests": 96,
+  "test_seconds": 12.95,
+  "relative_protocol_links_checked": 4,
+  "request_caps": "12664/82434/25564/0",
+  "structural_quality_only": true,
+  "cue_minimum_coverage": 385,
+  "monte_carlo_one_based_rank": 18,
+  "new_outcomes_accessed": 0,
+  "model_calls": 0
+}

@@ -1,0 +1,58 @@
+{
+  "E0_manifest_sha256": "2897839935e7acfb959819b2e310ffcea60807cded58d1e3648de5f598a77e4b",
+  "E1_execution_sha256": "99bcf435f0ae4a9c47b61b0aaced1ac610a5e0b03cdc01c5b1ab9e5c647af19e",
+  "analysis_rss_bytes": 8589934592,
+  "analysis_wall_seconds": 3600,
+  "artifact_bytes": 1073741824,
+  "base_commit": "b78d666446707e43c31d54021c8519cb2678d89a",
+  "bootstrap_draws": 100000,
+  "collection_limits": {
+    "decoder": 2816,
+    "encoder": 0,
+    "generator_levels": 2816,
+    "inputs": 256
+  },
+  "config_sha256": "8ee4c08747d93b7f3fd7bd1ace38723d7031ae2dd9f549823cb677ebf914535e",
+  "conservative_setup_reporting_charge_seconds": 10800,
+  "cue_zero_event_minimum_coverage": 385,
+  "family_intervals": 59,
+  "forbidden_work": {
+    "E3_inputs": 0,
+    "E4_inputs": 0,
+    "fits": 0,
+    "new_nonidentical_rules": 0,
+    "target_encodings": 0
+  },
+  "mc_precision": {
+    "conservative_one_based_rank": 18,
+    "draws": 100000,
+    "expected_tail_count": 42.37288135593221,
+    "quantile_resolved": true,
+    "tail_count_ci95": [
+      30,
+      56
+    ],
+    "tail_probability": 0.0004237288135593221,
+    "zero_tail_probability": 3.9245652030862825e-19
+  },
+  "model_wall_seconds": 14400,
+  "paid_compute_dollars": 0,
+  "parent_manifest_sha256": "9cbd6503cb440b72f14296dc35d2c1054060f8c2ceebc26ae3349c348768dacb",
+  "per_timing_process_limits": {
+    "decoder": 11374,
+    "encoder": 0,
+    "generator_levels": 39809,
+    "inputs": 6204
+  },
+  "protocol": "docs/studies/evidence-gaps/e2-protocol.md",
+  "protocol_sha256": "c6c2fbf0745d85e4995dabf2b5f0fa7fe3640b69e669b6ca2ae77adbae391845",
+  "seed": 20261026,
+  "stage": "E2-exact",
+  "tail_alpha": 0.0004237288135593221,
+  "total_limits": {
+    "decoder": 25564,
+    "encoder": 0,
+    "generator_levels": 82434,
+    "inputs": 12664
+  }
+}
