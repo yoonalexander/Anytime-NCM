@@ -1,0 +1,72 @@
+{
+  "date": "2026-10-24",
+  "status": "closed_at_scientific_gates_with_local_candidate",
+  "completed": [
+    "S1A saved opportunity audit",
+    "S1B cost/uncertainty decision",
+    "S2A saved diagnosis",
+    "S5A independent calculation checks",
+    "S5B compiled local manuscript, figures, claim audit and reproducibility bundle"
+  ],
+  "unexecuted": {
+    "S2B": "deferred: encoding would not resolve current cost/quality gate or uniquely select an intervention",
+    "S3": "blocked: practical headroom entry not met",
+    "S4": "deferred: no specifically justified intervention"
+  },
+  "remaining": [
+    "S5A independent human researcher review when available",
+    "S5B confirmed author names/affiliations and rights/license/category/account/endorsement decisions",
+    "Actual early-exit latency, fresh independent quality confirmation and causal mechanism remain unestablished"
+  ],
+  "headline": {
+    "development_early_inputs": 18,
+    "development_inputs": 64,
+    "bleu_point_loss": 0.37042914665642,
+    "chrf_point_loss": 0.9847728452347511,
+    "surrogate_reduction": 0.09016214057507987,
+    "surrogate_ci95": [
+      0.027987674266627956,
+      0.15778495906549528
+    ],
+    "quality_one_sided_lower95": {
+      "bleu": -1.1637805935804721,
+      "chrf": -1.9054845527054316
+    },
+    "early_visible_final_text_match_development": 13,
+    "practical_headroom": "inconclusive"
+  },
+  "resources": {
+    "search_assignments": 60000,
+    "new_real_checkpoint_inference": 0,
+    "target_encodings": 0,
+    "fits": 0,
+    "new_final_outcomes": 0,
+    "paid_usd": 0
+  },
+  "verification": {
+    "fresh_full_suite_passed": 451,
+    "direct_corpus_checks_cumulative": 234,
+    "independent_human_review": false,
+    "manuscript_pages": 9,
+    "standalone_figures": 3
+  },
+  "publication": {
+    "local_pdf": "paper/stronger-research-v3/main.pdf",
+    "editable_source": "paper/stronger-research-v3/main.tex",
+    "source_bundle": "paper/stronger-research-v3/manuscript-source.zip",
+    "submission_ready": false,
+    "external_contacts": 0,
+    "uploaded_or_submitted": false
+  },
+  "phase_commits": {
+    "S1_setup": "de71911",
+    "exploration_lock": "dd2124e",
+    "S1A": "e5e33c8",
+    "S1B": "ebf85f6",
+    "S2A_protocol": "6140de3",
+    "S2A": "228b134",
+    "S5_plan": "cd44f06",
+    "S5A": "39e4533"
+  },
+  "historical_empirical_artifacts": "preserved"
+}

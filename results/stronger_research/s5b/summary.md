@@ -1,0 +1,13 @@
+# S5B local manuscript and reproducibility candidate
+
+Prepared October 24, 2026. The current synthesis, 9-page compiled/visually inspected PDF, editable LaTeX, three standalone vector figures with reviewed source data, source ZIP and exact execution-byte archive are complete. Original historical reports, empirical records, protocols and model/source checkpoints remain unchanged. The prior README and v2 paper are archived byte-for-byte; the root v2 paper also remains untouched.
+
+Both native MiKTeX pdfLaTeX and the Codex built-in LaTeX compiler succeeded. A single layout repair reformatted long provenance hashes; final logs have no overfull boxes or undefined references. All nine final rendered pages and all figures were visually inspected. The 159 active local documentation links resolve, figure numbers match reviewed records, 10 citation keys resolve, and source ZIP contents/checksums are verified. The fresh software suite remains 451 passing tests; no broad rerun was needed for these document-only changes. Raw compilation logs, PDF/source hashes, reviewed plot data and visual proof are retained here.
+
+**Submission readiness remains incomplete.** Human author names/affiliations, rights/license choice, final category/account/endorsement decisions and independent human scientific review were not established. They are listed in paper/stronger-research-v3/NOT_SUBMISSION_READY.md. The byline is explicitly a project label/internal draft; no human author, institution, reviewer approval or acceptance was invented. Current arXiv preparation/endorsement/moderation guidance was checked from official sources, but no account was accessed and no submission/contact/upload occurred.
+
+S1's practical headroom gate remains inconclusive despite point-feasible saved exits. S3 therefore did not start. S2B and S4 were deferred for lack of an actionable scientific justification. No additional search, model run, target encoding, fit or final-outcome access was performed to improve the headline. A priced unexecuted timing proposal is retained rather than launched through the failed gate.
+
+The exact execution-source ZIP preserves Windows working-tree text bytes where Git newline normalization can otherwise change hashes. It is a portability artifact, not a retrospective modification of frozen receipts. Local page-render intermediates were retained as ignored temporary files after cleanup deletion was rejected; the canonical PDF/figures and final-pages contact sheet are committed.
+
+This completes all currently justified local preparation. The unchecked human-metadata/review items and gated branches remain visible on RESEARCH_ROADMAP.md. Nothing has been submitted.

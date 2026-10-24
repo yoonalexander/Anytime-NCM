@@ -4,9 +4,9 @@
 
 Anytime NCM is a reproducible research repository studying that question through hard/easy Sudoku audits, a bounded medium-Sudoku screen, actual online verified/learned stopping, and WMT14 German-to-English evaluation.
 
-**Status: the scoped work through Phase 5 is complete; practical adaptive speedup has not been demonstrated.** All primary measured comparisons are no-go. The latest recorded suite has **433 passing tests**. The completed software and experiments do not establish every broader idea in the original design.
+**Status: the original Phase 5 scope and stronger-research saved-data cycle are complete within their evidence gates; practical adaptive speedup has not been demonstrated.** The new WMT audit finds point-feasible mixed exits, but practical headroom is inconclusive. S3 is blocked; S2B/S4 are deferred. The fresh full suite passed **451 tests**. A compiled internal manuscript is prepared; human authorship, rights and scientific review remain unresolved.
 
-[Research paper, draft v2](RESEARCH_PAPER.md) · [Results and project status](#results-and-project-status) · [Portable viewer](results/phase5/viewer.html) · [Full roadmap](ROADMAP.md) · [Stronger research roadmap](RESEARCH_ROADMAP.md) · [Agent instructions](AGENTS.md)
+[Research synthesis v3](RESEARCH_SYNTHESIS.md) · [Compiled manuscript](paper/stronger-research-v3/main.pdf) · [Historical report v2](RESEARCH_PAPER.md) · [Results and project status](#results-and-project-status) · [Portable viewer](results/phase5/viewer.html) · [Full roadmap](ROADMAP.md) · [Stronger research roadmap](RESEARCH_ROADMAP.md) · [Agent instructions](AGENTS.md)
 
 The repository now provides validated full-resolution prefix reconstruction, controlled trajectory data, an actual generation-stopping hook, frozen policy comparisons, reports and an inspection interface. Current-validity controllers were tested; a true continuation-value model, XSum, and a live CF-driven stopping/intervention policy remain untested.
 
@@ -63,7 +63,7 @@ The tested Sudoku trajectories offer no early exact solutions, and the selected 
 | Online request benchmarks | Complete; five frozen methods, 300 inputs × three repeats; practical speedup no-go |
 | Online stopping hook | Complete; true skipped-work and parity checks; upstream remains unmodified |
 | Current-validity controller | Complete; six logistic fits, causal ablation, development selection and 6,300-request final comparison; measured no-go; not a continuation-value model |
-| Executable research tests | Latest recorded full suite: 433 passed; [JUnit](results/phase5/tests.xml) |
+| Executable research tests | Latest fresh full suite: 451 passed; [JUnit](results/stronger_research/s5a/tests.xml) |
 | WMT14 translation | Complete; four-method frozen final comparison; [report](results/phase4/wmt14/summary.md) |
 | Recorded-trajectory viewer | Complete; source, levels, issues, exits, costs and provenance; [viewer](results/phase5/viewer.html) |
 | Concept Firewall bridge | Exact matching saved forecasts only; [contract](docs/phase5_firewall_contract.md); no live joint policy or safety claim |
@@ -92,9 +92,9 @@ The [viewer](results/phase5/viewer.html) makes the saved evidence inspectable. I
 
 A fitted estimate of expected benefit from further refinement is still absent. Phase 3 predicts current Sudoku validity; CF forecasts eventual failure. Neither is automatically a continuation value. XSum and live risk-driven stopping/interventions were not evaluated.
 
-The proposed next scientific step is a bounded WMT opportunity audit using only saved exploration/development trajectories: could an optimistic reference-informed exit assignment meet the declared corpus-quality tolerances while saving enough work to plausibly cover monitoring? That proposed audit has not been executed. Unmeasured latency must remain an estimate; consumed final inputs cannot become policy-development data for a fresh-test claim.
+The stronger-research saved WMT audit is complete: the found development assignment exits early on 18/64 inputs and meets point corpus tolerances, but conditional quality lower bounds fail noninferiority and actual early-exit latency remains unmeasured. Practical headroom is inconclusive. Saved diagnosis finds early visible final-text matches on 13/64 development inputs. See the [current synthesis](RESEARCH_SYNTHESIS.md); these are reused diagnostic data, not fresh confirmation.
 
-Only if meaningful headroom exists would a separately frozen continuation-value experiment be justified, with a resource budget and suitable fresh evaluation data. Changing the base checkpoint/training objective would be a new research scope. This documentation update launches no experiments.
+Only if meaningful headroom exists would a separately frozen continuation-value experiment be justified, with a resource budget and suitable fresh evaluation data. Changing the base checkpoint/training objective would be a new research scope. This cycle is closed at its recorded gates; further experiments require a separately justified protocol and budget.
 
 ## Recorded baseline results
 
@@ -118,7 +118,8 @@ Evidence: [full metrics](results/upstream_full/metrics.json), [smoke metrics](re
 | Document | Purpose |
 | --- | --- |
 | [ROADMAP.md](ROADMAP.md) | Phase 0–5 execution checklist, milestones, acceptance criteria, and decision gates |
-| [Research paper, draft v2](RESEARCH_PAPER.md) | Consolidated Phase 1–5 methods/results, bounded negative conclusions, uncertainty and untested research ambitions |
+| [Current synthesis and manuscript](RESEARCH_SYNTHESIS.md) | Stronger-research S1/S2A findings, evidence-gated branch decisions, compiled local candidate and remaining issues |
+| [Historical report, draft v2](RESEARCH_PAPER.md) | Preserved Phase 1–5 methods/results and evidence boundaries |
 | [Revised next steps](NEXT_STEPS.md) | Completed follow-ups/studies and the recorded stopping point; new research requires a separate scope |
 | [R1A error diagnosis](results/followup/sudoku_prefix_diagnosis/summary.md) | Exploration-only reference/clue/unit error distributions and adjacent-level changes |
 | [R1B target encoding](results/followup/sudoku_target_encoding/summary.md) | Frozen 32-reference reconstruction pilot versus cached generated prefixes |
@@ -376,7 +377,7 @@ The original design file remains authoritative. `DESIGN.md` is a navigation entr
 
 ## Verification
 
-The latest recorded full suite has 433 passing tests at the Phase 5 snapshot. Historical milestone counts describe their own source versions. A read-only rerun without overwriting any frozen JUnit artifacts is:
+The fresh S5A full suite passed 451 tests ([new JUnit](results/stronger_research/s5a/tests.xml)); the Phase 5 snapshot retains its historical 433-test record. Historical milestone counts describe their own source versions. A read-only rerun without overwriting any frozen JUnit artifacts is:
 
 ~~~powershell
 .\scripts\wsl_python.ps1 -PythonArguments @('-m','pytest','tests','-q','-p','no:cacheprovider')
@@ -577,4 +578,4 @@ python scripts/view_trajectories.py build --firewall-root ..\Concept-Firewall
 python scripts/view_trajectories.py verify --firewall-root ..\Concept-Firewall
 ~~~
 
-Rebuilding requires the original saved artifacts and pinned local datasets; the CF checkout is optional for building with unavailable risk, and required for recreating/external rechecking the retained forecasts. The normal verifier checks source/artifact digests, all displayed reconstructions, diagnostics, decisions and timing repeats. All 433 tests pass, including 29 viewer regressions. Phase 5 adds zero model calls, fits, retuning or final-input materialization. Earlier empirical artifacts and frozen sources remain unchanged.
+Rebuilding requires the original saved artifacts and pinned local datasets; the CF checkout is optional for building with unavailable risk, and required for recreating/external rechecking the retained forecasts. The normal verifier checks source/artifact digests, all displayed reconstructions, diagnostics, decisions and timing repeats. The historical Phase 5 suite passed 433 tests, including 29 viewer regressions. Phase 5 adds zero model calls, fits, retuning or final-input materialization. Earlier empirical artifacts and frozen sources remain unchanged.

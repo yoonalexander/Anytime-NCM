@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "date": "2026-10-24",
+  "active_local_markdown_links_checked": 159,
+  "broken_links": 0,
+  "historical_evidence_digests_retained": 28,
+  "historical_readme_location": "paper/stronger-research-v3/history/README.md",
+  "historical_v2_report": "unchanged at root and archived",
+  "figure_reviewed_data_consistency": "passed",
+  "tex_citation_keys": 10,
+  "fresh_suite_tests": 451,
+  "suite_failures_errors_skips": 0,
+  "unexecuted_model_branch_checkboxes": "unchecked",
+  "external_contacts_or_submissions": 0,
+  "exact_byte_source_archive_files": 21,
+  "manuscript_source_zip": "integrity checked",
+  "remaining_human_readiness": "explicit; not silently claimed complete",
+  "local_previews": "retained as ignored temporary files after deletion command was rejected before execution",
+  "git_diff_check": "passed; raw compiler-log whitespace retained with targeted artifact attributes, authored-source checks unchanged"
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-24",
+  "finished_utc": "2026-10-24T18:20:59.142493+00:00",
+  "status": "local_candidate_prepared_human_readiness_incomplete",
+  "pdf_pages": 9,
+  "figures": 3,
+  "compile_repair_count": 1,
+  "paid_usd": 0,
+  "new_real_checkpoint_requests": 0,
+  "new_target_encodings": 0,
+  "new_fits": 0,
+  "new_final_outcomes": 0,
+  "contact_or_submission": 0,
+  "artifact_bytes": 824359,
+  "limits": {
+    "wall_hours": 2,
+    "artifacts_mib": 512,
+    "compilation_repairs": 3
+  },
+  "remaining": "Human authorship/affiliations, rights/license and independent scientific review"
+}

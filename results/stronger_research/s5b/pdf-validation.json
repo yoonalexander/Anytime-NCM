@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-24",
+  "status": "passed",
+  "pdf_pages": 9,
+  "native_compilation": "MiKTeX pdfLaTeX success; automatic dependency installation disabled",
+  "codex_compilation": "success on final source",
+  "compilation_repairs": 1,
+  "repair": "Long provenance hashes reformatted to a two-column table; no overfull boxes or undefined citations in final log",
+  "final_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "figures_visually_inspected": [
+    "conditional-cost",
+    "saved-diagnostics",
+    "quality-work"
+  ],
+  "pdf_text_headline_checks": "passed",
+  "embedded_javascript": false,
+  "pdf_sha256": "a703382c6975f00f2e984a04486fc53bfb5c75334f1964114c7af19526ff6d64",
+  "source_sha256": "37dddbbfa7c0ee45a25c49782b060466fc993eb26b6cd1f8d4805caf86273556",
+  "source_zip_sha256": "981be5e4b36683fcf4816259253bdd0ce8b67bbbbda6a8ed526c035cd15574c4",
+  "renderer": "Poppler pdftoppm at 100 DPI",
+  "page_png_sha256": [
+    "e94f4dac2236481aae31efa61bc19cfe259e8b5db853ac71033d862d52fae805",
+    "8d87f8ef2e53b430621eec55b648aba36f18e79dfe84bb51de921a641ae4efed",
+    "ca2bfad73200e11721b6c0fd73b57ec1c033e13a051ef6ade9bd1a030431d790",
+    "489af9a94b586ce0768e6e00ceb385d5a93f94cbb5ea2782699119d629a89623",
+    "df5f08c0257a741b83d1776ee5a95817eecc1120df52f86091d75ca808509dba",
+    "07fec2cfadd14b5cbf08f3a649238086be5bf365ad815c5b0b65e183a7c236f4",
+    "5d3bce38854555eec0d1f44ee07a25ba7498ce0cd2f9dfbbc8cef67c30bfac2b",
+    "b68d31f4b7299378b45defb7a415f2ff619e4efdd051f4dcfa60cae246fcaf54",
+    "e550b92c39fa63b54761e678d07ffd0d063ff1cadef777771085c74b190ea501"
+  ],
+  "human_author_metadata": "unconfirmed; clearly marked internal draft",
+  "submission_ready": false,
+  "exact_execution_source_zip_sha256": "2fd3d0b3f6947763c69d7dff36077110e68d28888cdcb336735fc6ffdb6973e7"
+}

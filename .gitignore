@@ -44,3 +44,6 @@ dist/
 Thumbs.db
 .vscode/
 .idea/
+
+# Local manuscript rendering previews
+/tmp/pdfs/stronger-v3/

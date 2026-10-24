@@ -19,3 +19,6 @@ results/followup/sudoku_easy_r3/baseline.log text eol=lf
 results/phase2/source_snapshots/** -text
 results/phase3/source_snapshots/** -text
 results/phase4/wmt14/source_snapshots/** -text
+
+# Preserve raw compiler logs; generated whitespace is not authored source.
+results/stronger_research/s5b/compile-*.log -text whitespace=-blank-at-eol,-blank-at-eof

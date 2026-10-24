@@ -2,7 +2,7 @@
 
 **Created:** October 23, 2026
 
-**Status:** S0, S1A/S1B, S2A and S5A complete (October 24). S2B/S4 deferred and S3 blocked with recorded reasons. S5B local manuscript/reproducibility packaging in progress; no submission or external contact.
+**Status:** Current authorized research execution is closed at its evidence gates (October 24). S0, S1A/S1B, S2A and S5A calculation checks are complete. S5B local manuscript/reproducibility candidate is prepared; human authorship/affiliations, rights and independent researcher review remain unresolved. S2B/S4 are deferred and S3 blocked, all unexecuted. No submission/contact occurred.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b
 
@@ -193,16 +193,23 @@ After every completed phase and subphase: record evidence and limitations, run a
 
 ### S5B — Manuscript and reproducibility package
 
-- [ ] Center the manuscript on one scientific contribution; move project chronology, viewer engineering and operational ledgers to appendices/artifacts.
-- [ ] Explain novelty against primary prior work; do not claim the first result without evidence.
-- [ ] Include quality/work frontiers, opportunity-versus-policy gaps, failure analysis, meaningful ablations, uncertainty and limitations. Report absent categories instead of manufacturing examples.
-- [ ] Preserve the current paper's history and write an evidence-backed revision. Include source/config/data manifests, documented verification and accurate availability statements.
+- [x] Center the manuscript on one scientific contribution; move project chronology, viewer engineering and operational ledgers to appendices/artifacts.
+- [x] Explain novelty against primary prior work; do not claim the first result without evidence.
+- [x] Include quality/work frontiers, opportunity-versus-policy gaps, failure analysis, meaningful ablations, uncertainty and limitations. Report absent categories instead of manufacturing examples.
+- [x] Preserve the current paper's history and write an evidence-backed revision. Include source/config/data manifests, documented verification and accurate availability statements.
 - [ ] Prepare a compiled, visually checked submission manuscript with accurate authorship, affiliations, references and disclosure of substantial AI assistance where required.
-- [ ] Check current arXiv format/category/endorsement requirements at preparation time. Moderation is not peer review; acceptance and venue competitiveness are not guaranteed.
-- [ ] Produce a local submission candidate and a short remaining-issues list. Upload, author contacts and submission require explicit user authorization.
+- [x] Check current arXiv format/category/endorsement requirements at preparation time. Moderation is not peer review; acceptance and venue competitiveness are not guaranteed.
+- [x] Produce a local submission candidate and a short remaining-issues list. Upload, author contacts and submission require explicit user authorization.
+
+
+**Local candidate prepared:** [current synthesis/claim audit](RESEARCH_SYNTHESIS.md), [9-page PDF](paper/stronger-research-v3/main.pdf), [editable source](paper/stronger-research-v3/main.tex), [reproducibility/source bundle](paper/stronger-research-v3/README.md), [remaining human decisions](paper/stronger-research-v3/NOT_SUBMISSION_READY.md). The author/affiliation-ready manuscript item remains unchecked because verified human metadata and rights/review decisions are unavailable. No byline, affiliation, endorsement or reviewer approval was invented.
 
 ## Completion and stopping criteria
 
 The next research cycle is complete when the requested studies are reproducible, their gates and alternatives are resolved or explicitly inconclusive, and the revised paper makes a defensible contribution. A well-supported negative S1/S2 result can meet that standard without S3/S4.
 
 Do not expand checkpoints, tasks, samples, features, thresholds or training until something succeeds. Any extension needs a specific hypothesis and a prospective amendment with a new budget. Finish the named phase, commit/push its records, report its outcome, and stop.
+
+## October 24 execution closure
+
+The full-roadmap request was carried through all justified saved-data and local preparation work. S1 finds point-feasible early WMT assignments but fails conditional quality bounds and cannot establish actual arbitrary-exit latency. S2A distinguishes available early text from unproven causal recognition; no actionable model intervention is isolated. S2B/S3/S4 remain unexecuted for the reasons linked above. S5 produces a checked internal candidate, with human metadata/scientific review and submission decisions explicitly unresolved. No automatic new timing pilot, search enlargement, model fitting/training or submission follows this closure.
