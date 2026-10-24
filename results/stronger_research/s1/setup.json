@@ -1,0 +1,27 @@
+{
+  "status": "complete",
+  "setup_started_utc": "2026-10-24T17:43:42Z",
+  "setup_finished_utc": "2026-10-24T17:49:50.990255+00:00",
+  "setup_wall_cap_seconds": 7200,
+  "tests": {
+    "initial_full_suite": 448,
+    "current_focused_suite": 16,
+    "full_suite_receipt": "setup-tests.xml",
+    "current_focused_receipt": "focused-tests-final.xml"
+  },
+  "protected_digest_checks": 30,
+  "failed_attempts": [
+    {
+      "stage": "integrity preflight import",
+      "error": "python -c lacked src in sys.path; corrected before outcome access",
+      "model_work": 0
+    }
+  ],
+  "new_model_work": 0,
+  "final_outcomes_accessed": 0,
+  "development_outcomes_accessed_for_s1": 0,
+  "remaining_splits": [
+    "exploration",
+    "development"
+  ]
+}
