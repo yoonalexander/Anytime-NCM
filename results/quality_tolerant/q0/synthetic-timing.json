@@ -1,0 +1,98 @@
+[
+  {
+    "effect": 0.0,
+    "interval": {
+      "guard": {
+        "draws": 100000,
+        "expected_tail_count": 42.37288135593221,
+        "no_tail_probability": 3.9245652030862825e-19,
+        "rank": 18,
+        "resolved": true
+      },
+      "lower": -0.0018076872137127165,
+      "nominal95": [
+        -0.0008840915442480446,
+        0.0008824869005381808
+      ],
+      "upper": 0.0018029382547065653
+    },
+    "lower_uncertainty_le025": true,
+    "point_savings": 0.0,
+    "process_points": [
+      -1.4601633420152638e-06,
+      1.416706099766074e-06
+    ]
+  },
+  {
+    "effect": 0.025,
+    "interval": {
+      "guard": {
+        "draws": 100000,
+        "expected_tail_count": 42.37288135593221,
+        "no_tail_probability": 3.9245652030862825e-19,
+        "rank": 18,
+        "resolved": true
+      },
+      "lower": 0.023192312786287417,
+      "nominal95": [
+        0.024115908455751768,
+        0.025882486900537988
+      ],
+      "upper": 0.0268029382547067
+    },
+    "lower_uncertainty_le025": true,
+    "point_savings": 0.02499999999999991,
+    "process_points": [
+      0.024998539836657896,
+      0.025001416706099455
+    ]
+  },
+  {
+    "effect": 0.05,
+    "interval": {
+      "guard": {
+        "draws": 100000,
+        "expected_tail_count": 42.37288135593221,
+        "no_tail_probability": 3.9245652030862825e-19,
+        "rank": 18,
+        "resolved": true
+      },
+      "lower": 0.04819231278628744,
+      "nominal95": [
+        0.049115908455752,
+        0.05088248690053801
+      ],
+      "upper": 0.05180293825470639
+    },
+    "lower_uncertainty_le025": true,
+    "point_savings": 0.050000000000000044,
+    "process_points": [
+      0.04999853983665803,
+      0.05000141670609992
+    ]
+  },
+  {
+    "effect": 0.1,
+    "interval": {
+      "guard": {
+        "draws": 100000,
+        "expected_tail_count": 42.37288135593221,
+        "no_tail_probability": 3.9245652030862825e-19,
+        "rank": 18,
+        "resolved": true
+      },
+      "lower": 0.09819231278628737,
+      "nominal95": [
+        0.09911590845575205,
+        0.10088248690053794
+      ],
+      "upper": 0.10180293825470632
+    },
+    "lower_uncertainty_le025": true,
+    "point_savings": 0.10000000000000009,
+    "process_points": [
+      0.09999853983665763,
+      0.10000141670609985
+    ]
+  }
+]

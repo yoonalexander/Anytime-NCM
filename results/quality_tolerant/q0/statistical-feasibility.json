@@ -1,0 +1,351 @@
+{
+  "all_zero_boundary_acceptance_probability_n48": 0.3791854228312336,
+  "consumed_union_max_numeric_coverage": 240,
+  "eb_zero_variance_floor_at_mean_zero": 1975,
+  "future_bootstrap_guard": {
+    "draws": 100000,
+    "expected_tail_count": 42.37288135593221,
+    "no_tail_probability": 3.9245652030862825e-19,
+    "rank": 18,
+    "resolved": true
+  },
+  "hoeffding_zero_mean_floor_range2": 38833,
+  "population_sensitivity": [
+    {
+      "assumed_prevalence": 0,
+      "expected_coverage": 0,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_coverage": 5.12,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_coverage": 25.6,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_coverage": 48.0,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_coverage": 102.4,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_coverage": 256,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0,
+      "expected_coverage": 0,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_coverage": 8.96,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_coverage": 44.800000000000004,
+      "probability_reaching_floor": 7.4216251174835e-311,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_coverage": 84.0,
+      "probability_reaching_floor": 1.5356731948829493e-208,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_coverage": 179.20000000000002,
+      "probability_reaching_floor": 4.090828843854251e-90,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_coverage": 448,
+      "probability_reaching_floor": 1.0,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0,
+      "expected_coverage": 0,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_coverage": 20.48,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_coverage": 102.4,
+      "probability_reaching_floor": 4.890344811358867e-122,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_coverage": 192.0,
+      "probability_reaching_floor": 3.397523738380995e-45,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_coverage": 409.6,
+      "probability_reaching_floor": 0.9457169284197041,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_coverage": 1024,
+      "probability_reaching_floor": 1.0,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0,
+      "expected_coverage": 0,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_coverage": 11.42,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_coverage": 57.1,
+      "probability_reaching_floor": 3.7319785587392993e-239,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_coverage": 107.0625,
+      "probability_reaching_floor": 2.7715571914585725e-142,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_coverage": 228.4,
+      "probability_reaching_floor": 5.697685459081987e-40,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_coverage": 571,
+      "probability_reaching_floor": 1.0,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0,
+      "expected_coverage": 0,
+      "probability_reaching_floor": 0.0,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_coverage": 31.900000000000002,
+      "probability_reaching_floor": 3.217277925877413e-284,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_coverage": 159.5,
+      "probability_reaching_floor": 1.0414879885351863e-59,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_coverage": 299.0625,
+      "probability_reaching_floor": 5.48592825434928e-08,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_coverage": 638.0,
+      "probability_reaching_floor": 1.0,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_coverage": 1595,
+      "probability_reaching_floor": 1.0,
+      "total_groups": 1595
+    }
+  ],
+  "power": {
+    "0.005": {
+      "first_n_power80": 1038,
+      "grid": [
+        {
+          "max_adverse_events": -1,
+          "n": 48,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 192,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 256,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 384,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": 1,
+          "n": 512,
+          "power": 0.2744314410588878
+        },
+        {
+          "max_adverse_events": 6,
+          "n": 1024,
+          "power": 0.7447651448821897
+        },
+        {
+          "max_adverse_events": 0,
+          "n": 385,
+          "power": 0.14517307871732776
+        }
+      ]
+    },
+    "0.01": {
+      "first_n_power80": 2704,
+      "grid": [
+        {
+          "max_adverse_events": -1,
+          "n": 48,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 192,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 256,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 384,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": 1,
+          "n": 512,
+          "power": 0.03594393743084347
+        },
+        {
+          "max_adverse_events": 6,
+          "n": 1024,
+          "power": 0.1145043999595722
+        },
+        {
+          "max_adverse_events": 0,
+          "n": 385,
+          "power": 0.0208713201588885
+        }
+      ]
+    },
+    "0.02": {
+      "first_n_power80": null,
+      "grid": [
+        {
+          "max_adverse_events": -1,
+          "n": 48,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 192,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 256,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": -1,
+          "n": 384,
+          "power": 0.0
+        },
+        {
+          "max_adverse_events": 1,
+          "n": 512,
+          "power": 0.00036856792345391705
+        },
+        {
+          "max_adverse_events": 6,
+          "n": 1024,
+          "power": 0.00016224146642564212
+        },
+        {
+          "max_adverse_events": 0,
+          "n": 385,
+          "power": 0.00041883131137998423
+        }
+      ]
+    }
+  },
+  "zero_event_bounds": {
+    "optimistic_single_endpoint": {
+      "1024": 0.002921244635388028,
+      "192": 0.015481679618674053,
+      "256": 0.011633876163163285,
+      "384": 0.007771034296354586,
+      "385": 0.007750928219166924,
+      "48": 0.06050340934889431,
+      "512": 0.005833955600556273
+    },
+    "original89": {
+      "1024": 0.00795405306662467,
+      "192": 0.041696962775245074,
+      "256": 0.031438619417705094,
+      "384": 0.02107046360590645,
+      "385": 0.02101631430141748,
+      "48": 0.15664299149512728,
+      "512": 0.015844839173062657
+    },
+    "primary59": {
+      "1024": 0.007555702579901359,
+      "192": 0.03964290335148523,
+      "256": 0.029882000590819614,
+      "384": 0.020021889709512557,
+      "385": 0.019970407577007476,
+      "48": 0.14938898965981967,
+      "512": 0.01505431651832679
+    }
+  },
+  "zero_event_floors": {
+    "optimistic_single_endpoint": 149,
+    "original89": 405,
+    "primary59": 385
+  }
+}

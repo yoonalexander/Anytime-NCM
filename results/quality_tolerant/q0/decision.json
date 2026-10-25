@@ -1,0 +1,86 @@
+{
+  "stage": "Q0",
+  "date": "2026-10-25",
+  "completion_status": "complete_statistically_blocked",
+  "feasibility_gate_passed": false,
+  "implementation_validation_passed": true,
+  "Q1_ready": false,
+  "Q1_started": false,
+  "protocol_lock_commit": "96dc9a0be7ec551b9ae7f7f8b07e5ac35631bfac",
+  "starting_main": "e63896481a4d98317828276ef381fbc5c83dc095",
+  "quality_margins": {
+    "corpus_bleu_loss": 0.5,
+    "corpus_chrf_loss": 1.0,
+    "numeric_reference_f1_loss_where_defined": 0.02,
+    "negation_mismatch_increase": 0.02
+  },
+  "ultimate_success_contract": {
+    "actual_mean_ready_output_savings_vs_full_minimum": 0.05,
+    "adjusted_paired_lower_bound_vs_full_positive": true,
+    "positive_adjusted_improvement_vs_all_potentially_feasible_fixed_depths": true
+  },
+  "primary_family": {
+    "two_sided_intervals": 59,
+    "tail_alpha": 0.0004237288135593221,
+    "method": "paired signed Clopper-Pearson event envelope"
+  },
+  "findings": {
+    "old_original89_minimum_coverage": 405,
+    "primary59_minimum_coverage": 385,
+    "unadjusted_single_endpoint_minimum_coverage": 149,
+    "observed_E2_numeric_coverage": 48,
+    "released_consumed_union_groups": 448,
+    "released_consumed_union_numeric_coverage_upper_limit": 240,
+    "E4_groups_sealed": 1024,
+    "E4_numeric_coverage": "unknown; not read",
+    "power80_first_covered_n_at_p005": 1038,
+    "power_at_covered_n1024_p005": 0.7447651448821897,
+    "primary_method_changed_after_synthetic_results": false,
+    "diagnostic_EB_selected_for_gate": false
+  },
+  "checks": {
+    "deterministic_unit_tests_passed": 26,
+    "additional_deterministic_checks": 137,
+    "synthetic_trials": 96000,
+    "bootstrap_draws": 140000,
+    "full_historical_suite_rerun": false
+  },
+  "unresolved": [
+    "feasible separate eligible confirmation population and numeric coverage",
+    "news-document dependence and checkpoint-training overlap",
+    "real corpus quality and joint power/precision",
+    "actual online latency and continuation-value recognition",
+    "other valid prospective inferential designs not exhausted"
+  ],
+  "reservations": {
+    "E3_128": "sealed",
+    "E4_1024": "sealed",
+    "unallocated_571": "sealed"
+  },
+  "forbidden_work": {
+    "checkpoint_loads": 0,
+    "fits": 0,
+    "real_body_reads": 0,
+    "requests": 0,
+    "target_encodings": 0,
+    "training": 0,
+    "trajectories": 0,
+    "warmups": 0
+  },
+  "cost_dollars": 0,
+  "next_action": "Stop before Q1; a new prospective design/population and explicit authorization are needed to revisit the failed entry gate.",
+  "method_report": "docs/studies/quality-tolerant/q0-methods-and-feasibility.md",
+  "artifact_sha256": {
+    "execution-sources.zip": "b14cfa44212cf558a16a1790eb810422066afb1b46cb397d48456f382aee5433",
+    "execution.json": "c8ec2255a731e3f18814b89ef52a8e450540c1eb0e46709f0f1166037a3e9c2f",
+    "focused-tests.xml": "45ef416c811ac3b20f96ed78e3f4ad461c153c67e43b4fae6138b82728f4035c",
+    "independent-checks.json": "6c6fc53589edeacfbbcc31b8e2c5b3303f9b613a4e0ca6f214385fe4009ff9a2",
+    "ledger.jsonl": "a7ecfc550e73470f1e9ef809d16679a93ad45e60f15608c995c1ab8b8328495e",
+    "started.json": "82b7d3eedd919ac54de8e6959df247f794167f678a4cb734fe41c90a12ec9422",
+    "statistical-feasibility.json": "b57c90a8506c6ea5f22f19f08d88d569a474750bd42eb58923d1fc1872ddc7fe",
+    "synthetic-corpus.json": "7ee9116ffc4cdcdffddc2b0465270344f42936dea6778cfdbe4b78187244b6c1",
+    "synthetic-timing.json": "fd0494c7620eb9d83503a79c03ef653c33c239142ad22b56bbbe2845b9f2579b",
+    "synthetic-trials.json": "c4bb6ea1e77514f94e93f38e443ddc2ccc690c32c7372e1fdafebb8035669b91",
+    "test-output.txt": "b1d93446a34be31b1bf9de43485d994c4b7b8eb148bccd1812e275ce7e516da6"
+  }
+}

@@ -1,6 +1,6 @@
 # Quality-tolerant early translation: next research roadmap
 
-October 25, 2026. **Q0 protocol frozen; synthetic execution pending. Q1-Q4 are unstarted.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
+October 25, 2026. **Q0 complete: statistically blocked. Q1-Q4 are unstarted; Q1 is not ready.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
 
 **Question:** Can a frozen NCM produce earlier translations that differ from its final text yet retain acceptable quality and deliver useful actual latency savings?
 
@@ -14,8 +14,8 @@ Keep the existing full-relative tolerances: corpus BLEU loss <=0.5, chrF loss <=
 
 | Phase | Work | Gate to advance |
 | --- | --- | --- |
-| Q0: statistical feasibility | [Protocol](quality-tolerant/q0-protocol.md), [numeric lock](quality-tolerant/q0-lock.json), [source lock](quality-tolerant/q0-source-lock.json) frozen; synthetic validation pending. | Original quality margins can be assessed with an eligible, feasible population. Otherwise stop as statistically blocked. |
-| Q1: saved-data opportunity | Under a new bounded protocol, inspect already released S1/E2 trajectories for quality-tolerant assignments and candidate inspection schedules. Reuse is exploratory; disclose search selection and estimated costs. | Enough exploratory headroom after plausible observation costs to justify measurement. A found assignment is not a certified optimum. |
+| Q0: statistical feasibility | **Complete, statistically blocked.** [Protocol](quality-tolerant/q0-protocol.md), [methods/feasibility](quality-tolerant/q0-methods-and-feasibility.md), [synthetic validation](../../results/quality_tolerant/q0/README.md), [decision](../../results/quality_tolerant/q0/decision.json). 26 tests/137 deterministic checks; 96,000 trials/140,000 draws. | **Did not pass.** Primary cue floor 385 covered groups versus at most 240 in the 448-group consumed union; planned 80% power first needs 1,038 covered groups. E4 has 1,024 total, unknown coverage and remains sealed. Stop before Q1. |
+| Q1: saved-data opportunity | **Not ready; unstarted after failed Q0 gate.** Under a new bounded protocol, inspect already released S1/E2 trajectories for quality-tolerant assignments and candidate inspection schedules. Reuse is exploratory; disclose search selection and estimated costs. | Enough exploratory headroom after plausible observation costs to justify measurement. A found assignment is not a certified optimum. |
 | Q2: sparse-observation costs | Freeze a small inspection schedule and measure assigned exits against full and all relevant fixed-depth controls, charging reconstruction, decoding, transfers and observation work. | Matched-quality measured headroom meets the success contract. Clairvoyant assigned-exit timing remains a diagnostic, not an online selector. |
 | Q3: causal controller | Freeze current/past-only features and continuation-value labels; use separately allocated development data, bounded fits and actual online timing. | One locked policy passes development quality/cost gates against full and a strong fixed baseline. |
 | Q4: reserved confirmation | Evaluate that policy and locked comparators once on separately reserved confirmation inputs; no refitting or comparator replacement. | Report one go/no-go/inconclusive result, preserve failures, and update the manuscript. |

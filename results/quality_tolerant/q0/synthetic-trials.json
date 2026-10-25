@@ -1,0 +1,2132 @@
+[
+  {
+    "case": "zero",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 48,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 48,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 48,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 48,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 48,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "balanced",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 48,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "benefit",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 48,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": -0.03
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "cluster_unit_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 48,
+    "naive_exact_false_pass_at_boundary": 0.0,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 192,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 192,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 192,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 192,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 192,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "balanced",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 192,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "benefit",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 192,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": -0.03
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "cluster_unit_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 192,
+    "naive_exact_false_pass_at_boundary": 0.0,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 256,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 256,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 256,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 256,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 256,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "balanced",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 256,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "benefit",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 256,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": -0.03
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "cluster_unit_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 256,
+    "naive_exact_false_pass_at_boundary": 0.0,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 384,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 384,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 384,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 384,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 384,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "balanced",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 384,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "benefit",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 384,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": -0.03
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "cluster_unit_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 384,
+    "naive_exact_false_pass_at_boundary": 0.0,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 512,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": true,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 512,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.2665707639509975,
+        0.3194280782626424
+      ],
+      "events": 585,
+      "rate": 0.2925,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 512,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 512,
+    "primary_coverage": {
+      "ci99": [
+        0.9962909016095778,
+        0.9999974937322289
+      ],
+      "events": 1999,
+      "rate": 0.9995,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 512,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "balanced",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 512,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        2.506267771077823e-06,
+        0.003709098390422235
+      ],
+      "events": 1,
+      "rate": 0.0005,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "benefit",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 512,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": true,
+    "true_mean_loss": -0.03
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "cluster_unit_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 512,
+    "naive_exact_false_pass_at_boundary": 0.27445354472714883,
+    "primary_coverage": {
+      "ci99": [
+        0.6944073937674111,
+        0.7465285861540338
+      ],
+      "events": 1442,
+      "rate": 0.721,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.25347141384596616,
+        0.3055926062325889
+      ],
+      "events": 558,
+      "rate": 0.279,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 1024,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": true,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 1024,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.7190763019091375,
+        0.769743687735823
+      ],
+      "events": 1490,
+      "rate": 0.745,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 1024,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 1024,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 1024,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "balanced",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 1024,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        2.506267771077823e-06,
+        0.003709098390422235
+      ],
+      "events": 1,
+      "rate": 0.0005,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "benefit",
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0018609209498076222,
+        0.010668449650175566
+      ],
+      "events": 10,
+      "rate": 0.005,
+      "trials": 2000
+    },
+    "n": 1024,
+    "primary_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": true,
+    "true_mean_loss": -0.03
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "cluster_unit_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_coverage": {
+      "ci99": [
+        0.9973543472409907,
+        1.0
+      ],
+      "events": 2000,
+      "rate": 1.0,
+      "trials": 2000
+    },
+    "eb_diagnostic_pass": {
+      "ci99": [
+        0.0,
+        0.0026456527590093485
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 2000
+    },
+    "n": 1024,
+    "naive_exact_false_pass_at_boundary": 0.07532474821329709,
+    "primary_coverage": {
+      "ci99": [
+        0.9118170938565328,
+        0.9421030216419735
+      ],
+      "events": 1856,
+      "rate": 0.928,
+      "trials": 2000
+    },
+    "primary_pass": {
+      "ci99": [
+        0.057896978358026534,
+        0.08818290614346729
+      ],
+      "events": 144,
+      "rate": 0.072,
+      "trials": 2000
+    },
+    "primary_power80_mc_lower_met": false,
+    "true_mean_loss": 0.02
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "local_link_count": 32,
+  "all_local_links_exist": true,
+  "decision_artifact_hashes_match": true,
+  "deterministic_checker_source_hash_matches": true,
+  "Q1_not_started": true,
+  "no_failure_receipt": true,
+  "artifact_bytes_before_this_receipt": 182964,
+  "verification_wall_seconds": 0.04400980001082644,
+  "historical_sources_checked_by_execution_verifier": true,
+  "full_suite_rerun": false
+}
