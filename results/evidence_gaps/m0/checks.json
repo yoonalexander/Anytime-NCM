@@ -1,0 +1,42 @@
+{
+  "stage": "M0",
+  "status": "complete_unresolved",
+  "source_lock_commit": "7db4d082a17613c47f90300c979936b2c768e5cf",
+  "allowlisted_file_hashes_match": true,
+  "files_reviewed": 14,
+  "local_solved": 1725,
+  "local_total": 2000,
+  "local_percent": 86.25,
+  "paper_percent": 86.1,
+  "difference_percentage_points": 0.15,
+  "rounding_alone_explains": false,
+  "conditional_published_half_up_n2000_counts": [
+    1721,
+    1722
+  ],
+  "line_references": {
+    "third_party/ncm/scripts/eval_merge.py": {
+      "exact_n = sum": 72,
+      "valid_n = sum": 74
+    },
+    "third_party/ncm/evaluate.py": {
+      "str(len(gpus))": 27
+    },
+    "third_party/ncm/scripts/eval_shard.py": {
+      "idxs = list(range": 90,
+      "for s in range(0, len(idxs), bs)": 164,
+      "torch.manual_seed(seed)": 153
+    }
+  },
+  "public_primary_source": "https://arxiv.org/html/2610.14162v1",
+  "public_source_access_date": "2026-10-24",
+  "cause_established": false,
+  "conservative_source_review_seconds_charged": 5400,
+  "conservative_report_seconds_charged": 1800,
+  "artifact_bytes_before_receipt": 4204,
+  "model_calls": 0,
+  "dataset_rows_materialized": 0,
+  "references_read": 0,
+  "new_outcomes": 0,
+  "paid_compute_dollars": 0
+}
