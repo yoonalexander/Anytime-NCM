@@ -1,0 +1,47 @@
+{
+  "status": "complete_all_justified_local_work_human_tasks_open",
+  "preserved_baseline_files_checked": 747,
+  "current_status_and_ignore_exceptions": [
+    ".gitignore",
+    "README.md",
+    "RESEARCH_ROADMAP.md",
+    "RESEARCH_SYNTHESIS.md",
+    "docs/studies/evidence-gaps/continuous-closure-plan.md"
+  ],
+  "execution_artifact_hashes_checked": 36,
+  "closed_role_counts": {
+    "E3_development": 128,
+    "E4_confirmation": 1024,
+    "closed_unallocated": 571
+  },
+  "E0_manifest_byte_identical": true,
+  "new_closed_role_release": false,
+  "synthetic_cpu_tests_passed": 103,
+  "full_suite_rerun": false,
+  "real_checkpoint_calls_after_E2": 0,
+  "new_source_reference_outcome_identities": 0,
+  "fits": 0,
+  "target_encodings": 0,
+  "training_runs": 0,
+  "paid_compute_dollars": 0,
+  "local_markdown_links_checked": 273,
+  "pdf_pages_verified": 8,
+  "complete_review_bundle_sha256": "ef17310c6b9fd7288dd190c8740b424281010886fb1d404f002f35155b7ec1be",
+  "initial_bundle_and_receipts_preserved": true,
+  "conservative_closure_wall_seconds_charged": 3600,
+  "artifact_bytes_before_receipt": 14006,
+  "scientific_gate_dispositions": {
+    "E2": "bounded_no_go",
+    "terminal_screen": "post_hoc_budget_no_go",
+    "M0": "complete_cause_unresolved",
+    "E3": "blocked_unexecuted",
+    "E4": "closed_unexecuted",
+    "S2B_M1_S4": "deferred_unexecuted",
+    "P1": "local_preparation_complete_human_decisions_open"
+  },
+  "human_authorship_confirmed": false,
+  "rights_resolved": false,
+  "independent_researcher_review": false,
+  "paper_submitted": false,
+  "validator_sha256": "3974cf7d3659ab7f502a4c50ce0a4f33eeccc9f1d1b663d659c39771b7328f93"
+}

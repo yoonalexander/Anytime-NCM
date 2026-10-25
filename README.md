@@ -4,7 +4,7 @@
 
 Anytime NCM is a reproducible research repository studying that question through hard/easy Sudoku audits, a bounded medium-Sudoku screen, actual online verified/learned stopping, and WMT14 German-to-English evaluation.
 
-**Status: the original Phase 5 scope and stronger-research saved-data cycle are complete within their evidence gates; practical adaptive speedup has not been demonstrated.** The saved WMT audit found point-feasible mixed exits with inconclusive headroom. The new E2 exact-text diagnostic finds early full-answer matches on 43/256 inputs, but charged every-level execution is 13.41% slower than full depth. S3 is blocked; S2B/S4 are deferred. The recorded stronger-research full suite passed **451 tests**; E2 ran **96 focused tests**. A compiled internal manuscript is prepared; human authorship, rights and scientific review remain unresolved.
+**Status: all justified local work through the continuous evidence-gap closure is complete; practical adaptive speedup has not been demonstrated.** The saved WMT audit found point-feasible mixed exits with inconclusive headroom. E2 finds early full-answer matches on 43/256 inputs, but charged every-level execution is 13.41% slower than full depth. S3 is blocked; S2B/S4 are deferred. The recorded stronger-research full suite passed **451 tests**, E2 ran **96 focused tests**, and final closure passed **103 focused regressions**. The eight-page v4 manuscript and review packet are prepared; human authorship, rights and independent scientific review remain unresolved.
 
 [Current research synthesis v4](RESEARCH_SYNTHESIS.md) · [Eight-page manuscript](paper/stronger-research-v4/main.pdf) · [Review packet and human decisions](paper/stronger-research-v4/REVIEW_PACKET.md) · [Historical report v2](RESEARCH_PAPER.md) · [Results and project status](#results-and-project-status) · [Portable viewer](results/phase5/viewer.html) · [Full roadmap](ROADMAP.md) · [Stronger research roadmap](RESEARCH_ROADMAP.md) · [Agent instructions](AGENTS.md)
 
@@ -14,7 +14,7 @@ The repository now provides validated full-resolution prefix reconstruction, con
 
 ## Contents
 
-[Post-E2 terminal-cost screen](results/evidence_gaps/e2_terminal_screen/summary.md): assembling the same earliest-exact exits from measured terminal-only cells gives 2.67% savings, exploratory interval [1.74%,3.73%], below the 5% target even without earlier inspections. This is post hoc consumed-data analysis, not an online policy or confirmation. No new inference or controller/final access follows. [Continuous closure scope](docs/studies/evidence-gaps/continuous-closure-plan.md).
+[Post-E2 terminal-cost screen](results/evidence_gaps/e2_terminal_screen/summary.md): assembling the same earliest-exact exits from measured terminal-only cells gives 2.67% savings, exploratory interval [1.74%,3.73%], below the 5% target even without earlier inspections. This is post hoc consumed-data analysis, not an online policy or confirmation. No new inference or controller/final access follows. [Completed continuous-work closure](docs/studies/evidence-gaps/continuous-closure.md).
 
 - [Research approach](#research-approach)
 - [Implementation status](#implementation-status)

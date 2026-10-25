@@ -47,3 +47,9 @@ Thumbs.db
 
 # Local manuscript rendering previews
 /tmp/pdfs/stronger-v3/
+
+# Local v4 manuscript compiler/render intermediates; retained logs live under results/
+/paper/stronger-research-v4/main.aux
+/paper/stronger-research-v4/main.log
+/paper/stronger-research-v4/main.out
+/tmp/pdfs/stronger-v4/
