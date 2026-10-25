@@ -12,6 +12,8 @@ The repository now provides validated full-resolution prefix reconstruction, con
 
 [Evidence-gap resolution plan](docs/studies/evidence-gap-resolution-plan.md): [E0](results/evidence_gaps/e0/summary.md) sealed the input roles and found a cue-coverage limitation blocking the proposed nonidentical-output E2 gate at n=256. [E1 timing](results/evidence_gaps/e1/summary.md) observed cheaper forced paths on 16 reused inputs. [E2 exact-text audit](results/evidence_gaps/e2/summary.md), prospectively narrowed after E0, is complete: 146.56 ms for the clairvoyant assignment with charged every-level observation versus 129.23 ms for full depth; the adjusted reduction interval is [-15.21%, -11.31%]. All 12,664 requests and saved-record checks passed, but the practical gate fails. This is a bounded negative result for this rule/schedule, not absence of every useful early output. E2's 256 groups are consumed audit data; E3/E4 remain sealed and unexecuted.
 
+**Next direction (planning only):** [quality-tolerant early translation roadmap](docs/studies/quality-tolerant-translation-roadmap.md). Existing experimental gates and data reservations remain unchanged.
+
 ## Contents
 
 [Post-E2 terminal-cost screen](results/evidence_gaps/e2_terminal_screen/summary.md): assembling the same earliest-exact exits from measured terminal-only cells gives 2.67% savings, exploratory interval [1.74%,3.73%], below the 5% target even without earlier inspections. This is post hoc consumed-data analysis, not an online policy or confirmation. No new inference or controller/final access follows. [Completed continuous-work closure](docs/studies/evidence-gaps/continuous-closure.md).
