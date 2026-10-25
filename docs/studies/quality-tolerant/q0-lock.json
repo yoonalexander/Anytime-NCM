@@ -1,0 +1,78 @@
+{
+  "stage": "Q0",
+  "version": 1,
+  "starting_main": "e63896481a4d98317828276ef381fbc5c83dc095",
+  "family_intervals": 59,
+  "family_alpha": 0.05,
+  "tail_alpha": 0.0004237288135593221,
+  "cue_margin": 0.02,
+  "grid_n": [
+    48,
+    192,
+    256,
+    384,
+    512,
+    1024
+  ],
+  "trials_per_case": 2000,
+  "case_order": [
+    "zero",
+    "rare",
+    "boundary",
+    "outside",
+    "fractional",
+    "balanced",
+    "benefit",
+    "cluster8"
+  ],
+  "trial_seed": 2026102501,
+  "text_seed": 2026102502,
+  "timing_seed": 2026102503,
+  "text_draws_each": 10000,
+  "text_n": 64,
+  "timing_draws": 100000,
+  "timing_n": 64,
+  "chunk": 256,
+  "limits": {
+    "trials": 96000,
+    "bootstrap_draws": 140000,
+    "datasets": 5,
+    "wall_seconds": 1800,
+    "cpu_seconds": 1200,
+    "memory_bytes": 2147483648,
+    "storage_bytes": 16777216,
+    "threads": 1,
+    "dollars": 0
+  },
+  "preparation_reporting_charge_seconds": 7200,
+  "total_wall_cap_seconds": 9000,
+  "coverage_populations": [
+    256,
+    448,
+    1024,
+    571,
+    1595
+  ],
+  "coverage_prevalences": [
+    0,
+    0.02,
+    0.1,
+    0.1875,
+    0.4,
+    1
+  ],
+  "analytical_max_n": 10000,
+  "power_target": 0.8,
+  "power_alternative": 0.005,
+  "mc_confidence": 0.99,
+  "forbidden_work_caps": {
+    "real_body_reads": 0,
+    "requests": 0,
+    "warmups": 0,
+    "trajectories": 0,
+    "checkpoint_loads": 0,
+    "fits": 0,
+    "target_encodings": 0,
+    "training": 0
+  }
+}

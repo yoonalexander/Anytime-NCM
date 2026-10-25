@@ -1,6 +1,6 @@
 # Quality-tolerant early translation: next research roadmap
 
-October 25, 2026. **Planning only: all phases below are unstarted.** This document authorizes no experiments, fits, new outcome access or changes to earlier gates.
+October 25, 2026. **Q0 protocol frozen; synthetic execution pending. Q1-Q4 are unstarted.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
 
 **Question:** Can a frozen NCM produce earlier translations that differ from its final text yet retain acceptable quality and deliver useful actual latency savings?
 
@@ -14,7 +14,7 @@ Keep the existing full-relative tolerances: corpus BLEU loss <=0.5, chrF loss <=
 
 | Phase | Work | Gate to advance |
 | --- | --- | --- |
-| Q0: statistical feasibility | Freeze endpoints, paired inference, multiplicity, sparse-cue handling, coverage/power checks and numeric resource caps. Validate proposed methods on synthetic data before real-outcome analysis. | Original quality margins can be assessed with an eligible, feasible population. Otherwise stop as statistically blocked. |
+| Q0: statistical feasibility | [Protocol](quality-tolerant/q0-protocol.md), [numeric lock](quality-tolerant/q0-lock.json), [source lock](quality-tolerant/q0-source-lock.json) frozen; synthetic validation pending. | Original quality margins can be assessed with an eligible, feasible population. Otherwise stop as statistically blocked. |
 | Q1: saved-data opportunity | Under a new bounded protocol, inspect already released S1/E2 trajectories for quality-tolerant assignments and candidate inspection schedules. Reuse is exploratory; disclose search selection and estimated costs. | Enough exploratory headroom after plausible observation costs to justify measurement. A found assignment is not a certified optimum. |
 | Q2: sparse-observation costs | Freeze a small inspection schedule and measure assigned exits against full and all relevant fixed-depth controls, charging reconstruction, decoding, transfers and observation work. | Matched-quality measured headroom meets the success contract. Clairvoyant assigned-exit timing remains a diagnostic, not an online selector. |
 | Q3: causal controller | Freeze current/past-only features and continuation-value labels; use separately allocated development data, bounded fits and actual online timing. | One locked policy passes development quality/cost gates against full and a strong fixed baseline. |

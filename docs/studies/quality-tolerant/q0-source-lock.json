@@ -1,0 +1,56 @@
+{
+  "stage": "Q0",
+  "lock_type": "pre-simulation source digests; archive exact executed bytes at run",
+  "source_sha256": {
+    "docs/studies/quality-tolerant/q0-protocol.md": "b597b6bf5d7107bf6caf0d7535096dc55ea4e294bc0fb1106de1fb28a80b8c7f",
+    "docs/studies/quality-tolerant/q0-lock.json": "782ac7dfefdacddc7f8fe7d57db3299533b81070874de438732f85b30e652860",
+    "scripts/run_quality_tolerant_q0.py": "1848e1a338d7c0d883430f2dfc6904ffd92e69aa3a054776affd39f1cd1598a3",
+    "src/anytime_ncm/q0_statistics.py": "229cc0f490abe4970e05ab6784b426053508613241fe91dc4ea10bb0cce68840",
+    "tests/test_q0_statistics.py": "6ee7b873167f4a62ce8cdc545fdc329a3dd6dfe329baba64220eaf9a08c7bffb"
+  },
+  "protected_paths": [
+    "AGENTS.md",
+    "README.md",
+    "RESEARCH_SYNTHESIS.md",
+    "docs/studies/evidence-gaps/continuous-closure.md",
+    "docs/studies/evidence-gaps/e0-protocol.md",
+    "docs/studies/evidence-gaps/e0-lock.json",
+    "docs/studies/evidence-gaps/e2-protocol.md",
+    "docs/studies/evidence-gaps/e2-lock.json",
+    "results/evidence_gaps/e0/statistical-feasibility.json",
+    "results/evidence_gaps/e0/summary.md",
+    "results/evidence_gaps/e0/completion.json",
+    "results/evidence_gaps/e0/input-manifest.json",
+    "docs/partitions/wmt14-phase4.json",
+    "results/evidence_gaps/e2/summary.md",
+    "results/evidence_gaps/e2/completion.json",
+    "src/anytime_ncm/wmt_metrics.py",
+    "src/anytime_ncm/wmt_policy.py",
+    "src/anytime_ncm/evidence_preflight.py"
+  ],
+  "methodological_sources": [
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats._result_classes.BinomTestResult.proportion_ci.html",
+      "role": "official implementation, Clopper-Pearson identification and reference"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.beta.html",
+      "role": "official beta inverse-survival API"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binom.html",
+      "role": "official binomial CDF, PMF and quantiles"
+    },
+    {
+      "url": "https://arxiv.org/pdf/0907.3740",
+      "role": "Maurer-Pontil Theorem 4; prespecified diagnostic only"
+    },
+    {
+      "url": "https://aclanthology.org/W04-3250/",
+      "role": "Koehn paired corpus resampling; no power guarantee"
+    }
+  ],
+  "source_check_date": "2026-10-25",
+  "method_selection": "primary historical conservative envelope retained before synthetic results; EB diagnostic never replaces it",
+  "empirical_body_reads": 0
+}
