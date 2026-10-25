@@ -1,0 +1,1011 @@
+[
+  {
+    "case": "candidate_null_bleu",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.022291917534469994,
+        0.028036699769394522
+      ],
+      "events": 501,
+      "rate": 0.02505,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.022291917534469994,
+        0.028036699769394522
+      ],
+      "events": 501,
+      "rate": 0.02505,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "candidate_null_chrf",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.021442437101303995,
+        0.027086661812927557
+      ],
+      "events": 483,
+      "rate": 0.02415,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.021442437101303995,
+        0.027086661812927557
+      ],
+      "events": 483,
+      "rate": 0.02415,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "candidate_null_numeric",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.02243359295049346,
+        0.02819494435501752
+      ],
+      "events": 504,
+      "rate": 0.0252,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.02243359295049346,
+        0.02819494435501752
+      ],
+      "events": 504,
+      "rate": 0.0252,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "candidate_null_negation",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.023000558408980288,
+        0.028827659633879427
+      ],
+      "events": 516,
+      "rate": 0.0258,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.023000558408980288,
+        0.028827659633879427
+      ],
+      "events": 516,
+      "rate": 0.0258,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "full_cost_null",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.02064108543444383,
+        0.026188471053963713
+      ],
+      "events": 466,
+      "rate": 0.0233,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.02064108543444383,
+        0.026188471053963713
+      ],
+      "events": 466,
+      "rate": 0.0233,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "one_fixed_cost_null",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          460,
+          645
+        ],
+        "expected_probability": 0.0275,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          24,
+          81
+        ],
+        "expected_probability": 0.0025,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          460,
+          645
+        ],
+        "expected_probability": 0.0275,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.001359661460968901,
+        0.0030865167748180254
+      ],
+      "events": 42,
+      "rate": 0.0021,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.02446709041817184,
+        0.03046030789662037
+      ],
+      "events": 547,
+      "rate": 0.02735,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.02446709041817184,
+        0.03046030789662037
+      ],
+      "events": 547,
+      "rate": 0.02735,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "ten_fixed_null_shared",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          460,
+          645
+        ],
+        "expected_probability": 0.0275,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          24,
+          81
+        ],
+        "expected_probability": 0.0025,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          460,
+          645
+        ],
+        "expected_probability": 0.0275,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0012003036518379025,
+        0.002846422089755208
+      ],
+      "events": 38,
+      "rate": 0.0019,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.026647826274894815,
+        0.032878367366808
+      ],
+      "events": 593,
+      "rate": 0.02965,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.026647826274894815,
+        0.032878367366808
+      ],
+      "events": 593,
+      "rate": 0.02965,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "all_requirements_true",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          20000,
+          20000
+        ],
+        "expected_probability": 1.0,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "global_claim_false": false,
+    "global_go": {
+      "ci99": [
+        0.9997351192187828,
+        1.0
+      ],
+      "events": 20000,
+      "rate": 1.0,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "numeric_undefined",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "global_claim_false": false,
+    "global_go": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "timing_incomplete",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "global_claim_false": false,
+    "global_go": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "missing_fixed_depth",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "global_claim_false": false,
+    "global_go": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "point_savings_025",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "global_claim_false": false,
+    "global_go": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "exclusions_independent",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          408,
+          584
+        ],
+        "expected_probability": 0.024697710726891642,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          408,
+          584
+        ],
+        "expected_probability": 0.024697710726891642,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          20000,
+          20000
+        ],
+        "expected_probability": 1.0,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.020923808593663336,
+        0.026505586081075363
+      ],
+      "events": 472,
+      "rate": 0.0236,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.020923808593663336,
+        0.026505586081075363
+      ],
+      "events": 472,
+      "rate": 0.0236,
+      "trials": 20000
+    },
+    "global_claim_false": false,
+    "global_go": {
+      "ci99": [
+        0.9997351192187828,
+        1.0
+      ],
+      "events": 20000,
+      "rate": 1.0,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "exclusions_shared",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          1,
+          29
+        ],
+        "expected_probability": 0.000625,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          1,
+          29
+        ],
+        "expected_probability": 0.000625,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          20000,
+          20000
+        ],
+        "expected_probability": 1.0,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.00012856937249755752,
+        0.0009286656508735993
+      ],
+      "events": 8,
+      "rate": 0.0004,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.00012856937249755752,
+        0.0009286656508735993
+      ],
+      "events": 8,
+      "rate": 0.0004,
+      "trials": 20000
+    },
+    "global_claim_false": false,
+    "global_go": {
+      "ci99": [
+        0.9997351192187828,
+        1.0
+      ],
+      "events": 20000,
+      "rate": 1.0,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "exclusions_disjoint",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          20000,
+          20000
+        ],
+        "expected_probability": 1.0,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.02257529497400708,
+        0.028353162407293242
+      ],
+      "events": 507,
+      "rate": 0.02535,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.02257529497400708,
+        0.028353162407293242
+      ],
+      "events": 507,
+      "rate": 0.02535,
+      "trials": 20000
+    },
+    "global_claim_false": false,
+    "global_go": {
+      "ci99": [
+        0.9997351192187828,
+        1.0
+      ],
+      "events": 20000,
+      "rate": 1.0,
+      "trials": 20000
+    }
+  },
+  {
+    "case": "invalid_unadjusted_exclusion_OR",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          460,
+          645
+        ],
+        "expected_probability": 0.0275,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          24,
+          81
+        ],
+        "expected_probability": 0.0025,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          460,
+          645
+        ],
+        "expected_probability": 0.0275,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0016838350046804852,
+        0.003561409508829073
+      ],
+      "events": 50,
+      "rate": 0.0025,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.024751233233480142,
+        0.030776007201058234
+      ],
+      "events": 553,
+      "rate": 0.02765,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.024751233233480142,
+        0.030776007201058234
+      ],
+      "events": 553,
+      "rate": 0.02765,
+      "trials": 20000
+    },
+    "negative_control": {
+      "invalid_rule": "unadjusted any-quality-or-cost route",
+      "rate": {
+        "ci99": [
+          0.24175281634384743,
+          0.2575668001780621
+        ],
+        "events": 4992,
+        "rate": 0.2496,
+        "trials": 20000
+      },
+      "sanity": {
+        "allowed_count_range": [
+          4755,
+          5247
+        ],
+        "expected_probability": 0.25,
+        "passed": true
+      }
+    }
+  },
+  {
+    "case": "invalid_four_candidate_selection",
+    "checks": {
+      "combined_error": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      },
+      "false_exclusion": {
+        "allowed_count_range": [
+          0,
+          0
+        ],
+        "expected_probability": 0.0,
+        "passed": true
+      },
+      "global_go": {
+        "allowed_count_range": [
+          414,
+          591
+        ],
+        "expected_probability": 0.025,
+        "passed": true
+      }
+    },
+    "false_exclusion": {
+      "ci99": [
+        0.0,
+        0.00026488078121720177
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 20000
+    },
+    "false_global_go_or_exclusion": {
+      "ci99": [
+        0.021819861332838496,
+        0.027509023181977097
+      ],
+      "events": 491,
+      "rate": 0.02455,
+      "trials": 20000
+    },
+    "global_claim_false": true,
+    "global_go": {
+      "ci99": [
+        0.021819861332838496,
+        0.027509023181977097
+      ],
+      "events": 491,
+      "rate": 0.02455,
+      "trials": 20000
+    },
+    "negative_control": {
+      "invalid_rule": "choose any of four independently tested candidate winners",
+      "rate": {
+        "ci99": [
+          0.09090104264790963,
+          0.10169224558940086
+        ],
+        "events": 1924,
+        "rate": 0.0962,
+        "trials": 20000
+      },
+      "sanity": {
+        "allowed_count_range": [
+          1761,
+          2096
+        ],
+        "expected_probability": 0.09631210937500012,
+        "passed": true
+      }
+    }
+  }
+]

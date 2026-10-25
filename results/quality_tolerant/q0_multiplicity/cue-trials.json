@@ -1,0 +1,3683 @@
+[
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 48,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 48,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 48,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 48,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 48,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 48,
+    "naive_exact_false_pass": 0.0,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 128,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 128,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 128,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9768017099333215,
+            0.9866556339139373
+          ],
+          "events": 4911,
+          "rate": 0.9822,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 128,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 128,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 128,
+    "naive_exact_false_pass": 0.0,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 184,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.37997536384389513,
+            0.4158205086818661
+          ],
+          "events": 1989,
+          "rate": 0.3978,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 184,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.017719162459947074,
+            0.028810928749145235
+          ],
+          "events": 114,
+          "rate": 0.0228,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9711890712508547,
+            0.9822808375400529
+          ],
+          "events": 4886,
+          "rate": 0.9772,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 184,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0006267856518085821,
+            0.003995286973996286
+          ],
+          "events": 9,
+          "rate": 0.0018,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9734245914915033,
+            0.9840404179619882
+          ],
+          "events": 4896,
+          "rate": 0.9792,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 184,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 184,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.6152213995182045,
+            0.6505236678410647
+          ],
+          "events": 3165,
+          "rate": 0.633,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.34947633215893525,
+            0.3847786004817954
+          ],
+          "events": 1835,
+          "rate": 0.367,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 184,
+    "naive_exact_false_pass": 0.6283472821521208,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 192,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.3666970664512456,
+            0.40232449836617357
+          ],
+          "events": 1922,
+          "rate": 0.3844,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 192,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.017542687328430923,
+            0.028587887544213476
+          ],
+          "events": 113,
+          "rate": 0.0226,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9714121124557865,
+            0.9824573126715691
+          ],
+          "events": 4887,
+          "rate": 0.9774,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 192,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0011167409968758076,
+            0.005092966529433989
+          ],
+          "events": 13,
+          "rate": 0.0026,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9758980522588249,
+            0.985961379610349
+          ],
+          "events": 4907,
+          "rate": 0.9814,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 192,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 192,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.592638031375238,
+            0.6283499909290431
+          ],
+          "events": 3053,
+          "rate": 0.6106,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.37165000907095685,
+            0.407361968624762
+          ],
+          "events": 1947,
+          "rate": 0.3894,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 192,
+    "naive_exact_false_pass": 0.6157803365090787,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 240,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.278686284232873,
+            0.31210644565124945
+          ],
+          "events": 1476,
+          "rate": 0.2952,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 240,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.006252955729005197,
+            0.013515222623256872
+          ],
+          "events": 47,
+          "rate": 0.0094,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9864847773767431,
+            0.9937470442709948
+          ],
+          "events": 4953,
+          "rate": 0.9906,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 240,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.00021564867156392432,
+            0.0028273635232846893
+          ],
+          "events": 5,
+          "rate": 0.001,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9667493063522673,
+            0.9787300377039992
+          ],
+          "events": 4866,
+          "rate": 0.9732,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 240,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 240,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.5233164247096934,
+            0.5598038571124373
+          ],
+          "events": 2708,
+          "rate": 0.5416,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.44019614288756276,
+            0.4766835752903066
+          ],
+          "events": 2292,
+          "rate": 0.4584,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 240,
+    "naive_exact_false_pass": 0.5454843193824374,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 256,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.2627793866164302,
+            0.2956444675820697
+          ],
+          "events": 1395,
+          "rate": 0.279,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 256,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0031013880156825816,
+            0.008685021431680076
+          ],
+          "events": 27,
+          "rate": 0.0054,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.99131497856832,
+            0.9968986119843174
+          ],
+          "events": 4973,
+          "rate": 0.9946,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 256,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9985149292671527,
+            0.9999989974921378
+          ],
+          "events": 4999,
+          "rate": 0.9998,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            1.0025078621975138e-06,
+            0.0014850707328473544
+          ],
+          "events": 1,
+          "rate": 0.0002,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9825136646662623,
+            0.9909295631220697
+          ],
+          "events": 4936,
+          "rate": 0.9872,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 256,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 256,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.509494699130605,
+            0.5460520284310516
+          ],
+          "events": 2639,
+          "rate": 0.5278,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.4539479715689484,
+            0.49050530086939503
+          ],
+          "events": 2361,
+          "rate": 0.4722,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 256,
+    "naive_exact_false_pass": 0.5238831403348928,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 384,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.6848478377227681,
+            0.7183651944863052
+          ],
+          "events": 3509,
+          "rate": 0.7018,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.1270316929804607,
+            0.15246158486783898
+          ],
+          "events": 697,
+          "rate": 0.1394,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 384,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.012480112815795062,
+            0.022065206714403138
+          ],
+          "events": 84,
+          "rate": 0.0168,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            2.0700765290861242e-05,
+            0.001853409836655643
+          ],
+          "events": 2,
+          "rate": 0.0004,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9779347932855968,
+            0.9875198871842049
+          ],
+          "events": 4916,
+          "rate": 0.9832,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 384,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9981465901633444,
+            0.9999792992347092
+          ],
+          "events": 4998,
+          "rate": 0.9996,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.00021564867156392432,
+            0.0028273635232846893
+          ],
+          "events": 5,
+          "rate": 0.001,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.986012634205155,
+            0.9934206530840062
+          ],
+          "events": 4951,
+          "rate": 0.9902,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 384,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 384,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.36016221118011765,
+            0.39567200951351084
+          ],
+          "events": 1889,
+          "rate": 0.3778,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.36016221118011765,
+            0.39567200951351084
+          ],
+          "events": 1889,
+          "rate": 0.3778,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.6043279904864891,
+            0.6398377888198823
+          ],
+          "events": 3111,
+          "rate": 0.6222,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 384,
+    "naive_exact_false_pass": 0.3791854228312339,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 512,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.26140593989176725,
+            0.29422060482607854
+          ],
+          "events": 1388,
+          "rate": 0.2776,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.867490044340361,
+            0.8913792591008625
+          ],
+          "events": 4399,
+          "rate": 0.8798,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.26140593989176725,
+            0.29422060482607854
+          ],
+          "events": 1388,
+          "rate": 0.2776,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 512,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            1.0025078621975138e-06,
+            0.0014850707328473544
+          ],
+          "events": 1,
+          "rate": 0.0002,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9985149292671527,
+            0.9999989974921378
+          ],
+          "events": 4999,
+          "rate": 0.9998,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.01631054963604711,
+            0.027023449301938146
+          ],
+          "events": 106,
+          "rate": 0.0212,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            1.0025078621975138e-06,
+            0.0014850707328473544
+          ],
+          "events": 1,
+          "rate": 0.0002,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9729765506980619,
+            0.9836894503639528
+          ],
+          "events": 4894,
+          "rate": 0.9788,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 512,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9985149292671527,
+            0.9999989974921378
+          ],
+          "events": 4999,
+          "rate": 0.9998,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            2.0700765290861242e-05,
+            0.001853409836655643
+          ],
+          "events": 2,
+          "rate": 0.0004,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9834402611143345,
+            0.9916004652283047
+          ],
+          "events": 4940,
+          "rate": 0.988,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 512,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 512,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.25807125528815184,
+            0.29076182409006124
+          ],
+          "events": 1371,
+          "rate": 0.2742,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.7092381759099388,
+            0.7419287447118481
+          ],
+          "events": 3629,
+          "rate": 0.7258,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.25807125528815184,
+            0.29076182409006124
+          ],
+          "events": 1371,
+          "rate": 0.2742,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.25807125528815184,
+            0.29076182409006124
+          ],
+          "events": 1371,
+          "rate": 0.2742,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.7092381759099388,
+            0.7419287447118481
+          ],
+          "events": 3629,
+          "rate": 0.7258,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 512,
+    "naive_exact_false_pass": 0.27445354472714883,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "zero",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 1024,
+    "true_mean_loss": 0.0
+  },
+  {
+    "case": "rare005",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.7345036815194528,
+            0.7662155487984288
+          ],
+          "events": 3753,
+          "rate": 0.7506,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.1047967995669835,
+            0.12834171580558082
+          ],
+          "events": 581,
+          "rate": 0.1162,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.99131497856832,
+            0.9968986119843174
+          ],
+          "events": 4973,
+          "rate": 0.9946,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.99131497856832,
+            0.9968986119843174
+          ],
+          "events": 4973,
+          "rate": 0.9946,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9903290888620225,
+            0.9962888982481349
+          ],
+          "events": 4969,
+          "rate": 0.9938,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 1024,
+    "true_mean_loss": 0.005
+  },
+  {
+    "case": "boundary02",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.013171189766692152,
+            0.022971994101435692
+          ],
+          "events": 88,
+          "rate": 0.0176,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.013171189766692152,
+            0.022971994101435692
+          ],
+          "events": 88,
+          "rate": 0.0176,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9770280058985643,
+            0.9868288102333078
+          ],
+          "events": 4912,
+          "rate": 0.9824,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 1024,
+    "true_mean_loss": 0.02
+  },
+  {
+    "case": "outside03",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9985149292671527,
+            0.9999989974921378
+          ],
+          "events": 4999,
+          "rate": 0.9998,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9799852481121396,
+            0.9890644606109805
+          ],
+          "events": 4925,
+          "rate": 0.985,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 1024,
+    "true_mean_loss": 0.03
+  },
+  {
+    "case": "fractional",
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.0,
+            0.0010591022282324147
+          ],
+          "events": 0,
+          "rate": 0.0,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.9989408977717675,
+            1.0
+          ],
+          "events": 5000,
+          "rate": 1.0,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 1024,
+    "true_mean_loss": 0.01
+  },
+  {
+    "case": "cluster8",
+    "cluster_unit_noninferiority_pass": {
+      "ci99": [
+        0.0,
+        0.0010591022282324147
+      ],
+      "events": 0,
+      "rate": 0.0,
+      "trials": 5000
+    },
+    "cluster_unit_upper_coverage": {
+      "ci99": [
+        0.9989408977717675,
+        1.0
+      ],
+      "events": 5000,
+      "rate": 1.0,
+      "trials": 5000
+    },
+    "methods": {
+      "historical59": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.06627839447307615,
+            0.08574022510067905
+          ],
+          "events": 378,
+          "rate": 0.0756,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.06627839447307615,
+            0.08574022510067905
+          ],
+          "events": 378,
+          "rate": 0.0756,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.914259774899321,
+            0.9337216055269238
+          ],
+          "events": 4622,
+          "rate": 0.9244,
+          "trials": 5000
+        }
+      },
+      "split_IUT_claim": {
+        "noninferiority_pass": {
+          "ci99": [
+            0.23984992409087127,
+            0.27181891844491024
+          ],
+          "events": 1278,
+          "rate": 0.2556,
+          "trials": 5000
+        },
+        "pass_and_half_margin_precision": {
+          "ci99": [
+            0.23984992409087127,
+            0.27181891844491024
+          ],
+          "events": 1278,
+          "rate": 0.2556,
+          "trials": 5000
+        },
+        "upper_bound_coverage": {
+          "ci99": [
+            0.7281810815550898,
+            0.7601500759091288
+          ],
+          "events": 3722,
+          "rate": 0.7444,
+          "trials": 5000
+        }
+      }
+    },
+    "n": 1024,
+    "naive_exact_false_pass": 0.2720914374235425,
+    "true_mean_loss": 0.02
+  }
+]

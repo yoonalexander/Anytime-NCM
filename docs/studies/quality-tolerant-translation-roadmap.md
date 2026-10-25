@@ -1,6 +1,6 @@
 # Quality-tolerant early translation: next research roadmap
 
-October 25, 2026. **Original Q0 complete: statistically blocked. Its separately authorized multiplicity extension is locked; execution pending. Q1-Q4 remain unstarted.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
+October 25, 2026. **Q0 and its multiplicity extension are complete. The alternative method passed validation, but feasibility remains statistically blocked. Q1-Q4 remain unstarted; Q1 is not ready.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
 
 **Question:** Can a frozen NCM produce earlier translations that differ from its final text yet retain acceptable quality and deliver useful actual latency savings?
 
@@ -14,7 +14,7 @@ Keep the existing full-relative tolerances: corpus BLEU loss <=0.5, chrF loss <=
 
 | Phase | Work | Gate to advance |
 | --- | --- | --- |
-| Q0: statistical feasibility | **Complete, statistically blocked.** [Protocol](quality-tolerant/q0-protocol.md), [methods/feasibility](quality-tolerant/q0-methods-and-feasibility.md), [synthetic validation](../../results/quality_tolerant/q0/README.md), [decision](../../results/quality_tolerant/q0/decision.json). 26 tests/137 deterministic checks; 96,000 trials/140,000 draws. | **Did not pass.** Primary cue floor 385 covered groups versus at most 240 in the 448-group consumed union; planned 80% power first needs 1,038 covered groups. E4 has 1,024 total, unknown coverage and remains sealed. Stop before Q1. |
+| Q0: statistical feasibility | **Original Q0 complete, statistically blocked; subsequent multiplicity audit below.** [Protocol](quality-tolerant/q0-protocol.md), [methods/feasibility](quality-tolerant/q0-methods-and-feasibility.md), [synthetic validation](../../results/quality_tolerant/q0/README.md), [decision](../../results/quality_tolerant/q0/decision.json). 26 tests/137 deterministic checks; 96,000 trials/140,000 draws. | **Did not pass.** Primary cue floor 385 covered groups versus at most 240 in the 448-group consumed union; planned 80% power first needs 1,038 covered groups. E4 has 1,024 total, unknown coverage and remains sealed. Stop before Q1. |
 | Q1: saved-data opportunity | **Not ready; unstarted after failed Q0 gate.** Under a new bounded protocol, inspect already released S1/E2 trajectories for quality-tolerant assignments and candidate inspection schedules. Reuse is exploratory; disclose search selection and estimated costs. | Enough exploratory headroom after plausible observation costs to justify measurement. A found assignment is not a certified optimum. |
 | Q2: sparse-observation costs | Freeze a small inspection schedule and measure assigned exits against full and all relevant fixed-depth controls, charging reconstruction, decoding, transfers and observation work. | Matched-quality measured headroom meets the success contract. Clairvoyant assigned-exit timing remains a diagnostic, not an online selector. |
 | Q3: causal controller | Freeze current/past-only features and continuation-value labels; use separately allocated development data, bounded fits and actual online timing. | One locked policy passes development quality/cost gates against full and a strong fixed baseline. |
@@ -22,7 +22,7 @@ Keep the existing full-relative tolerances: corpus BLEU loss <=0.5, chrF loss <=
 
 ## Q0 multiplicity extension
 
-October 25: the user authorized a bounded audit of the statistical design. [Prospective protocol](quality-tolerant/q0-multiplicity-protocol.md), [numeric lock](quality-tolerant/q0-multiplicity-lock.json), [source lock](quality-tolerant/q0-multiplicity-source-lock.json). One joint all-required claim and a separately protected fixed-depth exclusion family will be validated on synthetic cases only. Original Q0 results and all tolerances remain unchanged; no Q1 or reservation release is authorized. Status: locked, execution pending.
+October 25: the user authorized a bounded audit of the statistical design. [Prospective protocol](quality-tolerant/q0-multiplicity-protocol.md), [numeric lock](quality-tolerant/q0-multiplicity-lock.json), [source lock](quality-tolerant/q0-multiplicity-source-lock.json). **Complete:** [methods/feasibility](quality-tolerant/q0-multiplicity-methods-and-feasibility.md), [synthetic evidence](../../results/quality_tolerant/q0_multiplicity/README.md), [decision](../../results/quality_tolerant/q0_multiplicity/decision.json). The protected-exclusion joint design passed64 tests and610,000 synthetic trials; necessary covered count385->183 and first80%-power count1038->436 at adverse p=.005. **Feasibility still blocked:** released numeric coverage is at most240, half-margin zero-event precision needs368, and separate population coverage/dependence is unresolved. Original Q0 results/margins and all reservations are unchanged. Stop before Q1.
 
 ## Boundaries and stopping
 

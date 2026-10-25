@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "local_links_checked": 36,
+  "all_links_exist": true,
+  "archived_source_hashes_match": true,
+  "decision_artifact_hashes_match": true,
+  "focused_tests_passed": 64,
+  "ledger_cases": 71,
+  "ledger_trials": 610000,
+  "negative_controls_retained_and_detect_error": true,
+  "incomplete_data_and_point_guards_reject": true,
+  "original_Q0_verified_without_rerun": true,
+  "additional_verification_wall_seconds": 4.637816400034353,
+  "cumulative_measured_seconds": 10.012071643034352,
+  "artifact_bytes_before_this_receipt": 232487,
+  "new_trials": 0,
+  "new_bootstrap_draws": 0,
+  "Q1_started": false
+}

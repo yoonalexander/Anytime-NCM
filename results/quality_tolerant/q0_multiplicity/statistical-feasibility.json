@@ -1,0 +1,2517 @@
+{
+  "bootstrap_rank_precision": [
+    {
+      "draws": 10000,
+      "rank": 188,
+      "tail": 0.025
+    },
+    {
+      "draws": 10000,
+      "rank": 0,
+      "tail": 0.000625
+    },
+    {
+      "draws": 100000,
+      "rank": 2299,
+      "tail": 0.025
+    },
+    {
+      "draws": 100000,
+      "rank": 33,
+      "tail": 0.000625
+    }
+  ],
+  "consumed_numeric_coverage": {
+    "actual_union_coverage": "unknown",
+    "other_consumed_groups": 192,
+    "union_upper_bound": 240,
+    "verified_E2_covered": 48
+  },
+  "design_alphas": {
+    "historical59": 0.0004237288135593221,
+    "optimistic_single_endpoint": 0.05,
+    "simultaneous_exclusion": 0.000625,
+    "split_IUT_claim": 0.025
+  },
+  "grid": [
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        }
+      ],
+      "n": 48,
+      "zero_adverse_upper_new": 0.07397278534728023,
+      "zero_adverse_upper_old": 0.14938898965981967
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9797333491284492
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9797333491284492
+        }
+      ],
+      "n": 128,
+      "zero_adverse_upper_new": 0.02840805344354391,
+      "zero_adverse_upper_old": 0.05887106722232948
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.3976004408064703,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.1573532821077899,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.024299533012240197,
+          "upper_coverage": 0.9757004669877598
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.003681282149888167,
+          "upper_coverage": 0.9753695658218821
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.3976004408064703,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.1573532821077899,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.024299533012240197,
+          "upper_coverage": 0.9757004669877598
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.003681282149888167,
+          "upper_coverage": 0.9753695658218821
+        }
+      ],
+      "n": 184,
+      "zero_adverse_upper_new": 0.019848627884201775,
+      "zero_adverse_upper_old": 0.041330398543331974
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999996
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.38197197760530316,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.14519690621578282,
+          "upper_coverage": 0.9999999999999996
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.020673144152819352,
+          "upper_coverage": 0.9793268558471806
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.002885180439191378,
+          "upper_coverage": 0.9799822016950948
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999996
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.38197197760530316,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.14519690621578282,
+          "upper_coverage": 0.9999999999999996
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.020673144152819352,
+          "upper_coverage": 0.9793268558471806
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.002885180439191378,
+          "upper_coverage": 0.9799822016950948
+        }
+      ],
+      "n": 192,
+      "zero_adverse_upper_new": 0.019029522168779824,
+      "zero_adverse_upper_old": 0.03964290335148523
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000007
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.3002889690851743,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0896286187023248,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.007838954906837857,
+          "upper_coverage": 0.9921610450931628
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0006686767514265506,
+          "upper_coverage": 0.9760239337918983
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000007
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.6624465197406608,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.3069101185867486,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.04623383608318657,
+          "upper_coverage": 0.953766163916814
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.005632050576448561,
+          "upper_coverage": 0.9760239337918983
+        }
+      ],
+      "n": 240,
+      "zero_adverse_upper_new": 0.015252810401278715,
+      "zero_adverse_upper_old": 0.031842085705121675
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999994
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9995892628624514
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.27714603575484464,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.07631498390659398,
+          "upper_coverage": 0.9999999999999994
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.005673817693396608,
+          "upper_coverage": 0.9943261823066032
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0004107371375493319,
+          "upper_coverage": 0.9835135464924474
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999994
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9995892628624514
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.6336756093892175,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.2736547402711198,
+          "upper_coverage": 0.9999999999999994
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.035316620336448244,
+          "upper_coverage": 0.9646833796635517
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.003662759010104901,
+          "upper_coverage": 0.9835135464924474
+        }
+      ],
+      "n": 256,
+      "zero_adverse_upper_new": 0.014306362729039379,
+      "zero_adverse_upper_old": 0.029882000590819614
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9998928143459571
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.14590259167570627,
+          "pass_probability": 0.698373120878391,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.021082141574634845,
+          "pass_probability": 0.26103266263714553,
+          "upper_coverage": 0.9789178584253652
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.00042737888916327644,
+          "pass_probability": 0.016866069089914802,
+          "upper_coverage": 0.9831339309100857
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 8.324266166692587e-06,
+          "pass_probability": 0.0006927100595598307,
+          "upper_coverage": 0.990208574232844
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.14590259167570627,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.021082141574634845,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.00042737888916327644,
+          "upper_coverage": 0.9995726211108372
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 8.324266166692587e-06,
+          "upper_coverage": 0.9998928143459571
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.42744327109013447,
+          "pass_probability": 0.698373120878391,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.10285529677321853,
+          "pass_probability": 0.26103266263714553,
+          "upper_coverage": 0.9789178584253652
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0037766338572997583,
+          "pass_probability": 0.016866069089914802,
+          "upper_coverage": 0.9831339309100857
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0001071856540432888,
+          "pass_probability": 0.0006927100595598307,
+          "upper_coverage": 0.9742419079594529
+        }
+      ],
+      "n": 384,
+      "zero_adverse_upper_new": 0.009560462304124202,
+      "zero_adverse_upper_old": 0.020021889709512557
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.2744314410588885,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.03594393743084365,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0003685679234539262,
+          "upper_coverage": 0.9996314320765477
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 2.840157306524817e-06,
+          "upper_coverage": 0.9998650592374326
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.2744314410588885,
+          "pass_probability": 0.8835189617094641,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.03594393743084365,
+          "pass_probability": 0.4187321308872788,
+          "upper_coverage": 0.9941760232313367
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0003685679234539262,
+          "pass_probability": 0.024010490067367905,
+          "upper_coverage": 0.9759895099326337
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 2.840157306524817e-06,
+          "pass_probability": 0.000571751800288036,
+          "upper_coverage": 0.9864491155505465
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.2744314410588885,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.03594393743084365,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0003685679234539262,
+          "upper_coverage": 0.9996314320765477
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 2.840157306524817e-06,
+          "upper_coverage": 0.9994282481997128
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.8835189617094641,
+          "pass_probability": 0.8835189617094641,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.4187321308872788,
+          "pass_probability": 0.4187321308872788,
+          "upper_coverage": 0.9640560625691568
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.024010490067367905,
+          "pass_probability": 0.024010490067367905,
+          "upper_coverage": 0.9759895099326337
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.000571751800288036,
+          "pass_probability": 0.000571751800288036,
+          "upper_coverage": 0.9707925691069264
+        }
+      ],
+      "n": 512,
+      "zero_adverse_upper_new": 0.007178950026259455,
+      "zero_adverse_upper_old": 0.01505431651832679
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.11429060153935358,
+          "pass_probability": 0.744765144882189,
+          "upper_coverage": 0.9999999999999996
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.002197406769827009,
+          "pass_probability": 0.11450439995957311,
+          "upper_coverage": 0.9996152453922592
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 2.487699432691632e-07,
+          "pass_probability": 0.00016224146642564508,
+          "upper_coverage": 0.999837758533574
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 1.5189212188272723e-11,
+          "pass_probability": 4.8139372751674644e-08,
+          "upper_coverage": 0.9997740901506862
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.9936231808554328,
+          "pass_probability": 0.9936231808554328,
+          "upper_coverage": 0.9941002354008128
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.6696238593132251,
+          "pass_probability": 0.6696238593132251,
+          "upper_coverage": 0.9754831383091063
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.016027266637095937,
+          "pass_probability": 0.016027266637095937,
+          "upper_coverage": 0.9839727333629038
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 3.2683698480716596e-05,
+          "pass_probability": 3.2683698480716596e-05,
+          "upper_coverage": 0.9849602870807916
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.11429060153935358,
+          "pass_probability": 0.8543137808382073,
+          "upper_coverage": 0.9999999999999996
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.002197406769827009,
+          "pass_probability": 0.19801406299029492,
+          "upper_coverage": 0.9996152453922592
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 2.487699432691632e-07,
+          "pass_probability": 0.000512890603509508,
+          "upper_coverage": 0.9994871093964901
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 1.5189212188272723e-11,
+          "pass_probability": 2.2492475722554412e-07,
+          "upper_coverage": 0.9994691778418633
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.9976020830887276,
+          "pass_probability": 0.9976020830887276,
+          "upper_coverage": 0.9637416477145452
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.7691603750205929,
+          "pass_probability": 0.7691603750205929,
+          "upper_coverage": 0.9754831383091063
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.03009791306826843,
+          "pass_probability": 0.03009791306826843,
+          "upper_coverage": 0.9699020869317313
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 8.938795172750021e-05,
+          "pass_probability": 8.938795172750021e-05,
+          "upper_coverage": 0.9601725579767785
+        }
+      ],
+      "n": 1024,
+      "zero_adverse_upper_new": 0.00359594040683448,
+      "zero_adverse_upper_old": 0.007555702579901359
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.3995984329713268,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.1589427091997877,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.02479544184922469,
+          "upper_coverage": 0.9752045581507753
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0037951362369981123,
+          "upper_coverage": 0.9962048637630023
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000004
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.3995984329713268,
+          "upper_coverage": 0.9999999999999999
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.1589427091997877,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.02479544184922469,
+          "upper_coverage": 0.9752045581507753
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0037951362369981123,
+          "upper_coverage": 0.9747251751639099
+        }
+      ],
+      "n": 183,
+      "zero_adverse_upper_new": 0.019956000841316168,
+      "zero_adverse_upper_old": 0.041551489337396115
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9893097366087997
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.47384797730822736,
+          "upper_coverage": 1.0000000000000002
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.2236886739786477,
+          "upper_coverage": 0.9999999999999998
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.04928165433008962,
+          "upper_coverage": 0.9507183456699105
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.010690263391200192,
+          "upper_coverage": 0.9893097366087997
+        }
+      ],
+      "n": 149,
+      "zero_adverse_upper_new": 0.02445362490559001,
+      "zero_adverse_upper_old": 0.05078846612657912
+    },
+    {
+      "exact_checks": [
+        {
+          "method": "historical59",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.1451730787173277,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "historical59",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0208713201588885,
+          "upper_coverage": 0.9999999999999997
+        },
+        {
+          "method": "historical59",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0004188313113799703,
+          "upper_coverage": 0.9995811686886198
+        },
+        {
+          "method": "historical59",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 8.074538181691787e-06,
+          "upper_coverage": 0.9998957801875932
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.1451730787173277,
+          "pass_probability": 0.6970184716294495,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0208713201588885,
+          "pass_probability": 0.2594508889785062,
+          "upper_coverage": 0.9791286798411112
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0004188313113799703,
+          "pass_probability": 0.016604280385262463,
+          "upper_coverage": 0.9833957196147373
+        },
+        {
+          "method": "split_IUT_claim",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 8.074538181691787e-06,
+          "pass_probability": 0.0006751443273943355,
+          "upper_coverage": 0.9904123593155436
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.1451730787173277,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0208713201588885,
+          "upper_coverage": 0.9999999999999997
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 0.0004188313113799703,
+          "upper_coverage": 0.9995811686886198
+        },
+        {
+          "method": "simultaneous_exclusion",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.0,
+          "pass_probability": 8.074538181691787e-06,
+          "upper_coverage": 0.9998957801875932
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0,
+          "pass_and_half_margin_precision_probability": 1.0,
+          "pass_probability": 1.0,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.005,
+          "pass_and_half_margin_precision_probability": 0.4260355676930624,
+          "pass_probability": 0.6970184716294495,
+          "upper_coverage": 1.0
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.01,
+          "pass_and_half_margin_precision_probability": 0.10203756522123268,
+          "pass_probability": 0.2594508889785062,
+          "upper_coverage": 0.9791286798411112
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.02,
+          "pass_and_half_margin_precision_probability": 0.0037096487579369886,
+          "pass_probability": 0.016604280385262463,
+          "upper_coverage": 0.9833957196147373
+        },
+        {
+          "method": "optimistic_single_endpoint",
+          "p": 0.03,
+          "pass_and_half_margin_precision_probability": 0.00010421981240699092,
+          "pass_probability": 0.0006751443273943355,
+          "upper_coverage": 0.9747209079476542
+        }
+      ],
+      "n": 385,
+      "zero_adverse_upper_new": 0.009535748710755071,
+      "zero_adverse_upper_old": 0.019970407577007476
+    }
+  ],
+  "population_sensitivity": [
+    {
+      "assumed_prevalence": 0.02,
+      "expected_covered": 5.12,
+      "numeric_power_p005_mixture": 1.7907408215946918e-247,
+      "probability_reach_zero_event_floor": 4.481533805910319e-247,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_covered": 25.6,
+      "numeric_power_p005_mixture": 3.024772587096562e-122,
+      "probability_reach_zero_event_floor": 7.571272811129175e-122,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_covered": 48.0,
+      "numeric_power_p005_mixture": 1.6567861155023057e-75,
+      "probability_reach_zero_event_floor": 4.1482082157651815e-75,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_covered": 102.4,
+      "numeric_power_p005_mixture": 8.225259215906375e-25,
+      "probability_reach_zero_event_floor": 2.0620161333954388e-24,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_covered": 256,
+      "numeric_power_p005_mixture": 0.2771460357548446,
+      "probability_reach_zero_event_floor": 1.0,
+      "total_groups": 256
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_covered": 8.96,
+      "numeric_power_p005_mixture": 3.5091440595381057e-184,
+      "probability_reach_zero_event_floor": 8.783005115757856e-184,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_covered": 44.800000000000004,
+      "numeric_power_p005_mixture": 5.228270211343179e-66,
+      "probability_reach_zero_event_floor": 1.3096222488181408e-65,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_covered": 84.0,
+      "numeric_power_p005_mixture": 1.0110324314964526e-27,
+      "probability_reach_zero_event_floor": 2.536335679018469e-27,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_covered": 179.20000000000002,
+      "numeric_power_p005_mixture": 0.14458632841472685,
+      "probability_reach_zero_event_floor": 0.3740720921779339,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_covered": 448,
+      "numeric_power_p005_mixture": 0.8118115138302613,
+      "probability_reach_zero_event_floor": 1.0,
+      "total_groups": 448
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_covered": 20.48,
+      "numeric_power_p005_mixture": 4.274844661948441e-112,
+      "probability_reach_zero_event_floor": 1.0703345932056986e-111,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_covered": 102.4,
+      "numeric_power_p005_mixture": 5.009297395279522e-15,
+      "probability_reach_zero_event_floor": 1.2598844258832247e-14,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_covered": 192.0,
+      "numeric_power_p005_mixture": 0.2895044786617105,
+      "probability_reach_zero_event_floor": 0.7755006694629865,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_covered": 409.6,
+      "numeric_power_p005_mixture": 0.6733515292420595,
+      "probability_reach_zero_event_floor": 1.0,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_covered": 1024,
+      "numeric_power_p005_mixture": 0.993623180855433,
+      "probability_reach_zero_event_floor": 1.0,
+      "total_groups": 1024
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_covered": 11.42,
+      "numeric_power_p005_mixture": 2.524337799310756e-161,
+      "probability_reach_zero_event_floor": 6.318605788812022e-161,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_covered": 57.1,
+      "numeric_power_p005_mixture": 1.148142429158717e-47,
+      "probability_reach_zero_event_floor": 2.8776090625137545e-47,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_covered": 107.0625,
+      "numeric_power_p005_mixture": 8.999581180946825e-15,
+      "probability_reach_zero_event_floor": 2.2625382272911232e-14,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_covered": 228.4,
+      "numeric_power_p005_mixture": 0.3188087807809048,
+      "probability_reach_zero_event_floor": 0.9999643697085057,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_covered": 571,
+      "numeric_power_p005_mixture": 0.8394689881691747,
+      "probability_reach_zero_event_floor": 1.0,
+      "total_groups": 571
+    },
+    {
+      "assumed_prevalence": 0.02,
+      "expected_covered": 31.900000000000002,
+      "numeric_power_p005_mixture": 4.7743323541792035e-79,
+      "probability_reach_zero_event_floor": 1.195888904127758e-78,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 0.1,
+      "expected_covered": 159.5,
+      "numeric_power_p005_mixture": 0.01144041053213915,
+      "probability_reach_zero_event_floor": 0.029255626647330182,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 0.1875,
+      "expected_covered": 299.0625,
+      "numeric_power_p005_mixture": 0.5338131633135388,
+      "probability_reach_zero_event_floor": 0.9999999999999989,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 0.4,
+      "expected_covered": 638.0,
+      "numeric_power_p005_mixture": 0.9142878440555994,
+      "probability_reach_zero_event_floor": 1.0,
+      "total_groups": 1595
+    },
+    {
+      "assumed_prevalence": 1,
+      "expected_covered": 1595,
+      "numeric_power_p005_mixture": 0.9999144525567178,
+      "probability_reach_zero_event_floor": 1.0,
+      "total_groups": 1595
+    }
+  ],
+  "power": {
+    "historical59": {
+      "0.005": {
+        "first_n_power80": 1038,
+        "grid": [
+          {
+            "max_adverse": -1,
+            "n": 48,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 128,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 184,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 192,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 240,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 256,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 384,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 1,
+            "n": 512,
+            "power": 0.2744314410588878
+          },
+          {
+            "max_adverse": 6,
+            "n": 1024,
+            "power": 0.7447651448821897
+          },
+          {
+            "max_adverse": -1,
+            "n": 183,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 149,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 0,
+            "n": 385,
+            "power": 0.14517307871732776
+          }
+        ]
+      },
+      "0.01": {
+        "first_n_power80": 2704,
+        "grid": [
+          {
+            "max_adverse": -1,
+            "n": 48,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 128,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 184,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 192,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 240,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 256,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 384,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 1,
+            "n": 512,
+            "power": 0.03594393743084347
+          },
+          {
+            "max_adverse": 6,
+            "n": 1024,
+            "power": 0.1145043999595722
+          },
+          {
+            "max_adverse": -1,
+            "n": 183,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 149,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 0,
+            "n": 385,
+            "power": 0.0208713201588885
+          }
+        ]
+      },
+      "0.02": {
+        "first_n_power80": null,
+        "grid": [
+          {
+            "max_adverse": -1,
+            "n": 48,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 128,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 184,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 192,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 240,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 256,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 384,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 1,
+            "n": 512,
+            "power": 0.00036856792345391705
+          },
+          {
+            "max_adverse": 6,
+            "n": 1024,
+            "power": 0.00016224146642564212
+          },
+          {
+            "max_adverse": -1,
+            "n": 183,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 149,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 0,
+            "n": 385,
+            "power": 0.00041883131137998423
+          }
+        ]
+      },
+      "0.03": {
+        "first_n_power80": null,
+        "grid": [
+          {
+            "max_adverse": -1,
+            "n": 48,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 128,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 184,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 192,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 240,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 256,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 384,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 1,
+            "n": 512,
+            "power": 2.840157306524778e-06
+          },
+          {
+            "max_adverse": 6,
+            "n": 1024,
+            "power": 4.813937275167331e-08
+          },
+          {
+            "max_adverse": -1,
+            "n": 183,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 149,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 0,
+            "n": 385,
+            "power": 8.074538181691777e-06
+          }
+        ]
+      }
+    },
+    "split_IUT_claim": {
+      "0.005": {
+        "first_n_power80": 436,
+        "grid": [
+          {
+            "max_adverse": -1,
+            "n": 48,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 128,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 0,
+            "n": 184,
+            "power": 0.3976004408064703
+          },
+          {
+            "max_adverse": 0,
+            "n": 192,
+            "power": 0.38197197760530327
+          },
+          {
+            "max_adverse": 0,
+            "n": 240,
+            "power": 0.3002889690851743
+          },
+          {
+            "max_adverse": 0,
+            "n": 256,
+            "power": 0.2771460357548446
+          },
+          {
+            "max_adverse": 2,
+            "n": 384,
+            "power": 0.698373120878391
+          },
+          {
+            "max_adverse": 4,
+            "n": 512,
+            "power": 0.8835189617094638
+          },
+          {
+            "max_adverse": 11,
+            "n": 1024,
+            "power": 0.993623180855433
+          },
+          {
+            "max_adverse": 0,
+            "n": 183,
+            "power": 0.3995984329713269
+          },
+          {
+            "max_adverse": -1,
+            "n": 149,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 2,
+            "n": 385,
+            "power": 0.697018471629449
+          }
+        ]
+      },
+      "0.01": {
+        "first_n_power80": 1233,
+        "grid": [
+          {
+            "max_adverse": -1,
+            "n": 48,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 128,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 0,
+            "n": 184,
+            "power": 0.15735328210778987
+          },
+          {
+            "max_adverse": 0,
+            "n": 192,
+            "power": 0.14519690621578288
+          },
+          {
+            "max_adverse": 0,
+            "n": 240,
+            "power": 0.08962861870232479
+          },
+          {
+            "max_adverse": 0,
+            "n": 256,
+            "power": 0.07631498390659396
+          },
+          {
+            "max_adverse": 2,
+            "n": 384,
+            "power": 0.26103266263714464
+          },
+          {
+            "max_adverse": 4,
+            "n": 512,
+            "power": 0.4187321308872768
+          },
+          {
+            "max_adverse": 11,
+            "n": 1024,
+            "power": 0.6696238593132249
+          },
+          {
+            "max_adverse": 0,
+            "n": 183,
+            "power": 0.15894270919978773
+          },
+          {
+            "max_adverse": -1,
+            "n": 149,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 2,
+            "n": 385,
+            "power": 0.2594508889785053
+          }
+        ]
+      },
+      "0.02": {
+        "first_n_power80": null,
+        "grid": [
+          {
+            "max_adverse": -1,
+            "n": 48,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 128,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 0,
+            "n": 184,
+            "power": 0.024299533012240204
+          },
+          {
+            "max_adverse": 0,
+            "n": 192,
+            "power": 0.02067314415281936
+          },
+          {
+            "max_adverse": 0,
+            "n": 240,
+            "power": 0.007838954906837859
+          },
+          {
+            "max_adverse": 0,
+            "n": 256,
+            "power": 0.005673817693396603
+          },
+          {
+            "max_adverse": 2,
+            "n": 384,
+            "power": 0.01686606908991465
+          },
+          {
+            "max_adverse": 4,
+            "n": 512,
+            "power": 0.02401049006736766
+          },
+          {
+            "max_adverse": 11,
+            "n": 1024,
+            "power": 0.01602726663709562
+          },
+          {
+            "max_adverse": 0,
+            "n": 183,
+            "power": 0.0247954418492247
+          },
+          {
+            "max_adverse": -1,
+            "n": 149,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 2,
+            "n": 385,
+            "power": 0.016604280385262352
+          }
+        ]
+      },
+      "0.03": {
+        "first_n_power80": null,
+        "grid": [
+          {
+            "max_adverse": -1,
+            "n": 48,
+            "power": 0.0
+          },
+          {
+            "max_adverse": -1,
+            "n": 128,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 0,
+            "n": 184,
+            "power": 0.0036812821498881697
+          },
+          {
+            "max_adverse": 0,
+            "n": 192,
+            "power": 0.002885180439191376
+          },
+          {
+            "max_adverse": 0,
+            "n": 240,
+            "power": 0.0006686767514265767
+          },
+          {
+            "max_adverse": 0,
+            "n": 256,
+            "power": 0.00041073713754933487
+          },
+          {
+            "max_adverse": 2,
+            "n": 384,
+            "power": 0.000692710059559822
+          },
+          {
+            "max_adverse": 4,
+            "n": 512,
+            "power": 0.0005717518002880272
+          },
+          {
+            "max_adverse": 11,
+            "n": 1024,
+            "power": 3.268369848071568e-05
+          },
+          {
+            "max_adverse": 0,
+            "n": 183,
+            "power": 0.0037951362369981114
+          },
+          {
+            "max_adverse": -1,
+            "n": 149,
+            "power": 0.0
+          },
+          {
+            "max_adverse": 2,
+            "n": 385,
+            "power": 0.0006751443273943258
+          }
+        ]
+      }
+    }
+  },
+  "theorem_bounds": {
+    "any_false_exclusion": 0.025,
+    "false_global_go_or_any_false_exclusion": 0.05,
+    "single_fixed_false_go_bound": 0.0275
+  },
+  "zero_event_floors": {
+    "historical59": 385,
+    "optimistic_single_endpoint": 149,
+    "simultaneous_exclusion": 366,
+    "split_IUT_claim": 183
+  },
+  "zero_event_half_margin_floor": 368
+}

@@ -1,0 +1,89 @@
+{
+  "stage": "Q0-multiplicity-extension",
+  "date": "2026-10-25",
+  "status": "complete_method_audit_passed_feasibility_still_blocked",
+  "method_audit_passed": true,
+  "scientific_feasibility_gate_passed": false,
+  "Q1_ready": false,
+  "Q1_started": false,
+  "lock_commit": "9dad432739b081efe9b2e7ab2c311a624154084e",
+  "original_Q0_preserved": true,
+  "margins_unchanged": true,
+  "all_potentially_feasible_fixed_depths_retained": true,
+  "candidate_method": "one joint IUT at .025 plus40 simultaneous exclusion bounds sharing .025",
+  "error_control": {
+    "false_go_or_any_false_exclusion_upper_bound": 0.05,
+    "conditional_on_valid_marginals": true,
+    "exact_corpus_bootstrap_coverage_claimed": false,
+    "bootstrap_numerical_allowance_additional": 0.001
+  },
+  "coverage": {
+    "old_minimum_zero_adverse": 385,
+    "new_minimum_zero_adverse": 183,
+    "new_zero_event_half_margin_precision_floor": 368,
+    "known_E2_covered": 48,
+    "released_union_total": 448,
+    "released_union_numeric_upper_bound": 240,
+    "E4_total_sealed": 1024,
+    "E4_covered_independent_count": "unknown"
+  },
+  "power_at_adverse_p005": {
+    "old_first_covered_n80": 1038,
+    "new_first_covered_n80": 436,
+    "power_at_n240": 0.3002889690851743,
+    "power_at_n1024": 0.9936231808554328,
+    "whole_study_joint_power": "unestablished"
+  },
+  "checks": {
+    "focused_tests_passed": 64,
+    "new_tests": 38,
+    "original_Q0_regression_tests": 26,
+    "gate_cases": 17,
+    "cue_cases": 54,
+    "trials": 610000,
+    "bootstrap_draws": 0,
+    "hash_checks": 48,
+    "all_frozen_MC_sanity_checks_passed": true,
+    "full_suite_rerun": false
+  },
+  "resources": {
+    "execution_wall_seconds": 5.374255242999999,
+    "max_rss_bytes": 126164992,
+    "cost_dollars": 0
+  },
+  "forbidden_work": {
+    "checkpoint_loads": 0,
+    "fits": 0,
+    "real_body_reads": 0,
+    "requests": 0,
+    "target_encodings": 0,
+    "training": 0,
+    "trajectories": 0,
+    "warmups": 0
+  },
+  "reservations": {
+    "E3_128": "sealed",
+    "E4_1024": "sealed",
+    "unallocated571": "sealed"
+  },
+  "limitations": [
+    "coverage/power/precision of an eligible separate population not established",
+    "document dependence and checkpoint-training overlap unresolved",
+    "corpus quality and real latency not assessed",
+    "marginal bootstrap population coverage remains approximate",
+    "search-selected consumed data cannot become fresh confirmation"
+  ],
+  "next_action": "Stop before Q1; no new sampling, reservation release or empirical study authorized.",
+  "method_report": "docs/studies/quality-tolerant/q0-multiplicity-methods-and-feasibility.md",
+  "artifact_sha256": {
+    "cue-trials.json": "e71c6678fb5ff6c3e773e51bf3ce02275f88f8c428b1cc0d650f6e2d8ba9c464",
+    "execution-sources.zip": "075fe0ff66cad90ffd1768667f8178c1c3f50bff805bd4f51448ea798b34af93",
+    "execution.json": "a61d8d98755c80c0c7c183ce75d61c8c06574d8117d9f31aaf475bceede459f4",
+    "focused-tests.xml": "d56eb92a9e4d89b7695a955f3eac6ef1228bdf27971497848c1b41324c942f5f",
+    "gate-trials.json": "e43c55f3a620bf527629ff6693df3bf6d65ba4de1d31fdc265ba3b782a2d6743",
+    "ledger.jsonl": "80fb3d2d2d50363353515046488a20d8ae72a2b6d570457fb1f1780e89f882f4",
+    "started.json": "274f239c98cd3cc00677480cec09c6b6a3fa0fd2d25bb8039c00602a28b41448",
+    "statistical-feasibility.json": "9711324ac473530e1d0f7caf672e0c80366a22685b01eb33466a9cd5666f3571",
+    "test-output.txt": "d51742300bf896dcd4803e5f69b5e3004a207bf8bc7366f5ba43a5f2e3d2af16"
+  }
+}
