@@ -1,0 +1,128 @@
+{
+  "stage": "Q0-population-coverage-audit",
+  "date": "2026-10-25",
+  "status": "complete_actual_coverage_and_document_overlap_established_feasibility_blocked",
+  "audit_passed": true,
+  "statistical_feasibility_gate_passed": false,
+  "Q1_ready": false,
+  "Q1_started": false,
+  "lock_commit": "22d57ab7b23d197b1a4c7f9a7d5a9df6b96a756f",
+  "model_outputs_still_sealed": true,
+  "reference_coverage_aggregate_access_only": true,
+  "new_reference_derived_exposure_disclosed": true,
+  "original_manifests_unchanged": true,
+  "margins_and_endpoints_unchanged": true,
+  "observed_numeric_coverage": {
+    "E2_audit": {
+      "groups": 256,
+      "covered": 48
+    },
+    "E3_development": {
+      "groups": 128,
+      "covered": 30
+    },
+    "E4_confirmation": {
+      "groups": 1024,
+      "covered": 191
+    },
+    "S1_development": {
+      "groups": 64,
+      "covered": 13
+    },
+    "S1_exploration": {
+      "groups": 128,
+      "covered": 31
+    },
+    "closed_unallocated": {
+      "groups": 571,
+      "covered": 90
+    },
+    "consumed_union": {
+      "groups": 448,
+      "covered": 92
+    }
+  },
+  "document_alignment": {
+    "normalization": "HTML unescape; strip/collapse whitespace; exact ordered equality",
+    "normalized_cross_role_alias_groups": 0,
+    "normalized_equal_rows": 3003,
+    "normalized_source_alias_groups": 0,
+    "raw_equal_rows": 3003,
+    "rows": 3003
+  },
+  "documents": {
+    "full_corpus": 164,
+    "known_consumed_group_count": 704,
+    "known_consumed_document_count": 150,
+    "E4_document_count": 160,
+    "E4_shared_with_consumed_documents": 148,
+    "E4_rows_sharing_consumed_documents": 988,
+    "E4_numeric_rows_in_consumed_documents": 179,
+    "E4_disjoint_rows": 36,
+    "E4_disjoint_numeric_rows": 12,
+    "disjoint_counts_not_reallocated": true
+  },
+  "E4_iid_planning_only": {
+    "NI_floor_met": true,
+    "covered": 191,
+    "hypothetical_power": [
+      {
+        "NI_and_half_margin_precision_probability": 0.0,
+        "NI_power": 0.3838914347791991,
+        "NI_power80_met": false,
+        "adverse_probability": 0.005
+      },
+      {
+        "NI_and_half_margin_precision_probability": 0.0,
+        "NI_power": 0.1466635416321039,
+        "NI_power80_met": false,
+        "adverse_probability": 0.01
+      }
+    ],
+    "independence_assumed_not_established": true,
+    "zero_adverse_upper": 0.01912819417584633,
+    "zero_event_half_margin_floor_met": false
+  },
+  "checks": {
+    "focused_tests_passed": 87,
+    "new_synthetic_tests": 23,
+    "prior_Q0_regressions": 64,
+    "source_artifact_preservation_hash_checks": 68,
+    "full_suite_rerun": false
+  },
+  "execution_counters": {
+    "download_bytes": 3255445,
+    "download_requests": 1,
+    "official_source_materializations": 3003,
+    "pinned_source_materializations": 3003,
+    "reference_materializations": 2171
+  },
+  "forbidden_work": {
+    "MC_trials": 0,
+    "bootstrap_draws": 0,
+    "checkpoint_loads": 0,
+    "fits": 0,
+    "model_output_body_reads": 0,
+    "requests": 0,
+    "searches": 0,
+    "target_encodings": 0,
+    "training": 0,
+    "trajectories": 0,
+    "warmups": 0
+  },
+  "cost_dollars": 0,
+  "method_report": "docs/studies/quality-tolerant/q0-population-methods-and-feasibility.md",
+  "next_action": "Stop before Q1; any new population/grouping design or exploratory exception needs a separate prospective scope.",
+  "artifact_sha256": {
+    "coverage-access-release.json": "0adfd0ad0df6b07267fe1d4dab1c24ef6000d7b5d35acefb09fd7a6551a22ded",
+    "document-map.json": "42c8e9b0263cdb0cc10b945059a5e85992ccd8afee11c36d7d110e7a1ebc989f",
+    "document-provenance.json": "2074cdd7b4e9019afe4fed0dc3c0edd5222be2d41dffcf3995b4314854112cbd",
+    "execution-sources.zip": "dc5de6397bf45f70bf36683863aefc5aae6b4a7e116496db39d098685fb8aae7",
+    "execution.json": "eb6807773ce0cf77d145ab1261f8e790dd1a155927ca2057dbda4684cf60ccf5",
+    "focused-tests.xml": "10f3135c48f4959d1600eb6dbbbe4d66ea49701ee171525c49ad00d945daa0dc",
+    "ledger.jsonl": "1238131b3a36e626d0d3e59aa8c690c102fd28d86fbaf5c9cbcc5161777e8b05",
+    "population-coverage.json": "163f3ad4073fe0d26a86a3d4d340cd50fea1f351796c1c0b42bcd978021804ec",
+    "started.json": "6f9c7dd6345d43cb98c0a5f4829edcf7d14c0eeb2e84ef7041276ab474d8e25c",
+    "test-output.txt": "e40972e00fd7785504def8850aba9ed492b94259ab0133032be9a8ba9e458a3f"
+  }
+}

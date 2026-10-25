@@ -1,0 +1,498 @@
+{
+  "document_metadata_status": "aligned",
+  "document_overlap_counts": {
+    "E2_audit": {
+      "E2_audit": 116,
+      "E3_development": 59,
+      "E4_confirmation": 115,
+      "S1_development": 20,
+      "S1_exploration": 13,
+      "closed_unallocated": 110,
+      "original_consumed_final": 89
+    },
+    "E3_development": {
+      "E2_audit": 59,
+      "E3_development": 73,
+      "E4_confirmation": 71,
+      "S1_development": 16,
+      "S1_exploration": 12,
+      "closed_unallocated": 72,
+      "original_consumed_final": 62
+    },
+    "E4_confirmation": {
+      "E2_audit": 115,
+      "E3_development": 71,
+      "E4_confirmation": 160,
+      "S1_development": 31,
+      "S1_exploration": 23,
+      "closed_unallocated": 147,
+      "original_consumed_final": 115
+    },
+    "S1_development": {
+      "E2_audit": 20,
+      "E3_development": 16,
+      "E4_confirmation": 31,
+      "S1_development": 31,
+      "S1_exploration": 18,
+      "closed_unallocated": 31,
+      "original_consumed_final": 23
+    },
+    "S1_exploration": {
+      "E2_audit": 13,
+      "E3_development": 12,
+      "E4_confirmation": 23,
+      "S1_development": 18,
+      "S1_exploration": 24,
+      "closed_unallocated": 21,
+      "original_consumed_final": 20
+    },
+    "closed_unallocated": {
+      "E2_audit": 110,
+      "E3_development": 72,
+      "E4_confirmation": 147,
+      "S1_development": 31,
+      "S1_exploration": 21,
+      "closed_unallocated": 150,
+      "original_consumed_final": 108
+    },
+    "original_consumed_final": {
+      "E2_audit": 89,
+      "E3_development": 62,
+      "E4_confirmation": 115,
+      "S1_development": 23,
+      "S1_exploration": 20,
+      "closed_unallocated": 108,
+      "original_consumed_final": 116
+    }
+  },
+  "full_corpus_documents": 164,
+  "known_consumed_documents": 150,
+  "known_consumed_groups_for_document_exposure": 704,
+  "model_outputs_inspected": 0,
+  "output_reference_texts": 0,
+  "per_input_coverage_fields_written": 0,
+  "reference_derived_aggregate_exposure_disclosed": true,
+  "reference_materializations": 2171,
+  "roles": {
+    "E2_audit": {
+      "coverage_fraction": 0.1875,
+      "documents": {
+        "cluster_size_max": 10,
+        "cluster_size_median": 2.0,
+        "cluster_size_min": 1,
+        "count": 116,
+        "disjoint_counts_are_diagnostic_not_reallocated": true,
+        "groups_in_documents_disjoint_from_known_consumed": 0,
+        "groups_in_known_consumed_documents": 256,
+        "numeric_groups_in_documents_disjoint_from_known_consumed": 0,
+        "numeric_groups_in_known_consumed_documents": 48,
+        "shared_with_known_consumed_documents": 116,
+        "with_numeric_covered_groups": 38
+      },
+      "groups": 256,
+      "negation_denominator_planning_iid_only": {
+        "NI_floor_met": true,
+        "covered": 256,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.27714603575484464,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.07631498390659398,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.014306362729039379,
+        "zero_event_half_margin_floor_met": false
+      },
+      "numeric_covered_groups": 48,
+      "numeric_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 48,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.07397278534728023,
+        "zero_event_half_margin_floor_met": false
+      }
+    },
+    "E3_development": {
+      "coverage_fraction": 0.234375,
+      "documents": {
+        "cluster_size_max": 6,
+        "cluster_size_median": 1.0,
+        "cluster_size_min": 1,
+        "count": 73,
+        "disjoint_counts_are_diagnostic_not_reallocated": true,
+        "groups_in_documents_disjoint_from_known_consumed": 3,
+        "groups_in_known_consumed_documents": 125,
+        "numeric_groups_in_documents_disjoint_from_known_consumed": 1,
+        "numeric_groups_in_known_consumed_documents": 29,
+        "shared_with_known_consumed_documents": 71,
+        "with_numeric_covered_groups": 27
+      },
+      "groups": 128,
+      "negation_denominator_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 128,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.02840805344354391,
+        "zero_event_half_margin_floor_met": false
+      },
+      "numeric_covered_groups": 30,
+      "numeric_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 30,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.1157033082220278,
+        "zero_event_half_margin_floor_met": false
+      }
+    },
+    "E4_confirmation": {
+      "coverage_fraction": 0.1865234375,
+      "documents": {
+        "cluster_size_max": 26,
+        "cluster_size_median": 5.0,
+        "cluster_size_min": 1,
+        "count": 160,
+        "disjoint_counts_are_diagnostic_not_reallocated": true,
+        "groups_in_documents_disjoint_from_known_consumed": 36,
+        "groups_in_known_consumed_documents": 988,
+        "numeric_groups_in_documents_disjoint_from_known_consumed": 12,
+        "numeric_groups_in_known_consumed_documents": 179,
+        "shared_with_known_consumed_documents": 148,
+        "with_numeric_covered_groups": 91
+      },
+      "groups": 1024,
+      "negation_denominator_planning_iid_only": {
+        "NI_floor_met": true,
+        "covered": 1024,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.9936231808554328,
+            "NI_power": 0.9936231808554328,
+            "NI_power80_met": true,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.6696238593132251,
+            "NI_power": 0.6696238593132251,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.00359594040683448,
+        "zero_event_half_margin_floor_met": true
+      },
+      "numeric_covered_groups": 191,
+      "numeric_planning_iid_only": {
+        "NI_floor_met": true,
+        "covered": 191,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.3838914347791991,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.1466635416321039,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.01912819417584633,
+        "zero_event_half_margin_floor_met": false
+      }
+    },
+    "S1_development": {
+      "coverage_fraction": 0.203125,
+      "documents": {
+        "cluster_size_max": 5,
+        "cluster_size_median": 2.0,
+        "cluster_size_min": 1,
+        "count": 31,
+        "disjoint_counts_are_diagnostic_not_reallocated": true,
+        "groups_in_documents_disjoint_from_known_consumed": 0,
+        "groups_in_known_consumed_documents": 64,
+        "numeric_groups_in_documents_disjoint_from_known_consumed": 0,
+        "numeric_groups_in_known_consumed_documents": 13,
+        "shared_with_known_consumed_documents": 31,
+        "with_numeric_covered_groups": 11
+      },
+      "groups": 64,
+      "negation_denominator_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 64,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.056009089386636575,
+        "zero_event_half_margin_floor_met": false
+      },
+      "numeric_covered_groups": 13,
+      "numeric_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 13,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.24705263800047095,
+        "zero_event_half_margin_floor_met": false
+      }
+    },
+    "S1_exploration": {
+      "coverage_fraction": 0.2421875,
+      "documents": {
+        "cluster_size_max": 25,
+        "cluster_size_median": 4.0,
+        "cluster_size_min": 1,
+        "count": 24,
+        "disjoint_counts_are_diagnostic_not_reallocated": true,
+        "groups_in_documents_disjoint_from_known_consumed": 0,
+        "groups_in_known_consumed_documents": 128,
+        "numeric_groups_in_documents_disjoint_from_known_consumed": 0,
+        "numeric_groups_in_known_consumed_documents": 31,
+        "shared_with_known_consumed_documents": 24,
+        "with_numeric_covered_groups": 17
+      },
+      "groups": 128,
+      "negation_denominator_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 128,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.02840805344354391,
+        "zero_event_half_margin_floor_met": false
+      },
+      "numeric_covered_groups": 31,
+      "numeric_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 31,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.11218874692236998,
+        "zero_event_half_margin_floor_met": false
+      }
+    },
+    "closed_unallocated": {
+      "coverage_fraction": 0.15761821366024517,
+      "documents": {
+        "cluster_size_max": 16,
+        "cluster_size_median": 3.0,
+        "cluster_size_min": 1,
+        "count": 150,
+        "disjoint_counts_are_diagnostic_not_reallocated": true,
+        "groups_in_documents_disjoint_from_known_consumed": 22,
+        "groups_in_known_consumed_documents": 549,
+        "numeric_groups_in_documents_disjoint_from_known_consumed": 7,
+        "numeric_groups_in_known_consumed_documents": 83,
+        "shared_with_known_consumed_documents": 139,
+        "with_numeric_covered_groups": 64
+      },
+      "groups": 571,
+      "negation_denominator_planning_iid_only": {
+        "NI_floor_met": true,
+        "covered": 571,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.45594444695073133,
+            "NI_power": 0.8394689881691746,
+            "NI_power80_met": true,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0752288568020881,
+            "NI_power": 0.3244841325148374,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.0064395609166397584,
+        "zero_event_half_margin_floor_met": true
+      },
+      "numeric_covered_groups": 90,
+      "numeric_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 90,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.04015891961577465,
+        "zero_event_half_margin_floor_met": false
+      }
+    },
+    "consumed_union": {
+      "coverage_fraction": 0.20535714285714285,
+      "documents": {
+        "cluster_size_max": 25,
+        "cluster_size_median": 2.0,
+        "cluster_size_min": 1,
+        "count": 132,
+        "disjoint_counts_are_diagnostic_not_reallocated": true,
+        "groups_in_documents_disjoint_from_known_consumed": 0,
+        "groups_in_known_consumed_documents": 448,
+        "numeric_groups_in_documents_disjoint_from_known_consumed": 0,
+        "numeric_groups_in_known_consumed_documents": 92,
+        "shared_with_known_consumed_documents": 132,
+        "with_numeric_covered_groups": 53
+      },
+      "groups": 448,
+      "negation_denominator_planning_iid_only": {
+        "NI_floor_met": true,
+        "covered": 448,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.10586201936274803,
+            "NI_power": 0.8118115138302614,
+            "NI_power80_met": true,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.011080699561144693,
+            "NI_power": 0.34441808620315695,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.008200298529035465,
+        "zero_event_half_margin_floor_met": true
+      },
+      "numeric_covered_groups": 92,
+      "numeric_planning_iid_only": {
+        "NI_floor_met": false,
+        "covered": 92,
+        "hypothetical_power": [
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.005
+          },
+          {
+            "NI_and_half_margin_precision_probability": 0.0,
+            "NI_power": 0.0,
+            "NI_power80_met": false,
+            "adverse_probability": 0.01
+          }
+        ],
+        "independence_assumed_not_established": true,
+        "zero_adverse_upper": 0.039303287739518036,
+        "zero_event_half_margin_floor_met": false
+      }
+    }
+  }
+}

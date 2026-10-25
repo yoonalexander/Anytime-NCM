@@ -1,6 +1,6 @@
 # Quality-tolerant early translation: next research roadmap
 
-October 25, 2026. **Q0 and its multiplicity extension are complete. The alternative method passed validation, but feasibility remains statistically blocked. Q1-Q4 remain unstarted; Q1 is not ready.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
+October 25, 2026. **Q0, its multiplicity audit and its population/coverage audit are complete. Coverage and document overlap are now measured; feasibility remains statistically blocked. Q1-Q4 remain unstarted.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
 
 **Question:** Can a frozen NCM produce earlier translations that differ from its final text yet retain acceptable quality and deliver useful actual latency savings?
 
@@ -26,7 +26,7 @@ October 25: the user authorized a bounded audit of the statistical design. [Pros
 
 ## Q0 population/coverage audit
 
-October25: the user authorized a narrowly scoped population/reference-coverage audit with model outputs sealed. [Protocol](quality-tolerant/q0-population-protocol.md), [numeric lock](quality-tolerant/q0-population-lock.json), [source lock](quality-tolerant/q0-population-source-lock.json). Exactly2,171 references may be inspected by the machine for aggregate numeric coverage; one bounded official source-archive retrieval may recover document IDs after exact input alignment. No per-input cue flags, quality outcomes, model requests or Q1 access. Status: protocol locked; execution pending. Original manifests and gates remain immutable.
+October25: the user authorized a narrowly scoped population/reference-coverage audit with model outputs sealed. [Protocol](quality-tolerant/q0-population-protocol.md), [numeric lock](quality-tolerant/q0-population-lock.json), [source lock](quality-tolerant/q0-population-source-lock.json). **Complete:** [methods/results](quality-tolerant/q0-population-methods-and-feasibility.md), [aggregate evidence](../../results/quality_tolerant/q0_population/README.md), [decision](../../results/quality_tolerant/q0_population/decision.json). Consumed numeric coverage is92/448; E4 coverage191/1024 clears the183 zero-adverse floor but fails power/precision (iid p=.005 NI power38.389%). All3,003 sources align exactly to official document metadata;988 E4 inputs share documents with consumed groups. Only36 E4 rows/12 numeric-covered rows are in disjoint documents.87 tests passed. Reference-derived aggregate exposure is disclosed; model outputs remain sealed. No per-input cue flags, quality outcomes, model requests, reallocation or Q1 work. Original manifests/gates remain immutable; Q1 is still not ready.
 
 ## Boundaries and stopping
 

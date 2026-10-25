@@ -1,0 +1,22 @@
+{
+  "alignment": {
+    "normalization": "HTML unescape; strip/collapse whitespace; exact ordered equality",
+    "normalized_cross_role_alias_groups": 0,
+    "normalized_equal_rows": 3003,
+    "normalized_source_alias_groups": 0,
+    "raw_equal_rows": 3003,
+    "rows": 3003
+  },
+  "provenance": {
+    "archive_bytes": 3255445,
+    "archive_md5": "a8cd784e006feb32ac6f3d9ec7eb389a",
+    "archive_sha256": "f298b2435218a563268da99a66b21c03d925895c5f26fac82706e12b40b63619",
+    "decompressed_bytes": 10219520,
+    "member_bytes": 466173,
+    "member_sha256": "830c9dc32cc8b1ba33896b5693ab5c0b5d6393ad33cc643c96d6bd4f307c6d5b",
+    "opened_member": "test-full/newstest2014-deen-src.de.sgm",
+    "other_member_body_decodes": 0,
+    "url": "https://www.statmt.org/wmt14/test-full.tgz"
+  },
+  "status": "aligned"
+}
