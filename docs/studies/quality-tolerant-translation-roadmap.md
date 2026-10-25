@@ -24,6 +24,10 @@ Keep the existing full-relative tolerances: corpus BLEU loss <=0.5, chrF loss <=
 
 October 25: the user authorized a bounded audit of the statistical design. [Prospective protocol](quality-tolerant/q0-multiplicity-protocol.md), [numeric lock](quality-tolerant/q0-multiplicity-lock.json), [source lock](quality-tolerant/q0-multiplicity-source-lock.json). **Complete:** [methods/feasibility](quality-tolerant/q0-multiplicity-methods-and-feasibility.md), [synthetic evidence](../../results/quality_tolerant/q0_multiplicity/README.md), [decision](../../results/quality_tolerant/q0_multiplicity/decision.json). The protected-exclusion joint design passed64 tests and610,000 synthetic trials; necessary covered count385->183 and first80%-power count1038->436 at adverse p=.005. **Feasibility still blocked:** released numeric coverage is at most240, half-margin zero-event precision needs368, and separate population coverage/dependence is unresolved. Original Q0 results/margins and all reservations are unchanged. Stop before Q1.
 
+## Q0 population/coverage audit
+
+October25: the user authorized a narrowly scoped population/reference-coverage audit with model outputs sealed. [Protocol](quality-tolerant/q0-population-protocol.md), [numeric lock](quality-tolerant/q0-population-lock.json), [source lock](quality-tolerant/q0-population-source-lock.json). Exactly2,171 references may be inspected by the machine for aggregate numeric coverage; one bounded official source-archive retrieval may recover document IDs after exact input alignment. No per-input cue flags, quality outcomes, model requests or Q1 access. Status: protocol locked; execution pending. Original manifests and gates remain immutable.
+
 ## Boundaries and stopping
 
 Before each executed phase, freeze identities/access releases and numeric sample, search, fit, request, warmup, retry, time, memory, storage and dollar caps. Existing E3/E4 reservations remain sealed until their new prerequisites and explicit releases are satisfied. Historical finals and E2 are consumed data; unknown document/training overlap remains disclosed.

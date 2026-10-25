@@ -1,0 +1,62 @@
+{
+  "stage": "Q0-population-coverage-audit",
+  "starting_main": "d3f1cf1914c024c967ab0f39e2aaa871c3864a2f",
+  "role_counts": {
+    "S1_exploration": 128,
+    "S1_development": 64,
+    "E2_audit": 256,
+    "E3_development": 128,
+    "E4_confirmation": 1024,
+    "closed_unallocated": 571
+  },
+  "expected_parent_rows": 3003,
+  "reference_path": "data/wmt14/reference_translations.pickle",
+  "reference_sha256": "3dcef81d8aeded13f79917cd6b794d2ca9f33223bf35c1fff1c5643eae0df52b",
+  "reference_bytes": 366263,
+  "source_path": "data/wmt14/sources.pickle",
+  "source_sha256": "62254653c32ce9e8b93576797597381babaab301b10ee0a2a3babec89576ea43",
+  "source_bytes": 406100,
+  "document_url": "https://www.statmt.org/wmt14/test-full.tgz",
+  "archive_md5": "a8cd784e006feb32ac6f3d9ec7eb389a",
+  "archive_path": "data/wmt14/q0_population/test-full.tgz",
+  "source_member": "test-full/newstest2014-deen-src.de.sgm",
+  "download_seconds": 60,
+  "read_timeout_seconds": 30,
+  "decompression_bytes": 67108864,
+  "member_bytes": 2097152,
+  "claim_alpha": 0.025,
+  "numeric_margin": 0.02,
+  "planning_precision": 0.01,
+  "planning_adverse_probabilities": [
+    0.005,
+    0.01
+  ],
+  "limits": {
+    "reference_materializations": 2171,
+    "pinned_source_materializations": 3003,
+    "official_source_materializations": 3003,
+    "download_requests": 1,
+    "download_bytes": 8388608,
+    "wall_seconds": 1800,
+    "cpu_seconds": 1200,
+    "memory_bytes": 2147483648,
+    "storage_bytes": 33554432,
+    "threads": 1,
+    "dollars": 0
+  },
+  "preparation_reporting_charge_seconds": 7200,
+  "total_wall_cap_seconds": 9000,
+  "forbidden_work": {
+    "model_output_body_reads": 0,
+    "requests": 0,
+    "checkpoint_loads": 0,
+    "trajectories": 0,
+    "warmups": 0,
+    "fits": 0,
+    "target_encodings": 0,
+    "training": 0,
+    "searches": 0,
+    "MC_trials": 0,
+    "bootstrap_draws": 0
+  }
+}
