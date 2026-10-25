@@ -14,6 +14,8 @@ The repository now provides validated full-resolution prefix reconstruction, con
 
 ## Contents
 
+[Post-E2 terminal-cost screen](results/evidence_gaps/e2_terminal_screen/summary.md): assembling the same earliest-exact exits from measured terminal-only cells gives 2.67% savings, exploratory interval [1.74%,3.73%], below the 5% target even without earlier inspections. This is post hoc consumed-data analysis, not an online policy or confirmation. No new inference or controller/final access follows. [Continuous closure scope](docs/studies/evidence-gaps/continuous-closure-plan.md).
+
 - [Research approach](#research-approach)
 - [Implementation status](#implementation-status)
 - [Results and project status](#results-and-project-status)

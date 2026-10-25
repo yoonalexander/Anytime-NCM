@@ -1,0 +1,14 @@
+{
+  "new_outcome_access": false,
+  "post_hoc": true,
+  "source_commit": "598364c45863285e8187b902ffd8fa314147fd27",
+  "source_sha256": {
+    "docs/studies/evidence-gaps/e2-terminal-screen-lock.json": "8116a81c62147d1abb0e1cf90685eb11ad018f88bae54a3f54dfd332a61f2ab4",
+    "docs/studies/evidence-gaps/e2-terminal-screen-protocol.md": "5a4bcf6c56e579d217565a3b5e2362e076e68be988cc1ad914cea7680d50553e",
+    "scripts/run_terminal_screen.py": "0789260b7954be8c5be7db87940e9c5923e2edab92fad8239df7e31ff9c3a5a0",
+    "src/anytime_ncm/evidence_preflight.py": "c84668cb86a5ad35cabed24271848f1959ec2f750f5b16ed06f2944742618e5c",
+    "src/anytime_ncm/evidence_timing.py": "8f44ff6c0693891d1078a2fa4f44b7cbc0fd0ec7fcf846fbeb9f1d7e8dd446b7",
+    "src/anytime_ncm/terminal_screen.py": "bead45d838487751f9f4fcf86145e1eac155ec26313d83f71ba32d877c766a44",
+    "tests/test_terminal_screen.py": "6dfb0e4df79a5ab67c142d99ab1ca7892dec67ab1c73dcc98a35cce1d00d3f29"
+  }
+}

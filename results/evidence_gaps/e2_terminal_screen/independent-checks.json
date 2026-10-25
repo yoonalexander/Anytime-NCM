@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "selected_identities": 256,
+  "selected_request_values": 3072,
+  "reused_bootstrap_vectors": 100000,
+  "cost_intervals_recomputed": 2,
+  "new_reference_reads": 0,
+  "model_calls": 0,
+  "post_hoc": true,
+  "checker_sha256": "8d062ca36711bf4b00edc8859a61834c2f1f6482c382176cb4e2e0fb1eac4774",
+  "independent_human_review": false
+}

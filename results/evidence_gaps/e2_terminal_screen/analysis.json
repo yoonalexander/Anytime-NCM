@@ -1,0 +1,86 @@
+{
+  "E3_release": false,
+  "E4_release": false,
+  "certified_global_oracle_optimum": false,
+  "contrasts": {
+    "dense_exact_versus_terminal_exact": {
+      "degenerate": false,
+      "lower": -0.16969839130681308,
+      "precision": {
+        "conservative_one_based_rank": 1130,
+        "draws": 100000,
+        "expected_tail_count": 1250.0,
+        "quantile_resolved": true,
+        "tail_count_ci95": [
+          1182,
+          1319
+        ],
+        "tail_probability": 0.0125,
+        "zero_tail_probability": 0.0
+      },
+      "process_reductions": [
+        -0.1655068672018103,
+        -0.16487253675806834
+      ],
+      "relative_mean_reduction": -0.16518814671107096,
+      "upper": -0.16051149563631517
+    },
+    "terminal_exact_versus_full": {
+      "degenerate": false,
+      "lower": 0.01735447789078437,
+      "precision": {
+        "conservative_one_based_rank": 1130,
+        "draws": 100000,
+        "expected_tail_count": 1250.0,
+        "quantile_resolved": true,
+        "tail_count_ci95": [
+          1182,
+          1319
+        ],
+        "tail_probability": 0.0125,
+        "zero_tail_probability": 0.0
+      },
+      "process_reductions": [
+        0.02666302702836909,
+        0.02674304541064343
+      ],
+      "relative_mean_reduction": 0.02670323405539443,
+      "upper": 0.037289462518567684
+    }
+  },
+  "decision": "do_not_budget_same_exact_family",
+  "draws": 100000,
+  "integrated_online_policy_benchmark": false,
+  "methods": {
+    "dense_exact": {
+      "mean_ms": 146.5567152050781,
+      "median_ms": 150.14804500000002,
+      "p95_ms": 158.9284536,
+      "process_mean_ms": [
+        145.8779435214844,
+        147.23548688867186
+      ]
+    },
+    "full": {
+      "mean_ms": 129.23030944628906,
+      "median_ms": 129.5773615,
+      "p95_ms": 137.26582655,
+      "process_mean_ms": [
+        128.5912964511719,
+        129.8693224414062
+      ]
+    },
+    "terminal_exact": {
+      "mean_ms": 125.77944224609374,
+      "median_ms": 128.555103,
+      "p95_ms": 136.8200869,
+      "process_mean_ms": [
+        125.16266323828125,
+        126.39622125390622
+      ]
+    }
+  },
+  "post_hoc": true,
+  "seed": 20261026,
+  "tail": 0.0125
+}

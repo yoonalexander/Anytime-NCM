@@ -1,0 +1,25 @@
+{
+  "stage": "M0",
+  "protocol": "docs/studies/evidence-gaps/m0-protocol.md",
+  "protocol_sha256": "0fe21bb4bd092d1d09baf64e129dae5e7d2b99924826259b623f7b7eccf75b76",
+  "file_sha256": {
+    "results/upstream_full/metrics.json": "43080515122f055aed73a418b5cf00a0c5ca6f0b18d121bd4c6049aaef1b2d63",
+    "results/upstream_full/run.json": "879bfebe2e7b59773a59a3738d2554c8b8d06acc902473d15cc6e4e46cadbab3",
+    "results/upstream_full/evaluate.log": "acd4038e211d9dd75bbbe7ae58e31828462855894459b53fb8cd9d9e70d67eca",
+    "results/phase1/phase1b/verification.json": "ece9ad74fd843733f65697e9d9d9646dfabb4b5d34ee69800ac7039017953512",
+    "results/phase1/phase1b/official/run.json": "1605c407df70fd33046097f65efd8e9d49ecd7671a37f4e0c82a4b208176f473",
+    "results/setup/summary.json": "44e9ef78323eb9cb36b4b0d5a26570fa8f76259ddda5ec1f63b825b78ea32b2c",
+    "configs/setup_sources.json": "bde7eb9899cf9b54bf4ac4c690f8a6ab5bfd4716764732d822fb8b29146266d0",
+    "configs/sudoku_full.yaml": "4ffa7ce975c8e70831a4a695083bde64303d558f6d665dfdb0c993c5f45312fd",
+    "third_party/ncm/config/eval/sudoku-hard.yaml": "dbda2c3f2c412049dc43095138a5390d47210eec7a0dfe26eda3ff9dd078083a",
+    "third_party/ncm/evaluate.py": "edd0d5a09edba7f190f184f442b5001061f843225bf126e926fa7c91992a05f1",
+    "third_party/ncm/scripts/eval_merge.py": "f166d7e4a2785c1326ad1c242806a22cb32f959d9b073f1ec42fb0db0ff51de4",
+    "third_party/ncm/scripts/eval_shard.py": "ae5b20c5f16c763e42a9ba5ffbfd8ed15395323932aa980be29ed1a08f6901fb",
+    "third_party/ncm/tokenization/sudoku_tokenizer.py": "ccd2637722c2627e3975594d3b00c917721f92489ccb65a62108da7a46a5e701",
+    "third_party/ncm/README.md": "3169dd04ee1b642f98da41e162b1eba0655607adb526cabeccfed53600ae5056"
+  },
+  "wall_seconds": 7200,
+  "artifact_bytes": 67108864,
+  "new_model_calls": 0,
+  "new_outcome_access": 0
+}

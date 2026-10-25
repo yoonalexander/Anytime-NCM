@@ -1,0 +1,23 @@
+{
+  "analysis_seconds": 2.115093832999996,
+  "artifact_bytes": 157196,
+  "artifact_sha256": {
+    "analysis.json": "3a6e57873114bc338b37d7e0b041f83de924289d12a73e3f2daa66fe341d6a8e",
+    "selected-cells.json": "8774ec4ba8cc922985ca2a69ae555745fd1c78d6611cdd80f660370e0051e092",
+    "sources.zip": "795a76fd85b7e330c39f555bc0718150430885b11b0be0dcae2d2181beb57162",
+    "started.json": "3de9030ee3a93475341b1e4c0a96eb52e5e05e129f960d1749e731b34518a15e"
+  },
+  "conservative_preparation_reporting_seconds": 6300,
+  "decision": "do_not_budget_same_exact_family",
+  "deterministic_selections": 256,
+  "fits": 0,
+  "model_calls": 0,
+  "new_inputs": 0,
+  "new_references": 0,
+  "paid_compute_dollars": 0,
+  "peak_rss_bytes": 685694976,
+  "reused_bootstrap_vectors": 100000,
+  "source_commit": "598364c45863285e8187b902ffd8fa314147fd27",
+  "status": "complete",
+  "target_encodings": 0
+}
