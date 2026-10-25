@@ -1,6 +1,6 @@
 # Quality-tolerant early translation: next research roadmap
 
-October 25, 2026. **Q0 complete: statistically blocked. Q1-Q4 are unstarted; Q1 is not ready.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
+October 25, 2026. **Original Q0 complete: statistically blocked. Its separately authorized multiplicity extension is locked; execution pending. Q1-Q4 remain unstarted.** The user authorized Q0 on October 25; this roadmap grants no later-phase execution or changes to earlier gates.
 
 **Question:** Can a frozen NCM produce earlier translations that differ from its final text yet retain acceptable quality and deliver useful actual latency savings?
 
@@ -19,6 +19,10 @@ Keep the existing full-relative tolerances: corpus BLEU loss <=0.5, chrF loss <=
 | Q2: sparse-observation costs | Freeze a small inspection schedule and measure assigned exits against full and all relevant fixed-depth controls, charging reconstruction, decoding, transfers and observation work. | Matched-quality measured headroom meets the success contract. Clairvoyant assigned-exit timing remains a diagnostic, not an online selector. |
 | Q3: causal controller | Freeze current/past-only features and continuation-value labels; use separately allocated development data, bounded fits and actual online timing. | One locked policy passes development quality/cost gates against full and a strong fixed baseline. |
 | Q4: reserved confirmation | Evaluate that policy and locked comparators once on separately reserved confirmation inputs; no refitting or comparator replacement. | Report one go/no-go/inconclusive result, preserve failures, and update the manuscript. |
+
+## Q0 multiplicity extension
+
+October 25: the user authorized a bounded audit of the statistical design. [Prospective protocol](quality-tolerant/q0-multiplicity-protocol.md), [numeric lock](quality-tolerant/q0-multiplicity-lock.json), [source lock](quality-tolerant/q0-multiplicity-source-lock.json). One joint all-required claim and a separately protected fixed-depth exclusion family will be validated on synthetic cases only. Original Q0 results and all tolerances remain unchanged; no Q1 or reservation release is authorized. Status: locked, execution pending.
 
 ## Boundaries and stopping
 

@@ -1,0 +1,110 @@
+{
+  "stage": "Q0-multiplicity-extension",
+  "starting_main": "21608e17c1e4da1f2b9aff2d46ba89ae56524260",
+  "global_alpha": 0.05,
+  "claim_alpha": 0.025,
+  "exclusion_family_alpha": 0.025,
+  "exclusion_tests": 40,
+  "exclusion_tail": 0.000625,
+  "margins": {
+    "bleu": 0.5,
+    "chrf": 1.0,
+    "numeric": 0.02,
+    "negation": 0.02
+  },
+  "gate_cases": [
+    "candidate_null_bleu",
+    "candidate_null_chrf",
+    "candidate_null_numeric",
+    "candidate_null_negation",
+    "full_cost_null",
+    "one_fixed_cost_null",
+    "ten_fixed_null_shared",
+    "all_requirements_true",
+    "numeric_undefined",
+    "timing_incomplete",
+    "missing_fixed_depth",
+    "point_savings_025",
+    "exclusions_independent",
+    "exclusions_shared",
+    "exclusions_disjoint",
+    "invalid_unadjusted_exclusion_OR",
+    "invalid_four_candidate_selection"
+  ],
+  "gate_trials_each": 20000,
+  "gate_seed": 2026102505,
+  "cue_ns": [
+    48,
+    128,
+    184,
+    192,
+    240,
+    256,
+    384,
+    512,
+    1024
+  ],
+  "cue_cases": [
+    "zero",
+    "rare005",
+    "boundary02",
+    "outside03",
+    "fractional",
+    "cluster8"
+  ],
+  "cue_trials_each": 5000,
+  "cue_seed": 2026102506,
+  "analytical_max_n": 10000,
+  "analytic_extra_ns": [
+    183,
+    149,
+    385
+  ],
+  "analytic_ps": [
+    0,
+    0.005,
+    0.01,
+    0.02,
+    0.03
+  ],
+  "population_ns": [
+    256,
+    448,
+    1024,
+    571,
+    1595
+  ],
+  "coverage_prevalences": [
+    0.02,
+    0.1,
+    0.1875,
+    0.4,
+    1
+  ],
+  "power_target": 0.8,
+  "half_margin_precision": 0.01,
+  "mc_sanity_family_allowance": 0.001,
+  "limits": {
+    "trials": 610000,
+    "bootstrap_draws": 0,
+    "datasets": 0,
+    "wall_seconds": 1800,
+    "cpu_seconds": 1200,
+    "memory_bytes": 2147483648,
+    "storage_bytes": 16777216,
+    "threads": 1,
+    "dollars": 0
+  },
+  "preparation_reporting_charge_seconds": 7200,
+  "total_wall_cap_seconds": 9000,
+  "forbidden_work": {
+    "real_body_reads": 0,
+    "requests": 0,
+    "warmups": 0,
+    "trajectories": 0,
+    "checkpoint_loads": 0,
+    "fits": 0,
+    "target_encodings": 0,
+    "training": 0
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "stage": "Q0-multiplicity-extension",
+  "source_sha256": {
+    "docs/studies/quality-tolerant/q0-multiplicity-protocol.md": "7738632b6f96b4b586df39ed163659ceb506cd850debcaad48b2418684402081",
+    "docs/studies/quality-tolerant/q0-multiplicity-lock.json": "95e0ff9fceb9cbf41c0b9fd08beff2acfbde8ee0fb8b7f2da14cd443f1283eef",
+    "src/anytime_ncm/q0_multiplicity.py": "6defebe935053af2214f98a48cd9214e3eea8b57194182f011190ed7ae5411c5",
+    "scripts/run_q0_multiplicity.py": "ec60eb37e01c6cdfa37e4b117087ad0966ff420e4c895bfd9bb17d49a6ca01a2",
+    "tests/test_q0_multiplicity.py": "5759c1aea98dfd66fc11edeb818764433595e36448484190c0ee63d2237aaa74",
+    "src/anytime_ncm/q0_statistics.py": "229cc0f490abe4970e05ab6784b426053508613241fe91dc4ea10bb0cce68840",
+    "tests/test_q0_statistics.py": "6ee7b873167f4a62ce8cdc545fdc329a3dd6dfe329baba64220eaf9a08c7bffb"
+  },
+  "protected_paths": [
+    "AGENTS.md",
+    "README.md",
+    "RESEARCH_SYNTHESIS.md",
+    "docs/partitions/wmt14-phase4.json",
+    "docs/studies/evidence-gaps/continuous-closure.md",
+    "docs/studies/evidence-gaps/e0-protocol.md",
+    "docs/studies/evidence-gaps/e2-protocol.md",
+    "docs/studies/quality-tolerant/q0-lock.json",
+    "docs/studies/quality-tolerant/q0-methods-and-feasibility.md",
+    "docs/studies/quality-tolerant/q0-protocol.md",
+    "docs/studies/quality-tolerant/q0-source-lock.json",
+    "results/evidence_gaps/e0/completion.json",
+    "results/evidence_gaps/e0/input-manifest.json",
+    "results/evidence_gaps/e0/statistical-feasibility.json",
+    "results/evidence_gaps/e2/completion.json",
+    "results/evidence_gaps/e2/summary.md",
+    "results/quality_tolerant/q0/README.md",
+    "results/quality_tolerant/q0/decision.json",
+    "results/quality_tolerant/q0/documentation-validation.json",
+    "results/quality_tolerant/q0/execution-sources.zip",
+    "results/quality_tolerant/q0/execution.json",
+    "results/quality_tolerant/q0/focused-tests.xml",
+    "results/quality_tolerant/q0/independent-checks.json",
+    "results/quality_tolerant/q0/ledger.jsonl",
+    "results/quality_tolerant/q0/started.json",
+    "results/quality_tolerant/q0/statistical-feasibility.json",
+    "results/quality_tolerant/q0/synthetic-corpus.json",
+    "results/quality_tolerant/q0/synthetic-timing.json",
+    "results/quality_tolerant/q0/synthetic-trials.json",
+    "results/quality_tolerant/q0/test-output.txt",
+    "src/anytime_ncm/wmt_metrics.py",
+    "src/anytime_ncm/wmt_policy.py"
+  ],
+  "primary_method": "equal-split joint IUT plus simultaneous 40-bound exclusion family; no post-simulation selection",
+  "methodological_sources": [
+    {
+      "url": "https://www.hhs.gov/guidance/sites/default/files/hhs-guidance-documents/FDA/MultipleEndpoints_FinalGuidance.pdf",
+      "checked": "2026-10-25",
+      "role": "sections III.A.1/III.C.1, all-required endpoints; split-error exclusion proof derived in this protocol"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats._result_classes.BinomTestResult.proportion_ci.html",
+      "checked": "2026-10-25",
+      "role": "official Clopper-Pearson implementation and primary reference"
+    },
+    {
+      "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.binom.html",
+      "checked": "2026-10-25",
+      "role": "official binomial probability/quantile implementation"
+    }
+  ],
+  "real_body_reads": 0,
+  "primary_paper_access_limit": "Berger-Hsu full text inaccessible; not claimed as read"
+}
