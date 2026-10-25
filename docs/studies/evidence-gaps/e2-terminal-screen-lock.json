@@ -1,0 +1,14 @@
+{
+  "E0_manifest_sha256": "2897839935e7acfb959819b2e310ffcea60807cded58d1e3648de5f598a77e4b",
+  "E2_execution_sha256": "43efab179fb6da477f8a2b1616110b67bc4a6a2a7f43853ac3600c711bfd963a",
+  "analysis_seconds": 900,
+  "artifact_bytes": 134217728,
+  "base_commit": "d84b2a4a3aaec9b427ba91fe51cdc32de4110227",
+  "draws": 100000,
+  "model_calls": 0,
+  "preparation_seconds": 3600,
+  "protocol": "docs/studies/evidence-gaps/e2-terminal-screen-protocol.md",
+  "protocol_sha256": "5a4bcf6c56e579d217565a3b5e2362e076e68be988cc1ad914cea7680d50553e",
+  "report_seconds": 2700,
+  "rss_bytes": 4294967296
+}
