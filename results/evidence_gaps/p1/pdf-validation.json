@@ -1,0 +1,34 @@
+{
+  "status": "pass",
+  "pages": 8,
+  "all_pages_visually_inspected": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "renderer": "Poppler85DPI",
+  "native_compilation": "success, MiKTeX; installer and shell escape disabled",
+  "codex_compilation": "success on final source",
+  "layout_repairs": 2,
+  "no_overfull_underfull_or_undefined_references": true,
+  "disabled_shell_warning_expected": true,
+  "embedded_javascript": false,
+  "pdf_sha256": "cb150e5d98605d0a1b67ac55dd46ad4a62a275945f5a2d2a5ecf4d07acc234f2",
+  "source_sha256": "7a8964b634e368d0e1ebab04ef8a4f0fd788b9e7bd0a3877bdb378e5ccc01c36",
+  "page_png_sha256": [
+    "e5c55d464ec01879937ee84a13ec3c491355ac3989fe003e0385d0d926690f33",
+    "a1d99942c4e360309412ffad0c925481c44ceb268733427ab7c1768fa9909e4e",
+    "5880e6acc659d33fdeb2ab1493b5d44942d5b82be1eeddab2b1d404d7a9b2a8f",
+    "ce69cfd865cea5ea2f2ceba20dcf245532e1981a09de7bf2dfa1d4548cdbe73a",
+    "02dacfa783b168b0dd8801cb87edab08aa44e5f6218f10dddc513f7facc7fcd3",
+    "bbc254fb35a5d1e5116057558871d00f99415855298e9310a3069e27f7b6f1c7",
+    "f9111ae6bd852590a751326993461eb3ad2cfede232fca4f9e5c18c986be7e4b",
+    "cb33e911094f7588712311e8dc257ab77f75752f0d120fae0d11818d6aa1380b"
+  ],
+  "submission_ready": false
+}

@@ -1,0 +1,1 @@
+{"status":"failed_before_packaging","check":"PDF text headline substring","reason":"Poppler wrapped the negative interval immediately after its minus sign; source and visually checked PDF retain the correct value","repair":"Join extraction whitespace for numeric substring checks only; retain the sign and source parity checks","model_calls":0,"new_outcomes":0}

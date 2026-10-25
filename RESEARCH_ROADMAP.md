@@ -2,6 +2,8 @@
 
 **Created:** October 23, 2026
 
+**Current local synthesis:** [v4 PDF](paper/stronger-research-v4/main.pdf), [claim-to-evidence map](paper/stronger-research-v4/CLAIM_EVIDENCE.md), [access/gate/reviewer packet](paper/stronger-research-v4/REVIEW_PACKET.md), [P1 preparation](results/evidence_gaps/p1/summary.md). E0/E1/E2 and the post hoc terminal screen are complete with the experimental route closed at its failed practical gate. [M0](results/evidence_gaps/m0/summary.md) closes the archival discrepancy review without an established cause. The old v3 candidate remains historical, and human metadata/rights/review remain incomplete. The continuous work order completes justified local work; it does not turn blocked/deferred experiments into implemented milestones.
+
 **Status:** Current authorized research execution is closed at its evidence gates (October 24). S0, S1A/S1B, S2A and S5A calculation checks are complete. S5B local manuscript/reproducibility candidate is prepared; human authorship/affiliations, rights and independent researcher review remain unresolved. S2B/S4 are deferred and S3 blocked, all unexecuted. No submission/contact occurred.
 
 **Starting snapshot:** a9d79c4143c46c3b14aea429aaf7619ae7b3098b

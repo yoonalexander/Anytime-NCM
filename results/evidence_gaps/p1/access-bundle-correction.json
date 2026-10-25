@@ -1,0 +1,20 @@
+{
+  "status": "corrected_packaging_only",
+  "reason": "Initial review archive linked but omitted two access-metadata manifests named in the manuscript",
+  "original_preserved": "paper/stronger-research-v4/review-packet.zip",
+  "original_sha256": "4d1e2bb4c1d6fd40772ebcef3b4cad34eb0dd5e756ce1c9aea5652a437a64f96",
+  "current_complete_archive": "paper/stronger-research-v4/review-packet-with-access.zip",
+  "current_sha256": "ef17310c6b9fd7288dd190c8740b424281010886fb1d404f002f35155b7ec1be",
+  "added_files": [
+    "results/evidence_gaps/e0/input-manifest.json",
+    "results/evidence_gaps/e2/access-release.json"
+  ],
+  "updated_readme_sha256": "6da12b3bdd1a986bbb246d043bc796d1ee17421752d3bd58a3edd32839ee6096",
+  "archive_member_files": 56,
+  "pdf_unchanged": true,
+  "tex_unchanged": true,
+  "empirical_records_unchanged": true,
+  "initial_completion_receipt_preserved": true,
+  "model_calls": 0,
+  "new_outcomes": 0
+}
