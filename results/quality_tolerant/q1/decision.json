@@ -1,0 +1,15 @@
+{
+  "status": "exploratory_headroom_found",
+  "qualifying_E2_sparse_schedules": [
+    "sparse_8_10_11",
+    "sparse_9_10_11"
+  ],
+  "Q0_passed": false,
+  "Q2_authorized": false,
+  "reserved_outputs_released": false,
+  "independent_confirmation": false,
+  "integrated_online_speedup_demonstrated": false,
+  "statistically_excluded_fixed_depths": [],
+  "certified_optimum": false,
+  "next_step": "Separate population and cluster-aware design only if pursued; no automatic execution."
+}

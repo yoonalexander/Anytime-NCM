@@ -1,0 +1,12 @@
+{
+  "source_commit": "be48446c928e07ab2f979a6f5468732a1b8dcab9",
+  "permitted_groups": {
+    "exploration": 128,
+    "development": 64,
+    "E2_audit": 256
+  },
+  "references": 448,
+  "consumed_only": true,
+  "E3_E4_outputs_released": false,
+  "original_final_outputs_released": false
+}

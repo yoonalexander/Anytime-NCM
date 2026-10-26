@@ -1,0 +1,29 @@
+{
+  "stage": "Q1_exploratory_reporting_complete",
+  "execution_source_commit": "be48446c928e07ab2f979a6f5468732a1b8dcab9",
+  "exploratory_screen_passed": true,
+  "Q0_statistical_gate_passed": false,
+  "Q2_authorized": false,
+  "reserved_outputs_released": false,
+  "tests_passed": 42,
+  "direct_parity_checks": 48,
+  "independent_arithmetic_checks": 21369,
+  "frozen_hash_checks": 693,
+  "reporting_checks_no_historical_outcome_rereads": true,
+  "artifact_sha256": {
+    "results/quality_tolerant/q1/access-receipt.json": "9f32c8fccdb339a32606b9c1b10556fd7249ee2cd18a572f68d1e48bfcd1cbc3",
+    "results/quality_tolerant/q1/cost-calibration.json": "d4796e91a6cad0d53ff07a4496f76309286f46d97aecc8e820064aa468aca42d",
+    "results/quality_tolerant/q1/decision.json": "b7c5097f9e9712604a1acb98929c03ad590d3f29d4d054842b7a29828fa78343",
+    "results/quality_tolerant/q1/execution-sources.zip": "23d1a7bd3afc50e8ccc1974df5acf797dec6855a58dbb3b81fe7f85decff00de",
+    "results/quality_tolerant/q1/execution.json": "b9831bf72a9145f926d21b14273b85a087a72004a4079459d3aeaa473a7f0228",
+    "results/quality_tolerant/q1/focused-tests.xml": "7d1e8e594e831b1f5865eb0bacfa4827839d5edaec317767dc14f05ea73d4c80",
+    "results/quality_tolerant/q1/ledger.jsonl": "063f1adbf80f2d0b03c5ea561c3825407d0ede969d21c7596c029ec8e48d56d5",
+    "results/quality_tolerant/q1/README.md": "0e6ef5d7a3f6ba71dc851246e965e1ebda30a655b6c5ca033a0a29984d55aead",
+    "results/quality_tolerant/q1/report-verification.json": "ca8b257dbf7b2287f21d83abf5026b64b9f3db3290064ea206e855c2c2171db1",
+    "results/quality_tolerant/q1/results.json": "a2e5c7fd7d5e898f19740a4cb4cda35847096b26c3bec8276d1da71116631eb6",
+    "results/quality_tolerant/q1/started.json": "f7ff409a99795f24125d88359297f9b4ed857e1b388b927dd921bb5af25b2aad",
+    "results/quality_tolerant/q1/test-output.txt": "dca7f551dca9ed9ef28bed6831726ae194be472d12ed05d31f9e1a4bef0d0d1f",
+    "docs/studies/quality-tolerant/q1-exploratory-results.md": "8e448c9be927990d4a5bbb3389869d03c7a7cb58b7f846bab060fb8be7485829",
+    "docs/studies/quality-tolerant-translation-roadmap.md": "54b9151271d3c7b9d5af601a688fe29e1caa691d898a79a45fb9f3bb2dfd4c80"
+  }
+}

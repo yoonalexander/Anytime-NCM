@@ -1,0 +1,12 @@
+{
+  "source_commit": "be48446c928e07ab2f979a6f5468732a1b8dcab9",
+  "verified_live_main": "be48446c928e07ab2f979a6f5468732a1b8dcab9",
+  "exception": true,
+  "counts": {
+    "reference_materializations": 0,
+    "trajectory_bodies": 0,
+    "request_bodies": 0,
+    "assignment_evaluations": 0,
+    "direct_parity_checks": 0
+  }
+}

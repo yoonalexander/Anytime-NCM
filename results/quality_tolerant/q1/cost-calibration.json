@@ -1,0 +1,23 @@
+{
+  "terminal_depth_mean_ms": [
+    14.852866643554703,
+    27.038849500976575,
+    38.37181043554684,
+    50.03618427246092,
+    61.8679530292969,
+    73.52779687304694,
+    84.63654789941397,
+    95.76396985351563,
+    107.16521391601572,
+    118.46929507519533,
+    129.23030944628897
+  ],
+  "observation_step_proxy_ms": 2.1456159247680517,
+  "unclipped_proxy_ms": 2.1456159247680517,
+  "extra_observations": 2479,
+  "dense_exact_mean_ms": 146.55671520507812,
+  "matched_exact_terminal_mean_ms": 125.77944224609374,
+  "warmup_records": 120,
+  "isolated_component_measurement": false,
+  "integrated_online_measurement": false
+}

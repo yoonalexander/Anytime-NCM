@@ -1,0 +1,21 @@
+{
+  "verified": true,
+  "checks": 21369,
+  "independent_saved_result_arithmetic": true,
+  "new_reference_or_historical_outcome_decodes": 0,
+  "search_replays": 0,
+  "tests": 42,
+  "source_commit": "be48446c928e07ab2f979a6f5468732a1b8dcab9",
+  "checked_artifact_sha256": {
+    "access-receipt.json": "9f32c8fccdb339a32606b9c1b10556fd7249ee2cd18a572f68d1e48bfcd1cbc3",
+    "cost-calibration.json": "d4796e91a6cad0d53ff07a4496f76309286f46d97aecc8e820064aa468aca42d",
+    "decision.json": "b7c5097f9e9712604a1acb98929c03ad590d3f29d4d054842b7a29828fa78343",
+    "execution-sources.zip": "23d1a7bd3afc50e8ccc1974df5acf797dec6855a58dbb3b81fe7f85decff00de",
+    "execution.json": "b9831bf72a9145f926d21b14273b85a087a72004a4079459d3aeaa473a7f0228",
+    "focused-tests.xml": "7d1e8e594e831b1f5865eb0bacfa4827839d5edaec317767dc14f05ea73d4c80",
+    "ledger.jsonl": "063f1adbf80f2d0b03c5ea561c3825407d0ede969d21c7596c029ec8e48d56d5",
+    "results.json": "a2e5c7fd7d5e898f19740a4cb4cda35847096b26c3bec8276d1da71116631eb6",
+    "started.json": "f7ff409a99795f24125d88359297f9b4ed857e1b388b927dd921bb5af25b2aad",
+    "test-output.txt": "dca7f551dca9ed9ef28bed6831726ae194be472d12ed05d31f9e1a4bef0d0d1f"
+  }
+}
