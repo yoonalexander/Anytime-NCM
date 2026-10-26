@@ -1,0 +1,37 @@
+# Q1 exploratory consumed-data exception: prospective lock
+
+October 25, 2026. User authorization: "Okay do the recommended route", accepting a small saved-data exploratory Q1 exception. This prospectively overrides the Q0 entry restriction only for this bounded diagnostic. Original Q0 and both extensions remain completed, statistically blocked. No Q2, controller, model execution or reserved-output release is authorized.
+
+## Population and access
+
+Run once after this protocol, numeric lock, implementation, tests and source lock are committed/pushed to main and live equality is verified. Three separate consumed cohorts: canonical S1 exploration128 and development64 from the frozen S1 inventory and parent manifest; canonical E2 audit256 from E0. No cohort is held out. References448 (numeric covered31/13/48, total92) and saved trajectories448 may be materialized once; all11 saved levels may be inspected. E2 timing files contain12,288 timed requests and120 already-consumed E1 warmups. Decode those12,408 records once. Header-allowlist trajectories before body decoding; pin timing-file hashes before parsing; reject invalid identities and missing/duplicate timing cells. Do not read original final, E3/E4 or unallocated output bodies, other references, checkpoints or models. Source-only document metadata may be hashed but no new source materialization is needed. Prior Q0 aggregate reference exposure for reservations remains disclosed; their model outputs stay sealed.
+
+## Endpoints and interpretation
+
+Use unchanged full-relative losses: corpus BLEU<=0.5, corpus chrF<=1.0, covered-reference mean numeric F1<=0.02, and all-input negation mismatch increase<=0.02. Undefined numeric endpoints fail availability; do not silently pass them. BLEU and chrF aggregate corpus sufficient statistics with sacrebleu2.6.0; independently verify direct corpus scoring for each reported baseline and final assignment. Never average sentence scores. Literal cues and these metrics do not certify semantic correctness.
+
+This is point-estimate descriptive reuse, with outcome-dependent search selection and shared documents. No new confidence intervals, bootstrap, power claim, multiplicity-adjusted inference, independent validation or statistical fixed-depth exclusion. Preserve all eleven fixed controls as potential comparators for future inference. The unchanged ultimate contract still requires >=5% actual mean ready-output savings versus full, positive paired lower bound and positive bounded improvement over all potentially feasible fixed depths. Q1 cannot meet that contract or repair Q0's inadequate coverage/precision/dependence problem.
+
+## Finite search
+
+Evaluate eleven terminal fixed depths and the earliest exact-final-text assignment in each cohort (36 baseline attempts). Separately search four schedules in each cohort: terminal_oracle depths1..11, sparse[8,10,11], sparse[9,10,11], sparse[10,11]. The first is clairvoyant terminal-only headroom, not an executable observation schedule. All assignments, including sparse ones, use references and future information offline; none is an online rule or trained controller.
+
+Each of12 searches starts at full depth, has at most2,000 attempted assignments (including start and cache hits) and2 canonical-index passes. For each input, try strictly earlier scheduled exits ordered by projected cost, then depth; accept the first strictly cheaper point-feasible edit and move to the next input. No upward moves, restarts, schedule additions or enlargement. Stop on cap, complete pass with no accepted edit, or second-pass completion. A cap may stop an incomplete pass. This monotone greedy procedure has no certified optimum or global upper bound. Maximum24,036 scored optimization/baseline attempts. Forty-eight separately charged direct parity checks are verification; cached reads to present final/baseline metrics are not new search attempts. No resampling or synthetic Monte Carlo.
+
+## Cost assumptions frozen before outcomes
+
+Validate the entire E2 (input,block,repeat,method) array:256x2x2x12, parity, output hashes, work, positive finite wall time and method/depth schedule. Terminal depth profile is the cohort mean of the saved fixed-depth ready-output timings. Optimization uses that common profile, avoiding selection on input-specific timing noise. Transfer of this E2 profile to S1 is uncalibrated.
+
+Define h=max(0, sum_i(mean dense-exact time_i - mean terminal time_i at earliest-exact depth_i))/sum_i(exact_depth_i-1). Stop if denominator zero. This descriptive extra-observation proxy confounds path/implementation differences; it is not an isolated decoder measurement. Sparse projected cost per input is profile[exit]+h*(visited observations-1)+0.05ms*visited observations. Count only scheduled depths<=exit, including the first observation; no free decision overhead. Full/fixed terminal controls have no monitor/controller cost. Terminal oracle has exactly one terminal observation and no decision cost.
+
+For each selected assignment, report fixed-assignment sensitivity h factors[0,0.5,1,2] crossed with decision costs[0,0.05,0.2]ms, without reoptimization. Also report E2 input-specific selected-terminal assembly across both blocks/repeats. Its constituents are actual recorded requests, but assembling them post hoc does not measure an integrated sparse online policy. Do not report modeled savings as measured online speedup.
+
+## Decision and stop
+
+A sparse E2 assignment gives exploratory headroom only if all four point losses pass, primary projected full saving>=5%, and primary projected cost improves on every point-feasible fixed depth. This descriptive prioritization does not statistically exclude any fixed depth. Terminal oracle or S1 evidence alone cannot qualify. Report cost sensitivity and block variation even if unfavorable. A negative result means insufficient evidence from this bounded search, not all-policy impossibility. Either outcome ends Q1: no automatic Q2, new inference or population acquisition. Any later work needs separate population/cluster-aware design and authorization; document overlap and unknown training overlap remain unresolved. A positive exploratory result alone cannot justify confirmation on the existing reservations.
+
+## Resource and failure caps
+
+One execution, no retries. Tests run before saved-body access. Real reference materializations448, trajectory JSON bodies448, saved text states4,928, request bodies12,408; baseline/search attempts24,036; direct parity48; searches12; passes2/search; no model calls/encoding/fits/downloads/paid services/external contact. Execution wall1,800s, CPU1,200s per process, address/RSS2GiB, one numerical thread, outputs64MiB; conservative setup/reporting charge7,200s, total charged9,000s; dollars0. Tests are synthetic deterministic fixtures, with zero simulation draws. Ledger charges before materialization/evaluation. Existing hashes may be streamed without semantic body inspection. Stop on test/parity/provenance/access/budget failure; preserve started/failure receipts. No silent retry or method replacement. Verification only hashes saved artifacts and checks receipts; it does not replay the searches or reopen outcomes.
+
+Primary metric implementation: [SacreBLEU official source](https://github.com/mjpost/sacrebleu), [BLEU original paper](https://aclanthology.org/P02-1040/), [chrF original paper](https://aclanthology.org/W15-3049/). No inferential claims are added by Q1.
