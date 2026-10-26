@@ -1,0 +1,17 @@
+{
+  "source_commit": "5c15db347bf188cbc9a31388a35ff07dcbc8a443",
+  "authorization": "User approved bounded data-eligibility and statistical-method audit",
+  "candidate_years": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020
+  ],
+  "references": "Machine-only cue presence and alignment; no model scoring; flags private",
+  "source_tokenization_only": true,
+  "historical_source_prefix_parity": 3003,
+  "historical_references_read": 0,
+  "reserved_model_outputs_released": false
+}

@@ -1,0 +1,2296 @@
+{
+  "scenarios": [
+    {
+      "J": 128,
+      "shape": "balanced8",
+      "risk": 0.0,
+      "inputs": 1024,
+      "numeric_covered": 256,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0,
+          "upper_mean": 0.028408053444543904,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.0078125,
+          "zero_adverse_upper": 0.02840805344354391
+        },
+        "negation": {
+          "point_mean": 0.0,
+          "upper_mean": 0.028408053444543904,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.0078125,
+          "zero_adverse_upper": 0.02840805344354391
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 128,
+      "shape": "balanced8",
+      "risk": 0.005,
+      "inputs": 1024,
+      "numeric_covered": 256,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.00515625,
+          "upper_mean": 0.04157650834433713,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.0078125,
+          "zero_adverse_upper": 0.02840805344354391
+        },
+        "negation": {
+          "point_mean": 0.00515625,
+          "upper_mean": 0.04157650834433713,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.0078125,
+          "zero_adverse_upper": 0.02840805344354391
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 128,
+      "shape": "balanced8",
+      "risk": 0.02,
+      "inputs": 1024,
+      "numeric_covered": 256,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0203203125,
+          "upper_mean": 0.07212122938602072,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.0078125,
+          "zero_adverse_upper": 0.02840805344354391
+        },
+        "negation": {
+          "point_mean": 0.0203203125,
+          "upper_mean": 0.07212122938602072,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.0078125,
+          "zero_adverse_upper": 0.02840805344354391
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 128,
+      "shape": "balanced8",
+      "risk": 0.03,
+      "inputs": 1024,
+      "numeric_covered": 256,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.029953125,
+          "upper_mean": 0.08827199151658402,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 41,
+            "trials": 2000,
+            "rate": 0.0205,
+            "ci99": [
+              0.01323708475070984,
+              0.03013321796176053
+            ]
+          },
+          "max_cluster_weight": 0.0078125,
+          "zero_adverse_upper": 0.02840805344354391
+        },
+        "negation": {
+          "point_mean": 0.029953125,
+          "upper_mean": 0.08827199151658402,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 41,
+            "trials": 2000,
+            "rate": 0.0205,
+            "ci99": [
+              0.01323708475070984,
+              0.03013321796176053
+            ]
+          },
+          "max_cluster_weight": 0.0078125,
+          "zero_adverse_upper": 0.02840805344354391
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 128,
+      "shape": "skewed64",
+      "risk": 0.0,
+      "inputs": 1136,
+      "numeric_covered": 368,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0,
+          "upper_mean": 0.15809699307811398,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.043478260869565216,
+          "zero_adverse_upper": 0.15809699307711392
+        },
+        "negation": {
+          "point_mean": 0.0,
+          "upper_mean": 0.2048580755375421,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.056338028169014086,
+          "zero_adverse_upper": 0.204858075536542
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 128,
+      "shape": "skewed64",
+      "risk": 0.005,
+      "inputs": 1136,
+      "numeric_covered": 368,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0044823369565217385,
+          "upper_mean": 0.17317715025927533,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.043478260869565216,
+          "zero_adverse_upper": 0.15809699307711392
+        },
+        "negation": {
+          "point_mean": 0.004346390845070422,
+          "upper_mean": 0.21837125257167722,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.056338028169014086,
+          "zero_adverse_upper": 0.204858075536542
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 128,
+      "shape": "skewed64",
+      "risk": 0.02,
+      "inputs": 1136,
+      "numeric_covered": 368,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.01935326086956522,
+          "upper_mean": 0.21521576512535054,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.043478260869565216,
+          "zero_adverse_upper": 0.15809699307711392
+        },
+        "negation": {
+          "point_mean": 0.019241197183098593,
+          "upper_mean": 0.2598411900394984,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.056338028169014086,
+          "zero_adverse_upper": 0.204858075536542
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 128,
+      "shape": "skewed64",
+      "risk": 0.03,
+      "inputs": 1136,
+      "numeric_covered": 368,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.029633152173913043,
+          "upper_mean": 0.24050041292054747,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.043478260869565216,
+          "zero_adverse_upper": 0.15809699307711392
+        },
+        "negation": {
+          "point_mean": 0.02952200704225352,
+          "upper_mean": 0.28583285996425356,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.056338028169014086,
+          "zero_adverse_upper": 0.204858075536542
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 512,
+      "shape": "balanced8",
+      "risk": 0.0,
+      "inputs": 4096,
+      "numeric_covered": 1024,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0,
+          "upper_mean": 0.007178950027259459,
+          "NI": {
+            "events": 2000,
+            "trials": 2000,
+            "rate": 1.0,
+            "ci99": [
+              0.9973543472409907,
+              1.0
+            ]
+          },
+          "NI_and_precision": {
+            "events": 2000,
+            "trials": 2000,
+            "rate": 1.0,
+            "ci99": [
+              0.9973543472409907,
+              1.0
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.001953125,
+          "zero_adverse_upper": 0.007178950026259455
+        },
+        "negation": {
+          "point_mean": 0.0,
+          "upper_mean": 0.007178950027259459,
+          "NI": {
+            "events": 2000,
+            "trials": 2000,
+            "rate": 1.0,
+            "ci99": [
+              0.9973543472409907,
+              1.0
+            ]
+          },
+          "NI_and_precision": {
+            "events": 2000,
+            "trials": 2000,
+            "rate": 1.0,
+            "ci99": [
+              0.9973543472409907,
+              1.0
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.001953125,
+          "zero_adverse_upper": 0.007178950026259455
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 2000,
+        "trials": 2000,
+        "rate": 1.0,
+        "ci99": [
+          0.9973543472409907,
+          1.0
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 2000,
+        "trials": 2000,
+        "rate": 1.0,
+        "ci99": [
+          0.9973543472409907,
+          1.0
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 512,
+      "shape": "balanced8",
+      "risk": 0.005,
+      "inputs": 4096,
+      "numeric_covered": 1024,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0050869140625,
+          "upper_mean": 0.018398654077480453,
+          "NI": {
+            "events": 1037,
+            "trials": 2000,
+            "rate": 0.5185,
+            "ci99": [
+              0.4894546157501906,
+              0.547456432350718
+            ]
+          },
+          "NI_and_precision": {
+            "events": 158,
+            "trials": 2000,
+            "rate": 0.079,
+            "ci99": [
+              0.06423307178254811,
+              0.09581095531260624
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.001953125,
+          "zero_adverse_upper": 0.007178950026259455
+        },
+        "negation": {
+          "point_mean": 0.0050869140625,
+          "upper_mean": 0.018398654077480453,
+          "NI": {
+            "events": 1037,
+            "trials": 2000,
+            "rate": 0.5185,
+            "ci99": [
+              0.4894546157501906,
+              0.547456432350718
+            ]
+          },
+          "NI_and_precision": {
+            "events": 158,
+            "trials": 2000,
+            "rate": 0.079,
+            "ci99": [
+              0.06423307178254811,
+              0.09581095531260624
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.001953125,
+          "zero_adverse_upper": 0.007178950026259455
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 1037,
+        "trials": 2000,
+        "rate": 0.5185,
+        "ci99": [
+          0.4894546157501906,
+          0.547456432350718
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 158,
+        "trials": 2000,
+        "rate": 0.079,
+        "ci99": [
+          0.06423307178254811,
+          0.09581095531260624
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 512,
+      "shape": "balanced8",
+      "risk": 0.02,
+      "inputs": 4096,
+      "numeric_covered": 1024,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0200224609375,
+          "upper_mean": 0.04144230062219415,
+          "NI": {
+            "events": 6,
+            "trials": 2000,
+            "rate": 0.003,
+            "ci99": [
+              0.0007691220984419209,
+              0.0078109462081832
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 6,
+            "trials": 2000,
+            "rate": 0.003,
+            "ci99": [
+              0.0007691220984419209,
+              0.0078109462081832
+            ]
+          },
+          "max_cluster_weight": 0.001953125,
+          "zero_adverse_upper": 0.007178950026259455
+        },
+        "negation": {
+          "point_mean": 0.0200224609375,
+          "upper_mean": 0.04144230062219415,
+          "NI": {
+            "events": 6,
+            "trials": 2000,
+            "rate": 0.003,
+            "ci99": [
+              0.0007691220984419209,
+              0.0078109462081832
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 6,
+            "trials": 2000,
+            "rate": 0.003,
+            "ci99": [
+              0.0007691220984419209,
+              0.0078109462081832
+            ]
+          },
+          "max_cluster_weight": 0.001953125,
+          "zero_adverse_upper": 0.007178950026259455
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 6,
+        "trials": 2000,
+        "rate": 0.003,
+        "ci99": [
+          0.0007691220984419209,
+          0.0078109462081832
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 512,
+      "shape": "balanced8",
+      "risk": 0.03,
+      "inputs": 4096,
+      "numeric_covered": 1024,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0300888671875,
+          "upper_mean": 0.05508117541269634,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 3,
+            "trials": 2000,
+            "rate": 0.0015,
+            "ci99": [
+              0.00016900193531847973,
+              0.005477802959843467
+            ]
+          },
+          "max_cluster_weight": 0.001953125,
+          "zero_adverse_upper": 0.007178950026259455
+        },
+        "negation": {
+          "point_mean": 0.0300888671875,
+          "upper_mean": 0.05508117541269634,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 3,
+            "trials": 2000,
+            "rate": 0.0015,
+            "ci99": [
+              0.00016900193531847973,
+              0.005477802959843467
+            ]
+          },
+          "max_cluster_weight": 0.001953125,
+          "zero_adverse_upper": 0.007178950026259455
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 512,
+      "shape": "skewed64",
+      "risk": 0.0,
+      "inputs": 4544,
+      "numeric_covered": 1472,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0,
+          "upper_mean": 0.039952417538443925,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.010869565217391304,
+          "zero_adverse_upper": 0.03995241753744392
+        },
+        "negation": {
+          "point_mean": 0.0,
+          "upper_mean": 0.05176932976782875,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.014084507042253521,
+          "zero_adverse_upper": 0.05176932976682874
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 512,
+      "shape": "skewed64",
+      "risk": 0.005,
+      "inputs": 4544,
+      "numeric_covered": 1472,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.005109375,
+          "upper_mean": 0.05523386765346514,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.010869565217391304,
+          "zero_adverse_upper": 0.03995241753744392
+        },
+        "negation": {
+          "point_mean": 0.00511993838028169,
+          "upper_mean": 0.0666185563123106,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.014084507042253521,
+          "zero_adverse_upper": 0.05176932976682874
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 512,
+      "shape": "skewed64",
+      "risk": 0.02,
+      "inputs": 4544,
+      "numeric_covered": 1472,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.020574048913043475,
+          "upper_mean": 0.08908985634699204,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.010869565217391304,
+          "zero_adverse_upper": 0.03995241753744392
+        },
+        "negation": {
+          "point_mean": 0.020788072183098593,
+          "upper_mean": 0.1028505164068303,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.014084507042253521,
+          "zero_adverse_upper": 0.05176932976682874
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 512,
+      "shape": "skewed64",
+      "risk": 0.03,
+      "inputs": 4544,
+      "numeric_covered": 1472,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.030038043478260872,
+          "upper_mean": 0.10660119213770328,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.010869565217391304,
+          "zero_adverse_upper": 0.03995241753744392
+        },
+        "negation": {
+          "point_mean": 0.030059859154929577,
+          "upper_mean": 0.12116148262938893,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.014084507042253521,
+          "zero_adverse_upper": 0.05176932976682874
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": true
+    },
+    {
+      "J": 1024,
+      "shape": "balanced8",
+      "risk": 0.0,
+      "inputs": 8192,
+      "numeric_covered": 2048,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0,
+          "upper_mean": 0.0035959404078344795,
+          "NI": {
+            "events": 2000,
+            "trials": 2000,
+            "rate": 1.0,
+            "ci99": [
+              0.9973543472409907,
+              1.0
+            ]
+          },
+          "NI_and_precision": {
+            "events": 2000,
+            "trials": 2000,
+            "rate": 1.0,
+            "ci99": [
+              0.9973543472409907,
+              1.0
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.0009765625,
+          "zero_adverse_upper": 0.00359594040683448
+        },
+        "negation": {
+          "point_mean": 0.0,
+          "upper_mean": 0.0035959404078344795,
+          "NI": {
+            "events": 2000,
+            "trials": 2000,
+            "rate": 1.0,
+            "ci99": [
+              0.9973543472409907,
+              1.0
+            ]
+          },
+          "NI_and_precision": {
+            "events": 2000,
+            "trials": 2000,
+            "rate": 1.0,
+            "ci99": [
+              0.9973543472409907,
+              1.0
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.0009765625,
+          "zero_adverse_upper": 0.00359594040683448
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 2000,
+        "trials": 2000,
+        "rate": 1.0,
+        "ci99": [
+          0.9973543472409907,
+          1.0
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 2000,
+        "trials": 2000,
+        "rate": 1.0,
+        "ci99": [
+          0.9973543472409907,
+          1.0
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": false
+    },
+    {
+      "J": 1024,
+      "shape": "balanced8",
+      "risk": 0.005,
+      "inputs": 8192,
+      "numeric_covered": 2048,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.00498779296875,
+          "upper_mean": 0.0133768845289029,
+          "NI": {
+            "events": 1922,
+            "trials": 2000,
+            "rate": 0.961,
+            "ci99": [
+              0.9484522875300071,
+              0.9712914769961672
+            ]
+          },
+          "NI_and_precision": {
+            "events": 1842,
+            "trials": 2000,
+            "rate": 0.921,
+            "ci99": [
+              0.9041890446873938,
+              0.9357669282174519
+            ]
+          },
+          "noncoverage": {
+            "events": 10,
+            "trials": 2000,
+            "rate": 0.005,
+            "ci99": [
+              0.0018609209498076222,
+              0.010668449650175566
+            ]
+          },
+          "max_cluster_weight": 0.0009765625,
+          "zero_adverse_upper": 0.00359594040683448
+        },
+        "negation": {
+          "point_mean": 0.00498779296875,
+          "upper_mean": 0.0133768845289029,
+          "NI": {
+            "events": 1922,
+            "trials": 2000,
+            "rate": 0.961,
+            "ci99": [
+              0.9484522875300071,
+              0.9712914769961672
+            ]
+          },
+          "NI_and_precision": {
+            "events": 1842,
+            "trials": 2000,
+            "rate": 0.921,
+            "ci99": [
+              0.9041890446873938,
+              0.9357669282174519
+            ]
+          },
+          "noncoverage": {
+            "events": 10,
+            "trials": 2000,
+            "rate": 0.005,
+            "ci99": [
+              0.0018609209498076222,
+              0.010668449650175566
+            ]
+          },
+          "max_cluster_weight": 0.0009765625,
+          "zero_adverse_upper": 0.00359594040683448
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 1922,
+        "trials": 2000,
+        "rate": 0.961,
+        "ci99": [
+          0.9484522875300071,
+          0.9712914769961672
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 1842,
+        "trials": 2000,
+        "rate": 0.921,
+        "ci99": [
+          0.9041890446873938,
+          0.9357669282174519
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": false
+    },
+    {
+      "J": 1024,
+      "shape": "balanced8",
+      "risk": 0.02,
+      "inputs": 8192,
+      "numeric_covered": 2048,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0198935546875,
+          "upper_mean": 0.034056988739917984,
+          "NI": {
+            "events": 8,
+            "trials": 2000,
+            "rate": 0.004,
+            "ci99": [
+              0.001286977243471057,
+              0.009264567548748347
+            ]
+          },
+          "NI_and_precision": {
+            "events": 3,
+            "trials": 2000,
+            "rate": 0.0015,
+            "ci99": [
+              0.00016900193531847973,
+              0.005477802959843467
+            ]
+          },
+          "noncoverage": {
+            "events": 8,
+            "trials": 2000,
+            "rate": 0.004,
+            "ci99": [
+              0.001286977243471057,
+              0.009264567548748347
+            ]
+          },
+          "max_cluster_weight": 0.0009765625,
+          "zero_adverse_upper": 0.00359594040683448
+        },
+        "negation": {
+          "point_mean": 0.0198935546875,
+          "upper_mean": 0.034056988739917984,
+          "NI": {
+            "events": 8,
+            "trials": 2000,
+            "rate": 0.004,
+            "ci99": [
+              0.001286977243471057,
+              0.009264567548748347
+            ]
+          },
+          "NI_and_precision": {
+            "events": 3,
+            "trials": 2000,
+            "rate": 0.0015,
+            "ci99": [
+              0.00016900193531847973,
+              0.005477802959843467
+            ]
+          },
+          "noncoverage": {
+            "events": 8,
+            "trials": 2000,
+            "rate": 0.004,
+            "ci99": [
+              0.001286977243471057,
+              0.009264567548748347
+            ]
+          },
+          "max_cluster_weight": 0.0009765625,
+          "zero_adverse_upper": 0.00359594040683448
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 8,
+        "trials": 2000,
+        "rate": 0.004,
+        "ci99": [
+          0.001286977243471057,
+          0.009264567548748347
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 3,
+        "trials": 2000,
+        "rate": 0.0015,
+        "ci99": [
+          0.00016900193531847973,
+          0.005477802959843467
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": false
+    },
+    {
+      "J": 1024,
+      "shape": "balanced8",
+      "risk": 0.03,
+      "inputs": 8192,
+      "numeric_covered": 2048,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0300595703125,
+          "upper_mean": 0.04680401425125231,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 10,
+            "trials": 2000,
+            "rate": 0.005,
+            "ci99": [
+              0.0018609209498076222,
+              0.010668449650175566
+            ]
+          },
+          "max_cluster_weight": 0.0009765625,
+          "zero_adverse_upper": 0.00359594040683448
+        },
+        "negation": {
+          "point_mean": 0.0300595703125,
+          "upper_mean": 0.04680401425125231,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 10,
+            "trials": 2000,
+            "rate": 0.005,
+            "ci99": [
+              0.0018609209498076222,
+              0.010668449650175566
+            ]
+          },
+          "max_cluster_weight": 0.0009765625,
+          "zero_adverse_upper": 0.00359594040683448
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": false
+    },
+    {
+      "J": 1024,
+      "shape": "skewed64",
+      "risk": 0.0,
+      "inputs": 9088,
+      "numeric_covered": 2944,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.0,
+          "upper_mean": 0.02001219009120928,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.005434782608695652,
+          "zero_adverse_upper": 0.02001219009020928
+        },
+        "negation": {
+          "point_mean": 0.0,
+          "upper_mean": 0.02593128856859512,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.007042253521126761,
+          "zero_adverse_upper": 0.025931288567595124
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": false
+    },
+    {
+      "J": 1024,
+      "shape": "skewed64",
+      "risk": 0.005,
+      "inputs": 9088,
+      "numeric_covered": 2944,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.005149116847826086,
+          "upper_mean": 0.03403094704088284,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.005434782608695652,
+          "zero_adverse_upper": 0.02001219009020928
+        },
+        "negation": {
+          "point_mean": 0.005188270246478873,
+          "upper_mean": 0.04011007810396164,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.007042253521126761,
+          "zero_adverse_upper": 0.025931288567595124
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": false
+    },
+    {
+      "J": 1024,
+      "shape": "skewed64",
+      "risk": 0.02,
+      "inputs": 9088,
+      "numeric_covered": 2944,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.01984680706521739,
+          "upper_mean": 0.06183966864796291,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.005434782608695652,
+          "zero_adverse_upper": 0.02001219009020928
+        },
+        "negation": {
+          "point_mean": 0.019784000880281687,
+          "upper_mean": 0.06949307323437742,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.007042253521126761,
+          "zero_adverse_upper": 0.025931288567595124
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": false
+    },
+    {
+      "J": 1024,
+      "shape": "skewed64",
+      "risk": 0.03,
+      "inputs": 9088,
+      "numeric_covered": 2944,
+      "endpoints": {
+        "numeric": {
+          "point_mean": 0.02999881114130435,
+          "upper_mean": 0.07829294351789719,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.005434782608695652,
+          "zero_adverse_upper": 0.02001219009020928
+        },
+        "negation": {
+          "point_mean": 0.029928312059859154,
+          "upper_mean": 0.08693579885472622,
+          "NI": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "NI_and_precision": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "noncoverage": {
+            "events": 0,
+            "trials": 2000,
+            "rate": 0.0,
+            "ci99": [
+              0.0,
+              0.0026456527590093485
+            ]
+          },
+          "max_cluster_weight": 0.007042253521126761,
+          "zero_adverse_upper": 0.025931288567595124
+        }
+      },
+      "joint_two_cue_NI": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "joint_two_cue_NI_and_precision": {
+        "events": 0,
+        "trials": 2000,
+        "rate": 0.0,
+        "ci99": [
+          0.0,
+          0.0026456527590093485
+        ]
+      },
+      "reference_EB_numeric_NI_events": 0,
+      "reference_EB_unavailable": false
+    }
+  ],
+  "datasets": 48000,
+  "seed": 2026102601,
+  "null_sanity_checks_passed": true,
+  "dependence_negative_control": {
+    "distribution": "all512 components share one Bernoulli(.02) adverse flag",
+    "zero_upper": 0.007178950026259455,
+    "exact_false_NI_probability": 0.98,
+    "valid_independent_cluster_model": false,
+    "adopted": false
+  },
+  "whole_study_power_established": false,
+  "bootstrap_draws": 0
+}

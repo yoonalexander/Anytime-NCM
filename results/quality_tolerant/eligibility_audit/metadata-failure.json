@@ -1,0 +1,8 @@
+{
+  "stage": "metadata",
+  "error": "ValueError('Wrong source language')",
+  "completed_archives": 0,
+  "new_source_rows_materialized": 0,
+  "new_reference_rows_materialized": 0,
+  "retry_authorized": false
+}
