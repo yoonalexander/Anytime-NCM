@@ -1,0 +1,110 @@
+{
+  "stage": "post_Q1_population_design_only",
+  "date": "2026-10-25",
+  "base_commit": "e3eac921fac84269d4535ebbc3ac922767168072",
+  "candidate_frame": [
+    {
+      "year": 2015,
+      "direction": "de-en",
+      "status": "candidate_not_audited",
+      "official_page": "https://www.statmt.org/wmt15/translation-task.html"
+    },
+    {
+      "year": 2016,
+      "direction": "de-en",
+      "status": "candidate_not_audited",
+      "official_page": "https://www.statmt.org/wmt16/translation-task.html"
+    },
+    {
+      "year": 2017,
+      "direction": "de-en",
+      "status": "candidate_not_audited",
+      "official_page": "https://www.statmt.org/wmt17/translation-task.html"
+    },
+    {
+      "year": 2018,
+      "direction": "de-en",
+      "status": "candidate_not_audited",
+      "official_page": "https://www.statmt.org/wmt18/translation-task.html"
+    },
+    {
+      "year": 2019,
+      "direction": "de-en",
+      "status": "candidate_not_audited",
+      "official_page": "https://www.statmt.org/wmt19/translation-task.html"
+    },
+    {
+      "year": 2020,
+      "direction": "de-en",
+      "status": "candidate_not_audited",
+      "official_page": "https://www.statmt.org/wmt20/translation-task.html"
+    }
+  ],
+  "component_max_unique_inputs": 128,
+  "split": {
+    "seed": "2026102507",
+    "unit": "whole_source_document_alias_component",
+    "development_fraction": 0.4,
+    "confirmation_fraction": 0.6,
+    "reseed_allowed": false
+  },
+  "numeric_enrichment": false,
+  "current_execution": {
+    "dataset_downloads": 0,
+    "source_reference_body_reads": 0,
+    "model_output_body_reads": 0,
+    "source_tokenizations": 0,
+    "target_encodings": 0,
+    "model_requests": 0,
+    "searches": 0,
+    "fits": 0,
+    "simulations": 0,
+    "bootstrap_draws": 0,
+    "cost_dollars": 0
+  },
+  "metadata_screening": {
+    "development_components": 200,
+    "development_numeric_covered": 300,
+    "confirmation_components": 400,
+    "confirmation_numeric_covered": 1000,
+    "confirmation_covered_components": 200,
+    "max_component_input_fraction": 0.01,
+    "max_component_numeric_fraction": 0.02,
+    "power_proven": false
+  },
+  "future_caps_proposed_only": {
+    "metadata_pairs": 20000,
+    "metadata_GETs": 12,
+    "metadata_transport_bytes": 167772160,
+    "metadata_wall_seconds": 1800,
+    "cue_method_synthetic_datasets": 48000,
+    "q2_inputs": 256,
+    "q2_timed_requests": 12288,
+    "q2_warmups": 120,
+    "q2_trajectory_requests": 256,
+    "q2_total_requests": 12664,
+    "q2_generator_levels": 139304,
+    "q2_decoder_invocations": 139304
+  },
+  "margins": {
+    "bleu": 0.5,
+    "chrf": 1.0,
+    "numeric_reference_f1": 0.02,
+    "negation_mismatch": 0.02
+  },
+  "alpha": {
+    "claim": 0.025,
+    "exclusions_total": 0.025,
+    "exclusion_each": 0.000625,
+    "numerical_additional": 0.001
+  },
+  "gates": {
+    "Q0_passed": false,
+    "Q2_ready": false,
+    "data_acquisition_authorized": false,
+    "synthetic_execution_authorized": false,
+    "reserved_outputs_released": false
+  },
+  "reference_method": "independent component empirical Bernstein positive-loss/denominator ratio; analytically infeasible under fixed M128 and 20000 input ceiling",
+  "sharper_method_selected": false
+}

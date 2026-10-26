@@ -1,0 +1,27 @@
+{
+  "stage": "post_Q1_population_design",
+  "status": "complete_design_only_empirical_readiness_blocked",
+  "base_commit": "e3eac921fac84269d4535ebbc3ac922767168072",
+  "historical_files_preserved": 865,
+  "checks": "Deterministic analytic/request arithmetic, JSON scope assertions, local links, streaming historical hashes; no new empirical/synthetic tests",
+  "Q0_passed": false,
+  "Q2_started": false,
+  "Q2_authorized": false,
+  "dataset_downloads": 0,
+  "dataset_body_decodes": 0,
+  "simulations": 0,
+  "model_requests": 0,
+  "training": 0,
+  "reserved_output_release": false,
+  "cost_dollars": 0,
+  "artifact_sha256": {
+    "docs/studies/quality-tolerant/population-and-cluster-design.md": "694e323fa5753358dd5d10b4e90a408d0ba8b8b4060edf6f87220dd2e60734ec",
+    "docs/studies/quality-tolerant/population-design.json": "0c1b045973f13ad6f9b9cda62d1cd6db6e05c330c26b837185573022c31baae8",
+    "docs/studies/quality-tolerant-translation-roadmap.md": "04aa9357dcfc80699e8a0d84980d74570c8b85497f0215b85d1f151be41b0902",
+    "results/quality_tolerant/population_design/analytic-feasibility.json": "33aace5ac3c1ed907bfedf1a3383340cb50c6ed5c22e4c482c5b6cf2e2565cdd",
+    "results/quality_tolerant/population_design/decision.json": "33236fc5126da89789e8f134f8fd63ef9ac6291e65c9894af3a5b1837e0957d4",
+    "results/quality_tolerant/population_design/README.md": "b48a03a4e64243dce8676f93afcd3c7d23264081c6bf1bceaab998c33c65dd25",
+    "results/quality_tolerant/population_design/source-lock.json": "f03e43b50c5de4a23e036b3d3ebb8065fc6d4c69944867da19884e04278b4503",
+    "results/quality_tolerant/population_design/verify.py": "54856da2e8ede2c3566f7a5e9d78f0d934d2f7b5f60b29347d4bcd8044f90f0c"
+  }
+}

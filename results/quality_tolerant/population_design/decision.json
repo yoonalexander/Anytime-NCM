@@ -1,0 +1,27 @@
+{
+  "stage": "post_Q1_population_and_cluster_design",
+  "status": "design_complete_empirical_readiness_blocked",
+  "design_complete": true,
+  "population_eligible_verified": false,
+  "statistical_feasibility_passed": false,
+  "reference_cluster_method_feasible_under_caps": false,
+  "sharper_cluster_method_validated": false,
+  "current_work": {
+    "dataset_downloads": 0,
+    "source_reference_body_reads": 0,
+    "model_output_body_reads": 0,
+    "source_tokenizations": 0,
+    "target_encodings": 0,
+    "model_requests": 0,
+    "searches": 0,
+    "fits": 0,
+    "simulations": 0,
+    "bootstrap_draws": 0,
+    "cost_dollars": 0
+  },
+  "Q2_started": false,
+  "Q2_authorized": false,
+  "reserved_outputs_released": false,
+  "next_unit": "Separately authorize and lock bounded source/reference-metadata eligibility audit; justify a feasible cluster marginal method before any model execution.",
+  "plan": "docs/studies/quality-tolerant/population-and-cluster-design.md"
+}

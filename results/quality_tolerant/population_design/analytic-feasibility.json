@@ -1,0 +1,9 @@
+{
+  "description": "Necessary zero-adverse coverage condition for the proposed conservative cluster EB-ratio reference bound; not a universal sample requirement.",
+  "claim_alpha": 0.025,
+  "component_size_bound": 128,
+  "coverage_coefficient_per_M": 592.1036117772799,
+  "necessary_coverage_strict_lower_bound": 75789.26230749182,
+  "pool_input_ceiling": 20000,
+  "conclusion": "The fixed-M128 reference method cannot pass within the proposed input ceiling, even with zero observed positive losses; this does not rule out other prospectively validated methods."
+}
