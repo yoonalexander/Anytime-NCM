@@ -1,0 +1,55 @@
+{
+  "candidate_rows": 13955,
+  "candidate_documents": 751,
+  "eligible_components": 744,
+  "aliases_removed": 14,
+  "excluded_canonical_inputs": {
+    "component_over128": 754
+  },
+  "roles": {
+    "development": {
+      "components": 297,
+      "inputs": 5487,
+      "numeric_covered": 1229,
+      "covered_components": 269,
+      "max_input_component_fraction": 0.020594131583743392,
+      "max_numeric_component_fraction": 0.014646053702196907,
+      "input_n_eff": 175.6575027567577,
+      "numeric_n_eff": 157.78136425363,
+      "numeric_zero_adverse_KL_upper": 0.05365876613580711,
+      "negation_zero_adverse_KL_upper": 0.07549942910137707,
+      "year_inputs": {
+        "2016": 1083,
+        "2018": 1268,
+        "2019": 743,
+        "2020": 307,
+        "2017": 1281,
+        "2015": 805
+      }
+    },
+    "confirmation": {
+      "components": 447,
+      "inputs": 7700,
+      "numeric_covered": 1778,
+      "covered_components": 391,
+      "max_input_component_fraction": 0.01103896103896104,
+      "max_numeric_component_fraction": 0.016310461192350956,
+      "input_n_eff": 286.3117026105601,
+      "numeric_n_eff": 227.4305035971223,
+      "numeric_zero_adverse_KL_upper": 0.059884392111842,
+      "negation_zero_adverse_KL_upper": 0.040553830628577765,
+      "year_inputs": {
+        "2015": 745,
+        "2016": 1915,
+        "2017": 1722,
+        "2020": 477,
+        "2018": 1593,
+        "2019": 1248
+      }
+    }
+  },
+  "operational_screen_passed": false,
+  "statistical_feasibility_passed": false,
+  "story_independence_proven": false,
+  "checkpoint_training_overlap": "unknown"
+}

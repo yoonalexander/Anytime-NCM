@@ -1,0 +1,45 @@
+{
+  "status": "audit_complete_no_model_release",
+  "method_implementation_validated_conditionally": true,
+  "conditional_independent_cluster_bound": true,
+  "metadata_status": "six_year_frame_audited",
+  "operational_metadata_screen_passed": false,
+  "method_power_scenarios": [
+    {
+      "J": 128,
+      "shape": "balanced8",
+      "lower99": 0.0
+    },
+    {
+      "J": 128,
+      "shape": "skewed64",
+      "lower99": 0.0
+    },
+    {
+      "J": 512,
+      "shape": "balanced8",
+      "lower99": 0.06423307178254811
+    },
+    {
+      "J": 512,
+      "shape": "skewed64",
+      "lower99": 0.0
+    },
+    {
+      "J": 1024,
+      "shape": "balanced8",
+      "lower99": 0.9041890446873938
+    },
+    {
+      "J": 1024,
+      "shape": "skewed64",
+      "lower99": 0.0
+    }
+  ],
+  "whole_study_power_established": false,
+  "population_independence_established": false,
+  "Q0_passed": false,
+  "Q2_authorized": false,
+  "reserved_outputs_released": false,
+  "model_benefit_evidence_added": false
+}

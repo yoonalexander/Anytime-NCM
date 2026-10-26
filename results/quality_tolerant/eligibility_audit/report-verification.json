@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "checks": 43460,
+  "tests": 48,
+  "synthetic_datasets": 48000,
+  "new_synthetic_datasets": 0,
+  "new_dataset_or_model_body_decodes": 0,
+  "source_only_manifest_records_checked": 13187,
+  "Q2_ready": false
+}
