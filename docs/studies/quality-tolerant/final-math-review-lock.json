@@ -1,0 +1,45 @@
+{
+  "stage": "final_bounded_full_weight_math_review",
+  "date": "2026-10-28",
+  "base_commit": "2993d2d29e8b8d11774ac6a3a4639c5c4a5a30c4",
+  "profile_path": "data/wmt_metadata_correction_20261026/private-metadata.json",
+  "profile_sha256": "fbdb52a0269a5b4b041ffc2af072e2e62b53b5bcf26f4273a94b8b8a4e36b2c1",
+  "aggregate_path": "results/quality_tolerant/eligibility_audit/metadata_correction/population-summary.json",
+  "thresholds": [
+    "1/100",
+    "1/50",
+    "201/10000"
+  ],
+  "alphas": [
+    "1/40",
+    "1/20"
+  ],
+  "primary_alpha": "1/40",
+  "root_steps": 64,
+  "limits": {
+    "profile_decodes": 1,
+    "profile_vectors": 4,
+    "weight_values": 1600,
+    "waterfill_evaluations": 2000,
+    "top_k_evaluations": 6000,
+    "grid_points": 20000,
+    "grid_comparisons": 60000
+  },
+  "wall_seconds": 1800,
+  "cpu_seconds_per_process": 1200,
+  "memory_bytes": 2147483648,
+  "storage_bytes": 16777216,
+  "private_input_bytes": 16777216,
+  "MC_datasets": 0,
+  "bootstrap_draws": 0,
+  "model_requests": 0,
+  "corpus_reference_outcome_body_decodes": 0,
+  "downloads": 0,
+  "target_encodings": 0,
+  "fits": 0,
+  "retries": 0,
+  "dollars": 0,
+  "preparation_reporting_seconds": 7200,
+  "total_charged_seconds": 9000,
+  "Q2_authorized": false
+}
