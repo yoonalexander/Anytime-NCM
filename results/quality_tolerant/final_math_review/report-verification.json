@@ -1,0 +1,10 @@
+{
+  "verified": true,
+  "checks": 70285,
+  "private_profile_decodes": 0,
+  "optimizations_replayed": 0,
+  "grids_replayed": 0,
+  "exact_threshold_certificates": 12,
+  "tests": 27,
+  "model_requests": 0
+}

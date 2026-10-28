@@ -1,0 +1,117 @@
+{
+  "grids": [
+    {
+      "counts": [
+        1,
+        3
+      ],
+      "points": 121,
+      "thresholds": 3,
+      "passed": true
+    },
+    {
+      "counts": [
+        1,
+        2,
+        5
+      ],
+      "points": 1331,
+      "thresholds": 3,
+      "passed": true
+    },
+    {
+      "counts": [
+        1,
+        4,
+        4,
+        9
+      ],
+      "points": 14641,
+      "thresholds": 3,
+      "passed": true
+    }
+  ],
+  "target_counterexamples": [
+    {
+      "probabilities": [
+        {
+          "numerator": "1",
+          "denominator": "2",
+          "decimal": 0.5
+        },
+        {
+          "numerator": "1",
+          "denominator": "2",
+          "decimal": 0.5
+        }
+      ],
+      "counts": [
+        1,
+        9
+      ],
+      "per_input_losses": [
+        {
+          "numerator": "1",
+          "denominator": "1",
+          "decimal": 1.0
+        },
+        {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal": 0.0
+        }
+      ],
+      "expected_realized_ratio": {
+        "numerator": "1",
+        "denominator": "2",
+        "decimal": 0.5
+      },
+      "ratio_of_expected_totals": {
+        "numerator": "1",
+        "denominator": "10",
+        "decimal": 0.1
+      }
+    },
+    {
+      "probabilities": [
+        {
+          "numerator": "99",
+          "denominator": "100",
+          "decimal": 0.99
+        },
+        {
+          "numerator": "1",
+          "denominator": "100",
+          "decimal": 0.01
+        }
+      ],
+      "counts": [
+        1,
+        100
+      ],
+      "per_input_losses": [
+        {
+          "numerator": "0",
+          "denominator": "1",
+          "decimal": 0.0
+        },
+        {
+          "numerator": "1",
+          "denominator": "1",
+          "decimal": 1.0
+        }
+      ],
+      "expected_realized_ratio": {
+        "numerator": "1",
+        "denominator": "100",
+        "decimal": 0.01
+      },
+      "ratio_of_expected_totals": {
+        "numerator": "100",
+        "denominator": "199",
+        "decimal": 0.5025125628140703
+      }
+    }
+  ],
+  "MC_datasets": 0
+}

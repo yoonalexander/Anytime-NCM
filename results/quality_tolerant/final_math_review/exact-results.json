@@ -1,0 +1,1571 @@
+{
+  "development_numeric": {
+    "J": 269,
+    "total_count": 1229,
+    "max_count": 18,
+    "unlabelled_count_histogram": {
+      "1": 57,
+      "2": 44,
+      "3": 36,
+      "4": 35,
+      "5": 23,
+      "6": 12,
+      "7": 14,
+      "8": 8,
+      "9": 9,
+      "10": 6,
+      "11": 7,
+      "12": 2,
+      "13": 3,
+      "14": 1,
+      "15": 5,
+      "16": 3,
+      "17": 3,
+      "18": 1
+    },
+    "largest_cap_zero_upper": 0.05365876613580711,
+    "sharp_zero_brackets": {
+      "1/40": {
+        "lower": {
+          "numerator": "48198132123190895",
+          "denominator": "1152921504606846976",
+          "decimal": 0.04180521564616556
+        },
+        "upper": {
+          "numerator": "771170113971054321",
+          "denominator": "18446744073709551616",
+          "decimal": 0.04180521564616556
+        },
+        "width": {
+          "numerator": "1",
+          "denominator": "18446744073709551616",
+          "decimal": 5.421010862427522e-20
+        },
+        "steps": 64
+      },
+      "1/20": {
+        "lower": {
+          "numerator": "321251464467469947",
+          "denominator": "9223372036854775808",
+          "decimal": 0.034830153568978076
+        },
+        "upper": {
+          "numerator": "642502928934939895",
+          "denominator": "18446744073709551616",
+          "decimal": 0.034830153568978076
+        },
+        "width": {
+          "numerator": "1",
+          "denominator": "18446744073709551616",
+          "decimal": 5.421010862427522e-20
+        },
+        "steps": 64
+      }
+    },
+    "cases": [
+      {
+        "delta": {
+          "numerator": "1",
+          "denominator": "100",
+          "decimal": 0.01
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "1134663096608049624958236923074700135955128930405041",
+          "denominator": "2452508182668547561881600000000000000000000000000000",
+          "decimal": 0.462654153256865
+        },
+        "active_counts": [
+          18,
+          17,
+          17,
+          17,
+          16,
+          16,
+          16,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "3629",
+            "denominator": "21600",
+            "decimal": 0.16800925925925925
+          },
+          {
+            "numerator": "2429",
+            "denominator": "20400",
+            "decimal": 0.11906862745098039
+          },
+          {
+            "numerator": "2429",
+            "denominator": "20400",
+            "decimal": 0.11906862745098039
+          },
+          {
+            "numerator": "2429",
+            "denominator": "20400",
+            "decimal": 0.11906862745098039
+          },
+          {
+            "numerator": "1229",
+            "denominator": "19200",
+            "decimal": 0.06401041666666667
+          },
+          {
+            "numerator": "1229",
+            "denominator": "19200",
+            "decimal": 0.06401041666666667
+          },
+          {
+            "numerator": "1229",
+            "denominator": "19200",
+            "decimal": 0.06401041666666667
+          },
+          {
+            "numerator": "29",
+            "denominator": "18000",
+            "decimal": 0.0016111111111111111
+          },
+          {
+            "numerator": "29",
+            "denominator": "18000",
+            "decimal": 0.0016111111111111111
+          },
+          {
+            "numerator": "29",
+            "denominator": "18000",
+            "decimal": 0.0016111111111111111
+          },
+          {
+            "numerator": "29",
+            "denominator": "18000",
+            "decimal": 0.0016111111111111111
+          },
+          {
+            "numerator": "29",
+            "denominator": "18000",
+            "decimal": 0.0016111111111111111
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "17971",
+          "denominator": "1200",
+          "decimal": 14.975833333333334
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "61312704566713689047040000000000000000000000000000",
+          "denominator": "1134663096608049624958236923074700135955128930405041",
+          "decimal": 0.05403604360624865
+        },
+        "simple_top_k_witness": {
+          "k": 7,
+          "count_total": 117,
+          "event_probability": {
+            "numerator": "1229",
+            "denominator": "11700",
+            "decimal": 0.10504273504273504
+          },
+          "all_zero_probability": {
+            "numerator": "13801208505248851443916967191",
+            "denominator": "30012421160697300000000000000",
+            "decimal": 0.45984988786316894
+          },
+          "active_counts": [
+            18,
+            17,
+            17,
+            17,
+            16,
+            16,
+            16
+          ]
+        }
+      },
+      {
+        "delta": {
+          "numerator": "1",
+          "denominator": "50",
+          "decimal": 0.02
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "2815251316701026715266957506271908213736076474728111",
+          "denominator": "14237613017819122614125625000000000000000000000000000",
+          "decimal": 0.19773337800216872
+        },
+        "active_counts": [
+          18,
+          17,
+          17,
+          17,
+          16,
+          16,
+          16,
+          15,
+          15,
+          15,
+          15,
+          15,
+          14
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "2629",
+            "denominator": "11700",
+            "decimal": 0.2247008547008547
+          },
+          {
+            "numerator": "1979",
+            "denominator": "11050",
+            "decimal": 0.17909502262443439
+          },
+          {
+            "numerator": "1979",
+            "denominator": "11050",
+            "decimal": 0.17909502262443439
+          },
+          {
+            "numerator": "1979",
+            "denominator": "11050",
+            "decimal": 0.17909502262443439
+          },
+          {
+            "numerator": "1329",
+            "denominator": "10400",
+            "decimal": 0.12778846153846155
+          },
+          {
+            "numerator": "1329",
+            "denominator": "10400",
+            "decimal": 0.12778846153846155
+          },
+          {
+            "numerator": "1329",
+            "denominator": "10400",
+            "decimal": 0.12778846153846155
+          },
+          {
+            "numerator": "679",
+            "denominator": "9750",
+            "decimal": 0.06964102564102564
+          },
+          {
+            "numerator": "679",
+            "denominator": "9750",
+            "decimal": 0.06964102564102564
+          },
+          {
+            "numerator": "679",
+            "denominator": "9750",
+            "decimal": 0.06964102564102564
+          },
+          {
+            "numerator": "679",
+            "denominator": "9750",
+            "decimal": 0.06964102564102564
+          },
+          {
+            "numerator": "679",
+            "denominator": "9750",
+            "decimal": 0.06964102564102564
+          },
+          {
+            "numerator": "29",
+            "denominator": "9100",
+            "decimal": 0.003186813186813187
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "9071",
+          "denominator": "650",
+          "decimal": 13.955384615384615
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "355940325445478065353140625000000000000000000000000",
+          "denominator": "2815251316701026715266957506271908213736076474728111",
+          "decimal": 0.12643287770932535
+        },
+        "simple_top_k_witness": {
+          "k": 12,
+          "count_total": 192,
+          "event_probability": {
+            "numerator": "1229",
+            "denominator": "9600",
+            "decimal": 0.12802083333333333
+          },
+          "all_zero_probability": {
+            "numerator": "118393566406263861030892293988073266185386865841",
+            "denominator": "612709757329767363772416000000000000000000000000",
+            "decimal": 0.19322944508380516
+          },
+          "active_counts": [
+            18,
+            17,
+            17,
+            17,
+            16,
+            16,
+            16,
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      },
+      {
+        "delta": {
+          "numerator": "201",
+          "denominator": "10000",
+          "decimal": 0.0201
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "2286025887704205697779025426759844350268256610766970295598780552876189029390726811",
+          "denominator": "11663452584197425245491712000000000000000000000000000000000000000000000000000000000",
+          "decimal": 0.19599907241887327
+        },
+        "active_counts": [
+          18,
+          17,
+          17,
+          17,
+          16,
+          16,
+          16,
+          15,
+          15,
+          15,
+          15,
+          15,
+          14
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "527029",
+            "denominator": "2340000",
+            "decimal": 0.22522606837606837
+          },
+          {
+            "numerator": "397029",
+            "denominator": "2210000",
+            "decimal": 0.17965113122171947
+          },
+          {
+            "numerator": "397029",
+            "denominator": "2210000",
+            "decimal": 0.17965113122171947
+          },
+          {
+            "numerator": "397029",
+            "denominator": "2210000",
+            "decimal": 0.17965113122171947
+          },
+          {
+            "numerator": "267029",
+            "denominator": "2080000",
+            "decimal": 0.12837932692307694
+          },
+          {
+            "numerator": "267029",
+            "denominator": "2080000",
+            "decimal": 0.12837932692307694
+          },
+          {
+            "numerator": "267029",
+            "denominator": "2080000",
+            "decimal": 0.12837932692307694
+          },
+          {
+            "numerator": "137029",
+            "denominator": "1950000",
+            "decimal": 0.07027128205128205
+          },
+          {
+            "numerator": "137029",
+            "denominator": "1950000",
+            "decimal": 0.07027128205128205
+          },
+          {
+            "numerator": "137029",
+            "denominator": "1950000",
+            "decimal": 0.07027128205128205
+          },
+          {
+            "numerator": "137029",
+            "denominator": "1950000",
+            "decimal": 0.07027128205128205
+          },
+          {
+            "numerator": "137029",
+            "denominator": "1950000",
+            "decimal": 0.07027128205128205
+          },
+          {
+            "numerator": "7029",
+            "denominator": "1820000",
+            "decimal": 0.0038620879120879123
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "1812971",
+          "denominator": "130000",
+          "decimal": 13.945930769230769
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "291586314604935631137292800000000000000000000000000000000000000000000000000000000",
+          "denominator": "2286025887704205697779025426759844350268256610766970295598780552876189029390726811",
+          "decimal": 0.1275516240534651
+        },
+        "simple_top_k_witness": {
+          "k": 12,
+          "count_total": 192,
+          "event_probability": {
+            "numerator": "82343",
+            "denominator": "640000",
+            "decimal": 0.1286609375
+          },
+          "all_zero_probability": {
+            "numerator": "904494429926462540154106723199257411068658653820687627045942850109601",
+            "denominator": "4722366482869645213696000000000000000000000000000000000000000000000000",
+            "decimal": 0.19153414568892746
+          },
+          "active_counts": [
+            18,
+            17,
+            17,
+            17,
+            16,
+            16,
+            16,
+            15,
+            15,
+            15,
+            15,
+            15
+          ]
+        }
+      }
+    ],
+    "not_general_positive_loss_CI": true
+  },
+  "development_inputs": {
+    "J": 297,
+    "total_count": 5487,
+    "max_count": 113,
+    "unlabelled_count_histogram": {
+      "2": 5,
+      "3": 8,
+      "4": 8,
+      "5": 13,
+      "6": 15,
+      "7": 15,
+      "8": 20,
+      "9": 12,
+      "10": 15,
+      "11": 10,
+      "12": 8,
+      "13": 8,
+      "14": 8,
+      "15": 11,
+      "16": 10,
+      "17": 4,
+      "18": 8,
+      "19": 6,
+      "20": 8,
+      "21": 11,
+      "22": 5,
+      "23": 9,
+      "24": 6,
+      "25": 4,
+      "26": 6,
+      "27": 6,
+      "28": 3,
+      "29": 3,
+      "30": 7,
+      "31": 3,
+      "32": 3,
+      "33": 5,
+      "34": 4,
+      "35": 3,
+      "37": 4,
+      "38": 1,
+      "39": 4,
+      "41": 2,
+      "42": 2,
+      "44": 2,
+      "45": 1,
+      "46": 2,
+      "47": 1,
+      "48": 1,
+      "56": 1,
+      "59": 1,
+      "63": 1,
+      "91": 1,
+      "103": 1,
+      "111": 1,
+      "113": 1
+    },
+    "largest_cap_zero_upper": 0.07549942910137707,
+    "sharp_zero_brackets": {
+      "1/40": {
+        "lower": {
+          "numerator": "433709363862319309",
+          "denominator": "9223372036854775808",
+          "decimal": 0.04702286345268327
+        },
+        "upper": {
+          "numerator": "867418727724638619",
+          "denominator": "18446744073709551616",
+          "decimal": 0.04702286345268327
+        },
+        "width": {
+          "numerator": "1",
+          "denominator": "18446744073709551616",
+          "decimal": 5.421010862427522e-20
+        },
+        "steps": 64
+      },
+      "1/20": {
+        "lower": {
+          "numerator": "749144567641876069",
+          "denominator": "18446744073709551616",
+          "decimal": 0.0406112083871518
+        },
+        "upper": {
+          "numerator": "374572283820938035",
+          "denominator": "9223372036854775808",
+          "decimal": 0.0406112083871518
+        },
+        "width": {
+          "numerator": "1",
+          "denominator": "18446744073709551616",
+          "decimal": 5.421010862427522e-20
+        },
+        "steps": 64
+      }
+    },
+    "cases": [
+      {
+        "delta": {
+          "numerator": "1",
+          "denominator": "100",
+          "decimal": 0.01
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "1738795544200692961",
+          "denominator": "3009677798400000000",
+          "decimal": 0.577734781153341
+        },
+        "active_counts": [
+          113,
+          111,
+          103,
+          91
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "8887",
+            "denominator": "45200",
+            "decimal": 0.1966150442477876
+          },
+          {
+            "numerator": "8087",
+            "denominator": "44400",
+            "decimal": 0.18213963963963964
+          },
+          {
+            "numerator": "4887",
+            "denominator": "41200",
+            "decimal": 0.11861650485436893
+          },
+          {
+            "numerator": "87",
+            "denominator": "36400",
+            "decimal": 0.00239010989010989
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "36313",
+          "denominator": "400",
+          "decimal": 90.7825
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "75241944960000000",
+          "denominator": "1738795544200692961",
+          "decimal": 0.04327245098536756
+        },
+        "simple_top_k_witness": {
+          "k": 3,
+          "count_total": 327,
+          "event_probability": {
+            "numerator": "1829",
+            "denominator": "10900",
+            "decimal": 0.16779816513761467
+          },
+          "all_zero_probability": {
+            "numerator": "746389464911",
+            "denominator": "1295029000000",
+            "decimal": 0.5763496144958916
+          },
+          "active_counts": [
+            113,
+            111,
+            103
+          ]
+        }
+      },
+      {
+        "delta": {
+          "numerator": "1",
+          "denominator": "50",
+          "decimal": 0.02
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "56435023943603761",
+          "denominator": "188104862400000000",
+          "decimal": 0.30001895338354506
+        },
+        "active_counts": [
+          113,
+          111,
+          103,
+          91
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "7187",
+            "denominator": "22600",
+            "decimal": 0.3180088495575221
+          },
+          {
+            "numerator": "6787",
+            "denominator": "22200",
+            "decimal": 0.3057207207207207
+          },
+          {
+            "numerator": "5187",
+            "denominator": "20600",
+            "decimal": 0.2517961165048544
+          },
+          {
+            "numerator": "2787",
+            "denominator": "18200",
+            "decimal": 0.15313186813186813
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "15413",
+          "denominator": "200",
+          "decimal": 77.065
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "4702621560000000",
+          "denominator": "56435023943603761",
+          "decimal": 0.08332806883717087
+        },
+        "simple_top_k_witness": {
+          "k": 4,
+          "count_total": 418,
+          "event_probability": {
+            "numerator": "5487",
+            "denominator": "20900",
+            "decimal": 0.2625358851674641
+          },
+          "all_zero_probability": {
+            "numerator": "56435023943603761",
+            "denominator": "190802976100000000",
+            "decimal": 0.2957764343991475
+          },
+          "active_counts": [
+            113,
+            111,
+            103,
+            91
+          ]
+        }
+      },
+      {
+        "delta": {
+          "numerator": "201",
+          "denominator": "10000",
+          "decimal": 0.0201
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "6896526792919968288101797",
+          "denominator": "23151367680000000000000000",
+          "decimal": 0.29788852599312043
+        },
+        "active_counts": [
+          113,
+          111,
+          103,
+          91
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "1442887",
+            "denominator": "4520000",
+            "decimal": 0.31922278761061945
+          },
+          {
+            "numerator": "1362887",
+            "denominator": "4440000",
+            "decimal": 0.3069565315315315
+          },
+          {
+            "numerator": "1042887",
+            "denominator": "4120000",
+            "decimal": 0.2531279126213592
+          },
+          {
+            "numerator": "43299",
+            "denominator": "280000",
+            "decimal": 0.1546392857142857
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "3077113",
+          "denominator": "40000",
+          "decimal": 76.927825
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "578784192000000000000000",
+          "denominator": "6896526792919968288101797",
+          "decimal": 0.08392401122753335
+        },
+        "simple_top_k_witness": {
+          "k": 4,
+          "count_total": 418,
+          "event_probability": {
+            "numerator": "1102887",
+            "denominator": "4180000",
+            "decimal": 0.2638485645933014
+          },
+          "all_zero_probability": {
+            "numerator": "89654848307959587745323361",
+            "denominator": "305284761760000000000000000",
+            "decimal": 0.29367613303425166
+          },
+          "active_counts": [
+            113,
+            111,
+            103,
+            91
+          ]
+        }
+      }
+    ],
+    "not_general_positive_loss_CI": true
+  },
+  "confirmation_numeric": {
+    "J": 391,
+    "total_count": 1778,
+    "max_count": 29,
+    "unlabelled_count_histogram": {
+      "1": 66,
+      "2": 84,
+      "3": 53,
+      "4": 43,
+      "5": 36,
+      "6": 21,
+      "7": 22,
+      "8": 11,
+      "9": 16,
+      "10": 10,
+      "11": 6,
+      "12": 6,
+      "13": 3,
+      "14": 5,
+      "15": 1,
+      "16": 2,
+      "17": 1,
+      "18": 1,
+      "19": 1,
+      "21": 1,
+      "23": 1,
+      "29": 1
+    },
+    "largest_cap_zero_upper": 0.059884392111842,
+    "sharp_zero_brackets": {
+      "1/40": {
+        "lower": {
+          "numerator": "634370339762238209",
+          "denominator": "18446744073709551616",
+          "decimal": 0.03438928502652931
+        },
+        "upper": {
+          "numerator": "317185169881119105",
+          "denominator": "9223372036854775808",
+          "decimal": 0.03438928502652931
+        },
+        "width": {
+          "numerator": "1",
+          "denominator": "18446744073709551616",
+          "decimal": 5.421010862427522e-20
+        },
+        "steps": 64
+      },
+      "1/20": {
+        "lower": {
+          "numerator": "538078456398690759",
+          "denominator": "18446744073709551616",
+          "decimal": 0.029169291569755364
+        },
+        "upper": {
+          "numerator": "67259807049836345",
+          "denominator": "2305843009213693952",
+          "decimal": 0.029169291569755364
+        },
+        "width": {
+          "numerator": "1",
+          "denominator": "18446744073709551616",
+          "decimal": 5.421010862427522e-20
+        },
+        "steps": 64
+      }
+    },
+    "cases": [
+      {
+        "delta": {
+          "numerator": "1",
+          "denominator": "100",
+          "decimal": 0.01
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "63218263551147",
+          "denominator": "141937600000000",
+          "decimal": 0.44539476186117705
+        },
+        "active_counts": [
+          29,
+          23,
+          21,
+          19
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "2089",
+            "denominator": "5800",
+            "decimal": 0.36017241379310344
+          },
+          {
+            "numerator": "889",
+            "denominator": "4600",
+            "decimal": 0.1932608695652174
+          },
+          {
+            "numerator": "163",
+            "denominator": "1400",
+            "decimal": 0.11642857142857142
+          },
+          {
+            "numerator": "89",
+            "denominator": "3800",
+            "decimal": 0.023421052631578947
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "3711",
+          "denominator": "200",
+          "decimal": 18.555
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "3548440000000",
+          "denominator": "63218263551147",
+          "decimal": 0.05612998207597271
+        },
+        "simple_top_k_witness": {
+          "k": 2,
+          "count_total": 52,
+          "event_probability": {
+            "numerator": "889",
+            "denominator": "2600",
+            "decimal": 0.34192307692307694
+          },
+          "all_zero_probability": {
+            "numerator": "2927521",
+            "denominator": "6760000",
+            "decimal": 0.4330652366863905
+          },
+          "active_counts": [
+            29,
+            23
+          ]
+        }
+      },
+      {
+        "delta": {
+          "numerator": "1",
+          "denominator": "50",
+          "decimal": 0.02
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "32131234262969485620561601",
+          "denominator": "208477946880000000000000000",
+          "decimal": 0.15412294078982003
+        },
+        "active_counts": [
+          29,
+          23,
+          21,
+          19,
+          18,
+          17,
+          16,
+          16
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "1357",
+            "denominator": "2900",
+            "decimal": 0.46793103448275863
+          },
+          {
+            "numerator": "757",
+            "denominator": "2300",
+            "decimal": 0.32913043478260867
+          },
+          {
+            "numerator": "557",
+            "denominator": "2100",
+            "decimal": 0.2652380952380952
+          },
+          {
+            "numerator": "357",
+            "denominator": "1900",
+            "decimal": 0.18789473684210525
+          },
+          {
+            "numerator": "257",
+            "denominator": "1800",
+            "decimal": 0.14277777777777778
+          },
+          {
+            "numerator": "157",
+            "denominator": "1700",
+            "decimal": 0.09235294117647058
+          },
+          {
+            "numerator": "57",
+            "denominator": "1600",
+            "decimal": 0.035625
+          },
+          {
+            "numerator": "57",
+            "denominator": "1600",
+            "decimal": 0.035625
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "1543",
+          "denominator": "100",
+          "decimal": 15.43
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "5211948672000000000000000",
+          "denominator": "32131234262969485620561601",
+          "decimal": 0.16220816882862954
+        },
+        "simple_top_k_witness": {
+          "k": 5,
+          "count_total": 110,
+          "event_probability": {
+            "numerator": "889",
+            "denominator": "2750",
+            "decimal": 0.32327272727272727
+          },
+          "all_zero_probability": {
+            "numerator": "22321936361565301",
+            "denominator": "157276367187500000",
+            "decimal": 0.1419281024907816
+          },
+          "active_counts": [
+            29,
+            23,
+            21,
+            19,
+            18
+          ]
+        }
+      },
+      {
+        "delta": {
+          "numerator": "201",
+          "denominator": "10000",
+          "decimal": 0.0201
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "770966644651151696400113746747838722290843603",
+          "denominator": "5060300269158400000000000000000000000000000000",
+          "decimal": 0.15235590847247774
+        },
+        "active_counts": [
+          29,
+          23,
+          21,
+          19,
+          18,
+          17,
+          16,
+          16
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "543689",
+            "denominator": "1160000",
+            "decimal": 0.4686974137931034
+          },
+          {
+            "numerator": "303689",
+            "denominator": "920000",
+            "decimal": 0.3300967391304348
+          },
+          {
+            "numerator": "74563",
+            "denominator": "280000",
+            "decimal": 0.26629642857142855
+          },
+          {
+            "numerator": "143689",
+            "denominator": "760000",
+            "decimal": 0.18906447368421053
+          },
+          {
+            "numerator": "11521",
+            "denominator": "80000",
+            "decimal": 0.1440125
+          },
+          {
+            "numerator": "63689",
+            "denominator": "680000",
+            "decimal": 0.09366029411764706
+          },
+          {
+            "numerator": "23689",
+            "denominator": "640000",
+            "decimal": 0.0370140625
+          },
+          {
+            "numerator": "23689",
+            "denominator": "640000",
+            "decimal": 0.0370140625
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "616311",
+          "denominator": "40000",
+          "decimal": 15.407775
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "126507506728960000000000000000000000000000000",
+          "denominator": "770966644651151696400113746747838722290843603",
+          "decimal": 0.16408946821065434
+        },
+        "simple_top_k_witness": {
+          "k": 5,
+          "count_total": 110,
+          "event_probability": {
+            "numerator": "178689",
+            "denominator": "550000",
+            "decimal": 0.3248890909090909
+          },
+          "all_zero_probability": {
+            "numerator": "7058120627456889405765077551",
+            "denominator": "50328437500000000000000000000",
+            "decimal": 0.1402412031459727
+          },
+          "active_counts": [
+            29,
+            23,
+            21,
+            19,
+            18
+          ]
+        }
+      }
+    ],
+    "not_general_positive_loss_CI": true
+  },
+  "confirmation_inputs": {
+    "J": 447,
+    "total_count": 7700,
+    "max_count": 85,
+    "unlabelled_count_histogram": {
+      "2": 7,
+      "3": 11,
+      "4": 25,
+      "5": 23,
+      "6": 22,
+      "7": 25,
+      "8": 22,
+      "9": 24,
+      "10": 26,
+      "11": 15,
+      "12": 15,
+      "13": 15,
+      "14": 7,
+      "15": 17,
+      "16": 9,
+      "17": 12,
+      "18": 8,
+      "19": 9,
+      "20": 5,
+      "21": 9,
+      "22": 11,
+      "23": 11,
+      "24": 6,
+      "25": 8,
+      "26": 6,
+      "27": 13,
+      "28": 10,
+      "29": 3,
+      "30": 8,
+      "31": 8,
+      "32": 4,
+      "33": 4,
+      "34": 1,
+      "35": 3,
+      "36": 7,
+      "37": 3,
+      "38": 2,
+      "39": 4,
+      "40": 3,
+      "41": 1,
+      "42": 3,
+      "43": 1,
+      "44": 3,
+      "45": 2,
+      "46": 3,
+      "47": 1,
+      "48": 2,
+      "49": 4,
+      "54": 1,
+      "60": 1,
+      "65": 1,
+      "69": 1,
+      "77": 1,
+      "85": 1
+    },
+    "largest_cap_zero_upper": 0.040553830628577765,
+    "sharp_zero_brackets": {
+      "1/40": {
+        "lower": {
+          "numerator": "471160404334605355",
+          "denominator": "18446744073709551616",
+          "decimal": 0.02554165669843639
+        },
+        "upper": {
+          "numerator": "117790101083651339",
+          "denominator": "4611686018427387904",
+          "decimal": 0.02554165669843639
+        },
+        "width": {
+          "numerator": "1",
+          "denominator": "18446744073709551616",
+          "decimal": 5.421010862427522e-20
+        },
+        "steps": 64
+      },
+      "1/20": {
+        "lower": {
+          "numerator": "198868777084309677",
+          "denominator": "9223372036854775808",
+          "decimal": 0.021561396015434404
+        },
+        "upper": {
+          "numerator": "397737554168619355",
+          "denominator": "18446744073709551616",
+          "decimal": 0.021561396015434404
+        },
+        "width": {
+          "numerator": "1",
+          "denominator": "18446744073709551616",
+          "decimal": 5.421010862427522e-20
+        },
+        "steps": 64
+      }
+    },
+    "cases": [
+      {
+        "delta": {
+          "numerator": "1",
+          "denominator": "100",
+          "decimal": 0.01
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "187835859711",
+          "denominator": "611548437500",
+          "decimal": 0.3071479676718167
+        },
+        "active_counts": [
+          85,
+          77,
+          69,
+          65,
+          60
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "146",
+            "denominator": "425",
+            "decimal": 0.34352941176470586
+          },
+          {
+            "numerator": "106",
+            "denominator": "385",
+            "decimal": 0.2753246753246753
+          },
+          {
+            "numerator": "22",
+            "denominator": "115",
+            "decimal": 0.19130434782608696
+          },
+          {
+            "numerator": "46",
+            "denominator": "325",
+            "decimal": 0.14153846153846153
+          },
+          {
+            "numerator": "7",
+            "denominator": "100",
+            "decimal": 0.07
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "279",
+          "denominator": "5",
+          "decimal": 55.8
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "30577421875",
+          "denominator": "375671719422",
+          "decimal": 0.08139399452811015
+        },
+        "simple_top_k_witness": {
+          "k": 4,
+          "count_total": 296,
+          "event_probability": {
+            "numerator": "77",
+            "denominator": "296",
+            "decimal": 0.26013513513513514
+          },
+          "all_zero_probability": {
+            "numerator": "2300257521",
+            "denominator": "7676563456",
+            "decimal": 0.29964677999269573
+          },
+          "active_counts": [
+            85,
+            77,
+            69,
+            65
+          ]
+        }
+      },
+      {
+        "delta": {
+          "numerator": "1",
+          "denominator": "50",
+          "decimal": 0.02
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "6944861582307172628795969976576034688709852481",
+          "denominator": "106604362846886213021570168369294034383929344000",
+          "decimal": 0.06514612907805606
+        },
+        "active_counts": [
+          85,
+          77,
+          69,
+          65,
+          60,
+          54,
+          49,
+          49,
+          49,
+          49,
+          48,
+          48,
+          47,
+          46,
+          46,
+          46
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "627",
+            "denominator": "1360",
+            "decimal": 0.4610294117647059
+          },
+          {
+            "numerator": "499",
+            "denominator": "1232",
+            "decimal": 0.4050324675324675
+          },
+          {
+            "numerator": "371",
+            "denominator": "1104",
+            "decimal": 0.33605072463768115
+          },
+          {
+            "numerator": "307",
+            "denominator": "1040",
+            "decimal": 0.2951923076923077
+          },
+          {
+            "numerator": "227",
+            "denominator": "960",
+            "decimal": 0.23645833333333333
+          },
+          {
+            "numerator": "131",
+            "denominator": "864",
+            "decimal": 0.15162037037037038
+          },
+          {
+            "numerator": "51",
+            "denominator": "784",
+            "decimal": 0.06505102040816327
+          },
+          {
+            "numerator": "51",
+            "denominator": "784",
+            "decimal": 0.06505102040816327
+          },
+          {
+            "numerator": "51",
+            "denominator": "784",
+            "decimal": 0.06505102040816327
+          },
+          {
+            "numerator": "51",
+            "denominator": "784",
+            "decimal": 0.06505102040816327
+          },
+          {
+            "numerator": "35",
+            "denominator": "768",
+            "decimal": 0.045572916666666664
+          },
+          {
+            "numerator": "35",
+            "denominator": "768",
+            "decimal": 0.045572916666666664
+          },
+          {
+            "numerator": "19",
+            "denominator": "752",
+            "decimal": 0.02526595744680851
+          },
+          {
+            "numerator": "3",
+            "denominator": "736",
+            "decimal": 0.004076086956521739
+          },
+          {
+            "numerator": "3",
+            "denominator": "736",
+            "decimal": 0.004076086956521739
+          },
+          {
+            "numerator": "3",
+            "denominator": "736",
+            "decimal": 0.004076086956521739
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "733",
+          "denominator": "16",
+          "decimal": 45.8125
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "2665109071172155325539254209232350859598233600",
+          "denominator": "6944861582307172628795969976576034688709852481",
+          "decimal": 0.3837526550510128
+        },
+        "simple_top_k_witness": {
+          "k": 6,
+          "count_total": 410,
+          "event_probability": {
+            "numerator": "77",
+            "denominator": "205",
+            "decimal": 0.375609756097561
+          },
+          "all_zero_probability": {
+            "numerator": "4398046511104",
+            "denominator": "74220378765625",
+            "decimal": 0.059256589419898587
+          },
+          "active_counts": [
+            85,
+            77,
+            69,
+            65,
+            60,
+            54
+          ]
+        }
+      },
+      {
+        "delta": {
+          "numerator": "201",
+          "denominator": "10000",
+          "decimal": 0.0201
+        },
+        "sharp_all_zero_probability": {
+          "numerator": "682904999821602148039846067689447379808300239563271398032619861495721632767361",
+          "denominator": "10660436284688621302157016836929403438392934400000000000000000000000000000000000",
+          "decimal": 0.06405976093140253
+        },
+        "active_counts": [
+          85,
+          77,
+          69,
+          65,
+          60,
+          54,
+          49,
+          49,
+          49,
+          49,
+          48,
+          48,
+          47,
+          46,
+          46,
+          46
+        ],
+        "active_event_probabilities": [
+          {
+            "numerator": "62777",
+            "denominator": "136000",
+            "decimal": 0.4615955882352941
+          },
+          {
+            "numerator": "49977",
+            "denominator": "123200",
+            "decimal": 0.4056574675324675
+          },
+          {
+            "numerator": "37177",
+            "denominator": "110400",
+            "decimal": 0.3367481884057971
+          },
+          {
+            "numerator": "30777",
+            "denominator": "104000",
+            "decimal": 0.2959326923076923
+          },
+          {
+            "numerator": "22777",
+            "denominator": "96000",
+            "decimal": 0.23726041666666667
+          },
+          {
+            "numerator": "13177",
+            "denominator": "86400",
+            "decimal": 0.15251157407407406
+          },
+          {
+            "numerator": "5177",
+            "denominator": "78400",
+            "decimal": 0.06603316326530612
+          },
+          {
+            "numerator": "5177",
+            "denominator": "78400",
+            "decimal": 0.06603316326530612
+          },
+          {
+            "numerator": "5177",
+            "denominator": "78400",
+            "decimal": 0.06603316326530612
+          },
+          {
+            "numerator": "5177",
+            "denominator": "78400",
+            "decimal": 0.06603316326530612
+          },
+          {
+            "numerator": "3577",
+            "denominator": "76800",
+            "decimal": 0.046575520833333335
+          },
+          {
+            "numerator": "3577",
+            "denominator": "76800",
+            "decimal": 0.046575520833333335
+          },
+          {
+            "numerator": "1977",
+            "denominator": "75200",
+            "decimal": 0.026289893617021276
+          },
+          {
+            "numerator": "377",
+            "denominator": "73600",
+            "decimal": 0.005122282608695652
+          },
+          {
+            "numerator": "377",
+            "denominator": "73600",
+            "decimal": 0.005122282608695652
+          },
+          {
+            "numerator": "377",
+            "denominator": "73600",
+            "decimal": 0.005122282608695652
+          }
+        ],
+        "tau_count_units": {
+          "numerator": "73223",
+          "denominator": "1600",
+          "decimal": 45.764375
+        },
+        "exceeds_primary_alpha": true,
+        "randomized_zero_rejection_upper": {
+          "numerator": "266510907117215532553925420923235085959823360000000000000000000000000000000000",
+          "denominator": "682904999821602148039846067689447379808300239563271398032619861495721632767361",
+          "decimal": 0.3902605884959653
+        },
+        "simple_top_k_witness": {
+          "k": 6,
+          "count_total": 410,
+          "event_probability": {
+            "numerator": "15477",
+            "denominator": "41000",
+            "decimal": 0.3774878048780488
+          },
+          "all_zero_probability": {
+            "numerator": "276433277440075714062264889",
+            "denominator": "4750104241000000000000000000",
+            "decimal": 0.058195202339787075
+          },
+          "active_counts": [
+            85,
+            77,
+            69,
+            65,
+            60,
+            54
+          ]
+        }
+      }
+    ],
+    "not_general_positive_loss_CI": true
+  }
+}
