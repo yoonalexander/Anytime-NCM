@@ -1,0 +1,20 @@
+{
+  "actual_current_features_outputs_and_work_verified": true,
+  "both_worker_states_unchanged": true,
+  "counts": {
+    "decoder": 6526,
+    "encoder": 0,
+    "generator_levels": 50596,
+    "inputs": 4772
+  },
+  "independent_mean_median_p95_session_ratio_checks": true,
+  "mean_saving": 0.05076061973779966,
+  "new_inference_fitting_reference_scoring_or_resampling": 0,
+  "original_matrix_incomplete_preserved": true,
+  "protected_files": 1326,
+  "quality_point_failure_preserved": true,
+  "records_checked": 4772,
+  "reviewer": "same assistant separate standard-library arithmetic; not independent human scientific review",
+  "status": "passed_separate_saved_timing_review",
+  "timed_cells_checked": 4752
+}

@@ -1,0 +1,63 @@
+{
+  "all_actual_current_features_exits_outputs_and_skipped_work_verified": true,
+  "artifact_sha256": {
+    "0-environment-start.json": "627ae902f99503eab5f14fc1c30c96f690abd7a1e4f618a83fbf971de6293bef",
+    "0-execution.json": "f0925bc2db63618bf3e4db568638b4482ae7783a8195077bc4e28eab801b051c",
+    "0-requests.jsonl": "b9d24751f51b0919ad9a0a97df5aecd7a443097183745124bce7b2acd390be36",
+    "0-started.json": "08a18bdb12ea4a7b13a89007fbd6fcc9f55a7c7376609ce59ce1adedb9a27b5d",
+    "0-starts.jsonl": "df8d30783a2843e8158303692c40f474969518768c1bf86e79f0739f75cfcfa0",
+    "1-environment-start.json": "5c783e3b0e5ec8d83eb6abb190f15b7ae8769c99ece7800ff087bdba04a87cc3",
+    "1-execution.json": "2689aa49207e428ba9393b14224879c06e39a5dcb20bb2c239614c499c11a530",
+    "1-requests.jsonl": "460e1d812e279f93c536c399f9ffaa46924e885c15b3da8bbdffe6cd67826a8e",
+    "1-started.json": "8a29568ed42728e9088f23c306a096b603531e55c3f37ad414db5cd2ebe9d96c",
+    "1-starts.jsonl": "467e9e2f821a315176e973c69e2addfe87cd34f8b205e7b76aa202c8fd39331e",
+    "analysis.json": "f30805bf335663d1ec94c29b46e2153ecec6be957e58eae2929357bf3677812b",
+    "decision.json": "2df5808c0db22b78ea2bc5bd0d12f11ee5368e7de639559d7449eb10b9f05cde",
+    "execution-sources.zip": "a6b98b45312e18549c5bce889b242cca65f44293058d24cd63a3052a868fae64",
+    "started.json": "061683f7b44c1c66192b58fcc2d85b14324f9194e632949c4bb81f76b0d646e7",
+    "synthetic-tests.log": "07b67083cdc3a71ea80ec649b6da2636b9f3d14b544a1b2c57324a87ad59a9c1",
+    "synthetic-tests.xml": "4e9d468c2c7b46f0e6fea2c75b16f3ae5b5023c2d046692155a8283c000a6893",
+    "timing-schedule.json": "f84cfe6197e403fc4843438da981e91eea2e70513301e4b7c05a70b25694a404"
+  },
+  "bootstrap_draws": 20000,
+  "campaign_usage": {
+    "artifact_bytes": 33554432,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 751.9024330000001,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 768.948127437,
+    "model_requests": 4772,
+    "paid_dollars": 0,
+    "real_fits": 0
+  },
+  "counts": {
+    "decoder": 6526,
+    "encoder": 0,
+    "generator_levels": 50596,
+    "inputs": 4772
+  },
+  "cpu_seconds_before_reporting_charge": 702.013105,
+  "feature_counts": {
+    "cheap_features": 2386,
+    "cue_features": 0,
+    "decisions": 2386,
+    "selected_logit_features": 0
+  },
+  "finished_utc": "2026-10-29T14:38:50.265788+00:00",
+  "max_parent_rss_bytes": 170291200,
+  "model_orchestration_seconds": 768.948127437,
+  "model_states_unchanged": true,
+  "new_corpus_scores": 0,
+  "new_fits": 0,
+  "paid_dollars": 0,
+  "real_checkpoint_loads": 2,
+  "reference_cache_opened": false,
+  "source_commit": "f19effd1689dbbd73fe41b3baaee5aac1c071b69",
+  "source_prefix_calls": 7148,
+  "status": "complete",
+  "synthetic_nn_requests": 0,
+  "target_encodings": 0,
+  "total_wall_seconds": 790.834066645,
+  "worker_source_materializations": 2376
+}

@@ -1,0 +1,16 @@
+{
+  "evidence_path": "first_timing_diagnostic/execution.json",
+  "evidence_sha256": "360e16d53d0bc220c05db11b889d3d8c39b274d262855a6390d9bba7e3d9073a",
+  "phase": "09t-first-timing-diagnostic",
+  "usage": {
+    "artifact_bytes": 33554432,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 751.9024330000001,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 768.948127437,
+    "model_requests": 4772,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}
