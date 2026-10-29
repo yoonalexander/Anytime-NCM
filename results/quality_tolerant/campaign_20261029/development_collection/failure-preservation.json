@@ -1,0 +1,38 @@
+{
+  "actual_known_model_attempts": 4307,
+  "all_original_model_requests_terminal": true,
+  "automatic_retry": false,
+  "budget_charge": "full original reservation, not a claim every reserved unit ran",
+  "charged_model_attempts": 4312,
+  "failure_preserved": true,
+  "parent_actual_cpu_wall_final_receipt_available": false,
+  "parent_final_resource_gate_reached": false,
+  "partial_label_support_json_preserved": true,
+  "public_artifact_sha256": {
+    "access-release.json": "1279364ac9ab0b1e2eecdc5d5dcc40172fd2f7eb3be0dde7f221bae9eb0724fa",
+    "asset-preflight.json": "fa1fe21e0c12ad242c36e3920373c2bfe9b5b0d832f0b7593aa4a5c07b91486c",
+    "collection-plan.json": "f6f91ddf492d061e2e5bbd52b86b432bdf9459e227fe3d33353e227c9d119013",
+    "corpus-access.json": "3290b62559cd12e5f7cc9fc556c113f11bdeb200ee8b4404c68fa05cc0a1191c",
+    "execution-sources.zip": "7703aa78e790d1ee1fe61af2c9ffe61e8218bda0eb0e3da034140caf7094a0e3",
+    "failure.json": "bdc1b2e10594e2a56c9a2e7f11f363b96a825b064ac79b56c053d9b78fb0e8f3",
+    "label-support.json": "991c2a1c7b17d74715c040e1bcb85d354277c7bf5ddd392cce79ec7e9c68352e",
+    "parity-hashes.json": "b716b687917024521789ae66713e9037b9c3270568fcf66373ed1939f96c05b0",
+    "proxy-labels.json": "34fb5255ff2c6cca081891422f2cfe54625885b3f8e2118b1724442d92558282",
+    "request-starts.jsonl": "c98e9cd11a1316f4fb898066008348f38680fc89791fd89a1fec2bfec95ccf7f",
+    "requests.jsonl": "3d0d5989b2cc590991edf8293b6920f70ba0ae7bf92c604bac2ca0b08d0c07e3",
+    "started.json": "0e870625eb92fe39523e3c51870b2e95df72890abd6f646c22838b3b7dead3de",
+    "synthetic-tests.log": "a19ab875fe5d7aac824d3d22400fae0c26496c0dd9125ff00f2ed5a9a8207438",
+    "synthetic-tests.xml": "0e52aa7ca757ea2681e14f62b8d3036506ca73f4d5f2c89c49f99fde9ebcd4a4",
+    "worker-execution.json": "a7082041de1610c474f8c16bd1048900fd1d94d3c9d837a87b5b1cf359e5ad56",
+    "worker-started.json": "fafc01b2d52f6659d1c99d27e8f8fd8bf9d9b0f9e6e2e72e10b7449bf48a9d9c"
+  },
+  "source_commit": "e26967e7bc8e457fd48f22aec84e886f724bd81c",
+  "status": "native_collection_complete_reporting_failed",
+  "worker_counts": {
+    "decoder": 51648,
+    "encoder": 0,
+    "generator_levels": 47344,
+    "inputs": 4304
+  },
+  "worker_states_equal": true
+}

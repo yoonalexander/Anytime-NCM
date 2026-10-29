@@ -1,0 +1,25 @@
+{
+  "automatic_retry": false,
+  "campaign_usage": {
+    "artifact_bytes": 134217728,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 2400,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 3720,
+    "model_requests": 4312,
+    "paid_dollars": 0,
+    "real_fits": 0
+  },
+  "conservative_reservation_charge": true,
+  "counts": {
+    "decompressed_bytes": 71147520,
+    "new_trace_bodies": 4304,
+    "reference_body_decodes": 4299,
+    "reference_segment_headers": 13955,
+    "sentence_label_pairs": 12897,
+    "source_body_decodes": 4299,
+    "source_segment_headers": 13955
+  },
+  "error": "TypeError('Object of type bool is not JSON serializable')"
+}

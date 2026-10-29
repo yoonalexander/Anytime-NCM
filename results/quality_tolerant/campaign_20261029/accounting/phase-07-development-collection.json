@@ -1,0 +1,16 @@
+{
+  "evidence_path": "development_collection/failure.json",
+  "evidence_sha256": "bdc1b2e10594e2a56c9a2e7f11f363b96a825b064ac79b56c053d9b78fb0e8f3",
+  "phase": "07-development-collection",
+  "usage": {
+    "artifact_bytes": 134217728,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 2400,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 3720,
+    "model_requests": 4312,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}

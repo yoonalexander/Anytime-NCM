@@ -1,0 +1,8 @@
+{
+  "completed_requests": 0,
+  "pid": 406,
+  "prefix_calls": 0,
+  "reference_cache_opened": false,
+  "started_utc": "2026-10-29T12:26:19.885188+00:00",
+  "worker_source_materializations": 4299
+}

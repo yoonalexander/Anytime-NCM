@@ -1,0 +1,59 @@
+{
+  "confirmation_bodies_decoded": 0,
+  "downloads": 0,
+  "evaluation_bodies_decoded": 0,
+  "historical_bodies_decoded": 0,
+  "reference_body_decodes": 4299,
+  "source_body_decodes": 4299,
+  "source_convention": "exact prior audited SGML segment payload; no unescape/whitespace rewrite",
+  "years": [
+    {
+      "all_unselected_utf8_payloads_skipped": true,
+      "reference_headers": 2169,
+      "selected_bodies_each": 613,
+      "source_headers": 2169,
+      "source_reference_headers_aligned": true,
+      "year": 2015
+    },
+    {
+      "all_unselected_utf8_payloads_skipped": true,
+      "reference_headers": 2999,
+      "selected_bodies_each": 860,
+      "source_headers": 2999,
+      "source_reference_headers_aligned": true,
+      "year": 2016
+    },
+    {
+      "all_unselected_utf8_payloads_skipped": true,
+      "reference_headers": 3004,
+      "selected_bodies_each": 950,
+      "source_headers": 3004,
+      "source_reference_headers_aligned": true,
+      "year": 2017
+    },
+    {
+      "all_unselected_utf8_payloads_skipped": true,
+      "reference_headers": 2998,
+      "selected_bodies_each": 1014,
+      "source_headers": 2998,
+      "source_reference_headers_aligned": true,
+      "year": 2018
+    },
+    {
+      "all_unselected_utf8_payloads_skipped": true,
+      "reference_headers": 2000,
+      "selected_bodies_each": 614,
+      "source_headers": 2000,
+      "source_reference_headers_aligned": true,
+      "year": 2019
+    },
+    {
+      "all_unselected_utf8_payloads_skipped": true,
+      "reference_headers": 785,
+      "selected_bodies_each": 248,
+      "source_headers": 785,
+      "source_reference_headers_aligned": true,
+      "year": 2020
+    }
+  ]
+}

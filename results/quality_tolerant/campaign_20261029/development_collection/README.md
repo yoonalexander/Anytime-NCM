@@ -1,0 +1,3 @@
+# Phase07 native collection complete; reporting failed
+
+All4304native full traces and final-state/work checks completed. Parent computed12897sentence-label pairs and saved proxy-labels.json/parity-hashes.json, then failed JSON serialization of a NumPy boolean in label-support.json. That76bytepartial artifact, failure.json, worker receipts and all private data are preserved. No final parent execution/resource receipt exists. Accounting07conservatively charges the FULL original reservation, not actual usage estimates. Do not rerun generation, corpus extraction or reference scoring. A separately pushed reporting-only repair must verify saved artifacts and write new reports under a new directory. No fits/evaluation/confirmation release follows this failure.
