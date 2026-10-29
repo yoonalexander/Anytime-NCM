@@ -1,0 +1,22 @@
+{
+  "10": {
+    "bleu": {
+      "mean_sentence_proxy_loss": 3.3408076601324033,
+      "unchanged_corpus_loss": 4.07168477196252
+    },
+    "chrf": {
+      "mean_sentence_proxy_loss": 3.4123647422728034,
+      "unchanged_corpus_loss": 3.542952375461482
+    }
+  },
+  "8": {
+    "bleu": {
+      "mean_sentence_proxy_loss": 6.698699760059891,
+      "unchanged_corpus_loss": 8.764958232641058
+    },
+    "chrf": {
+      "mean_sentence_proxy_loss": 7.91009119354741,
+      "unchanged_corpus_loss": 8.595474941551132
+    }
+  }
+}

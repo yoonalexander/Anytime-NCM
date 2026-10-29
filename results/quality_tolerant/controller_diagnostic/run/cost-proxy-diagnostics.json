@@ -1,0 +1,52 @@
+{
+  "active_inputs": 195,
+  "bias_ms": 1.1273663658836788,
+  "by_exit": {
+    "10": {
+      "mean": 1.2154542158569477,
+      "n": 192,
+      "quantiles": {
+        "max": 36.82868207523197,
+        "median": 0.8883850752319518,
+        "min": -32.98683992476805,
+        "p10": -6.186160924768046,
+        "p25": -1.4318856747680577,
+        "p75": 4.507765825231946,
+        "p90": 7.069152575231954
+      }
+    },
+    "11": {
+      "mean": 2.1049895703356905,
+      "n": 312,
+      "quantiles": {
+        "max": 52.8309631504639,
+        "median": 0.9131876504638967,
+        "min": -30.404819849536096,
+        "p10": -4.984747949536097,
+        "p25": -1.7046408495360907,
+        "p75": 4.6294016504638975,
+        "p90": 10.188467850463907
+      }
+    },
+    "8": {
+      "mean": -0.039051413043478034,
+      "n": 276,
+      "quantiles": {
+        "max": 93.50928400000001,
+        "median": 0.21239049999999793,
+        "min": -36.875595000000004,
+        "p10": -6.180116999999996,
+        "p25": -2.5361474999999984,
+        "p75": 2.0884309999999893,
+        "p90": 5.964405500000005
+      }
+    }
+  },
+  "controller_decision_overhead_in_this_audit": false,
+  "earlier_Q3_test_timing_bodies": 0,
+  "mae_ms": 4.896699064150143,
+  "new_component_or_controller_cost_measurement": false,
+  "paired_cells": 780,
+  "residual_definition": "actual assigned sparse ms minus paired terminal ms plus declared extra-observation proxy",
+  "source": "prior Q2 forced sparse versus terminal paths, fit/calibration E2 subset only"
+}

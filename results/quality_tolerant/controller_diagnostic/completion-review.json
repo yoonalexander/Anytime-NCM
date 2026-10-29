@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "review_type": "scripted source/receipt/consistency checks, not independent replication",
+  "hash_checks": 1102,
+  "protected_files": 1014,
+  "source_files": 77,
+  "original_policies_reproduced": 9,
+  "diagnostic_assignments": 18,
+  "cost_grid_points": 72,
+  "synthetic_tests_passed": 13,
+  "prior_timing_paired_cells": 780,
+  "selected_timing_warmup_bodies": 92,
+  "source_reference_trajectory_bodies_each": 361,
+  "former_evaluation_87_bodies": 0,
+  "new_fits": 0,
+  "new_model_calls": 0,
+  "new_bootstrap_draws": 0,
+  "reserved_outputs_released": false
+}
