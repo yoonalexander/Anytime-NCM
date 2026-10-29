@@ -3,22 +3,22 @@
   "artifact_sha256": {
     "completion-review.json": "2e697fd88dc0f8d67b522b5a1678318f3f3c34662f71f91acad1bccb342edf59",
     "README.md": "3aa0c6be83aa1a021e5ec8b5e9e6368ccd4161ecabcb95c10167ec2b81d2cdef",
-    "run\\access-release.json": "2317845a8b49b778dbb075bf9f28f78c8b83430f8bf909ca3c41d6fb06ee7661",
-    "run\\aggregation-diagnostics.json": "a09b10eb29907f4a33fa906c7a904d09441105e72c3d3ba28fdeaacb2ce93c90",
-    "run\\cost-proxy-diagnostics.json": "4ed552e39c35ee25ab7268a2f3b72dd747b72ec935ffd41efb9b88d09fd4b299",
-    "run\\decision.json": "83d2a46e1ca268e7f1751b2ae899e580c48810b7584b6104ea0725e181831a42",
-    "run\\diagnostic-assignments.json": "282eed4922eed877d5114ebc38a661eb349bf6d63f4fd3f054a8e3f95b05779d",
-    "run\\execution-sources.zip": "1ed5e5f83d7c5349e247cd98b978c6beef1c0ac66b67aff7773362c3a9f9c21e",
-    "run\\execution.json": "5b0b741d77dab0e94db7afe1c641a0dc921dbab7b554528606a8ed435494693f",
-    "run\\ledger.jsonl": "7819db4d16206908d8a11e1a70839d429edece20b24b1689bc32b3f868d1e3b3",
-    "run\\prediction-diagnostics.json": "e5e18d39b27aa01cdb8cdf4f81a98b74594e3f93739dd84b6049e0b9c0875d34",
-    "run\\started.json": "274c6e3f29e97a31f010c4bff29fcc68925d126b8b08f3dd834912bc95a214c4",
-    "run\\synthetic-tests.log": "ea5a8d05c2f349ab20a0eafd649af061c6b3235ee77246398179e3aa770d1560",
-    "run\\synthetic-tests.xml": "52db643affe3ee2262d6af76f6f199e40d38af5f336e580d67928bc7aea592ab"
+    "run/access-release.json": "2317845a8b49b778dbb075bf9f28f78c8b83430f8bf909ca3c41d6fb06ee7661",
+    "run/aggregation-diagnostics.json": "a09b10eb29907f4a33fa906c7a904d09441105e72c3d3ba28fdeaacb2ce93c90",
+    "run/cost-proxy-diagnostics.json": "4ed552e39c35ee25ab7268a2f3b72dd747b72ec935ffd41efb9b88d09fd4b299",
+    "run/decision.json": "83d2a46e1ca268e7f1751b2ae899e580c48810b7584b6104ea0725e181831a42",
+    "run/diagnostic-assignments.json": "282eed4922eed877d5114ebc38a661eb349bf6d63f4fd3f054a8e3f95b05779d",
+    "run/execution-sources.zip": "1ed5e5f83d7c5349e247cd98b978c6beef1c0ac66b67aff7773362c3a9f9c21e",
+    "run/execution.json": "5b0b741d77dab0e94db7afe1c641a0dc921dbab7b554528606a8ed435494693f",
+    "run/ledger.jsonl": "7819db4d16206908d8a11e1a70839d429edece20b24b1689bc32b3f868d1e3b3",
+    "run/prediction-diagnostics.json": "e5e18d39b27aa01cdb8cdf4f81a98b74594e3f93739dd84b6049e0b9c0875d34",
+    "run/started.json": "274c6e3f29e97a31f010c4bff29fcc68925d126b8b08f3dd834912bc95a214c4",
+    "run/synthetic-tests.log": "ea5a8d05c2f349ab20a0eafd649af061c6b3235ee77246398179e3aa770d1560",
+    "run/synthetic-tests.xml": "52db643affe3ee2262d6af76f6f199e40d38af5f336e580d67928bc7aea592ab"
   },
   "reports_sha256": {
-    "docs\\studies\\quality-tolerant\\controller-diagnostic-results.md": "865ca7b7b14f05541a93b09263ea870572d25a6872c39eb37eb95c539c63b822",
-    "docs\\studies\\quality-tolerant\\causal-signal-pilot-proposal.md": "101fc6c623c04242bd65932061cb2a17773870f4ee652ae8892f6831bc8761ca",
-    "docs\\studies\\quality-tolerant-translation-roadmap.md": "f081d0cc945a69095521886170b64108a9d1e5a2261da048eab6d85b583548e2"
+    "docs/studies/quality-tolerant/controller-diagnostic-results.md": "865ca7b7b14f05541a93b09263ea870572d25a6872c39eb37eb95c539c63b822",
+    "docs/studies/quality-tolerant/causal-signal-pilot-proposal.md": "101fc6c623c04242bd65932061cb2a17773870f4ee652ae8892f6831bc8761ca",
+    "docs/studies/quality-tolerant-translation-roadmap.md": "f081d0cc945a69095521886170b64108a9d1e5a2261da048eab6d85b583548e2"
   }
 }
