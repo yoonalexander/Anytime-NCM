@@ -1,0 +1,84 @@
+{
+  "stage": "campaign_phase04_joint_controller_selection",
+  "base_commit": "594a98b422b38527be0dca99d4837de544669428",
+  "model_source": "results/quality_tolerant/campaign_20261029/signal_discrimination/models.json",
+  "fixed_profile_ms": {
+    "1": 16.221956039062498,
+    "2": 29.21375407519531,
+    "3": 41.49541905566406,
+    "4": 54.08698943261719,
+    "5": 67.16955931933593,
+    "6": 79.29024618945313,
+    "7": 91.5479219921875,
+    "8": 103.84585734765625,
+    "9": 115.8715648984375,
+    "10": 127.75719438281249,
+    "11": 139.61254965039063
+  },
+  "observation_proxy_ms": 2.1456159247680517,
+  "extra_per_decision_ms": 0.5,
+  "thresholds": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "schedules": [
+    [
+      8
+    ],
+    [
+      8,
+      10
+    ]
+  ],
+  "groups": [
+    "cheap",
+    "selected_logit"
+  ],
+  "cue_guard": [
+    false,
+    true
+  ],
+  "maximum_candidates": 81,
+  "evaluation_estimated_saving_gate": 0.05,
+  "analysis_caps": {
+    "trajectory_bodies": 101,
+    "reference_materializations": 101,
+    "saved_feature_records": 366,
+    "replay_inputs": 8181,
+    "decisions": 12120,
+    "corpus_scores": 91
+  },
+  "wall_seconds": 1800,
+  "test_wall_seconds": 120,
+  "execution_cpu_cap_seconds": 1200,
+  "reporting_cpu_charge_seconds": 300,
+  "parent_rss_bytes": 2147483648,
+  "artifact_bytes": 67108864,
+  "campaign_reservation": {
+    "model_requests": 0,
+    "model_orchestration_seconds": 0,
+    "cpu_seconds": 1500,
+    "real_fits": 0,
+    "controller_families": 0,
+    "download_bytes": 0,
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "paid_dollars": 0
+  },
+  "real_fits": 0,
+  "new_controller_families": 0,
+  "model_requests": 0,
+  "target_encodings": 0,
+  "retries": 0,
+  "old_test87_released": false,
+  "reserved_outputs_released": false,
+  "Q0_passed": false
+}
