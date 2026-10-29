@@ -1,0 +1,8 @@
+{
+  "Q0_passed": false,
+  "next_branch": "signal_discrimination",
+  "predictive_usefulness_established": false,
+  "quality_confirmation": false,
+  "reserved_outputs_released": false,
+  "status": "light_signal_collection_supported"
+}

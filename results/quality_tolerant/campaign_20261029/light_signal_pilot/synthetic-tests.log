@@ -1,0 +1,8 @@
+..VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+SYNTHETIC_LIGHT_REQUESTS 6
+SYNTHETIC_LIGHT_FORWARDS {"decoder": 20, "encoder": 0, "generator_levels": 44, "inputs": 6}
+....
+6 passed in 4.79s

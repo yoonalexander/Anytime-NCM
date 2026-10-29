@@ -1,0 +1,26 @@
+{
+  "verified": true,
+  "hash_checks": 1171,
+  "protected_files": 1073,
+  "real_requests": 798,
+  "synthetic_model_attempts": 6,
+  "counts": {
+    "inputs": 798,
+    "generator_levels": 8778,
+    "decoder": 2394,
+    "encoder": 0
+  },
+  "current_prefix_hashes_checked": 2394,
+  "model_states_unchanged": true,
+  "source_materializations": 32,
+  "old_trajectory_bodies": 16,
+  "reference_bodies": 0,
+  "selected_signal": "selected_logit",
+  "selected_logits_are_probabilities": false,
+  "original_pilot_failed_gate_preserved": true,
+  "whole_controller_speedup_established": false,
+  "peak_gpu_reserved_bytes": 1266679808,
+  "new_fits": 0,
+  "controller_families": 0,
+  "new_model_calls_or_old_outcome_replays_for_review": 0
+}

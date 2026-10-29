@@ -1,0 +1,28 @@
+{
+  "source_commit": "744789ca304c30566a39a4a042cb00c285f196f8",
+  "artifact_sha256": {
+    "0-execution.json": "82cec9e5b197f05a67851e98fde67f8469b0a8fb283107a54665e0805db2b3f7",
+    "0-requests.jsonl": "c67deb76bc0497ff8155cd4f8a06e36a2e41141250b7742077815f5e175c5e19",
+    "0-started.json": "09649cbce1a69f2fe7c645972bc3bbec2039ce1891225983ba45dd21f12c2032",
+    "0-starts.jsonl": "2de65769d4b0aa7dfdc28542e0fdb92143ae100fac0ebcee1dc49e9ce9e6a21d",
+    "1-execution.json": "e4befc82586e49c932a8cebc53dd9474844f2b4aa1e23be6a655042e4e97a155",
+    "1-requests.jsonl": "ab6771cc2e7a464d443a49f4fce10948ca9dba713aeb57e72b0bfebd25f79b35",
+    "1-started.json": "1858d6303586b7ea019a36d4e00604e687643da42488303aac3bdfc04a40be06",
+    "1-starts.jsonl": "315e3ee7c4a17bba81b8f7f7d7dc2f73b9c6fcd359695218f2330014fb1dd386",
+    "access-release.json": "66f70c66f4b134b07661eb60efa5fbbfb80dffa7be34e1b1d3352a0d577b195c",
+    "analysis.json": "5f63b6163f33be9d70f6d88242cfc346389222de8f46545e465ab45c6a4f4622",
+    "asset-preflight.json": "01e29d71e0301e995d33565e3530ff8ee18c5621b0b2601669b531fa647cb4bd",
+    "completion-review.json": "78e3671d21cfa6470c9634617368da2f78015466baf1ead4839258680681a15c",
+    "decision.json": "72a4d4866487a012fed8b5b160d12405219609cbeca0a44d22b0c9d23e49db07",
+    "execution-sources.zip": "41316c6dce1dd20aae718d105d0e7cedd27c534c25430d9075c52f603a384e13",
+    "execution.json": "27006735074bd732dd7df508469a0afae89eea68ca00517f51b9cfe679ad5b05",
+    "parity-hashes.json": "34f5537443dc51798c0da8da3f0177620d0dcee0e937606af9eba8ddf368a964",
+    "started.json": "91dcea66995eec75ee99533edca9ca71ccf02d253a73549890be6420d9083074",
+    "synthetic-tests.log": "27bdbce926a9e07c320967dee957af15f78a701c6f185ffe053565a6debfcae4",
+    "synthetic-tests.xml": "613fdc78464ec21a216fe4b61c9e32940425398fb0d552949a714ee29724f95d",
+    "timing-schedule.json": "af6daab1666fd09d21dceb32d92bd0fb88b137be8860cef5ee058fdab67d16c9"
+  },
+  "report_sha256": {
+    "docs/studies/quality-tolerant/light-signal-pilot-results.md": "7c2a85c6bc76fc38cca75443f95510bde0f82d435177006f5e3e2a0c422dbc42"
+  }
+}

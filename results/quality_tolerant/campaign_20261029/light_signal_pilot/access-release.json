@@ -1,0 +1,155 @@
+{
+  "E3_E4_unallocated_released": false,
+  "entries": [
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "6f2e91d05742556cd797e3d5ea3e1ef1a8776196f18b614d9ca09f667b6d6c0c",
+      "index": 0,
+      "indices": [
+        0
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "09eed6b7ec4b294559023f603bb22322c9d9bf2e04815858c6c38bad3f6055a0",
+      "index": 1,
+      "indices": [
+        1
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "a844e9d821b588af0c32662103a9fcdd6f491c2d0c95d50bbe0c1ea6b7caef35",
+      "index": 2,
+      "indices": [
+        2
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "ba4c56c2c39d1af403a5a945b1fb09edd87f64107ff0810c23a1ba6fb17a4ea4",
+      "index": 3,
+      "indices": [
+        3
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "7fa97e5d36c8896c01aa7c5289467535513f977fece244aa6e2f9fa778d74b34",
+      "index": 4,
+      "indices": [
+        4
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "fedad8a421e04d69a64dec7ef2defeb8076c7fa5a6d3cc1d9b743ba0ccaf0f47",
+      "index": 5,
+      "indices": [
+        5
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "b10d43377a5de6012541dc20c1187c573c2fcad38770ca0ea796300c1072e9c9",
+      "index": 6,
+      "indices": [
+        6
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "5f992eb4981e97e6ad27574f06b2e81fe582775f1d3ebc4513e3f5fdb7c3d955",
+      "index": 7,
+      "indices": [
+        7
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "edb93dc478001d9e2c7702a3e6f704782a0f0052e860c2bb9d5d58f46927df17",
+      "index": 8,
+      "indices": [
+        8
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "699ae431a5f2c6a7b18b9ca552ca1a244e137f5d46c5c9023202ad8410c335ea",
+      "index": 9,
+      "indices": [
+        9
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "50e8a02d4411f3ef6612953c0ebc86ede44b407dc3df8ca6c514484869f20d0b",
+      "index": 10,
+      "indices": [
+        10
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "7e98c50becb2f0441176424297b0c4e8b3966db265cc1bb2379ccffa66b98765",
+      "index": 11,
+      "indices": [
+        11
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "8f6eafcad1822664b29f0991af9b8869d40569ec3884b3ea06196559e28b478f",
+      "index": 12,
+      "indices": [
+        12
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "a5a5fc97d3076cf891c8a9034fe92d4c258e3aaba32da59b1507a978e02b2a86",
+      "index": 13,
+      "indices": [
+        13
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "5c9acb7c2e129b45426b1a6e5c561f91a64de341383ae85c10aabb36b4ad6a03",
+      "index": 14,
+      "indices": [
+        14
+      ],
+      "origin": "exploration"
+    },
+    {
+      "component": "6ff8d1f3fe923c0d6c81912acac71607fda712e34dff1bc38790be6192bafcbc",
+      "identity": "2c2f5039a5c9aa412f3df2718b33b2055eb40866bbfeb83891065f7677520d2d",
+      "index": 15,
+      "indices": [
+        15
+      ],
+      "origin": "exploration"
+    }
+  ],
+  "new_inputs": 0,
+  "old_test87_released": false,
+  "old_trajectory_bodies": 16,
+  "reference_bodies": 0,
+  "source_commit": "744789ca304c30566a39a4a042cb00c285f196f8",
+  "worker_source_materializations": 32
+}

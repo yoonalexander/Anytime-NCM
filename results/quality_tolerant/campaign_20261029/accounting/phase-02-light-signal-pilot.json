@@ -1,0 +1,16 @@
+{
+  "evidence_path": "light_signal_pilot/execution.json",
+  "evidence_sha256": "27006735074bd732dd7df508469a0afae89eea68ca00517f51b9cfe679ad5b05",
+  "phase": "02-light-signal-pilot",
+  "usage": {
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 461.985478,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 171.347332723,
+    "model_requests": 804,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}
