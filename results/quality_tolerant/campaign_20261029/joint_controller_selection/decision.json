@@ -1,0 +1,13 @@
+{
+  "Q0_passed": false,
+  "actual_speedup_established": false,
+  "estimated_saving": 0.04288926764264425,
+  "locked_fixed_comparator": "fixed:11",
+  "next_branch": "bounded_family2_or_data_eligibility_review",
+  "old_test87_released": false,
+  "quality_confirmation": false,
+  "ready_for_allocated_evaluation": false,
+  "reserved_outputs_released": false,
+  "selected": "selected_logit:8:guard1:0.6",
+  "status": "selection_did_not_establish_worthwhile_candidate"
+}

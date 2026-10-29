@@ -1,0 +1,3 @@
+# Campaign phase04 artifacts
+
+[Report](../../../../docs/studies/quality-tolerant/joint-controller-selection-results.md), [protocol](../../../../docs/studies/quality-tolerant/joint-controller-selection-protocol.md). Fixed family1selection,0new fits/model requests. All81candidate specifications, assignments, corpus point scores and11fixed controls are retained. policy.json freezes the selected rich8-only rule and fixed11comparator. The5%estimated-cost spending gate failed; evaluation87and reservations were not released. execution.json and completion-review.json remain separate immutable evidence. Run scripts/run_joint_controller_selection.py verify through scripts/wsl_python.ps1; do not repeat the once-only run.

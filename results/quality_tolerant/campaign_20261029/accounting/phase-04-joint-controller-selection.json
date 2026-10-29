@@ -1,0 +1,16 @@
+{
+  "evidence_path": "joint_controller_selection/execution.json",
+  "evidence_sha256": "fb8cb6e4e2cd85cec7dbe723441474e64801b034f309aaef8ffea882a0075465",
+  "phase": "04-joint-controller-selection",
+  "usage": {
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 310.388397,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "verified": true,
+  "protected_files": 1132,
+  "synthetic_tests": 7,
+  "candidate_cost_and_point_screen_recomputations": 81,
+  "corpus_point_aggregation_consistency_with_old_fixed_metrics": 11,
+  "selected": "selected_logit:8:guard1:0.6",
+  "estimated_saving": 0.04288926764264425,
+  "spend_gate_passed": false,
+  "new_model_requests": 0,
+  "new_fits": 0,
+  "new_original_trajectory_or_reference_materializations": 0,
+  "review_cpu_covered_by_reporting_credit": true
+}

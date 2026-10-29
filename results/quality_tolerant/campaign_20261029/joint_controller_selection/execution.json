@@ -1,0 +1,51 @@
+{
+  "analysis_counts": {
+    "corpus_scores": 91,
+    "decisions": 11151,
+    "reference_materializations": 101,
+    "replay_inputs": 8181,
+    "saved_feature_records": 366,
+    "trajectory_bodies": 101
+  },
+  "artifact_bytes_before_reporting": 2859452,
+  "artifact_sha256": {
+    "access-ledger.jsonl": "6a8a5309c40785ffdbd1d02ca3178346d1ee07ccb59fb5984eb60c2d04ff5c69",
+    "access-release.json": "6aa082996cd655fb81a664adfedd2813507c6f0974421741ebe667c6d12d7a74",
+    "candidate-results.json": "a88ea2769b3853b34e7f6ef5f9a5f7b51efcbe7e06783cd817fd7345ba42c3d2",
+    "candidate-specs.json": "aa7eb68a882210d5941d9edf7ebacaf1188339a1b7efcb5bbf63b28588cf1f75",
+    "decision.json": "53cc1f2b607d4ca4efdf801c5e319534c6c0c568a691aa0b1bb9ceb9073c804f",
+    "execution-sources.zip": "150da5053e476326c810b2f755e9d5ca919538757e1ed91cc037d6853befad4a",
+    "policy.json": "1f2b5b1f97df32f0f5246ab4f3a6ac78719ad060e1420cceb1635a3b3bc5dd1a",
+    "started.json": "369e3fe4579048b0ee9d941dd994d50fe76d3760b5bdf7f7b2b9b4c58fe47593",
+    "synthetic-tests.log": "1d374fcb318301bb62144e6949e4a59d3a0987303069b017b77c91eca875c0a7",
+    "synthetic-tests.xml": "6c3c7f469a8de389514613437d09604febde363732cc2e9ad3bbb7699fac1de4"
+  },
+  "automatic_retries": 0,
+  "campaign_usage": {
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 310.388397,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 0
+  },
+  "candidate_count": 81,
+  "checkpoint_loads": 0,
+  "cpu_seconds_before_reporting_charge": 10.427291,
+  "finished_utc": "2026-10-29T05:35:35.807254+00:00",
+  "max_parent_rss_bytes": 154882048,
+  "model_requests": 0,
+  "new_controller_families": 0,
+  "new_fits": 0,
+  "paid_compute_dollars": 0,
+  "selected_policy_sha256": "1f2b5b1f97df32f0f5246ab4f3a6ac78719ad060e1420cceb1635a3b3bc5dd1a",
+  "source_commit": "58d11d7d8514b4378dcb6e869078c08d1a28a0d1",
+  "status": "complete",
+  "synthetic_fits": 0,
+  "synthetic_model_requests": 0,
+  "target_encodings": 0,
+  "total_wall_seconds": 25.99755187
+}
