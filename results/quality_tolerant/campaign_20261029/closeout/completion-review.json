@@ -1,0 +1,62 @@
+{
+  "Q0_passed": false,
+  "all_historical_E3_E4_unallocated_and7700_confirmation_outcomes_still_sealed": true,
+  "campaign_charge": {
+    "artifact_bytes": 838860800,
+    "confirmation_evaluations": 0,
+    "controller_families": 2,
+    "cpu_seconds": 13499.827723,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 16906.930204793,
+    "model_requests": 73724,
+    "paid_dollars": 0,
+    "real_fits": 16
+  },
+  "confirmation_ready": false,
+  "confirmation_released": false,
+  "documented_saved_verifiers_passed": 3,
+  "evidence_paths_checked": true,
+  "failed_full_reservations_preserved": true,
+  "final_report_commit": "d909fa6bbb061d9ba6a6ac82cffbbe1dabd5242f",
+  "goal_completion_supported_after_receipt_commit_and_final_live_equality": true,
+  "live_remote_main_at_delivery": "d909fa6bbb061d9ba6a6ac82cffbbe1dabd5242f",
+  "live_roadmap_updated": true,
+  "local_links_checked": 174,
+  "new_whole_suite_claim": false,
+  "no_further_authorized_campaign_branch_remains": true,
+  "objective_attachment_sha256": "85163e61e4f6d033aa0f96a27ffa35b5d1b39f141f6a83beb6d3d11de3213f54",
+  "objective_branch": "justified_negative_closeout",
+  "preserved_receipt_gaps": [
+    "phase07 original parent final resource gate/CPU receipt unavailable",
+    "phase09 original native-cache terminal state/environment/resource values unavailable"
+  ],
+  "recorded_focused_test_passes": 73,
+  "report_runbook_digests_match_execution": true,
+  "requirements_checked": 10,
+  "reviewer": "same assistant requirement-by-requirement current-state inspection; not independent human scientific review",
+  "scientific_status": {
+    "actual_mean_saving": 0.05076061973779955,
+    "bleu_point_loss": 0.664891749681054,
+    "bleu_point_margin": 0.5,
+    "conditional_paired_interval": [
+      0.033772436979291776,
+      0.06860834008007777
+    ],
+    "feasible_fixed_depth_frontier_established": false,
+    "independent_quality_assurance_established": false,
+    "original_full_matrix_completed": false,
+    "original_success_contract_established": false
+  },
+  "status": "full_objective_negative_closeout_delivery_verified",
+  "unchanged_contract": {
+    "actual_mean_saving": 0.05,
+    "bleu_loss": 0.5,
+    "chrf_loss": 1.0,
+    "negation_mismatch_increase": 0.02,
+    "numeric_reference_mean_f1_loss": 0.02,
+    "positive_paired_lower_bound_required": true,
+    "potentially_feasible_fixed_depth_improvement_required": true
+  },
+  "unused_fit_slots_do_not_authorize_further_models": true,
+  "working_tree_clean_before_this_receipt": true
+}
