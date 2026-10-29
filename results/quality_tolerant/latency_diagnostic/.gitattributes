@@ -1,0 +1,2 @@
+# Keep the frozen synthetic test log byte-stable on Windows checkouts.
+synthetic-tests.log text eol=lf

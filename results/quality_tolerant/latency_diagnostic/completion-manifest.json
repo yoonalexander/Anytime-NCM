@@ -24,7 +24,8 @@
     "started.json": "6546fb8d988115c05ba92dc3b78d8e4669e74c1f8a7944aa72509b1ba715e9f0",
     "synthetic-tests.log": "382f6eb4932e44754ce5534237f5bb81b913d167315e733ad1dd22e6fb90eccc",
     "synthetic-tests.xml": "f1f9a808f9e002bc91e7f7ba120f437a8a0494fdb461cfd75ef22473b9f286d0",
-    "timing-schedule.json": "fcad2cd6e4b3335f4ecc9c5c0e80d642606d985fd57b2d082bc21f7d223eb279"
+    "timing-schedule.json": "fcad2cd6e4b3335f4ecc9c5c0e80d642606d985fd57b2d082bc21f7d223eb279",
+    ".gitattributes": "f1ebe9cd70d2706b833a968ad0f07fc0d2ca1152048f0db881e55bb88693b939"
   },
   "report_sha256": {
     "docs/studies/quality-tolerant/latency-diagnostic-results.md": "49e38b4f49bbdf4982386311b5fc338041e0b781ae036ee9f1bf04347ee18e20",
