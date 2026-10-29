@@ -1,0 +1,44 @@
+{
+  "all_other_payloads_skipped_before_utf8": true,
+  "selected_reference_payloads": 1188,
+  "selected_source_payloads": 1188,
+  "source_convention": "exact audited raw segment payload",
+  "years": [
+    {
+      "headers_each": 2169,
+      "selected_payloads_each": 192,
+      "unselected_payloads_skipped_before_utf8": true,
+      "year": 2015
+    },
+    {
+      "headers_each": 2999,
+      "selected_payloads_each": 223,
+      "unselected_payloads_skipped_before_utf8": true,
+      "year": 2016
+    },
+    {
+      "headers_each": 3004,
+      "selected_payloads_each": 331,
+      "unselected_payloads_skipped_before_utf8": true,
+      "year": 2017
+    },
+    {
+      "headers_each": 2998,
+      "selected_payloads_each": 254,
+      "unselected_payloads_skipped_before_utf8": true,
+      "year": 2018
+    },
+    {
+      "headers_each": 2000,
+      "selected_payloads_each": 129,
+      "unselected_payloads_skipped_before_utf8": true,
+      "year": 2019
+    },
+    {
+      "headers_each": 785,
+      "selected_payloads_each": 59,
+      "unselected_payloads_skipped_before_utf8": true,
+      "year": 2020
+    }
+  ]
+}

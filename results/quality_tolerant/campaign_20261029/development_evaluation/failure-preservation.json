@@ -1,0 +1,41 @@
+{
+  "automatic_retry": false,
+  "cache_execution_receipt_exists": false,
+  "cache_failure_receipt_exists": false,
+  "cause": "Environment dictionary stores torch.__version__ (a str subclass); strict plain() accepts native str only. Both cache-execution and cache-failure report writes rejected it before opening output files.",
+  "caveat": "Worker reached final receipt serialization after its completion/state/work checks, as shown by terminal traceback. Actual fingerprints/environment/final CPU/RSS values were not durably saved; no replacement receipt may invent them.",
+  "error": "Unsupported report value: TorchVersion",
+  "error_type": "TypeError",
+  "lock_commit": "de2bc20dffc4c51634accb6727758a5f41b34046",
+  "no_timing_process_started": true,
+  "observed_public_native_requests": 1193,
+  "observed_terminal_exit_code": 1,
+  "original_failure_full_reservation_preserved": true,
+  "parent_corpus_scores": 0,
+  "parent_native_trace_bodies": 0,
+  "private_sha256": {
+    "data/quality_tolerant_campaign_20261029/development_evaluation/native-traces.jsonl": "378a21ea2f90ebe99011435342d69c54ca0c9ed21d66d4ce9895c1a8e358bf3b",
+    "data/quality_tolerant_campaign_20261029/development_evaluation/references.jsonl": "66f5f23a0f89b660d92020f46ba71a1a8d263dfc37e91a84f3421203d2dd8b7a",
+    "data/quality_tolerant_campaign_20261029/development_evaluation/sources.jsonl": "17bf699653173333a824d65a6c9ea0d3687dfa3e8d4ae9ea8a253bdf14b1732b"
+  },
+  "public_sha256": {
+    "access-release.json": "81fb2a5d314322431119c8b44a257cc21fd5bef00f0ae9f8e46fe08c82358571",
+    "asset-preflight.json": "fa1fe21e0c12ad242c36e3920373c2bfe9b5b0d832f0b7593aa4a5c07b91486c",
+    "cache-plan.json": "ff71e1cb0e1ea21c052f93eff5b5cd96110c0b3d0fd50a8162574551d4a33a50",
+    "cache-requests.jsonl": "de375c1e53ee8ad8d81970478f3592221cf19145f073483a82b64db68dc1cf5f",
+    "cache-started.json": "776df5a7729b0e19aaf96fa1538656951397fc9539e145b28c47225be72dab7a",
+    "cache-starts.jsonl": "b95ff44da332ab242ff12238da76be60ccae952dafd28ae92781b9d265c6676a",
+    "corpus-access.json": "531dd551b3a5b74fbc84a66493c96911442f6f73bb50d6b0d74a618d272fc8eb",
+    "execution-sources.zip": "601017eaa3c45f6f3504a60d1c5c15d5a76db57f9c6e166b485fe99586535846",
+    "failure.json": "dc3cda3c383d469853326622da9360f9d443e9655ecf10890529925bf25f8b19",
+    "pytest-tmp/test_pinned_archive_extracts_o0/test.tgz": "384bbcaeb65b6d7a6e2a10185c5a2be3408230e7951837cfe81ba16a1623c6df",
+    "started.json": "6e5567cefd7c76980e733922835fc60ad46dcdbda77997b37f8dee50adb295c5",
+    "synthetic-tests.log": "f4cb79a7ad60aa85fe84bf8b08be198ca5a6d14966e84d502145709a16d6b19a",
+    "synthetic-tests.xml": "07694bd021bc14bb667a757925eb76ab2051f221a0c0bd2b956e210ad7e89fa9"
+  },
+  "reference_payload_decodes": 1188,
+  "source_payload_decodes": 1188,
+  "status": "preserved_terminal_reporting_failure_after_native_cache",
+  "synthetic_model_attempts": 4,
+  "timing_requests": 0
+}

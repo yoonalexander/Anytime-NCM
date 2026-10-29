@@ -1,0 +1,25 @@
+{
+  "automatic_retry": false,
+  "campaign_usage": {
+    "artifact_bytes": 201326592,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 6800,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 10980,
+    "model_requests": 58345,
+    "paid_dollars": 0,
+    "real_fits": 0
+  },
+  "conservative_reservation_charge": true,
+  "counts": {
+    "corpus_scores": 0,
+    "decompressed_bytes": 71147520,
+    "native_trace_bodies": 0,
+    "reference_body_decodes": 1188,
+    "reference_segment_headers": 13955,
+    "source_body_decodes": 1188,
+    "source_segment_headers": 13955
+  },
+  "error": "CalledProcessError(1, ['/home/ncm/.venvs/anytime-ncm/bin/python', '/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/scripts/run_development_evaluation.py', 'cache-worker', '--seconds', '10800'])"
+}

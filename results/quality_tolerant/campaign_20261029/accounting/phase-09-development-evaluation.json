@@ -1,0 +1,16 @@
+{
+  "evidence_path": "development_evaluation/failure.json",
+  "evidence_sha256": "dc3cda3c383d469853326622da9360f9d443e9655ecf10890529925bf25f8b19",
+  "phase": "09-development-evaluation",
+  "usage": {
+    "artifact_bytes": 201326592,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 6800,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 10980,
+    "model_requests": 58345,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}
