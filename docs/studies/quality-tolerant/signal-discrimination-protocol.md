@@ -1,0 +1,42 @@
+# Campaign phase03: predictive-signal discrimination protocol
+
+Frozen October29,2026, before synthetic tests, new labels, feature collection or real fits. The [campaign objective](campaign-20261029-objective.md) authorizes this conditional study after the [lighter cost pilot](light-signal-pilot-results.md). Its separately declared selected-logit extraction screen passed; the original entropy/whole-request pilot failed and remains failed. Neither establishes predictive usefulness. [Numeric lock](signal-discrimination-lock.json), [source lock](signal-discrimination-source-lock.json).
+
+## Question and fixed population
+
+Can the selected current raw-logit summaries and literal source/current cues improve a small joint-risk probe over the original cheap features, on the existing consumed development population? Exactly260fit and101calibration inputs from the immutable [controller split](controller-split.json), grouped into66/33 disjoint document/alias components. Source/reference/old-trajectory bodies are released only for those361identities. The former87evaluation bodies, E3/E4 and unallocated outcomes remain closed. The split and earlier calibration diagnostics have already been consumed: this is descriptive development, never a fresh holdout or independent confirmation. Unknown checkpoint-training overlap persists.
+
+Collect one selected_logit request per input, preceded by5warmups on the first5canonical fit inputs. One CUDA process,366total requests, fixed observations8/10/11, forced11. No new complete trajectories or logits are persisted. Save27current/past features at8and10, timings, counters and exact current-prefix/observed-output/final hashes. Check every observation and generated prefix against that input's old trajectory; require exact states before/after. All model work is charged. Current source identity may route records but is never a feature. No future/reference label enters collection. No target encodings or generator/tokenizer changes.
+
+## Labels and four prospective fits
+
+Use unchanged sentence_targets on8/10/11,1083sentence-label pairs. These normalize full-minus-current sentence BLEU by.5, sentence chrF by1, defined numeric-reference F1 by.02, and current-minus-full negation mismatch by.02. They are proxies; BLEU/chrF corpus scores are not their averages. Missing numeric-reference labels remain missing and are counted; only for the joint per-input proxy omit that undefined coordinate. Never replace the corpus F1 denominator with source-number coverage.
+
+At each decision level, joint adverse label=1 iff max(0,all defined normalized losses)>4; equality4 is nonadverse. The threshold4 is fixed using the disclosed earlier consumed-data diagnostic, where a perfect-label threshold4 assignment retained corpus POINT margins and projected headroom. This choice is development exposure, not evidence of a new quality tolerance or a deployable oracle. Corpus contract stays unchanged.
+
+At each of8and10, fit the same ridge least-squares binary-label probe using (a)19cheapfeatures and(b)27selected_logitfeatures: at most4real fits. Standardize using FIT means/population standard deviations only; replace scales<1e-12 by1. Minimize sum squared residuals +10*sum squared nonintercept coefficients. Unpenalized intercept, no reweighting, tuning, resampling or cross-validation. Require at least10fit examples in EACH class; otherwise skip that model, record inadequate support and do not claim a constant head learned protection. These four potentially reusable probe models conservatively consume campaign controller family1 and4of32fits. Synthetic fits are separate toy fits (3), charged CPU but not real models. No controller threshold selection or evaluation87access occurs here.
+
+## Descriptive comparisons, calibration and gates
+
+Positive direction is adverse/benefit of further refinement; higher predicted score should rank higher loss. Report pairwise AUC with half-credit ties, class counts, clipped[0,1]score squared error against the binary label, fit-prevalence baseline error, five fixed equal-width reliability bins and out-of-range/clipping counts. Raw least-squares scores and raw token logits are NOT calibrated probabilities. Also report six prespecified score baselines: negative logit mean/p10/min, source-number disagreement, source-negation disagreement, and token-change. Never flip their signs after inspecting results. Compare cheap/rich fitted AUCs directly; report all endpoints' fit/calibration defined/missing/adverse/nonadverse/nonzero counts. In particular, all-zero negation supervision is unsupported, not learned protection.
+
+Input-weighted AUCs are descriptive with document dependence. Report calibration component-deletion AUCs without refitting as sensitivity, not independent replicates or confidence intervals. No p-values, multiplicity-adjusted statistical claims, bootstrap, power or confirmation inference. There are4fitted comparisons and12raw level/baseline comparisons; all are retained. No method is selected to rescue known evaluation outcomes.
+
+A probe qualifies for a bounded next controller-development lock if calibration has>=10examples/class and AUC>=.60 at either level. Richer incremental evidence requires a qualifying rich probe and rich-minus-cheap AUC>=.02 at one level. These are frozen development heuristics, not significance, power or quality guarantees. If some probe qualifies without incremental gain, the joint-risk formulation may justify a controller diagnostic but richer-feature improvement is not established. If none qualifies, stop this linear branch and prospectively assess only a justified bounded nonlinear or data-eligibility alternative; do not auto-fit family2. Sparse cue labels remain an explicit limitation regardless of AUC. A passed gate authorizes only a later separately locked controller study. All future policy/comparator selections must be pushed before allocated evaluation outcomes.
+
+## Resources and stopping
+
+Caps:366real requests,4026generated levels,1098decoders,0encoders;727source-prefix calls;361worker source strings,361references,361old trajectory bodies;732each cheap/selected-logit/cuefeature calls. At most4real fits,1family;3toyfits,0synthetic model requests/checkpoint loads. Model wall3600sec, total4800sec, execution CPU1200sec plus300sec reporting/verification credit, tests120sec; parentRSS2GiB, worker16GiB, GPU<=8GiB AND physicaldevice, artifacts64MiB,0downloads/paid dollars/retries/confirmation. Shared campaign ceilings remain binding. Failed/partial requests preserved; on failure conservatively charge the whole reservation pending any separately documented exact audit, not silently rerun. Stop on parity, state, identity, feature finiteness/schema, environment, access or resource failure.
+
+## Sources and procedure
+
+[Ridge implementation definition](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html) specifies least squares plus squared-coefficient regularization; our explicit training-only standardization and unpenalized intercept are frozen above. [ROC-AUC documentation](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.roc_auc_score.html) describes the ranking statistic. [Calibration documentation](https://scikit-learn.org/stable/modules/calibration.html) explains reliability diagrams and why squared probability error is not calibration alone. [Guo et al.,2017](https://proceedings.mlr.press/v70/guo17a.html) distinguishes confidence from calibrated correctness probabilities; its neural-network results are not transferred to this checkpoint. Sources inspected October29; no new statistical guarantee is inferred by citation.
+
+From repository root, after lock push/live equality:
+
+~~~powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_signal_discrimination.py','run','--commit','PUSHED_LOCK_COMMIT')
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_signal_discrimination.py','verify')
+~~~
+
+The once-only runner requires clean pushed main, hashes protected history/assets, archives execution source, runs the focused9synthetic tests before released data, logs selective access/fit charges, collects features, reports all probes and appends accounting03. Verification reads saved receipts without inference/fitting. Completion report/roadmap/receipt are added afterward without mutating the frozen execution. Preserve failed Q0 and earlier gates; no independent quality/adaptive-speed claim or confirmation release.
