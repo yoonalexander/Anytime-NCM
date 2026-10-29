@@ -1,0 +1,24 @@
+{
+  "results_graphic": "Saved aggregate execution evidence, presentation only; no new inference or statistics.",
+  "architecture": "Original illustration; not an execution trace or proof of effectiveness.",
+  "sources": [
+    {
+      "path": "results/quality_tolerant/campaign_20261029/first_timing_diagnostic/analysis.json",
+      "sha256": "f30805bf335663d1ec94c29b46e2153ecec6be957e58eae2929357bf3677812b",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/blob/03e3e7086988db46c2979410b5d3081d24f1d340/results/quality_tolerant/campaign_20261029/first_timing_diagnostic/analysis.json"
+    },
+    {
+      "path": "results/quality_tolerant/campaign_20261029/development_evaluation_reporting/quality-points.json",
+      "sha256": "cf0039c5a5ef4e76f654862b27496370e8549780040bdc1fb221cef7558d8789",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/blob/03e3e7086988db46c2979410b5d3081d24f1d340/results/quality_tolerant/campaign_20261029/development_evaluation_reporting/quality-points.json"
+    },
+    {
+      "path": "results/quality_tolerant/campaign_20261029/closeout/decision.json",
+      "sha256": "9cdb761ba137650e0d7a35b9c6cd72adb29b64410c610f8995d95c511d18031b",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/blob/03e3e7086988db46c2979410b5d3081d24f1d340/results/quality_tolerant/campaign_20261029/closeout/decision.json"
+    }
+  ],
+  "population": 1188,
+  "timing_interval_meaning": "Conditional nominal paired component bootstrap on two observed sessions",
+  "quality_uncertainty": "No noninferiority confidence bounds established"
+}

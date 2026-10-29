@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "software_unique_checks": 831,
+  "main": 770,
+  "q0": 61,
+  "portable_unit_subset": 11,
+  "guard_reports_show_no_raw_corpus_neural_weights_gpu_remote_network_or_research_writes": true,
+  "original_research_ledger_unchanged": true,
+  "baseline_setup_failures_preserved": true,
+  "new_cli_source_path_setup_failure_preserved": true
+}

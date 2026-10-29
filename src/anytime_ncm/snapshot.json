@@ -1,0 +1,66 @@
+{
+  "engineering_deliverable": "Research code, saved-evidence inspection, portable historical viewer and documented research snapshot; no released translation service.",
+  "latest_evaluation": {
+    "conditional_nominal_saving_interval": [
+      0.033772436979291776,
+      0.06860834008007777
+    ],
+    "controller_mean_ms": 127.87226583122897,
+    "document_alias_components": 60,
+    "early_exits": 315,
+    "full_mean_ms": 134.7102411574074,
+    "inputs": 1188,
+    "mean_saving": 0.05076061973779955,
+    "numeric_covered_inputs": 289,
+    "original_full_comparison_matrix_complete": false,
+    "original_success_contract_established": false,
+    "quality_losses": {
+      "bleu": 0.664891749681054,
+      "chrf": 0.9943226075661045,
+      "negation_cue_mismatch_rate": 0.0033670033670033656,
+      "numeric_reference_f1": 0.011534025374855927
+    },
+    "quality_margins": {
+      "bleu": 0.5,
+      "chrf": 1.0,
+      "negation_cue_mismatch_rate": 0.02,
+      "numeric_reference_f1": 0.02
+    },
+    "quality_point_screen_passed": false,
+    "repeats_per_input_method_session": 1,
+    "timing_screen_passed": true,
+    "timing_sessions": 2
+  },
+  "limitations": [
+    "BLEU point loss exceeds the unchanged tolerance. Other quality points do not establish noninferiority bounds.",
+    "The final timing diagnostic compares controller/full only; fixed depths 1-10 were not timed in this smaller diagnostic and are not statistically excluded.",
+    "Timing interval is conditional on the two observed sessions and component-resampling assumptions; no cross-hardware guarantee.",
+    "Original phase07 parent resource receipt and phase09 native-cache terminal state/resource values remain unavailable. Failures and conservative charges are preserved.",
+    "Q0 remains failed. Historical E3/E4/unallocated and 7,700 proposed-confirmation outcomes remain sealed.",
+    "Unknown checkpoint-training overlap. Literal number/negation cues do not certify semantic correctness.",
+    "A true continuation-value estimator was not trained."
+  ],
+  "outcome": "Closed bounded studies; intended quality-and-latency advantage not established.",
+  "question": "Can a frozen NCM choose an earlier output per input and preserve quality while reducing actual ready-output latency?",
+  "repository": "https://github.com/yoonalexander/Anytime-NCM",
+  "research_commit": "03e3e7086988db46c2979410b5d3081d24f1d340",
+  "schema_version": 1,
+  "snapshot_version": "0.1.0",
+  "sources": [
+    {
+      "path": "results/quality_tolerant/campaign_20261029/first_timing_diagnostic/analysis.json",
+      "sha256": "f30805bf335663d1ec94c29b46e2153ecec6be957e58eae2929357bf3677812b",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/blob/03e3e7086988db46c2979410b5d3081d24f1d340/results/quality_tolerant/campaign_20261029/first_timing_diagnostic/analysis.json"
+    },
+    {
+      "path": "results/quality_tolerant/campaign_20261029/development_evaluation_reporting/quality-points.json",
+      "sha256": "cf0039c5a5ef4e76f654862b27496370e8549780040bdc1fb221cef7558d8789",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/blob/03e3e7086988db46c2979410b5d3081d24f1d340/results/quality_tolerant/campaign_20261029/development_evaluation_reporting/quality-points.json"
+    },
+    {
+      "path": "results/quality_tolerant/campaign_20261029/closeout/decision.json",
+      "sha256": "9cdb761ba137650e0d7a35b9c6cd72adb29b64410c610f8995d95c511d18031b",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/blob/03e3e7086988db46c2979410b5d3081d24f1d340/results/quality_tolerant/campaign_20261029/closeout/decision.json"
+    }
+  ]
+}

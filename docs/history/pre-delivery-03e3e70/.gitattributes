@@ -1,0 +1,24 @@
+# Preserve shell execution and frozen manifest/protocol bytes across platforms.
+* text=auto
+*.sh text eol=lf
+*.py text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.yaml text eol=lf
+*.yml text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.lock text eol=lf
+*.sha256 text eol=lf
+*.csv text eol=lf
+.gitattributes text eol=lf
+*.xml text eol=lf
+results/followup/sudoku_easy_r3/baseline.log text eol=lf
+results/phase2/source_snapshots/** -text
+results/phase3/source_snapshots/** -text
+results/phase4/wmt14/source_snapshots/** -text
+
+# Preserve raw compiler logs; generated whitespace is not authored source.
+results/stronger_research/s5b/compile-*.log -text whitespace=-blank-at-eol,-blank-at-eof

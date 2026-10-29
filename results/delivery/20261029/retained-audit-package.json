@@ -1,0 +1,53 @@
+{
+  "status": "verified_with_explicit_historical_metadata_resolution",
+  "baseline_research_commit": "03e3e7086988db46c2979410b5d3081d24f1d340",
+  "public_expected_hash_pairs": 1356,
+  "current_paths_verified": 1366,
+  "archived_metadata_paths": [
+    ".gitattributes",
+    "pyproject.toml",
+    "src/anytime_ncm/__init__.py",
+    "src/anytime_ncm/__main__.py",
+    "src/anytime_ncm/cli.py"
+  ],
+  "executed_artifact_hashes": 148,
+  "private_hashes_checked": 6,
+  "private_corpus_or_trajectory_bodies_decoded": 0,
+  "real_checkpoint_loads": 0,
+  "new_model_requests": 0,
+  "new_fits": 0,
+  "new_reference_scores": 0,
+  "new_resampling": 0,
+  "phases": [
+    "01-signal-pilot",
+    "02-light-signal-pilot",
+    "03-signal-discrimination",
+    "04-joint-controller-selection",
+    "05-joint-cost-diagnostic",
+    "06-development-eligibility",
+    "07-development-collection",
+    "07r-development-reporting",
+    "08-development-controller",
+    "09-development-evaluation",
+    "09r-evaluation-reporting",
+    "09t-first-timing-diagnostic",
+    "10-campaign-closeout"
+  ],
+  "unchanged_charged_usage": {
+    "model_requests": 73724,
+    "model_orchestration_seconds": 16906.930204793,
+    "cpu_seconds": 13499.827723,
+    "real_fits": 16,
+    "controller_families": 2,
+    "download_bytes": 0,
+    "artifact_bytes": 838860800,
+    "confirmation_evaluations": 0,
+    "paid_dollars": 0
+  },
+  "original_receipt_gaps_preserved": true,
+  "original_full_matrix_incomplete": true,
+  "quality_and_latency_success_established": false,
+  "confirmation_still_sealed": true,
+  "strict_current_tree_legacy_verifier_claimed": false,
+  "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203"
+}

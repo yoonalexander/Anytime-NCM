@@ -1,0 +1,14 @@
+include README.md pyproject.toml RIGHTS.md NOTICE.md
+include docs/delivery/INSTALL.md
+include scripts/verify_distribution.py
+include examples/inspect_snapshot.py
+recursive-include src/anytime_ncm *.py snapshot.json upstream-NCM-LICENSE.txt
+recursive-exclude * __pycache__ *.py[cod]
+prune data
+prune artifacts
+prune results
+prune third_party
+prune build
+prune dist
+prune .git
+prune tests

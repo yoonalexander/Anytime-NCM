@@ -1,0 +1,32 @@
+{
+  "status": "reviewed",
+  "results_graphic": {
+    "format": [
+      "SVG",
+      "PNG"
+    ],
+    "population": 1188,
+    "values_from_pinned_aggregates": true,
+    "units_and_conditional_interval_visible": true,
+    "quality_point_limit_visible": true,
+    "precision_corrected_for_small_margins": true
+  },
+  "architecture": {
+    "type": "illustration",
+    "initial_caption_overlap_corrected": true,
+    "unicode_encoding_corrected": true,
+    "current_render_no_overlap_or_mojibake": true
+  },
+  "historical_viewer": {
+    "url": "http://127.0.0.1:8765/",
+    "artifact_sha256": "885820e400dd2d83b6afc6e0a268c3c22e12ce2848775f144d2b62ba9fe79ad9",
+    "desktop_rendered": true,
+    "study_selector_hard_to_WMT_checked": true,
+    "level_selector_1_to_8_checked": true,
+    "observed_level8_reconstruction_updated": true,
+    "new_model_calls": 0,
+    "latest_campaign_not_in_legacy_viewer": true
+  },
+  "new_mobile_browser_verification": false,
+  "existing_mobile_screenshot_labeled_historical": true
+}

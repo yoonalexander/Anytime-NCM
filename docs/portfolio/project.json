@@ -1,0 +1,12 @@
+{
+  "title": "Anytime NCM",
+  "subtitle": "Frozen-model adaptive stopping research",
+  "summary": "A causal early-stopping study with 5.08% actual mean time saving and a failed BLEU quality gate; shipped as an inspectable research snapshot.",
+  "repository": "https://github.com/yoonalexander/Anytime-NCM",
+  "release": "https://github.com/yoonalexander/Anytime-NCM/releases/tag/research-v0.1.0",
+  "case_study": "https://github.com/yoonalexander/Anytime-NCM/blob/main/docs/portfolio/CASE_STUDY.md",
+  "image": "https://raw.githubusercontent.com/yoonalexander/Anytime-NCM/main/docs/assets/results.png",
+  "image_type": "saved aggregate results graphic",
+  "architecture_type": "illustration",
+  "research_success": false
+}

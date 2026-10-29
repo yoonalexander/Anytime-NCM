@@ -1,3 +1,2 @@
-"""Anytime NCM research package scaffold."""
-
-__version__ = "0.0.0"
+"""Research tools and retained evidence for frozen-NCM adaptive stopping studies."""
+__version__ = "0.1.0"

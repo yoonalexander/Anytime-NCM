@@ -1,8 +1,14 @@
 {
   "archive_note": "The binary ZIP is authoritative for exact bytes; readable text copies may receive normal Git newline normalization.",
   "baseline_commit": "03e3e7086988db46c2979410b5d3081d24f1d340",
-  "binary_archive_sha256": "acbd68dce0932d6e1f2a5d8089788e8973791c1bacc34a74a729746e41adc74e",
+  "binary_archive_sha256": "e456202efef9315a42038ae6b41570059866e294745a6b5cd0df380a24c5ae46",
   "files": {
+    ".gitattributes": {
+      "archive": "docs/history/pre-delivery-03e3e70/.gitattributes",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": ".gitattributes",
+      "sha256": "6051d295c132afbe62fa4f73a7865cced002f4bdecde9419ac4e4e8071cb3e1f"
+    },
     "AGENTS.md": {
       "archive": "docs/history/pre-delivery-03e3e70/AGENTS.md",
       "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
