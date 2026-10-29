@@ -1,0 +1,61 @@
+{
+  "all_output_exit_work_parity_passed": true,
+  "artifact_bytes": 8012559,
+  "artifact_sha256": {
+    "0-execution.json": "b3fca517102f4e7915207f3aea0fb13eceef6744c1a7f3f45787618cca81ec53",
+    "0-requests.jsonl": "e5b9793f47f6d27784f4b7bced982d2a929bb34023f5e6b65b4a234647939faf",
+    "0-started.json": "5be8ef03079cfc266f8d16d191259dc13bbbe114f09c1b5f20a2b27852fc0abd",
+    "0-starts.jsonl": "da8818b8f40023d8fee542a364a4ad56ea99e2b29c8a1ea0d6193d19cfe979bc",
+    "1-execution.json": "d37ab2da40280e5e6d2de05f2678f8a8fb89833d028bc2c33ae588b3350200d1",
+    "1-requests.jsonl": "e65fb0faa2ea1455f54e4a5ed8559dfeef8222ed4f9906d7c8b46d351ed3a3f7",
+    "1-started.json": "de30aed84f78d71f714c2ea0173b2b656656cbb9a2e61ae6458fef11b08893ba",
+    "1-starts.jsonl": "1724243c77232855a2929ee1153483899b4f7ba7a96449ab2ed6f526daab4ae1",
+    "access-release.json": "1f7a034a633b481ae931d30620ad8d98548587e00133d201a2de3dbde398d2f2",
+    "analysis.json": "c82ef106f343ccccb353dbe96cd18f97a2d904b0be9017f875cd3a0333d9999d",
+    "coverage.json": "8ddd67c242f860f018e55fe9140de013cba112f910207411d671faeb661b2304",
+    "decision.json": "d3057993e863f1e0e9ed85494ff153920325eb669e1566a353d69735aeec3364",
+    "ledger.jsonl": "fd6443d0e1a68463d6c4a62610c79270a3b6550e3d6f3b01750aa17302ed344a",
+    "parity-hashes.json": "339b728ddd456cb1741e4875788f313d209dc2f804dc3b80cfc9c30cf8d14614",
+    "predictions.json": "de7c786a4f265326eb9a6cdae8aef6ad72d381387542ffbbc61a02ac20890180",
+    "started.json": "73564403625a91c8242a1be581fce8d05e1929f0c40c764b6857c18c1c301d82",
+    "timing-schedule.json": "bb94b5c1d36fd4b78b3cbbb059772bde912432f6cd2ab97f723ed03be5e5c187"
+  },
+  "automatic_retries": 0,
+  "bootstrap_draws": 20000,
+  "controller_work": {
+    "decisions": 0,
+    "features": 0
+  },
+  "counts": {
+    "corpus_scores": 12,
+    "decisions": 0,
+    "features": 0,
+    "reference_materializations": 87,
+    "replay_inputs": 87,
+    "source_materializations": 87,
+    "trajectory_bodies": 87
+  },
+  "encoder_calls": 0,
+  "finished_utc": "2026-10-29T03:15:03.635380+00:00",
+  "forward_counts": {
+    "decoder": 4296,
+    "encoder": 0,
+    "generator_levels": 27566,
+    "inputs": 4296
+  },
+  "max_parent_rss_bytes": 209018880,
+  "model_orchestration_wall_seconds": 432.10460101399997,
+  "model_states_unchanged": true,
+  "new_inputs": 0,
+  "new_trajectories": 0,
+  "paid_compute_dollars": 0,
+  "policy_commit": "31f41d949d2091f307cc3b7bac88bbcf18e500e4",
+  "process_ids": [
+    420,
+    453
+  ],
+  "protocol_commit": "3ab82760e02746192bc1adda5ac3d546ca0c45c4",
+  "status": "complete",
+  "target_encodings": 0,
+  "total_wall_seconds": 442.448523407
+}

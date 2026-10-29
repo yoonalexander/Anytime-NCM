@@ -1,0 +1,10 @@
+{
+  "Q0_passed": false,
+  "Q4_authorized": false,
+  "automatic_refit": false,
+  "independent_quality_confirmation": false,
+  "next_step": "Report this bounded controller experiment and stop before confirmation or another fit.",
+  "reserved_outputs_released": false,
+  "selected_policy": "full",
+  "status": "controller_no_early_exits"
+}

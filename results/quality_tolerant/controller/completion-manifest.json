@@ -1,0 +1,43 @@
+{
+  "protocol_commit": "3ab82760e02746192bc1adda5ac3d546ca0c45c4",
+  "pre_test_policy_commit": "31f41d949d2091f307cc3b7bac88bbcf18e500e4",
+  "artifact_sha256": {
+    "completion-review.json": "48016cea74bab34299840e887a5206f9f28df516b5dc0fce9f564bdaf6c8e63c",
+    "README.md": "0ac8d6440e66bb676d4cec18c879d25e01e4dad2e98fefa200765a907a2729d0",
+    "development\\access-release.json": "e16a8a077a7ddeef93f8bab649b966700621411e7dc09d1d3ab33b63a051b087",
+    "development\\asset-preflight.json": "b9129f097aa2e94e6623615dd87b23005656fa6b516fc7e7235236343501d807",
+    "development\\candidate-results.json": "c124541159ec2a10ffa179cca2bd572350a9bac89bf0eb542bd2dcc77d4cf4d2",
+    "development\\coverage.json": "e4a73a68e694cf3ebc686e069dee977a50e69db9761a735263e63273e8450217",
+    "development\\execution-sources.zip": "b4e03cd00889c28253217e6f7aa17464cde077c6fa85636a1b8228a880b6eb09",
+    "development\\execution.json": "a195b2dd5ecc7515e21009c1398a2114eb82d078c9aebd162e5ea010521c08f0",
+    "development\\ledger.jsonl": "32300c822ba91a4227dd10d283829a65a0fb5b7c563d2b2147b50ad981c4d430",
+    "development\\models.json": "282826a0c246b0bd53a34344697f2cff3c480818d2d4071f9d0cb4cd61561a3e",
+    "development\\policy.json": "2326ac9bdad774396feec2c5e11048c3ac5ff7586a4e4c69bb4b8ee001229076",
+    "development\\started.json": "7cd019aa55f8a9850d446d0585fd873840ed888ed206c753c11770a45760e35a",
+    "development\\synthetic-tests.log": "893193bfcb170b2b31e739b3bc40274ffcd4b7115973b506bc7e230a9a2c6b93",
+    "development\\synthetic-tests.xml": "307db79fa5b53bbd90b55b944e7a7ae3944615352a0be1361791041083d76cd7",
+    "evaluation\\0-execution.json": "b3fca517102f4e7915207f3aea0fb13eceef6744c1a7f3f45787618cca81ec53",
+    "evaluation\\0-requests.jsonl": "e5b9793f47f6d27784f4b7bced982d2a929bb34023f5e6b65b4a234647939faf",
+    "evaluation\\0-started.json": "5be8ef03079cfc266f8d16d191259dc13bbbe114f09c1b5f20a2b27852fc0abd",
+    "evaluation\\0-starts.jsonl": "da8818b8f40023d8fee542a364a4ad56ea99e2b29c8a1ea0d6193d19cfe979bc",
+    "evaluation\\1-execution.json": "d37ab2da40280e5e6d2de05f2678f8a8fb89833d028bc2c33ae588b3350200d1",
+    "evaluation\\1-requests.jsonl": "e65fb0faa2ea1455f54e4a5ed8559dfeef8222ed4f9906d7c8b46d351ed3a3f7",
+    "evaluation\\1-started.json": "de30aed84f78d71f714c2ea0173b2b656656cbb9a2e61ae6458fef11b08893ba",
+    "evaluation\\1-starts.jsonl": "1724243c77232855a2929ee1153483899b4f7ba7a96449ab2ed6f526daab4ae1",
+    "evaluation\\access-release.json": "1f7a034a633b481ae931d30620ad8d98548587e00133d201a2de3dbde398d2f2",
+    "evaluation\\analysis.json": "c82ef106f343ccccb353dbe96cd18f97a2d904b0be9017f875cd3a0333d9999d",
+    "evaluation\\coverage.json": "8ddd67c242f860f018e55fe9140de013cba112f910207411d671faeb661b2304",
+    "evaluation\\decision.json": "d3057993e863f1e0e9ed85494ff153920325eb669e1566a353d69735aeec3364",
+    "evaluation\\execution.json": "d80be78487c5df2a05645d3c4716a59d786a1ca40c85ad70c7a1933206bea736",
+    "evaluation\\ledger.jsonl": "fd6443d0e1a68463d6c4a62610c79270a3b6550e3d6f3b01750aa17302ed344a",
+    "evaluation\\parity-hashes.json": "339b728ddd456cb1741e4875788f313d209dc2f804dc3b80cfc9c30cf8d14614",
+    "evaluation\\predictions.json": "de7c786a4f265326eb9a6cdae8aef6ad72d381387542ffbbc61a02ac20890180",
+    "evaluation\\started.json": "73564403625a91c8242a1be581fce8d05e1929f0c40c764b6857c18c1c301d82",
+    "evaluation\\timing-schedule.json": "bb94b5c1d36fd4b78b3cbbb059772bde912432f6cd2ab97f723ed03be5e5c187",
+    "development\\pytest-tmp\\test_header_scanner_skips_unre0\\rows.jsonl": "f53001962bb98feefde15f0ccc3bc82f6f7aab55ab4e105d8d986d5d6094a070"
+  },
+  "reports_sha256": {
+    "docs/studies/quality-tolerant/controller-results.md": "b9c9f0191b2c3b1a70d712090fe0f6992735c5c6635746c39da6890598300e72",
+    "docs/studies/quality-tolerant-translation-roadmap.md": "0dae68a488741226ac1f0482cf02f11666c5c95790bd86ef0eeae3a95f5bd035"
+  }
+}
