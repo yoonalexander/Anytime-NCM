@@ -1,0 +1,47 @@
+{
+  "development_calibration": {
+    "components": 59,
+    "inputs": 891,
+    "largest_component": 91,
+    "negation_change_support": "unknown until authorized model collection",
+    "numeric_coverage": "not inspected by role",
+    "year_inputs": {
+      "2015": 108,
+      "2016": 121,
+      "2017": 113,
+      "2018": 349,
+      "2019": 137,
+      "2020": 63
+    }
+  },
+  "development_evaluation": {
+    "components": 60,
+    "inputs": 1188,
+    "largest_component": 56,
+    "negation_change_support": "unknown until authorized model collection",
+    "numeric_coverage": "not inspected by role",
+    "year_inputs": {
+      "2015": 192,
+      "2016": 223,
+      "2017": 331,
+      "2018": 254,
+      "2019": 129,
+      "2020": 59
+    }
+  },
+  "development_fit": {
+    "components": 178,
+    "inputs": 3408,
+    "largest_component": 113,
+    "negation_change_support": "unknown until authorized model collection",
+    "numeric_coverage": "not inspected by role",
+    "year_inputs": {
+      "2015": 505,
+      "2016": 739,
+      "2017": 837,
+      "2018": 665,
+      "2019": 477,
+      "2020": 185
+    }
+  }
+}

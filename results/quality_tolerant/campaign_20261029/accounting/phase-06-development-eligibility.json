@@ -1,0 +1,16 @@
+{
+  "evidence_path": "development_eligibility/execution.json",
+  "evidence_sha256": "9a04771e5cd136101e6994e1ee2eb2a7e3c493848686d78e1c0dbd574facb3e6",
+  "phase": "06-development-eligibility",
+  "usage": {
+    "artifact_bytes": 16777216,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 303.456291,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}

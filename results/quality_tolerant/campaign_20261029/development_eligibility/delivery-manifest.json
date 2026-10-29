@@ -1,0 +1,16 @@
+{
+  "README.md": "e968f93aac6ee34706c9c9cb516e2e7096a37181d5c83626e5ce3da8db54eccc",
+  "access-receipt.json": "6de3b679cffa85dd32c3bac26e61cead26a488a5de470f46b5a815d9d5602e3d",
+  "archive-availability.json": "d65907da57d91f14b2101bccf14f3b2409013ba98c9e26d26459abaf9499dffd",
+  "campaign-before.json": "29114ef94feb6113addb16aaeb7a18c9fb8ed100543b30f78ab2c65dff3fe1be",
+  "completion-review.json": "a27320863db02c42d125a60b43e6daba37f5fa76b325d885b33adc24567fa8b2",
+  "decision.json": "093612b263a8e4d69de7d4998a22890a88f6d4f54aaa7c20e0a5e6a42b0af607",
+  "delivery-manifest.json": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "execution-sources.zip": "b27b08f88c7248713034dd89fefb560a61a19f3872d66a535b64e64e8fb17a18",
+  "execution.json": "9a04771e5cd136101e6994e1ee2eb2a7e3c493848686d78e1c0dbd574facb3e6",
+  "role-summary.json": "483b9452d05893fb6d61bdd60cb7b422cb0e7e376b0da368bb649ed4867e0da0",
+  "source-only-allocation.json": "e4f797acef7373ee2cff6c5e21992faa5ac9897286e708a7d68eb04df7778f9c",
+  "started.json": "13b127caf4aa43d3af25c472f148f255ca3f055e2f4e63fb2b29d209f8ca56d2",
+  "synthetic-tests.log": "d750c6b5c659a924d0d725e172c3aa31d18a3378e9696a5ccd110b8e346a1587",
+  "synthetic-tests.xml": "cee69bff3f5b53b315188ea5da12d69df820d33f0567883663fca1aac062ccb9"
+}

@@ -1,0 +1,3 @@
+# Campaign phase06 metadata-only audit
+
+[Report](../../../../docs/studies/quality-tolerant/development-eligibility-results.md), [protocol](../../../../docs/studies/quality-tolerant/development-eligibility-protocol.md). source-only-allocation.json fixes whole-component3408fit/891calibration/1188development-evaluation roles. Old proposed confirmation7700/447unchanged.0corpus decodes/model calls/fits. Rare-change supervision remains unknown. execution.json and completion-review.json preserve separate evidence; verify through scripts/wsl_python.ps1 using scripts/run_development_eligibility.py verify. Do not repeat the once-only run.

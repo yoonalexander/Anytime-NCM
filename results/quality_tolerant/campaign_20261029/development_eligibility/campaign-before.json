@@ -1,0 +1,22 @@
+{
+  "charged_usage": {
+    "artifact_bytes": 335544320,
+    "confirmation_evaluations": 0,
+    "controller_families": 1,
+    "cpu_seconds": 2297.525659,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 1437.982077356,
+    "model_requests": 6295,
+    "paid_dollars": 0,
+    "real_fits": 4
+  },
+  "completed_or_accounted_phases": [
+    "01-signal-pilot",
+    "02-light-signal-pilot",
+    "03-signal-discrimination",
+    "04-joint-controller-selection",
+    "05-joint-cost-diagnostic"
+  ],
+  "physical_artifact_bytes": 19373932,
+  "verified": true
+}

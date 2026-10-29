@@ -1,0 +1,31 @@
+{
+  "Q0_passed": false,
+  "actual_new_model_requests": 0,
+  "confirmation_components_retained": 447,
+  "confirmation_inputs_retained": 7700,
+  "confirmation_ready": false,
+  "downloads": 0,
+  "existing_development_numeric_covered": 1229,
+  "metadata_ready": true,
+  "model_outcomes_read": 0,
+  "new_quality_evidence": false,
+  "next_branch": "prospectively_lock_fit_calibration_collection",
+  "planned_future_envelope": {
+    "artifact_bytes": 536870912,
+    "confirmation_evaluations": 0,
+    "controller_families": 1,
+    "cpu_seconds": 10000,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 21600,
+    "model_requests": 62833,
+    "paid_dollars": 0,
+    "real_fits": 16
+  },
+  "rare_adverse_supervision_established": false,
+  "resource_capacity_ready": true,
+  "role_numeric_coverage_not_inspected": true,
+  "source_or_reference_text_decodes": 0,
+  "status": "development_extension_metadata_supported",
+  "story_independence_proven": false,
+  "unknown_checkpoint_training_overlap": true
+}

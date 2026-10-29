@@ -1,0 +1,50 @@
+[
+  {
+    "bytes": 2073848,
+    "decoded_source_reference_bodies": 0,
+    "path": "data/wmt_metadata_audit_20261026/2015.tgz",
+    "sha256": "17ab1033801d84c0ce3cbbe6e4d19bfebff7f91d31b968fbf6eee05b4bf91ad3",
+    "verified": true,
+    "year": 2015
+  },
+  {
+    "bytes": 3785707,
+    "decoded_source_reference_bodies": 0,
+    "path": "data/wmt_metadata_correction_20261026/2016.tgz",
+    "sha256": "fd10618635ec3d08f4dbdeebc9ea11d623969daff1f712a45351a934d035036a",
+    "verified": true,
+    "year": 2016
+  },
+  {
+    "bytes": 4461252,
+    "decoded_source_reference_bodies": 0,
+    "path": "data/wmt_metadata_correction_20261026/2017.tgz",
+    "sha256": "aa1a76f61c0ca68fbf62233ee90ea9ebe2b01b43323092728510037e05e73d8d",
+    "verified": true,
+    "year": 2017
+  },
+  {
+    "bytes": 4517960,
+    "decoded_source_reference_bodies": 0,
+    "path": "data/wmt_metadata_correction_20261026/2018.tgz",
+    "sha256": "d4094eb9949571e90b162a690d8bb064fa10986d8f2afb9ae709809ca6bd92ff",
+    "verified": true,
+    "year": 2018
+  },
+  {
+    "bytes": 3533424,
+    "decoded_source_reference_bodies": 0,
+    "path": "data/wmt_metadata_correction_20261026/2019.tgz",
+    "sha256": "5ef66d76e183ed40450086ad6fa7beccda1fbb290c5556b93273d515fd6683fb",
+    "verified": true,
+    "year": 2019
+  },
+  {
+    "bytes": 5302245,
+    "decoded_source_reference_bodies": 0,
+    "path": "data/wmt_metadata_correction_20261026/2020.tgz",
+    "sha256": "22b23a6e59d77d0987b8a01b5dbc3794feccdb5e37bfc5c6094df6bdbe943f6e",
+    "verified": true,
+    "year": 2020
+  }
+]

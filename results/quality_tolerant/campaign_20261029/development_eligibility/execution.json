@@ -1,0 +1,50 @@
+{
+  "analysis_counts": {
+    "archive_hash_bytes": 23674436,
+    "metadata_records": 13187
+  },
+  "artifact_sha256": {
+    "access-receipt.json": "6de3b679cffa85dd32c3bac26e61cead26a488a5de470f46b5a815d9d5602e3d",
+    "archive-availability.json": "d65907da57d91f14b2101bccf14f3b2409013ba98c9e26d26459abaf9499dffd",
+    "campaign-before.json": "29114ef94feb6113addb16aaeb7a18c9fb8ed100543b30f78ab2c65dff3fe1be",
+    "decision.json": "093612b263a8e4d69de7d4998a22890a88f6d4f54aaa7c20e0a5e6a42b0af607",
+    "execution-sources.zip": "b27b08f88c7248713034dd89fefb560a61a19f3872d66a535b64e64e8fb17a18",
+    "role-summary.json": "483b9452d05893fb6d61bdd60cb7b422cb0e7e376b0da368bb649ed4867e0da0",
+    "source-only-allocation.json": "e4f797acef7373ee2cff6c5e21992faa5ac9897286e708a7d68eb04df7778f9c",
+    "started.json": "13b127caf4aa43d3af25c472f148f255ca3f055e2f4e63fb2b29d209f8ca56d2",
+    "synthetic-tests.log": "d750c6b5c659a924d0d725e172c3aa31d18a3378e9696a5ccd110b8e346a1587",
+    "synthetic-tests.xml": "cee69bff3f5b53b315188ea5da12d69df820d33f0567883663fca1aac062ccb9"
+  },
+  "automatic_retries": 0,
+  "bootstrap_draws": 0,
+  "campaign_usage": {
+    "artifact_bytes": 16777216,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 303.456291,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 0
+  },
+  "cpu_seconds_before_reporting_charge": 3.511961,
+  "downloads": 0,
+  "finished_utc": "2026-10-29T06:09:27.429097+00:00",
+  "max_parent_rss_bytes": 122585088,
+  "model_framework_imports": 0,
+  "model_requests": 0,
+  "new_controller_families": 0,
+  "new_fits": 0,
+  "paid_dollars": 0,
+  "private_cue_metadata_reads": 0,
+  "simulations": 0,
+  "source_commit": "5efe54b9a644052c28867c9b8324e9323d29f38d",
+  "source_or_reference_body_decodes": 0,
+  "source_tokenizations": 0,
+  "status": "complete",
+  "synthetic_fits": 0,
+  "synthetic_model_requests": 0,
+  "target_encodings": 0,
+  "total_wall_seconds": 15.145310093000003
+}
