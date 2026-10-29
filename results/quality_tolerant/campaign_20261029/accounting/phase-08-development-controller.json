@@ -1,0 +1,16 @@
+{
+  "evidence_path": "development_controller/execution.json",
+  "evidence_sha256": "40c69a858a69b2b6b574e875b4e8595a2f6e8d70f1a8e997d811f2feeebc3902",
+  "phase": "08-development-controller",
+  "usage": {
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "controller_families": 1,
+    "cpu_seconds": 415.863365,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 12
+  }
+}

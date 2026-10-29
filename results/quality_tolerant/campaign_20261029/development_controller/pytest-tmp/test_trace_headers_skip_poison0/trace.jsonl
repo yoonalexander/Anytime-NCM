@@ -1,0 +1,3 @@
+{"year": 2015, "index": 0, "role": "development_fit", "warmup": true, "prefix_ids": POISON NOT JSON}
+{"year": 2015, "index": 0, "role": "development_fit", "warmup": false, "prefix_ids": POISON NOT JSON}
+{"year": 2015, "index": 1, "role": "development_calibration", "warmup": false, "prefix_ids": [1], "levels": []}

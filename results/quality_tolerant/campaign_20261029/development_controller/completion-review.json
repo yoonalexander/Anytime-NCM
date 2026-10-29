@@ -1,0 +1,98 @@
+{
+  "verified": true,
+  "protected_files": 1253,
+  "synthetic_cases": 11,
+  "real_models": 12,
+  "toy_classical_fits": 4,
+  "candidate_cost_point_screen_recomputations": 241,
+  "selected_rowwise_decisions_verified": 891,
+  "model_structural_checks": [
+    {
+      "method": "ridge",
+      "level": 10,
+      "group": "cheap",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "ridge",
+      "level": 10,
+      "group": "cue",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "ridge",
+      "level": 10,
+      "group": "full",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "ridge",
+      "level": 10,
+      "group": "logit",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "ridge",
+      "level": 8,
+      "group": "cheap",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "ridge",
+      "level": 8,
+      "group": "cue",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "ridge",
+      "level": 8,
+      "group": "full",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "ridge",
+      "level": 8,
+      "group": "logit",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "tree",
+      "level": 10,
+      "group": "cheap",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "tree",
+      "level": 10,
+      "group": "full",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "tree",
+      "level": 8,
+      "group": "cheap",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    },
+    {
+      "method": "tree",
+      "level": 8,
+      "group": "full",
+      "fit_class_counts_verified": true,
+      "structural_checks": true
+    }
+  ],
+  "evaluation_bodies_released": false,
+  "new_fits_or_nn_calls_or_reference_scores": 0,
+  "review_cpu_covered_by_reporting_credit": true
+}

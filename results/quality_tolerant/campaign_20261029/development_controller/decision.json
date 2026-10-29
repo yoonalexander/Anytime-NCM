@@ -1,0 +1,10 @@
+{
+  "Q0_passed": false,
+  "estimated_saving": 0.053253850353966216,
+  "independent_confirmation": false,
+  "locked_fixed_comparator": "fixed:11",
+  "next_branch": "prospectively_lock_development_evaluation",
+  "ready_for_development_evaluation": true,
+  "selected": "ridge:cheap:8:guard0:0.6",
+  "status": "development_candidate_ready_for_once_only_evaluation"
+}

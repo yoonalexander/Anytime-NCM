@@ -1,0 +1,142 @@
+{
+  "10": {
+    "calibration": {
+      "bleu": {
+        "adverse": 487,
+        "adverse_components": 57,
+        "defined": 891,
+        "missing": 0,
+        "nonadverse": 404,
+        "nonadverse_components": 57
+      },
+      "chrf": {
+        "adverse": 601,
+        "adverse_components": 59,
+        "defined": 891,
+        "missing": 0,
+        "nonadverse": 290,
+        "nonadverse_components": 56
+      },
+      "negation_cue_mismatch_rate": {
+        "adverse": 7,
+        "adverse_components": 6,
+        "defined": 891,
+        "missing": 0,
+        "nonadverse": 884,
+        "nonadverse_components": 59
+      },
+      "numeric_reference_f1": {
+        "adverse": 35,
+        "adverse_components": 21,
+        "defined": 226,
+        "missing": 665,
+        "nonadverse": 191,
+        "nonadverse_components": 53
+      }
+    },
+    "fit": {
+      "bleu": {
+        "adverse": 1825,
+        "adverse_components": 177,
+        "defined": 3408,
+        "missing": 0,
+        "nonadverse": 1583,
+        "nonadverse_components": 176
+      },
+      "chrf": {
+        "adverse": 2327,
+        "adverse_components": 178,
+        "defined": 3408,
+        "missing": 0,
+        "nonadverse": 1081,
+        "nonadverse_components": 168
+      },
+      "negation_cue_mismatch_rate": {
+        "adverse": 11,
+        "adverse_components": 9,
+        "defined": 3408,
+        "missing": 0,
+        "nonadverse": 3397,
+        "nonadverse_components": 178
+      },
+      "numeric_reference_f1": {
+        "adverse": 114,
+        "adverse_components": 61,
+        "defined": 714,
+        "missing": 2694,
+        "nonadverse": 600,
+        "nonadverse_components": 154
+      }
+    }
+  },
+  "8": {
+    "calibration": {
+      "bleu": {
+        "adverse": 652,
+        "adverse_components": 59,
+        "defined": 891,
+        "missing": 0,
+        "nonadverse": 239,
+        "nonadverse_components": 52
+      },
+      "chrf": {
+        "adverse": 761,
+        "adverse_components": 59,
+        "defined": 891,
+        "missing": 0,
+        "nonadverse": 130,
+        "nonadverse_components": 45
+      },
+      "negation_cue_mismatch_rate": {
+        "adverse": 13,
+        "adverse_components": 8,
+        "defined": 891,
+        "missing": 0,
+        "nonadverse": 878,
+        "nonadverse_components": 59
+      },
+      "numeric_reference_f1": {
+        "adverse": 85,
+        "adverse_components": 36,
+        "defined": 226,
+        "missing": 665,
+        "nonadverse": 141,
+        "nonadverse_components": 49
+      }
+    },
+    "fit": {
+      "bleu": {
+        "adverse": 2438,
+        "adverse_components": 178,
+        "defined": 3408,
+        "missing": 0,
+        "nonadverse": 970,
+        "nonadverse_components": 168
+      },
+      "chrf": {
+        "adverse": 2872,
+        "adverse_components": 178,
+        "defined": 3408,
+        "missing": 0,
+        "nonadverse": 536,
+        "nonadverse_components": 143
+      },
+      "negation_cue_mismatch_rate": {
+        "adverse": 34,
+        "adverse_components": 26,
+        "defined": 3408,
+        "missing": 0,
+        "nonadverse": 3374,
+        "nonadverse_components": 178
+      },
+      "numeric_reference_f1": {
+        "adverse": 253,
+        "adverse_components": 107,
+        "defined": 714,
+        "missing": 2694,
+        "nonadverse": 461,
+        "nonadverse_components": 148
+      }
+    }
+  }
+}

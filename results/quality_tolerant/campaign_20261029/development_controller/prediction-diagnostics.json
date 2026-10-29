@@ -1,0 +1,4190 @@
+{
+  "ridge": {
+    "10": {
+      "cheap": {
+        "adverse": 408,
+        "adverse_fraction": 0.45791245791245794,
+        "auc": 0.6785511305971664,
+        "clipped_squared_error": 0.22359026372148502,
+        "clipping_count": 2,
+        "component_deletion": [
+          {
+            "auc": 0.6769905115511551,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.6756245086556819,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.6828440381301444,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.6759582065584855,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.6768569958847737,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.6805335026992696,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.6800298830981618,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.6761880765552207,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.6826963416680651,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.6795123585659424,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.6765309066924995,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.6786574526942455,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.67654252476672,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.6749008198889183,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.6777146818640595,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.6811725993986669,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.6787804826507755,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.6783845232121094,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.6806412220060438,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.6779208576248745,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.6792034588580959,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.6792203969958251,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.6810650664251208,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.6796723752792256,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.6768392962422813,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.6787155229846769,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.6778624778624779,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.6744003308519437,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.6769715364477403,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.6794778039598061,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.6763509859389301,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.6758997844827587,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.6783273266365054,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.6793514651021905,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.6804958804958805,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.6755699868931332,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.6827015858365497,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.6815818847020402,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.676415407816374,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.6804665739947577,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.6803592649180884,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.6746699333061114,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.6789006647435093,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.6764461436170213,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.6767318030374262,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.6785052083333334,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.6839719153151989,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.6803718943367779,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.6837447916666667,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.6769681197137281,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.6779285559376645,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.674984243697479,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.6808874438376632,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.6801080424498146,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.6787972085385878,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.6770807695463122,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.678127548691223,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.6809187146971908,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.676069186980003,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 3,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.4644057485411567,
+        "n": 891,
+        "nonadverse": 483,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.03125,
+            "lower": 0.0,
+            "mean_score": 0.12089350299591481,
+            "n": 32,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.30223880597014924,
+            "lower": 0.2,
+            "mean_score": 0.32319343464460076,
+            "n": 268,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.49765258215962443,
+            "lower": 0.4,
+            "mean_score": 0.4878355838029388,
+            "n": 426,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.668918918918919,
+            "lower": 0.6,
+            "mean_score": 0.6821612510389053,
+            "n": 148,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.8823529411764706,
+            "lower": 0.8,
+            "mean_score": 0.8796369997021569,
+            "n": 17,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.4583333333333333,
+        "training_prevalence_squared_error": 0.2482288159371493
+      },
+      "cue": {
+        "adverse": 408,
+        "adverse_fraction": 0.45791245791245794,
+        "auc": 0.6786779929363049,
+        "clipped_squared_error": 0.22344109961996894,
+        "clipping_count": 5,
+        "component_deletion": [
+          {
+            "auc": 0.6772535066006601,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.6765871424216657,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.6834687810744537,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.6760955459770115,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.6770010288065844,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.6808563565152959,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.6797983943095847,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.6764760327858736,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.6820145997650613,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.6793474058609758,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.6770307314961767,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.6782104277765506,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.6764911415299872,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.6751018249140439,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.6778370222353625,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.681456445406951,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.6793668906639618,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.6784818164128509,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.6804652895641015,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.6776272236103102,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.679297563219833,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.6791767950380972,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.6809832930756844,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.6800925433464525,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.6766014004819975,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.6779267155229847,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.6779240779240779,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.6745812655086849,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.6767942259353129,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.679158202648899,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.6767409934270738,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.6758135775862069,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.6783937837077934,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.6787297133565029,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.6806396139729473,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.6759960949088183,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.6822872965262627,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.6816749002666446,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.6764563044756281,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.680435797346027,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.680019735166794,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.6751871512181843,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.6803587106484384,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.6768949468085106,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.676782903746704,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.679625,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.6836273179556762,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.6807645192700317,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.6837916666666667,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.6770042651630159,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.6780215013786907,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.6755514705882353,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.6816134768563823,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.6800867323019222,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.6791358784893268,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.676983345639511,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.6782506552861459,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.681506538200512,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.6762777071126217,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 3,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.4633449194676504,
+        "n": 891,
+        "nonadverse": 483,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.11764705882352941,
+            "lower": 0.0,
+            "mean_score": 0.12385488221864013,
+            "n": 34,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.29850746268656714,
+            "lower": 0.2,
+            "mean_score": 0.3228979060408727,
+            "n": 268,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.4964705882352941,
+            "lower": 0.4,
+            "mean_score": 0.48690191168612046,
+            "n": 425,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.6595744680851063,
+            "lower": 0.6,
+            "mean_score": 0.6774906768533573,
+            "n": 141,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.8695652173913043,
+            "lower": 0.8,
+            "mean_score": 0.870708345414245,
+            "n": 23,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.4583333333333333,
+        "training_prevalence_squared_error": 0.2482288159371493
+      },
+      "full": {
+        "adverse": 408,
+        "adverse_fraction": 0.45791245791245794,
+        "auc": 0.6935208866155158,
+        "clipped_squared_error": 0.21883591406146122,
+        "clipping_count": 8,
+        "component_deletion": [
+          {
+            "auc": 0.6921617161716171,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.6896736136736779,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.6981814774129395,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.6917046991210277,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.6915792181069959,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.6956229490843654,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.6944347990782538,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.691660581877269,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.6970653633159927,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.6941364468156396,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.6920100171074056,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.6916842847075405,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.6922606568832984,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.689764612536366,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.6925535494000225,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.6958747713462711,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.695511601369342,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.6927275892793134,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.6956368754398311,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.692490443547526,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.6935334619426277,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.6901535878960965,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.6907394826892109,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.6941016913094352,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.6912009598576763,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.6931165889407062,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.6929288262621596,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.6901313068651779,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.6914744933612859,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.6951111833373961,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.6913376736833348,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.6923383620689655,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.6933364005827773,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.6950121693290395,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.6947357614024281,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.6912604706605753,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.6961109246517873,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.6965987308542962,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.6914602663394934,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.6950341877272984,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.6950227060521178,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.6909595753368722,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.6962143066181696,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.6928357712765958,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.6921744373811909,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.6939010416666667,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.6992634231440201,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.6967365015547947,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.69803125,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.6932232446220735,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.6925622992636655,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.6907090336134454,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.6957185096330902,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.6964902186421174,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.6944529967159278,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.6915764213635245,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.6925207614142896,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.6957746177811266,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.6930010217486499,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 3,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.4649951185714982,
+        "n": 891,
+        "nonadverse": 483,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.05263157894736842,
+            "lower": 0.0,
+            "mean_score": 0.12555741907094795,
+            "n": 38,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.3170731707317073,
+            "lower": 0.2,
+            "mean_score": 0.32550519668659594,
+            "n": 287,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.5088607594936709,
+            "lower": 0.4,
+            "mean_score": 0.4943205916113532,
+            "n": 395,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.6301369863013698,
+            "lower": 0.6,
+            "mean_score": 0.682859775231277,
+            "n": 146,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.88,
+            "lower": 0.8,
+            "mean_score": 0.8667340877497758,
+            "n": 25,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.4583333333333333,
+        "training_prevalence_squared_error": 0.2482288159371493
+      },
+      "logit": {
+        "adverse": 408,
+        "adverse_fraction": 0.45791245791245794,
+        "auc": 0.6922928591726546,
+        "clipped_squared_error": 0.219030196256373,
+        "clipping_count": 5,
+        "component_deletion": [
+          {
+            "auc": 0.6906714108910891,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.6877376502109772,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.6964946714633041,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.6904686443542934,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.6903446502057613,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.6941409971419499,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.693466755053295,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.690354494688236,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.6964622839402584,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.693002396968994,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.6905723766927057,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.690832307805581,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.6911250873515025,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.6883258397249405,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.691345438233405,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.6944818233426547,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.693757660284857,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.6915191053122087,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.6947158173614273,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.6917750443120422,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.6922160008783074,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.6891943448260827,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.6894625603864735,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.6926603552813531,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.6903062649331306,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.6922744836775483,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.6918354251687585,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.6888802729528536,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.6903063299852936,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.6942878036889575,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.6899232465263333,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.6913308189655173,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.6921350612171868,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.6944169881707745,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.6935294268627602,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.6898580898494598,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.6958015187111931,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.6953791934517043,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.6902947115507502,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.693905710607172,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.6944603599015363,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.6893970328025044,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.6937006145741879,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.6915724734042553,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.6909889009259449,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.691953125,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.6984934634188366,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.6952549968066506,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.6969947916666667,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.6920665902448596,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.6913230267166507,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.6891859243697479,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.6940191714805812,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.6953980735626305,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.6929751642036125,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.6905611617031749,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.6913204721137916,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.6940859611715857,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.6918541610192465,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 3,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.46585476635847445,
+        "n": 891,
+        "nonadverse": 483,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.023255813953488372,
+            "lower": 0.0,
+            "mean_score": 0.1333520282760886,
+            "n": 43,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.3333333333333333,
+            "lower": 0.2,
+            "mean_score": 0.32809974393478236,
+            "n": 279,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.4949238578680203,
+            "lower": 0.4,
+            "mean_score": 0.4937510790893685,
+            "n": 394,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.6493506493506493,
+            "lower": 0.6,
+            "mean_score": 0.684526950450428,
+            "n": 154,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.9047619047619048,
+            "lower": 0.8,
+            "mean_score": 0.8739852729444889,
+            "n": 21,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.4583333333333333,
+        "training_prevalence_squared_error": 0.2482288159371493
+      }
+    },
+    "8": {
+      "cheap": {
+        "adverse": 647,
+        "adverse_fraction": 0.7261503928170595,
+        "auc": 0.7299135987027137,
+        "clipped_squared_error": 0.1730101392084583,
+        "clipping_count": 37,
+        "component_deletion": [
+          {
+            "auc": 0.7298344532839011,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.7266773376017074,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.7363346354166667,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.7280374461206897,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.7277067601350481,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.7295747952177717,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.7323972164558119,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.727422480620155,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.7335950054002792,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.7289215025391139,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.7308514198913519,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.7317826616228386,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.7265697674418604,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.7276438696191783,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.7292359438902266,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.7345953508535696,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.7298684485824877,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.7286565443013646,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.7315656941630362,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.7286950819672131,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.729599979155403,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.7283687649929688,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.7288178589548453,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.7292723190702588,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.7287385515277457,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.7318584656084656,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.7302318734839903,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.727918460206047,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.7269995707540421,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.7346344384560946,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.7283748595770102,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.7329331162664496,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.7302527746665309,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.7291996830427893,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.7303612210106468,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.7302202572022692,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.7283105172019473,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.7292965442930809,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.7288845331432644,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.7316038704378626,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.7303270042194093,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.7281849551414769,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.7329872261703916,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.7308196005674997,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.728369540944907,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.7251094587942692,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.7284969416076096,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.7352546652463803,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.733078152386844,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.7289978154367187,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.7308376632585964,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.7331433438155136,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.7309580219118552,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.7315702326685973,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.7303662743441558,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.7273826755444047,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.7281004568553976,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.7272956475583864,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.7274646966527196,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 7,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.7026186924085929,
+        "n": 891,
+        "nonadverse": 244,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.0,
+            "lower": 0.0,
+            "mean_score": 0.05459879162329917,
+            "n": 5,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.07142857142857142,
+            "lower": 0.2,
+            "mean_score": 0.2878280930148845,
+            "n": 14,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.5124378109452736,
+            "lower": 0.4,
+            "mean_score": 0.5355342369349687,
+            "n": 201,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.7661469933184856,
+            "lower": 0.6,
+            "mean_score": 0.6931101494667354,
+            "n": 449,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.8963963963963963,
+            "lower": 0.8,
+            "mean_score": 0.9080421096021419,
+            "n": 222,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.6992370892018779,
+        "training_prevalence_squared_error": 0.1995803257401726
+      },
+      "cue": {
+        "adverse": 647,
+        "adverse_fraction": 0.7261503928170595,
+        "auc": 0.7384713811538753,
+        "clipped_squared_error": 0.17188692722042484,
+        "clipping_count": 41,
+        "component_deletion": [
+          {
+            "auc": 0.7375067583223913,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.7376817393624117,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.7446223958333333,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.7359913793103449,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.7364307620937605,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.7382034832860589,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.7410403039442247,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.7361886304909561,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.7404638971576091,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.7375564158368804,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.7390386447310832,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.7390997028679137,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.735,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.7366581749297799,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.737804023493738,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.7427008138305209,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.7400355685741187,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.7371260170414504,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.7391006013684531,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.7373704918032787,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.7380876385025763,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.7366545344252351,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.738148465246068,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.7375396196513471,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.7371918212370764,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.7398280423280423,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.7387951282888211,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.7364886700016804,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.7348625762561948,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.7426506614404703,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.737037253488659,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.7417107583774251,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.7387549638529681,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.7382461701003697,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.7389752002315931,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.7388744204200567,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.7372627176789623,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.7378845019112855,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.7373930862437633,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.7401827421590268,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.7375857067510548,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.7364113181504486,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.7423282112078793,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.7399732620320856,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.737008326155613,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.7340863752946968,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.7363450189970628,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.7440920029983824,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.7419514898443138,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.737787774201471,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.7394889183997112,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.7431407232704402,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.7395447465214603,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.7401394560291314,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.7387631280840198,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.736157483354241,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.7370001539962014,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.735390127388535,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.7361140167364016,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 7,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.7032495599178099,
+        "n": 891,
+        "nonadverse": 244,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.0,
+            "lower": 0.0,
+            "mean_score": 0.10353395883063253,
+            "n": 6,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.2,
+            "lower": 0.2,
+            "mean_score": 0.3111742486489563,
+            "n": 15,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.5024154589371981,
+            "lower": 0.4,
+            "mean_score": 0.5358963435561828,
+            "n": 207,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.766743648960739,
+            "lower": 0.6,
+            "mean_score": 0.6908628814731994,
+            "n": 433,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.9043478260869565,
+            "lower": 0.8,
+            "mean_score": 0.9089051927602106,
+            "n": 230,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.6992370892018779,
+        "training_prevalence_squared_error": 0.1995803257401726
+      },
+      "full": {
+        "adverse": 647,
+        "adverse_fraction": 0.7261503928170595,
+        "auc": 0.7464337294448526,
+        "clipped_squared_error": 0.1677817535235197,
+        "clipping_count": 42,
+        "component_deletion": [
+          {
+            "auc": 0.7445933420869699,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.7426037081499266,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.7510677083333334,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.7444234913793103,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.7442269529135846,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.7479256686901891,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.7491089264031962,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.7442571059431524,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.7492558151787361,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.7460244088775897,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.7471421951031126,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.7479940311792348,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.7422416020671835,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.7449604807629499,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.7460153652104117,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.7507274554495116,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.7492284757819856,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.7448523287846756,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.7478265935616678,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.7452262295081967,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.7468684249952774,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.740190807069788,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.7434440005073567,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.7453446909667195,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.7452538546396777,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.7485648148148148,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.7468527798577911,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.7461446982329598,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.7441759127980333,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.751279329304807,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.7437645698998046,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.7509225342558676,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.7467544038285306,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.7468964606444797,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.7457621666827495,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.7476968216475212,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.7446009082889535,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.7454526796480156,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.7453288870787089,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.7484087059185873,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.7454575421940929,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.7456176673567978,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.7507246754431105,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.7488677289097457,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.745672632149807,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.741787352003938,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.7461197488615235,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.7533698925579622,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.7487498711207341,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.7453497240211476,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.747140960018566,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.7483621593291404,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.7474311818526905,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.7479566459307734,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.7461295752292815,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.7445012705458522,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.7456816898516503,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.7425225583864119,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.7444233786610879,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 7,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.7070015261840997,
+        "n": 891,
+        "nonadverse": 244,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.0,
+            "lower": 0.0,
+            "mean_score": 0.10778872725661903,
+            "n": 7,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.22727272727272727,
+            "lower": 0.2,
+            "mean_score": 0.33986630067745155,
+            "n": 22,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.5221674876847291,
+            "lower": 0.4,
+            "mean_score": 0.5280970866339902,
+            "n": 203,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.7560386473429952,
+            "lower": 0.6,
+            "mean_score": 0.6986485874487384,
+            "n": 414,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.9102040816326531,
+            "lower": 0.8,
+            "mean_score": 0.90765065736849,
+            "n": 245,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.6992370892018779,
+        "training_prevalence_squared_error": 0.1995803257401726
+      },
+      "logit": {
+        "adverse": 647,
+        "adverse_fraction": 0.7261503928170595,
+        "auc": 0.7400486482377683,
+        "clipped_squared_error": 0.16870826838059857,
+        "clipping_count": 40,
+        "component_deletion": [
+          {
+            "auc": 0.7387296928503385,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.7343670801653995,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.7450455729166666,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.7383957435344828,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.7377258318084585,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.7415767568857196,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.7426396668102829,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.7377713178294574,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.7444416638128606,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.7395915589710008,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.7408022450503334,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.74281712632695,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.7357687338501292,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.738238944411784,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.7396068238861496,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.7447238953515104,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.7413170833769223,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.73850342750977,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.7423501919329886,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.7387147540983606,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.7404782532227702,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.7340902197590096,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.7360873287671232,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.7392102482831484,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.7389491777623849,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.7427050264550265,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.7404655389794494,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.7397267356936957,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.7379453426813564,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.7455427622625075,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.737212579302463,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.7446208112874779,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.7403841258527645,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.7400686740623349,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.7392646916915951,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.7410615145458583,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.7375436991537884,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.7390774519613125,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.7389586091029426,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.7420306965761512,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.7398931962025317,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.7394202898550725,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.7433639271220777,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.7419854305358508,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.7392796758860497,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.7352651623099044,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.7402387432297701,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.7469260004471272,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.7421512527064645,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.738718475717739,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.7407008677041297,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.741522536687631,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.7412725630587589,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.7415181840371003,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.7398319349243835,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.7381517578564766,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.739027770648324,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.7365379511677282,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.7379772489539749,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 7,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.7063901230809232,
+        "n": 891,
+        "nonadverse": 244,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.0,
+            "lower": 0.0,
+            "mean_score": 0.09011989753953352,
+            "n": 6,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.19230769230769232,
+            "lower": 0.2,
+            "mean_score": 0.3360895488439709,
+            "n": 26,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.53125,
+            "lower": 0.4,
+            "mean_score": 0.5302478656294832,
+            "n": 192,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.7529976019184652,
+            "lower": 0.6,
+            "mean_score": 0.6978963924463554,
+            "n": 417,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.904,
+            "lower": 0.8,
+            "mean_score": 0.9003383928388992,
+            "n": 250,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.6992370892018779,
+        "training_prevalence_squared_error": 0.1995803257401726
+      }
+    }
+  },
+  "tree": {
+    "10": {
+      "cheap": {
+        "adverse": 408,
+        "adverse_fraction": 0.45791245791245794,
+        "auc": 0.6407892867291844,
+        "clipped_squared_error": 0.23258335090525747,
+        "clipping_count": 0,
+        "component_deletion": [
+          {
+            "auc": 0.6385158828382839,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.6386219362843406,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.6460206477543095,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.645719764198783,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.6395010288065843,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.6424605694929607,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.6440254848111788,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.6400572827215978,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.6426964465514348,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.6381118070053352,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.638928107673599,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.6413440198584246,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.6397007440292679,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.638540068764877,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.6409182664369386,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.6424118500452051,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.6381862558640802,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.6408626322419426,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.6428959514840419,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.6392385803062336,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.6435666598702405,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.6388940363422317,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.6358444041867954,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.6403520902031699,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.640128360277614,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.6425156562291805,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.6384153384153384,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.6362282878411911,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.6395381582652774,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.6463042712819262,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.6397656835011232,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.6399030172413793,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.6411778237865194,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.6415096344949994,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.6421164754498088,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.6384257736017994,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.6429638991441518,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.6422724735939147,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.6392198962247272,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.6416803024318682,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.6443346277905101,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.6369946917109024,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.6413677411263012,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.6343722296099291,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.6403302127833534,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.6415130208333333,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.6454900820572462,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.6398399137272147,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.6477135416666666,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.64220652476996,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.6396376160527104,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.6391228991596639,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.6429811547081663,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.6386757874099647,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.6420489532019704,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.6395007793912544,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.6397670207691084,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.6421116757779309,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.6384234835373356,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 3,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.4656691331795192,
+        "n": 891,
+        "nonadverse": 483,
+        "reliability_bins": [
+          {
+            "adverse_fraction": null,
+            "lower": 0.0,
+            "mean_score": null,
+            "n": 0,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.29365079365079366,
+            "lower": 0.2,
+            "mean_score": 0.3023304875708231,
+            "n": 252,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.5042881646655232,
+            "lower": 0.4,
+            "mean_score": 0.5092029655857947,
+            "n": 583,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.7142857142857143,
+            "lower": 0.6,
+            "mean_score": 0.7474747474747475,
+            "n": 56,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": null,
+            "lower": 0.8,
+            "mean_score": null,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.4583333333333333,
+        "training_prevalence_squared_error": 0.2482288159371493
+      },
+      "full": {
+        "adverse": 408,
+        "adverse_fraction": 0.45791245791245794,
+        "auc": 0.6369301343725896,
+        "clipped_squared_error": 0.2329055662812615,
+        "clipping_count": 0,
+        "component_deletion": [
+          {
+            "auc": 0.6357260726072608,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.6350361255060513,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.6410357196778409,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.6407332868492225,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.635895061728395,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.6390706044246851,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.6395403895324979,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.6355528245420982,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.6398986826648767,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.6355550400783525,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.6349836139909723,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.6352460740693993,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.6357236815061454,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.6331578947368421,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.6371257149265448,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.638529993061542,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.634342906047927,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.6372960683305511,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.6391418636420085,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.6361260597518525,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.6415956962938566,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.6367657157806386,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.636586654589372,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.6377380065950431,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.6355954117148147,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.638078614257162,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.6350863684197018,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.6329843879239041,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.6350037026607007,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.6439072614501232,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.6361568142108328,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.634943426724138,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.6373616542698668,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.6361583181880985,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.6375118708452042,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.6359931822717491,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.6373814817922471,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.6400013435581554,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.6354369552437186,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.638079434530374,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.6371832824038707,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.6346018783176807,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.6387495296626113,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.6319896941489361,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.6360914089487562,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.6343984375,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.6400869031466047,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.6371595941828689,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.6414921875,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.6384473980440148,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.6363871074346026,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.6354543067226891,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.6379857318728496,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.6369656480415974,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.6373845443349754,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.635790979571745,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.6358942924704929,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.6352742196642993,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.6352461580165565,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 3,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.46655894186365165,
+        "n": 891,
+        "nonadverse": 483,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.13793103448275862,
+            "lower": 0.0,
+            "mean_score": 0.12230215827338131,
+            "n": 29,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.31390134529147984,
+            "lower": 0.2,
+            "mean_score": 0.3275706070232487,
+            "n": 223,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.47974413646055436,
+            "lower": 0.4,
+            "mean_score": 0.4750010385435255,
+            "n": 469,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.6411764705882353,
+            "lower": 0.6,
+            "mean_score": 0.6843148362793392,
+            "n": 170,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": null,
+            "lower": 0.8,
+            "mean_score": null,
+            "n": 0,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.4583333333333333,
+        "training_prevalence_squared_error": 0.2482288159371493
+      }
+    },
+    "8": {
+      "cheap": {
+        "adverse": 647,
+        "adverse_fraction": 0.7261503928170595,
+        "auc": 0.6949096713710188,
+        "clipped_squared_error": 0.1789800468824247,
+        "clipping_count": 0,
+        "component_deletion": [
+          {
+            "auc": 0.6947651965706341,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.692593704148326,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.7001822916666667,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.6965382543103448,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.6939189711605371,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.6937180234869973,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.6969762249813952,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.6925193798449613,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.6982528120966255,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.694413949397482,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.6956212507401972,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.698496014241397,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.6936950904392765,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.6937651054935006,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.6945686656728969,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.6990896133155547,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.6944535254733759,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.6927189441988596,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.6972734511040193,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.6950918032786885,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.6933368942853234,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.694105522927179,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.6932117262810756,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.692756207078711,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.6941109315272326,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.6961706349206349,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.6946892460111744,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.6936149998061039,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.6931249105737588,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.6991534650770319,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.6960012727355372,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.6964997964997965,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.6952862488544954,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.6936806656101426,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.6953745697835247,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.6955531329282162,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.6923971640474401,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.6933188383488545,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.694261658690561,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.6962072018890201,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.693028085443038,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.6914596273291925,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.6963951875036641,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.6926804812834224,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.6929084122882573,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.6915464131195108,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.6939317183584383,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.6999316158388238,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.6954421847613156,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.6930430061658975,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.6954622813011694,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.7001212002096436,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.6950829221042711,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.699123946988238,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.6944044441884428,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.6920872334266139,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.6929732816590524,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.6943006900212314,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.6937434623430963,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 7,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.7030793630675038,
+        "n": 891,
+        "nonadverse": 244,
+        "reliability_bins": [
+          {
+            "adverse_fraction": null,
+            "lower": 0.0,
+            "mean_score": null,
+            "n": 0,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": 0.42727272727272725,
+            "lower": 0.2,
+            "mean_score": 0.3855028692237995,
+            "n": 110,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": null,
+            "lower": 0.4,
+            "mean_score": null,
+            "n": 0,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.7264653641207816,
+            "lower": 0.6,
+            "mean_score": 0.6931774860650408,
+            "n": 563,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.8761467889908257,
+            "lower": 0.8,
+            "mean_score": 0.8888966615775685,
+            "n": 218,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.6992370892018779,
+        "training_prevalence_squared_error": 0.1995803257401726
+      },
+      "full": {
+        "adverse": 647,
+        "adverse_fraction": 0.7261503928170595,
+        "auc": 0.689997339549497,
+        "clipped_squared_error": 0.17932521096191753,
+        "clipping_count": 0,
+        "component_deletion": [
+          {
+            "auc": 0.689979660667851,
+            "component": "042285312b4f58ebec31e0d7ce191c6ce85782875e0e51271417a87afc53ace9",
+            "n": 884
+          },
+          {
+            "auc": 0.6848239295718287,
+            "component": "0b794470f26b01d5f6e2e22a1c45e5c69d434623e7d717031cc01c2158265ced",
+            "n": 868
+          },
+          {
+            "auc": 0.6900032552083334,
+            "component": "0e665b8482dcbf02a08b2372806aa5dd0ccf9d304e062baaea83526390303f2f",
+            "n": 880
+          },
+          {
+            "auc": 0.6978044181034483,
+            "component": "124eab1a1806cdd4dca23385b9727b70a1031ee3f48d182ff99f74abdd415441",
+            "n": 872
+          },
+          {
+            "auc": 0.689080178345919,
+            "component": "13682a3b018f5d0234fbc7c93d3ae6941b7dffb601e339854cb63c763df5b5b2",
+            "n": 885
+          },
+          {
+            "auc": 0.6893539750284972,
+            "component": "17d64dfe592dcb23ba55ca08abaac615433dee29ebc293a1e4e79d27f668bd75",
+            "n": 872
+          },
+          {
+            "auc": 0.6924066167926572,
+            "component": "1d38ad0fc13c8fbbd51f79ccd638bbfad2123f676234a969b128aec490e6ed2a",
+            "n": 875
+          },
+          {
+            "auc": 0.6901485788113695,
+            "component": "251daeacdc9ec7a12e1c7b10034f0d8f3927dd5dc72430a5ba96704c553fac5a",
+            "n": 885
+          },
+          {
+            "auc": 0.6952069228945497,
+            "component": "26239940fdac41fe590059d3bd6a474634dc7be333f313f02e81e81c7312b1e4",
+            "n": 876
+          },
+          {
+            "auc": 0.6903147730847505,
+            "component": "29a9aa00c3ff7ba24caf81ee2742d91d7b79644e0b0aaee790b2419dd0f9ba06",
+            "n": 884
+          },
+          {
+            "auc": 0.691852681444865,
+            "component": "29eb0d4d6eb9daff128246f7b8e0d0373bc8249847f3daf72337ece29dd229d8",
+            "n": 884
+          },
+          {
+            "auc": 0.6943728156864798,
+            "component": "362c61ab02aebebe53600c96558a075b816a594c68e9c2c163014ab1760d714a",
+            "n": 875
+          },
+          {
+            "auc": 0.6908559431524548,
+            "component": "3dd9f7a2f79e2328cfb55fd8442403e394772ef805c12b5a0a69c69dc7a0a27d",
+            "n": 885
+          },
+          {
+            "auc": 0.6887223202038016,
+            "component": "3f03e14c2f688f56e855e68e06e67e433334c701d10fb0bbc63e62d28c883258",
+            "n": 873
+          },
+          {
+            "auc": 0.6908133623819899,
+            "component": "43822a9b19f045463ac0ec58dcbe0b068456b8fd38219d9c77cb6232cf93e115",
+            "n": 889
+          },
+          {
+            "auc": 0.694606648581544,
+            "component": "43c43a3dcf33bdebae098c594b586347669ab8462583505f14609af8d174bea9",
+            "n": 876
+          },
+          {
+            "auc": 0.6909032064023434,
+            "component": "49af78041ed6c019658a1c68d625cd0fd270a84f5b6eb360d5c7271d683c40b2",
+            "n": 874
+          },
+          {
+            "auc": 0.6901915561535011,
+            "component": "4d783993e6554457564536507ae9a806a716274db856d8ffebcea21cebade9ce",
+            "n": 887
+          },
+          {
+            "auc": 0.6935610204491167,
+            "component": "505b8dc2e798cac1893f6f9d05a37432ad5e344bed77b66e286e9197ce28589e",
+            "n": 882
+          },
+          {
+            "auc": 0.688439344262295,
+            "component": "5076f651cb07e613c7d0523fccc2a7351664a7168dd9f75f0e3fc8e687730e41",
+            "n": 869
+          },
+          {
+            "auc": 0.6896174365054033,
+            "component": "5138518570edea6c470a423f297ea580c68e31f38a27ccbc91cf661cbb0ae468",
+            "n": 878
+          },
+          {
+            "auc": 0.6824592604847382,
+            "component": "51b58e40ed3519f3e6715fff81fdfdfadb2b23fafb187b5c1cb6c6d2d127fefc",
+            "n": 859
+          },
+          {
+            "auc": 0.6792237442922374,
+            "component": "541153acfa540fdc65c31fa70956ac2e0411456c71832900f6e20f25d5f69e48",
+            "n": 800
+          },
+          {
+            "auc": 0.6878598784997358,
+            "component": "5604912f83514bdeeb4fc86dac04712d8239417a955081ff9d59bf44605bf7db",
+            "n": 871
+          },
+          {
+            "auc": 0.688954308730342,
+            "component": "60faa503a940278dc9b68f40318f130e5b88f164e25458214de7327ee1843f16",
+            "n": 883
+          },
+          {
+            "auc": 0.6914351851851852,
+            "component": "64832306d0c5b271f4da00914b94a7fbbd5a4f3813b07ab54588ddb43c828b82",
+            "n": 870
+          },
+          {
+            "auc": 0.6898092147789746,
+            "component": "655d1b8345fc32194e61c6ddeac168fdb5cf7b98fe9831912439df181377206c",
+            "n": 886
+          },
+          {
+            "auc": 0.6897403084241414,
+            "component": "6785709545c308af6e89def677b70eb7b915f021d4d90697fab23e57f2352d23",
+            "n": 883
+          },
+          {
+            "auc": 0.6875186982140766,
+            "component": "755abd9c7f966d07dc35e336fb5f825036375bc72562a4569b228ead4da65406",
+            "n": 879
+          },
+          {
+            "auc": 0.6956046872448146,
+            "component": "75c47862e4ba1eb87ffd5051612dbccbbe19d41c04287d9e7c7f4bbfff4b2f21",
+            "n": 862
+          },
+          {
+            "auc": 0.6881668062779629,
+            "component": "7b85533b52828a9968d95ca3593f8ea2c3f4441e2222a094044eb22f7757466b",
+            "n": 880
+          },
+          {
+            "auc": 0.6934133767467101,
+            "component": "83f27afd95dba1465e1ab59d2c4aefcd014917aa0ece6545d254277e1d1cf996",
+            "n": 864
+          },
+          {
+            "auc": 0.6905960441910193,
+            "component": "8728d1836fae713b47bd2a8885efeae54c159c0140eaf8814848049a2f856743",
+            "n": 888
+          },
+          {
+            "auc": 0.6881933438985737,
+            "component": "8b358d0037caa5efa1c7beef3c122a029cb8ba1bb7b35a66b57581f532192a61",
+            "n": 871
+          },
+          {
+            "auc": 0.690083309209045,
+            "component": "8cf149e49361848583244684061df4b843e7dd72d30494690ef97f4ff57d9542",
+            "n": 886
+          },
+          {
+            "auc": 0.6905228164388724,
+            "component": "8f176d6d295fd18441f7c6b85a9fa57eb9ebcb2ff89f60805c483933f04f4d5c",
+            "n": 864
+          },
+          {
+            "auc": 0.6866762505309243,
+            "component": "928a742e068df450783d9a1fba4ae36a6d6fb331691a8fe3ff3ba4b16fcc5a9b",
+            "n": 876
+          },
+          {
+            "auc": 0.688803586546602,
+            "component": "9749380097e9e391912994b07b327c132b671bbce16e02a3eb9ced29bf1a6c76",
+            "n": 883
+          },
+          {
+            "auc": 0.6892946237654006,
+            "component": "97c73d30a3d6fb8d2a9cf2573dfc66db3f9b0c99de8a33987a12a65d2a321c86",
+            "n": 888
+          },
+          {
+            "auc": 0.6912985729685335,
+            "component": "98371951a515653a6f6d66c17218a8539620385fb19464ec93f126617c992373",
+            "n": 886
+          },
+          {
+            "auc": 0.6900547204641351,
+            "component": "9df411fd73ebd174a3b765b1bdc02de20ebdaf853d96a44b3462cd8143bbe211",
+            "n": 872
+          },
+          {
+            "auc": 0.6866149068322981,
+            "component": "a415d1fa6da0a9f9a0b4c6c51f1e72e541fb238ada55e60e9a81e4c0f99577ce",
+            "n": 860
+          },
+          {
+            "auc": 0.692747383025984,
+            "component": "aa60cc44b95f6011b40d55e202330f1e2c642419eb14cc05320f83e1582774db",
+            "n": 878
+          },
+          {
+            "auc": 0.6875409254610936,
+            "component": "b3fc055f8f3c4d049f908c011d4504b6caf29d8ea5dd42dcda82648b057deb23",
+            "n": 854
+          },
+          {
+            "auc": 0.6883784732191278,
+            "component": "b498f1e872c538ce37d437e1ea1aa46255271512a47bf138a3523c42d90cd9ce",
+            "n": 888
+          },
+          {
+            "auc": 0.6871518692194098,
+            "component": "b59239dd1a29b29edf250ad788c7da35ab0360fd16bc74db5e32339b84b1356e",
+            "n": 880
+          },
+          {
+            "auc": 0.6893576028670745,
+            "component": "b907beac3035303101453e307ea4e1c295dfd5e5b56060d35c632360bcae6d18",
+            "n": 865
+          },
+          {
+            "auc": 0.6960587051722097,
+            "component": "b95a44dc829ca7daf98e1c89e1e3b6b1d192e074e2c7f6e417435160b79837f9",
+            "n": 877
+          },
+          {
+            "auc": 0.6907864212805443,
+            "component": "bc28f498b7508faf9bdfbf3c3f34e9e9d45bdbdadb71c2ccce2a49665d81630e",
+            "n": 880
+          },
+          {
+            "auc": 0.6889647238272515,
+            "component": "ca6b9e1bf621d1a4f62c5f55dfabafbc9d1cb79e26b53afdccfd96c36f2904bf",
+            "n": 883
+          },
+          {
+            "auc": 0.6900665282809659,
+            "component": "cd9b352875966698500cb5c19c11086ef1522aae6f6cf573d565fb1c5d79b241",
+            "n": 883
+          },
+          {
+            "auc": 0.6915847746331237,
+            "component": "dc5acff1a2df2879e0fad989ad8167da35b9071beb6d769baa0f8e316128bca0",
+            "n": 876
+          },
+          {
+            "auc": 0.6887574119402594,
+            "component": "dc8b2680342ca92380e56aa4351d43f74dd1ca6bcfc4f05b20243a4012f789e7",
+            "n": 875
+          },
+          {
+            "auc": 0.6910296921280568,
+            "component": "deaf068b62af0ed450c58e1f409dda4f470eb4170af1b235f0fd085a1238086a",
+            "n": 870
+          },
+          {
+            "auc": 0.6892428111539913,
+            "component": "df7d0d84df93893e8d0d06fae2d07057a5f74428d50091148a1684e796073e8e",
+            "n": 886
+          },
+          {
+            "auc": 0.6904821641094921,
+            "component": "e17308839a60f0681c428e917f209aeea2be098006406dc2e2f1c4f969f3a02c",
+            "n": 886
+          },
+          {
+            "auc": 0.6887159283404343,
+            "component": "e5d0527820d7f825365ae46abdcaee89a0862aaabe1feef2a2579af792ec973f",
+            "n": 886
+          },
+          {
+            "auc": 0.6891520700636943,
+            "component": "f17ae5b0341c03328e9301e54b660ae185fb4f772ed9ed7082e444f8438c0470",
+            "n": 868
+          },
+          {
+            "auc": 0.6889578974895397,
+            "component": "ffeb45dc92c7707ec28d19c59dde8ce5b915e6e61f327974864e7f4672856f0a",
+            "n": 879
+          }
+        ],
+        "constant_fit_features": 7,
+        "interpretation": "descriptive dependent development observations; clipped score is not a calibrated probability; deletion is not a confidence interval",
+        "mean_score": 0.7087317518987561,
+        "n": 891,
+        "nonadverse": 244,
+        "reliability_bins": [
+          {
+            "adverse_fraction": 0.35,
+            "lower": 0.0,
+            "mean_score": 0.18518518518518517,
+            "n": 20,
+            "upper": 0.2
+          },
+          {
+            "adverse_fraction": null,
+            "lower": 0.2,
+            "mean_score": null,
+            "n": 0,
+            "upper": 0.4
+          },
+          {
+            "adverse_fraction": 0.5,
+            "lower": 0.4,
+            "mean_score": 0.468125367430923,
+            "n": 160,
+            "upper": 0.6
+          },
+          {
+            "adverse_fraction": 0.7053824362606232,
+            "lower": 0.6,
+            "mean_score": 0.6826988963292953,
+            "n": 353,
+            "upper": 0.8
+          },
+          {
+            "adverse_fraction": 0.8687150837988827,
+            "lower": 0.8,
+            "mean_score": 0.8711830112986009,
+            "n": 358,
+            "upper": 1.0
+          }
+        ],
+        "training_prevalence": 0.6992370892018779,
+        "training_prevalence_squared_error": 0.1995803257401726
+      }
+    }
+  }
+}
