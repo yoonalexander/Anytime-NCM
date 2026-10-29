@@ -1,0 +1,193 @@
+{
+  "Q0_passed": false,
+  "fit_cue_endpoint_heads_meet_5each_sanity_floor": true,
+  "independent_confirmation": false,
+  "joint_controller_development_supported": true,
+  "quality_power_or_guarantee_established": false,
+  "roles": {
+    "development_calibration": {
+      "components": 59,
+      "inputs": 891,
+      "levels": {
+        "10": {
+          "adverse": 408,
+          "endpoints": {
+            "bleu": {
+              "adverse": 487,
+              "defined": 891,
+              "maximum": 74.2886659938969,
+              "minimum": -35.94527406468687,
+              "missing": 0,
+              "nonadverse": 404,
+              "nonzero": 602
+            },
+            "chrf": {
+              "adverse": 601,
+              "defined": 891,
+              "maximum": 37.298942347244605,
+              "minimum": -10.858646678773766,
+              "missing": 0,
+              "nonadverse": 290,
+              "nonzero": 766
+            },
+            "negation_cue_mismatch_rate": {
+              "adverse": 7,
+              "defined": 891,
+              "maximum": 50.0,
+              "minimum": 0.0,
+              "missing": 0,
+              "nonadverse": 884,
+              "nonzero": 7
+            },
+            "numeric_reference_f1": {
+              "adverse": 35,
+              "defined": 226,
+              "maximum": 50.0,
+              "minimum": -20.0,
+              "missing": 665,
+              "nonadverse": 191,
+              "nonzero": 36
+            }
+          },
+          "joint_proxy_threshold": 4.0,
+          "nonadverse": 483
+        },
+        "8": {
+          "adverse": 647,
+          "endpoints": {
+            "bleu": {
+              "adverse": 652,
+              "defined": 891,
+              "maximum": 98.38109807278656,
+              "minimum": -48.21044232043647,
+              "missing": 0,
+              "nonadverse": 239,
+              "nonzero": 729
+            },
+            "chrf": {
+              "adverse": 761,
+              "defined": 891,
+              "maximum": 59.60673389460054,
+              "minimum": -14.118686783237422,
+              "missing": 0,
+              "nonadverse": 130,
+              "nonzero": 846
+            },
+            "negation_cue_mismatch_rate": {
+              "adverse": 13,
+              "defined": 891,
+              "maximum": 50.0,
+              "minimum": 0.0,
+              "missing": 0,
+              "nonadverse": 878,
+              "nonzero": 13
+            },
+            "numeric_reference_f1": {
+              "adverse": 85,
+              "defined": 226,
+              "maximum": 50.0,
+              "minimum": -20.0,
+              "missing": 665,
+              "nonadverse": 141,
+              "nonzero": 86
+            }
+          },
+          "joint_proxy_threshold": 4.0,
+          "nonadverse": 244
+        }
+      }
+    },
+    "development_fit": {
+      "components": 178,
+      "inputs": 3408,
+      "levels": {
+        "10": {
+          "adverse": 1562,
+          "endpoints": {
+            "bleu": {
+              "adverse": 1825,
+              "defined": 3408,
+              "maximum": 113.66599786295504,
+              "minimum": -64.3238866882908,
+              "missing": 0,
+              "nonadverse": 1583,
+              "nonzero": 2211
+            },
+            "chrf": {
+              "adverse": 2327,
+              "defined": 3408,
+              "maximum": 42.49083184951181,
+              "minimum": -31.291515150236833,
+              "missing": 0,
+              "nonadverse": 1081,
+              "nonzero": 2866
+            },
+            "negation_cue_mismatch_rate": {
+              "adverse": 11,
+              "defined": 3408,
+              "maximum": 50.0,
+              "minimum": -50.0,
+              "missing": 0,
+              "nonadverse": 3397,
+              "nonzero": 15
+            },
+            "numeric_reference_f1": {
+              "adverse": 114,
+              "defined": 714,
+              "maximum": 50.0,
+              "minimum": -50.0,
+              "missing": 2694,
+              "nonadverse": 600,
+              "nonzero": 124
+            }
+          },
+          "joint_proxy_threshold": 4.0,
+          "nonadverse": 1846
+        },
+        "8": {
+          "adverse": 2383,
+          "endpoints": {
+            "bleu": {
+              "adverse": 2438,
+              "defined": 3408,
+              "maximum": 160.7185349099488,
+              "minimum": -80.92892721769246,
+              "missing": 0,
+              "nonadverse": 970,
+              "nonzero": 2736
+            },
+            "chrf": {
+              "adverse": 2872,
+              "defined": 3408,
+              "maximum": 50.44305966129049,
+              "minimum": -35.64301812833882,
+              "missing": 0,
+              "nonadverse": 536,
+              "nonzero": 3191
+            },
+            "negation_cue_mismatch_rate": {
+              "adverse": 34,
+              "defined": 3408,
+              "maximum": 50.0,
+              "minimum": -50.0,
+              "missing": 0,
+              "nonadverse": 3374,
+              "nonzero": 42
+            },
+            "numeric_reference_f1": {
+              "adverse": 253,
+              "defined": 714,
+              "maximum": 50.0,
+              "minimum": -50.0,
+              "missing": 2694,
+              "nonadverse": 461,
+              "nonzero": 268
+            }
+          },
+          "joint_proxy_threshold": 4.0,
+          "nonadverse": 1025
+        }
+      }
+    }
+  }
+}

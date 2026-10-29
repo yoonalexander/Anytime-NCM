@@ -1,0 +1,15 @@
+{
+  "verified": true,
+  "original_collection_source_commit": "e26967e7bc8e457fd48f22aec84e886f724bd81c",
+  "reporting_source_commit": "6d11e1a3b1417b441a139683faaeff4e93404645",
+  "protected_files": 1234,
+  "original_synthetic_cases": 7,
+  "reporting_synthetic_cases": 4,
+  "original_failure_and_partial_json_preserved": true,
+  "old_full_reservation_not_refunded": true,
+  "private_trace_bindings_from_frozen_repair": 4304,
+  "typed_support_arithmetic_consistent": true,
+  "new_reference_scoring_or_models_or_fits": 0,
+  "original_parent_final_cpu_receipt_still_unavailable": true,
+  "review_cpu_covered_by_reporting_credit": true
+}

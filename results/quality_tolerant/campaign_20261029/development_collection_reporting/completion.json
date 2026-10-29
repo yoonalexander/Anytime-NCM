@@ -1,0 +1,23 @@
+{
+  "actual_known_original_model_attempts": 4307,
+  "new_label_support_sha256": "9c847929ea85d0b709a0bbda0bc2bb5d56a1904953c53ccd5bb6f14956da50bb",
+  "new_model_work": 0,
+  "nonwarm_label_rows": 4299,
+  "original_charged_model_attempts": 4312,
+  "original_failure_sha256": "bdc1b2e10594e2a56c9a2e7f11f363b96a825b064ac79b56c053d9b78fb0e8f3",
+  "original_full_reservation_charge_preserved": true,
+  "original_parent_actual_final_cpu_receipt_available": false,
+  "original_parent_final_resource_gate_reached": false,
+  "original_real_forward_counts": {
+    "decoder": 51648,
+    "encoder": 0,
+    "generator_levels": 47344,
+    "inputs": 4304
+  },
+  "original_source_commit": "e26967e7bc8e457fd48f22aec84e886f724bd81c",
+  "partial_original_label_support_sha256": "991c2a1c7b17d74715c040e1bcb85d354277c7bf5ddd392cce79ec7e9c68352e",
+  "private_public_trace_hash_bindings": 4304,
+  "reference_rescoring": 0,
+  "reporting_source_commit": "6d11e1a3b1417b441a139683faaeff4e93404645",
+  "status": "saved_collection_verified_reporting_repaired"
+}

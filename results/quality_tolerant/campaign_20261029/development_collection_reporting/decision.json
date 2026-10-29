@@ -1,0 +1,10 @@
+{
+  "Q0_passed": false,
+  "cue_endpoint_head_sanity_floor_passed": true,
+  "evaluation_outcomes_released": false,
+  "independent_confirmation": false,
+  "next_branch": "prospectively_lock_bounded_fitting_and_selection",
+  "original_attempt_reporting_failure_preserved": true,
+  "quality_guarantee": false,
+  "status": "joint_development_collection_supported"
+}
