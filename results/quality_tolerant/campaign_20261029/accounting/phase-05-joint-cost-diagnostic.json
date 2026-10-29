@@ -1,0 +1,16 @@
+{
+  "evidence_path": "joint_cost_diagnostic/execution.json",
+  "evidence_sha256": "6de6f2863c65fd593d02486f6e21c662a86a61e8cabc93017bb74bd2fe16e2e7",
+  "phase": "05-joint-cost-diagnostic",
+  "usage": {
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 777.739565,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 1098.442068555,
+    "model_requests": 4972,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}

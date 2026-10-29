@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "protected_files": 1154,
+  "real_requests": 4968,
+  "paired_timed_cells": 4848,
+  "current_feature_and_generated_prefix_receipts": 414,
+  "observed_output_receipts": 5288,
+  "independently_recomputed_mean_and_session_summaries": 12,
+  "synthetic_cases": 4,
+  "mean_saving": 0.04161318130676417,
+  "actual5percent_gate_passed": false,
+  "original_estimated_cost_gate_still_failed": true,
+  "new_original_trajectory_or_reference_materializations": 0,
+  "new_model_requests": 0,
+  "new_fits": 0,
+  "new_bootstrap_draws": 0,
+  "interval_note": "Frozen20kdraw computation/source and rank receipt verified; no second bootstrap executed",
+  "review_cpu_covered_by_reporting_credit": true
+}

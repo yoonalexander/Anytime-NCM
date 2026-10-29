@@ -1,0 +1,9 @@
+{
+  "Q0_passed": false,
+  "independent_confirmation": false,
+  "next_branch": "bounded_family2_or_data_eligibility_review",
+  "old_test87_released": false,
+  "phase04_failed_spend_gate_preserved": true,
+  "reserved_outputs_released": false,
+  "status": "controller_insufficient_savings"
+}
