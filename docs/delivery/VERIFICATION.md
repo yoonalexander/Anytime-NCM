@@ -1,5 +1,7 @@
 # Delivery verification inventory
 
+[Completed release and final delivery receipt](COMPLETION.md) records all six public downloads, clean installations, CI and explicit remaining limits.
+
 Research conclusions and engineering checks are different. This closeout adds no real checkpoint inference, corpus collection, controller fitting, target encoding, confirmation access or research-ledger reset.
 
 ## Software

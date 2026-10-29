@@ -1,0 +1,55 @@
+{
+  "status": "published_and_verified",
+  "release_url": "https://github.com/yoonalexander/Anytime-NCM/releases/tag/research-v0.1.0",
+  "tag": "research-v0.1.0",
+  "target_commit": "1d213fc315e5cb69ebbc5c7516315d6f00770ba4",
+  "assets": [
+    {
+      "name": "anytime-ncm-legacy-viewer.html",
+      "bytes": 16060233,
+      "sha256": "885820e400dd2d83b6afc6e0a268c3c22e12ce2848775f144d2b62ba9fe79ad9",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/releases/download/research-v0.1.0/anytime-ncm-legacy-viewer.html",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "anytime-ncm-research-0.1.0.zip",
+      "bytes": 331283,
+      "sha256": "25067b565c135e70ad21a143fc3a977a8930d5922779d0923a5df045ce98d17e",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/releases/download/research-v0.1.0/anytime-ncm-research-0.1.0.zip",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "anytime_ncm-0.1.0-py3-none-any.whl",
+      "bytes": 256940,
+      "sha256": "97499646233d4f2c5c73c5972f62a533a3a9701eaa36e46f1685f5bfdda8a215",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/releases/download/research-v0.1.0/anytime_ncm-0.1.0-py3-none-any.whl",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "anytime_ncm-0.1.0.tar.gz",
+      "bytes": 222334,
+      "sha256": "c3f9bbc6eca511ae880c39b16c2459c04610fac9a8eb383b58fbb8b6bb5d6fc7",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/releases/download/research-v0.1.0/anytime_ncm-0.1.0.tar.gz",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "release-verification.json",
+      "bytes": 8676,
+      "sha256": "ca235bbe23649cfe3f59e9692cabc2487b0d5335247231d9b446e2e48411ecc8",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/releases/download/research-v0.1.0/release-verification.json",
+      "anonymous_download_verified": true
+    },
+    {
+      "name": "SHA256SUMS",
+      "bytes": 483,
+      "sha256": "e2f240ba70a266cc64358c8ec58b9744693588f687452dcb196c443ddd5441d3",
+      "url": "https://github.com/yoonalexander/Anytime-NCM/releases/download/research-v0.1.0/SHA256SUMS",
+      "anonymous_download_verified": true
+    }
+  ],
+  "public_checksums_verified": true,
+  "existing_releases_preserved": true,
+  "package_registry_published": false,
+  "paid_services_used": false,
+  "credentials_logged_or_saved": false
+}

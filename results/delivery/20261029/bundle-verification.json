@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "files_verified": 27,
+  "source_commit": "1d213fc315e5cb69ebbc5c7516315d6f00770ba4",
+  "quality_failure_preserved": true,
+  "model_calls": 0,
+  "bundle_sha256": "25067b565c135e70ad21a143fc3a977a8930d5922779d0923a5df045ce98d17e",
+  "outside_checkout": true,
+  "no_corpora_or_weights": true
+}

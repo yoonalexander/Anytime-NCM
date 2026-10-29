@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "package": "anytime-ncm",
+  "version": "0.1.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "build_python": "3.12.10",
+  "wheel_built_from_sdist": true,
+  "archive_checks": {
+    "wheel_sha256": "97499646233d4f2c5c73c5972f62a533a3a9701eaa36e46f1685f5bfdda8a215",
+    "sdist_sha256": "c3f9bbc6eca511ae880c39b16c2459c04610fac9a8eb383b58fbb8b6bb5d6fc7",
+    "runtime_dependencies": [],
+    "checkpoint_dataset_credentials_included": false
+  },
+  "installations": [
+    {
+      "artifact": "wheel",
+      "checks": 12,
+      "pip_check": "No broken requirements found.",
+      "python": "Python 3.14.2",
+      "outside_checkout": true,
+      "no_research_libraries_imported": true
+    },
+    {
+      "artifact": "sdist",
+      "checks": 12,
+      "pip_check": "No broken requirements found.",
+      "python": "Python 3.14.2",
+      "outside_checkout": true,
+      "no_research_libraries_imported": true
+    }
+  ],
+  "real_model_requests": 0,
+  "research_experiments_rerun": 0,
+  "package_registries_published": false
+}

@@ -1,0 +1,259 @@
+{
+  "schema": 1,
+  "status": "verified_release_candidate",
+  "source_commit": "1d213fc315e5cb69ebbc5c7516315d6f00770ba4",
+  "research_commit": "03e3e7086988db46c2979410b5d3081d24f1d340",
+  "software_tests_passed": 831,
+  "main_tests": 770,
+  "isolated_q0_tests": 61,
+  "native_install_checks": 48,
+  "native_python": [
+    "3.12.10",
+    "3.14.2"
+  ],
+  "native_formats": [
+    "wheel built from source distribution",
+    "source distribution"
+  ],
+  "ci_jobs_passed": 6,
+  "ci_platforms": [
+    "Windows",
+    "Linux"
+  ],
+  "ci_python": [
+    "3.10",
+    "3.12",
+    "3.14"
+  ],
+  "new_model_requests": 0,
+  "new_fits": 0,
+  "consumed_experiments_rerun": 0,
+  "paid_services": false,
+  "package_registry_publication": false,
+  "subagents_used": false,
+  "original_success_contract_established": false,
+  "unverified": [
+    "Independent quality assurance",
+    "Complete fixed-depth timing frontier",
+    "Original missing research resource receipts",
+    "Fresh mobile-browser behavior",
+    "New model reproduction from public-only distribution"
+  ],
+  "records": [
+    {
+      "path": "results/delivery/20261029/final-main.json",
+      "sha256": "44ecdba0e8262063d236ad013d653011ba51672fc6f9342277b67d19b92804f1"
+    },
+    {
+      "path": "results/delivery/20261029/final-q0.json",
+      "sha256": "17baf6a67b622abe675da30204223d8792c1f56b24076769015632a3bf236767"
+    },
+    {
+      "path": "results/delivery/20261029/final-distribution312.json",
+      "sha256": "a3537be8ff9ba5423c942de8e05ae96ba580fc01b3d2baabb76d4c39e008c2d1"
+    },
+    {
+      "path": "results/delivery/20261029/final-distribution314.json",
+      "sha256": "8b274b0a5f79dc9f7126d1b8b9e15531fae64de7e4f83eab7765f9541b1f0560"
+    },
+    {
+      "path": "results/delivery/20261029/ci.json",
+      "sha256": "d14f3608312f82e98bb45f45077f17d3a9f0a221d64554839b22567912bb4fab"
+    },
+    {
+      "path": "results/delivery/20261029/retained-audit-integrated.json",
+      "sha256": "be52cf456b3d9dddc366ec0fd8cf7a84d41fc63997451a63d9fbd52847c39291"
+    },
+    {
+      "path": "results/delivery/20261029/visual-and-ui-verification.json",
+      "sha256": "bd861f073a505773624e3f82bf1c7de82eebceabcdc5c23f5798a51134e92b3a"
+    },
+    {
+      "path": "results/delivery/20261029/bundle-verification.json",
+      "sha256": "5c0a1eb2c9a4488450b7ac638705dcb4ad04254ac7c51c9e950b6cddaba780c3"
+    }
+  ],
+  "ci": {
+    "head_sha": "1d213fc315e5cb69ebbc5c7516315d6f00770ba4",
+    "status": "completed",
+    "conclusion": "success",
+    "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519",
+    "jobs": [
+      {
+        "name": "ubuntu-latest / Python 3.10",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399023"
+      },
+      {
+        "name": "windows-latest / Python 3.14",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399173"
+      },
+      {
+        "name": "windows-latest / Python 3.10",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399181"
+      },
+      {
+        "name": "ubuntu-latest / Python 3.14",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399200"
+      },
+      {
+        "name": "windows-latest / Python 3.12",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399203"
+      },
+      {
+        "name": "ubuntu-latest / Python 3.12",
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399547"
+      }
+    ]
+  },
+  "native_installations": [
+    {
+      "status": "passed",
+      "package": "anytime-ncm",
+      "version": "0.1.0",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "build_python": "3.12.10",
+      "wheel_built_from_sdist": true,
+      "archive_checks": {
+        "wheel_sha256": "97499646233d4f2c5c73c5972f62a533a3a9701eaa36e46f1685f5bfdda8a215",
+        "sdist_sha256": "c3f9bbc6eca511ae880c39b16c2459c04610fac9a8eb383b58fbb8b6bb5d6fc7",
+        "runtime_dependencies": [],
+        "checkpoint_dataset_credentials_included": false
+      },
+      "installations": [
+        {
+          "artifact": "wheel",
+          "checks": 12,
+          "pip_check": "No broken requirements found.",
+          "python": "Python 3.12.10",
+          "outside_checkout": true,
+          "no_research_libraries_imported": true
+        },
+        {
+          "artifact": "sdist",
+          "checks": 12,
+          "pip_check": "No broken requirements found.",
+          "python": "Python 3.12.10",
+          "outside_checkout": true,
+          "no_research_libraries_imported": true
+        }
+      ],
+      "real_model_requests": 0,
+      "research_experiments_rerun": 0,
+      "package_registries_published": false
+    },
+    {
+      "status": "passed",
+      "package": "anytime-ncm",
+      "version": "0.1.0",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "build_python": "3.12.10",
+      "wheel_built_from_sdist": true,
+      "archive_checks": {
+        "wheel_sha256": "97499646233d4f2c5c73c5972f62a533a3a9701eaa36e46f1685f5bfdda8a215",
+        "sdist_sha256": "c3f9bbc6eca511ae880c39b16c2459c04610fac9a8eb383b58fbb8b6bb5d6fc7",
+        "runtime_dependencies": [],
+        "checkpoint_dataset_credentials_included": false
+      },
+      "installations": [
+        {
+          "artifact": "wheel",
+          "checks": 12,
+          "pip_check": "No broken requirements found.",
+          "python": "Python 3.14.2",
+          "outside_checkout": true,
+          "no_research_libraries_imported": true
+        },
+        {
+          "artifact": "sdist",
+          "checks": 12,
+          "pip_check": "No broken requirements found.",
+          "python": "Python 3.14.2",
+          "outside_checkout": true,
+          "no_research_libraries_imported": true
+        }
+      ],
+      "real_model_requests": 0,
+      "research_experiments_rerun": 0,
+      "package_registries_published": false
+    }
+  ],
+  "artifact_audit": {
+    "status": "verified_with_explicit_historical_metadata_resolution",
+    "baseline_research_commit": "03e3e7086988db46c2979410b5d3081d24f1d340",
+    "public_expected_hash_pairs": 1356,
+    "current_paths_verified": 1362,
+    "archived_metadata_paths": [
+      ".gitattributes",
+      "AGENTS.md",
+      "README.md",
+      "RESEARCH_ROADMAP.md",
+      "ROADMAP.md",
+      "pyproject.toml",
+      "src/anytime_ncm/__init__.py",
+      "src/anytime_ncm/__main__.py",
+      "src/anytime_ncm/cli.py"
+    ],
+    "executed_artifact_hashes": 148,
+    "private_hashes_checked": 6,
+    "private_corpus_or_trajectory_bodies_decoded": 0,
+    "real_checkpoint_loads": 0,
+    "new_model_requests": 0,
+    "new_fits": 0,
+    "new_reference_scores": 0,
+    "new_resampling": 0,
+    "phases": [
+      "01-signal-pilot",
+      "02-light-signal-pilot",
+      "03-signal-discrimination",
+      "04-joint-controller-selection",
+      "05-joint-cost-diagnostic",
+      "06-development-eligibility",
+      "07-development-collection",
+      "07r-development-reporting",
+      "08-development-controller",
+      "09-development-evaluation",
+      "09r-evaluation-reporting",
+      "09t-first-timing-diagnostic",
+      "10-campaign-closeout"
+    ],
+    "unchanged_charged_usage": {
+      "model_requests": 73724,
+      "model_orchestration_seconds": 16906.930204793,
+      "cpu_seconds": 13499.827723,
+      "real_fits": 16,
+      "controller_families": 2,
+      "download_bytes": 0,
+      "artifact_bytes": 838860800,
+      "confirmation_evaluations": 0,
+      "paid_dollars": 0
+    },
+    "original_receipt_gaps_preserved": true,
+    "original_full_matrix_incomplete": true,
+    "quality_and_latency_success_established": false,
+    "confirmation_still_sealed": true,
+    "strict_current_tree_legacy_verifier_claimed": false,
+    "upstream_commit": "c70274273f489abc73832b2b98584a8483b6b203"
+  },
+  "bundle": {
+    "status": "passed",
+    "files_verified": 27,
+    "source_commit": "1d213fc315e5cb69ebbc5c7516315d6f00770ba4",
+    "quality_failure_preserved": true,
+    "model_calls": 0,
+    "bundle_sha256": "25067b565c135e70ad21a143fc3a977a8930d5922779d0923a5df045ce98d17e",
+    "outside_checkout": true,
+    "no_corpora_or_weights": true
+  }
+}

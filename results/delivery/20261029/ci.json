@@ -1,0 +1,44 @@
+{
+  "head_sha": "1d213fc315e5cb69ebbc5c7516315d6f00770ba4",
+  "status": "completed",
+  "conclusion": "success",
+  "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519",
+  "jobs": [
+    {
+      "name": "ubuntu-latest / Python 3.10",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399023"
+    },
+    {
+      "name": "windows-latest / Python 3.14",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399173"
+    },
+    {
+      "name": "windows-latest / Python 3.10",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399181"
+    },
+    {
+      "name": "ubuntu-latest / Python 3.14",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399200"
+    },
+    {
+      "name": "windows-latest / Python 3.12",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399203"
+    },
+    {
+      "name": "ubuntu-latest / Python 3.12",
+      "status": "completed",
+      "conclusion": "success",
+      "html_url": "https://github.com/yoonalexander/Anytime-NCM/actions/runs/40948017519/job/123708399547"
+    }
+  ]
+}
