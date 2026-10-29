@@ -1,0 +1,96 @@
+{
+  "stage": "campaign_phase06_development_eligibility",
+  "base_commit": "b9550963ed50ea39405b079bcfec60c78d4a132d",
+  "manifest_path": "results/quality_tolerant/eligibility_audit/metadata_correction/split-manifest.json",
+  "cached_archives": [
+    {
+      "year": 2015,
+      "path": "data/wmt_metadata_audit_20261026/2015.tgz",
+      "sha256": "17ab1033801d84c0ce3cbbe6e4d19bfebff7f91d31b968fbf6eee05b4bf91ad3",
+      "bytes": 2073848
+    },
+    {
+      "year": 2016,
+      "path": "data/wmt_metadata_correction_20261026/2016.tgz",
+      "sha256": "fd10618635ec3d08f4dbdeebc9ea11d623969daff1f712a45351a934d035036a",
+      "bytes": 3785707
+    },
+    {
+      "year": 2017,
+      "path": "data/wmt_metadata_correction_20261026/2017.tgz",
+      "sha256": "aa1a76f61c0ca68fbf62233ee90ea9ebe2b01b43323092728510037e05e73d8d",
+      "bytes": 4461252
+    },
+    {
+      "year": 2018,
+      "path": "data/wmt_metadata_correction_20261026/2018.tgz",
+      "sha256": "d4094eb9949571e90b162a690d8bb064fa10986d8f2afb9ae709809ca6bd92ff",
+      "bytes": 4517960
+    },
+    {
+      "year": 2019,
+      "path": "data/wmt_metadata_correction_20261026/2019.tgz",
+      "sha256": "5ef66d76e183ed40450086ad6fa7beccda1fbb290c5556b93273d515fd6683fb",
+      "bytes": 3533424
+    },
+    {
+      "year": 2020,
+      "path": "data/wmt_metadata_correction_20261026/2020.tgz",
+      "sha256": "22b23a6e59d77d0987b8a01b5dbc3794feccdb5e37bfc5c6094df6bdbe943f6e",
+      "bytes": 5302245
+    }
+  ],
+  "official_rows_by_year": {
+    "2015": 2169,
+    "2016": 2999,
+    "2017": 3004,
+    "2018": 2998,
+    "2019": 2000,
+    "2020": 785
+  },
+  "seed": "campaign20261029-development-v1",
+  "fractions": [
+    0.6,
+    0.2,
+    0.2
+  ],
+  "expected_development_inputs": 5487,
+  "expected_development_components": 297,
+  "expected_confirmation_inputs": 7700,
+  "expected_confirmation_components": 447,
+  "analysis_caps": {
+    "metadata_records": 20000,
+    "archive_hash_bytes": 33554432
+  },
+  "wall_seconds": 1200,
+  "test_wall_seconds": 120,
+  "execution_cpu_cap_seconds": 200,
+  "reporting_cpu_charge_seconds": 300,
+  "parent_rss_bytes": 536870912,
+  "artifact_bytes": 16777216,
+  "campaign_reservation": {
+    "model_requests": 0,
+    "model_orchestration_seconds": 0,
+    "cpu_seconds": 500,
+    "real_fits": 0,
+    "controller_families": 0,
+    "download_bytes": 0,
+    "artifact_bytes": 16777216,
+    "confirmation_evaluations": 0,
+    "paid_dollars": 0
+  },
+  "synthetic_rows_cap": 1000,
+  "model_requests": 0,
+  "new_fits": 0,
+  "new_controller_families": 0,
+  "target_encodings": 0,
+  "source_reference_body_decodes": 0,
+  "private_cue_metadata_reads": 0,
+  "simulations": 0,
+  "bootstrap_draws": 0,
+  "downloads": 0,
+  "paid_dollars": 0,
+  "retries": 0,
+  "Q0_passed": false,
+  "reserved_outputs_released": false
+}
