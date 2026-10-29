@@ -1,0 +1,10 @@
+{
+  "Q0_passed": false,
+  "Q3_authorized": false,
+  "controller_fits": 0,
+  "integrated_online_policy_speedup_demonstrated": false,
+  "new_quality_guarantee": false,
+  "next_step": "Report this diagnostic and stop; controller and confirmation require separate authorization and protocols.",
+  "reserved_outputs_released": false,
+  "status": "measured_assigned_exit_headroom"
+}

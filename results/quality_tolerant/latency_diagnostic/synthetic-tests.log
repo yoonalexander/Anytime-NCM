@@ -1,0 +1,43 @@
+VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+TOY_WORK_COUNTS {"decoder": 19, "encoder": 0, "generator_levels": 59, "inputs": 6}
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+.VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+..........
+19 passed in 5.34s

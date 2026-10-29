@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "review_type": "scripted receipt and hash cross-check; not independent human replication",
+  "request_hash_receipts_checked": 12408,
+  "artifact_hashes_checked": 20,
+  "protected_file_hashes_checked": 935,
+  "execution_source_hashes_checked": 72,
+  "counts": {
+    "inputs": 12408,
+    "generator_levels": 78228,
+    "decoder": 13469,
+    "encoder": 0
+  },
+  "peak_gpu_reserved_bytes": 1279262720,
+  "synthetic_tests_passed": 19,
+  "synthetic_charged_forward_work": {
+    "decoder": 19,
+    "encoder": 0,
+    "generator_levels": 59,
+    "inputs": 6
+  },
+  "new_inference_for_review": 0,
+  "new_bootstrap_draws_for_review": 0,
+  "original_outcome_body_replays": 0,
+  "reserved_outputs_released": false,
+  "reference_bodies_read": 0,
+  "protocol_source_commit": "9f1841af30d5e9a49f0172f95ae90d9348731ef6"
+}
