@@ -1,0 +1,16 @@
+{
+  "evidence_path": "development_evaluation_reporting/execution.json",
+  "evidence_sha256": "d36d0e2405a4a9320bdcb8313f41d27175ba6ad95911dd10216dfdb2c0a02ddf",
+  "phase": "09r-evaluation-reporting",
+  "usage": {
+    "artifact_bytes": 16777216,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 68.447603,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}

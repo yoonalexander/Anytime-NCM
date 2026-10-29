@@ -1,0 +1,62 @@
+{
+  "analysis_counts": {
+    "corpus_scores": 12,
+    "native_trace_bodies": 1193,
+    "predictions": 1188,
+    "reference_cache_bodies": 1188
+  },
+  "artifact_sha256": {
+    "current8-features.json": "95c78d91af9348ca404a7828b07e37e48896b6fc996889e47547a3bd80dc3734",
+    "decision.json": "f3e70f48198d7e48dace74f2f93ade8e734f54e297a56da34e83fe2250f0954d",
+    "execution-sources.zip": "37cf0a9e1230154d51d0542171e2493c7e88b4ce0b838295c020c001109a9177",
+    "parity-hashes.json": "af6806193d66670a6af49382158882a4387c1ed34a2789caf47d95a2b150a1a7",
+    "predictions.json": "bf6acbfa054bf4cc19587df370f5db0b5376ba6a3efbae611cf1829753c8e8c7",
+    "pytest-tmp/test_actual_torch_version_is_n0/complete.json": "a23614cb98d9dd589b30267ef4236c54485becedb898939f6a89b8fd1dcd2bcb",
+    "pytest-tmp/test_actual_torch_version_is_n0/failure.json": "7061efe374f82357b4ff428bdef7c1e78884f6ac346d3c171c4a298077a9f128",
+    "quality-points.json": "cf0039c5a5ef4e76f654862b27496370e8549780040bdc1fb221cef7558d8789",
+    "started.json": "13e11a609e64aedfe0c9c421e5983b49ff131e523476f31ba02f4a5054eec2c8",
+    "synthetic-tests.log": "a39ffe9de3dc1649480c52a6fa2c35c4f5be012bd91e89c38ffd60af9710b6cc",
+    "synthetic-tests.xml": "e42870bd59ebb3023745372f9471c156252d349fe60a985b58cfeef9509b7569"
+  },
+  "bootstrap_draws": 0,
+  "campaign_usage": {
+    "artifact_bytes": 16777216,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 68.447603,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 0
+  },
+  "cpu_seconds_before_reporting_charge": 18.563448,
+  "finished_utc": "2026-10-29T14:18:15.275183+00:00",
+  "max_rss_bytes": 278937600,
+  "new_checkpoint_loads": 0,
+  "new_corpus_payload_decodes": 0,
+  "new_corpus_scores": 12,
+  "new_families": 0,
+  "new_fits": 0,
+  "new_model_requests": 0,
+  "new_reference_cache_body_reads": 1188,
+  "original_cache_final_state_hashes_available": false,
+  "original_cache_terminal_receipt_available": false,
+  "original_failure_sha256": "dc3cda3c383d469853326622da9360f9d443e9655ecf10890529925bf25f8b19",
+  "original_final_resource_values_available": false,
+  "original_full_reservation_preserved": true,
+  "original_preservation_sha256": "dd286beba365b9b7d27c645585c0202ecd7a737827bd94f89ec6a27e1ef31f79",
+  "paid_dollars": 0,
+  "private_public_hash_bindings": 1193,
+  "saved_native_counts_verified": {
+    "decoder": 14316,
+    "encoder": 0,
+    "generator_levels": 13123,
+    "inputs": 1193
+  },
+  "source_commit": "4c0c26d4481a3496c7d0de8f44ceac9fa931fbcd",
+  "status": "complete",
+  "synthetic_nn_requests": 0,
+  "target_encodings": 0,
+  "total_wall_seconds": 36.364617726
+}

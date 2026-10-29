@@ -1,0 +1,230 @@
+{
+  "controller": {
+    "losses": {
+      "bleu": 0.664891749681054,
+      "chrf": 0.9943226075661045,
+      "negation_cue_mismatch_rate": 0.0033670033670033656,
+      "numeric_reference_f1": 0.011534025374855927
+    },
+    "metrics": {
+      "bleu": 23.47398644302838,
+      "bleu_lowercase": 24.495123324217428,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 49.54259065633145,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.04292929292929293,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.7225119459548525
+    },
+    "point_pass": false
+  },
+  "fixed:1": {
+    "losses": {
+      "bleu": 23.619625020018884,
+      "chrf": 42.13888678395083,
+      "negation_cue_mismatch_rate": 0.14393939393939392,
+      "numeric_reference_f1": 0.7340459713297084
+    },
+    "metrics": {
+      "bleu": 0.5192531726905512,
+      "bleu_lowercase": 0.5663665633845161,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 8.398026479946722,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.1835016835016835,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.0
+    },
+    "point_pass": false
+  },
+  "fixed:10": {
+    "losses": {
+      "bleu": 3.635057981793338,
+      "chrf": 3.9186910093277163,
+      "negation_cue_mismatch_rate": 0.0033670033670033656,
+      "numeric_reference_f1": 0.10108612072279899
+    },
+    "metrics": {
+      "bleu": 20.503820210916096,
+      "bleu_lowercase": 21.265452230266998,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 46.61822225456984,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.04292929292929293,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.6329598506069094
+    },
+    "point_pass": false
+  },
+  "fixed:11": {
+    "losses": {
+      "bleu": 0.0,
+      "chrf": 0.0,
+      "negation_cue_mismatch_rate": 0.0,
+      "numeric_reference_f1": 0.0
+    },
+    "metrics": {
+      "bleu": 24.138878192709434,
+      "bleu_lowercase": 25.178551464844997,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 50.53691326389755,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.03956228956228956,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.7340459713297084
+    },
+    "point_pass": true
+  },
+  "fixed:2": {
+    "losses": {
+      "bleu": 23.350558409291132,
+      "chrf": 39.401196017301515,
+      "negation_cue_mismatch_rate": 0.11868686868686869,
+      "numeric_reference_f1": 0.7269495498734253
+    },
+    "metrics": {
+      "bleu": 0.7883197834183016,
+      "bleu_lowercase": 0.8656371396253519,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 11.135717246596034,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.15824915824915825,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.007096421456283047
+    },
+    "point_pass": false
+  },
+  "fixed:3": {
+    "losses": {
+      "bleu": 22.75100885171171,
+      "chrf": 35.12766592777236,
+      "negation_cue_mismatch_rate": 0.0909090909090909,
+      "numeric_reference_f1": 0.7235174763721477
+    },
+    "metrics": {
+      "bleu": 1.3878693409977234,
+      "bleu_lowercase": 1.4748462678733512,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 15.40924733612519,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.13047138047138046,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.0105284949575607
+    },
+    "point_pass": false
+  },
+  "fixed:4": {
+    "losses": {
+      "bleu": 21.63156796881289,
+      "chrf": 28.756105789770928,
+      "negation_cue_mismatch_rate": 0.05050505050505051,
+      "numeric_reference_f1": 0.7086711155050256
+    },
+    "metrics": {
+      "bleu": 2.507310223896544,
+      "bleu_lowercase": 2.6765114065685425,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 21.780807474126625,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.09006734006734007,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.025374855824682813
+    },
+    "point_pass": false
+  },
+  "fixed:5": {
+    "losses": {
+      "bleu": 19.321866724305895,
+      "chrf": 22.41773498472333,
+      "negation_cue_mismatch_rate": 0.03367003367003367,
+      "numeric_reference_f1": 0.6483534055333364
+    },
+    "metrics": {
+      "bleu": 4.81701146840354,
+      "bleu_lowercase": 5.104760946277179,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 28.11917827917422,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.07323232323232323,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.08569256579637202
+    },
+    "point_pass": false
+  },
+  "fixed:6": {
+    "losses": {
+      "bleu": 16.327988873906783,
+      "chrf": 18.175651302549937,
+      "negation_cue_mismatch_rate": 0.031144781144781142,
+      "numeric_reference_f1": 0.5521269292030538
+    },
+    "metrics": {
+      "bleu": 7.810889318802652,
+      "bleu_lowercase": 8.122015151705131,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 32.361261961347616,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.0707070707070707,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.18191904212665455
+    },
+    "point_pass": false
+  },
+  "fixed:7": {
+    "losses": {
+      "bleu": 11.459741073372443,
+      "chrf": 12.3135271311847,
+      "negation_cue_mismatch_rate": 0.019360269360269362,
+      "numeric_reference_f1": 0.3879275952805365
+    },
+    "metrics": {
+      "bleu": 12.67913711933699,
+      "bleu_lowercase": 13.167380312460503,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 38.223386132712854,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.058922558922558925,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.3461183760491719
+    },
+    "point_pass": false
+  },
+  "fixed:8": {
+    "losses": {
+      "bleu": 8.26005989617849,
+      "chrf": 8.869656430989572,
+      "negation_cue_mismatch_rate": 0.009259259259259259,
+      "numeric_reference_f1": 0.27075837465110825
+    },
+    "metrics": {
+      "bleu": 15.878818296530945,
+      "bleu_lowercase": 16.4378112543382,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 41.66725683290798,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.04882154882154882,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.46328759667860014
+    },
+    "point_pass": false
+  },
+  "fixed:9": {
+    "losses": {
+      "bleu": 5.45787706386745,
+      "chrf": 5.913015822600023,
+      "negation_cue_mismatch_rate": 0.005050505050505048,
+      "numeric_reference_f1": 0.14767534464766308
+    },
+    "metrics": {
+      "bleu": 18.681001128841984,
+      "bleu_lowercase": 19.371975084635363,
+      "bleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "chrf": 44.62389744129753,
+      "chrf_signature": "nrefs:1|case:mixed|eff:yes|nc:6|nw:0|space:no|version:2.6.0",
+      "negation_cue_mismatch_rate": 0.04461279461279461,
+      "numeric_reference_coverage": 289,
+      "numeric_reference_f1": 0.5863706266820453
+    },
+    "point_pass": false
+  }
+}

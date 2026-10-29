@@ -1,0 +1,12 @@
+{
+  "Q0_passed": false,
+  "early_inputs": 315,
+  "independent_quality_guarantee": false,
+  "next_branch": "prospectively_bounded_first_timing_diagnostic_if_feasible_then_closeout",
+  "numeric_reference_coverage": 289,
+  "original_full_matrix_incomplete": true,
+  "original_success_contract_established": false,
+  "post_evaluation_retuning_allowed": false,
+  "status": "saved_evaluation_quality_point_screen_failed_or_inadequate_coverage",
+  "timing_requests": 0
+}

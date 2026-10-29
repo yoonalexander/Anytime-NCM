@@ -1,0 +1,16 @@
+{
+  "bleu_loss": 0.664891749681054,
+  "bleu_margin": 0.5,
+  "corpus_point_difference_checks": 12,
+  "early_exits": 315,
+  "new_models_or_fits": 0,
+  "new_reference_scores": 0,
+  "new_resampling": 0,
+  "original_missing_worker_terminal_receipt_preserved": true,
+  "private_files": 3,
+  "protected_files": 1305,
+  "quality_point_failure_endpoint": "bleu",
+  "reviewer": "same assistant separate arithmetic implementation; not independent human scientific review",
+  "scalar_selected_decisions": 1188,
+  "status": "passed_saved_report_arithmetic_and_integrity_review"
+}
