@@ -1,0 +1,2 @@
+# Frozen diagnostics must retain exact log bytes on Windows.
+*.log text eol=lf

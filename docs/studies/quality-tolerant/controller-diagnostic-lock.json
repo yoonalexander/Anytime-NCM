@@ -1,0 +1,63 @@
+{
+  "stage": "Q3_failure_diagnosis_consumed_fit_calibration_only",
+  "base_commit": "029ecbbab3dc8b222848994d7fb2e7c7346092bd",
+  "caps": {
+    "source_materializations": 361,
+    "reference_materializations": 361,
+    "trajectory_bodies": 361,
+    "sentence_label_pairs": 1083,
+    "features": 1000,
+    "decisions": 808,
+    "replay_inputs": 404,
+    "corpus_scores": 18,
+    "diagnostic_assignments": 18,
+    "cost_grid_evaluations": 72,
+    "timing_headers": 12408,
+    "timing_bodies": 12408
+  },
+  "thresholds": [
+    0,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "observation_cost_factors": [
+    0,
+    0.5,
+    1,
+    2
+  ],
+  "prediction_rejection_threshold": 4,
+  "ranking_heuristic_threshold": 0.65,
+  "wall_seconds": 1800,
+  "cpu_seconds": 900,
+  "test_wall_seconds": 300,
+  "memory_bytes": 2147483648,
+  "storage_bytes": 134217728,
+  "engineering_reporting_allowance_seconds": 7200,
+  "synthetic_caps": {
+    "cases": 32,
+    "model_initializations": 0,
+    "model_forwards": 0,
+    "fits": 0,
+    "monte_carlo_draws": 0,
+    "metric_calls": 16,
+    "paired_records": 100,
+    "decision_examples": 100,
+    "array_entries": 1024
+  },
+  "new_fits": 0,
+  "model_loads": 0,
+  "GPU_requests": 0,
+  "target_encodings": 0,
+  "bootstrap_draws": 0,
+  "permutation_draws": 0,
+  "downloads": 0,
+  "retries": 0,
+  "paid_compute_dollars": 0,
+  "previous_evaluation_87_bodies_released": false,
+  "reserved_outputs_released": false,
+  "Q0_passed": false,
+  "Q4_authorized": false
+}
