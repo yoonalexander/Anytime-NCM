@@ -4,6 +4,8 @@
 
 Published release: [research-v0.1.0](https://github.com/yoonalexander/Anytime-NCM/releases/tag/research-v0.1.0). Its immutable tag targets integrated commit `1d213fc315e5cb69ebbc5c7516315d6f00770ba4`; subsequent main commits retain delivery receipts. [Published-download verification](../../release/0.1.0/published-downloads.json) records all six anonymous downloads, bytes and SHA-256. [Checksums](../../release/0.1.0/SHA256SUMS) and [release-candidate verification](../../release/0.1.0/release-verification.json) are retained here as well as on GitHub.
 
+Exact captured JSON bytes referenced by the release verification asset are retained in [verification-records.zip](../../release/0.1.0/verification-records.zip). [Its manifest](../../release/0.1.0/verification-records.json) records captured and canonical Git hashes: four receipts differ only by CRLF/LF normalization. Every captured hash was checked against the immutable release asset; no result or published download was changed.
+
 ## Delivered and verified
 
 | Requirement | Delivered evidence |
