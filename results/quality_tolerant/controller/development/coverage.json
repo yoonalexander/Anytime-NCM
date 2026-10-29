@@ -1,0 +1,12 @@
+{
+  "calibration": {
+    "components": 33,
+    "inputs": 101,
+    "numeric_covered": 20
+  },
+  "fit": {
+    "components": 66,
+    "inputs": 260,
+    "numeric_covered": 58
+  }
+}

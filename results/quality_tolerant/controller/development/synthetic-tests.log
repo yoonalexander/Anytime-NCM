@@ -1,0 +1,8 @@
+VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+TOY_CONTROLLER_FORWARD_COUNTS {"decoder": 21, "encoder": 0, "generator_levels": 62, "inputs": 6}
+...SYNTHETIC_FIT_COUNTS {"features": 32, "fits": 8, "sentence_label_pairs": 48}
+..........
+13 passed in 4.13s

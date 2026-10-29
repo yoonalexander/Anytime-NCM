@@ -1,0 +1,34 @@
+{
+  "Q0_passed": false,
+  "calibration_inputs": 101,
+  "features": [
+    "level",
+    "source_length",
+    "source_numbers",
+    "source_negation",
+    "text_length",
+    "word_count",
+    "numbers",
+    "negation",
+    "unique_tokens",
+    "adjacent_repeat",
+    "unique_codes",
+    "code_entropy",
+    "last_level_unique",
+    "history_available",
+    "token_change",
+    "cue_change",
+    "length_change",
+    "token_jaccard",
+    "level_gap"
+  ],
+  "fit_inputs": 260,
+  "independent_confirmation": false,
+  "locked_fixed_comparator": "fixed:11",
+  "policy": {
+    "kind": "full",
+    "name": "full"
+  },
+  "protocol_commit": "3ab82760e02746192bc1adda5ac3d546ca0c45c4",
+  "test_inputs_seen_for_selection": 0
+}

@@ -1,0 +1,36 @@
+{
+  "artifact_sha256": {
+    "access-release.json": "e16a8a077a7ddeef93f8bab649b966700621411e7dc09d1d3ab33b63a051b087",
+    "asset-preflight.json": "b9129f097aa2e94e6623615dd87b23005656fa6b516fc7e7235236343501d807",
+    "candidate-results.json": "c124541159ec2a10ffa179cca2bd572350a9bac89bf0eb542bd2dcc77d4cf4d2",
+    "coverage.json": "e4a73a68e694cf3ebc686e069dee977a50e69db9761a735263e63273e8450217",
+    "execution-sources.zip": "b4e03cd00889c28253217e6f7aa17464cde077c6fa85636a1b8228a880b6eb09",
+    "ledger.jsonl": "32300c822ba91a4227dd10d283829a65a0fb5b7c563d2b2147b50ad981c4d430",
+    "models.json": "282826a0c246b0bd53a34344697f2cff3c480818d2d4071f9d0cb4cd61561a3e",
+    "policy.json": "2326ac9bdad774396feec2c5e11048c3ac5ff7586a4e4c69bb4b8ee001229076",
+    "pytest-tmp/test_header_scanner_skips_unre0/rows.jsonl": "f53001962bb98feefde15f0ccc3bc82f6f7aab55ab4e105d8d986d5d6094a070",
+    "started.json": "7cd019aa55f8a9850d446d0585fd873840ed888ed206c753c11770a45760e35a",
+    "synthetic-tests.log": "893193bfcb170b2b31e739b3bc40274ffcd4b7115973b506bc7e230a9a2c6b93",
+    "synthetic-tests.xml": "307db79fa5b53bbd90b55b944e7a7ae3944615352a0be1361791041083d76cd7"
+  },
+  "counts": {
+    "corpus_scores": 19,
+    "decisions": 1616,
+    "features": 1530,
+    "fits": 8,
+    "reference_materializations": 361,
+    "replay_inputs": 909,
+    "sentence_label_pairs": 780,
+    "source_materializations": 361,
+    "trajectory_bodies": 361
+  },
+  "finished_utc": "2026-10-29T03:05:45.280906+00:00",
+  "max_rss_bytes": 139902976,
+  "model_loads": 0,
+  "paid_compute_dollars": 0,
+  "protocol_commit": "3ab82760e02746192bc1adda5ac3d546ca0c45c4",
+  "selected": "full",
+  "selected_policy_sha256": "2326ac9bdad774396feec2c5e11048c3ac5ff7586a4e4c69bb4b8ee001229076",
+  "status": "complete",
+  "wall_seconds": 27.875738216000002
+}
