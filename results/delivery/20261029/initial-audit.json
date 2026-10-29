@@ -1,0 +1,82 @@
+{
+  "baseline_commit": "03e3e7086988db46c2979410b5d3081d24f1d340",
+  "git_clean": true,
+  "branch": "main",
+  "remote": "https://github.com/yoonalexander/Anytime-NCM.git",
+  "github": [
+    {
+      "name": "repository",
+      "status": "fulfilled",
+      "result": {
+        "id": "1427727823",
+        "name": "Anytime-NCM",
+        "owner": {
+          "login": "yoonalexander",
+          "id": 89168198,
+          "type": "User",
+          "avatar_url": "https://avatars.githubusercontent.com/u/89168198?v=4",
+          "url": "https://api.github.com/users/yoonalexander"
+        },
+        "repository_full_name": "yoonalexander/Anytime-NCM",
+        "permissions": {
+          "admin": true,
+          "maintain": true,
+          "pull": true,
+          "push": true,
+          "triage": true
+        },
+        "allow_auto_merge": false,
+        "allow_merge_commit": true,
+        "allow_rebase_merge": true,
+        "allow_squash_merge": true,
+        "allow_update_branch": false,
+        "clone_url": "https://github.com/yoonalexander/Anytime-NCM.git",
+        "size": 56670,
+        "default_branch": "main",
+        "git_commits_url": "https://api.github.com/repos/yoonalexander/Anytime-NCM/git/commits{/sha}",
+        "git_refs_url": "https://api.github.com/repos/yoonalexander/Anytime-NCM/git/refs{/sha}",
+        "git_url": "git://github.com/yoonalexander/Anytime-NCM.git",
+        "master_branch": null,
+        "visibility": "public",
+        "archived": false,
+        "is_code_search_indexed": null
+      }
+    },
+    {
+      "name": "open_prs",
+      "status": "fulfilled",
+      "result": {
+        "issues": []
+      }
+    },
+    {
+      "name": "open_issues",
+      "status": "fulfilled",
+      "result": {
+        "issues": []
+      }
+    },
+    {
+      "name": "branches",
+      "status": "fulfilled",
+      "result": {
+        "branches": [
+          {
+            "branch": "main"
+          }
+        ],
+        "cursor": "MQ"
+      }
+    }
+  ],
+  "rest_release_count": 0,
+  "rest_all_pr_count": 0,
+  "rest_open_issue_count": 0,
+  "remote_heads": [
+    "main"
+  ],
+  "existing_tags": [],
+  "existing_releases": [],
+  "unrelated_local_changes": [],
+  "subagents_used": 0
+}
