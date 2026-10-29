@@ -1,0 +1,50 @@
+{
+  "completed_requests": 74,
+  "counts": {
+    "decoder": 222,
+    "encoder": 0,
+    "generator_levels": 814,
+    "inputs": 74
+  },
+  "cpu_seconds": 28.383231,
+  "environment": {
+    "cpu_threads": 4,
+    "cuda": "12.8",
+    "gpu": "NVIDIA GeForce RTX 5060",
+    "physical_gpu_bytes": 8546484224,
+    "precision": "float32/eval",
+    "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+    "tf32_cudnn": true,
+    "tf32_matmul": false,
+    "torch": "2.10.0+cu128",
+    "transformers": "4.57.6"
+  },
+  "feature_counts": {
+    "cheap_features": 148,
+    "confidence_features": 74,
+    "cue_features": 74
+  },
+  "finished_utc": "2026-10-29T04:49:55.350185+00:00",
+  "forward_calls": {
+    "decoder": 222,
+    "encoder": 0,
+    "generator_levels": 814
+  },
+  "max_rss_bytes": 2782830592,
+  "model_load_seconds": 12.568206871000001,
+  "nvidia_smi": "610.88, NVIDIA GeForce RTX 5060, 8151 MiB",
+  "pid": 412,
+  "prefix_calls": 90,
+  "session": 0,
+  "started_utc": "2026-10-29T04:49:24.196234+00:00",
+  "state_after": {
+    "generator": "115d016a38d5511fb9d7bde73d6289705d316c424221842710ffd46ea2ec7591",
+    "tokenizer": "7dcdd0d9b932693e61daf0a3f4cd9d0981d132ad1befe42882988a1e6c07f1f3"
+  },
+  "state_before": {
+    "generator": "115d016a38d5511fb9d7bde73d6289705d316c424221842710ffd46ea2ec7591",
+    "tokenizer": "7dcdd0d9b932693e61daf0a3f4cd9d0981d132ad1befe42882988a1e6c07f1f3"
+  },
+  "status": "complete",
+  "wall_seconds": 38.756873658
+}

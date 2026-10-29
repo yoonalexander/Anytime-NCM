@@ -1,0 +1,28 @@
+{
+  "source_commit": "1607113e693d1642727f4cc1e593e119b9680568",
+  "artifact_sha256": {
+    "0-execution.json": "947f126f0d3c624c020deb482c45c39d2ae4ee3507b2d4c4ea76364d18a449bd",
+    "0-requests.jsonl": "2d6359de1e6f7da25eda966bfa5b2730fed372ddd45af719496883cad51ab370",
+    "0-started.json": "56011a15234889072011ec8ca1713388e5343baea1f3253bf33cfdefee5c0fc1",
+    "0-starts.jsonl": "e6148af034d117079aaeee90182f4b812dcea13c85f15427cfc875b7095ea23d",
+    "1-execution.json": "6774c5fb8f469f53ff22f52f6f297737b3080bef030596bab8fa8e0f3519201f",
+    "1-requests.jsonl": "da9efb069bb5d14ab73a7bb3f4cbd9a3c312ce515be5f859a39fac9c7f902747",
+    "1-started.json": "b840770a7ab5d064ad188ca83aa413cfe923d36398e036324eb1863e6367f18a",
+    "1-starts.jsonl": "f7a1843933ee97ba849537d04d6d36a4273933730be21f8c0fc370fe5735a96c",
+    "access-release.json": "c03d2383621998f9ffeaff1421802129d0d069f4e16f1e47b39ff1a94674c4e3",
+    "analysis.json": "d3d63f418a3f06f082926c02779a08182ee1dab4f8e5d2c2a47121864b067c15",
+    "asset-preflight.json": "01e29d71e0301e995d33565e3530ff8ee18c5621b0b2601669b531fa647cb4bd",
+    "completion-review.json": "75dde31b29090dd40e7dd9a745c5957ae0baa80c97d0db2e8f2888dd50b33d7f",
+    "decision.json": "32cfea81889a8efe8b774a5df82cdf56fd255da404285290a54800ded45bf760",
+    "execution-sources.zip": "f5fb3614bade28c5df1876f40bc66cb805871d80d7812be888012d632ebf9804",
+    "execution.json": "6af53b67a52ee70144240e861df7bbe12479ce3c3885b8dc1c4efef51a67720f",
+    "parity-hashes.json": "34f5537443dc51798c0da8da3f0177620d0dcee0e937606af9eba8ddf368a964",
+    "started.json": "ee6a6efc0e0b1257fe9d67b25d31314273a7bd1582188a48049846bab41c38c0",
+    "synthetic-tests.log": "7a7c79af38cb37b2908bd06a238f6f8675fcd378d07e5288c07529948dae47dd",
+    "synthetic-tests.xml": "074fd3c448bf51a5d018e56754d29839da87aa86f046291a3a55a2aef13bfd1e",
+    "timing-schedule.json": "603ba5f9b2b48400d8e70bdd9930651c8dbe865017649ce78940bbe192f2a91d"
+  },
+  "report_sha256": {
+    "docs/studies/quality-tolerant/confidence-pilot-results.md": "4a77c5ef61f1b4de2d231faa35f262f3e5882f8a6c244834408d2a08bfebfa45"
+  }
+}

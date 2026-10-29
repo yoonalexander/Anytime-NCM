@@ -1,0 +1,25 @@
+{
+  "verified": true,
+  "hash_checks": 1135,
+  "protected_files": 1038,
+  "requests_checked": 148,
+  "synthetic_model_attempts": 5,
+  "source_prefix_calls": 180,
+  "source_materializations": 32,
+  "old_trajectory_bodies": 16,
+  "reference_bodies": 0,
+  "actual_forward_counts": {
+    "inputs": 148,
+    "generator_levels": 1628,
+    "decoder": 444,
+    "encoder": 0
+  },
+  "peak_gpu_reserved_bytes": 1568669696,
+  "model_states_unchanged": true,
+  "confidence_varies": true,
+  "original_cost_gate_failed": true,
+  "new_fits": 0,
+  "controller_families": 0,
+  "new_model_calls_for_review": 0,
+  "old_outcome_body_replays_for_review": 0
+}

@@ -1,0 +1,16 @@
+{
+  "evidence_path": "signal_pilot/execution.json",
+  "evidence_sha256": "6af53b67a52ee70144240e861df7bbe12479ce3c3885b8dc1c4efef51a67720f",
+  "phase": "01-signal-pilot",
+  "usage": {
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 368.638804,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 85.265180578,
+    "model_requests": 153,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}

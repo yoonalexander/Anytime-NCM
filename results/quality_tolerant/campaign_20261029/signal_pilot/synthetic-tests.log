@@ -1,0 +1,8 @@
+...VQVAE, Total parameter count: 0.01M
+VQVAE, Non embedding parameter count: 0.01M
+NCP Transformer, Total parameter count: 0.01M
+NCP Transformer, Non embedding parameter count: 0.00M
+SYNTHETIC_PILOT_REQUESTS 5
+SYNTHETIC_PILOT_FORWARDS {"decoder": 17, "encoder": 0, "generator_levels": 33, "inputs": 5}
+.....
+8 passed in 4.32s
