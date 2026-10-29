@@ -1,0 +1,2 @@
+# WSL pytest temporary directory aliases are not portable Windows files.
+**/pytest-tmp/*current

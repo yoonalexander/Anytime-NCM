@@ -1,0 +1,29 @@
+{
+  "base_commit": "8648f7085a3ce49f949070b4206ae7da13e802aa",
+  "objective_document": "docs/studies/quality-tolerant/campaign-20261029-objective.md",
+  "user_attachment_sha256": "85163e61e4f6d033aa0f96a27ffa35b5d1b39f141f6a83beb6d3d11de3213f54",
+  "ceilings": {
+    "model_requests": 100000,
+    "model_orchestration_seconds": 43200,
+    "cpu_seconds": 14400,
+    "real_fits": 32,
+    "controller_families": 2,
+    "download_bytes": 1073741824,
+    "artifact_bytes": 2147483648,
+    "confirmation_evaluations": 1,
+    "paid_dollars": 0
+  },
+  "parent_rss_bytes": 8589934592,
+  "worker_rss_bytes": 17179869184,
+  "pinned_upstream": "c70274273f489abc73832b2b98584a8483b6b203",
+  "accounting": "Append-only phase receipts bound to immutable execution/failure hashes. Actual model work and conservative prepaid reporting CPU/storage are explicitly distinguished.",
+  "conditional_authority": "Goal authorizes transitions after prospective stage locks; failed scientific gates and original contract remain unchanged.",
+  "original_margins": {
+    "bleu": 0.5,
+    "chrf": 1,
+    "numeric_reference_f1": 0.02,
+    "negation_cue_mismatch_rate": 0.02
+  },
+  "minimum_mean_saving": 0.05,
+  "confirmation_conditions": "One locked policy, eligible unconsumed population, defensible independent statistical feasibility and prospectively pushed confirmation protocol. Otherwise reservations remain sealed."
+}
