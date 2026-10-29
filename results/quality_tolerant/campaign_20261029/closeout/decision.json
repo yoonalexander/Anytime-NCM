@@ -1,0 +1,18 @@
+{
+  "Q0_passed": false,
+  "confirmation_ready": false,
+  "confirmation_released": false,
+  "failed_reservations_not_refunded": true,
+  "first_timing_diagnostic_complete": true,
+  "known_actual_model_attempts": 16571,
+  "margin": 0.5,
+  "no_more_campaign_models_or_data_branches": true,
+  "objective_branch": "justified_negative_closeout",
+  "original_missing_receipts_preserved": true,
+  "original_phase09_matrix_complete": false,
+  "original_success_contract_established": false,
+  "post_evaluation_refits": 0,
+  "quality_point_failure": "BLEU",
+  "quality_point_loss": 0.664891749681054,
+  "status": "bounded_campaign_complete_negative_for_selected_controller"
+}

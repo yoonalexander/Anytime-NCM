@@ -1,0 +1,16 @@
+{
+  "evidence_path": "closeout/execution.json",
+  "evidence_sha256": "41d01cc6a9e32bb553c90342ab84addb90beaa7af2671991a5ad1a220a7a5a10",
+  "phase": "10-campaign-closeout",
+  "usage": {
+    "artifact_bytes": 16777216,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 156.386458,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 0
+  }
+}

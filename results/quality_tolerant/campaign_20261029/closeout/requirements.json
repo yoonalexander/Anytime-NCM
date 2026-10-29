@@ -1,0 +1,95 @@
+[
+  {
+    "evidence": [
+      "development_evaluation_reporting/quality-points.json",
+      "first_timing_diagnostic/analysis.json"
+    ],
+    "meaning": "Selected rule fails original BLEU point screen; timing cannot rescue it.",
+    "requirement": "Objective: useful controller OR bounded negative/inconclusive closeout",
+    "result": "negative_closeout_supported"
+  },
+  {
+    "evidence": [
+      "signal_pilot/execution.json",
+      "signal_pilot/decision.json",
+      "light_signal_pilot/execution.json",
+      "light_signal_pilot/decision.json"
+    ],
+    "requirement": "16-input confidence instrumentation, parity, variation and cost",
+    "result": "completed_failed_original_gate_preserved_bounded_alternative_qualified"
+  },
+  {
+    "evidence": [
+      "signal_discrimination/execution.json",
+      "signal_discrimination/decision.json",
+      "development_controller/prediction-diagnostics.json",
+      "development_controller/endpoint-component-support.json"
+    ],
+    "requirement": "Prospective signal discrimination, cheap baselines and sparse-label disclosure",
+    "result": "completed_development_evidence_only"
+  },
+  {
+    "evidence": [
+      "development_controller/execution.json",
+      "development_controller/policy.json",
+      "development_evaluation/access-release.json",
+      "first_timing_diagnostic/execution.json"
+    ],
+    "limits": "16fits/2families. Original12method/tworepeat matrix incomplete; first diagnostic2methods/one repeat.",
+    "requirement": "At most2families/32fits, frozen selection before evaluation and causal actual timing",
+    "result": "completed_bounded_revision_negative"
+  },
+  {
+    "evidence": [
+      "development_eligibility/source-only-allocation.json",
+      "development_collection/failure-preservation.json",
+      "development_collection_reporting/completion.json",
+      "development_collection_reporting/label-support.json"
+    ],
+    "requirement": "Eligible bounded development extension with whole-component roles and variable cues",
+    "result": "completed_with_preserved_original_reporting_failure"
+  },
+  {
+    "evidence": [
+      "confirmation-readiness.json"
+    ],
+    "limits": "No new sharper method, margins, population assumptions or confirmation release.",
+    "requirement": "Confirmation only if original statistical/population prerequisites met",
+    "result": "correctly_withheld_not_ready"
+  },
+  {
+    "evidence": [
+      "development_evaluation_reporting/quality-points.json",
+      "first_timing_diagnostic/analysis.json"
+    ],
+    "limits": "BLEU point fail; independent quality guarantees and feasible-fixed frontier unavailable.",
+    "requirement": "Original quality and actual-latency success contract",
+    "result": "not_established"
+  },
+  {
+    "evidence": [
+      "phase-audit.json",
+      "decision.json"
+    ],
+    "limits": "Originalphase07parent resource receipt and phase09cache final state/resource receipt missing; never invented.",
+    "requirement": "Preserve historical sources, failures, budgets, actual-work distinctions and upstream",
+    "result": "verified_with_explicit_missing_receipts"
+  },
+  {
+    "evidence": [
+      "phase-audit.json"
+    ],
+    "limits": "73recorded focused passes; no fresh whole-suite claim. Private corpora/checkpoints remain local/ignored.",
+    "requirement": "Code/tests/source archives/access receipts and runnable saved verification",
+    "result": "delivered"
+  },
+  {
+    "evidence": [
+      "decision.json",
+      "completion-review.json"
+    ],
+    "limits": "Final saved verifier, link checks and live local/remote equality required after artifact generation.",
+    "requirement": "Updated roadmap, plain-language report, final decision and Git delivery",
+    "result": "artifacts_generated_delivery_verified_separately"
+  }
+]

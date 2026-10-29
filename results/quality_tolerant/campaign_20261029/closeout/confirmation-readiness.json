@@ -1,0 +1,18 @@
+{
+  "Q0_passed": false,
+  "confirmation_components": 447,
+  "confirmation_population_inputs": 7700,
+  "largest_component_fraction": 0.01103896103896104,
+  "new_method_simulations_or_metadata_collection": 0,
+  "numeric_covered_components": 391,
+  "numeric_covered_inputs": 1778,
+  "operational_component_screen_passed": false,
+  "original_population_method_route_closed": true,
+  "proposed_confirmation7700_and_historical_E3_E4_unallocated_still_sealed": true,
+  "quality_point_gate_passed": false,
+  "scope": "Existing independent heterogeneous bounded-component all-zero marginal route; not all possible signed-data methods or populations",
+  "sharp_all_zero_negation_endpoint": 0.02554165669843639,
+  "sharp_all_zero_numeric_endpoint": 0.03438928502652931,
+  "status": "not_ready_no_confirmation_release",
+  "unchanged_cue_margin": 0.02
+}

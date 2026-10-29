@@ -1,0 +1,361 @@
+{
+  "fresh_whole_suite": false,
+  "phases": [
+    {
+      "charge": {
+        "artifact_bytes": 67108864,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 368.638804,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 85.265180578,
+        "model_requests": 153,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/signal_pilot/execution.json",
+      "phase": "01-signal-pilot",
+      "recorded_focused_tests": 8,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "next_branch": "prospectively_bounded_instrumentation_alternative_or_closeout",
+        "predictive_usefulness_established": false,
+        "quality_confirmation": false,
+        "reserved_outputs_released": false,
+        "status": "pilot_cost_screen_failed"
+      },
+      "source_commit": "1607113e693d1642727f4cc1e593e119b9680568",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 67108864,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 461.985478,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 171.347332723,
+        "model_requests": 804,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/light_signal_pilot/execution.json",
+      "phase": "02-light-signal-pilot",
+      "recorded_focused_tests": 6,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "next_branch": "signal_discrimination",
+        "predictive_usefulness_established": false,
+        "quality_confirmation": false,
+        "reserved_outputs_released": false,
+        "status": "light_signal_collection_supported"
+      },
+      "source_commit": "744789ca304c30566a39a4a042cb00c285f196f8",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 67108864,
+        "confirmation_evaluations": 0,
+        "controller_families": 1,
+        "cpu_seconds": 378.773415,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 82.9274955,
+        "model_requests": 366,
+        "paid_dollars": 0,
+        "real_fits": 4
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/signal_discrimination/execution.json",
+      "phase": "03-signal-discrimination",
+      "recorded_focused_tests": 9,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "independent_confirmation": false,
+        "next_branch": "lock_joint_risk_controller",
+        "qualified": [
+          {
+            "group": "cheap",
+            "level": 8
+          },
+          {
+            "group": "selected_logit",
+            "level": 8
+          }
+        ],
+        "quality_guarantee": false,
+        "reserved_outputs_released": false,
+        "richer_supported_levels": [
+          8
+        ],
+        "status": "richer_probe_supported",
+        "whole_controller_speedup_established": false
+      },
+      "source_commit": "1229f7b910ca5ad23f5b473e9142850c9bda160f",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 67108864,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 310.388397,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 0,
+        "model_requests": 0,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/joint_controller_selection/execution.json",
+      "phase": "04-joint-controller-selection",
+      "recorded_focused_tests": 7,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "actual_speedup_established": false,
+        "estimated_saving": 0.04288926764264425,
+        "locked_fixed_comparator": "fixed:11",
+        "next_branch": "bounded_family2_or_data_eligibility_review",
+        "old_test87_released": false,
+        "quality_confirmation": false,
+        "ready_for_allocated_evaluation": false,
+        "reserved_outputs_released": false,
+        "selected": "selected_logit:8:guard1:0.6",
+        "status": "selection_did_not_establish_worthwhile_candidate"
+      },
+      "source_commit": "58d11d7d8514b4378dcb6e869078c08d1a28a0d1",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 67108864,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 777.739565,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 1098.442068555,
+        "model_requests": 4972,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/joint_cost_diagnostic/execution.json",
+      "phase": "05-joint-cost-diagnostic",
+      "recorded_focused_tests": 4,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "independent_confirmation": false,
+        "next_branch": "bounded_family2_or_data_eligibility_review",
+        "old_test87_released": false,
+        "phase04_failed_spend_gate_preserved": true,
+        "reserved_outputs_released": false,
+        "status": "controller_insufficient_savings"
+      },
+      "source_commit": "915ea2e076e56bf30b6c9d036f1e93f077cbe688",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 16777216,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 303.456291,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 0,
+        "model_requests": 0,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/development_eligibility/execution.json",
+      "phase": "06-development-eligibility",
+      "recorded_focused_tests": 5,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "actual_new_model_requests": 0,
+        "confirmation_components_retained": 447,
+        "confirmation_inputs_retained": 7700,
+        "confirmation_ready": false,
+        "downloads": 0,
+        "existing_development_numeric_covered": 1229,
+        "metadata_ready": true,
+        "model_outcomes_read": 0,
+        "new_quality_evidence": false,
+        "next_branch": "prospectively_lock_fit_calibration_collection",
+        "planned_future_envelope": {
+          "artifact_bytes": 536870912,
+          "confirmation_evaluations": 0,
+          "controller_families": 1,
+          "cpu_seconds": 10000,
+          "download_bytes": 0,
+          "model_orchestration_seconds": 21600,
+          "model_requests": 62833,
+          "paid_dollars": 0,
+          "real_fits": 16
+        },
+        "rare_adverse_supervision_established": false,
+        "resource_capacity_ready": true,
+        "role_numeric_coverage_not_inspected": true,
+        "source_or_reference_text_decodes": 0,
+        "status": "development_extension_metadata_supported",
+        "story_independence_proven": false,
+        "unknown_checkpoint_training_overlap": true
+      },
+      "source_commit": "5efe54b9a644052c28867c9b8324e9323d29f38d",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 134217728,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 2400,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 3720,
+        "model_requests": 4312,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/development_collection/failure.json",
+      "phase": "07-development-collection",
+      "recorded_focused_tests": 7,
+      "scientific_decision": {
+        "status": "preserved_reporting_failure"
+      },
+      "source_commit": "e26967e7bc8e457fd48f22aec84e886f724bd81c",
+      "terminal_kind": "preserved_failure"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 16777216,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 306.245914,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 0,
+        "model_requests": 0,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/development_collection_reporting/execution.json",
+      "phase": "07r-development-reporting",
+      "recorded_focused_tests": 4,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "cue_endpoint_head_sanity_floor_passed": true,
+        "evaluation_outcomes_released": false,
+        "independent_confirmation": false,
+        "next_branch": "prospectively_lock_bounded_fitting_and_selection",
+        "original_attempt_reporting_failure_preserved": true,
+        "quality_guarantee": false,
+        "status": "joint_development_collection_supported"
+      },
+      "source_commit": "6d11e1a3b1417b441a139683faaeff4e93404645",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 67108864,
+        "confirmation_evaluations": 0,
+        "controller_families": 1,
+        "cpu_seconds": 415.863365,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 0,
+        "model_requests": 0,
+        "paid_dollars": 0,
+        "real_fits": 12
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/development_controller/execution.json",
+      "phase": "08-development-controller",
+      "recorded_focused_tests": 11,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "estimated_saving": 0.053253850353966216,
+        "independent_confirmation": false,
+        "locked_fixed_comparator": "fixed:11",
+        "next_branch": "prospectively_lock_development_evaluation",
+        "ready_for_development_evaluation": true,
+        "selected": "ridge:cheap:8:guard0:0.6",
+        "status": "development_candidate_ready_for_once_only_evaluation"
+      },
+      "source_commit": "a5b8e5c18b1bdcb29b0fe9ef3701262120d5c5c7",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 201326592,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 6800,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 10980,
+        "model_requests": 58345,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/development_evaluation/failure.json",
+      "phase": "09-development-evaluation",
+      "recorded_focused_tests": 5,
+      "scientific_decision": {
+        "status": "preserved_reporting_failure"
+      },
+      "source_commit": "de2bc20dffc4c51634accb6727758a5f41b34046",
+      "terminal_kind": "preserved_failure"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 16777216,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 68.447603,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 0,
+        "model_requests": 0,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/development_evaluation_reporting/execution.json",
+      "phase": "09r-evaluation-reporting",
+      "recorded_focused_tests": 4,
+      "scientific_decision": {
+        "Q0_passed": false,
+        "early_inputs": 315,
+        "independent_quality_guarantee": false,
+        "next_branch": "prospectively_bounded_first_timing_diagnostic_if_feasible_then_closeout",
+        "numeric_reference_coverage": 289,
+        "original_full_matrix_incomplete": true,
+        "original_success_contract_established": false,
+        "post_evaluation_retuning_allowed": false,
+        "status": "saved_evaluation_quality_point_screen_failed_or_inadequate_coverage",
+        "timing_requests": 0
+      },
+      "source_commit": "4c0c26d4481a3496c7d0de8f44ceac9fa931fbcd",
+      "terminal_kind": "complete"
+    },
+    {
+      "charge": {
+        "artifact_bytes": 33554432,
+        "confirmation_evaluations": 0,
+        "controller_families": 0,
+        "cpu_seconds": 751.9024330000001,
+        "download_bytes": 0,
+        "model_orchestration_seconds": 768.948127437,
+        "model_requests": 4772,
+        "paid_dollars": 0,
+        "real_fits": 0
+      },
+      "evidence": "results/quality_tolerant/campaign_20261029/first_timing_diagnostic/execution.json",
+      "phase": "09t-first-timing-diagnostic",
+      "recorded_focused_tests": 3,
+      "scientific_decision": {
+        "confirmation_released": false,
+        "next_branch": "confirmation_readiness_audit_and_final_closeout",
+        "no_more_models_fits_or_data_extensions": true,
+        "original_phase09_matrix_complete": false,
+        "original_success_contract_established": false,
+        "quality_point_pass": false,
+        "status": "negative_controller_quality_point_screen",
+        "timing_screen_passed": true
+      },
+      "source_commit": "f19effd1689dbbd73fe41b3baaee5aac1c071b69",
+      "terminal_kind": "complete"
+    }
+  ],
+  "recorded_focused_passes": 73
+}

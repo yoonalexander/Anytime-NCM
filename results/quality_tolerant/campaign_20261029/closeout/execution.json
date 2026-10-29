@@ -1,0 +1,41 @@
+{
+  "artifact_sha256": {
+    "confirmation-readiness.json": "a4413888169efa06350a949028886551eef8d93dcf522662f14bc8e1c047883e",
+    "decision.json": "9cdb761ba137650e0d7a35b9c6cd72adb29b64410c610f8995d95c511d18031b",
+    "execution-sources.zip": "b0f1d1643d7cc3cdd39b0339e6775651db21746a82e76a43df1100394c764c21",
+    "phase-audit.json": "b8109f63d3e1e5939f0a2664da8c97f8db5e72b426418fd59833e78e609e042a",
+    "requirements.json": "a9fdce05d50029dd53d475985049afee6480383e0962f9dd6249188f113f0893",
+    "started.json": "1cb12b7b28c66359486ac5109d64b2160312bb8c2b8ceb061dc21cc9468680c5"
+  },
+  "campaign_usage": {
+    "artifact_bytes": 16777216,
+    "confirmation_evaluations": 0,
+    "controller_families": 0,
+    "cpu_seconds": 156.386458,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 0,
+    "model_requests": 0,
+    "paid_dollars": 0,
+    "real_fits": 0
+  },
+  "combined_campaign_public_private_bytes": 154729377,
+  "cpu_seconds_before_reporting_charge": 6.516489,
+  "max_rss_bytes": 112295936,
+  "new_bootstrap_draws": 0,
+  "new_checkpoint_loads": 0,
+  "new_fits": 0,
+  "new_model_requests": 0,
+  "new_reference_or_trajectory_body_reads": 0,
+  "new_reference_scores": 0,
+  "new_simulations": 0,
+  "paid_dollars": 0,
+  "phases_audited": 12,
+  "private_digest_checks": 6,
+  "protected_files": 1353,
+  "recorded_focused_tests": 73,
+  "report_sha256": "b5afda07076d4ec4a48f439c1e509d43a3a7c77397e617450e8b6955504a715b",
+  "runbook_sha256": "74b0708fc2aa3b5d10693b93401a5f3c553474f14b783777deafb727b4c1ca76",
+  "source_commit": "fd0c07c161e5ec29a7272a2bdb7808822a732def",
+  "status": "complete",
+  "total_wall_seconds": 26.304303413
+}

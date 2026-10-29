@@ -1,0 +1,125 @@
+{
+  "new_inference_fitting_reference_scores_resampling": 0,
+  "runs": [
+    {
+      "exit_code": 0,
+      "mode": "verify",
+      "result": {
+        "campaign": {
+          "charged_usage": {
+            "artifact_bytes": 838860800,
+            "confirmation_evaluations": 0,
+            "controller_families": 2,
+            "cpu_seconds": 13499.827723,
+            "download_bytes": 0,
+            "model_orchestration_seconds": 16906.930204793,
+            "model_requests": 73724,
+            "paid_dollars": 0,
+            "real_fits": 16
+          },
+          "completed_or_accounted_phases": [
+            "01-signal-pilot",
+            "02-light-signal-pilot",
+            "03-signal-discrimination",
+            "04-joint-controller-selection",
+            "05-joint-cost-diagnostic",
+            "06-development-eligibility",
+            "07-development-collection",
+            "07r-development-reporting",
+            "08-development-controller",
+            "09-development-evaluation",
+            "09r-evaluation-reporting",
+            "09t-first-timing-diagnostic",
+            "10-campaign-closeout"
+          ],
+          "physical_artifact_bytes": 99312416,
+          "verified": true
+        },
+        "no_new_model_or_reference_scoring_or_resampling": true,
+        "original_failure_preserved": true,
+        "verified": true
+      },
+      "script": "repair_evaluation_reporting.py"
+    },
+    {
+      "exit_code": 0,
+      "mode": "verify",
+      "result": {
+        "campaign": {
+          "charged_usage": {
+            "artifact_bytes": 838860800,
+            "confirmation_evaluations": 0,
+            "controller_families": 2,
+            "cpu_seconds": 13499.827723,
+            "download_bytes": 0,
+            "model_orchestration_seconds": 16906.930204793,
+            "model_requests": 73724,
+            "paid_dollars": 0,
+            "real_fits": 16
+          },
+          "completed_or_accounted_phases": [
+            "01-signal-pilot",
+            "02-light-signal-pilot",
+            "03-signal-discrimination",
+            "04-joint-controller-selection",
+            "05-joint-cost-diagnostic",
+            "06-development-eligibility",
+            "07-development-collection",
+            "07r-development-reporting",
+            "08-development-controller",
+            "09-development-evaluation",
+            "09r-evaluation-reporting",
+            "09t-first-timing-diagnostic",
+            "10-campaign-closeout"
+          ],
+          "physical_artifact_bytes": 99312416,
+          "verified": true
+        },
+        "new_models_or_fits_or_scores_or_resampling": 0,
+        "verified": true
+      },
+      "script": "run_first_timing_diagnostic.py"
+    },
+    {
+      "exit_code": 0,
+      "mode": "verify",
+      "result": {
+        "campaign": {
+          "charged_usage": {
+            "artifact_bytes": 838860800,
+            "confirmation_evaluations": 0,
+            "controller_families": 2,
+            "cpu_seconds": 13499.827723,
+            "download_bytes": 0,
+            "model_orchestration_seconds": 16906.930204793,
+            "model_requests": 73724,
+            "paid_dollars": 0,
+            "real_fits": 16
+          },
+          "completed_or_accounted_phases": [
+            "01-signal-pilot",
+            "02-light-signal-pilot",
+            "03-signal-discrimination",
+            "04-joint-controller-selection",
+            "05-joint-cost-diagnostic",
+            "06-development-eligibility",
+            "07-development-collection",
+            "07r-development-reporting",
+            "08-development-controller",
+            "09-development-evaluation",
+            "09r-evaluation-reporting",
+            "09t-first-timing-diagnostic",
+            "10-campaign-closeout"
+          ],
+          "physical_artifact_bytes": 99312416,
+          "verified": true
+        },
+        "no_new_model_scoring_resampling": true,
+        "objective_branch": "negative_closeout",
+        "verified": true
+      },
+      "script": "close_quality_campaign.py"
+    }
+  ],
+  "status": "all_three_documented_saved_verifiers_passed"
+}
