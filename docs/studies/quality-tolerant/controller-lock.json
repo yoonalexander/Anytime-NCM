@@ -1,0 +1,119 @@
+{
+  "stage": "Q3_consumed_causal_controller_exploratory_exception",
+  "base_commit": "2c4bba03199dc3bcc40ea39c4ee1b3eed731a5f5",
+  "split_inputs": {
+    "fit": 260,
+    "calibration": 101,
+    "test": 87
+  },
+  "split_components": {
+    "fit": 66,
+    "calibration": 33,
+    "test": 33
+  },
+  "seed": 20261029,
+  "development_caps": {
+    "source_materializations": 361,
+    "reference_materializations": 361,
+    "trajectory_bodies": 361,
+    "sentence_label_pairs": 780,
+    "features": 2000,
+    "decisions": 1700,
+    "replay_inputs": 909,
+    "fits": 8,
+    "corpus_scores": 20
+  },
+  "evaluation_caps": {
+    "source_materializations": 87,
+    "reference_materializations": 87,
+    "trajectory_bodies": 87,
+    "replay_inputs": 87,
+    "features": 174,
+    "decisions": 174,
+    "corpus_scores": 12
+  },
+  "per_session_forward_caps": {
+    "inputs": 2148,
+    "generator_levels": 13783,
+    "decoder": 2506,
+    "encoder": 0
+  },
+  "total_forward_caps": {
+    "inputs": 4296,
+    "generator_levels": 27566,
+    "decoder": 5012,
+    "encoder": 0
+  },
+  "per_session_prefix_calls": 2235,
+  "total_prefix_calls": 4470,
+  "per_session_controller_decisions": 358,
+  "per_session_controller_features": 358,
+  "total_source_materializations": 622,
+  "total_reference_materializations": 448,
+  "total_trajectory_bodies": 448,
+  "real_ridge_fits": 8,
+  "lambda_ridge": 10,
+  "candidate_count": 9,
+  "ridge_thresholds": [
+    0,
+    0.5,
+    1,
+    2,
+    4
+  ],
+  "stability_epsilons": [
+    0,
+    0.03125,
+    0.0625
+  ],
+  "features": 19,
+  "model_loads": 2,
+  "synthetic_caps": {
+    "model_initializations": 4,
+    "requests": 64,
+    "generator_levels": 1000,
+    "decoder": 1000,
+    "encoder": 0,
+    "linear_fits": 16,
+    "sentence_label_pairs": 100,
+    "feature_calls": 256,
+    "decision_calls": 256,
+    "schedule_rows": 20000,
+    "monte_carlo_draws": 0
+  },
+  "synthetic_test_wall_seconds": 600,
+  "development_wall_seconds": 1800,
+  "evaluation_wall_seconds": 6600,
+  "model_wall_seconds": 3600,
+  "analysis_wall_seconds": 1800,
+  "engineering_reporting_allowance_seconds": 21600,
+  "parent_rss_bytes": 8589934592,
+  "worker_rss_bytes": 17179869184,
+  "gpu_reserved_bytes": 8589934592,
+  "artifact_bytes": 1073741824,
+  "bootstrap_draws": 20000,
+  "interval_family": 11,
+  "tail_alpha": 0.002272727272727273,
+  "mc_rank_error_allowance": 0.001,
+  "min_components_per_role": 20,
+  "min_numeric": {
+    "fit": 12,
+    "calibration": 8,
+    "test": 8
+  },
+  "quality_margins": {
+    "bleu": 0.5,
+    "chrf": 1,
+    "numeric_reference_f1": 0.02,
+    "negation_cue_mismatch_rate": 0.02
+  },
+  "minimum_mean_savings": 0.05,
+  "retries": 0,
+  "downloads": 0,
+  "paid_compute_dollars": 0,
+  "target_encodings": 0,
+  "generator_tokenizer_updates": 0,
+  "Q0_passed": false,
+  "Q4_authorized": false,
+  "reserved_outputs_released": false
+}

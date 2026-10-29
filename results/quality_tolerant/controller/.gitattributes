@@ -1,0 +1,2 @@
+# Preserve hashed execution logs on Windows.
+*.log text eol=lf
