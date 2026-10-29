@@ -1,0 +1,22 @@
+{
+  "Q0_passed": false,
+  "independent_confirmation": false,
+  "next_branch": "lock_joint_risk_controller",
+  "qualified": [
+    {
+      "group": "cheap",
+      "level": 8
+    },
+    {
+      "group": "selected_logit",
+      "level": 8
+    }
+  ],
+  "quality_guarantee": false,
+  "reserved_outputs_released": false,
+  "richer_supported_levels": [
+    8
+  ],
+  "status": "richer_probe_supported",
+  "whole_controller_speedup_established": false
+}

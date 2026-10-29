@@ -1,0 +1,16 @@
+{
+  "evidence_path": "signal_discrimination/execution.json",
+  "evidence_sha256": "34e7d4b4b09a9b52b135c1df9eea1a4eaea7da12704daa73a594f24325c5c01f",
+  "phase": "03-signal-discrimination",
+  "usage": {
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "controller_families": 1,
+    "cpu_seconds": 378.773415,
+    "download_bytes": 0,
+    "model_orchestration_seconds": 82.9274955,
+    "model_requests": 366,
+    "paid_dollars": 0,
+    "real_fits": 4
+  }
+}

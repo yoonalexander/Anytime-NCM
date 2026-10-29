@@ -1,0 +1,44 @@
+{
+  "verified": true,
+  "source_commit": "1229f7b910ca5ad23f5b473e9142850c9bda160f",
+  "protected_files": 1103,
+  "artifact_hashes_verified": 17,
+  "requests": 366,
+  "current_prefix_receipts": 1098,
+  "observed_output_receipts": 1098,
+  "synthetic_tests": 9,
+  "independent_prediction_and_auc_checks": [
+    {
+      "level": 8,
+      "group": "cheap",
+      "auc": 0.6229148375768218,
+      "predictions_recomputed_without_fitting": true,
+      "fit_only_means_verified": true
+    },
+    {
+      "level": 8,
+      "group": "selected_logit",
+      "auc": 0.6633011413520632,
+      "predictions_recomputed_without_fitting": true,
+      "fit_only_means_verified": true
+    },
+    {
+      "level": 10,
+      "group": "cheap",
+      "auc": 0.5201775625504439,
+      "predictions_recomputed_without_fitting": true,
+      "fit_only_means_verified": true
+    },
+    {
+      "level": 10,
+      "group": "selected_logit",
+      "auc": 0.5641646489104116,
+      "predictions_recomputed_without_fitting": true,
+      "fit_only_means_verified": true
+    }
+  ],
+  "old_test87_or_reservations_released": false,
+  "new_model_requests": 0,
+  "new_fits": 0,
+  "review_cpu_covered_by_reporting_credit": true
+}
