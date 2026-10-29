@@ -1,0 +1,12 @@
+{
+  "notes": "Model/test prototypes were authored before phase07support review, hash-preserved during failure handling, and copied back unchanged for this prospective lock. No prototype tests or fits ran before this lock.",
+  "prototype_sha256": {
+    "development_models.py": "014cee71eaf8e8b7341063d3b780c1edc567ad9a0710dea60eb25e09389a2d25",
+    "test_development_models.py": "ff902a7bbcbfa50da9a2a610c62c31292b541712550f04c12cdda200e2731c66"
+  },
+  "restored_source_sha256": {
+    "src/anytime_ncm/development_models.py": "014cee71eaf8e8b7341063d3b780c1edc567ad9a0710dea60eb25e09389a2d25",
+    "tests/test_development_models.py": "ff902a7bbcbfa50da9a2a610c62c31292b541712550f04c12cdda200e2731c66"
+  },
+  "status": "unvalidated prototype preservation, not prior empirical evidence"
+}

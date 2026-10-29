@@ -1,0 +1,54 @@
+# Campaign phase08: final bounded development models, ablations and selection
+
+Prospectively frozen October29,2026, before tests, real fits or candidate corpus replay. [Verified development collection](development-collection-results.md) supports3408fit/891calibration inputs with variable numeric/negation-change supervision. The earlier rich controller saved4.161%on consumed calibration, below5%; new supervision and nonlinear interactions are bounded hypotheses, not promises. [Numeric lock](development-controller-lock.json), [source lock](development-controller-source-lock.json), [prototype provenance](development-controller-provenance.json), [campaign authority](campaign-20261029-objective.md).
+
+This is the FINALmodel-family comparison in this campaign. Extend family1fixed joint-risk ridge via declared feature ablations and spend the ONEremaining family on a small greedy tree.12additional real fits(8ridge+4tree), total16campaign fits/2families if complete. No further families, post-evaluation refits, thresholds, extensions or selection against evaluation outcomes follow automatically. Negative/inconclusive closeout is valid. Generator/tokenizer weights stay frozen.
+
+## Fixed access, leakage and labels
+
+Use ONLY3408development_fit and891development_calibration identities/groups from phase06. No old260fit pool is merged; the new frame is used as declared.1188development_evaluation bodies stay closed through policy/comparator push; proposed7700confirmation and historical87/E3/E4/unallocated outcomes remain closed. Reference-derived aggregate exposure, consumed readiness labels, unknown checkpoint overlap and unresolved story independence are explicit. No independent confirmation is claimed.
+
+Read4304public phase07feature records(5warmups skipped) and4299saved normalized label rows. Inputs are ONLYthe27current/past features8/10already validated against native prefixes; no IDs/year/component/reference coverage/future states enter a model. IDs route rows and groups only. Training uses ONLY3408fit rows; standardization/splits are fit-only. Calibration891is used for descriptive ranking and corpus-point selection, never fitting any coefficient, tree split or calibrator.
+
+Header-filter ignored private traces/references BEFOREbody JSONdecode. Inspect4304trace metadata headers but decode only891NONWARMcalibration trace bodies; inspect4299reference headers but decode only891calibration reference bodies. Otherfit bodies are skipped, and evaluation/confirmation bodies are absent from these files. Synthetic poisoned-unselected-body cases must demonstrate filtering. No source body, source tokenization, checkpoint, NNencoder/decoder/generator or target encoding is used in this phase.
+
+Joint training label remains1iff max(0,all defined normalized sentence losses)>4: full-current sentence BLEU/.5, chrF/1, defined numeric-reference F1/.02, current-full negation mismatch/.02. Missing numeric labels remain missing, omitted only for this per-input proxy; actual corpus F1uses unchanged reference-covered denominator. Threshold4is not a quality-margin change. Require collection joint-support gate and >=20fit/10calibration examples/class at each level; retain all891calibration rows. No endpoint-specific all-zero head or prediction of reference-defined coverage is created.
+
+Report rare adverse/nonadverse COMPONENT counts per endpoint and role/level, alongside event/missing counts. The new5each-cue floor does not establish independent samples, quality power or learned semantic protection.
+
+## Fixed model families and feature ablations
+
+At each8and10fit family1binary-label ridge for FOURnested/complementary groups: cheap19, cheap+3logit summaries22, cheap+5literal cues24, full27. Same least-squares+10squared-slope penalty as phase03; unpenalized intercept, fit-only mean/population std, scale<1e-12->1, no weighting/CV/tuning. Exactly8real models. Feature ablations disentangle prior bundled improvement; compare on identicalcalibration rows.
+
+At each8and10fit family2for cheap19/full27only: deterministic greedy binary tree, maxdepth3(root0), minimum32rows/leaf. Gini decrease over node-local TRAINquantile thresholds.1through.9in each feature; unique thresholds, minchild32. Choose greatest gain with>1e-12improvement over current best; ties within that tolerance retain first canonical feature/ascending threshold. Stop at depth3,pure labels,node<64or no positive gain. Leaves store training positive fraction. Exactly4real trees, at most7internal nodes/model and7000total threshold cells as a conservative bound(5796maximum given feature counts). No pruning, class balancing, stochastic ensemble or additional hyperparameter search. Constant-feature leaves are reported, not interpreted as protection.
+
+[Official ridge objective documentation](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html) supports the explicit regularized least-squares definition. [Official decision-tree documentation](https://scikit-learn.org/stable/modules/tree.html) describes greedy impurity splits/leaf frequencies and overfitting/instability limits. Our quantile-restricted implementation is explicitly defined above, not claimed identical to every library default or globally optimal. No dependency upgrade/sklearn installation is required. Primary source pages checked October29; earlier [ridge source](https://doi.org/10.1080/00401706.1970.10488634) remains background, not an NCMgeneralization theorem.
+
+Store every fitted model and fit/class/search count. Row-wise calibration prediction uses the same single-row arithmetic as future runtime, preventing matrix-vs-row rounding changes at decision thresholds.12*891=10692prediction rows. Report adverse-direction pairwise AUC(ties.5), clipped-score squared error, fit-prevalence error, five fixed reliability bins, clipping/constant features and59component-deletion sensitivity. No p-values, multiplicity-adjusted significance, resampling or claimed probability calibration. Ridge raw scores and tree leaf fractions are not population risk certificates; scores/classes are descriptive development quantities. Earlier phase03threshold4labels are matched by definition; cross-population AUCdifferences are not paired evidence.
+
+## Finite stopping candidates and corpus-point selection
+
+For each method/group, schedules[8]or[8,10], shared risk threshold0,.1,.2,.3,.4,.5,.6,.7,.8,.9, optional literal source/current number-set equality ANDnegation-cue agreement veto.8-onlyfallsthrough directly11;8/10uses actual8history at10. These are causal heuristic guards, not replacements for reference-defined endpoints. Exactly160ridge+80tree adaptive candidates plus native full=241. No new threshold grid or sign flip after outcomes. Retain every candidate/failure and compact depth/visit arrays aligned to one published891-key ordering; IDs/assignments are never runtime decision inputs.
+
+For EACHcandidate compute actual calibration CORPUS BLEU/chrF, reference-number mean F1where defined, and negation mismatch on its selected text. Full-relative POINTloss limits remain.5/1/.02/.02with existing1e-10numeric-boundary allowance. Do not average sentence proxies into corpus claims. All11fixed-depth corpus points are also retained; lock the fastest POINTpassing fixed depth by prior actual profile, ties lexical method. No adjusted quality exclusion for any other depth. Eventual benchmark retains all11fixed controls/nativefull.
+
+Frozen development cost proxy uses phase05actual fixed-depth means, plus old2.1456159247680517msper EXTRAobservation and.5msper decision for any added-logit/cuegroup ORcueguard; unguarded cheapadds0. This is a conservative uniform feature approximation, not isolated cue costs or a bound; scalar ridge/tree decision cost is0/unmeasured in this proxy and MUSTbe paid in actual execution. Data/mean profiles differ; no actual speedup claim from selection. No cost refitting on this calibration or policy-timing feedback.
+
+Select point-passing minimum estimated mean cost including native-full fallback, tie lexical name. Ready for ONEseparately locked1188-input development evaluation iff selected is adaptive and estimated saving>=5%against fixed11mean. Publish/push policy coefficients/splits/features/threshold/inspection/guards and fixed comparator BEFOREany evaluation body access. If no candidate qualifies, end the model/data branches and complete bounded campaign closeout; do not spend spare fits on new rules or repeat the near-target calibration-timing exception. After eventual evaluation, do not retune against its outcome. Independent confirmation remains conditional on genuinely satisfied statistical/population prerequisites; Q0stillfailed.
+
+These241candidate/11fixed comparisons are EXPLORATORYselection, not an inferential multiplicity family. No quality confidence bound or confirmatory p-value. Paired actual-latency inference belongs to the separately locked benchmark. None of this resolves oldQ0sharp cue bounds, semantic correctness or checkpoint overlap.
+
+## Current caps, failure handling and delivery
+
+11synthetic cases(7model/4selector),4toy CLASSICALfits,0synthetic NNAPIcalls/checkpoints/encoders; invented arrays<=256rows/27columns, fixed tree search,0Monte Carlo. No real model inference/tokenization/corpus extraction/targets/downloads/dollars/confirmation.12real controller fits/1new family. Saved feature records4304,label rows4299,trace headers4304/reference headers4299,calibration trace/reference bodydecodes891each,prediction rows10692,candidate-input replays214731,logical decisions<=427680,tree threshold cells<=7000,corpus metriccalls<=251.
+
+Wall2400sec, tests180sec, executionCPU1200sec+300reporting/verification credit, parentRSS2GiB, new artifacts64MiB, retries0. Shared campaign limits bind before every stage. No budget refund for the original phase07failure. Record actual fits/searches/access/metrics; on failure preserve partial models and conservatively charge full12-fit/1-familyreservation rather than claiming they all ran. No silent rerun/extra model fits. Original malformedJSON/failure/resource caveat and all scientific failed gates remain intact.
+
+Archive source/provenance and all models, diagnosis, candidate scores, policy, comparator, ledgers and decision under campaign_20261029/development_controller/. JSONnormalization uses the tested lossless repair helper. Append accounting08; update report/roadmap after verification without altering frozen prior evidence.
+
+~~~powershell
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_development_controller.py','run','--commit','PUSHED_FITTING_LOCK')
+.\scripts\wsl_python.ps1 -PythonArguments @('scripts/run_development_controller.py','verify')
+~~~
+
+Saved verifier checks artifacts/selection with0newfits/NNcalls/reference scores. Private inputs remain hash-bound/ignored. No historical full-suite count is claimed.

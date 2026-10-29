@@ -1,0 +1,135 @@
+{
+  "stage": "campaign_phase08_final_development_fitting_selection",
+  "base_commit": "107cea2c9622be4e4bdacf67bc856b6258620d22",
+  "families": {
+    "ridge": {
+      "existing_campaign_family": 1,
+      "groups": [
+        "cheap",
+        "logit",
+        "cue",
+        "full"
+      ],
+      "fits": 8,
+      "penalty": 10
+    },
+    "tree": {
+      "new_campaign_family": 2,
+      "groups": [
+        "cheap",
+        "full"
+      ],
+      "fits": 4,
+      "max_depth": 3,
+      "min_leaf": 32,
+      "quantile_grid": [
+        0.1,
+        0.2,
+        0.3,
+        0.4,
+        0.5,
+        0.6,
+        0.7,
+        0.8,
+        0.9
+      ],
+      "gain_tolerance": 1e-12
+    }
+  },
+  "proxy_threshold": 4,
+  "thresholds": [
+    0.0,
+    0.1,
+    0.2,
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7,
+    0.8,
+    0.9
+  ],
+  "schedules": [
+    [
+      8
+    ],
+    [
+      8,
+      10
+    ]
+  ],
+  "cue_guard": [
+    false,
+    true
+  ],
+  "maximum_candidates": 241,
+  "analysis_caps": {
+    "saved_feature_records": 4304,
+    "saved_label_rows": 4299,
+    "trace_headers": 4304,
+    "calibration_trace_bodies": 891,
+    "reference_headers": 4299,
+    "calibration_reference_bodies": 891,
+    "fits": 12,
+    "tree_thresholds": 7000,
+    "prediction_rows": 10692,
+    "candidate_inputs": 214731,
+    "logical_decisions": 427680,
+    "corpus_scores": 251
+  },
+  "fixed_profile_ms": {
+    "1": 16.93394802722772,
+    "2": 30.378586240099015,
+    "3": 42.94480496782179,
+    "4": 56.09725037623764,
+    "5": 68.96851387128713,
+    "6": 82.44133777970296,
+    "7": 95.2647338490099,
+    "8": 107.03923849257426,
+    "9": 119.7918134009901,
+    "10": 132.23272052227722,
+    "11": 144.81728252722772
+  },
+  "observation_proxy_ms": 2.1456159247680517,
+  "extra_per_decision_ms": 0.5,
+  "evaluation_estimated_saving_gate": 0.05,
+  "wall_seconds": 2400,
+  "test_wall_seconds": 180,
+  "execution_cpu_cap_seconds": 1200,
+  "reporting_cpu_charge_seconds": 300,
+  "parent_rss_bytes": 2147483648,
+  "artifact_bytes": 67108864,
+  "campaign_reservation": {
+    "model_requests": 0,
+    "model_orchestration_seconds": 0,
+    "cpu_seconds": 1500,
+    "real_fits": 12,
+    "controller_families": 1,
+    "download_bytes": 0,
+    "artifact_bytes": 67108864,
+    "confirmation_evaluations": 0,
+    "paid_dollars": 0
+  },
+  "versions": {
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "sacrebleu": "2.6.0",
+    "pytest": "9.1.1"
+  },
+  "synthetic_cases": 11,
+  "synthetic_classical_fits": 4,
+  "synthetic_nn_requests": 0,
+  "synthetic_rows_cap": 256,
+  "synthetic_feature_columns_cap": 27,
+  "new_model_requests": 0,
+  "target_encodings": 0,
+  "bootstrap_draws": 0,
+  "simulations": 0,
+  "downloads": 0,
+  "paid_dollars": 0,
+  "retries": 0,
+  "development_evaluation1188_released": false,
+  "proposed_confirmation7700_released": false,
+  "historical87_E3_E4_unallocated_released": false,
+  "Q0_passed": false
+}
