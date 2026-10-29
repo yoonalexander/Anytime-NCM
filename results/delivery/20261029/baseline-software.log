@@ -1,0 +1,68 @@
+........................................................................ [  8%]
+........................................................................ [ 17%]
+........................................................................ [ 26%]
+........................................................................ [ 35%]
+........................................................................ [ 43%]
+........................................................................ [ 52%]
+..............F.................................................F....... [ 61%]
+............F........................................................... [ 70%]
+........................................................................ [ 79%]
+........................................................................ [ 87%]
+........................................................................ [ 96%]
+............................                                             [100%]
+=================================== FAILURES ===================================
+_____ test_rust_decode_matches_pinned_hf_decoder_without_importing_models ______
+
+    def test_rust_decode_matches_pinned_hf_decoder_without_importing_models():
+        from transformers import AutoTokenizer
+        from anytime_ncm.phase4 import decode_ids
+>       tok=AutoTokenizer.from_pretrained(ROOT/"artifacts/wmt14/text_tokenizer",local_files_only=True)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_phase4.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+/home/ncm/.venvs/anytime-ncm/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:1089: in from_pretrained
+    tokenizer_config = get_tokenizer_config(pretrained_model_name_or_path, **kwargs)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/home/ncm/.venvs/anytime-ncm/lib/python3.12/site-packages/transformers/models/auto/tokenization_auto.py:942: in get_tokenizer_config
+    with open(resolved_config_file, encoding="utf-8") as reader:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+event = 'open'
+args = ('/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/artifacts/wmt14/text_tokenizer/tokenizer_config.json', 'r', 524288)
+
+    def audit(event,args):
+        if event=='open':
+            name=args[0]
+            if not isinstance(name,(str,bytes,os.PathLike)):return
+            p=Path(os.fsdecode(name)).resolve();flags=args[2] if len(args)>2 and isinstance(args[2],int) else 0;mode=args[1] if len(args)>1 else '';writing=bool(flags&(os.O_WRONLY|os.O_RDWR|os.O_CREAT|os.O_TRUNC|os.O_APPEND)) or isinstance(mode,str) and any(x in mode for x in 'wax+')
+            if any(p.is_relative_to(root/d) for d in ('data','artifacts')):
+>               counts['real_data_reads_blocked']+=1;raise PermissionError('Delivery test blocked real research data/artifact access')
+                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E               PermissionError: Delivery test blocked real research data/artifact access
+
+build/delivery/baseline-software/guard/sitecustomize.py:10: PermissionError
+_______________________ test_no_model_libraries_imported _______________________
+
+    def test_no_model_libraries_imported():
+        import sys
+>       assert not any(m == 'torch' or m.startswith('torch.') or m == 'transformers' or m.startswith('transformers.') for m in sys.modules)
+E       assert not True
+E        +  where True = any(<generator object test_no_model_libraries_imported.<locals>.<genexpr> at 0x75e919bf6dc0>)
+
+tests/test_q0_multiplicity.py:98: AssertionError
+_________________________ test_model_libraries_absent __________________________
+
+    def test_model_libraries_absent():
+        import sys
+>       assert not any(m=='torch' or m.startswith('torch.') or m=='transformers' or m.startswith('transformers.') for m in sys.modules)
+E       assert not True
+E        +  where True = any(<generator object test_model_libraries_absent.<locals>.<genexpr> at 0x75e919b31cb0>)
+
+tests/test_q0_population.py:59: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_phase4.py::test_rust_decode_matches_pinned_hf_decoder_without_importing_models
+FAILED tests/test_q0_multiplicity.py::test_no_model_libraries_imported - asse...
+FAILED tests/test_q0_population.py::test_model_libraries_absent - assert not ...
+3 failed, 817 passed in 49.79s

@@ -1,0 +1,58 @@
+{
+  "label": "baseline-main-isolated",
+  "group": "main",
+  "exit_code": 0,
+  "wall_seconds": 48.805128012,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "command": [
+    "/home/ncm/.venvs/anytime-ncm/bin/python",
+    "-m",
+    "pytest",
+    "tests",
+    "--ignore=tests/test_q0_multiplicity.py",
+    "--ignore=tests/test_q0_population.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/build/delivery/baseline-main-isolated/tmp",
+    "--junitxml=/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/build/delivery/baseline-main-isolated/tests.xml"
+  ],
+  "guard_reports": [
+    {
+      "pid": 373,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 0,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0,
+      "text_tokenizer_metadata_reads_allowed": 4
+    },
+    {
+      "pid": 378,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 0,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0,
+      "text_tokenizer_metadata_reads_allowed": 0
+    },
+    {
+      "pid": 399,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 0,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0,
+      "text_tokenizer_metadata_reads_allowed": 0
+    },
+    {
+      "pid": 403,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 0,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0,
+      "text_tokenizer_metadata_reads_allowed": 0
+    }
+  ],
+  "real_checkpoint_loads": 0,
+  "experiment_reruns": 0,
+  "gpu_disabled": true,
+  "scope": "software tests on invented fixtures; pinned text-tokenizer JSON allowed for decoder compatibility; not research performance evidence"
+}

@@ -1,36 +1,54 @@
 {
+  "archive_note": "The binary ZIP is authoritative for exact bytes; readable text copies may receive normal Git newline normalization.",
   "baseline_commit": "03e3e7086988db46c2979410b5d3081d24f1d340",
+  "binary_archive_sha256": "acbd68dce0932d6e1f2a5d8089788e8973791c1bacc34a74a729746e41adc74e",
   "files": {
     "AGENTS.md": {
       "archive": "docs/history/pre-delivery-03e3e70/AGENTS.md",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": "AGENTS.md",
       "sha256": "cdbd2b52188b32b9c4c70bd7db818a0a2d87691c92216f5d114867e436f27551"
     },
     "README.md": {
       "archive": "docs/history/pre-delivery-03e3e70/README.md",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": "README.md",
       "sha256": "a8beefdda9730688a8bdfdfa50697ca64b4ed8fe4a845284e26cae77a54e6a15"
     },
     "RESEARCH_ROADMAP.md": {
       "archive": "docs/history/pre-delivery-03e3e70/RESEARCH_ROADMAP.md",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": "RESEARCH_ROADMAP.md",
       "sha256": "39a66f67d753ea93c15808e49950a8aea3fe5f53af470d2a06af9677ca37910a"
     },
     "ROADMAP.md": {
       "archive": "docs/history/pre-delivery-03e3e70/ROADMAP.md",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": "ROADMAP.md",
       "sha256": "5ebe2f1bac68eeb3899fef494af5428e11132a2b74470d66a5e82fd172f03e5e"
     },
     "pyproject.toml": {
       "archive": "docs/history/pre-delivery-03e3e70/pyproject.toml",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": "pyproject.toml",
       "sha256": "2059d7a443b059fa47d70aab275f5eb2a60e1af5afc29aed0005b9c89801597c"
     },
     "src/anytime_ncm/__init__.py": {
       "archive": "docs/history/pre-delivery-03e3e70/src/anytime_ncm/__init__.py",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": "src/anytime_ncm/__init__.py",
       "sha256": "bd2bdea7e37b30f857693bcb3da7d1e44fbcea9ca9a2e66caa4b6ffc5407b4e1"
     },
     "src/anytime_ncm/__main__.py": {
       "archive": "docs/history/pre-delivery-03e3e70/src/anytime_ncm/__main__.py",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": "src/anytime_ncm/__main__.py",
       "sha256": "1e73ffd2a0d9159307ccb92bf7989be89d9839a0503c0e062d21050469bff3cf"
     },
     "src/anytime_ncm/cli.py": {
       "archive": "docs/history/pre-delivery-03e3e70/src/anytime_ncm/cli.py",
+      "byte_archive": "docs/history/pre-delivery-03e3e70/original-bytes.zip",
+      "byte_member": "src/anytime_ncm/cli.py",
       "sha256": "09a371485ca0e860a470d1d5c173785076f738eeb1169ce2e4ae1538143f9a54"
     }
   },

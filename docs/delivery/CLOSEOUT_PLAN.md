@@ -25,3 +25,7 @@ The GitHub audit found no issues, PRs, other branches, tags or releases to integ
 ## Verification bounds
 
 Existing-suite subprocess wall <=1,200 seconds and CPU <=600 seconds; tiny synthetic fixtures only, 0 real checkpoint/data accesses. Packaging/clean-install/asset checks use isolated build environments, no research-environment dependency upgrades. No outcome analysis or new inferential simulation. Preserve all failed software checks and repair them transparently. Delivery verification records are under `results/delivery/20261029/`, separate from immutable research ledgers.
+
+### Baseline test-environment correction
+
+The first guarded broad run recorded 817 passes and three setup failures: two no-Torch Q0 assertions need a separate pytest process; one Rust decoder compatibility test requires existing pinned text-tokenizer JSON. Preserve that run. Run the unchanged tests in isolated main/Q0 groups and allow read-only JSON/text vocabulary metadata solely beneath artifacts/wmt14/text_tokenizer. Neural .pt/.ckpt weights, corpora, GPU and remote networking remain blocked. No experimental implementation or test assertions are changed.

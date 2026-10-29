@@ -1,0 +1,15 @@
+{
+  "status": "passed_in_required_isolated_groups",
+  "main_tests": 759,
+  "q0_tests": 61,
+  "total_tests": 820,
+  "initial_attempt_preserved": true,
+  "real_checkpoint_loads": 0,
+  "raw_corpus_reads": 0,
+  "neural_tokenizer_checkpoint_loads": 0,
+  "text_tokenizer_metadata_reads": 4,
+  "gpu_used": false,
+  "remote_network_used": false,
+  "repository_evidence_writes_from_tests": 0,
+  "research_ledger_resets": 0
+}

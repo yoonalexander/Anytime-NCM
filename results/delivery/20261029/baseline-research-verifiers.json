@@ -1,0 +1,121 @@
+{
+  "status": "baseline_saved_verifiers_passed_before_metadata_refresh",
+  "runs": [
+    {
+      "script": "repair_evaluation_reporting.py",
+      "exit_code": 0,
+      "result": {
+        "verified": true,
+        "no_new_model_or_reference_scoring_or_resampling": true,
+        "original_failure_preserved": true,
+        "campaign": {
+          "verified": true,
+          "completed_or_accounted_phases": [
+            "01-signal-pilot",
+            "02-light-signal-pilot",
+            "03-signal-discrimination",
+            "04-joint-controller-selection",
+            "05-joint-cost-diagnostic",
+            "06-development-eligibility",
+            "07-development-collection",
+            "07r-development-reporting",
+            "08-development-controller",
+            "09-development-evaluation",
+            "09r-evaluation-reporting",
+            "09t-first-timing-diagnostic",
+            "10-campaign-closeout"
+          ],
+          "charged_usage": {
+            "model_requests": 73724,
+            "model_orchestration_seconds": 16906.930204793,
+            "cpu_seconds": 13499.827723,
+            "real_fits": 16,
+            "controller_families": 2,
+            "download_bytes": 0,
+            "artifact_bytes": 838860800,
+            "confirmation_evaluations": 0,
+            "paid_dollars": 0
+          },
+          "physical_artifact_bytes": 99319044
+        }
+      }
+    },
+    {
+      "script": "run_first_timing_diagnostic.py",
+      "exit_code": 0,
+      "result": {
+        "verified": true,
+        "new_models_or_fits_or_scores_or_resampling": 0,
+        "campaign": {
+          "verified": true,
+          "completed_or_accounted_phases": [
+            "01-signal-pilot",
+            "02-light-signal-pilot",
+            "03-signal-discrimination",
+            "04-joint-controller-selection",
+            "05-joint-cost-diagnostic",
+            "06-development-eligibility",
+            "07-development-collection",
+            "07r-development-reporting",
+            "08-development-controller",
+            "09-development-evaluation",
+            "09r-evaluation-reporting",
+            "09t-first-timing-diagnostic",
+            "10-campaign-closeout"
+          ],
+          "charged_usage": {
+            "model_requests": 73724,
+            "model_orchestration_seconds": 16906.930204793,
+            "cpu_seconds": 13499.827723,
+            "real_fits": 16,
+            "controller_families": 2,
+            "download_bytes": 0,
+            "artifact_bytes": 838860800,
+            "confirmation_evaluations": 0,
+            "paid_dollars": 0
+          },
+          "physical_artifact_bytes": 99319044
+        }
+      }
+    },
+    {
+      "script": "close_quality_campaign.py",
+      "exit_code": 0,
+      "result": {
+        "verified": true,
+        "objective_branch": "negative_closeout",
+        "no_new_model_scoring_resampling": true,
+        "campaign": {
+          "verified": true,
+          "completed_or_accounted_phases": [
+            "01-signal-pilot",
+            "02-light-signal-pilot",
+            "03-signal-discrimination",
+            "04-joint-controller-selection",
+            "05-joint-cost-diagnostic",
+            "06-development-eligibility",
+            "07-development-collection",
+            "07r-development-reporting",
+            "08-development-controller",
+            "09-development-evaluation",
+            "09r-evaluation-reporting",
+            "09t-first-timing-diagnostic",
+            "10-campaign-closeout"
+          ],
+          "charged_usage": {
+            "model_requests": 73724,
+            "model_orchestration_seconds": 16906.930204793,
+            "cpu_seconds": 13499.827723,
+            "real_fits": 16,
+            "controller_families": 2,
+            "download_bytes": 0,
+            "artifact_bytes": 838860800,
+            "confirmation_evaluations": 0,
+            "paid_dollars": 0
+          },
+          "physical_artifact_bytes": 99319044
+        }
+      }
+    }
+  ]
+}

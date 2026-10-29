@@ -1,0 +1,51 @@
+{
+  "label": "baseline-software",
+  "exit_code": 1,
+  "wall_seconds": 52.468500877,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "command": [
+    "/home/ncm/.venvs/anytime-ncm/bin/python",
+    "-m",
+    "pytest",
+    "tests",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/build/delivery/baseline-software/tmp",
+    "--junitxml=/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/build/delivery/baseline-software/tests.xml"
+  ],
+  "guard_reports": [
+    {
+      "pid": 380,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 1,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0
+    },
+    {
+      "pid": 397,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 0,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0
+    },
+    {
+      "pid": 447,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 0,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0
+    },
+    {
+      "pid": 484,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 0,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0
+    }
+  ],
+  "real_checkpoint_loads": 0,
+  "experiment_reruns": 0,
+  "gpu_disabled": true,
+  "scope": "software tests on invented fixtures; not research performance evidence"
+}

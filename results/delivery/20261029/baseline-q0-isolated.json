@@ -1,0 +1,33 @@
+{
+  "label": "baseline-q0-isolated",
+  "group": "q0",
+  "exit_code": 0,
+  "wall_seconds": 2.327064752000002,
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "command": [
+    "/home/ncm/.venvs/anytime-ncm/bin/python",
+    "-m",
+    "pytest",
+    "tests/test_q0_multiplicity.py",
+    "tests/test_q0_population.py",
+    "-q",
+    "-p",
+    "no:cacheprovider",
+    "--basetemp=/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/build/delivery/baseline-q0-isolated/tmp",
+    "--junitxml=/mnt/c/Users/Admin/Documents/Projects/Anytime-NCM/build/delivery/baseline-q0-isolated/tests.xml"
+  ],
+  "guard_reports": [
+    {
+      "pid": 389,
+      "gpu_visible": "",
+      "real_data_reads_blocked": 0,
+      "repository_writes_blocked": 0,
+      "external_connections_blocked": 0,
+      "text_tokenizer_metadata_reads_allowed": 0
+    }
+  ],
+  "real_checkpoint_loads": 0,
+  "experiment_reruns": 0,
+  "gpu_disabled": true,
+  "scope": "software tests on invented fixtures; pinned text-tokenizer JSON allowed for decoder compatibility; not research performance evidence"
+}
